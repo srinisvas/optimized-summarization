@@ -1,0 +1,182 @@
+{
+    "title": "AI Ethics in IoT: Involving Society in the Discussion",
+    "authors": "Angela Maria Alves; Euclides Lourenc; \u00b8o Chuma; Gabriel Caumo Vaz; Gabriel Gomes De Oliveira; Leonardo Lorenzo; Bravo Roger; Yuzo Iano",
+    "pub_date": "",
+    "abstract": "For all areas that use Artificial Intelligence (AI) or Autonomous and Intelligent Systems (A/IS), including IoT, recent discussions in the global media about the effects of AI chatbots, such as the OpenAI ChatGPT and Google Bard tools, on education, fraud, and even the disappearance of some professions are a warning. Therefore, we need to talk to society about the use of AI to avoid unfounded rumors that could hinder the development of IoT technologies that use AI. In this article, we propose to discuss with society projects that use AI or A/IS technologies, including IoT devices, following the General Principles of IEEE Ethically Aligned Design, to obtain society's support for these technological advances and avoid rumors and false information that could harm them.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Despite bringing technological advances, tools like OpenAI ChatGPT and Google Bard are not good examples of how new Artificial Intelligence (AI) and other technologies should be incorporated into society and IoT devices. The launch of OpenAI ChatGPT has not been discussed with society before, causing senseless fear in society and directly affecting education and professional careers.\nEthics in Artificial Intelligence (AI) [1], or, in more technical terms, \"Autonomous and Intelligent Systems\" (A/IS) is addressed by the emerging field of Ethically Aligned Design (EAD) [2], which involves collaboration between different disciplines. For simplicity, let's use the terms AI and A/IS just as AI.\nThe increasing use of AI will significantly change humanity. As a result, we need to create social and political standards that ensure such systems remain human-centered and meet humanity's values and ethical principles. [3].\nThe Internet of Things is a new paradigm that has transformed conventional life into a high-tech one. The Internet of Things has made smart cities, smart homes, pollution control, energy saving, smart transportation, and smart industries smarter and smarter [4]. The Internet of Things (IoT) has the potential to benefit humanity in several ways, such as monitoring traffic [5], [6] in large urban centers, improving the energy efficiency of equipment [7], [8], or increasing agricultural productivity [9], [10]. Most of the time, the Internet of Things and Artificial Intelligence are linked to each other [11]- [14].\nTherefore, the Internet of Things (IoT) and Artificial Intelligence must be developed, implemented, and operated in a way that benefits the environment and humanity. As a result, human well-being should not be prioritized over the technical goals of AI. This is because only in this way will society be able to establish trust in AI and, consequently, in the Internet of Things, and understand the true usefulness of AI for humans.\nIn the next sections, we will cover the fundamentals of IEEE Intelligent and Autonomous Systems Ethics. This information can help students, researchers, teachers, and everyone involved in the development of Internet of Things technologies that align with the advancement of humanity with a focus on the well-being of human beings.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. IEEE ETHICS OF AUTONOMOUS AND INTELLIGENT SYSTEMS",
+            "text": "The \"IEEE Global Initiative on Autonomous and Intelligent Systems (A/IS) Ethics\" was recently developed by IEEE. This EAD will provide practical insights and advice, as well as serve as an important reference for the work of technologists, educators, and policymakers in the coming years related to AI ethics.\nThe IEEE EAD Guide [2] is free and provides scientific analysis and resources, high principles, and practical suggestions for prioritizing human well-being with AI.\nThe IEEE EAD guide (conceptual framework) has three pillars that reflect anthropological, political, and technical aspects. These three pillars are represented in Figure 1.\nA summary of the essential characteristics of each of these three pillars: 1) Universal Human Values: AI must be designed to promote human well-being and respect human rights. Furthermore, they must be designed to protect natural resources and our environment. 2) Political Self-Determination and Data Agency: When the data that constitutes and represents identity is accessible and protected, AI has the potential to advance political freedom and democracy. 3) Technical Dependability: The goal of AI is to promote human-driven values in a reliable, safe, and active way.\nTechnologies must be monitored to ensure they operate by human principles and respect codified rights. Furthermore, validation and verification processes that include explainable elements must be developed for better AI audibility and certification.\nTherefore, IEEE EAD proposes \"General Principles\", which are the principles and values that should be followed during the design, development, and implementation of AI. These principles are made up of three pillars. These general principles are represented in Figure 2. 1) Human Rights: Human rights will be respected and protected through the creation and operation of AI, which is recognized internationally. International law defines human rights and provides a solid legal basis for the Internet of Things projects that require global financial and technological resources.\n2) Well-being: The main success criterion for the development of AI should be the increase in human well-being. The population's quality of life is often an objective in IoT initiatives. Human well-being and quality of life are linked in this context. 3) Data Agency: To maintain people's ability to control their identity, AI creators must teach people how to access and share data securely. The way the acquired data will be treated is one of the biggest difficulties for Internet of Things projects. Governments now have agencies and laws for maintaining data. Therefore, before starting an IoT project, it is important to consult government agencies about the legality of data use. 4) Effectiveness: The results must be provided by AI operators and creators. Efficiency metrics are intrinsic to the concept of the Internet of Things. 5) Transparency: The basis of an AI decision needs to be discoverable at all times. Transparency in IoT projects will bring peace of mind and confidence to the population. Certification systems administered by independent agencies can promote transparency. An example of this is IEEE CertifAIEd, a certification program that evaluates the ethics of Intelligent Autonomous Systems to protect, differentiate, and increase product adoption [15]. 6) Accountability: AI must be developed and implemented to provide an unambiguous basis for all choices. To help manufacturers and users understand their rights and obligations, laws and courts must clarify responsibility, culpability, and liability for problems in IoT devices before they are created or installed. 7) Awareness of Misuse: AI creators must protect themselves against any potential risks and prevent AI from being misused. The most effective way to prevent misuse of Internet of Things resources is to educate society at large and ultimately enforce the law. 8) Competence: Operators must acquire the knowledge and skills necessary for safe and effective operation, and AI developers must provide this information. Entities operating the Internet of Things (IoT) must establish documented regulations to regulate how the IoT should be managed. Additionally, ensure that operators have the necessary skills before starting to operate a system. Therefore, we suggest that you consider the \"General Principles\" before starting any Internet of Things project involving AI. Reflection must be collective and individual, preferably with members of society who are most interested in the project.\nThis thought and discussion in a society guided by \"General Principles\" must be recorded. This behavior will increase confidence in the use of artificial intelligence and Internet of Things technologies and increase the need for social support for projects based on these technologies.\n\"Chapters\", the next concept of IEEE EAD, provide more information on the subject and allow us to move from General Principles to closely examine the ethical issues of AI in specific contexts of your work.\nHowever, the IoT and AI project being developed should not include all subjects, from General Principles to Chapters. All topics and chapters in the IEEE EAD General Principles are suitable for most projects. Still, other questions may be relevant to ongoing Internet of Things and Artificial Intelligence projects. As there are no closed rules, it is necessary to talk to all aspects of society.\nThe chapters that were presented in IEEE Ethically Aligned Design are shown in Figure 3. \u2022 As we noted, the ethics and values that must be followed during the design, development, and implementation of AI are the general principles that are reiterated in the chapters. \u2022 Classical Ethics in Artificial Intelligence examines traditional ethical systems, such as philosophical traditions, religious and cultural systems, and how they view human morality in the information age. \u2022 Well-being seeks answers to how AI impacts human wellbeing by assessing, understanding, measuring, observing, protecting, and improving. \u2022 Affective computing emotional control in human-to-human interactions and AI design. \u2022 The Personal Data and Individual Agency believes that a person should make informed decisions where their terms and conditions can be recognized and honored through an algorithm.\n\u2022 Methods guiding ethical research and design aim to identify and establish values-based methods. Thus, the focus of AI development is human well-being. \u2022 AI for Sustainable Development understands that AI must help humanity by improving the quality and standard of living for everyone everywhere. This guarantees better standards of living, preserving people's dignity and preserving the environment. \u2022 The broad goal of embedding norms is addressed by embedding values in autonomous and intelligent systems, and embedding values in AI is also related to this: identifying the norms of the community in which the AI operates, computationally applying those norms to the AI, and evaluating whether the implementation of these standards in AI complies with the standards that reflect that community. \u2022 The policy demonstrates that well-functioning AI policies benefit the public interest on several significant issues. Government and professional organizations create national AI policies and regulations that protect and promote security, privacy, human rights, and cybersecurity, and increase public awareness about the potential effects of AI on society. \u2022 The focus of the law is on how the law responds to technological innovations represented by Artificial Intelligence (AI) and how the law guides and establishes the conditions for this innovation. Finally, it is possible to identify the most pressing \"issues\" and \"recommendations\" related to AI design using the process outlined by IEEE EAD. The IEEE Ethically Aligned Design issues and suggestions diagram is shown in Figure 4. Finally, all discussions must be recorded to facilitate the improvement of the decision-making process.",
+            "publication_ref": [
+                "b1",
+                "b14"
+            ],
+            "figure_ref": [
+                "fig_0",
+                "fig_1",
+                "fig_2",
+                "fig_3"
+            ],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Understanding artificial intelligence ethics and safety",
+            "journal": "The Alan Turing Institute",
+            "year": "2019-06",
+            "authors": "D Leslie"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Ethically aligned design: A vision for prioritizing human wellbeing with artificial intelligence and autonomous systems",
+            "journal": "",
+            "year": "2016-08",
+            "authors": " Ieee"
+        },
+        {
+            "ref_id": "b2",
+            "title": "First draft of the recommendation on the ethics of artificial intelligence",
+            "journal": "UNESCO",
+            "year": "2020-08-06",
+            "authors": ""
+        },
+        {
+            "ref_id": "b3",
+            "title": "Internet of things is a revolutionary approach for future technology enhancement: a review",
+            "journal": "Journal of Big Data",
+            "year": "2019",
+            "authors": "S Kumar; P Tiwari; M Zymbler"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Development of an iot based real-time traffic monitoring system for city governance",
+            "journal": "Global Transitions",
+            "year": "2020",
+            "authors": "M Sarrab; S Pulparambil; M Awadalla"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Performance trade offs in iot-based traffic monitoring and incident detection systems",
+            "journal": "IEEE",
+            "year": "2022",
+            "authors": "S V Ducca; C B Margi"
+        },
+        {
+            "ref_id": "b6",
+            "title": "A review of using iot for energy efficient buildings and cities: A built environment perspective",
+            "journal": "Energies",
+            "year": "2022",
+            "authors": "K M Al-Obaidi; M Hossain; N A Alduais; H S Al-Duais; H Omrany; A Ghaffarianhoseini"
+        },
+        {
+            "ref_id": "b7",
+            "title": "A cyber-physical system for energy efficiency and indoor air conditioning of multiple office rooms",
+            "journal": "IEEE",
+            "year": "2022",
+            "authors": "A P Neto; R A O Resende; M Nicolau; M R Pimentel; R I Ribeiro; G Beraldo Filho; F Fruett; J J Ramos"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Iot-equipped and ai-enabled next generation smart agriculture: A critical review, current challenges and future trends",
+            "journal": "IEEE Access",
+            "year": "2022",
+            "authors": "S Qazi; B A Khawaja; Q U Farooq"
+        },
+        {
+            "ref_id": "b9",
+            "title": "The effectiveness of iot and machine learning in precision agriculture",
+            "journal": "IEEE",
+            "year": "2022",
+            "authors": "B T De Faria; G M Tercete; R F Maia"
+        },
+        {
+            "ref_id": "b10",
+            "title": "A review on deep learning techniques for iot data",
+            "journal": "Electronics",
+            "year": "2022",
+            "authors": "K Lakshmanna; R Kaluri; N Gundluru; Z S Alzamil; D S Rajput; A A Khan; M A Haq; A Alhussen"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Recent trends towards privacy-preservation in internet of things, its challenges and future directions",
+            "journal": "IET Circuits, Devices & Systems",
+            "year": "2023",
+            "authors": "M Safaei Yaraziz; A Jalili; M Gheisari; Y Liu"
+        },
+        {
+            "ref_id": "b12",
+            "title": "A deep learning approach for iot traffic multi-classification in a smart-city scenario",
+            "journal": "IEEE Access",
+            "year": "2022",
+            "authors": "A Hameed; J Violos; A Leivadeas"
+        },
+        {
+            "ref_id": "b13",
+            "title": "An efficient spam detection technique for iot devices using machine learning",
+            "journal": "IEEE Transactions on Industrial Informatics",
+            "year": "2020",
+            "authors": "A Makkar; S Garg; N Kumar; M S Hossain; A Ghoneim; M Alrashoud"
+        },
+        {
+            "ref_id": "b14",
+            "title": "IEEE CertifAIEd",
+            "journal": "",
+            "year": "2023-08-06",
+            "authors": "I S Association"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Three pillars from IEEE Ethically Aligned Design [2].",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig. 2. General Principles from IEEE Ethically Aligned Design [2].",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 3 .3Fig. 3. Chapters from IEEE Ethically Aligned Design [2].",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 4 .4Fig. 4. Issues and Recommendations from IEEE Ethically Aligned Design [2].",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ICECET61485.2024.10698429"
+}

@@ -1,0 +1,11 @@
+{
+    "title": "Ethics of AI as practical ethics",
+    "authors": "Florian Richter",
+    "pub_date": "",
+    "abstract": "Whereas we acknowledge in general certain values as crucial for the ethical debate in AI, like e.g., fairness, transparency, and accountability, these values often can stand in conflict with each other. E.g., more transparency can lead to less privacy. Introducing higher principles to balance the values faces two problematic issues: (1.) Principles also can stand in conflict with each other and defer the discussion into a purely theoretical realm. (2.) If a higher-level principle is introduced and this also stands in conflict with another principle, then a higher-higher-level principle is needed, and we will get into an infinite regress. Although ethics of AI is part of the socalled field of applied ethics and it seems therefore that it is about the application of principles and values and finding the right balance regarding certain ethical theories, e.g., Kantian ethics or utilitarianism ([1][2][3]), the traditional approaches in the field of applied ethics do not offer sufficient conceptual means to deal with practical problems. Thus, the problems that arise from the implementation of intelligent systems can also not be handled adequately, because the same issue as above arises: How can the values be balanced regarding the ethical theories? If higher-level principles are not a viable approach to resolve conflicts of values, the criteria under which they can be implemented should be taken into consideration. Therefore, it is proposed that specific criteria for the implementation of the values need to be made explicit, which will result at least in a clarification for the public debate about certain technological advancements in the field of AI. [4] Furthermore, it is proposed that to resolve these conflicts the implementation must be evaluated, whether it enables human intervention in the future instead of making further actions and interventions impossible.",
+    "sections": [],
+    "references": [],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1109/ISTAS52410.2021.9629163"
+}

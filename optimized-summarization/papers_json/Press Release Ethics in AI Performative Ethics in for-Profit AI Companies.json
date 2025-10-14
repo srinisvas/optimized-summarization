@@ -1,0 +1,934 @@
+{
+    "title": "Press Release Ethics in AI: Performative Ethics in For-Profit AI Companies",
+    "authors": "Amanda Potasznik",
+    "pub_date": "",
+    "abstract": "As various types of Artificial Intelligence (AI) enjoy a surge in popularity and funding, researchers, activists, and laypeople have questioned the associated negative consequences that use of AI technologies can bring. Sensitive to these concerns, many companies that specialize in various forms of AI development have published policies that describe the ethical considerations and protocols they have enacted in order to protect users and minimize societal harm that may be caused or exacerbated by the use of their products. While the policies are encouraging and seemingly comprehensive, multiple problems remain. Policy content is specific enough to encourage feelings of safety and comfort, but in many cases, it is still vague and amorphous enough to allow behavior that contradicts the initial reassurance. Companies reserve the right to change their policies as they deem appropriate, which can lead to users having outdated views on company stances. And in some cases, companies can deliberately renege on their own policies with impunity. As a result, companies can exploit users' ignorance or inattention and engage in problematic, \"irresponsible\" AI while maintaining a surface appearance of goodwill and ethical compliance. This critical analysis of certain AI companies' policies (and news coverage of subsequent issues and changes in those policies) aims to highlight examples of such pretense. The paper is limited to analysis of policies for 7 companies chosen for their name recognition in the AI landscape and news coverage: OpenAI, Google, X AI, Meta, Anthropic, Microsoft, and Anduril. AI companies' practice of making reassuring ethical claims in their policies then backtracking later on is labeled in this paper as \"Press release ethics.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "The public is \"firmly wary\" [1] about various forms of AI in their lives, and business people [2], economists [3], and Silicon Valley billionaires [4] are dutifully offering reassurance about their AI technologies. Companies that specialize in various forms of AI development (\"CAIDs\") pledge to develop \"responsible AI\" [5][6][7][8], allowing \"organizations to make more ethical, effective and efficient decisions by eliminating potential sources of bias\" [5]. Still, assurances that fundamental threats to our livelihoods and lives are very far down the line may ring hollow to the writers, programmers, and others whose jobs were replaced by AI within months of ChatGPT's release to the public in November 2022 [9]. Indeed, it's not uncommon for companies in general to publicly say one thing and privately do another, sometimes simultaneously, as detailed in Section II.\nCAIDs show signs of engaging in the same bait-and-switch behavior when it comes to ethical concerns about their products and services. Given the specific new domain for this phenomenon, I posit a new term to describe such slippery, \"ethics washing\" practices: Press Release Ethics (PREs). Indeed, the ethical issues acknowledged and considerations offered by CAIDs make for a good press release: a genre of communication that is historically \"self-serving\" [10] and allows CAIDs to focus on the positive despite undeniable harm caused by their products [11]. Press releases enable companies to \"stress good news and downplay bad news\" [10], which CAIDs must do on a regular basis as the ethical concerns of AI adoption mount. The companies need to be seen as considerate of ethical concerns, but could fall behind their competitors if they were to fully embrace exclusively ethical practices, and thus are disinclined to do so from a business and, potentially, existential standpoint. PREs, in general, embody performative ethics. PREs, in the context of Responsible AI policies, are characterized by two phases. In Phase 1, companies make public ethical reassurances regarding AI applications (to appease the public). In phase 2, those companies quietly backtrack on those reassurances (to minimize harm to the company's development and profitability). I posit that many of CAIDs' purported policies are little more than ethics theater: public-facing moral principles and behind-the-scenes hypocrisy.\nIn addition to its obvious duplicity, this reassurance/backtracking combination in CAIDs brings its own additional ethical issues to bear. The high barrier to entry of the field of AI development, due to stratospheric demands for training data and computing power for the creation of AI programs, has resulted in researchers calling the domain \"Big AI\" [12]. With CAIDs enjoying so much power (and, as will be described, so little oversight), there is an inherent power imbalance in the resulting landscape. The failure of companies to adhere to their own initial policies, instead changing them to suit evolving environments and profit goals or violating them outright, leaves ethical decision-making responsibility to third party groups and individual users (who aren't as well funded and whose concerns do not easily influence business strategies).",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b4",
+                "b8",
+                "b9",
+                "b10",
+                "b9",
+                "b11"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. IRRESPONSIBLE AI",
+            "text": "In recognition of the disruptive and potentially destructive power of AI technologies, disparate groups have called for such technologies to be used \"responsibly.\" That word emphasizes the duty that CAIDs have to exercise good judgment [13] in the development and deployment of AI technologies given their positions of power over the general public. Responsible AI, however, means different things to different CAIDs. A suitable definition of the term for this paper is \"the framework and principles behind the design, development, and implementation of AI systems in a manner that benefits individuals, society, and businesses while reinforcing human centricity and societal value\" [14]. The tenets of Responsible AI also vary across CAIDs, employees of which appear to be the authors of the most popular articles on the subject. Most CAIDs, however, claim adherence to a list of ethical considerations that is very similar to that of IBM's: \"accountability, reliability, inclusion, fairness, transparency, privacy, sustainability, and governance\" [15]. This list is highly ambiguous. Even the more detailed explanations about each term (\"Inclusion aims to improve the usability and outcomes of machine learning models by ensuring a variety of racial, cultural, and experiential viewpoints are considered\" [15]) leave plenty to the imagination. How, exactly, is that variety of viewpoints \"considered\"? What weight is given to various \"viewpoints\"? The syntax and vocabulary words themselves are bland and vague, reminiscent of a chatbot's careful prose [16]. The ambiguity of those tenets can certainly be attributed to a broad, layperson audience; not everyone concerned about AI can understand the technological processes needed to navigate, for example, IBM's impressive Fairness 360 toolkit which \"includes a comprehensive set of fairness metrics for datasets and models, explanations for these metrics, and algorithms to mitigate bias in datasets and models\" [17]. The layperson-friendly ambiguity could also, however, simply be an easy out; companies drawing from \"a gallery of feel-good, Responsible AI technology remedies\" (as one a Forbes Councils Member put it in a call for Responsible AI) [18] so that they have something to point to in order to placate uneasy users and regulators. Indeed, such bromides may provide just enough comfort for users to suppress their cognitive dissonance in using (and paying for) technologies that they find disconcerting [1]. Regardless of the CAIDs' intentions in framing and phrasing their Responsible AI pledges and policies, discrepancies between policy assurances and problematic real-world applications fit the pattern of PREs.\n1 One indication of the company's intention to engage in the behavior they stringently denied is perhaps found in their 2018 patent application for an \"application module [that] record[s] ambient audio\" [29] III. THE GREAT TECH COMPANY BACKTRACKS",
+            "publication_ref": [
+                "b12",
+                "b13",
+                "b14",
+                "b14",
+                "b15",
+                "b16",
+                "b17",
+                "b0",
+                "b28"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. For companies in general",
+            "text": "Companies in general sometimes find themselves obligated to backpedal on policies that favor consumers and users when it is realized that the policy is too unfavorable for the company. People who become customers based on alluring promises can find themselves on the wrong end of a bait and switch when a company backtracks on its previous policy and installs a new one, less favorable to consumers and more favorable to the continued growth of company profits. When the clothing company L.L.Bean changed its decades-old no-time-limit, noreceipt-necessary return policy to one that allowed returns only within one year of purchase, customers balked, and some even sued the company [19]. The Ford Motor Company put out a press release when it earned \"a perfect score\" on the \"Human Rights Campaign Corporate Equality Index, a national benchmarking survey and report on corporate policies and practices related to LGBT equality in the workplace\" [20], but withdrew its participation in the index a few years later when right-leaning critics voiced their displeasure of Ford's Diversity, Equity, and Inclusion (DEI) policies [21].\nOf course, companies may justify such reversals as inevitable as they respond to evolving market trends, as, according to a technology consultancy firm, \"even the longeststanding traditions and expectations can change overnight in an instant\" [22]. If \"policies remain static, trapped in a time warp of sorts,\" as companies keep their original promises, they may not be able to \"mitigate liabilities and foster a secure operational landscape\" [23] (those quotes are from a risk management company's blog article, which exemplifies an expedient use of chatbot prose itself). The business jargon belies the fact that companies draw in new customers by touting their attractive, but ultimately temporary, concerns for unwavering ethical practices, customer well-being, and fairness. Once customers are secured, the policy becomes subject to \"liabilities,\" and logically changes to suit the companies' bottom line. PREs are irrefutably profitable, and that profitability has historically outweighed, and continues to outweigh, concern for users and consumers. In fact, some researchers have concluded that \"[a]ny conversation concerned with the impact of AI and technology on society must also be concerned with the impacts of capitalism and the reality of economic profit over consumer impact\" [24], putting AI companies squarely in the space of general profit-centric businesses.\nTechnology companies are not exempt from such profitseeking, ethics back-tracking behavior. Google raised eyebrows when it removed the \"Don't be evil\" credo from the top of its company code of conduct several years ago [25]. Meta, formerly Facebook, denied rumors of listening in on users via their cell phone microphones for the purpose of serving them tailored ads multiple times since at least 2017 [26,27], only for their advertisers to admit to the practice in 2024 [28] 1 . Video telephony platform Zoom was charged by the FTC with misleading users \"since at least 2016\u2026 Zoom [touted] that it offered 'end-to-end, 256-bit encryption' to secure users' communications, when in fact it provided a lower level of security\" [30]. The company also made changes to its terms in 2023, quietly mentioning in the updated version that the company would now reserve the right to use customers' \"video recordings, audio transcripts, or shared files\u2026 for lots of things, including training Zoom's machine learning and artificial intelligence applications\" [31]. To summarize the issue, While each of the mega -companies, at least on paper, boasts a set of values unquestionable for their integrity, it is also true that most have had to face crises precisely due to the lack of some of the principles they themselves proclaim [32].\nSimilar to the ethically dynamic nature of company documentation, there is a personnel component to PREs. Some ethics-minded employees even find themselves having to permanently sever ties with the company due to blowback, as in the case of former Google researcher Timnit Gebru [33]. Facebook whistleblower Frances Haugen noted that Meta \"chooses profits over safety\" in documents provided to journalists before her departure from the company [34]. The performative aspect of Silicon Valley PREs is now on full display, but arguably technology companies including Meta have successfully navigated the blowback associated with the behind-the-scenes renunciation of their own purported concern for user well-being. Even when there is negative press coverage of such events, there doesn't seem to be much effect on the companies' continued operations or bottom lines [35], emphasizing both to the public and to the companies themselves that no change to their modus operandi will be demanded. This convenient repudiation of ethical tenets is now being repeated in CAIDs.",
+            "publication_ref": [
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b22",
+                "b23",
+                "b24",
+                "b25",
+                "b26",
+                "b27",
+                "b29",
+                "b30",
+                "b31",
+                "b32",
+                "b33",
+                "b34"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. For CAIDs in particular",
+            "text": "Certainly, CAIDs are not immune to the evolving market trends which, historically, have forced companies to relegate ethics to the backburner despite previous claims of adherence to Responsible AI policies. But the principles of technology ethics, such as the assertions that \"health, safety and welfare of the public is primary\" and that software should be approved only if [programmers] have a well-founded belief that it is safe, meets specifications, passes appropriate tests, and does not diminish quality of life, diminish privacy or harm the environment. The ultimate effect of the work should be to the public good\" [36], are categorized as \"fundamental\" and certainly should not change with market trends. Yet CAIDs arguably not only break from moral codes in their business practices, but also break their own policies as the winds shift. Investigative reporting from the New York Times showed that \"OpenAI, Google and Meta 2 Relying on CAIDs to regulate themselves is unsurprisingly problematic, but their reaction to government regulation is also difficult to follow. Some CAIDs have publicly supported statelevel legislation in California that puts limits on their ability to train their models, while others have opposed it [40]. The legislation has been criticized both for not going far enough in its limitations of CAIDs and for going too far and \"stifling innovation\" according to OpenAI [41].\nThere is no federal level legislation regulating CAIDs at the time of this writing [42].\nignored corporate policies, altered their own rules and discussed skirting copyright law as they sought online information to train their newest artificial intelligence systems\" [37]. It seems that CAIDs are ready to adhere to publicly declared Responsible AI tenets until it's no longer profitable to do so -a clear match to the description of PREs.\nAround the end of 2022, multiple CAIDs united in a public call for a moratorium on AI development [38], but the pause never quite materialized [39]: another indication of the variance between CAIDs stated plans and their own actions 2 . Individual CAID safety teams also seem to suffer startling rates of attrition, and in cases total disbandment, which will be discussed in detail in the next section.",
+            "publication_ref": [
+                "b35",
+                "b39",
+                "b40",
+                "b41",
+                "b36",
+                "b37",
+                "b38"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "1) Open AI:",
+            "text": "The formation of \"safety teams\" at OpenAI was heralded with press coverage and touted on the company website [43]. The original team was disbanded, however, after less than one year in existence [44], [45] and replaced by one headed by its own CEO [46] 3 . Arguably, the precariousness of safety teams at OpenAI is due in part to \"a culture of recklessness and secrecy\" as one former employee described [48]. Journalists have struggled to find former OpenAI employees who were willing to share their experiences due to some punitive protocols for those leaving the company:\nThat's partly because OpenAI is known for getting its workers to sign offboarding agreements with non-disparagement provisions upon leaving. If you refuse to sign one, you give up your equity in the company, which means you potentially lose out on millions of dollars. [45] Still, with some current employees speaking anonymously and some former employees forgoing the offboarding agreement, there are records of people with knowledge of the company's inner workings reporting concerns that do not align with the upbeat assurances we see in the OpenAI safety policy. Daniel Kokotajlo is \"a former researcher in OpenAI's governance division\" who said in an interview \"that the probability that advanced A.I. will destroy or catastrophically harm humanity\u2026 is 70 percent\" [48]. The alignment of OpenAI's safety practices with the characterization of PREs is also evident in consideration of the former researcher's description of a disconnect between company safety protocols and actions: \"At OpenAI, Mr. Kokotajlo saw that even though the company had safety protocols in place \u2026 they rarely seemed to slow anything down\" [48].\nBeyond the uses of such technologies, their creation is also facilitated by duplicitous practices, including scraping training data from unapproved sources. OpenAI created speech to text programs so that they could feed the text from YouTube video transcriptions into their LLMs. Not even Google, though, could bring themselves to call OpenAI out on this practice. Why not? Some Google employees were aware that OpenAI had harvested YouTube videos for data, two people with knowledge of the companies said. But they didn't stop OpenAI because Google had also used transcripts of YouTube videos to train its A.I. models, the people said. That practice may have violated the copyrights of YouTube creators. So if Google made a fuss about OpenAI, there might be a public outcry against its own methods, the people said. [37] CAIDs, then, cannot call out unethical behavior or uses of their datasets by other companies because they themselves may be engaged in the same secretive and duplicitous practices. As such, phase 2 of PREs (that is, the phase in which the company backpedals on its previous declarations of ethical behavior) are understandably played down. Only investigative journalism and research can bring the actual business practices to light, since the CAIDs themselves maintain the charade of adhering to their own policies. 42) Google (Gemini): In an open letter introducing Google's AI assistant, Gemini, Google CEO Sundar Pichai wrote, \"We're approaching this work boldly and responsibly\" [49] and alluded the company's AI principles, which state that Google's objectives for AI applications will \"[b]e socially beneficial, be built and tested for safety, be accountable to people\" and that \"we will not design or deploy AI [that is applied in the area of t]echnologies that cause or are likely to cause overall harm [6]. The company goes beyond what most of its AI competitors provide in the way of documentation of changes to policies, providing a list of updates and iterations of its policies in easily accessible PDF form. When initial versions of Gemini were documented to generate images with historical inaccuracies and racial bias [50], the program was suspended and the senior vice president of the company published an open letter entitled \"Gemini image generation got it wrong. We'll do better\" [51]. The overall impression when reading the company's Gemini introduction and AI Principles is one of integrity: taking responsibility for its formidable computing power and full disclosure of its shortfalls.\nBut beyond the company's own documentation, PRE attributes are evident. For example, it was found that \"Google violated its promised standards\" in placing third-party advertisements [53], and since the company uses AI for advertising 5 , this violation fits comfortably in the AI PRE category: Google promised one thing in its AI policies but did another, accepting payments from customers who thought the company was following its own rules. Summarizing a logical response to such PREs, one customer said \"'I feel cheated\u2026 What I requested to buy was not what I got'\" [53].\nThe size needed for viable (and marketable) LLM training sets has also led CAIDs, including Google, to reconsider its previous guarantees of privacy and protection for users. Those size requirements have already resulted in CAIDs exhausting publicly available data online and bumping up against paywalled content in their search for more data to feed their programs [55]. I have already discussed OpenAI and Google scraping user content from the open internet in the form of YouTube videos. Google has an advantage in the realm of information beyond the open internet, of course. Millions of people use its Drive services to create their own documents, and its review platform also contains plenty of user-generated content. The company has now changed its terms of service (after the vast majority of users had agreed to previous versions with different clauses) to enable it to harvest those sources of personal, private information for the purpose of training its LLMs:\nLast year, Google also broadened its terms of service. One motivation for the change, according to members of the company's privacy team and an internal message \u2026 was to allow Google to be able to tap publicly available Google Docs, restaurant reviews on Google Maps and other online material for more of its A.I. products. [37] \"Tapping\" information sources beyond the scope of their initial protocols is a glaring example of secondary use, or the use of data for reasons beyond their primary purpose. In this case, Google markets (and profits from) its Drive services as allowing users to easily generate documents for themselves, an arrangement that has drawn customers since 2012 [56]. Only recently has the company maneuvered so that it can now also harvest its customers' documents to train AI models, constituting secondary use, the exclusive benefit of which is derived by the company.\nIn chorus with other CAIDs, Google has also suffered attrition and full disbandment of their AI safety team, the \"Responsible Innovation team\" [58]. Also in chorus with many CAIDs, the company has publicly declared that despite the safety team disbanding, safety is a top priority for the company: \"Despite these changes, a Google spokesperson assured that the team's mission will proceed in an even more robust manner, though specifics were not disclosed\" [57]. It is the lack of specifics, of course, that are emblematic of PREs: the overarching public message is one of reassurance, but details don't bear that out.\nPerhaps most egregiously, Google quietly changed course on its pledge to develop AI for responsible uses, with a gentle notice at the top of its 2018 blog post about responsible AI: \"We've made updates to our AI Principles.\" Those updates?\nThe company removed language promising not to pursue \"technologies that cause or are likely to cause overall harm,\" \"weapons or other technologies whose principal purpose or implementation is to cause or directly facilitate injury to people,\" \"technologies that gather or use information for surveillance violating internationally accepted norms,\" and \"technologies whose purpose contravenes widely accepted principles of international law and human rights.\" [59] The adherence to PRE methods is undeniably apparent in this removal.",
+            "publication_ref": [
+                "b42",
+                "b43",
+                "b44",
+                "b45",
+                "b47",
+                "b44",
+                "b47",
+                "b47",
+                "b36",
+                "b48",
+                "b5",
+                "b49",
+                "b50",
+                "b52",
+                "b52",
+                "b54",
+                "b36",
+                "b55",
+                "b57",
+                "b56",
+                "b58"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "3) Grok-2 (via xAI:)",
+            "text": "The social media company X, run by Elon Musk, has also entered the generative AI space with Grok (and now Grok-2). Musk has a rather negative record when it comes to business ethics: \"Elon Musk has violated a lot of the social contract, and its basis of trust, with employees, with investors, suppliers, regulators, and other parts of his ecosystem\" [60]. Specifically, the incentivization of violent content on X under Musk has drawn extensive criticism [60], and he has been charged with fraud by the Securities and Exchange commission [62]. The CEO doesn't sugarcoat his views on the damaging potential of AI: \"There is some chance that is above zero that AI will kill us all\u2026 I think we should also consider the fragility of human civilization\" [63]. Given this fairly negative public perception, it is tempting to spare Grok-2 from the list of PRE CAIDs. But despite a CEO with plenty of bad press, there are still vestiges of performative ethical assurances scattered throughout the company's documentation.\nIn the Grok-2 \"About\" page, for example, it is claimed that the CAIDs goals are for the common good: \"xAI is a company working on building artificial intelligence to accelerate human scientific discovery. We are guided by our mission to advance our collective understanding of the universe.\" The Acceptable Use Policy for Grok-2, composed of only 248 words including the title and date, concludes with a phrase that can only be interpreted as its writers claiming the high moral ground: \"Be a good human, it's really not that hard\" [64].\nAs such, there is indeed the hallmark discrepancy between stated company policy and documented company action. \"Unlike more restrained AI models like ChatGPT or Google's Gemini, Grok-2 seems to operate with fewer ethical guardrails\" [65]. Grok-2, born as it is from a social media company, joins Meta as a CAID that has direct influence in global discourse. Rather than using that influence to attempt to slow the waves of online misinformation that plague society today, AI models like Grok-2 instead add to the chaos: \"In an era when distinguishing fact from fiction online is already challenging, tools like Grok-2 could exacerbate the spread of misinformation and deepen societal divisions\" [65]. Of course, X and Grok-2 are not the only social media sites that profit from users' engagement with manufactured content and the calcification of viewpoints in algorithm-powered filter bubbles. Other social media companies, however, at least go through the motions of content moderation. \"Grok allows misinformation to proliferate unchecked, a significant departure from the moderated environments that its competitors maintain\" [66].",
+            "publication_ref": [
+                "b59",
+                "b59",
+                "b61",
+                "b62",
+                "b63",
+                "b64",
+                "b64",
+                "b65"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "4) Meta AI:",
+            "text": "As one of the most successful social networking platforms in existence, Meta (a parent company that now owns Facebook, Instagram, and Whatsapp) has substantial name recognition when it comes to dubious ethical practices.\nResearch documenting problematic business practices at the company goes back decades [67] and continues to this day.\nMeta's ethical messaging is, predictably, heavy on optimistic rhetoric and world improvement, from its introduction (\"we build products and experiences to give people the power to build community and bring the world closer together\") to the individual principles (\"Keep people safe and protect privacy-we are committed to protecting our communities from harm\") [68]. But true to PRE form, these policies are more aspirational than concrete. Meta founder Mark Zuckerberg has testified at governmental hearings that were called in response to legislators' alarm at the company's lucrative algorithms and the myriad societal ills that came as a direct result: the proliferation of misinformation, societal division, and even child exploitation, among others [69]. It is widely acknowledged that the company's ethical failures are, to borrow from programmer Sandra Lee Harris' 1971 user manual [70], a feature, not a bug: \"If Facebook employed a business model focused on efficiently providing accurate information and diverse views, rather than addicting users to highly engaging content within an echo chamber, the algorithmic outcomes would be very different\" [71].\nAs Meta joins the CAID space, the company is further engaging in PRE practices. The discrepancy between company policy and business practice are clear. \"Privacy-focused\" messaging platform WhatsApp shares users' data with Facebook and gradually degrades if users do not agree to that policy [72]. Zuckerberg is also laying the foundation to abdicate ethical responsibility from his own company to the U.S. government when it comes to controlling the AI technologies from which he profits: \"Congress should engage with AI to support innovation and safeguards. This is an emerging technology, there are important equities to balance here, and the government is ultimately responsible for that\" [63].\nWhile it seems that Zuckerberg believes Meta's limitations should come from Congress, not its own policies, company lawyers reportedly do not shy away from lawsuits that may result from sidestepping government regulations. In its quest to harvest training data for its AI programs, the company appears ready to buy out obstacles in its path and to break some rules in the name of expediency: At Meta, which owns Facebook and Instagram, managers, lawyers and engineers last year discussed buying the publishing house Simon & Schuster to procure long works, according to recordings of internal meetings obtained by The Times. They also conferred on gathering copyrighted data from across the internet, even if that meant facing lawsuits. Negotiating licenses with publishers, artists, musicians and the news industry would take too long, they said. [37] Given the discrepancies between Meta's own policies and their past and current behavior, it is reasonable to conclude that they will fit squarely into the PRE category among CAIDs. 6New Zealand, and Australia. In doing so they made Llama open source, a move that quickly resulted in its use by the Chinese military [101], [102].",
+            "publication_ref": [
+                "b66",
+                "b67",
+                "b68",
+                "b69",
+                "b70",
+                "b71",
+                "b62",
+                "b36",
+                "b100",
+                "b101"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "5) Anthropic (Claude):",
+            "text": "The company that developed the Claude AI assistant, Anthropic, has cultivated a reputation of ethical behavior amidst rival AI giants [73]. Its founders all started at OpenAI, but left to create their own AI company \"on a promise of building reliable and steerable AI systems\" [74]. When more employees and executives left OpenAI due to ethical concerns (documented in the previous section), several joined Anthropic [75], with the implied message that Anthropic did not share the dismissive attitude toward ethics and safety that OpenAI had. Indeed, Anthropic researchers have identified and publicized shortcomings of their LLMs [76], and the company co-president has been profiled in The Atlantic in an article entitled \"Building AI With a Conscience\" [77]. The company declares on their help center website that \"User safety is core to Anthropic's mission of creating reliable, interpretable, and steerable AI systems\" [78], and their AI Constitution details an approach to training models while \"helping to avoid toxic or discriminatory outputs, avoiding helping a human engage in illegal or unethical activities, and broadly creating an AI system that is helpful, honest, and harmless\" [79].\nBut a closer look reveals some hallmarks of PREs even in this safety-focused company. Some subtle gray-on-white text at the top of The Atlantic article indicates that it is \"Sponsor Content\" rather than a feature created by the editorial staff 7 . Anthropic accepted a multi-billion-dollar investment from Google, resulting in an antitrust investigation in the United Kingdom [80]. Web publishers have bristled at the company's training methods, relating that \"Anthropic is swarming their sites and ignoring their instructions to stop collecting their content to train its model\" [81]. The contradictions between this CAID's stated practices and its real-world practices have led journalists to ask: \"Is it even possible to run an AI company that advances the state of the art while also truly prioritizing ethics and safety?\" and ultimately answer in the negative, concluding that \"even high-minded Anthropic is becoming an object lesson in that impossibility\" [82].",
+            "publication_ref": [
+                "b72",
+                "b73",
+                "b74",
+                "b75",
+                "b76",
+                "b77",
+                "b78",
+                "b79",
+                "b80",
+                "b81"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "6) Microsoft (Copilot):",
+            "text": "Like most CAIDs, Microsoft extensively documents its commitment to ethical business practices on its consumer-facing site:\nOur commitment to corporate responsibility and integrity guides everything we do as a company and defines the work of our ethics and compliance program. We have high ethical standards governing the way we conduct our business, standards that we also apply to our suppliers and business partners. Our business practices and standards reflect our commitment to making a positive impact around the globe. We demand such high standards from ourselves and our partners to preserve trust with our customers, governments, investors, partners, representatives, and each other, and because it is the right thing to do.\nAdditionally, on the company's \"Trust Code\" documentation for employees (linked to from the user-facing page), a large, bold font subheading instructs: \"When making decisions, ask 7 \"This content is made possible by our sponsor and is independent of The Atlantic's editorial staff\" [76] yourself: does this build or harm trust with our customers?\" There are 53 pages in the Trust Code document, detailing the company's supposed commitment to earning trust with customers, governments, communities, investors, the public, suppliers, and employees. All told, there are dozens of pages of company documentation dedicated to the message that Microsoft is an ethical, trustworthy company. As another researcher summarizes: \"Overall, Microsoft's AI principles reflect a comprehensive and thorough approach to the development and use of their own technology\" [32].\nAs with other CAIDs, some of those claims appear to be aspirational rather than de facto. Researchers have called the company out for unethical business practices for decades, documenting issues from unfair competitive practices [82] to enabling censorship by complying with Chinese requirements for doing business [84]. In the AI realm, in 2023, the company laid off its entire ethics and society team within the artificial intelligence organization\u2026 [leaving] Microsoft without a dedicated team to ensure its AI principles are closely tied to product design at a time when the company is leading the charge to make AI tools available to the mainstream\" [85] A software engineer at the company reported that Microsoft's AI image generator \"created \u2026 sexualized images of women in violent tableaus, and underage drinking and drug use\" [86]. While it arguably takes some trial and error to discover and fix such issues, the problem for Microsoft appears to be at the structural level. Firing the ethics and society team, argue some ethicists, resulted in issues, which should have been fixed prior to release, being released into the world in real time: \"Microsoft is in deep trouble because of the model they've adopted. And the ethicists who are pulling the whistleblower siren have to do so because they got rid of the people inside who would help them\" [87 ].\n7) Anduril: Anduril, a company that makes autonomous weapons (uniting AI and warfare), meets the qualifications for PREs. A journalist interviewing one of the company's co founders and former Trump military advisor, Trae Stephens, summed up the ethical bait-and-switch in his questioning: \"When I wrote about Anduril in 2018, the company explicitly said it wouldn't build lethal weapons. Now you are building fighter planes, underwater drones, and other deadly weapons of war. Why did you make that pivot?\" [87]. The cofounder defended his company's ethical flip-flop with vague business jargon and xenophobic fear-mongering, and continued to claim that the company is standing by their ethical principles in creating machines that kill human beings:\nWe responded to what we saw, not only inside our military but also across the world. We want to be aligned with delivering the best capabilities in the most ethical way possible. The alternative is that someone's going to do that anyway, and we believe that we can do that best. [87] \"We can do that best\" is a slogan worthy of a press release. By invoking that phrase as he gives reasons why, six years ago, he said the company would do the opposite of what it's doing today, Stephens gave a prime example of PREs.\nStephens also echoed Zuckerberg's previously documented abdication of ethical responsibility, concluding that the government should set ethical boundaries rather than companies themselves: \"I don't think that there's a whole lot of utility in trying to set our own line when the government is actually setting that line\" [87]. His fellow co-founder Palmer Luckey agreed, stating \"I don't think I'm the guy to teach people ethics. I can give people my perspective\" [88] 8 .\nLater in the interview, Stephens pushed the limits of performative ethics, declaring that not only is his autonomous weapons company doing the right thing, but that he wishes other technology companies would be more ethical, going so far as to claim the ultimate divine ethical endorsement: \"The call that I have been trying to make to the tech community is that we have a moral obligation to do things to benefit humanity, to draw us closer to God's plan for his people\" [89].\nAnduril does not have a published ethics code to contradict. I posit, however, that the company still qualifies as engaging in PREs due to its co-founders going back on their word about developing autonomous weapons in the first place, their hypocrisy in suggesting that other technology companies have scorned Anduril's pleas for better moral behavior, and their blasphemous audacity in declaring that they are enacting God's plan by profiting from the creation of autonomous killing machines.",
+            "publication_ref": [
+                "b75",
+                "b31",
+                "b81",
+                "b83",
+                "b84",
+                "b85",
+                "b86",
+                "b86",
+                "b86",
+                "b86",
+                "b87",
+                "b88"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. PERFORMATIVE ETHICS IN ACADEMIA AND RESEARCH",
+            "text": "Academic research has also been accused of such performative ethics and cannot be excluded from this conversation. While researchers may consider themselves to be neutral parties in the documentation and expansion of AI ethics, their lack of introspection and self-analysis is performative and potentially destructive: \"Without systemic analysis\u2026 work dedicated to positively improving the impact of technology on society will be performative at best and reify systems of oppression at worst\" [24]. Critical theory scholars have identified systems of oppression in myriad places in society, and now those systems are manifesting in a post-AI world.\nIt is easy to see how systems of oppression may manifest in AI companies: CAIDs oppress regular users by training systems on their content without notice or consent [12], [90], and have used the resulting technology to render users' jobs obsolete [91,92] and even kill people [103]. While CAIDs profit and grow from that oppression, regular users are encouraged to adapt to the situation [93]. The capitalistic component of our society seems to have convinced regular people that they must use (i.e., pay subscription fees to use) AI in order to remain employable in a job market in which that same AI threatens their employability. This paradox, which greatly favors CAIDs at the expense of regular people, is indicative of the creeping normalcy phenomenon:\n\u2026 the term \"creeping normalcy\" [can] refer to such slow trends concealed within noisy fluctuations. If the economy, schools, traffic congestion, or anything else is deteriorating only slowly, it's difficult to recognize that each successive year is on the average slightly worse than the year before, so one's baseline standard for what constitutes \"normalcy\" shifts gradually and imperceptibly. It may take a few decades of a long sequence of such slight year-toyear changes before people realize, with a jolt, that conditions used to be much better several decades ago, and that what is accepted as normalcy has crept downwards. [94] Indeed, even in the relatively quick-paced explosion of the use of certain types of AI, CAIDs have established the normalcy, and inevitability, of their domination in society.\nAs mentioned in the introduction, due to the vast amounts of training data and computing power needed to develop AI, researchers have classified CAIDs as \"Big AI.\" Smaller and slower moving companies (and perhaps those that pause development in order to ensure ethical goals are met) are simply shut out. This setup contextualizes the CAID sentiment that AI that is developed fast is the most profitable, an idea summarized by Michael Woolridge of Oxford. In an article he wrote about Big AI, Woolridge theorized about the inner monologue of a CAID leader, writing \"the race for scale that we have witnessed in AI over the past five years is perhaps no surprise: if bigger is better, then let us make it bigger-and let us do it before our competitors\" [12]. Hence the importance of groups of resistance: without researchers, advocacy groups, and the government reining in CAIDs, only capitalism and its mantra of constant growth will control CAIDs, which of course means no control at all. Their dominance will continue to breed more success, contributing to a status quo in which ethical concerns are effectively performative: lines in a script that do nothing to control or mitigate profitable harm on a large scale. The status quo is a powerful force in upholding systems of oppression [95], within tech fields and without.\nResearchers have documented user trust in big companies, showing that many users use websites and applications without reading the terms and conditions because they believe that \"If there were anything bad in the policy, it would be illegal\" [96]. But governmental regulation is far outpaced by CAID developments, and there is still no enforceable law at the federal level that regulates CAIDs. Instead, there is a patchwork set of state laws (in Oregon, Montana, New Hampshire, Tennessee, and Delaware) [97] and national blueprints [98] that indicate an understanding of the issue but not a concrete way to address it or punish violations at the federal level.\nWith CAIDs being profit-motivated, consumers feeling the need to adapt to CAIDs, and the U.S. government lagging in enforceable legislation to temper unethical AI practices, it is arguably researchers who are best placed to identify and interrogate problematic AI ethics policies and actions. I add another consideration to McFadden and Alvarez's call for researcher critical theory: research that addresses ethics in AI without interrogating the adjacent PREs component contributes to the tacit acceptance, and subsequent perpetuation, of historical systems of oppression. Research of CAID PREs without denouncement adds to the creeping normalcy mentioned previously, and contributes to inertia bias: When the first wave of users accepts the discrepancies between CAIDs stated policies and their actual practices, the acceptance becomes entrenched and harder to resist for future generations.\nV. CONCLUSION: OPTIMISM AND HEALTHY SKEPTICISM Subjecting new AI technologies to critical analysis does not stop their exponential rate of development and adoption in the marketplace. As described in section II, even the CAIDs themselves find controlling or decelerating AI development an impossible task. This paper focused on seven CAIDs: OpenAI, Google, X AI, Meta, Anthropic, Microsoft, and Anduril. That focus should not, however, be interpreted to mean that other CAIDs don't exist or don't have problematic PREs in their policies.\nEvolving landscapes are, of course, inevitable as people use brand-new and untested technologies, including those that use AI. People and companies may be aspirational and have to regroup when they realize their stated goals are too optimistic and not 100% compatible with the current reality. The fact that CAIDs and other businesses fall short in similar ways may be part of the human experience. The medical breakthroughs alone of AI use demonstrate that a complete shutdown of this new technology would be damaging to humans.\nBut given the power, scale, and amounts of money flowing into the sector, now is the time to be brutally honest about what CAIDs do. There are glaring discrepancies between CAID companies' policies and their actual practices, ranging in severity from copyright violations to killing human beings. Researchers must amplify their concerns about the ethical challenges of these systems and companies. Teachers must resist calls to implement AI in their classrooms without a healthy dose of interrogation, and perhaps even reject those calls altogether in order to ensure that students do not blindly adopt such tools for the everyday challenges they face. Governments should regulate CAIDs heavily. CAIDs themselves must abandon PREs and instead make their business practices match their policies (and vice versa).\nWith governments slow to develop legislative limits to CAID power, and CAIDs themselves insisting that their only limits should come from governmental regulation, researchers and users may be the best advocates for change. As matters stand, the most urgent primary need for researchers and users is a strong sense of cynicism when reading ethics statements and policies from CAIDs. Given the volatile relationship between profit-driven business practices and ethical concerns, we cannot take CAIDs at their word until there is a dramatic shift in accountability for the industry.",
+            "publication_ref": [
+                "b23",
+                "b11",
+                "b89",
+                "b90",
+                "b91",
+                "b102",
+                "b92",
+                "b93",
+                "b11",
+                "b94",
+                "b95",
+                "b96",
+                "b97"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Americans Express Real Concerns About Artificial Intelligence",
+            "journal": "",
+            "year": "2024-09-19",
+            "authors": "J Ray"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Council Post: Why You Don't Need To Worry About AI",
+            "journal": "Forbes",
+            "year": "2024-09-19",
+            "authors": "E Council Forbes Technology"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Don't worry (too much) about AI",
+            "journal": "The Economic Times Bureau",
+            "year": "2023-06-06",
+            "authors": ""
+        },
+        {
+            "ref_id": "b3",
+            "title": "Bill Gates explains why we shouldn't be afraid of A.I",
+            "journal": "",
+            "year": "2024-09-19",
+            "authors": "K Leswing"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Responsible AI Governance Consulting & Solutions | Accenture",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": " Accenture"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Google Responsible AI Practices",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": " Google"
+        },
+        {
+            "ref_id": "b6",
+            "title": "IBM",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": " Ibm"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Microsoft Responsible AI Standard General Requirements",
+            "journal": "",
+            "year": "2024-09-26",
+            "authors": " Microsoft"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Introducing ChatGPT",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": " Openai;  Com"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Opportunistic disclosure in press release headlines",
+            "journal": "Account. Bus. Res",
+            "year": "2012-06",
+            "authors": "E Guillamon-Saorin; B G Osma; M J Jones"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Harms of AI",
+            "journal": "National Bureau of Economic Research",
+            "year": "2021-09",
+            "authors": "D Acemoglu"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Welcome to Big AI",
+            "journal": "IEEE Intell. Syst",
+            "year": "2022-05",
+            "authors": "M Wooldridge"
+        },
+        {
+            "ref_id": "b12",
+            "title": "",
+            "journal": "",
+            "year": "2024-09-26",
+            "authors": "Cambridge Dictionary;  Responsibly"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Responsible AI: Why is it Important?",
+            "journal": "Responsible AI",
+            "year": "2024-09-26",
+            "authors": "A Lawson"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Understanding Responsible AI",
+            "journal": "",
+            "year": "2024-09-26",
+            "authors": "E Sanders"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Does ChatGPT make the grade?",
+            "journal": "",
+            "year": "2024-02",
+            "authors": "J Brady; M Kuvalja; A Rodrigues; S Hughes"
+        },
+        {
+            "ref_id": "b16",
+            "title": "AI Fairness 360: An Extensible Toolkit for Detecting, Understanding, and Mitigating Unwanted Algorithmic Bias",
+            "journal": "",
+            "year": "2024-09-26",
+            "authors": "R K E Bellamy"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Imagine Irresponsible AI To Help Define Your Responsible AI Strategy",
+            "journal": "",
+            "year": "2024-09-26",
+            "authors": "T Robinson"
+        },
+        {
+            "ref_id": "b18",
+            "title": "A More Profitable Approach to Product Returns",
+            "journal": "MIT Sloan Manag. Rev",
+            "year": "2018",
+            "authors": "J Abbey; M Ketzenberg; R Metters"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Ford Received Perfect Score on Human Rights Campaign 2017 Corporate Equality Index | Ford Media Center",
+            "journal": "",
+            "year": "2024-03",
+            "authors": ""
+        },
+        {
+            "ref_id": "b20",
+            "title": "Ford joins list of companies walking back DEI policies",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "E Yildirim"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Adapt or Fail: Evolving Leadership in a Hybrid World",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "P Ramesh"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Company Policies: The Need for Regular Review and Revision",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "J Dichiara"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Performative Ethics From Within the Ivory Tower: How CS Practitioners Uphold Systems of Oppression",
+            "journal": "J. Artif. Intell. Res",
+            "year": "2024-03",
+            "authors": "Z Mcfadden; L Alvarez"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Google Removes 'Don't Be Evil' Clause From Its Code of Conduct",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "K Conger"
+        },
+        {
+            "ref_id": "b25",
+            "title": "At least not with the microphone",
+            "journal": "",
+            "year": "2017-11-09",
+            "authors": "A Hern"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Facebook denies eavesdropping on conversations to target ads, again",
+            "journal": "",
+            "year": "2017-10-30",
+            "authors": "A Hern"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Facebook Partner Brags About Listening to Your Phone's Microphone to Serve Ads for Stuff You Mention",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "N Al-Sibai"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Broadcast Content View Analysis Based on Ambient Audio Recording",
+            "journal": "",
+            "year": "2018-10-03",
+            "authors": "A M Husain; Y Xu"
+        },
+        {
+            "ref_id": "b29",
+            "title": "Zoom lied to users about end-to-end encryption for years, FTC says",
+            "journal": "",
+            "year": "2024-10-10",
+            "authors": "J Brodkin"
+        },
+        {
+            "ref_id": "b30",
+            "title": "Zoom Became a Part of Daily Life. It Needs to Tell Users Exactly How It's Using Their Data",
+            "journal": "",
+            "year": "2023-08-10",
+            "authors": "D P Williams"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Ethics of AI from global companies: Microsoft, Google, Meta, and Apple",
+            "journal": "",
+            "year": "2023",
+            "authors": "F Morand\u00edn-Ahuerma"
+        },
+        {
+            "ref_id": "b32",
+            "title": "We read the paper that forced Timnit Gebru out of Google. Here's what it says",
+            "journal": "MIT Technology Review",
+            "year": "2024-03",
+            "authors": "K Hao"
+        },
+        {
+            "ref_id": "b33",
+            "title": "Whistle-Blower Says Facebook 'Chooses Profits Over Safety' -The New York Times",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "R Mac; C Kang"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Meta: annual revenue and net income 2023",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "S Dixon"
+        },
+        {
+            "ref_id": "b35",
+            "title": "Software engineering code of ethics",
+            "journal": "Commun ACM",
+            "year": "1997-11",
+            "authors": "D Gotterbarn; K Miller; S Rogerson"
+        },
+        {
+            "ref_id": "b36",
+            "title": "How Tech Giants Cut Corners to Harvest Data for A.I",
+            "journal": "The New York Times",
+            "year": "2024-04-06",
+            "authors": "C Metz; C Kang; S Frenkel; S A Thompson; N Grant"
+        },
+        {
+            "ref_id": "b37",
+            "title": "It's six months after that open letter calling for a 'six-month pause' in AI work",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": "R Heath"
+        },
+        {
+            "ref_id": "b38",
+            "title": "Six Months Ago Elon Musk Called for a Pause on AI. Instead Development Sped Up | WIRED",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": "W Knight"
+        },
+        {
+            "ref_id": "b39",
+            "title": "California's AI safety bill is dividing big tech",
+            "journal": "",
+            "year": "2024-10-16",
+            "authors": "I F Gold; Ashley "
+        },
+        {
+            "ref_id": "b40",
+            "title": "Exclusive: Current and former employees of leading AI firms support California's AI bill",
+            "journal": "Axios",
+            "year": "2024-10-16",
+            "authors": "M Morrone"
+        },
+        {
+            "ref_id": "b41",
+            "title": "AI regulation hits a wall in the House",
+            "journal": "",
+            "year": "2024-10-16",
+            "authors": "M Curi; A Gold"
+        },
+        {
+            "ref_id": "b42",
+            "title": "Introducing Superalignment",
+            "journal": "",
+            "year": "2024-03",
+            "authors": ""
+        },
+        {
+            "ref_id": "b43",
+            "title": "OpenAI's Long-Term AI Risk Team Has Disbanded",
+            "journal": "",
+            "year": "2024-05-17",
+            "authors": "W Knight"
+        },
+        {
+            "ref_id": "b44",
+            "title": "I lost trust': Why the OpenAI team in charge of safeguarding humanity imploded",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": "S Samuel"
+        },
+        {
+            "ref_id": "b45",
+            "title": "OpenAI has a new safety team -it's run by Sam Altman",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "E Roth"
+        },
+        {
+            "ref_id": "b46",
+            "title": "Sam Altman departs OpenAI's safety committee",
+            "journal": "",
+            "year": "2024-03",
+            "authors": "K Wiggers"
+        },
+        {
+            "ref_id": "b47",
+            "title": "OpenAI Insiders Warn of a 'Reckless' Race for Dominance",
+            "journal": "The New York Times",
+            "year": "2024-06-04",
+            "authors": "K Roose"
+        },
+        {
+            "ref_id": "b48",
+            "title": "Introducing Gemini: our largest and most capable AI model",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "S Pichai; D Hassabis"
+        },
+        {
+            "ref_id": "b49",
+            "title": "Google Suspends AI Tool's Image Generation of People After It Created Historical 'Inaccuracies",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "T Spangler"
+        },
+        {
+            "ref_id": "b50",
+            "title": "Gemini image generation got it wrong. We'll do better",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "P Raghavan"
+        },
+        {
+            "ref_id": "b51",
+            "title": "Has Google done anything unethical? Gemini changes its answer mid-sentence",
+            "journal": "Android Authority",
+            "year": "2024-04",
+            "authors": "H Simons"
+        },
+        {
+            "ref_id": "b52",
+            "title": "Google Violated Its Standards in Ad Deals, Research Finds",
+            "journal": "",
+            "year": "2023-06-27",
+            "authors": "P Haggin"
+        },
+        {
+            "ref_id": "b53",
+            "title": "Your guide to AI-powered Search ads -Google Ads Help",
+            "journal": "",
+            "year": "2024-04",
+            "authors": ""
+        },
+        {
+            "ref_id": "b54",
+            "title": "Consent in Crisis: The Rapid Decline of the AI Data Commons",
+            "journal": "",
+            "year": "2024",
+            "authors": "S Longpre"
+        },
+        {
+            "ref_id": "b55",
+            "title": "Google Apps Now Offers Business Process Automation on Google Sites with Scripts",
+            "journal": "ReadWriteWeb",
+            "year": "2010-10",
+            "authors": "K Finley"
+        },
+        {
+            "ref_id": "b56",
+            "title": "Google Restructures Its Principal AI Ethics Group",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": "S King"
+        },
+        {
+            "ref_id": "b57",
+            "title": "Wired",
+            "journal": "",
+            "year": "2024-01-31",
+            "authors": "P Dave"
+        },
+        {
+            "ref_id": "b58",
+            "title": "Google Lifts a Ban on Using Its AI for Weapons and Surveillance\" Wired",
+            "journal": "",
+            "year": "2025-02-04",
+            "authors": "P Dave; C Haskins"
+        },
+        {
+            "ref_id": "b59",
+            "title": "The business ethics of Elon Musk, Tesla, Twitter and the tech industry",
+            "journal": "",
+            "year": "2024-07",
+            "authors": "J S Nelson"
+        },
+        {
+            "ref_id": "b60",
+            "title": "The Moral Case for No Longer Engaging With Elon Musk's X",
+            "journal": "Bloomberg.com",
+            "year": "2023-10-05",
+            "authors": "D Lee"
+        },
+        {
+            "ref_id": "b61",
+            "title": "US Supreme Court won't hear Elon Musk dispute over SEC settlement",
+            "journal": "Reuters",
+            "year": "2024-04-29",
+            "authors": ""
+        },
+        {
+            "ref_id": "b62",
+            "title": "Elon Musk warns of 'civilizational risk' posed by AI in meeting with tech CEOs and senators",
+            "journal": "NBC News",
+            "year": "2024-07",
+            "authors": "S Wong; F Thorp; V ; R Nobles; L Brown-Kaiser"
+        },
+        {
+            "ref_id": "b63",
+            "title": "Acceptable Use Policy",
+            "journal": "",
+            "year": "2024-07",
+            "authors": ""
+        },
+        {
+            "ref_id": "b64",
+            "title": "AI Gone Wild: How Grok-2 Is Pushing The Boundaries Of Ethics And Innovation",
+            "journal": "Forbes",
+            "year": "2024-04",
+            "authors": "B Marr"
+        },
+        {
+            "ref_id": "b65",
+            "title": "Misinformation at Scale: Elon Musk's Grok and the Battle for Truth",
+            "journal": "",
+            "year": "2024-07",
+            "authors": "K Hammond"
+        },
+        {
+            "ref_id": "b66",
+            "title": "Ethics and social networking sites: a disclosive analysis of Facebook",
+            "journal": "Inf. Technol. People",
+            "year": "2010-01",
+            "authors": "B Light; K Mcgrath"
+        },
+        {
+            "ref_id": "b67",
+            "title": "Build Responsibly: The Meta Code of Conduct",
+            "journal": "",
+            "year": "2024-10-22",
+            "authors": "Meta "
+        },
+        {
+            "ref_id": "b68",
+            "title": "Meta, TikTok and other social media CEOs testify in heated Senate hearing on child exploitation",
+            "journal": "AP News",
+            "year": "2024-10-22",
+            "authors": "B Ortutay; H Hadero"
+        },
+        {
+            "ref_id": "b69",
+            "title": "FOCAL Programming Manual.pdf",
+            "journal": "",
+            "year": "2024-10-22",
+            "authors": "S L Harris"
+        },
+        {
+            "ref_id": "b70",
+            "title": "Facebook's ethical failures are not accidental; they are part of the business model",
+            "journal": "AI Ethics",
+            "year": "2021-11",
+            "authors": "D Lauer"
+        },
+        {
+            "ref_id": "b71",
+            "title": "WhatsApp's New Privacy Policy Just Kicked In. Here's What You Need to Know",
+            "journal": "",
+            "year": "2021-05-15",
+            "authors": "L H Newman"
+        },
+        {
+            "ref_id": "b72",
+            "title": "Anthropic Leads the Charge in AI Safety and Performance",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "C Hughes"
+        },
+        {
+            "ref_id": "b73",
+            "title": "Eleven OpenAI Employees Break Off to Establish Anthropic, Raise $124 Million | AI Business",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "S Moss"
+        },
+        {
+            "ref_id": "b74",
+            "title": "More OpenAI drama: Exec quits over concerns about focus on profit over safety | CNN Business",
+            "journal": "CNN",
+            "year": "2024-04",
+            "authors": "C Duffy"
+        },
+        {
+            "ref_id": "b75",
+            "title": "Many-shot Jailbreaking",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "C Anil"
+        },
+        {
+            "ref_id": "b76",
+            "title": "Building AI With a Conscience",
+            "journal": "",
+            "year": "2024-03",
+            "authors": ""
+        },
+        {
+            "ref_id": "b77",
+            "title": "Our Approach to User Safety | Anthropic Help Center",
+            "journal": "",
+            "year": "2024-04",
+            "authors": ""
+        },
+        {
+            "ref_id": "b78",
+            "title": "Claude's Constitution",
+            "journal": "",
+            "year": "2024-04",
+            "authors": ""
+        },
+        {
+            "ref_id": "b79",
+            "title": "Google's multi-billion dollar relationship with Anthropic is under investigation",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "R Fabbro"
+        },
+        {
+            "ref_id": "b80",
+            "title": "AI start-up Anthropic accused of 'egregious' data scraping",
+            "journal": "Financial Times",
+            "year": "2024-07-26",
+            "authors": "G Hammond"
+        },
+        {
+            "ref_id": "b81",
+            "title": "It's practically impossible to run a big AI company ethically",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "S Samuel"
+        },
+        {
+            "ref_id": "b82",
+            "title": "The case against Microsoft: An ethical perspective",
+            "journal": "Bus. Ethics Eur. Rev",
+            "year": "2003",
+            "authors": "R A Spinello"
+        },
+        {
+            "ref_id": "b83",
+            "title": "Just Doing Business or Doing Just Business: Google, Microsoft, Yahoo! and the Business of Censoring China's Internet",
+            "journal": "J. Bus. Ethics",
+            "year": "2008-05",
+            "authors": "G E Dann; N Haddow"
+        },
+        {
+            "ref_id": "b84",
+            "title": "Microsoft just laid off one of its responsible AI teams",
+            "journal": "",
+            "year": "2024-10-27",
+            "authors": "Z Schiffer; C Newton"
+        },
+        {
+            "ref_id": "b85",
+            "title": "Microsoft whistleblower, OpenAI, the NYT, and ethical AI | TechTarget",
+            "journal": "",
+            "year": "2024-10-27",
+            "authors": "E Ajao"
+        },
+        {
+            "ref_id": "b86",
+            "title": "As He Sees It, Jesus Would Approve | WIRED",
+            "journal": "",
+            "year": "2024-10-12",
+            "authors": "S Levy"
+        },
+        {
+            "ref_id": "b87",
+            "title": "Inside Anduril, the startup that is building AI-powered military technology",
+            "journal": "NBC News",
+            "year": "2024-10-27",
+            "authors": "J Ward; C Sottile"
+        },
+        {
+            "ref_id": "b88",
+            "title": "When Money Talks -And Says Horrible, Bigoted Things",
+            "journal": "There Is Only R",
+            "year": "2024-10-27",
+            "authors": "E Spiers"
+        },
+        {
+            "ref_id": "b89",
+            "title": "AI firms treat any 'publicly available' data as fair game",
+            "journal": "",
+            "year": "2024-01",
+            "authors": "I Fried"
+        },
+        {
+            "ref_id": "b90",
+            "title": "AI has taken over hundreds of jobs",
+            "journal": "Newsweek",
+            "year": "2024-01",
+            "authors": "S Blake"
+        },
+        {
+            "ref_id": "b91",
+            "title": "AI took their jobs. Now they get paid to make it sound human",
+            "journal": "",
+            "year": "2024-09-10",
+            "authors": "T Germain"
+        },
+        {
+            "ref_id": "b92",
+            "title": "Adapting To AI: Interesting Insights From LinkedIn On The Job Market",
+            "journal": "",
+            "year": "2024-01",
+            "authors": "B Laker"
+        },
+        {
+            "ref_id": "b93",
+            "title": "Collapse: How Societies Choose to Fail or Succeed: Revised Edition",
+            "journal": "",
+            "year": "2011",
+            "authors": "J Diamond"
+        },
+        {
+            "ref_id": "b94",
+            "title": "Inequality, discrimination, and the power of the status quo: Direct evidence for a motivation to see the way things are as the way they should be",
+            "journal": "J. Pers. Soc. Psychol",
+            "year": "2009",
+            "authors": "A C Kay"
+        },
+        {
+            "ref_id": "b95",
+            "title": "Spokespeople or Gatekeepers? A Case Study of Teacher Engagement with the Data Privacy Policy Environment in U.S. Public Schools",
+            "journal": "",
+            "year": "2020-10-01",
+            "authors": "A Potasznik"
+        },
+        {
+            "ref_id": "b96",
+            "title": "BCLP -Bryan Cave Leighton Paisner -US state-by-state AI legislation snapshot",
+            "journal": "",
+            "year": "2024-01",
+            "authors": ""
+        },
+        {
+            "ref_id": "b97",
+            "title": "Blueprint for an AI Bill of Rights | OSTP",
+            "journal": "",
+            "year": "2024-01",
+            "authors": ""
+        },
+        {
+            "ref_id": "b98",
+            "title": "Black-owned businesses saw a surge of support after George Floyd's murder. Since then? Not so much. -The Boston Globe",
+            "journal": "BostonGlobe.com",
+            "year": "2024-05",
+            "authors": "S Tannenbaum"
+        },
+        {
+            "ref_id": "b99",
+            "title": "Google Gemini Provides Generative AI Tutoring With Moral Exhortation",
+            "journal": "Forbes",
+            "year": "2024-04",
+            "authors": "R Ravaglia"
+        },
+        {
+            "ref_id": "b100",
+            "title": "Meta Permits Its A.I. Models to Be Used for U.S. Military Purposes",
+            "journal": "The New York Times",
+            "year": "2024-11-05",
+            "authors": "M Isaac"
+        },
+        {
+            "ref_id": "b101",
+            "title": "Exclusive: Chinese Researchers develop AI model for military use on back of Meta's Llama",
+            "journal": "Reuters",
+            "year": "2024-01",
+            "authors": "J Pomfret; J Pang"
+        },
+        {
+            "ref_id": "b102",
+            "title": "OpenAI Continues Its Mission of 'Ethical' AI by Partnering With a Killer Robot Company",
+            "journal": "",
+            "year": "2025-06",
+            "authors": "L Ropek"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1109/ETHICS65148.2025.11098431"
+}

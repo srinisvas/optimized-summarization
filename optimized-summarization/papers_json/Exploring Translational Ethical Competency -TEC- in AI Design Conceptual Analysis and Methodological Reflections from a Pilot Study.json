@@ -1,0 +1,487 @@
+{
+    "title": "Exploring Translational Ethical Competency (TEC) in AI Design: Conceptual Analysis and Methodological Reflections from a Pilot Study",
+    "authors": "Emad Ali; James Weichert; Shawn Yixiang;  Sun; Hoda Eldardiry; Qin Zhu; Dayoung Kim",
+    "pub_date": "",
+    "abstract": "As AI is rapidly becoming an integral part of our daily life, the ethical issues associated with it have become a major issue. Although the ethical concerns regarding the development of AI systems have been discussed in detail during recent years, practical competencies for translating ethical principles into actionable practices have not been fully understood. To fill this gap, this paper uses the concept of Translational Ethical Competency (TEC) in the context of AI design. We share our reflection on a pilot study we conducted, which involved semistructured text-based elicitation interviews with AI professionals to examine how ethical principles are incorporated into the real-world development of AI systems. Four case studies were designed as an elicitation tool to guide the discussion, covering domains such as educational fact checking, autonomous vehicles, stock price prediction, and blood diagnostics. Based on our reflection at the pilot interview stage, we revised our interview protocol. In this paper, our reflection on the pilot study, protocol revision process, and future work will be discussed. We aim to identify the best practices to incorporate ethical principles into the AI design process, which can provide practical insights for AI ethics education and professional development.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "In 2015, a Monmouth University poll of Americans on the topic artificial intelligence (AI) [1] found that while 70% of respondents had heard of the term \"artificial intelligence\" or \"AI\", 88% had read or heard little or nothing at all about \"recent developments in the area\" of AI. When the same survey was fielded in early 2023 [2], results showed 91% of Americans had heard of \"AI\" and 35% had read or heard a lot about recent AI developments. Likewise, Stanford's 2024 \"AI Index\" [3] reported that although total private AI investment in 2023 had declined slightly to USD $96 billion, private 979-8-3315-3228-4/25/$31.00 \u00a92025 IEEE investment in generative AI more than octupled since 2022, accounting for USD $25 billion. The outlook of AI on the future of the global economy is also becoming clear, with Furman and Seamans [4] writing of AI's \"potential to dramatically change the economy,\" both for better (increased productivity) and for worse (labor disruption and displacement).\nAs we have shown above, the evidence that AI has, over the course of the past ten years, become a present and impactful facet of daily life is abundant and undeniable. But as AI developments have spurred excitement and innovation, so too have the raised considerable concerns among experts as well as the general public. The 2023 Monmouth AI poll [2] revealed that 41% of respondents believed that AI would do \"more harm than good\" while only 9% believed that AI would do \"more good than harm\" to society. To address and mitigate harmful impacts of AI technologies-ranging from biased decisionmaking to hallucination to the potential for bodily injury from self-driving car crashes [5], [6]-ethicists and engineers alike have coalesced around a call for AI ethics [6]- [10], which, borrowing from Anderson and Anderson's [11] definition of machine ethics, is \"concerned with ensuring that the behavior of machines toward human users, and perhaps other machines as well, is ethically acceptable,\"",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b1",
+                "b4",
+                "b5",
+                "b5",
+                "b9",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. AI Ethics",
+            "text": "The concept of AI ethics is not new, as some of the concepts, conceptual frameworks, and methods have received inspirations and insights from other fields of technology and ethics studies such as computer ethics [12], and digital ethics [13]. These applied ethics disciplines with a much longer history than AI ethics have long grappled with concerns about autonomy [14], responsibility [15]- [17], bias [18], and privacy [19], [20]. However, AI ethics manifest itself as sets of ethical principles (e.g. nonmaleficence or autonomy) that aim to guide the design and deployment of AI systems [8], [21], [22]. A 2019 review of 84 private and public sector AI ethics guidelines by Jobin et al. [23] identified eleven overarching principles, although each principle on average featured in fewer than half of all guidelines. The lack of a single unifying set of principles, combined with the lack of mechanisms through which to enforce or even assess compliance with ethical principles, are chief criticisms frequently leveled against the guideline-driven approach to AI ethics [7], [22], [24]- [26]. Floridi [27], for example, cautions that companies may engage in \"ethics shopping\" by choosing from among an abundance of AI guidelines according to which guideline best retroactively justifies the company's actions, or \"bluewashing\" through the application of superficial ethical guidelines to mislead stakeholders.\nIn response, AI ethics researchers have shifted focus to study how 'ethical AI' can be achieved through policy [28], governance [29], technical tools [30], [31], and learning from real-world examples [25], [30]. These efforts intend to close what is commonly referred to as the 'principles to practices gap' for AI ethics [30], [32]. Simultaneously, governments are beginning to develop national AI strategies and to enact policy regulating the development use of AI [33]. For example, a 2023 executive order [34] signed by U.S. President Biden acknowledges that AI \"holds extraordinary potential for both promise and peril\" and \"Harnessing AI for good and realizing its myriad benefits requires mitigating its substantial risks. This endeavor demands a society-wide effort that includes government, the private sector, academia, and civil society,\" Towards this end, the executive order directs a government-wide \"AI talent surge\" and calls for \"AI training and familiarization programs for employees, managers, and leadership\" across a variety of fields.",
+            "publication_ref": [
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b7",
+                "b20",
+                "b21",
+                "b22",
+                "b6",
+                "b21",
+                "b23",
+                "b25",
+                "b26",
+                "b27",
+                "b28",
+                "b29",
+                "b30",
+                "b24",
+                "b29",
+                "b29",
+                "b31",
+                "b32"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. AI Ethics Education",
+            "text": "Likewise, ethics is becoming an increasingly important component of the computer science curriculum, especially as it concerns AI [28], [35]- [37]. Saltz et al. [35], for example, propose incorporating AI ethics in machine learning courses by having students identify and discuss ethical issues involved with technical course topics such as logistic regression or neural networks. Schaich Borg [31] advocates for a focus on \"applied data science skills more broadly,\" incorporating \"opportunities to practice applying these skills to technical problems.\" However, given the nascency of AI ethics as a field of study, it is still unclear to what extent and in what way the majority of AI or computing courses address the ethical impacts of AI in their curricula. While a review of 115 'tech ethics' course syllabi by Fiesler et al. [38] finds that AI & algorithms features as a topic in almost half of courses, Weichert et al. [39] find that only a third of the 250 undergraduate CS programs they review require their students to take an ethics course. They also find that nearly half of schools do not offer any computing-related ethics course. The authors thus call into question whether CS programs, in the absence of a standardized accreditation requirement for computing ethics, are adequately preparing students to confront the social impacts of the technologies they will soon be tasked with developing. We join in this concern, and argue that a more narrow focus on providing students with the tools and competencies needed to address the AI 'principles to practices gap' is needed in the AI curriculum. This gap refers to the difficulty of applying abstract ethical principles to concrete and complex real-world contexts that influence or constrain AI system design choices [29], [32]. Only when equipped with ability to confront the potential and real harms of AI systems-as opposed to only being able to recognize these harms-will graduates be made ready to tackle the challenges of the next decades through the sustainable and responsible deployment of AI.",
+            "publication_ref": [
+                "b27",
+                "b33",
+                "b35",
+                "b33",
+                "b30",
+                "b36",
+                "b37",
+                "b28",
+                "b31"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. TRANSLATIONAL ETHICAL COMPETENCY",
+            "text": "Ethical competence, in general, has been widely discussed across various professional fields, notably in nursing,business, and engineering ethics (e.g. [40]- [43]). However, no consensus has been reached on a unified definition of \"ethical competence\", and it may vary across fields. These definitions, undoubtedly, highlight common characteristics of ethical competence across professional fields, such as the ability to recognize ethical issues, apply ethical principles in decisionmaking, reflect critically on moral dilemmas, and demonstrate consistent ethical behavior in diverse contexts.\nWhile these foundational aspects of ethical competence remain relevant, this paper shifts the focus toward the process of translation -how ethical principles and values can be operationalized in engineering practice. Despite the existing scholarship on ethical competency in engineering and other professional fields, such a particular kind of practical competency that focuses on the translation of theoretical knowledge (e.g., ethics principles) into practices has been rarely explored, especially in the field of AI ethics [31]. This additional layer of complexity necessitates a deeper examination of the mechanisms through which abstract ethical considerations become actionable in real-world engineering decision-making. Despite increasing recognition of the principle-to-practice gap in fields such as AI ethics, discussions on the specific competencies required for such translation remain scarce.\nEarly attempts to embed AI ethics principles into AI system design have faced significant challenges. First, given that existing AI ethics guidelines and standards are largely nonbinding, there is a lack of empirical evidence regarding the extent to which practicing engineers integrate them into their daily work and whether these guidelines effectively influence engineering decisions. Second, awareness and engagement with AI ethics principles among engineers vary widely. While some organizations have developed internal ethical frameworks, it remains unclear how engineers navigate and translate these corporate ethics principles into concrete design choices. The absence of clear methodologies for translating ethical guidelines into engineering practices has, undoubtedly, widened the implementation gap, and, therefore, the need for a competency-driven approach to ethical decision-making in AI development.\nBuilding on Schaich Borg's [31] call for \"translational Ethical AI research,\" we define translational ethical competency (TEC) as the ability to systematically apply and operationalize abstract AI ethics principles in concrete engineering practices and design decisions during AI system development and deployment. TEC is not merely an end goal but an important skill that enables engineers to dynamically engage with ethical principles in their own design contexts. Our conceptualization of the translation process acknowledges that the most appropriate response to an ethical dilemma depends on multiple factors, including the specific problem context, institutional policies and governance structures, and the positionality of the AI practitioner within their organization and broader societal frameworks.\nTEC supports what Hagendorff [22] calls a \"situationsensitive ethical approach\" to AI. This means that ethical decisions should be flexible and responsive to different situations, rather than strictly following fixed rules. By focusing on TEC of AI engineers, this paper contributes to bridging the gap between ethical principles and real-world engineering practices, where the importance of education and institutional support in giving engineers the skills they need to handle ethical challenges in AI development are situated.",
+            "publication_ref": [
+                "b38",
+                "b42",
+                "b30",
+                "b30",
+                "b21"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. ELICITATION PILOT STUDY",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Study Overview",
+            "text": "The objective of the study is to answer the following research question (RQ):\n\u2022 What are the processes that AI engineers follow to translate ethical principles into engineering practices? It is important to address this research question in order to make sure that the future professionals including the undergraduate and graduate students in engineering and computer science are given adequate learning space to incorporate ethical values when designing AI systems. The results of this study will also offer a much-needed help to the AI educators especially those who are interested in integrating ethics in their AI classes by shifting the paradigm to translational approach to AI ethics education. The paradigm shift that is required for the professional curriculum for future AI engineers must be developed in conjunction with and informed by the expertise and concerns of practitioners. Not only will this help to identify the ways in which these AI engineers are applying principles to algorithms, but it will also enable them to be able to develop the competencies that are required in order to make such applications in practice.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Methodology",
+            "text": "To answer our RQ, we will conduct elicitation interview with AI engineers. Elicitation interview is defined as a technique \"for gathering detailed and precise accounts of human experience\" [44], and allows us to elicit the precise, detailed information from the person being interviewed. For our case, this technique will be used to understand how engineers translate ethics principles specifically to AI systems design. The technique of elicitation interview has been used in the domain of pedagogy, management, and human-computer interaction (HCI) [45].\nVarious types of elicitation interviews exist, such as visual, graphic, audio, and texts [44], [46]. However, for our case, we plan to use the text-elicitation technique and, for this purpose, four case studies were designed. These case studies covered a variety of domains, such as educational fact checking consisting of an LLM-based application that can identify the authenticity of the text mentioned by the students in their essays, autonomous vehicle design in which the interviewee is the lead designer and developer, and their task is to design an AI-assisted software that takes data from proximity sensors, stock market predictions in which the interviewee is tasked as a lead analyst to design an AI model to predict the trends of the stocks to maximize profit for their company, and blood tests in which the interviewee is asked to dawn on the role of Chief Medical Officer tasked with the development of an AI model to perform the PBS test analysis using the images of blood samples.\nFor the purpose of this research, we will conduct interviews with 15-20 AI engineers, and they will be selected based on the following criteria:\n\u2022 Their current jobs mainly focus on developing new applications and systems that utilize AI to address engineering problems.\n\u2022 They have previous or current experience translating AI ethics principles into AI systems design. The interviewees will be identified after they complete a short survey identifying their role and experience in the design of AI systems. To identify potential study participants, we will draw upon the established resources and networks we have cultivated.\nBefore conducting interviews with the actual participants, we have conducted pilot interviews with 4 AI professionals, to gain a better understanding of our interview protocols.\nIn these pilot interviews, four case studies were presented to the participants, and they were given time to read and digest the information in these scenarios. After reading the scenario, the opening question directed them to walk us through the steps they would take to understand the design and development process, and the considerations taken into account. During their explanation, they were posed with guiding questions to assist their thinking process, and for us to understand how they translate ethical principles into practice.",
+            "publication_ref": [
+                "b43",
+                "b44",
+                "b43",
+                "b45"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Interview Protocol Development 1) Overview of the development process:",
+            "text": "We decided to develop an interview protocol with three parts: 1) reflection on AI ethical principles, 2) elicitation with AI design scenarios, and 3) conceptualization of the translation process. We first explored AI ethical principles that we can introduce to interviewees. The reason why we decided to discuss ethical principles at the beginning of the interview was to establish a common understanding of existing ethical principles. While numerous principles have been shared in the scholarly community of AI ethics, we decided to use Floridi's Unified Framework of Ethical Principles for AI [10] since it was developed through a comprehensive synthesis of existing ethical principles for AI. After the AI ethical principles were identified, we developed AI design scenarios that we will utilize to elicit interviewees' translation process. We developed four case studies we can pilot test, based on the AI systems design projects that this project PI's machine learning capstone class worked on. After the case studies were generated, we drafted a few follow-up questions we would ask during the elicitation process and final conceptualization questions.\nIt is worth noting that our goal in this project is mainly to understand how AI engineers would translate provided ethics principles into specific design decisions in the AI design scenarios we provide. In future work, we may ask them to share with us their own AI design scenarios and then invite them to reflect on how Floridi's ethics principles have been or could be incorporated into the design decision-making. Our approach is more deductive than inductive. In other words, at least in the project, we do not focus on discerning specific ethics principles that emerge from the everyday design stories shared by AI engineers.\n2) Four case studies: We developed four case studies to include in our pilot study, each of which has a topic of: 1) educational fact-checking, 2) autonomous vehicle, 3) stock price prediction, and 4) blood tests, respectively. The case studies were about 100-140 words in length, and interviewees were asked to unpack their process of designing an AI tool related to the given topic. For example, the educational factchecking case study was as follows:\nLarge Language Models (LLMs) like ChatGPT are large AI models capable of responding to complex user input inquiries (e.g. written questions). You are the lead designer for a new educational technology startup company that aims to develop AI-enabled tools to assist students with their studying and assignments. In particular, you are tasked with developing an LLM-based mobile application to help senior year college students review their written essays in a health science class to make sure all the facts included in the essay are true. You are given the class' online textbook in PDF format to use to fact-check student essays. For example, the tool you develop could provide a response about whether a given statement in the essay is true or false as well as an explanation and a reference to the textbook. Describe how you would go about developing this tool. Can you break down your design process and design considerations for developing this app?\nA case study was shared with interviewees at a time, and the interviewees were given time to digest the contents of the case study and organize their thoughts before they answer the question. After describing their design process, interviewees were asked to explain how they would apply Floridi's ethics principles framework to inform their decisionmaking in designing an AI system in the specific scenario.",
+            "publication_ref": [
+                "b9"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. REFLECTION ON PILOT INTERVIEWS A. Pilot Interview 1",
+            "text": "This interview was conducted with a Ph.D. student in computer science. All four cases were shared with the interviewee and discussed one-by-one. For all four cases, after 2-3 minutes of deliberation, the interviewee shared their general approach to the specific design task, along with the potential ethical consideration that they would incorporate in their design decision-making. For example, after reading the first case (educational fact checking), the interviewee broke down the problem into two major tasks -using the textbook PDF file as a fact checking material where data extraction work needs to be completed with LLM and using the materials to generate responses to students' essays. While unpacking their design approach, the interviewee mentioned that the data extraction task should be accurate and there should be no hallucinations. When the interviewer asked what principles in Floridi's ethical principles framework can be applied to their design process and how, the interviewee answered they should ensure that the training data is non-biased and robust, without mentioning specific ethical principles. The interviewee also mentioned that they thought of the technical problem-solving aspect of the AI design first, before thinking about potential ethical issues.\nAs the interview progressed, the interviewee became more familiar with sharing their design process with Floridi's ethical principles. In their response to the second, third, and fourth cases, the interviewee indicated specific principles that they would apply -autonomy and explicability for the second case (autonomous vehicle), justice and explicability for the third case (stock price prediction), and beneficence and autonomy for the fourth case (blood tests). To obtain the specifics about how they would actually apply those principles, we had to ask multiple probing questions.\nToward the end of the interview, we also asked for their perspective on the case studies designed and the ease of understanding of each scenario. The interviewee identified the scenario of autonomous vehicle as the easiest to understand and the most difficult to answer. The interviewee also suggested that more information regarding scenario four, such as knowledge about the testing, can be helpful in providing reader with a smoother understanding of the scenario.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Pilot Interview 2",
+            "text": "This interview was conducted with a Ph.D. student in computer science. As with Interview 1, all four cases were shared with the interviewee and discussed one by one. It took about 2-3 minutes for this interviewee to read each case and prepare their answers. Before the interviewee shared their answers, they asked whether they should share their thoughts on how to design AI ethically or should share the overall design process. After our clarification, the interviewee shared their answers to the first case study, starting with two major considerations that they could think of: 1) making sure when students submit the essay, students feel safe, and personal information is kept confidential, and 2) making sure the AI tool is useful from the user's perspective, in this case, students.\nFor the first two cases, the interviewee did not specifically mention the ethical principles that can be applied to the design process. When the interviewer asked about it, the interviewee shared that they had forgotten about the fact that they were participating in an ethics interview. This might reflect the fact that the interviewee's general approach to the AI design process does not explicitly involve reflection on certain ethical principles. As the interview progressed, the interviewee began to more explicitly integrate Floridi's ethical principles into their design process and utilize the languages from the framework, similar to the first interview.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Pilot Interview 3",
+            "text": "This interview was conducted with a practicing AI engineer who had interest in the social and ethical implications of AI and organized and involved in several organizations promoting the fairness and justice in AI. Like other interviewees, he was provided with the ethics principles before the interview. However, given his busy schedule, he was not able to read the ethics principles beforehand. We decided to give him time at the beginning of the interview to review the ethics principles. Given his extensive experience in AI ethics areas, he found these principles self-explanatory. Among the five principles, he was already familiar with three: beneficence, nonmaleficence, and justice. The remaining two-autonomy and explicability-were concepts he had given less thought to in his experience. For this participant, we invited him to respond to two cases we had constructed: Educational Fact-Checking and Autonomous Vehicle. After reviewing these cases, he was also asked to provide a recent case he had been working on.\nThe interviewee was able to collaboratively co-construct his process of translating ethical principles into the design process with the interviewer. His mental model was following a kind of applied approach. He started by articulating the design process and then mapped principles to the process. The interviewer had to keep asking clarifying questions and motivated the interviewee to align what he shared with the goal of our interview which was to identify the process practicing engineers employed to translate AI ethics principles. Finally, his general approach to translating AI ethics involves using ethical principles to design quantifiable metrics, establishing thresholds for these metrics, and then using those thresholds to monitor the entire product development process. Unsurprisingly, this participant was able to share more details and context when asked about his own project that he had been working on.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Pilot Interview 4",
+            "text": "The fourth interview was conducted with a biomedical engineer who works as a faculty member at a research university.\nA key reason for selecting this participant for a pilot interview was that, after conducting Interview 3, we recognized that a participant's familiarity with the technical content of the case might play an important role in translating ethical principles into the case. We mainly focused on the interview on the fourth case Blood Tests. Given that this participant had mainly worked in research rather than industry design areas, it was a little challenging for him to articulate the design process of the AI technology in this case. However, he was able to share great details from a testing or experimental perspective, such as the specific time of day when the blood work was conducted.\nThis interviewee did mention that these five principles may not be equally important to all AI ethics cases. In this particular case, he thought that the justice and the beneficence principles were less clear from his point of view. He suggested that technical details such as types of abnormalities in medical images could potentially affect the design of AI tools in this case. One challenge in interviewing this particular participant was that he often focused more on the scientific details of biomedical imaging rather than on the design process of the AI tool. At times, the interviewer had to steer the conversation back to the central goals of the study. Eventually, the interviewer was able to collaboratively work with the interviewee to co-construct a process for translating AI ethics: The process began with a focus on the purely technical development of the AI tool, followed by an examination of which ethical principle(s) were most relevant to the case. Informed by each principle, the engineer then designs a series of reflective questions under each principle that will be applied to think through every step of the design process, ensuring that design decisions under each design step are aligned with the goals of each ethical principle.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION AND FUTURE WORK",
+            "text": "Based on the reflections and discussions on the pilot interviews, we decided to include only one case study (the autonomous vehicle case study) in the interview and ask interviewees to share two of their own AI design projects instead. This is to avoid confusion among interviewees about the design tasks we would give them. During the pilot interviews, we observed that some interviewees lacked confidence in sharing their thoughts on some cases (especially, the third and the fourth cases) because of their unfamiliarity in the problem domain. We thought that to fully understand the details of the translation process, it would be better to ask interviewees to share the design process that they are most familiar with. We also decided to send the one case study to interviewees in advance of the interview because: 1) our goal is not to understand engineers' immediate approaches to a design task but to identify some best practices to incorporate ethical principles into AI design process, and 2) according to our observations from the first and second interviews, it took some time for the interviewees to become familiar with the ethical principles and start to apply them to their design process -by providing the case study in advance, we thought the interviewee could take enough time to fully reflect on the design task and how to potentially apply the ethical principles framework we provide to them.\nBased on the updated protocol, we plan to conduct interviews with 15-20 engineers who are working in the industry as a AI designer. the findings from the research will help educators and researchers better understand the process of translating AI ethics principles into actual AI design.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "The Good and Mostly Bad of Artificial Intelligence",
+            "journal": "Tech. Rep",
+            "year": "2015-04",
+            "authors": "R Scherl; P Murray"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Artificial Intelligence Use Prompts Concerns",
+            "journal": "",
+            "year": "2023-02",
+            "authors": "P Murray"
+        },
+        {
+            "ref_id": "b2",
+            "title": "The AI Index 2024 Annual Report",
+            "journal": "",
+            "year": "2024-04",
+            "authors": "N Maslej; L Fattorini; R Perrault; V Parli; A Reuel; E Brynjolfsson; J Etchemendy; K Ligett; T Lyons; J Manyika; J C Niebles; Y Shoham; R Wald; J Clark"
+        },
+        {
+            "ref_id": "b3",
+            "title": "AI and the Economy",
+            "journal": "",
+            "year": "2019-01",
+            "authors": "J Furman; R Seamans"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Ethics of Artificial Intelligence and Robotics",
+            "journal": "",
+            "year": "2023",
+            "authors": "V C M\u00fcller"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Emerging challenges in AI and the need for AI ethics education",
+            "journal": "AI and Ethics",
+            "year": "2021-02",
+            "authors": "J Borenstein; A Howard"
+        },
+        {
+            "ref_id": "b6",
+            "title": "You cannot have AI ethics without ethics",
+            "journal": "AI and Ethics",
+            "year": "2021-02",
+            "authors": "D Lauer"
+        },
+        {
+            "ref_id": "b7",
+            "title": "AI and ethics",
+            "journal": "AI and Ethics",
+            "year": "2021-02",
+            "authors": "S L Anderson; M Anderson"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Importance and limitations of AI ethics in contemporary society",
+            "journal": "Humanities and Social Sciences Communications",
+            "year": "2022-08",
+            "authors": "T Hauer"
+        },
+        {
+            "ref_id": "b9",
+            "title": "The Ethics of Artificial Intelligence: Principles, Challenges, and Opportunities, 1st ed",
+            "journal": "Oxford University Press",
+            "year": "2023",
+            "authors": "L Floridi"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Machine Ethics: Creating an Ethical Intelligent Agent",
+            "journal": "",
+            "year": "2007-12",
+            "authors": "M Anderson; S L Anderson"
+        },
+        {
+            "ref_id": "b11",
+            "title": "From computer ethics and the ethics of ai towards an ethics of digital ecosystems",
+            "journal": "AI and Ethics",
+            "year": "2022",
+            "authors": "B C Stahl"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Corporate digital responsibility (cdr) in construction engineering-ethical guidelines for the application of digital transformation and artificial intelligence (ai) in user practice",
+            "journal": "SN Applied Sciences",
+            "year": "2021",
+            "authors": "B Weber-Lewerenz"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Information, ethics, and computers: The problem of autonomous moral agents",
+            "journal": "Minds and Machines",
+            "year": "2004",
+            "authors": "B ; Carsten Stahl"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Computer ethics and professional responsibility: introductory text and readings",
+            "journal": "Blackwell Publishers, Inc",
+            "year": "2003",
+            "authors": "T W Bynum; S Rogerson"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Computing and moral responsibility",
+            "journal": "",
+            "year": "2012",
+            "authors": "M Noorman"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Corporate digital responsibility",
+            "journal": "Business & Information Systems Engineering",
+            "year": "2022",
+            "authors": "B Mueller"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Mapping the foundationalist debate in computer ethics",
+            "journal": "Ethics and information Technology",
+            "year": "",
+            "authors": "L Floridi; J W Sanders"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Privacy and digital ethics after the pandemic",
+            "journal": "Nature Electronics",
+            "year": "2021",
+            "authors": "C V\u00e9liz"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Privacy in computer ethics: Navigating the digital age",
+            "journal": "Computer Science and Information Technologies",
+            "year": "2023",
+            "authors": "M Zostant; R Chataut"
+        },
+        {
+            "ref_id": "b20",
+            "title": "A Unified Framework of Five Principles for AI in Society",
+            "journal": "Harvard Data Science Review",
+            "year": "2019-06",
+            "authors": "L Floridi; J Cowls"
+        },
+        {
+            "ref_id": "b21",
+            "title": "The Ethics of AI Ethics: An Evaluation of Guidelines",
+            "journal": "Minds and Machines",
+            "year": "2020-03",
+            "authors": "T Hagendorff"
+        },
+        {
+            "ref_id": "b22",
+            "title": "The global landscape of AI ethics guidelines",
+            "journal": "Nature Machine Intelligence",
+            "year": "2019-09",
+            "authors": "A Jobin; M Ienca; E Vayena"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Principles alone cannot guarantee ethical AI",
+            "journal": "Nature Machine Intelligence",
+            "year": "2019-11",
+            "authors": "B Mittelstadt"
+        },
+        {
+            "ref_id": "b24",
+            "title": "The Role and Limits of Principles in AI Ethics: Towards a Focus on Tensions",
+            "journal": "ACM",
+            "year": "2019-01",
+            "authors": "J Whittlestone; R Nyrup; A Alexandrova; S Cave"
+        },
+        {
+            "ref_id": "b25",
+            "title": "The uselessness of AI ethics",
+            "journal": "AI and Ethics",
+            "year": "2023-08",
+            "authors": "L Munn"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Translating Principles into Practices of Digital Ethics: Five Risks of Being Unethical",
+            "journal": "Philosophy & Technology",
+            "year": "2019-06",
+            "authors": "L Floridi"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Toward a Policy Approach to Normative Artificial Intelligence Governance: Implications for AI Ethics Education",
+            "journal": "IEEE Transactions on Technology and Society",
+            "year": "2024-09",
+            "authors": "D Kim; Q Zhu; H Eldardiry"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Exploring approaches to artificial intelligence governance: from ethics to policy",
+            "journal": "IEEE",
+            "year": "2023",
+            "authors": ""
+        },
+        {
+            "ref_id": "b29",
+            "title": "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices",
+            "journal": "Science and Engineering Ethics",
+            "year": "2020-08",
+            "authors": "J Morley; L Floridi; L Kinsey; A Elhalal"
+        },
+        {
+            "ref_id": "b30",
+            "title": "The AI field needs translational Ethical AI research",
+            "journal": "",
+            "year": "2022-09",
+            "authors": "J Schaich Borg"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Principles to Practices for Responsible AI: Closing the Gap",
+            "journal": "",
+            "year": "2020",
+            "authors": "D Schiff; B Rakova; A Ayesh; A Fanti; M Lennon"
+        },
+        {
+            "ref_id": "b32",
+            "title": "What's Next for AI Ethics, Policy, and Governance? A Global Overview",
+            "journal": "ACM",
+            "year": "2020-02",
+            "authors": "D Schiff; J Biddle; J Borenstein; K Laas"
+        },
+        {
+            "ref_id": "b33",
+            "title": "Integrating Ethics within Machine Learning Courses",
+            "journal": "ACM Transactions on Computing Education",
+            "year": "2019-12",
+            "authors": "J Saltz; M Skirpan; C Fiesler; M Gorelick; T Yeh; R Heckman; N Dewar; N Beard"
+        },
+        {
+            "ref_id": "b34",
+            "title": "If Time Allows\": The Role of Ethics in AI Education",
+            "journal": "ACM",
+            "year": "2020-02",
+            "authors": "N Garrett; N Beard; C Fiesler"
+        },
+        {
+            "ref_id": "b35",
+            "title": "You Can't Sit With Us: Exclusionary Pedagogy in AI Ethics Education",
+            "journal": "ACM",
+            "year": "2021-03",
+            "authors": "I D Raji; M K Scheuerman; R Amironesei"
+        },
+        {
+            "ref_id": "b36",
+            "title": "What Do We Teach When We Teach Tech Ethics?: A Syllabi Analysis",
+            "journal": "ACM",
+            "year": "2020-02",
+            "authors": "C Fiesler; N Garrett; N Beard"
+        },
+        {
+            "ref_id": "b37",
+            "title": "'Do I Have to Take This Class?': A Review of Ethics Requirements in Computer Science Curricula",
+            "journal": "Association for Computing Machinery",
+            "year": "2025",
+            "authors": "J Weichert; D Kim; Q Zhu; H Eldardiry"
+        },
+        {
+            "ref_id": "b38",
+            "title": "Ethical competence: A concept analysis",
+            "journal": "Nursing Ethics",
+            "year": "2016",
+            "authors": "K Kulju; M Stolt; R Suhonen; H Leino-Kilpi"
+        },
+        {
+            "ref_id": "b39",
+            "title": "Ethical competence: An integrative review",
+            "journal": "Nursing Ethics",
+            "year": "2018",
+            "authors": "K Lechasseur; C Caux; S Doll\u00e9; A Legault"
+        },
+        {
+            "ref_id": "b40",
+            "title": "What is ethical competence? the role of empathy, personal values, and the five-factor model of personality in ethical decision-making",
+            "journal": "Journal of Business Ethics",
+            "year": "2016",
+            "authors": "R Pohling; D Bzdok; M Eigenstetter; S Stumpf; A Strobel"
+        },
+        {
+            "ref_id": "b41",
+            "title": "Authorized licensed use limited to: Kennesaw State University",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b42",
+            "title": "Promoting professional socialization: A synthesis of durkheim, kohlberg, hoffman, and haidt for professional ethics education",
+            "journal": "Business and Professional Ethics Journal",
+            "year": "2022",
+            "authors": "D Kim"
+        },
+        {
+            "ref_id": "b43",
+            "title": "The elicitation interview technique: Capturing people's experiences of data representations",
+            "journal": "IEEE transactions on visualization and computer graphics",
+            "year": "2015",
+            "authors": "T Hogan; U Hinrichs; E Hornecker"
+        },
+        {
+            "ref_id": "b44",
+            "title": "A concise guide to elicitation methodology",
+            "journal": "",
+            "year": "2021",
+            "authors": "A S Williams; F R Ortega"
+        },
+        {
+            "ref_id": "b45",
+            "title": "More than words: methods to elicit talk in interviews",
+            "journal": "Family practice",
+            "year": "2021",
+            "authors": "P H Thille; L Rotteau; F Webster"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1109/ETHICS65148.2025.11098179"
+}

@@ -1,0 +1,76 @@
+{
+    "title": "#StopHateForProfit and the ethics of boycotting by corporations",
+    "authors": "Theodore M Lechterman; Ryan Jenkins; Bradley J Strawser",
+    "pub_date": "",
+    "abstract": "",
+    "sections": [
+        {
+            "heading": "Defense Analysis Department",
+            "text": "Naval Postgraduate School Monterey, CA, USA bjstraws@nps.edu\nAbstract-Debate over the ethical obligations of technology corporations has recently extended to the obligations of those who support them financially. In June 2020, numerous companies that advertise on social media platforms withdrew their business, citing failures of the platforms (especially Facebook) to address the proliferation of hateful content [1]. Many were inspired by the #StopHateForProfit campaign initiated by the Anti-Defamation League. These events invite reflection on an understudied topic: the ethics of boycotting by corporations. Although value-driven consumerism has generated significant recent discussion in applied ethics, that discussion has focused almost exclusively on the consumption choices of individuals. As this paper underscores, value-driven consumerism by business corporations complicates these issues and invites further research.\nWe begin by arguing that, at least through June 2020, Facebook was involved in injustice significant enough to raise questions of complicity by its advertisers. But does this injustice generate an obligation for advertisers to cancel their contracts? Recent views on the ethics of boycotting by individuals hold that boycotts are a generally permissible form of political expression and likely morally required under certain conditions [2]- [4]. However, we argue that boycotting by companies raises additional considerations and provides a helpful test case for various positions on corporate social responsibility (CSR). Indeed, we suggest that boycotting by corporations may sometimes be morally required, and this obligation challenges the plausibility of certain minimalist conceptions of CSR [5]. Yet, boycotting by corporations may also threaten democratic forms of political contestation, by inhibiting deliberation and equal participation in the resolution of political controversies [6]. This observation reveals the limits of corporate citizenship conceptions of CSR, which encourage corporations to be forceful activists for social change [7]. We propose preliminary principles for the ethics of boycotting by corporations; indicate how these principles relate to different CSR paradigms; and show how these insights contribute to efforts to improve the accountability of technology corporations.\nIndex Terms-social media, hate speech, CSR, boycotts, ethics",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b3",
+                "b4",
+                "b5",
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Inside the ad boycott that has Facebook on the defensive",
+            "journal": "Politico",
+            "year": "2020-03",
+            "authors": "N Scola"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Consumption and social change",
+            "journal": "Economics and Philosophy",
+            "year": "2019-03",
+            "authors": "N Hassoun"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Boycott ethics",
+            "journal": "",
+            "year": "2019",
+            "authors": "C Pickard"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Ethical consumerism: A defense of market vigilantism",
+            "journal": "Philosophy and Public Affairs",
+            "year": "2018-07",
+            "authors": "C Barry; K Macdonald"
+        },
+        {
+            "ref_id": "b4",
+            "title": "The social responsibility of business is to increase profits",
+            "journal": "New York Times Magazine",
+            "year": "1970",
+            "authors": "M Friedman"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Is ethical consumerism an impermissible form of vigilantism?",
+            "journal": "Philosophy and Public Affairs",
+            "year": "2012",
+            "authors": "W Hussain"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Toward a political conception of corporate responsibility: Business and society seen from a Habermasian perspective",
+            "journal": "Kennesaw State University",
+            "year": "2007-10",
+            "authors": "A G Scherer; G Palazzo"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1017/S026626711800007X"
+}

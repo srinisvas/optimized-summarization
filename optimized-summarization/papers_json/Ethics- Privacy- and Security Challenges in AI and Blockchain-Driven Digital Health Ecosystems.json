@@ -1,0 +1,419 @@
+{
+    "title": "Ethics, Privacy, and Security Challenges in AI and Blockchain-Driven Digital Health Ecosystems",
+    "authors": "V Rama; Rahim Nour;  Nimah; Abdullah H Maad; Kadim A Jabbar; Ali Ihsan Alanssari; Praveen Thuniki",
+    "pub_date": "",
+    "abstract": "This article discusses how integrating AI and blockchain technology into digital health platforms might help and hurt privacy, fairness, transparency, and compliance. This research compares AI and blockchain technologies for making honest and ethical healthcare choices. We are investigating federated learning, homomorphic encryption, differential privacy, zero-knowledge proofs, self-sovereign identity systems, explainable AI, blockchain interface protocols, and privacypreserving AI systems. We rated each technique based on data protection, ethical data collecting, computer justice, openness, and system security. While most approaches perform well in certain locations, they all have issues that may render them unsuitable for use in healthcare. The proposed solution addresses these concerns and outperforms speed standards. It evaluates ethical risks based on bias, fairness, and transparency and is continuously improving ethical decision-making. These evaluations improve healthcare AI systems' reliability, fairness, and clarity during decision-making. This implies its potential application in AI-driven healthcare systems.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Combining AI and blockchain technology has transformed digital health settings, improving patient outcomes, data management, and healthcare delivery [1]. These technologies, which combine AI's data-driven insights with blockchain's secure, decentralized structure, might solve some of healthcare's major issues, such as scattered data and excessive pricing [2]. However, the growing utilization of these technologies presents ethical, privacy, and safety concerns that demand immediate and thorough investigation. This section will examine these issues, provide solutions, and highlight this work's main accomplishments. AI and blockchain are revolutionizing digital health and growing rapidly [3]. AI is transforming healthcare with predictive analytics, individualized medication, and increased efficiency. Machine learning algorithms trained on large datasets may be able to diagnose diseases better than physicians [4]. Deep learning algorithms can use medical imagery to detect cancer, forecast its progression, and recommend treatments [5]. Blockchain makes health data ownership and sharing secure, making it ideal for AI. The autonomous system can't modify data, and cryptography protects privacy. Leading blockchain initiatives like Hyperledger by IBM, Medicalchain, and MediBloc demonstrate how blockchain can enable secure and open EHRs. Patients may see their records, authorize medical staff, and verify data correctness while maintaining control [6]. Despite these advancements, major issues remain. AI manages a significant amount of sensitive health data, which could potentially harm individuals if misused. AI systems, frequently nicknamed \"black boxes,\" don't make explicit judgments, which might make people doubt them [7]. While blockchain is safe, smart contract dangers, restricted development, and GDPR compliance issues complicate matters.\nAI and blockchain use in healthcare depends on ethics. Unlike conventional healthcare facilities, these technologies operate in a complex, data-heavy environment that creates ethical issues [8]. Among the crucial solutions are liberty and educated permission, justice and equality, privacy and secrecy, responsibility and transparency, safety and preventing harm, and beneficence [9]. Blockchain enhances the specificity of access permissions, empowering patients to understand their use. Blockchain systems should be accessible to everyone, and we should improve AI algorithms to promote justice and include underprivileged groups. promote justice. Systems that employ these technologies must follow privacy standards to protect private health information [10]. We need openness and accountability, with AI providing explanations and blockchain data verification. Thorough testing ensures the drug is safe and harmless. The objective is better patient outcomes, access, and healthcare simplicity.\nInnovative approaches have addressed various challenges presented by AI and blockchain in digital health [11]. AI technologies like collaborative learning, differential privacy, and homomorphic encryption enable you to manage data securely. Self-sovereign identities are a blockchain-based identity management system that enables users to govern and authorize data usage [12]. Ethical AI emphasizes fairness, transparency, and accountability, while multi-signature systems and post-quantum encryption improve blockchain security. International collaboration enforces GDPR and HIPAA, and worldwide communication standards make data sharing easier [13]. Government aims and society's values align with the use of technology through multidisciplinary ethical review boards. This chapter will contribute to the AI and blockchain conversation in digital health ecosystems by carefully examining privacy, security, and ethical issues; creating a framework that combines ethical principles with technical safeguards; and judging the proposed solutions [14]. It examines what laws imply, where further research is required, and how real-life examples might support academic claims. AI and blockchain might transform digital health care and patient outcomes [15]. However, these shifts present challenges. Cutting-edge solutions and moral creativity may help us overcome this issue and maximize these technologies [16]. This chapter provides an overview of the issues and strategies for creating fair, safe, and effective digital health communities.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORKS",
+            "text": "Rapid advancements in AI and blockchain-based digital health platforms have led to the development of several privacy, security, and moral solutions. These are crucial for reliable and efficient systems [17]. Federated learning, a crucial tool for privacy-protecting machine learning, enables the training of models across various data sources without centralization. It keeps private data near to its source, reducing privacy risk. Federated learning keeps information private and follows the rules, but communication costs and the requirement for robust models that can swiftly aggregate changes in multiple areas limit its growth [18]. While independence simplifies the system's operation, it delays model synchronization. Homomorphic encryption allows you to calculate protected data while keeping it private. This strategy works effectively to protect data from unauthorized viewing while processing. The complexity of the coding process contributes to its slowness and energy waste. Homomorphic encryption necessitates significant computer power, rendering it unsuitable for large-scale implementation in digital health centers that prioritize speedy work. Differential privacy protects privacy [19]. It hides individuals by adding random noise to the data. It establishes a statistical technique to shield data from personal identification. Differential privacy protects privacy effectively, but it's not as secure as other approaches and may not maintain data accuracy in large This beneficial strategy boasts welldocumented legal compliance. strategy. This makes it ideal for privacy-protecting digital health apps [20]. Another intriguing option is zero-knowledge proofs (ZKPs). They allow one side to prove a point without proving the facts. Verified trades or information transfers protect private information. ZKPs offer exceptional security, but the challenge of computing the proof limits their widespread use. They may not operate well together in blockchain applications, and adding them to realworld systems may be difficult [21].Quantum computing poses hazards to digital health systems; thus, post-quantum cryptography protects them. Quantum computers might break conventional encryption technologies; therefore, our solution protects encrypted protocols. Although post-quantum cryptography is secure, it faces challenges with scale and latency due to the complexity of the cryptographic algorithms used, which may not be suitable for widespread use [22]. Multi-signature authentication makes transactions safer by requiring several participants. Bad actors find it tougher to exploit the system. This proposal protects digital health system safety, notably blockchain-based applications, but it may reduce their usefulness due to many evaluations. Collecting a large number of documents can make energy conservation challenging. Making AI-based decision-making tools transparent and accountable requires explicable AI (XAI). It helps everyone understand and evaluate AI conclusions, which is crucial in healthcare where options must be clear and rational. By exposing how the model generates judgments, XAI eliminates weaknesses and makes things fairer. Explainable models may slow down massive system growth, particularly when dealing with tough data. Smart contract verification ensures smart contract-based blockchain applications are secure and accurate [23]. These automated contracts play a crucial role in controlling autonomous systems, but their failure or weakness could potentially be costly or immoral. Regularly monitoring smart contracts may reduce these dangers, but it requires technical expertise and attention. Self-sovereign identification (SSI) solutions let people own their data.",
+            "publication_ref": [
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b22"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. PROPOSED METHODOLOGY",
+            "text": "In AI-driven healthcare systems, ethical considerations are increasingly crucial since medical decisions are intricate and affect patient outcomes. The recommended strategy addresses healthcare AI ethical challenges by organizing and methodically examining AI model choices. Bias, fairness, and transparency underpin this strategy. It describes how to analyze and improve healthcare choices while respecting moral norms. Look at the moral danger of AI systems making choices first. Several unethical practices affect healthcare AI model fairness and reliability. This review focused on prejudice, truth, and openness. You may compare guessing probabilities among AI models or datasets to discover bias. This reveals data or model biases that might create inconsistencies. It prevents the AI system from picking winners and losers based on race, gender, or money. initialized for all data points in the dataset, with the following sum-based equations for each factor.\n\u2022 = \u03a3 \u22c5 bias model ! 2 \u2022 = \u2211 ! 3 \u2022 = \u03a3 \u22c5 transparency model !4\n3. Assess Bias: Bias is assessed by comparing predicted probabilities of outcomes across different models.\nThe bias metric for each data point is calculated by the following summation over the models' predictions:\n\u2022 = \u2211 | '| -) '| |5\n4. Assess Fairness: Fairness is evaluated by checking if the decision outcomes are equitable across different demographic groups. Here, we compute the fairness score using a summation of disparity in predictions between groups:\n\u2022 = \u2211 group disparity !6\n5. Assess Transparency: Transparency is evaluated by quantifying how understandable and explainable the AI model's decision-making process is. For each decision point , we calculate a transparency score, which is averaged over all data points:\n\u2022 = \u2211 transparency !7\n6. Calculate Ethical Risk: The total ethical risk score is computed by combining the individual scores of bias, fairness, and transparency, weighted by \u03b1 , \u03b1 , and \u03b1 . (which sum to 1):\n\u2022 / 0 = \u03b1 \u22c5 \u2211 + \u03b1 \u22c5 \u2211 + \u03b1 . \u22c5 \u22118\n7. Normalize Ethical Scores: To ensure that ethical scores lie within a defined range (e.g., 0 to 1), the ethical risk scores are normalized across all data points. This normalization is done via the following formula, which scales the scores:\n\u2022 / 0 304 = 5 6 7min 5 6 max 5 6 7min 5 6 9\n8. Bias Calculation: The bias for each decision is computed by comparing the model's predictions using the difference in probabilities between two models. The formula is as follows:",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "\u2022",
+            "text": "= \u2211 9: '9 !7; '9 !9 : '9 !<; '9 ! 10 9. Fairness Calculation: Fairness is quantified by the statistical parity difference between groups, with the following equation that evaluates the disparity in outcomes across the groups:\n\u2022 = \u2211 > 9:\n'9 !7; '9 !9 : '9 !<; '9 ! ? 11\n10. Adjusting Weighting Factors: Adjust the weights for each factor based on specific needs or stakeholder inputs. The adjusted weight for each ethical factor is calculated as follows:\n\u2022 \u03b1 @ = \u03b1 \u22c5 adjustment factor for bias 12\n\u2022 \u03b1 @ = \u03b1 \u22c5 adjustment factor for fairness 13\n11. Ethical Risk Score Output: The ethical risk score is computed and outputted based on the adjusted weights. The equation is:\n\u2022 / 0 = \u2211 \u03b1 @ \u22c5 + \u03b1 @ \u22c5 + \u03b1 . @ \u22c5 !14\n12. Threshold Comparison: The ethical risk score is compared with predefined ethical thresholds to evaluate whether the decision adheres to ethical standards. This comparison is modeled by: \u2022 / 0 = \u2211 \u03b1 @ \u22c5 + \u03b1 @ \u22c5 + \u03b1 . @ \u22c5 ! 15\n\u2022 If / 0 exceeds the threshold, the decision is flagged.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Notations:",
+            "text": "\u2022 A: Dataset containing patient data.\n\u2022 = { , , \u2026 , }:Data points in the dataset.\n\u2022 = { , , \u2026 , }:Decision rules for evaluation.\n\u2022 \u03b1 , \u03b1 , \u03b1 . : Weights for bias, fairness, and transparency.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "\u2022",
+            "text": ":Bias score for data point .\n\u2022 :Fairness score for data point .\n\u2022 :Transparency score for data point .\n\u2022 '| :Predicted probability of outcome ' for .\n\u2022 ) '| :Predicted probability from an alternate model for . \u2022 / 0 :Ethical risk score for the dataset.\n\u2022 / 0 304 :Normalized ethical risk score.\n\u2022 min / 0 : Minimum ethical risk score.\n\u2022 max / 0 :Maximum ethical risk score. algorithm 1 The Ethical Risk Scoring Algorithm (ERSA) evaluates prejudice, fairness, and transparency in AI-driven healthcare choices. Figure 1 depicts the Ethical Risk Scoring Algorithm. It examines AI and blockchain-based digital health system ethics. First, gather data and establish moral criteria like fairness, prejudice, and transparency. We examine each piece of data and assess the ethical risk. We adjust the component weights while keeping the risk number constant. We compare the ultimate score to the criteria to determine if we should highlight the choice. We alter the decision framework to consider ethics if necessary. Finally, either accepting or reviewing the option is the next step. The algorithm effectively operates in high-stakes, variable scenarios such as AI and blockchain-driven digital health systems, as it computes each step using intricate mathematical models that take into account the ethical risk score and situation sensitivity.\n\u2022Final Output: Accept or flag decision.\n\u2022Update Framework: Adjust decision rules if necessary.\n\u2022Evaluate Decision: Flag decision if score exceeds threshold.\n\u2022Threshold Comparison: Compare risk score to threshold.\n\u2022Final Ethical Risk Score: Compute final risk score.\n\u2022Adjust Weights: Modify weighting factors as needed.\n\u2022Normalize Scores: Scale ethical risk score.\n\u2022Calculate Ethical Risk: Combine bias, fairness, and transparency scores.\n\u2022Assess Transparency: Calculate transparency score.\n\u2022Assess Fairness: Calculate fairness score.\n\u2022Assess Bias: Calculate bias score.\n\u2022Initialize Factors: Set initial values for bias, fairness, and transparency.\n\u2022Input Data: Collect data and decision rules. Figure 2 demonstrates AI-and blockchain-based social problem decision-making in digital health contexts. Enter ethical risk ratings and case information. The application calculates the risk and compares it to a limit. If the danger surpasses the threshold, the application employs morally sound modification factors. We review revised risks to determine if they require disclosure. We issue warnings if the decision surpasses the flagging threshold. If not, accept. The last step is to accept or reject the decision using the updated risk number. The flowchart promotes obedience and excellent judgment. It starts by figuring out the compliance number and matching it to certain standards. If the score doesn't meet the standards, the program uses bias adjustment to figure out the risk of the choice again. After that, it goes through more confirmation tests to make sure it is fair and follows ethical rules [24][25][26]. If any of these conditions are not satisfied, we mark the choice for further review. In that scenario, we accept the choice and conclude the process. This step makes sure that the decisions made in AI-and blockchain-powered digital health systems are ethical, fair, and don't show bias. This results in trustworthy and responsible outcomes.\nIV. RESULT AI-and blockchain-driven digital health settings and procedures tested against privacy, ethical, and security concerns indicate substantial positives and downsides. These systems must protect private health information, be transparent about choices, make the system secure, obey the regulations, and prioritize justice and progress. To determine the best digital health app approach, assess their performance across several factors. Each technique has merits and downsides.    A radar map in Figure 5 compares AI and blockchain technologies for security and system characteristics, such as how well they function together, how safe the data is, who can access it, how large the system can become, and how effectively it can recover from catastrophes. The top choice scored virtually perfect (95) for stability and scale, proving it can manage complex and evolving digital health circumstances. Homomorphic encryption and blockchain interface protocols are safer, but they struggle to scale and recover from catastrophes. Some measurements are more effective for explainable AI than others, and they encounter challenges when integrating with other systems. This graph indicates how effectively the recommended strategy works overall, ensuring a secure, scalable, and robust system for emerging digital health challenges.",
+            "publication_ref": [
+                "b23",
+                "b24",
+                "b25"
+            ],
+            "figure_ref": [
+                "fig_1",
+                "fig_2",
+                "fig_3"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION",
+            "text": "Finally, this demonstrates Looking at AI and blockchain technologies in digital health ecosystems teaches us how to combine privacy, ethics, and security to create robust, moral healthcare systems. Each strategy has merits and downsides. Some are better at keeping information private and safe, while others are more transparent and fairer. Federated approach ensures that AI and blockchain technologies in healthcare are fair, impartial, and transparent. Dynamic risk assessment and decision confirmation provide an organized approach to ethical dilemmas. This ensures that AI-powered healthcare systems are effective, socially responsible, and government compliant. AI and blockchain may enhance health outcomes while maintaining privacy and justice. This healthcare paradigm has enormous potential.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Public health emergencies of international concern: A historic overview",
+            "journal": "J. Travel Med",
+            "year": "2020",
+            "authors": "A Wilder-Smith; S Osman"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Economic Effects of Coronavirus Outbreak (COVID-19) on the World Economy",
+            "journal": "",
+            "year": "2021-06-05",
+            "authors": ""
+        },
+        {
+            "ref_id": "b2",
+            "title": "Economic impact of COVID-19 pandemic on healthcare facilities and systems: International perspectives",
+            "journal": "Best Pract. Res. Clin. Anesthesiol",
+            "year": "2020",
+            "authors": "A D Kaye"
+        },
+        {
+            "ref_id": "b3",
+            "title": "The Democratization of Health Care",
+            "journal": "Health Trends Report",
+            "year": "2018-06-05",
+            "authors": "D Minor"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Machine Learning for Internet of Things",
+            "journal": "IGI Global",
+            "year": "2021",
+            "authors": "R Kashyap"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Big Data Challenges and Solutions in the Medical Industries",
+            "journal": "",
+            "year": "2018",
+            "authors": "A D Piersson"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Object boundary detection through robust active contour based method with global information",
+            "journal": "International Journal of Image Mining",
+            "year": "2018",
+            "authors": "R Kashyap"
+        },
+        {
+            "ref_id": "b7",
+            "title": "A systematic review of the use of blockchain in healthcare",
+            "journal": "Symmetry",
+            "year": "2018",
+            "authors": "M H\u00f6lbl; M Kompara; A Kami\u0161ali\u0107; L N Zlatolas"
+        },
+        {
+            "ref_id": "b8",
+            "title": "A survey of blockchain from the perspectives of applications, challenges, and opportunities",
+            "journal": "IEEE Access",
+            "year": "2019",
+            "authors": "A A Monrat; O Schel\u00e9n; K Andersson"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Healthcare blockchain system using smart contracts for secure automated remote patient monitoring",
+            "journal": "J. Med. Syst",
+            "year": "2018",
+            "authors": "K N Griggs"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Artificial Intelligence (AI) applications for COVID-19 pandemic",
+            "journal": "Diabetes Metab. Syndr. Clin. Res. Rev",
+            "year": "2020",
+            "authors": "R Vaishya; M Javaid; I H Khan; A Haleem"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Communication-efficient learning of deep networks from decentralized data",
+            "journal": "",
+            "year": "2017",
+            "authors": "H B Mcmahan"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Fast level set method for segmentation of medical images",
+            "journal": "",
+            "year": "2016",
+            "authors": "P Gautam"
+        },
+        {
+            "ref_id": "b13",
+            "title": "DNA Nano array analysis using hierarchical quality threshold clustering",
+            "journal": "",
+            "year": "2010",
+            "authors": "N Waoo; A "
+        },
+        {
+            "ref_id": "b14",
+            "title": "An automated selfhealing cloud computing framework for resource scheduling",
+            "journal": "International Journal of Grid and High Performance Computing (IJGHPC)",
+            "year": "2021",
+            "authors": "A Agarwal; A Pasricha; T Choudhury"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Blockchain-based distributed patientcentric image management system",
+            "journal": "Appl. Sci",
+            "year": "2020",
+            "authors": "M Y Jabarulla; H.-N Lee"
+        },
+        {
+            "ref_id": "b16",
+            "title": "The four dimensions of contestable AI diagnostics-A patient-centric approach to explainable AI",
+            "journal": "Artif. Intell. Med",
+            "year": "2020",
+            "authors": "T Ploug; S Holm"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Spine surgery uses of artificial learning and machine learning: A LDH treatment",
+            "journal": "",
+            "year": "2023",
+            "authors": "R Nair; A A Fadhil; M M Hamed; A H O Al Mansor"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Real-time sentiment analysis and spam detection using machine learning and deep learning",
+            "journal": "Springer",
+            "year": "",
+            "authors": "M M Abdulhasan; H Alchilibi; M A Mohammed; R Nair"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Secure and efficient data accessibility in blockchain based healthcare systems",
+            "journal": "",
+            "year": "2018",
+            "authors": "V Ramani"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Active contours using global models for medical image segmentation",
+            "journal": "International Journal of Computational Systems Engineering",
+            "year": "2018",
+            "authors": "V Tiwari"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Modified region based segmentation of medical images",
+            "journal": "",
+            "year": "2015",
+            "authors": "P Gautam"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Autonomic Computing Based Respiratory Disorders Assessment Using Speech Parameters: A Systematic Review",
+            "journal": "IEEE",
+            "year": "2023-10",
+            "authors": "P Shrivastava; N Tripathi; B K Dewangan; B K Singh; T Choudhury; K Kotecha; S Dewangan"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Development of a Capacitive Temperature Sensor Using a Lead-Free Ferroelectric Bi(Fe2/3Ta1/3)O3 Ceramic",
+            "journal": "IEEE Sensors Journal",
+            "year": "2023-07-15",
+            "authors": "S Halder; S Bhuyana; A Tripathy; O A Zaabi; B Swain; U R Muduli"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Generic framework of new era artificial intelligence and its applications",
+            "journal": "Springer",
+            "year": "",
+            "authors": "B M Sharma; D K Verma; K D Raghuwanshi; S Dubey; R Nair; S Malviya"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Rose plant disease detection using image processing and machine learning",
+            "journal": "Springer",
+            "year": "",
+            "authors": "A Sharma"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "11",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Algorithm 1 : 1 2.11Enhanced Explanation of Algorithm 1: Ethical Risk Scoring Algorithm (ERSA) 1. Input Dataset: The dataset D contains patient = { , , \u2026 , } with data points, and decision rules = { , , \u2026 , } defining the decision-making criteria. The model may involve the evaluation of multiple decision rules across the data. \u2022 = { , , \u2026 , }, = { , , \u2026 , } Initialize Ethical Factors: The ethical factors-bias , fairness , and transparency are",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 1 .1Fig.1.Ethical Risk Scoring Algorithm (ERSA) for AI and Blockchain-Driven Digital Health Ecosystems.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 2 .2Fig.2.Ethical Decision-Making in AI and Blockchain-Driven Digital Health Systems.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 5 .5Fig.5.Security and system metrics across AI and blockchain methods",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "learning, homomorphic encryption, and differential privacy are powerful but not open or scalable privacy measures. Explainable AI and self-sovereign recognition systems are open and fair, but they may require extra privacy protection. The offered solution solves these issues across all aspects, making it unique. It achieves privacy, legal compliance, and ethical data acquisition perfection. This comprehensive",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "PERFORMANCE COMPARISON OF PRIVACY AND ETHICAL METRICS ACROSS AI AND BLOCKCHAIN METHODS IN DIGITAL HEALTH ECOSYSTEMS.",
+            "figure_data": "MethodDataEthicalRegulatoAlgorithTransparePrivacy &Datarymicncy&ConfidentiCollectiCompliaFairnessExplainabalityon &nceilityUsageFederated8580907560Learning"
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "AI and blockchain privacy and moral performance in digital health systems. It examines data security, wise data usage, compliance, computer fairness, openness, and user trust. Federated learning, homomorphic encryption, and differential privacy are effective techniques to keep information secret and obey the laws, but they are less ethical.",
+            "figure_data": "Fig.4.Privacy and ethical metrics across AI andblockchain methods"
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "",
+            "figure_data": ". PERFORMANCE COMPARISON OF SECURITY ANDSYSTEM METRICS ACROSS AI AND BLOCKCHAIN METHODS INDIGITAL HEALTH ECOSYSTEMS.Method SysteInteroperDataAccessScalabilDisastmability &IntegrControlity&erSecuriIntegratioity &&PerformRecovty &nAccurAuthentianceery &ResiliacycationIncidenceentResponseFederate806580807065dLearningHomomo956090955070rphicEncryptionDifferent857080807570ialPrivacyZero-906580906575Knowledge ProofsPost-906095906070QuantumCryptographySmart907090956580ContractAuditingMulti-956595906080SignatureAuthenticationPrivacy-907090907080PreservingArtificialIntelligenceSystemsProposed958595958590Method"
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "",
+            "figure_data": "displays the security and performance indicatorsof AI and blockchain in digital health platforms. Systemsecurity, interoperability, data integrity, access control,scalability, and emergency recovery are crucial. Traditionalsolutions like homomorphic encryption and smart contractchecks provide excellent system security and integrity but aredifficult to scale and integrate."
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "\u2022 = \u03a3 \u22c5 bias model ! 2 \u2022 = \u2211 ! 3 \u2022 = \u03a3 \u22c5 transparency model !4",
+            "formula_coordinates": [
+                2.0,
+                351.6,
+                476.44,
+                193.68,
+                60.83
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "\u2022 = \u2211 | '| -) '| |5",
+            "formula_coordinates": [
+                2.0,
+                351.6,
+                584.8,
+                193.2,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "\u2022 = \u2211 group disparity !6",
+            "formula_coordinates": [
+                2.0,
+                351.6,
+                651.52,
+                192.48,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "\u2022 = \u2211 transparency !7",
+            "formula_coordinates": [
+                2.0,
+                351.6,
+                720.88,
+                193.2,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_4",
+            "formula_text": "\u2022 / 0 = \u03b1 \u22c5 \u2211 + \u03b1 \u22c5 \u2211 + \u03b1 . \u22c5 \u22118",
+            "formula_coordinates": [
+                3.0,
+                90.36,
+                72.76,
+                194.16,
+                31.31
+            ]
+        },
+        {
+            "formula_id": "formula_5",
+            "formula_text": "\u2022 = \u2211 > 9:",
+            "formula_coordinates": [
+                3.0,
+                90.36,
+                279.5,
+                92.57,
+                21.85
+            ]
+        },
+        {
+            "formula_id": "formula_6",
+            "formula_text": "\u2022 / 0 = \u2211 \u03b1 @ \u22c5 + \u03b1 @ \u22c5 + \u03b1 . @ \u22c5 !14",
+            "formula_coordinates": [
+                3.0,
+                90.36,
+                420.28,
+                193.85,
+                32.99
+            ]
+        }
+    ],
+    "doi": "10.1109/OTCON65728.2025.11070382"
+}

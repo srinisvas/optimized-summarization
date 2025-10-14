@@ -1,0 +1,318 @@
+{
+    "title": "Privacy-Diffusion: Privacy-Preserving Stable Diffusion Without Homomorphic Encryption",
+    "authors": "Po-Chu Hsu; Ziying Yu; Shuhei Mise; Hideaki Miyaji",
+    "pub_date": "",
+    "abstract": "Text-to-image generation is trending in the generative AI field. Stable Diffusion is the state-of-the-art among open-source projects. Many artists and service providers customize the diffusion model for special textures. However, there is no protection for the privacy of the user's input text prompt, output image, and the customized model on the server. Privacy is crucial for user trust and protecting intellectual property. Existing privacy-preserving diffusion models use fully homomorphic encryption (FHE), which is time-consuming and can degrade image quality. We propose Privacy-Diffusion, a framework that preserves privacy without FHE by leveraging the irreversible properties of neural network layers and the property that in the diffusion process, the predicted noise is a normalized Gaussian distribution. Our framework protects clients' input text prompts and generated images from the server and safeguards customized models from clients. Compared with existing research HEdiffusion which spent 200% extra time and visible quality loss, our protocol can reach the same security level with only 4% extra time and has no quality loss. To our knowledge, we are the first to achieve this goal without FHE while maintaining high-quality image output.",
+    "sections": [
+        {
+            "heading": "I. Introduction",
+            "text": "Text-to-image generation is a key area in generative artificial intelligence (GenAI). Stable Diffusion [16] is the leading open-source project, invented the diffusion algorithm to create high-quality images from text prompts. Algorithms like DreamBooth [19] and LoRA [9] allows artists and service providers to customization the flavors of the output image. Protecting these customized models, as well as the client's input text prompt and output image, is crucial for privacy and intellectual property.\nRequired Properties: For a text-to-image generation service, the privacy-preserving diffusion algorithm must ensure:\n\u2022 Input Text Prompt Privacy: The server cannot access the client's text prompt in plaintext.\n\u2022 Output Image Privacy: The server cannot access the output image. \u2022 Model Privacy: The client cannot access the model.",
+            "publication_ref": [
+                "b15",
+                "b18",
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Backgrounds",
+            "text": "To understand the challenges of building a privacypreserving diffusion model, we introduce Stable Diffu-sion and existing privacy-preserving machine learning (Privacy ML) techniques.\n\u2022 Stable Diffusion Image generation in Stable Diffusion [16] is a step-by-step procedure. As shown in Fig. 1, starting from a random noise, the diffusion model predicts the noise at each step and refines the image iteratively to generate a high-quality output. ",
+            "publication_ref": [
+                "b15"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Difficulties and Challenges",
+            "text": "Maintaining privacy while ensuring efficiency and image quality is challenging. Existing Privacy ML techniques have limitations:\n\u2022 FHE is Computationally Heavy: The BGV [1] scheme is 23202 times slower, and the CKKS [4] scheme is 2055 times slower than plaintext multiplication. Such slowdowns are unacceptable for Stable Diffusion.\nFig. ",
+            "publication_ref": [
+                "b0",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Our Contributions",
+            "text": "We propose Privacy-Diffusion, a privacy-preserving diffusion framework with no computation overhead or image quality loss. By leveraging the irreversible property of neural network layers and the normalized Gaussian distribution of predicted noise, our protocol protects input text prompt, output image, and customized model privacy without FHE, downsizing, quantization, or differential privacy techniques. Our implementation is available at https://github.com/Animechain-ai/ Privacy-Diffusion. Our contributions are:\n\u2022 Security Without FHE: Utilizing neural network layers' irreversible property and the normalized Gaussian distribution of predicted noise, our protocol is secure without FHE or encryption schemes. \u2022 Privacy Without Computation Overhead: Our protocol has no extra computation overhead, relying on proper distribution of computations between client and server.\n\u2022 No Quality Loss: Our protocol does not use differential privacy or approximations, maintaining highquality image output. This paper demonstrates related Privacy ML protocols in Section II, introduces preliminaries in Section III, proposes our Privacy-Diffusion protocol in Section IV, discusses security in Section V, and demonstrates implementation and optimization in Section VI. We conclude in Section VII.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. Related Works",
+            "text": "Various methods has been used to protect neural network privacy, such as homomorphic encryption (HE) [12]. CryptoNets [7] first applied HE to neural networks. Prior works on privacy-preserving diffusion models focus on protecting training data [2], [10] from malicious parties, emphasizing differential privacy [6] and protection against membership inference attacks [14]. Protecting training data is crucial, but the privacy of the image generation process is also important. HE-Diffusion [3] is the first framework focused on the image generation process. They reduce computation time by protecting the noise prediction part with the irreversibility property of neural network layers and only the denoising part requires FHE. They optimize performance using partial encryption, image division, and sparse encryption. We propose a method to protect diffusion model privacy and security without FHE or encryption schemes, maintaining high-quality image output with only 4% extra time compared to the 200% extra time of HE-Diffusion.",
+            "publication_ref": [
+                "b11",
+                "b6",
+                "b1",
+                "b9",
+                "b5",
+                "b13",
+                "b2"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. Preliminaries",
+            "text": "This section defines the Stable Diffusion model and its components: text encoder, UNet, denoise function, and Variational Autoencoder (VAE).\nDefinition 1 (Text Encoder): A text encoder [5], [17] ",
+            "publication_ref": [
+                "b4",
+                "b16"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. Our Protocol: Privacy-Diffusion",
+            "text": "Privacy-Diffusion is a privacy-preserving diffusion framework that protects both the privacy of the client and the server. It can protect the client's text prompt and the generated image from being learned by the server. It can also protect the server's customized model from being learned by the client. Note that we are the first protocol that achieves these properties without using FHE and differential privacy techniques. The basic idea is to keep the computations directly relate to the text prompt and the image on the client side. Starting from ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Notations",
+            "text": "\u2022 S: The server.\n\u2022 C: The client.\n\u2022 Denoise: The algorithm used to reduce the noise.\n\u2022 \u03ba: The security parameter.\n\u2022 T: The number of iterations to perform denoising.\n\u2022 prompt: The client's text input.\n\u2022 e: The text embedding.\n\u2022 X: The pixel space of the output image.\n\u2022 x t : The image in pixel space X at iteration t.\n\u2022 Z: The latent space of the output image.\n\u2022 z t : The image in latent space Z at iteration t.\n\u2022 \u03f5 t : The predicted noise in latent space Z at t.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Our Protocol",
+            "text": "We define a function Split that splits a model M into two parts: M 1 and M 2 based on a security parameter \u03ba. \u1e91t \u2190 M 1 (z t , e, t)   \u2022 Intermediate variable \u1e91t : The output of neural network M 1 , which is difficult to reverse-engineer due to irreversible layers. Our protocol ensures input text prompt privacy, output image privacy, and model privacy as defined in Section I. It is simpler and faster than HE-diffusion as it does not require encryption of \u03f5 t .",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. Implementation",
+            "text": "We benchmark on an AMD Ryzen 9 7950X3D CPU, 128GB RAM, and an NVIDIA RTX 4070 Ti GPU. Results are generated by stable diffusion model v1.4 with a DDIM scheduler at 512x512 resolution. Our implementation can be accessed through https://github.com/ Animechain-ai/Privacy-Diffusion. Fig. 3 shows images from the original Stable Diffusion and our Privacy-Diffusion. Table I shows execution times.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_2"
+            ],
+            "table_ref": [
+                "tab_6"
+            ]
+        },
+        {
+            "heading": "VII. Conclusion",
+            "text": "Our Privacy-Diffusion protocol protects client and server privacy without FHE or differential privacy. This method can be extended to other generative machinelearning models with similar structures.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "(leveled) fully homomorphic encryption without bootstrapping",
+            "journal": "Transactions on Computation Theory",
+            "year": "2014",
+            "authors": "Z Brakerski; C Gentry; V Vaikuntanathan"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Extracting training data from diffusion models",
+            "journal": "",
+            "year": "2023",
+            "authors": "N Carlini; J Hayes; M Nasr; M Jagielski; V Sehwag; F Tramer; B Balle; D Ippolito; E Wallace"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Privacy-preserving diffusion model using homomorphic encryption",
+            "journal": "",
+            "year": "2024",
+            "authors": "Y Chen; Q Yan"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Homomorphic encryption for arithmetic of approximate numbers",
+            "journal": "",
+            "year": "2017",
+            "authors": "J H Cheon; A Kim; M Kim; Y Song"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Bert: Pre-training of deep bidirectional transformers for language",
+            "journal": "",
+            "year": "2019",
+            "authors": "J Devlin; M W Chang; K Lee; K Toutanova"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Differentially private diffusion models",
+            "journal": "",
+            "year": "2022",
+            "authors": "T Dockhorn; T Cao; A Vahdat; K Kreis"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Cryptonets: Applying neural networks to encrypted data with high throughput and accuracy",
+            "journal": "International conference on machine learning",
+            "year": "2016",
+            "authors": "R Gilad-Bachrach; N Dowlin; K Laine; K Lauter; M Naehrig; J Wernsing"
+        },
+        {
+            "ref_id": "b7",
+            "title": "beta-VAE: Learning basic visual concepts with a constrained variational framework",
+            "journal": "",
+            "year": "2017",
+            "authors": "I Higgins; L Matthey; A Pal; C Burgess; X Glorot; M Botvinick; S Mohamed; A Lerchner"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Lora: Low-rank adaptation of large language models",
+            "journal": "",
+            "year": "2021",
+            "authors": "E J Hu; Y Shen; P Wallis; Z Allen-Zhu; Y Li; S Wang; L Wang; W Chen"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Privacy data diffusion modeling and preserving in online social network",
+            "journal": "Transactions on Knowledge and Data Engineering",
+            "year": "2022",
+            "authors": "X Hu; T Zhu; X Zhai; H Wang; W Zhou; W Zhao"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+            "journal": "",
+            "year": "2018",
+            "authors": "B Jacob; S Kligys; B Chen; M Zhu; M Tang; A Howard; H Adam; D Kalenichenko"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Privacy-preserving deep sequential model with matrix homomorphic encryption",
+            "journal": "",
+            "year": "2022",
+            "authors": "J Jang; Y Lee; A Kim; B Na; D Yhee; B Lee; J H Cheon; S Yoon"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Auto-encoding variational bayes",
+            "journal": "",
+            "year": "2022",
+            "authors": "D P Kingma; M Welling"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Membership inference attacks against diffusion models",
+            "journal": "",
+            "year": "2023",
+            "authors": "T Matsumoto; T Miura; N Yanai"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Microsoft SEAL (release 4.0)",
+            "journal": "Microsoft Research",
+            "year": "2019",
+            "authors": ""
+        },
+        {
+            "ref_id": "b15",
+            "title": "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "journal": "",
+            "year": "2023",
+            "authors": "D Podell; Z English; K Lacey; A Blattmann; T Dockhorn; J M\u00fcller; J Penna; R Rombach"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Learning transferable visual models from natural language supervision",
+            "journal": "",
+            "year": "2021",
+            "authors": "A Radford; J W Kim; C Hallacy; A Ramesh; G Goh; S Agarwal; G Sastry; A Askell; P Mishkin; J Clark; G Krueger; I Sutskever"
+        },
+        {
+            "ref_id": "b17",
+            "title": "U-net: Convolutional networks for biomedical image segmentation",
+            "journal": "",
+            "year": "2015",
+            "authors": "O Ronneberger; P Fischer; T Brox"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "journal": "",
+            "year": "2023",
+            "authors": "N Ruiz; Y Li; V Jampani; Y Pritch; M Rubinstein; K Aberman"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 2 :2Fig. 2: Privacy-Diffusion",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "62",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Definition 6 (Algorithm 262Split function): Given a n layers neural network model M and a security parameter 0 \u2264 \u03ba \u2264 1, the function Split splits the model into two parts: M 1 contains the first \u230an \u2022 \u03ba\u230b layers and M 2 contains the rest n -\u230an \u2022 \u03ba\u230b layers. Define (M 1 , M 2 ) \u2190 Split(M, \u03ba). Theorem 1 (Correctness of the Split function): Given a model M, the split function is correct if for all input x in the domain of M, the equation M(x) = M 2 (M 1 (x)) holds. We assume a client-server architecture where the server is stateless. The client controls the whole diffusion process. The client's algorithm is shown in Algorithm 2 and the server's algorithm is shown in Algorithm 3. Client Algorithm Input: Text input prompt, the number of iterations T Output: Generated image x 0 1: Receive M 1 from server. 2: e \u2190 TextEncoder(prompt) 3: z T \u2190 Z 4: for t = T to 1 do 5:",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 3 :3Fig. 3: Generated images from original Stable Diffusion (top) and Privacy-Diffusion (bottom).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "",
+            "figure_caption": "",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "",
+            "figure_data": "FHE libraries like Microsoft SEAL [15] only sup-port addition and multiplication. Model accuracycan degrade because non-linear functions requiresapproximations."
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "",
+            "figure_data": "-sizing and quantization [11] allow local predictionsbut expose the model to the client and may reduceaccuracy."
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "is a trade-off between privacy and accuracy. High privacy levels may add too much noise, reducing model accuracy.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_4",
+            "figure_caption": "tokenizes and encodes text prompt into vectors e = (e 1 , e 2 , \u2022 \u2022 \u2022 , e n ) \u2208 E, where e i \u2208 R d . Define TextEncoder(prompt) = (e 1 , e 2 , \u2022 \u2022 \u2022 , e",
+            "figure_data": "Algorithm 1 Stable Diffusion text-to-imageInput: Text input prompt, iterations TOutput: Generated image x 01: e \u2190 TextEncoder(prompt)2: z T \u2190 Z3: for t = T to 1 do4:\u03f5 t \u2190 UNet(z t , e, t)5:z t-1 \u2190 Denoise(z t , \u03f5 t )6: end for7: x 0 \u2190 VAE.decoder(z 0 )8: return x 0"
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_6",
+            "figure_caption": "Execution time of client and server (50 iterations, 512x512). Privacy-Diffusion requires 4% extra computation time. The client aims to learn the UNet model on the server.",
+            "figure_data": "OriginalPrivacy-DiffusionClient0.1s0.51sServer5.18s5.02sTotal5.28s5.53s1) Client's View:"
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_7",
+            "figure_caption": "",
+            "figure_data": ": Learning only fewlayers does not enable the client to reproduce themodel.2) Server's View: The server aims to learn the client'stext input prompt and the denoised image z t-1 . Theserver's view includes:"
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ICCE63647.2025.10929778"
+}

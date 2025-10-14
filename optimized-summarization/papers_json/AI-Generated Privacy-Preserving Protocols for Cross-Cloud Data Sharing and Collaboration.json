@@ -1,0 +1,414 @@
+{
+    "title": "AI-Generated Privacy-Preserving Protocols for Cross-Cloud Data Sharing and Collaboration",
+    "authors": "Anand Polamarasetti",
+    "pub_date": "",
+    "abstract": "The integration of artificial intelligence into crosscloud data-sharing frameworks opens up completely new vistas for novelty in preserving privacy while at the same time increasing collaborative efficiencies. This project closely examines designing and implementing AI-generated protocols that protect sensitive data privacy exchanged between heterogeneous cloud environments. These would be the protocols using machine learning algorithms for runtime vulnerability and risk detection, dynamic flow encryption, and predefined privacy policies. This research would be based on leveraging federated learning and differential privacy techniques to ensure that the best way to optimize shared model accuracy is to follow all data protection regulation compliances. The empirical results indicate that the proposed protocol metrics outperform the state-of-the-art methods in maintaining data integrity, minimizing leakage risks, and enhancing data interoperability in a multi-cloud architecture. It contributes toward bettering secure collaboration processes across various verticals, including healthcare, finance, and telecommunications. The study further underlines the importance of AI-driven solution imperatives toward strengthening data privacy across distributed cloud systems.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Cloud computing is spreading so rapidly that it has driven organizations towards higher dependence on several cloud platforms to meet divergent storage, computation, and collaboration needs. Cross-cloud architecture makes organizations more flexible, cost-effective, and resilient by leveraging the unique features of various cloud providers. Ensuring privacy and security becomes fundamental when data crosses these interrelated cloud environments. Cloud service providers' different security policies and protocols increase the risks of unauthorized access, data breaches, and compliance violations. This is one more reason why it's getting so complex in organizations to maintain a secure but seamless and efficient process for sharing data across multiple clouds [1,2,3].",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. The Importance of AI in the Advancement of Privacy Protocols",
+            "text": "Artificial intelligence has been the transformative force for a new definition of methodology concerning privacypreserving in cloud data sharing. It is an innovative way of protecting data whereby AI can analyze massive amounts of data, recognize their weak points, and use dynamic sets of security-enhanced measures [4,5]. Adaptation to evolving threats regarding privacy protocols can be enabled if artificial intelligence-driven models embed sophisticated techniques such as federated learning and differential privacy. These approaches will facilitate joint data processing without the explicit exposure of sensitive information, thereby mitigating the intrinsic risks of multi-cloud data exchange [6,7].",
+            "publication_ref": [
+                "b3",
+                "b4",
+                "b5",
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Research Objectives and Purpose",
+            "text": "This research approach will be designed and implemented using the development of AI-generated privacy-preserving protocols for improving data security in cross-cloud environments. The target of the study shall be to develop a holistic framework integrating AI techniques to identify potential vulnerabilities, use dynamic encryption based on context, and comply with regulatory requirements related to data protection. The proposed protocols further make efforts to optimal data integrity and interoperability across different cloud platforms by taking advantage of the benefits of both federated learning and differential privacy. Hopefully, this study will contribute to developing secure collaboration processes in critical and highly demanding privacy protection industries such as healthcare, finance, and telecommunications.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. LITERATURE REVIEW",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Overview of Existing Privacy-Preserving Mechanisms in Cloud Systems",
+            "text": "Therefore, the rise of cloud computing has encouraged active research in developing mechanisms that ensure data security in both storage and sharing using platforms that offer different levels of privacy preservation. For instance, the encryption techniques of AES and RSA are widely used for data protection at rest or during transmission. However, they create a lot of obstacles in cross-cloud scenarios owing to computational overheads and fundamental management complexities. More advanced approaches, like ABE, can enable flexible, role-based access control, reducing various risks against unauthorized access [8,9]. So far, notions such as homomorphic encryption have enabled computations over encrypted data without exposing their contents. While it is very promising in theory, because of the high computational costs, it is far from realistic for big deployments over the cloud. On the other hand, SMC enables joint processing without sharing raw information. At the same time, differential privacy investigates protection at an individual record level by adding noise at a statistical level. However, when applied in cross-cloud environments, most are plagued with interoperability problems and show complex issues while applying consistent privacy policies [10,11,12,13].",
+            "publication_ref": [
+                "b7",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. AI-Based Methods for Safe Data Exchange",
+            "text": "AI-driven methods open new horizons for improving the privacy of cross-cloud data sharing. For instance, machine learning models can go through vast volumes of information to identify the appearance of potential threats and anomalies in the flows, enriching real-time security monitoring. The most outstanding of all the AI-based methods is federated learning, which enables several parties to collaboratively work on model training without exposing the raw data. This opens up the possibilities for decentralized model training whereby only model updates must be shared, which has much lower associated privacy risks. Applications of federated learning can be perfectly realized in industries like health care that want co-modeling but with the guarantee of data confidentiality [14,15,16]. AI also empowers better data security because of differential privacy. In this respect, differential privacy injects controlled noise into the training process in AI for any single point of data to remain secure when model precision is preserved. Leading companies in AI-powered applications have used This approach to secure user data. Furthermore, reinforcement learning allows runtime dynamic encryption strategies to factor in contextual variables on data sensitivity and threat level for runtime optimization against security measures. Of course, this adapts an efficient approach that does not sacrifice robust security when reducing computational overhead [15,16].\nOnce applied in large-scale cross-cloud settings, the AI algorithms also automate key management; the mechanisms will reduce manual complexities. Automating the critical rotation/revocation processes may mitigate risks connected to key compromise or unauthorized access.",
+            "publication_ref": [
+                "b14",
+                "b15",
+                "b16",
+                "b15",
+                "b16"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Limitations of Existing Protocols for Cross-Cloud Shares",
+            "text": "Due to heterogeneity, a significant challenge remains in securely sharing the data across cloud platforms. Each runs under a different security protocol and data governance framework that complicates uniform mechanisms of privacy implementation. Moreover, privacy risks and compliance issues arise while sharing data across heterogeneous clouds. Besides this, scalability and performance problems also arise from conventional methods. Solutions involving homomorphic encryption are computation-intensive and, hence, not practical for large-scale deployment. Another alternative is differential privacy, which consists of a trade-off between noise addition and data utility, thus degrading the accuracy of the shared data [17,18,19].\nAnother weakness the traditional encryption-based methods face is context awareness; data sensitivity may differ based on the user role or application context. Current protocols have mostly been static and cannot prepare for this type of variability in handling, thus resulting in underprotection or over-encryption. Another challenge is adherence to various regulatory frameworks, such as the General Data Protection Regulation. Even supported by automated AIbased checks, achieving standardized privacy practices across these many jurisdictions can remain insurmountable. While the AI models themselves may significantly automate compliance, a need exists for standard frameworks to put any policy into practice uniformly [20,21].\nHowever, even secure cross-cloud sharing will not make the task easy on the reliability of the AI models. Reliability grows with the quality of the training data. Models must be refreshed to nullify false positives and omit open vulnerabilities in cloud environments characterized by dynamically changing re-emerging threats and data types. In addition to that, AI algorithms could also be susceptible to adversarial attacks, which are when a malicious actor tries to deliberately manipulate input in order, for instance, to trick a model into giving away privacy. Finally, the higher contribution of AI to privacy mechanisms engenders a great deal of trust and transparency issues: the decisions about access and encryption driven by AI have to be understandable with organizational security policies in place. Otherwise, the reduction in effectiveness because of trust problems is well expected for AI-driven solutions operating in multi-cloud environments [22,23].",
+            "publication_ref": [
+                "b17",
+                "b18",
+                "b20",
+                "b21",
+                "b22",
+                "b23",
+                "b24"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. PROPOSED AI-GENERATED PROTOCOLS",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Architectural Framework of the Proposed Solution",
+            "text": "The proposed solution incorporates AI-generated protocols that ensure cross-cloud data-sharing security while preserving privacy. Such architecture will comprise different modules interdependent on one another in runtime data exchange protection. It starts with a Data Ingestion Layer, the entry layer where data is exchanged or shared between different cloud platforms. The data feeds into the AI Processing Module from this layer, which executes core harmonization of the key AI-driven components: federated learning, differential privacy, dynamic encryption, and context-aware policies. Each targets a specific aspect of privacy and security, as reflected in the above flowchart. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Description of AI Techniques Employed a) Federated Learning",
+            "text": "This module allows multiple cloud platforms or organizations to jointly train a machine learning model without transferring raw data. In other words, Federated learning leverages the distributed nature of information to construct a global model by sharing only model updates and parameters. This will prevent sensitive information from being disclosed and enhance the privacy of collaborative processes.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "b) Differential Privacy Module",
+            "text": "The system covers differential privacy methods to ensure no individual data gets compromised while training the AI models. Either by adding statistical noise to data or outputs from the model, sensitive information cannot be reverseengineered from a shared dataset. Such an integration of Differential Privacy allows for secure, private training of models over analytics on data.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Integration of Dynamic Encryption and Context-Aware Security Policies",
+            "text": "It is a part of the proposed Dynamic Encryption Engine, which will employ reinforcement learning algorithms to attain optimal encryption levels concerning contextual elements: data sensitivity, access rights, and threats detected. The dynamic adaptation of the encryption policies is obtained this way; this approach cannot worsen the security level but saves computational overhead [19,20].\nIt is further made flexible by the context-aware policies of the privacy protocols. The module discussed here continuously monitors contextual parameters such as user roles, application usage, and geographic location and updates the security policies accordingly. It may mean varying levels of encryption, such as data transferred within a regulatorycompliant region versus across borders.\nFinally, the layer of Cross-Cloud Collaboration ensures data interoperability across cloud platforms for maintaining consistent application of protocols related to privacy among participating clouds. Due to these modules, we have a Secured Data Sharing layer, which allows protected data to be shared without violating privacy norms [18].",
+            "publication_ref": [
+                "b20",
+                "b21",
+                "b18"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. IMPLEMENTATION AND EVALUATION",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Experimental Setup and Deployment in Multi-Cloud Environments",
+            "text": "The proposed AI-generated privacy-preserving protocols will be implemented in a simulated multi-cloud environment. This testbed setting comprises three major cloud providers with different security policies and multiple data management frameworks. Realistic cross-cloud scenarios that include differences in data formats, network configurations, and regulatory compliance requirements will be simulated.\nComponents: This testbed has integrated all the proposed AI-based modules, like federated learning, differential privacy, a dynamic encryption engine, and context-aware policies in all cloud environments. Sensitive and non-sensitive data sets are distributed on these clouds and simulated for industrial scenarios, such as healthcare and financial data sharing [11].",
+            "publication_ref": [
+                "b11"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Metrics for Evaluation of Privacy, Security, and",
+            "text": "Performance The basis of three categories of metrics, namely privacy, security, and performance, is adopted to assess the efficiency of the proposed protocols. Privacy metrics define the protection of sensitive data in the system, whereas security metrics define resiliency against different threats. Performance metrics, however, establish the computational and operational efficiency of protocols. The following critical metrics employed are summarized in Table 1: ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "a) Metrics of Privacy",
+            "text": "\u2022 Data anonymization means the level of individual data points anonymized using differential privacy techniques. The goal is to maintain a high anonymization level without significantly affecting the utility of the data.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "b) Security Metrics",
+            "text": "\u2022 Attack resistance: The system is attacked using a set of simulated attacks, such as illicit accesses, data breaches, and adversarial manipulations. This metric measures the attack resistance via the number of intrusions that the AI-based security mechanisms have stopped.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "c) Performance Measures",
+            "text": "\u2022 Latency: It defines the time required to encrypt and transmit data across multiple clouds. The lesser the latency, the higher the efficiency.\n\u2022 Resource Utilization: Resource utilization of the system is observed at the CPU and memory levels to understand the system's resource efficiency in multicloud deployment.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Comparative Analysis with Existing Protocols",
+            "text": "The proposed protocols are compared to cloud privacypreserving protocols, such as the Standard Multi-Party Computation (SMC) Protocol and Traditional Attribute-Based Encryption (ABE). The comparison is based on the attained privacy and security concerning performance metrics by experimental simulation results [12] \u2022 Privacy Score: It defines the effectiveness of a privacypreserving system, like the level of data anonymization employed by each protocol.\n\u2022 Attack Resistance: The percentage of simulated attacks detected and contained.\n\u2022 Latency: On average, time is taken to encrypt and share data across clouds; the lower the value, the better the information processing is in less time.\n\u2022 Resource Utilization: CPU and memory usage of the system in performing encryption and sharing operations. The results show that the proposed AI-driven protocols ensure better security and privacy with higher performance than the state-of-the-art techniques. For example, the latency of the proposed protocol is minimal, around 50ms compared to SMC and ABE, with 120ms and 150ms, respectively. Similarly, Case also presented that the proposed protocols have better resistance against attacks, up to 98%, which proved efficient in protecting shared data among various clouds.",
+            "publication_ref": [
+                "b12"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION AND FUTURE WORK",
+            "text": "Consequently, this paper introduced the AI-generated privacy-preserving protocols for cross-cloud data sharing and collaboration. The solution also integrated federated learning, thus allowing secure model training without transferring raw data, ensuring data confidentiality across diverse cloud platforms. For additional security, differential privacy methods were used to prevent reverse engineering of each data point. At the same time, the dynamic encryption engine provided context security awareness depending on the sensitivity of detected data and threats. The proposed protocols were experimentally deployed on a simulated multicloud environment to show their effectiveness in higher privacy scores, with attack resistance compared to traditional protocols. At the same time, latency remains low, and resource utilization is optimized. These findings confirm the applicability of the proposed protocols in real-world multi-cloud scenarios for better privacy and security with no penalty in performance.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Recommendations to Improve the Efficiency of the Protocol",
+            "text": "Even with the gains from proposed protocols, much space remains open for further efficiency improvements. First, this is done by introducing adaptive resource management, including AI models allowing runtime allocations or reallocations based on workload or timely analysis of threats. That would ensure efficient use of computing powers during high-demand conditions. Second, enhancing model aggregation techniques within federated learning reduces the communication overhead between participating cloud environments, which is a desirable outcome, especially in large-scale deployments. Finally, differential privacy techniques need optimization in balancing privacy and data utility to make data analytics effective and protect sensitive information [17].",
+            "publication_ref": [
+                "b17"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Future Direction",
+            "text": "Looking ahead, some promising research directions could even further improve security and privacy in cross-cloud data sharing. First, this deals with using zero-knowledge proofs and protocols based on AI. Generally speaking, zeroknowledge proof verifies data integrity and authenticity without exposing sensitive information, thus providing advanced means for privacy protection. Another relevant research direction that is supposed to be developed in the future concerns the creation of quantum-resistant privacy protocols. With the growth of quantum capabilities, it might be relevant to add quantum-resistant methods in the protocols generated by AI. Further, integrating AI and blockchain will facilitate cross-cloud auditing systems where the system will be transparent and immutable, hence building trust and responsibility in a multi-cloud environment [21,22]. After all, improved protocols generated through AI are a ray of hope for secure and efficient data sharing across clouds. Refining the existing methods by exploring new technologies will make these protocols evolve in light of recent challenges related to data privacy in the increasingly complex cloud ecosystem.",
+            "publication_ref": [
+                "b22",
+                "b23"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Cloud computing",
+            "journal": "Springer",
+            "year": "2010",
+            "authors": "N Antonopoulos; L Gillam"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Cloud computing. Internet computing: Principles of distributed systems and emerging internetbased technologies",
+            "journal": "",
+            "year": "2020",
+            "authors": "A Sunyaev; A Sunyaev"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Cloud computing: An overview",
+            "journal": "Springer",
+            "year": "2009-12-01",
+            "authors": "L Qian; Z Luo; Y Du; L Guo"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Privacy-Preserving Techniques in AI-Powered Cyber Security: Challenges and Opportunities",
+            "journal": "International Journal of Machine Learning for Sustainable Development",
+            "year": "2023",
+            "authors": "V V Vegesna"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Balancing Innovation and Privacy: The Intersection of Data Protection and Artificial Intelligence",
+            "journal": "International Journal of Machine Learning Research in Cybersecurity and Artificial Intelligence",
+            "year": "2024",
+            "authors": "A K Y Yanamala; S Suryadevara; V D R Kalli"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Balancing privacy and progress: a review of privacy challenges, systemic oversight, and patient perceptions in AI-driven healthcare",
+            "journal": "Applied Sciences",
+            "year": "2024",
+            "authors": "S M Williamson; V Prybutok"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Privacy-preserving artificial intelligence in healthcare: Techniques and applications",
+            "journal": "Computers in Biology and Medicine",
+            "year": "2023",
+            "authors": "N Khalid; A Qayyum; M Bilal; A Al-Fuqaha; J Qadir"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Enhancing privacy-preserving mechanisms in Cloud storage: A novel conceptual framework",
+            "journal": "Concurrency and Computation: Practice and Experience",
+            "year": "2023",
+            "authors": "A Mishra; T S Jabar; Y I Alzoubi; K N Mishra"
+        },
+        {
+            "ref_id": "b8",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b9",
+            "title": "Accountable privacy-preserving mechanism for cloud computing based on identitybased encryption",
+            "journal": "IEEE Access",
+            "year": "2018",
+            "authors": "H Cheng; C Rong; M Qian; W Wang"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Security and privacy-preserving challenges of e-health solutions in cloud computing",
+            "journal": "IEEE Access",
+            "year": "2019",
+            "authors": "S Chenthara; K Ahmed; H Wang; F Whittaker"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Privacy-Preserving Data in IoT-based Cloud Systems: A Comprehensive Survey with AI Integration",
+            "journal": "",
+            "year": "2024",
+            "authors": "D Dhinakaran; S M Sankar; D Selvaraj; S E Raja"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Privacy-preserving mechanisms for enforcing security and privacy requirements in Ehealth solutions",
+            "journal": "International Journal of Information Management",
+            "year": "2016",
+            "authors": "H S G Pussewalage; V A Oleshchuk"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Privacy-preserving approaches in cloud computing",
+            "journal": "IEEE",
+            "year": "2018-01",
+            "authors": "K Karthiban; S Smys"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Data privacy protection mechanisms in the cloud",
+            "journal": "Data Science and Engineering",
+            "year": "2018",
+            "authors": "N Singh; A K Singh"
+        },
+        {
+            "ref_id": "b15",
+            "title": "A review of the state-of-the-art privacy-preserving approaches in the e-health clouds",
+            "journal": "IEEE Journal of Biomedical and health informatics",
+            "year": "2014",
+            "authors": "A Abbas; S U Khan"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Privacy-preserving cloud computing on sensitive data: A survey of methods, products, and challenges",
+            "journal": "Computer Communications",
+            "year": "2019",
+            "authors": "J Domingo-Ferrer; O Farras; J Ribes-Gonz\u00e1lez; D S\u00e1nchez"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Attribute-based privacypreserving data sharing for dynamic groups in cloud computing",
+            "journal": "IEEE Systems Journal",
+            "year": "2018",
+            "authors": "H Xiong; H Zhang; J Sun"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Enhancing privacy-preserving mechanisms in Cloud storage: A novel conceptual framework",
+            "journal": "Concurrency and Computation: Practice and Experience",
+            "year": "2023",
+            "authors": "A Mishra; T S Jabar; Y I Alzoubi; K N Mishra"
+        },
+        {
+            "ref_id": "b19",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b20",
+            "title": "Privacy-Preserving Data in IoT-based Cloud Systems: A Comprehensive Survey with AI Integration",
+            "journal": "",
+            "year": "2024",
+            "authors": "D Dhinakaran; S M Sankar; D Selvaraj; S E Raja"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Progress in Privacy Protection: A Review of Privacy Preserving Techniques in Recommender Systems, Edge Computing, and Cloud Computing",
+            "journal": "",
+            "year": "2024",
+            "authors": "S R Bashir; S Raza; V Misic"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Towards a novel privacy-preserving distributed multiparty data outsourcing scheme for cloud computing with quantum key distribution",
+            "journal": "",
+            "year": "2024",
+            "authors": "D Dhinakaran; D Selvaraj; N Dharini; S E Raja; C Priya"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Attributebased encryption mechanism with Privacy-Preserving approach in cloud computing",
+            "journal": "Materials Today: Proceedings",
+            "year": "2023",
+            "authors": "J Y Deshmukh; S K Yadav; G M Bhandari"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Privacy-Preserving Data Sharing in Cloud Computing Environments",
+            "journal": "Eduzone: International Peer Reviewed/Refereed Multidisciplinary Journal",
+            "year": "2024",
+            "authors": "A Chandra"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. This flowchart describes the cross-cloud data sharing AI-generated privacy-preserving protocols; it begins with the Data Ingestion Layer, where captured data will arrive. The incoming data flows into the AI Processing Module for analysis and is fed to the Federated Learning and Differential Privacy Module. It enables collaborative training while protecting privacy.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig. 2. A line graph depicts the comparison study of these three protocols concerning four crucial metrics: Privacy Score, Attack Resistance, Latency, and Resource Utilization. Each line diagram depicts one metric for three protocols: Proposed AI-generated protocols, Standard SMC protocol, and Traditional ABE protocol.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "",
+            "figure_data": ".METRICSMetricSpecificDescriptionCategoryMetricPrivacyDataPercentage of sensitive data successfullyAnonymizatioanonymized.nSecurityAttackNumber of successful attacksResistancedetected/blocked.PerformancLatencyTime taken to encrypt and share dataeacross clouds.PerformancResourceCPU and memory usage during encryptioneUtilizationprocesses."
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": ". Following is a comparison of protocols, considering a few critical metricsComparative Analysis with Existing Protocols",
+            "figure_data": "ProtocolPrivacyAttackLatencResourScoreResistay (ms)cence (%)Utilization (%)Proposed AI-Generated95%98%5065ProtocolsStandard SMC Protocol90%85%12080Traditional ABE Protocol88%75%15070"
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ICTBIG64922.2024.10911392"
+}

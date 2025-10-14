@@ -1,0 +1,297 @@
+{
+    "title": "Exploring the Privacy Paradox in AI Adoption: A Data-Driven Analysis of User Engagement",
+    "authors": "Samuel Olatunde; Atef Mohamed",
+    "pub_date": "",
+    "abstract": "Artificial intelligence (AI) has revolutionized various industries by enhancing efficiency and user experiences. However, as AI systems process vast amounts of personal data, concerns about privacy, security, and potential misuse have intensified. This study examines the relationship between AI adoption and data privacy concerns, analyzing behavioral patterns from a dataset of 656 participants using Orange Data Mining for descriptive statistical analysis, comparative analysis, clustering, and correlation techniques. The research investigates how AI trust influences Chatbot and virtual assistant usage, payment preferences, and demographic trends. The findings reveal a privacy paradox, where many users who distrust AI privacy still engage with AI-powered tools, highlighting the need for greater transparency and user awareness. This paper advocates stronger AI privacy policies, ethical data practices, and regulatory frameworks to ensure that AI development remains both innovative and privacy-conscious.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "Artificial intelligence (AI) has rapidly transformed digital interactions, reshaping how individuals engage with technology through chatbots, virtual assistants, and digital transactions. However, as AI systems increasingly depend on large volumes of personal data, concerns about privacy and data security have become more prominent. This study explores these issues by analyzing real-world data on customer satisfaction with AI and examining AI adoption patterns and trust levels using Orange Data Mining for statistical analysis. The research focuses on three core questions: (1) Does concern about AI privacy influence the use of AI tools like chatbots and virtual assistants? (2) How do demographic factors such as age and country impact AI trust? (3) Does privacy distrust affect digital payment preferences? To address these, the study uses a dataset of 656 participants, incorporating variables such as AI trust, AI tool usage, payment methods, age group, and country. The analysis includes descriptive statistics, comparative analysis, clustering, and correlation, with visual tools like scatter plots, pivot tables, and stacked bar charts. A Chi-Square test was also conducted to assess statistical significance. Findings reveal a privacy paradox many users who distrust AI still rely on its tools for convenience. These results underscore the need for greater AI transparency, ethical regulations, and stronger data protection policies. By combining statistical and visual methods, this study offers data driven insights to support AI policy development, public education, and responsible technology deployment. The remainder of the paper includes a literature review, dataset overview, methodology, results with interpretation, and concluding insights.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. LITERATURE REVIEW",
+            "text": "AI adoption has significantly improved user experiences through technologies like Chabots, virtual assistants, and automated decision making systems, yet it raises ongoing concerns about data privacy, surveillance, and ethical use [1]. Research highlights a privacy paradox users continue using AIpowered services despite concerns over data handling and misuse [2]. In sectors like e-commerce and social media, AIdriven personalization has reshaped digital interactions, raising issues around informed consent and data ownership [3]. Social media analytics show growing public distrust in AI, with demands for greater transparency and accountability [6]. Additionally, many AI platforms use vague privacy policies, making it difficult for users to understand the implications of sharing their data [9]. AI also introduces significant security risks, especially in healthcare, finance, and e-commerce, where sensitive data is vulnerable to cyber threats and adversarial attacks [5][7] [8]. Researchers argue that unchecked AI systems can threaten democracy by enabling mass surveillance, influencing public discourse, and eroding privacy rights [11] [13]. While the EU's GDPR stands as a leading regulatory framework [12], inconsistent global regulations and a focus on innovation over privacy in some regions have created gaps that expose users to unethical AI practices [14] [15]. Scholars call for unified global standards that balance innovation with consumer rights and ethical considerations [16]. Despite these challenges, AI also offers tools to enhance privacy, such as automated encryption, real-time data leak monitoring, and compliance with privacy laws [18][19] [20]. Ethical AI solutions, including differential privacy and federated learning, show promise in protecting user data while allowing systems to improve, though ethical implementation remains a key concern [17].",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b5",
+                "b8",
+                "b4",
+                "b7",
+                "b10",
+                "b12",
+                "b11",
+                "b13",
+                "b14",
+                "b15",
+                "b17",
+                "b19",
+                "b16"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. DATASET OVERVIEW",
+            "text": "The dataset used in this research, sourced from Kaggle, contains 656 entries with 23 attributes, capturing various aspects of AI adoption, consumer behavior, privacy concerns, and demographic details. It focuses on how users from different countries, age groups, and income levels interact with AIpowered tools and their attitudes toward AI privacy.\n\u2022 Country: Indicates where the respondent is from. \u2022 Age Group: Categorized into Gen Z, Millennials, Gen X, and Baby Boomers. \u2022 Categories include Appliances, Electronics, Groceries, Personal Care, and Clothing, reflecting which product types users prefer when shopping online.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Relevance to the Research",
+            "text": "This dataset enables the analysis of AI trust vs. AI adoption, particularly examining whether privacy concerns impact the usage of AI-driven services like chatbots and virtual assistants. It also helps explore how age, income, and geography influence AI adoption trends and whether consumers sacrifice privacy for convenience (privacy paradox). The insights derived from this dataset will guide discussions on AI policy, consumer trust, and data privacy awareness.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. METHODOLOGY",
+            "text": "This research uses a quantitative data analysis approach to explore the relationship between AI trust, privacy concerns, and AI adoption using a real-world dataset. The dataset was sourced from Kaggle [Pooria, 2021] and contains information on user demographics, AI tool usage, privacy concerns, and public behavioral trends. Data analysis for this research was conducted using Orange Data Mining, using descriptive, comparative, statistical, clustering, and correlation analysis to explore the relationship between AI trust, privacy concerns, and AI adoption. Descriptive analysis was performed using pivot tables to compare AI privacy trust against variables such as AI Chatbot usage, virtual assistant usage, payment methods, age groups, and country of origin. The comparative analysis involved stacked bar charts, scatter plots, and box plots to visualize differences in AI adoption across countries, demographics, and behaviors. To test statistical significance, Chi-Square tests were applied using contingency tables, confirming a strong relationship between AI trust and AI Chatbot/virtual assistant usage. Additionally, K-Means clustering segmented users into groups such as Privacyconscious adopters, AI thrusters, and AI skeptics, further reinforcing the presence of a privacy paradox. Heat maps and scatter plots were also used to analyze correlation trends. This comprehensive approach ensures a data driven, evidence-based understanding of AI privacy concerns and adoption trends, providing valuable insights for AI policy improvements and user awareness initiatives. The research process began with data preprocessing, where the dataset was cleaned by handling missing values and focusing on relevant features, such as AI_Privacy_No_Trust, AI_Tools_Used_Chatbots,AI_Tools_Used_Virtual_Assistant, Payment Methods, Age Groups, and Country of Origin. A descriptive statistical analysis was performed to understand the general trends in AI adoption, privacy concerns, and the public's perception.\nTo identify relationships between variables, Pivot Tables were utilized to compare AI trust against Chatbot and virtual assistant usage, payment methods, and demographic factors such as age and country. We also conducted visual analysis using bar charts, scatter plots, and box plots to interpret the different variations in AI trust and adoption across different groups. To validate the findings, we applied Chi-Square tests to determine whether the observed relationships between AI trust and adoption were statistically significant. Furthermore, we analyzed demographic variations by grouping data based on age (Generational Categories: Millennials, Gen Z, Gen X, Baby Boomers) and country (Canada, China, India) to explore how different populations perceive and interact with AI technologies. The results provided insights into the privacy paradox, where users who distrust AI still engage with AI-powered services. Overall, this methodology ensures a data-driven, evidence based approach to understanding AI privacy concerns and adoption patterns, allowing for well-informed conclusions and policy recommendations. The diagrams illustrate generational and regional variations in AI adoption and privacy concerns. Millennials (29-44) show the highest level of AI distrust, despite relying heavily on AI tools for work. Gen Z (13-28) also indicates considerable distrust, though many still trust AI with their data. Gen X (45-60) exhibits strong skepticism toward AI privacy, while Baby Boomers (61-79) have the lowest engagement, likely due to limited exposure to AI technologies. Regionally, Canada demonstrates the highest trust in AI, likely due to strong data protection laws and AI awareness. China presents mixed views, balancing high adoption with significant privacy concerns. India shows the lowest level of AI distrust, reflecting openness to AI but a need for greater privacy awareness. These insights highlight the importance of targeted AI policies building trust for Gen X, educating Baby Boomers, and addressing cultural and regulatory differences across countries. The analysis of AI Chatbot usage across different generations highlights varying levels of adoption and engagement. Millennials have the highest usage of AI chatbots, indicating their strong reliance on AI-driven communication tools. However, they also make up a large portion of non-users, suggesting that Chatbot adoption is influenced by personal preferences rather than generational norms alone. Gen Z follows as the second highest adopter of chatbots, reflecting their digital native status and comfort with AI technologies. Gen X shows moderate Chatbot usage, but a significant portion of this group still avoids AI chatbots, possibly due to concerns about privacy, effectiveness, or usability. Baby Boomers have the lowest Chatbot adoption, which aligns with their overall lower engagement with AI-driven tools. These findings suggest that Millennials and Gen Z are key drivers of Chatbot adoption, while Gen X and Baby Boomers may require more tailored AI solutions or increased trust in AI technologies to boost adoption rates. The pivot table above provides insights into the relationship between AI privacy trust and AI Chatbot usage, based on generational trends. Among the 181 users who distrust AI privacy, 81 still use AI chatbots, while 100 do not, demonstrating the privacy paradox where users who are skeptical of AI still engage with AI-driven services. Conversely, among the 475 users who trust AI to protect their privacy, 216 actively use chatbots, whereas 259 do not, indicating that trust does not always equate to AI adoption. Notably, across all categories, Millennials dominate as the largest group, suggesting that they are the most engaged generation in AI-driven interactions, regardless of their privacy stance. This underscores Millennials as a key demographic in AI adoption and privacy discussions, while also emphasizing the need for greater awareness regarding data security and privacy risks associated with Chatbot usage.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. RESULT INTERPRETATION",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Fig. 7. Pivot Table of AI Privacy Trust vs. AI Virtual Assistant Usage",
+            "text": "Displaying the distribution of users who trust or distrust AI privacy and their engagement with virtual assistants, highlighting the presence of a privacy paradox where some AI-distrusting users still rely on AI-powered assistants)\nThe pivot table above illustrates the relationship between AI privacy trust and the usage of a virtual assistant like Alexa. Among the 181 users who distrust AI privacy, 83 still use AI virtual assistants but distrust AI with their private data, while 98 do not, highlighting another privacy paradox, where individuals concerned about AI privacy still engage with AI-powered tools. On the other hand, among the 475 users who trust AI privacy, 214 actively use virtual assistants, whereas 261 do not, indicating that even trust in AI privacy does not necessarily lead to AI adoption. The overall distribution suggests that while trust influences AI adoption, it is not the sole factor driving virtual assistant usage. Other factors, such as convenience, digital literacy, or necessity, may play a crucial role in determining whether users engage with AI-powered virtual assistants despite privacy concerns. These insights highlight the need for greater AI transparency and user education on data privacy risks, as well as the importance of trust-building measures for expanding AI adoption. The analysis of the relationship between AI privacy concerns and AI virtual assistant usage provides key insights into user behavior regarding trust in AI and Chatbot adoption. The pivot table categorizes users based on whether they distrust AI (AI_Privacy_No_Trust) and whether they actively use AIpowered chatbots (AI_Tools_Used_Chatbots). The data shows that out of 656 respondents, 475 users distrust AI, while 181 users do not. A key observation is that users who do not distrust AI are more likely to adopt AI chatbots. Among those who do not distrust AI (181 in total), 216 individuals actively use chatbots, while 259 choose not to. This suggests that while confidence in AI contributes to Chatbot adoption, a significant portion of users who do not distrust AI still refrain from using AI-driven tools, possibly due to personal preferences, lack of necessity, or concerns about Chatbot accuracy. A particularly interesting finding is the privacy paradox, a scenario where individuals who express distrust in AI still engage with AIdriven tools. The data reveals that 81 users who distrust AI still use chatbots, accounting for 45% of all chatbots users who distrust AI. This contradiction suggests that users may compromise privacy concerns in exchange for convenience or because they are unaware of the extent to which AI chatbots collect and process personal data.\nMeanwhile, 100 AI-distrusting users actively avoid chatbots, reinforcing the idea that privacy concerns drive some users away from AI-powered interactions. Furthermore, the overall distribution of Chatbot users shows that while trust in AI contributes to increasing Chatbot adoption, it is not the sole determining factor. AI-powered chatbots are widely used even among those with privacy concerns, which suggests that other factors such as digital literacy, perceived necessity, or external influences (work, social trends, or accessibility) play a significant role in AI adoption.\nThese insights underscore the need for greater AI transparency and stronger data privacy measures, as many users engage with AI technologies without fully grasping the associated risks. The findings have important implications for regulation, privacy policies, and user education. Organizations deploying AI must prioritize transparency, data security, and informed consent to build trust. Further research is needed to explore the behavioral factors behind AI adoption, particularly among privacy conscious users. A Chi-Square test could help determine whether the relationship between AI distrust and Chabot usage is statistically significant, offering deeper insights into the privacy paradox. The pivot table analysis shows that among 181 users who distrust AI privacy, 83 still use virtual assistants, highlighting the paradox of relying on services one doesn't fully trust. Meanwhile, of the 475 users who trust AI, 214 use virtual assistants, and 261 do not indicating trust doesn't always translate to adoption. Millennials are the leading users in all categories, making them the most engaged demographic in AI interactions. This generational trend emphasizes the need for stronger privacy protections and user-focused improvements to boost adoption and trust across user groups.  The horizontal bar chart shows AI privacy distrust across Canada, China, and India. The top bar (YES) reflects those concerned about AI privacy, while the bottom (NO) indicates trust in AI data handling. Canada has the lowest distrust, suggesting strong confidence in regulations and data security. China and India show a more balanced split, indicating that while privacy concerns exist, they do not strongly hinder AI adoption. These differences highlight the importance of region specific AI policies that address trust, regulation, and cultural attitudes toward data privacy The analysis of AI privacy distrust and digital payment use reveals no strong link between the two. The scatter plot shows an even spread among users who trust or distrust AI and whether they use E-wallets, suggesting privacy concerns don't heavily influence digital payment adoption. Interestingly, many users who distrust AI still use E-wallets, reflecting the privacy paradox convenience often outweighs concern. Factors like age, income, and digital literacy may play a larger role. These findings stress the need for better AI transparency, data protection, and user education. Further analysis, like Chi-Square tests or heat maps, could clarify which factors most influence adoption of AI-driven financial tools.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. CONCLUSION",
+            "text": "This research explored the interplay between AI privacy concerns and the adoption of AI technologies such as chatbots, virtual assistants, and digital payment systems across different demographic groups. The study revealed a privacy paradox, where users who express distrust in AI's data handling still actively use AI powered tools, suggesting convenience and digital necessity often outweigh privacy concerns. Millennials and Gen Z lead AI adoption regardless of privacy attitudes, while Gen X and Baby Boomers show more skepticism. Regionally, Canada demonstrates the highest AI trust, China has a balanced perspective, and India has a growing openness to AI despite privacy risks. Interestingly, no strong link was found between AI privacy concerns and digital payment use, indicating that financial technology adoption is driven more by accessibility and digital behavior than trust in AI. These findings emphasize the need for greater AI transparency, robust privacy policies, and public education to foster responsible AI use and bridge the gap between concern and adoption.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "AI in Data Privacy and Security",
+            "journal": "International Journal of Artificial Intelligence and Machine Learning",
+            "year": "2024",
+            "authors": "S K Devineni"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Privacy and Security of Big Data in AI Systems: A Research and Standards Perspective",
+            "journal": "",
+            "year": "2019",
+            "authors": "S Dilmaghani; M R Brust; G Danoy; N Cassagnes; J Pecero; P Bouvry"
+        },
+        {
+            "ref_id": "b2",
+            "title": "AI Technologies, Privacy, and Security",
+            "journal": "Frontiers in Artificial Intelligence",
+            "year": "2022",
+            "authors": "D Elliott; E Soifer"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Privacy and security concerns in generative AI: A comprehensive survey",
+            "journal": "IEEE Access",
+            "year": "2024",
+            "authors": "A Golda; K Mekonen; A Pandey; A Singh; V Hassija; V Chamola; B Sikdar"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Ethics of Artificial Intelligence in Education: Student Privacy and Data Protection",
+            "journal": "Sci Insights Educ Front",
+            "year": "2023",
+            "authors": "L Huang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Advancing Ethical AI Practices to Solve Data Privacy Issues in Library Systems",
+            "journal": "International Journal of Multidisciplinary Research Updates",
+            "year": "2023",
+            "authors": "U F Ikwuanusi; P A Adepoju; C S Odionu"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Digital privacy in healthcare: State-of-the-art and future vision",
+            "journal": "IEEE Access",
+            "year": "2024",
+            "authors": "S S Mahadik; P M Pawar; R Muthalagu; N R Prasad; S Hawkins; D Stripelis; S Rao; P Ejim; B Hecht"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Navigating and addressing public concerns in AI: Insights from social media analytics and Delphi",
+            "journal": "IEEE Access",
+            "year": "2024",
+            "authors": "M Maghsoudi; A Mohammadi; S Habibipour"
+        },
+        {
+            "ref_id": "b8",
+            "title": "When AI Meets Information Privacy: The Adversarial Role of AI in Data Sharing Scenario",
+            "journal": "IEEE Access",
+            "year": "2023",
+            "authors": "A Majeed; S O Hwang"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Artificial Intelligence: Risks to Privacy and Democracy",
+            "journal": "Yale Journal of Law and Technology",
+            "year": "2018",
+            "authors": "K M Manheim; L Kaplan"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Artificial Intelligence and Its Implications for Data Privacy. Current Opinion in Psychology",
+            "journal": "",
+            "year": "2024",
+            "authors": "K D Martin; J Zimmermann"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Customer satisfaction response to AI",
+            "journal": "",
+            "year": "2025",
+            "authors": "P Mostafapoor"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Privacy Prevention of Health Care Data Using AI",
+            "journal": "Journal of Data Acquisition and Processing",
+            "year": "2022",
+            "authors": "S Roy"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Artificial intelligence as a digital privacy protector",
+            "journal": "Harvard Journal of Law & Technology",
+            "year": "2017",
+            "authors": "A S Els"
+        },
+        {
+            "ref_id": "b14",
+            "title": "EU General Data Protection Regulation: Changes and Implications for Personal Data Collecting Companies",
+            "journal": "Computer Law & Security Review",
+            "year": "2018",
+            "authors": "C Tikkinen-Piri; A Rohunen; J Markkula"
+        },
+        {
+            "ref_id": "b15",
+            "title": "The Federal Trade Commission and Consumer Privacy in the Coming Decade. I/S: A",
+            "journal": "Journal of Law and Policy for the Information Society",
+            "year": "2007",
+            "authors": "J Turow"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Privacy and Data Protection in the Age of Pervasive Technologies in AI and Robotics",
+            "journal": "Eur. Data Prot. L. Rev",
+            "year": "2017",
+            "authors": "R Van Den Hoven Van Genderen"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Data privacy in healthcare: In the era of artificial intelligence",
+            "journal": "Indian Dermatology Online Journal",
+            "year": "2023",
+            "authors": "N Yadav; S Pandey; A Gupta; P Dudani; S Gupta; K Rangarajan"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Balancing Innovation and Privacy: The Intersection of Data Protection and Artificial Intelligence",
+            "journal": "International Journal of Machine Learning Research in Cybersecurity and Artificial Intelligence",
+            "year": "2024",
+            "authors": "A K Y Yanamala; S Suryadevara; V D Reddy Kalli"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Insights into privacy protection research in AI",
+            "journal": "IEEE Access",
+            "year": "2024",
+            "authors": "S Yu; F Carroll; B L Bentley"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Overview of the AI in Retail Dataset, displaying key demographic and AI usage trends.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig 2 .2Fig 2. Flowchart of the Research Process. Outlining data preprocessing, analysis, and key insights on AI adoption and privacy concerns.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 3 .3Fig. 3. AI Privacy Trust Distribution by Age Group -Visualizing how different generations (Baby Boomers, Gen X, Gen Z, and Millennials) perceive AI privacy concerns, with Millennials showing the highest engagement in both trust and distrust categories",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig 4 :4Fig 4: AI Privacy Trust Distribution by Country -Comparing AI privacy trust levels across Canada, China, and India, with Canada showing the highest trust in AI privacy, while China exhibits a more balanced distribution between trust and distrust.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Fig. 5 .5Fig. 5. AI Chatbot Usage by Age Group -Analyzing the adoption of AI chatbots among different generations, with Millennials being the dominant users, followed by Gen Z, while Gen X and Baby Boomers show lower engagement.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig. 6 .6Fig. 6. Pivot Table of AI Privacy Trust vs. AI Chatbot Usage (with Generational Majority) -Shows that Millennials dominate AI Chatbot usage, regardless of their stance on AI privacy trust, highlighting their role as the primary adopters of AI-driven communication tools",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "8",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "Fig. 8 .8Fig. 8. Pivot Table of AI Privacy Trust vs. AI Chatbot Usage -Showing the distribution of users who trust or distrust AI privacy and their interaction with AI chatbots, revealing the presence of a privacy paradox where some AIdistrusting users still engage with chatbots",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "9",
+            "figure_type": "figure",
+            "figure_id": "fig_7",
+            "figure_caption": "Fig. 9 .9Fig. 9. Pivot Table of AI Privacy Trust vs. AI Virtual Assistant Usage (with Generational Majority) -Highlighting that Millennials dominate AI virtual assistant usage, regardless of their trust in AI privacy, reinforcing their role as the leading adopters of AI-driven technologies.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "10",
+            "figure_type": "figure",
+            "figure_id": "fig_8",
+            "figure_caption": "Fig. 10 .10Fig. 10. Stacked Bar Chart of AI Privacy Trust by Country Comparing AI privacy trust and distrust across Canada, China, and India, showing Canada with the highest trust levels, while China and India exhibit more balanced distributions.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "11",
+            "figure_type": "figure",
+            "figure_id": "fig_9",
+            "figure_caption": "Fig 11 :11Fig 11: Scatter Plot of AI Privacy Trust vs. Payment Methods -Examining whether AI trust influences the adoption of E-wallets, showing an even distribution of users across trust and distrust categories, suggesting no strong correlation between AI privacy concerns and digital payment preferences.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/AIRC64931.2025.11077547"
+}

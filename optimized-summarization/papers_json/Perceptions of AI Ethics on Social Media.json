@@ -1,0 +1,108 @@
+{
+    "title": "Perceptions of AI Ethics on Social Media",
+    "authors": "Ayse Ocal",
+    "pub_date": "",
+    "abstract": "",
+    "sections": [
+        {
+            "heading": "",
+            "text": "Abstract-Since the emergence of Artificial intelligence (AI), despite a common expectation that AI should be 'ethical' [1], there are many different interpretations, assumptions, and expectations about what constitutes \"ethical AI\" and which ethical problems and requirements are pointed out by the public. Even though many private companies and research institutions have highlighted present and possible future problems, needs, and guidelines associated with AI ethics, relevant public visions regarding how \"ethical AI\" can be constituted [1] have not been explored sufficiently. For obtaining public opinions, although questionnaires and interviews are commonly used, the questions in these methods are designed based on only the researchers' preferences, and this could be a limitation. Social media data, however, are produced by users freely [2], and many people share their ideas in social media discussions [3]. Social media data usage, therefore, has been growing in various research studies.",
+            "publication_ref": [
+                "b0",
+                "b0",
+                "b1",
+                "b2"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Researchers intending to utilize social media as a data source predominantly harness Twitter data, yet in recent years Reddit has also gained the attention of scholars with the same research purpose, as in [2], [3]. Reddit is a huge social media platform involving over 50 million daily active users with diverse mentalities shaped by different backgrounds, prior beliefs, personal experiences, and personalities, from various geographical locations, and 100 thousand active communities, thereby it brings different segments of the public together. Moreover, users benefit from a level of anonymity on Reddit not typically accomplished on other social media platforms [4],",
+            "text": "thereby users may feel more secure and share more honest thoughts on a topic, thus the Reddit data have been used to gather public opinions in prior research as in [3]. Through the lens of technological frames [5], to explore social media users' interpretations, assumptions, and expectations about how ethical AI is built, and which problems hinder building ethical AI, Reddit conversations were analyzed. More specifically, a corpus consisting of 998 unique Reddit post titles and their corresponding 16611 comments extracted from 15 AI-related subreddits were identified by using topic modelling supported by human judgment for frame identification as in [6] ",
+            "publication_ref": [
+                "b2",
+                "b4",
+                "b5"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "based on BERTopic [7]. The findings show that perceptions about AI ethics are clustered around several themes (AI's gender bias; humans' gender bias about perceived gender of bots; regulation and patent laws related to AI use; AI spreading disinformation; AI making fake faces, videos, music; misuse of personal data; and AI impact on crime), with deviations about how these themes are interpreted, what problems or actors they pertain to, and what appropriate",
+            "text": "measures should be taken to address problems pointed out by the public. While some of these ethical issues were also highlighted in prominent AI ethics literature as in [8], the findings of this study indicated new insights such as humans' gender bias about the perceived gender of bots. The findings offer important implications. First, as a practical implication, the findings can enrich current public voice-centric explorations of AI ethics. Also, they could help designing suitable interfaces that allow proper human-AI task coordination and collaboration and deploying innovative solutions for existing or anticipated ethical problems. Second, expected outcomes can demonstrate areas where misconceptions and unrealistic visions about AI ethics are widespread, which may trigger speculative fears or concerns. Researchers may be encouraged to more focus on the areas where public misconceptions are more common; educational programs may be arranged to reduce speculative fears or concerns or take necessary measures for real ethical risks. Academia, industry and government communities may collaborate for research and policy arrangements in those areas. Third, through employing computeraided textual analysis, this study reveals frames in social media conversations to showcase the latest perceptions from different viewpoints. This method may be an example method for relevant future research.",
+            "publication_ref": [
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Keywords-AI ethics, social media, Reddit, public perceptions, technological frames, bias.",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "The global landscape of AI ethics guidelines",
+            "journal": "Nature Machine Intelligence",
+            "year": "2019-09",
+            "authors": "A Jobin; M Ienca; E Vayena"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Reasoning in social media: insights from Reddit 'Change My View' submissions",
+            "journal": "Online Information Review",
+            "year": "2021-01",
+            "authors": "A \u00d6cal; L Xiao; J Park"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Using Data from Reddit, Public Deliberation, and Surveys to Measure Public Opinion about Autonomous Vehicles",
+            "journal": "Public Opinion Quarterly",
+            "year": "2021-09",
+            "authors": "K Chen; D Tomblin"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Studying Reddit: A Systematic Overview of Disciplines, Approaches, Methods, and Ethics",
+            "journal": "Social Media + Society",
+            "year": "2021-04",
+            "authors": "N Proferes; N Jones; S Gilbert; C Fiesler; M Zimmer"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Technological frames: making sense of information technology in organizations",
+            "journal": "ACM Trans. Inf. Syst",
+            "year": "1994-04",
+            "authors": "W J Orlikowski; D C Gash"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Proposing an Open-Sourced Tool for Computational Framing Analysis of Multilingual Data",
+            "journal": "",
+            "year": "2022-02",
+            "authors": "L Guo"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Media Coverage and Public Perception of Distance Learning During the COVID-19 Pandemic: A Topic Modeling Approach Based on BERTopic",
+            "journal": "",
+            "year": "2022-12",
+            "authors": "G Hristova; N Netov"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Authorized licensed use limited to: Kennesaw State University",
+            "journal": "Cambridge University Press",
+            "year": "2011",
+            "authors": "N Bostrom; E Yudkowsky"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1038/s42256-019-0088-2"
+}

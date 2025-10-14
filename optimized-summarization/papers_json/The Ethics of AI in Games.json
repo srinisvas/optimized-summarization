@@ -1,0 +1,1191 @@
+{
+    "title": "The Ethics of AI in Games",
+    "authors": "David Melhart; Julian Togelius; Benedik Mikkelsen; Christoffer Holmg\u00e5rd; Georgios N Yannakakis",
+    "pub_date": "",
+    "abstract": "Video games are one of the richest and most popular forms of human-computer interaction and, hence, their role is critical for our understanding of human behaviour and affect at a large scale. As artificial intelligence (AI) tools are gradually adopted by the game industry a series of ethical concerns arise. Such concerns, however, have so far not been extensively discussed in a video game context. Motivated by the lack of a comprehensive review on the ethics of AI as applied to games, we survey the current state of the art in this area and discuss ethical considerations of these systems from the holistic perspective of the affective loop. Through the components of this loop, we study the ethical challenges that AI faces in video game development. Elicitation highlights the ethical boundaries of artificially induced emotions; sensing showcases the trade-off between privacy and safe gaming spaces; and detection, as utilised during in-game adaptation, poses challenges to transparency and ownership. This paper calls for an open dialogue and action for the games of today and the virtual spaces of the future. By setting an appropriate framework we aim to protect users and to guide developers towards safer and better experiences for their customers.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "V IDEO games are key to our understanding of human behaviour due to their vast popularity, the multi-modal ways players can interact with them, and the various ways games can express emotion and adapt to a player's style. Even though values such as transparency, trustworthiness and responsibility are core aspects of ethical systems in other domains, video games present unique challenges in terms of ethics. Dark patterns in game design [1], predatory monetisation strategies [2], and the black-box nature of games hinder transparency [3] and raise several ethical concerns. These issues are far-reaching from game design and development [4], [5] to societal impact and research ethics [6].\nIn this survey paper, we aim to address the ethical considerations of game AI tools and methods through the lens of affective computing. In particular, we focus primarily on player modelling [7] as a field of game research that considers the aggregation, simulation [8], and understanding of gameplay and user experience in games. We, thus, structure the discussion Fig. 1. Affective Game Loop [9]. The loop relies on the game's parameter space to elicit an emotional response. This response is sensed by an AI model that detects change(s) in the player's emotional state. The output of the affect model can be used to adapt the game content and generate a new set of stimuli for the player.\nof AI ethics in games around the affective game loop [9] (see Fig. 1). The affective game loop describes the relationships between emotion expression, elicitation, detection, prediction, and subsequent reaction. It presents a complex game system which facilitates these processes and adapts to the user's emotional response. This loop can assist AI systems to generate personalised aspects of games such as agent behaviour, levels and images [10] or guide an orchestration process [11], [12] across creative facets such as text, levels and visuals. The concept of the affective game loop has been explored thoroughly in academia [13], [14], [15], [16], [17]. Meanwhile, the adoption of affect-driven adaptation systems in games has been gradual over the last twenty years; indicative yet representative examples include Fa\u00e7ade (Procedural Arts, 2005)-see Fig. 2-and Nevermind (Flying Mollusk, 2016)-see Fig. 3.\nThe paper is structured as follows. After an overview of related literature (Section II), we discuss the ethical dimensions of game AI through the phases of the affective game loop-for a detailed structure of our survey see Table I. In particular, Section III covers aspects of elicitation and how dark patterns are used to manipulate and reduce the players' emotional agency in harmful or exploitative ways; Section IV takes a thorough look at sensing and issues related to the tradeoff between privacy and control, and malicious action in games; Section V discusses affect detection and the complexities of transparency in limited information systems such as games; and finally Section VI reflects on questions of data and model ownership during the affect-driven adaptation phase. The paper ends with a discussion   on several other issues related to game AI ethics including AI algorithmic biases, compute fairness, and in-game toxicity and violence.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16"
+            ],
+            "figure_ref": [
+                "fig_0",
+                "fig_1"
+            ],
+            "table_ref": [
+                "tab_0"
+            ]
+        },
+        {
+            "heading": "II. RELATED WORK",
+            "text": "This section reviews the literature on ethics research and ethical frameworks in AI and games research.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Ethics in Artificial Intelligence",
+            "text": "Ethics has been a constant challenge in the field of AI fuelled by academic and practical interest into the governance of autonomous systems and public anxiety towards data-driven black-box infrastructures [25], [26]. Ethical frameworks have been developed to address these anxieties, generally aiming to provide guidelines for creating beneficial, transparent, and trustworthy applications.\nOne of the most popular ethics frameworks applied in AI consists of the virtues of Responsibility, Transparency, Auditability, Incorruptibility, and Predictability introduced by Bostrom and Yudkowsky [18]. The responsibility of AI algorithms refers to their clear oversight on the chain of responsibility as the output of the algorithm can be attributed to either individuals or organisations [27]. As we will discuss in Sections III and VI, a clear chain of responsibility is often lost between the original data, the inferred models, and large-scale ensemble architectures using third-party AI.\nTransparency is one of the more complex ethical virtues and cornerstones of AI Trustworthiness [28], [29]. On the one hand, it can refer to a kind of algorithmic transparency that promotes AI decision-making processes that are explainable [30] and clearly understood by their users [27]. On the other hand, it can refer to a systemic transparency and openness of AI-powered applications; that is legal access to AI infrastructures themselves [28]. As we will show in Sections IV, V, and VI, the industry has a troubled relationship with transparency, with many companies not disclosing their use of player models to gain further insights from user data. While transparency in relation to direct data-collection is clear, \"inferred\" information such as computational models and their output is much less protected by legal frameworks [31].\nAuditability implies that the correctness of the output of AI systems should be verifiable by a third party. As we discuss in Sections III and V, auditability and general transparency is a serious blind spot of the video games industry. Although some of this blind-spot can be attributed to the inherent opacity of AI systems [32], there is a definite limitation raised by legal opacity restricting access to AI architecture and training data by external auditors [33].\nIncorruptibility means that the system is robust against manipulation. Even though the obfuscation of datasets, algorithms, and their output definitely provides some level of protection, obfuscation is fundamentally clashing with the principle of transparency. Due to their interactivity games are under constant siege by malicious users, however, their corruption is not necessarily an outside force. As Gebru points out, AI bias tends to exacerbate the sociopolitical and socioeconomic disparities in our society as they perpetuate inherent biases of the creators of AI models and our social reality [34]. As we discuss in Section IV, while one of the primary goals of applied AI in the game industry is to increase the robustness of systems against external attacks, there is much less discussion and transparency about the inherent bias in the employed AI systems.\nFinally, predictability refers to self-consistent AI outputs and algorithmic behaviour. Predictability is a less prominent yet important aspect of AI ethics, which aims to push applications towards a more reliable and fair implementation [27]. Predictability goes a long way towards eliminating AI bias, which we detail in Section V. The aforementioned virtues are being understood as the cornerstones of AI ethics and solidified [3], [35]-in some shape or form-in the IEEE Ethically Aligned Design Guidelines [36], the Humane AI Ethical Framework [27] and the newly emerging concept of Trustworthy AI [29], [37], which also plays a fundamental role in the new Ethical Guidelines for Artificial Intelligence of the European Union [38].\nA recent meta-review by Yu et al. [26] of the AAAI, AAMAS, ECAI and IJCAI conferences mapped out the field of Ethics in AI (EAI) and identified four major areas under this domain. The first category is research focusing on leveraging AI techniques to explore questions of ethics faced by humans. The second and third categories focus on internal decision-making frameworks for AI agents acting either as individual units or collectives. Finally, the last category focuses on ethics in human-computer interactions. For a complete review of all these avenues of research we refer to Yu et al. [26]; here we focus only on the latter category as it is the most relevant to the domain and purposes investigated in this paper. As positioned by Yu et al. [26], [39] and echoed by the larger research [3], [35], [40] and policy making [36], [37] communities, ethical HCI systems should conserve the autonomy of humans, be beneficial to the user, and minimise underlying risks. Summarising this sentiment in relation to affective computing, the IEEE Ethically Aligned Design Guidelines explicitly state: \"To ensure that intelligent technical systems will be used to help humanity to the greatest extent possible in all contexts, autonomous and intelligent systems that participate in or facilitate human society should not cause harm by either amplifying or dampening human emotional experience\" [36, page 6].\nBeyond the scope of emotional autonomy, however, there is also the question of transparency and autonomy in human-AI interaction in general. Rovatsos raises the issue of the general distrust towards machines and whether it is ethical for an AI system to conceal itself [41]. Although it can be easy to consider total transparency as the most ethical, the issue is more complex. A new ethical conundrum emerges when we consider that in some human-computer interactions, a lack of transparency can improve the efficacy of the system [42]. If this is true, wouldn't the performance drop-that was induced by increased transparency-hurt the user in the long run? Would in this situation total transparency take away from the user's autonomy? On the other hand, could an opaque system even present fair choices to the user? These questions-raised by Rovatsos [41]-presuppose a benevolent system. However, AI is not always designed to be benevolent. Perhaps the most striking example of this is lethal autonomous weapon systems, which are designed to kill humans without considerable oversight [43]. Even though real-life killing robots might seem to be removed from the domain of games, pushing a military agenda and aiding both recruitment and research has never been far from video games [6]. And as we discuss at many points in this paper neither is emotional exploitation nor psychological manipulation.\nAI researchers from the fields of computer science, engineering, robotics, medicine, games, and more are calling for stronger regulations on exploitative and harmful AI and a push for benevolent AI applications [6], [43], [44]. Their fears are not unfounded as current research and industrial application of AI are more than capable of exploiting and harming humans en masse, from social engineering [45], through psychological manipulation [2] and exacerbating existing socioeconomic disparities to physical harm [6], [43].",
+            "publication_ref": [
+                "b24",
+                "b25",
+                "b17",
+                "b26",
+                "b27",
+                "b28",
+                "b29",
+                "b26",
+                "b27",
+                "b30",
+                "b31",
+                "b32",
+                "b33",
+                "b26",
+                "b2",
+                "b34",
+                "b35",
+                "b26",
+                "b28",
+                "b36",
+                "b37",
+                "b25",
+                "b25",
+                "b25",
+                "b38",
+                "b2",
+                "b34",
+                "b39",
+                "b35",
+                "b36",
+                "b40",
+                "b41",
+                "b40",
+                "b42",
+                "b5",
+                "b5",
+                "b42",
+                "b43",
+                "b44",
+                "b1",
+                "b5",
+                "b42"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. AI Ethics in Game Research",
+            "text": "AI ethics in game research is a fairly under-researched area. The handful of papers existent in the literature focus mainly on player modelling [3], [46], ethical development practices [4], [5] and ethical practices in research [6]. In contrast, more work has been carried out on games as ethical systems [47] and the outcome of responsibility of game design [1].\nIn a review of the field of player modelling, Mikkelsen et al. provided an overview of emerging ethical issues [3]. In their analysis relying on the framework laid out by [18], Mikkelsen et al. identified a number of areas of concern from monetisation through content management to dynamic adaptation and privacy. Most issues emerging in these areas are connected to the lack of transparency and auditability of computer models, especially in industrial settings. One solution to the lack of transparency and interpretability is offered by the field of explainable AI [48], [49]. A possible avenue for adapting explainable AI is through open player models [46], which are based on Open Learner Models applied to games [50]. Open player models incorporate an explanatory module into a given AI application which gives clear feedback to the user on the behaviour and predictions of the model. As the module providing transparency is removed from the main pipeline of the algorithm, in principle open player models can be cost-effective to implement in existing systems as well. Nevertheless, although explainable AI principles can help build more transparent systems in theory, the practical application of such frameworks appears to be challenging. Black-box algorithms such as deep learning neural networks are very popular in data science due to their performance, and they are notoriously hard to explain and interpret-despite advances [49]. On the other hand, effective white-box systems are still an open challenge to the field [48] and might not even be sustainable or desirable from a business perspective as the games industry is known to treat datasets, data-processing pipelines, and AI models as strictly-kept trade secrets.\nBeyond the concerns of transparency there is an alarming issue of intentionally harmful usage of AI models that exploit addiction and irresponsible spending habits [3], [5]. Despite a growing concern against aggressive and deceptive monetisation techniques-often aimed at children-there is still a lack of legal and practical frameworks that are capable of addressing such issues [2]. King et al. [2], for instance, examined 13 different patents connected to video game monetisation and found that almost all of them relied on the exploitation of the players' data to optimise the delivery and timing of ads and purchase offers. They note that with the expansion of AI methods it is expected that such systems will become more sophisticated and ubiquitous in the future, making the issue of ethics in player modelling more pressing than ever.",
+            "publication_ref": [
+                "b2",
+                "b45",
+                "b3",
+                "b4",
+                "b5",
+                "b46",
+                "b0",
+                "b2",
+                "b17",
+                "b47",
+                "b48",
+                "b45",
+                "b49",
+                "b48",
+                "b47",
+                "b2",
+                "b4",
+                "b1",
+                "b1"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. State of AI Ethics in Practice",
+            "text": "Although ethical frameworks have been developed to provide guidance, the lack of specificity often leads to a small scale of adoption. If we look at the core issue of transparency, which is also often required for the assessment of other components of AI trustworthiness, we find that both affective computing and games applications are lagging behind [51]. This is true despite the issue of transparency being propped up by more robust legal frameworks than many other components of ethical AI. In the European Union, the General Data Protection Regulation (GDPR) [52] is meant to give a legal framework and transparency to data handling (also in an AI context). However, a review of serious games-games developed for healthcare, educational, hiring, or other non-entertainment purposes-found that two years after the adoption of GDPR, it has had little to no effect on the research community [53]. Similarly, in a recent exploration of affective computing through the lens of GDPR laws Hauselmann found that the field faces serious issues in terms of transparency, responsibility, and predictability [54].\nHauselmann highlights the delicate nature of emotional data as something that is not necessarily protected under current legal frameworks but extremely personal to the users. However, the question of emotional data is further complicated by the fact that while user behaviour is relatively easy to observe and record, emotional data is often extracted through means of peripheral signals and machine learning. In this sense affective data is inferred and not observed [31]; as a result, the majority of affective computing applications appear to be inherently opaque. As there should be a right to an accurate portrayal of personal data, inaccurate predictors might infringe on the personal rights of users. This is hard to prove, however, as these models are often difficult to audit. This phenomenon is amplified because there are fewer practical concerns for inaccurate models up to a certain degree. Often even if a user is profiled inaccurately, an imperfect prediction can still be used to great effect in an adaptive system [55]. Moreover, commercial applications often safeguard their models as trade secrets or cannot handle the constraints and overhead of implementing ethical safeguards on a fundamental level.\nThe above examples focus predominantly on the research community; in the games industry, the problem of transparency can be even more prevalent. More often than not, users are unaware of the data collected and inferred by algorithms. As Kr\u00f6ger points out, data collection in games is generally made invisible to the players as it is \"woven into a game's environment\" [51]. Given this opaqueness and a blas\u00e9 attitude of users towardswhat they perceive as-anonymous play, it is questionable to which extent regulations such as the aforementioned GDPR could reasonably be upheld. A thorough review of five companies by Vakkuri et al. [35] revealed that even though developers might consider ethics as an important question, they have little to no tools to address it in a systematic manner. Mitigation of ethical risks in AI systems thus becomes low-priority and generally addressed in a post-and ad-hoc manner, if at all. Reviews of game industry applications that span from player modelling [3], [46], to data-driven game development [5], and to procedural content generation [4] reveal a similar pattern. Because the games industry is a fast-moving field with growing pressure on producing more and more content with the advent of live-service games, the application of ethical frameworks to AI in games-including but not limited to player modelling-remains an after-thought without clear ways to integrate the mitigation of ethical problems into existing industry pipelines.",
+            "publication_ref": [
+                "b50",
+                "b51",
+                "b52",
+                "b53",
+                "b30",
+                "b54",
+                "b50",
+                "b34",
+                "b2",
+                "b45",
+                "b4",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. ELICITATION -BOUNDARIES OF ARTIFICIALLY INDUCED EMOTIONS",
+            "text": "We start examining the affective game loop from the Elicitation phase. Doing so we are faced with the ethical boundaries of artificially induced emotions. Although inherently personal and subjective, emotions do not enjoy legal protection to the same extent as other personal data [54]. The core issues we encounter in this area are ownership and autonomy over one's own emotions. The so-called dark design patterns [1] have been used in games to compel players' behaviour through affective manipulation and with the advent of Big Data analysis and machine learning, there is a potential for a new wave of dark design patterns [2]. As games are often marketed towards children, the ethical side of the emotion elicitation in games, their use and their goal have to be considered. Importantly, the challenge of dark design patterns is core to game design principles but not necessarily to the AI algorithm associated with a game. One should thus take a dive into the problematic ethical aspects of the game design prior to examining the role of AI within a particular game.\nWhile a few years ago loot boxes-i.e., virtual items that can be redeemed for other random items that provide some value to the players [56]-made waves [57], [58], [59], the new monetisation technique sweeping across the industry is the battle pass or season pass system. Unlike previous iterations of premium subscriptions, in-game currencies, downloadable content packs, loot boxes, and gated progression, the battle pass system does not promise any immediate tangible reward to players. Instead, players buy into access to time-limited content updates, which they still have to unlock in-game within a given time frame [60]. This type of monetisation reformulates the value proposition of online games and shifts the focus from commodities to services [61]. While the loot boxes of yesteryear were designed to operate on the same psychological buttons as gambling [57], [58], emerging battle pass systems build more on a feeling of missing out [60] and societal pressure [62]. In many modern online games-such as Fortnite (Epic Games, 2017), Apex Legends (Respawn Entertainment, 2019), Fall Guys (Mediatonic, 2020) and Overwatch 2 (Blizzard Entertainment, 2022)-these monetisation practices often coalesce into a virtual storefront, where in-game currencies can be bought for real money, then spent on single purchase upgrades and battle passes alike.\nWhere player modelling techniques can make loot boxes, battle passes, and other similar monetisation techniques more concerning is the ability to target people more prone to spending. Predictive models have already been in place for years in the industry for the estimation of churn [63] to keep track of players lost and their velocity through a game. Similar models, however, can also be used to find and target potential excessive spenders-often called \"whales\" in the industry [64]. Affective computing models estimating the users' emotional state can be used for the targeted and timed delivery of ads and promotional offers to maximise user spending. Affective modelling methods, however, can also help build more responsible systems that detect a risk of a problematic behaviour. Out of the psychosocial aspects of addiction (salience, mood modification, tolerance, withdrawal symptoms, relapse, conflict) [65], affective computing methods could be especially useful to pick up on mood modification and tolerance (as a diminishing affective response) at the very least and flag users as at-risk consumers. In the same way, machine learning models based on affective and behavioural feedback [66] are deployed to target monetisation and retain consumers, they can also be used to deploy \"precision psychiatry\" [67]. Most notably, EA was accused to leverage their patented dynamic difficulty adjustment system to push players to spend more money on loot boxes [68]. Even though the case was dismissed and EA swore to uphold \"fair play\" in their online games [69], this indicative example goes to show how algorithms can be used to elicit emotions that influence players to act against their own interest.\nWhile affective computing systems in general often obscure how they infer information and predictions [54], the black-box nature of games is even more apparent. Games are often viewed as \"smoke and mirrors\" when it comes to the dichotomy between the game's parameter space and the conveyed aesthetic. Game designers are invested in hiding what lies within the game rules to facilitate a suspension of disbelief and thus make the experience more impactful and believable for players [70]. Often game designers are relying on transgressive aesthetics [71] to create experiences that have a larger emotional weight. Although the area is still largely unexplored some games like Flying Mollusk's Nevermind (2016) integrated computer models to guide their elicitation. In Nevermind the game's transgressive aesthetics is amplified when the player is under stress and subdued when they calm down. Intentionally transgressive content-even when controlled by autonomous systems-can be tuned and managed more consciously; unintentionally harmful or offensive content, however, poses a much more complex problem.\nOf course some more obvious errors are easier to catch with simple pruning, but computational models can also encode biases-like gender biases or offensive stereotypes-which in turn result in harmful content [72], [73] unintended by the designer. A good encapsulation of the complicated nature of using AI generators, content moderation, and privacy is AI Dungeon (Latitude, 2019), a text adventure game based on the GPT-2 [74] and GPT-3 [75] language models. Latitude has become the focus of a controversy when they decided to take action against offensive content AI Dungeon-mainly involving stories containing non-consensual sexual content and child pornography [76]. Although much of the questionable content banned by Latitude was generated deliberately by their users, the model was also known to generate sexually explicit content seemingly unprompted, including \"writing children into sexual scenarios\" [76]. Users raised concerns about the decision of Latitude to address the issue with strict moderation, automatic flagging of problematic materials, and monitoring the content of users' privately generated stories. On one hand, this decision pushed all the responsibility of the content to the users even though it was co-created with Latitude's algorithm; on the other hand, the human moderation of private content raised privacy concerns. The controversy showed that despite the best intentions of Latitude, a lack of transparency and a clean line of responsibility [18] leads to detrimental outcomes for both the company and the end-users. The swift shift in how moderation was done on the platform made the already black-box system even harder to navigate for players, which in turn reduced both the transparency and the users' trust in the system. Many players felt unfairly flagged for content that either fell within community guidelines or was generated by the model virtually unprompted [76]. As Latitude was not the developer of the underlying foundation language model [77], it was unclear how the system can be effectively audited and since there was no established responsibility for the system, all the blame fell to users who interacted with the model.\nAs we can see elicitation through AI-assisted systems has potentially harmful effects on the end user. On the one hand, video game companies can rely on affective computing models to fine-tune and personalise targeted monetisation strategies. This carries the danger of intentionally or unintentionally facilitating addiction or pressuring users on an emotional or social basis. On the other hand, generative systems can be unreliable and surprising and generate unwanted content without the designer's knowledge or the user's consent. To prevent subsequent issues, generative systems in games should demarcate a chain of responsibility for the model's output and offer tools to players to mitigate unwanted content. Even though foundation models offer a robust solution for generating the content, often the complexity, black-box nature, and ownership of the models limit the auditability of these algorithms [77].\nWhile leveraging predatory monetisation strategies has been a prevalent pattern-especially in the mobile games industry-not all studios have followed suit. A good counter-example is Six to Start, the developer of the immensely popular Zombies, Run! (Six to Start) (2012) mobile exergame. The studio has not only forgone the usual dark design patterns, showing that games can be successful without putting psychological pressure on their players, but they have also been making a firm public stance against these practices [20].",
+            "publication_ref": [
+                "b53",
+                "b0",
+                "b1",
+                "b55",
+                "b56",
+                "b57",
+                "b58",
+                "b59",
+                "b60",
+                "b56",
+                "b57",
+                "b59",
+                "b61",
+                "b62",
+                "b63",
+                "b64",
+                "b65",
+                "b66",
+                "b67",
+                "b68",
+                "b53",
+                "b69",
+                "b70",
+                "b71",
+                "b72",
+                "b73",
+                "b74",
+                "b75",
+                "b75",
+                "b17",
+                "b75",
+                "b76",
+                "b76",
+                "b19"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. SENSING -PRIVACY AND CONTROL",
+            "text": "Following elicitation, the next step of the affective loop is sensing: the capture and processing of the manifested emotions. The central issue of sensing is that of privacy-i.e., when, how, and kind of data is being captured. While user privacy might define a clear issue in other domains, games present a special case. Particularly due to the interactivity of the medium, a certain amount of dynamic control is needed to maintain oversight over toxic and malicious actors in a game's ecosystem and prevent unintended or negative effects on the players' mental well-being.\nIt has been shown that users of affective computing systems prefer clear notifications and potential control over the output of sensors [78]. This need is also supported by the principle of autonomy when it comes to ethical applications [79], and more concretely by the right of accurate portrayal [54]. Unfortunately, in multiple instances affective computing applications fail to address these needs as the data and data pipeline is kept secret from the user [54]; game companies are no exception to this. In a recent comprehensive study on data types collected by the video game industry, Kr\u00f6ger et al. [80] reveals that companies are collecting and inferring a wide range of data often without the user's knowledge.\nMost of the data collection focuses on in-game behavioural metrics which can be used to predict player skill, preferences, or content consumption and spending habits. The inference of spending habits and personal identifiers-such as location, gender, financial status, etc-can clearly fuel harmful policies. Even game mechanics, which on the surface are there to benefit the player-such as matchmaking or dynamic difficulty adjustment-have led to concerns in the past. As mentioned in Section III, one of the most recent examples of dynamic difficulty adjustment working against the users was the case of EA Games. In a lawsuit, EA was accused to use difficulty adjustment to influence player spending on loot boxes [68]. The lawsuit itself was later dismissed [69], however, this case still highlights the public distrust towards systems that collect behavioural data. This is not to say that games rely solely on such data. As Kr\u00f6ger et al. point out, game companies are adapting sensor data in their datasets at an increasing rate [80]. Eye-tracking, voice data, GPS information, and peripheral signals from smart accessories can all be used to enrich game datasets and potentially reveal a wide variety of personal information about the user. In today's interconnected world, it is becoming exponentially easy to triangulate and infer the identity of players-using their in-game data, username, GPS location, preferences, and distinct play patterns they use to interact with the game [81], [82]-to the point where it is questionable whether game data can be truly anonymised at all [80]. Complex player profiles can be built on inferred gender, age, socioeconomic status, and interests, which can fuel harmful models exacerbating problem behaviour such as gambling and excessive spending. Beyond static high-level profiles it is also possible to infer the emotional state of users through keystroke patterns [83], voice [84], or in-game behaviour [14], [85]. Although the secrecy of the industry is a major concern, there is a tradeoff in terms of privacy and autonomy that is afforded to the players. Similarly to how behavioural analytics is used to infer a rich player profile [86], emotional data can also be used to model and subsequently enhance the play experience [9], [87]. These types of tradeoffs were identified by Ishowo-Oloko et al. as the transparency-efficiency tradeoff of human-machine cooperation [42]. While not always applicable to human-computer interaction, there are instances where the inherent bias against AI [41] can hinder a human-computer system if total transparency is maintained.\nModels incorporating emotional data can also be used to enhance other game systems involved in the moderation of user content and interaction. Most recently, Canossa et al. presented a robust method to flag the occurrence and severity of toxic and emotionally abusive behaviour in For Honor (Ubisoft, 2017) [21]. Although the input features of these models are mainly behavioural in nature, the inferred actions are emotional. While community guidelines are generally presented clearly, human moderation can become cumbersome with the breadth of data increasing with new players. Additionally, traditional reporting systems rely on user input, which could come with its own limitations including unreported events and subversion of the system by malicious users (see Fig. 4). As toxic players are often trying to find new ways to circumvent regulations, in the future automatic flagging systems-that incorporate emotional data as part of their input or output features-can make games a safer place for players. The aforementioned study is a good indicative example of how affective computing applications can be used to enhance the predictability of the system towards its users and how we can use AI to both deliver clear value to players and improve the game experience.\nWhen it comes to privacy and transparency the state of practice in the game industry appears to be severe. The lack of consent, autonomy, or in many cases just knowledge about the collected data and its usage is a serious and prevalent ethical issue. In many instances this ethical failing can be traced back to lax regulations, where legal requirements for consent and compliance are technically fulfilled but do not facilitate transparency in a tangible way. However, despite recent legal efforts to institutionalise privacy requirements such as the GDPR of the EU, many industry players are still falling behind, unable or unwilling to address the most pressing issues [84]. On the other hand, not all data is collected for the purpose of exploiting and manipulating users. Often a wide range of data-otherwise considered \"non-essential\"-can enable the automatic flagging and moderation of toxic and malicious users. Some players aim to actively harm others in-and outside of the game through emotional abuse. Affect-driven applications of AI can offer solutions for identifying both the occurrence and the impact of toxic behaviour, making online games a safer, more reliable and predictable space for everyone involved. For this to happen, however, clear rules have to be put in place and users must be notified of what kind of data is being collected for what purpose. Even though the detection of toxic behaviour and negative gameplay outcomes might be beneficial for the players, it doesn't mean that the principle of transparency cannot be upheld.",
+            "publication_ref": [
+                "b77",
+                "b78",
+                "b53",
+                "b53",
+                "b79",
+                "b67",
+                "b68",
+                "b79",
+                "b80",
+                "b81",
+                "b79",
+                "b82",
+                "b83",
+                "b13",
+                "b84",
+                "b85",
+                "b8",
+                "b86",
+                "b41",
+                "b40",
+                "b20",
+                "b83"
+            ],
+            "figure_ref": [
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "V. AFFECT DETECTION -TRANSPARENCY IN LIMITED INFORMATION SYSTEMS",
+            "text": "The third core step of the affective loop is Affect Detection which refers to the computational processing and prediction of certain aspects of affect [88]. One of the major ethical challenges of deploying affective models, in general, is their transparency towards users [3], [54]. More often than not companies are not disclosing that user data is modelled, let alone informing users about their system's predictions. Similarly to privacy challenges discussed in Section IV, the issue transparency is of ambiguous nature too.\nWe have already touched upon the issue of games as limited information systems in Section III. Games often withhold information to create uncertainty, decrease cognitive load, and construct challenges for players [89], [90], [91]. Moreover, games limit the up-front information that players have access to so that they facilitate learning [90] and an experience of flow [92]. Abuhamdeh et al. have shown that greater outcome uncertainty does indeed lead to greater satisfaction when the player is succeeding [91]. They also found that as perceived competence rises, suspense and uncertainty become a major facilitator of intrinsic motivation in video games; for an overview of intrinsic motivation in games see [93]. Because uncertainty is a fundamental element of game design, it is very difficult to mitigate issues of transparency. While explainable AI frameworks generally advocate for open communication towards the user about model predictions [46], [48], when it comes to in-game adjustments this can be detrimental to the player experience [42]. It is important, however, that this tradeoff only applies to systems that use behaviour and emotion prediction to adjust in-game content, where the models only reach as far as the \"magic circle\" of the game experience [94], [95].\nIt is important to note that games do not exist in a vacuum and the experience is far from being a closed bubble. In systems where affect detection is used to inform monetisation strategies, users should be informed in a clear and comprehensive way about the output and the goal of the algorithm to preserve the system's transparency and predictability. Of course, as cited above, some game studios have a bad track record keeping users informed about their practices behind the curtains [84]. Although some of the secrecy can be chalked up to attempts to address the incorruptibility of the system by keeping it obscure, more often than not it seems video game companies rather want to protect their resources (e.g., in terms of trade secrets, trained models, and datasets).\nBeyond the questions of responsibility, transparency, and auditability when it comes to detecting emotional and behavioural outcomes, game developers must also face the consequences of the inherent bias present in AI systems. For example, even though it might be responsible and beneficial to filter players based on certain emotional or behavioural states, models can also propagate unseen harmful biases. Even though transparency becomes a critical duty of developers in such instances, other ethical standards must be drawn as well to preserve the integrity of these applications and reconcile with the experience being provided to the players.\nOne of the most common causes attributed to algorithmic bias is a faulty dataset [96], [97], [98], [99]. The more apparent issues in this regard are a skewed population, lack of control for diversity, and the non-critical capture of historical biases [96], [97]. The latter of these issues makes it especially hard to mitigate algorithmic biases. On one hand, \"clean\", unbiased data might either not be available or impossible to attain. On the other hand, systems relying on historical biases can propagate patterns that seem true to a casual observer and are only revealed as biased under a more critical analysis [99], [100]. The issue becomes more severe due to the lack of transparency and auditability in the field. It is often next to impossible to recognise a biased dataset unless the algorithm breaches the trust of the users in a serious and very apparent way. The most prolific of these instances are tied to sexist and racist outcomes [34], [98]. In one instance Google Photos' algorithm was mislabelling pictures featuring black people as \"gorillas\" [101]. Of course, Google's algorithm was not created to be racist. The issue instead stems from the lack of diversity in the dataset that was used to train the model. As the model was trained on a dataset featuring predominantly white people, it learned to associate \"whiteness\" with \"people\". This error reveals a fundamental issue with a less-than-critical approach to data. Historic and institutionalised injustice defines our social reality. As injustice is ingrained at a fundamental level in our society, this type of bias is very hard to eliminate. The responsibility of the curators of large datasets and the developers of AI models is to apply critical forethought to processing and modelling to reduce the impact of these biases.\nWhile models used in the video game industry can arguably fail in similar contexts, there are more potential pitfalls unique to games. Similarly to other skewed datasets, game data can also be skewed towards atypical players, deriving an unfair distribution of the population as a whole. One example of this would be the overabundance of data from players with large amounts of playtime. Because they might not represent the population, an algorithm that focuses on these players would likely produce sub-optimal content for the remainder of the player base. This can especially be true in the initial phases of development as initial testers tend to be young and relatively good players. Another example of in-game bias would be discrimination towards atypical behaviour or emotional response. Systems monitoring toxic behaviour and bots are often based on high-level aggregated data on in-game actions and chat interactions [21]. If these algorithms do not account for diversity and expect a behavioural and emotional response based on a Western, neuro-typical audience, they might flag good-faith players who are not conforming to certain behaviour or communication standards. On the other end of the spectrum, outliers can outperform the expectations of the model and are labelled as cheaters as happened to Julias Jackson, an autistic boy on the Xbox Live ecosystem [102]. This error reveals the fragility of many automated systems when they have to apply their predictions outside of their trained boundaries. As we cannot be sure where those boundaries are in the wild [3], the challenge of organising and labelling our training data becomes a core issue. There is only so much we can anticipate in terms of future diversity requirements and even if we do, we might lack the tools to label our data correctly. Although it is relatively easy to rely on user reporting-especially when it comes to moderation-this also injects a large amount of bias into our systems both by malicious and good-faith users. Unfortunately, user reporting can often exacerbate other underlying biases, such as men accusing women of cheating for outperforming their peers [103]. Even though these AI tools are in most cases used as flagging systems and not automated banning systems, the story of Julias Jackson shows that the infrastructure is far from being perfect, even with human oversight.\nNevertheless, many industry leaders are well-invested in creating fulfilling experiences that promote player well-being. As part of these initiatives, companies such as EA and Nintendo [22], Ubisoft [23] and Riot Games [24] often share data with academics and enable studies into fostering well-being, combating toxicity, and evaluating content moderation. Beyond their main purpose, these studies also expose some of the data that is collected and the information that is detected by these companies lending transparency and auditability to the industry. These types of cooperations provide a good example of how data transparency can bring value to industry players.",
+            "publication_ref": [
+                "b87",
+                "b2",
+                "b53",
+                "b88",
+                "b89",
+                "b90",
+                "b89",
+                "b91",
+                "b90",
+                "b92",
+                "b45",
+                "b47",
+                "b41",
+                "b93",
+                "b94",
+                "b83",
+                "b95",
+                "b96",
+                "b97",
+                "b98",
+                "b95",
+                "b96",
+                "b98",
+                "b99",
+                "b33",
+                "b97",
+                "b100",
+                "b20",
+                "b101",
+                "b2",
+                "b102",
+                "b21",
+                "b22",
+                "b23"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. ADAPTIVE SYSTEMS -OWNERSHIP IN THE AFFECTIVE LOOP",
+            "text": "Adaptation and affect expression are the steps that close the affective loop. Within games, an affect-based interaction system uses the parameterised output of its affect detection module to adjust the game's parameters to the user experience. The type of adaptation can occur at a macro level through an orchestrator that governs content in the game or the micro level through the behaviour and affect the expression of individual game agents. The goal of the game adaptation might differ depending on the given use case. It might serve to maintain, amplify or change the user's experience, but regardless of the interaction task, the adaptation module will yield a new set of emotional stimuli, thereby, closing the affective loop (see Fig. 1).\nWhen we look at an adaptive system described by the affective game loop as a whole the question of ownership arises. While AI models can incorporate data from a large number of players, it is unclear how much ownership these players have over these affective models. This issue is even more complex in closed ecosystems that can facilitate co-creation with AI designers. As discussed earlier in Section II, affective computing applications face challenges addressing these questions under the current regulatory frameworks [51], [53], [54]. Even though users should have (at very least) rights to have control over their own data, to portray themselves accurately, to be forgotten [104], and to be self-determined, in reality, information inferred from Big Data is often exempt from the same legal protection afforded to first-hand personal data [31]. To handle the data used to train models and the inferences made by these models on an individual basis Wachter and Mittelstadt propose the concepts of \"highrisk inferences\" and the \"right to reasonable inferences\" [31]. The former concept refers to inferences made from Big Data through algorithmic means that are either harmful to the privacy of the user or have low verifiability in what the authors call \"important decisions\"-with loans and employment brought as examples [31]. The latter concept would enshrine a right that could force data controllers to provide certain information about their inferences: \"This disclosure would address (1) why certain data form a normatively acceptable basis from which to draw inferences; (2) why these inferences are relevant and normatively acceptable for the chosen processing purpose or type of automated decision; and (3) whether the data and methods used to draw the inferences are accurate and statistically reliable.\" [31, page 8].\nWhile this proposal-if it were to go into effect-could help provide more robust protection to users, unfortunately, when it comes to the models themselves matters get complicated. At the moment of writing, IP protection virtually takes precedence over the individual's autonomy over their personal data when it comes to the trained models themselves. As the models are considered only \"inferred from data\" they are further removed from the users whose data is used to create the models [31]. One key challenge with the existing legal framework is that the training data and the model are not as well separated or modular as the guidelines suggest. In many cases, it is possible to reverse engineer the model and extract information about the training set including sensitive personal information about the original subjects [105]. There are algorithmic solutions to address this problem, however. Ongoing research in the field of machine unlearning aims to offer methods that attempt to remove knowledge from a trained model as if the given datapoint was never part of the training set [106], [107], [108], [109]. Although early approaches focused on very specific applications-such as decremental learning in Support-Vector Machines [110]-recent methods seem to be able to generalise well over different architectures [106], [108], [109]. However, for a practical application of machine unlearning, the owner of the model has to retain the raw training data in most cases. Not all methods require this from a technical perspective [109], but the removal of the datapoint has to be verified to preserve the predictability of the system. Although the implementation of unlearning would most certainly pose a computational and organisational overhead, it is still more cost-and resource-efficient than retraining the models from scratch. Even though machine unlearning has not been adopted widely yet, contemporary research results show a promising path ahead for mitigating some of the privacy issues in small-scale architectures.\nEthical questions in small-scale models can potentially be addressed through the aforementioned methods, however, far more complex ethical challenges are posed by large-scale world models or foundation models [77]. These are large-scale pretrained models built using hundreds of billions of parameters and massive-scale datasets often scraped from the internet indiscriminately. Foundation models have the potential to provide basic knowledge in a domain or generate content out of the box. While many applications like AI Dungeon utilize these foundation models, the lines of responsibilities are blurred as a given company has no access to the source code or the original data of these models. As the source of the data is often scraped from the internet, the ethics of constructing such a dataset is also highly questionable. As users are not notified they have no way to revoke their participation or retaliate against their creations used for training these models. In addition, the underlying data is often discarded or kept secret, removing even the moral right to the output of these generators once the model is constructed. Moreover, as these foundation models can only be constructed using an immense amount of resources, large industry players can essentially monopolise the market. This trend can already be seen in language-based models, where the current dominance of the closed-source GPT-3 and-increasingly more popular-GPT-4 [111] models imply that new applications have to subscribe to the black-box rules of that system. Ownership over the input, output and the models themselves is not a trivial problem. The models are owned by their respective companies, and even though users generally retain rights to their input and to the output of the models, there are some major caveats. As an example, the Terms and Conditions of OpenAI to their GTP-3 and GPT-4 algorithms2 which warns users that OpenAI themselves retain the rights to both the user input and the system output to improve the system in the future. Nevertheless, users have input confidential information into the system that lead to security leaks. Most recently in the case of Samsung, where confidential notes and source code has been leaked through ChatGPT [112]. While users can opt-out of this data collection, it is unclear if already submitted data can be removed from the trained model. The ownership issues are further complicated by the secretiveness of the industry stakeholders. Industry players are often invested in creating legal opacity around their systems through restrictive licences and digital rights management tools to restrict the transparency and usage of the software. Although this type of opacity does not stem from the AI architecture itself, it prevents public access to the inner workings of such systems and limits the overview of the AI decision-making process [32]. Even though the ownership over the models themselves is a central question, we must not forget about the ownership and responsibility over the output of said models either. Who owns the results of a human-AI co-creation process? Looking at contemporary legal frameworks, it is hard to say. Of course, judgement can be passed based on the circumstances and the particularities on a case-by-case basis, but there is no apparent clear line [113] and in most cases, the question is sidestepped entirely by the end-user licence agreement of specific AI-assisted tools. There is no comprehensive framework for either professional creative tools or interactive media meant for entertainment. The matter is further complicated because-even if we focus just on games-it can be hard to make a clear demarcation between a creative tool and curated entertainment. A recent example of this conundrum is Media Molecule's Dreams (Sony Interactive Entertainment, 2020), a \"game about making games\"-see Fig. 5. Although Dreams presents itself very much like a game, it perhaps has more in common with game engines, such as Unity3 or GameMaker. 4 Nevertheless, until recently games created with Dreams were not monetisable by the creators and solely beholden to Sony's PlayStation ecosystem [114]. While Media Molecule maintains that their users retain the rights to their own creations, the options for the users to exercise these rights remain limited. 5 After the runaway success of user-created content such as Defense of the Ancients-originally created in the Warcraft III (Blizzard Entertainment, 2002) map editor-which lead to a boom of Multiplayer Online Battle Area games it is easy to see why companies are trying to retain as much control over user-generated content as possible. There is a case to be made for the user's moral right over their creations, however. Especially in systems where the player demonstrates considerable creative effort during the co-creation process, they should be able to retain all rights to their own intellectual property. While contemporary examples are still subject to ad-hoc judgement, we expect the right to the output of co-creative systems to become a central topic in the near future as AI-powered generative systems become more ubiquitous.\nThe conversation around co-creation is not just about rights but also responsibilities. Who is responsible for the output of the system when an agent learns to act like a bully, creates offensive and abusive content, or is instructed to generate misinformation? While it is easy-and companies are more than ready-to push the blame on the user, as we demonstrated before in Section III, addressing this issue is not as trivial. The main tools to combat the uncertainty around the models' output preemptively are transparency and predictability-not just from the AI perspective, but from the larger view of the organisation itself. A delineation between harmful content produced on purpose and as a result of a biased or erroneous algorithm has to rely on clear and transparent guidelines on how people are expected to interact with the system, and what the owners of the system consider malicious use. Predictability of the model output and the larger organisational response to adversarial attacks can facilitate a safer environment for all users involved. The maintenance of the reliability and incorruptibility of the models should take precedence over the user's input. The responsibility of designing and deploying these security measures should, however, fall on the creator of the system. Employing security measures in highly modular software systems is far from trivial given the integration of third-party models, especially out-of-box solutions. Nevertheless, as industrial systems maintain their opaqueness the end users cannot be considered fully autonomous. The extent of their autonomy will always be limited by the design of the application, the complexity of the system, and the limited transparency afforded to them.\nThe industry has been slow to react to the growing concern about trustworthiness; the landscape is changing, however. An excellent example of recent initiatives is Microsoft's Xbox Transparency Reports. 6 In this report, Microsoft publishes explanations and statistics about their content moderation policies to increase both the reliability and transparency of their ecosystem. Although the first report was just released in 2022, the company pledges to release these transparency reports every 6 months. If successful, a large industry player such as Microsoft can inspire the industry at large to follow suit.",
+            "publication_ref": [
+                "b50",
+                "b52",
+                "b53",
+                "b103",
+                "b30",
+                "b30",
+                "b30",
+                "b30",
+                "b104",
+                "b105",
+                "b106",
+                "b107",
+                "b108",
+                "b109",
+                "b105",
+                "b107",
+                "b108",
+                "b108",
+                "b76",
+                "b110",
+                "b111",
+                "b31",
+                "b112",
+                "b113"
+            ],
+            "figure_ref": [
+                "fig_3"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "VII. OTHER ISSUES IN GAME AI ETHICS",
+            "text": "There are several issues in the ethics of game AI that do not fit comfortably into our current structure, revolving around the affective loop. Even though these are not the core concern of our paper, and going in-depth on each question would require more space than we have here, we want to at least mention these concerns and provide some pointers for further reading.\nAll games are, in some way, partial representations of the world and processes therein. One might see games as being \"about\" certain real-world processes [115]. A key feature of games is also that you learn to perform the actions required to win the game as you play them; well-designed games are typically 6 https://www.xbox.com/en-GB/legal/xbox-transparency-report pedagogical sequences that introduce gradually harder versions of the same challenge, and it has been argued that this is a key component of why games are fun and appealing [90]. While there are many games whose in-game processes are representations of peaceful real-life activities such as gardening in FarmVille (Zynga, 2009) or warehouse stocking in Sokoban (Thinking Rabbit, 1982), very many games represent some kind of real-life violence. Games about fighting in various forms are ubiquitous, and have been so since the birth of the medium; many, perhaps most, video games have \"hit\" or \"shoot\" as one of their most important mechanics. This might be because it is comparatively easy to design engaging games around fighting compared to any other purpose; regardless, combat is pervasive in games since the era of Pac-Man (Namco, 1980) and its ghost-eating capability.\nOne potential issue of this is whether playing video games inspires, encourages, or teaches violent behaviour. There has been a debate around the effects of video games on violent behaviour for at least three decades, and many studies of varying quality. To some extent, this debate and field of inquiry can be subsumed under the broader question of media effects, where the effects of other media (such as TV) on violence and other behavioural aspects have been studied for a longer time. Although the idea that video games in some way lead to violent behaviour has some plausibility as video games teach some kind of skills, thorough and well-performed studies have largely failed to find any causal link [116]. Even if such an unknown link might be there, AI models can now assist in the isolation of such violence of toxic behaviours [21].\nGiven the very high computing demands of much current AI research and the advantages of having access to large datasets, it is worth pondering which modern game AI methods will benefit most. It is possible that modern game AI will exacerbate the divide between large developers with deep pockets, multiple titles and existing user bases and small independent game developers. If models trained on user data stay proprietary, the large developers will have a considerable additional advantage over small creators.\nConcerns about fairness and bias are ubiquitous in machine learning, and as discussed previously, these concerns are very real for AI in games as well. It is often claimed that biased models come out of biased teams, in other words, that the composition of the human workforce defining and developing the AI solution impacts bias. This is certainly a concern in the game industry, which appears to be at least as demographically imbalanced as the rest of the tech industry [117], [118].\nFinally, a far-reaching potential ethical concern is that we one day develop artificial general intelligence, that is as capable (as we are) across a large range of areas and tasks. Games could have played a critical role in that development. Such entities might become very influential in human affairs, and may also gain the ability to improve themselves, potentially leading to what has been termed an intelligence explosion [119]. If that happens, the alignment problem becomes acute: making sure that the goals and principles of such an entity are aligned with human society. Given that video games are abundantly used in AI research, it is worth pondering what impact training on video games might have on the ethics of a potential superintelligence.",
+            "publication_ref": [
+                "b114",
+                "b89",
+                "b115",
+                "b20",
+                "b116",
+                "b117",
+                "b118"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VIII. CONCLUSION",
+            "text": "This survey paper discussed thoroughly the various ethical aspects of artificial intelligence in and for games. We opted to view the most critical of these aspects under the affective game loop concept [9]. Based on that concept we reviewed the current game AI state-of-the-art and the game industry state-ofpractice with respect to player experience elicitation, sensing, detection and finally adaptation. We raised a number of ethical dimensions and concerns and the current (lack of) measures and tools available to address them. We also made a number of recommendations and suggested future steps for making ethics an integral part of AI and games research and innovation. The dialogue between the game industry and academic stakeholders is currently active across the various conferences (e.g., GDC, IEEE CoG, FDG, CHI Play), seminars and summer schools (e.g., AI and Games Summer School) with a focus on the area. Moreover, the ethical aspects of AI in games and media at large are currently a top priority item in the agenda of policymakers (e.g., the European Commission) manifested through research and innovation projects 7,8 and policies such as the AI act. 9  We expect affective computing researchers to take a leading role in these efforts. Affective computing is uniquely positioned as a multidisciplinary field between sensor technology, AI, and applied psychology; hence it offers a comprehensive overview of most of the issues this survey has touched upon. Although in many cases the response to emerging issues has to be regulatory instead of technical, affective computing can still provide a shared language between the fields involved and help highlighting potential issues. This paper aims to further facilitate and moderate this dialogue among all stakeholders involved-AI and affective computing researchers and practitioners, game developers, and ultimately players-with the hope that ethical awareness is increased and that necessary action is taken for the mutual benefit of players and their games.",
+            "publication_ref": [
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Dark patterns in the design of games",
+            "journal": "",
+            "year": "2013",
+            "authors": "J P Zagal; S Bj\u00f6rk; C Lewis"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Unfair play? Video games as exploitative monetized services: An examination of game patents from a consumer protection perspective",
+            "journal": "Comput. Hum. Behav",
+            "year": "2019",
+            "authors": "D L King; P H Delfabbro; S M Gainsbury; M Dreier; N Greer; J Billieux"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Ethical considerations for player modeling",
+            "journal": "",
+            "year": "2017",
+            "authors": "B Mikkelsen; C Holmgard; J Togelius"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Ethical procedural generation",
+            "journal": "AK Peters/CRC Press",
+            "year": "2017",
+            "authors": "M Cook"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Data-driven game development: Ethical considerations",
+            "journal": "",
+            "year": "2020",
+            "authors": "M ; Seif El-Nasr; E Kleinman"
+        },
+        {
+            "ref_id": "b5",
+            "title": "The social responsibility of game AI",
+            "journal": "",
+            "year": "",
+            "authors": "M Cook"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Player modeling",
+            "journal": "Artif. Comput. Intell. Games, ser. Dagstuhl Follow-Ups. Schloss Dagstuhl -Leibniz-Zentrum f\u00fcr Informatik",
+            "year": "2013",
+            "authors": "G N Yannakakis; P Spronck; D Loiacono; E Andr\u00e9"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Evolving personas for player decision modeling",
+            "journal": "",
+            "year": "2014",
+            "authors": "C Holmg\u00e5rd; A Liapis; J Togelius; G N Yannakakis"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Emotion in games",
+            "journal": "Handbook Affect. Comput",
+            "year": "2014",
+            "authors": "G N Yannakakis; A Paiva"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Experience-driven procedural content generation",
+            "journal": "IEEE Trans. Affect. Comput",
+            "year": "2011",
+            "authors": "G N Yannakakis; J Togelius"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Orchestrating game generation",
+            "journal": "IEEE Trans. Games",
+            "year": "2019-03",
+            "authors": "A Liapis; G N Yannakakis; M J Nelson; M Preuss; R Bidarra"
+        },
+        {
+            "ref_id": "b11",
+            "title": "General general game AI",
+            "journal": "",
+            "year": "2016",
+            "authors": "J Togelius; G N Yannakakis"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Real-time game adaptation for optimizing player satisfaction",
+            "journal": "IEEE Trans. Comput. Intell. AI Games",
+            "year": "2009-06",
+            "authors": "G N Yannakakis; J Hallam"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Towards automatic personalized content generation for platform games",
+            "journal": "",
+            "year": "2010",
+            "authors": "N Shaker; G Yannakakis; J Togelius"
+        },
+        {
+            "ref_id": "b14",
+            "title": "DEEP: A biofeedback virtual reality game for children at-risk for anxiety",
+            "journal": "",
+            "year": "2016",
+            "authors": "M Van Rooij; A Lobel; O Harris; N Smit; I Granic"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Videogames for emotion regulation: A systematic review",
+            "journal": "Games Health J",
+            "year": "2018",
+            "authors": "D Villani; C Carissoli; S Triberti; A Marchetti; G Gilli; G Riva"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Towards general models of player experience: A study within genres",
+            "journal": "",
+            "year": "",
+            "authors": "D Melhart; A Liapis; G N Yannakakis"
+        },
+        {
+            "ref_id": "b17",
+            "title": "The ethics of artificial intelligence",
+            "journal": "Cambridge Handbook Artif. Intell",
+            "year": "2014",
+            "authors": "N Bostrom; E Yudkowsky"
+        },
+        {
+            "ref_id": "b18",
+            "title": "18 European countries call for better regulation of loot boxes following new report",
+            "journal": "",
+            "year": "2022",
+            "authors": "I Subhan"
+        },
+        {
+            "ref_id": "b19",
+            "title": "You've Been Played: How Corporations, Governments and Schools Use Games to Control Us All",
+            "journal": "Swift Press",
+            "year": "2022",
+            "authors": "A Hon"
+        },
+        {
+            "ref_id": "b20",
+            "title": "For honor, for toxicity: Detecting toxic behavior through gameplay",
+            "journal": "Proc. ACM Hum.-Comput. Interaction",
+            "year": "2021",
+            "authors": "A Canossa; D Salimov; A Azadvar; C Harteveld; G Yannakakis"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Video game play is positively correlated with well-being",
+            "journal": "Roy. Soc. Open Sci",
+            "year": "2021",
+            "authors": "N Johannes; M Vuorre; A K Przybylski"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Your gameplay says it all: Modelling motivation in tom clancy's the division",
+            "journal": "",
+            "year": "2019",
+            "authors": "D Melhart; A Azadvar; A Canossa; A Liapis; G N Yannakakis"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Effects of individual toxic behavior on team performance in league of legends",
+            "journal": "Media Psychol",
+            "year": "2022",
+            "authors": "C Monge; T O'brien"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Just an artifact: Why machines are perceived as moral agents",
+            "journal": "",
+            "year": "2011",
+            "authors": "J J Bryson; P P Kime"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Building ethics into artificial intelligence",
+            "journal": "",
+            "year": "2018",
+            "authors": "H Yu; Z Shen; C Miao; C Leung; V R Lesser; Q Yang"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Toward AI systems that augment and empower humans by understanding us, our society and the world around us",
+            "journal": "",
+            "year": "2019",
+            "authors": "J Crowley"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Transparency in artificial intelligence",
+            "journal": "Internet Policy Rev",
+            "year": "2020",
+            "authors": "S Larsson; F Heintz"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Trustworthy artificial intelligence",
+            "journal": "Electron. Markets",
+            "year": "2021",
+            "authors": "S Thiebes; S Lins; A Sunyaev"
+        },
+        {
+            "ref_id": "b29",
+            "title": "Opportunities and challenges in explainable artificial intelligence (XAI): A survey",
+            "journal": "",
+            "year": "2020",
+            "authors": "A Das; P Rad"
+        },
+        {
+            "ref_id": "b30",
+            "title": "A right to reasonable inferences: Rethinking data protection law in the age of big data and AI",
+            "journal": "Columnia Bus. Law Rev",
+            "year": "2019",
+            "authors": "S Wachter; B Mittelstadt"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Artificial intelligence and democratic legitimacy. the problem of publicity in public authority",
+            "journal": "AI Soc",
+            "year": "2022",
+            "authors": "L Beckman; J Hultin Rosenberg; K Jebari"
+        },
+        {
+            "ref_id": "b32",
+            "title": "Trustworthy AI: A computational perspective",
+            "journal": "",
+            "year": "2021",
+            "authors": "H Liu"
+        },
+        {
+            "ref_id": "b33",
+            "title": "Race and gender",
+            "journal": "Oxford Univ. Press",
+            "year": "2020",
+            "authors": "T Gebru"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Ethically aligned design of autonomous systems: Industry viewpoint and an empirical study",
+            "journal": "",
+            "year": "2019",
+            "authors": "V Vakkuri; K.-K Kemell; J Kultanen; M Siponen; P Abrahamsson"
+        },
+        {
+            "ref_id": "b35",
+            "title": "Ethically aligned design: A vision for prioritizing human well-being with autonomous and intelligent systems",
+            "journal": "",
+            "year": "2019",
+            "authors": ""
+        },
+        {
+            "ref_id": "b36",
+            "title": "Establishing the rules for building trustworthy AI",
+            "journal": "Nature Mach. Intell",
+            "year": "2019",
+            "authors": "L Floridi"
+        },
+        {
+            "ref_id": "b37",
+            "title": "The EU approach to ethics guidelines for trustworthy artificial intelligence",
+            "journal": "Comput. Law Rev. Int",
+            "year": "2019",
+            "authors": "N A Smuha"
+        },
+        {
+            "ref_id": "b38",
+            "title": "Towards AI-powered personalization in MOOC learning",
+            "journal": "npj Sci. Learn",
+            "year": "2017",
+            "authors": "H Yu; C Miao; C Leung; T J White"
+        },
+        {
+            "ref_id": "b39",
+            "title": "Ethics in artificial intelligence: Introduction to the special issue",
+            "journal": "Ethics Inf. Technol",
+            "year": "2018",
+            "authors": "V Dignum"
+        },
+        {
+            "ref_id": "b40",
+            "title": "We may not cooperate with friendly machines",
+            "journal": "Nature Mach. Intell",
+            "year": "2019",
+            "authors": "M Rovatsos"
+        },
+        {
+            "ref_id": "b41",
+            "title": "Behavioural evidence for a transparency-efficiency tradeoff in human-machine cooperation",
+            "journal": "Nature Mach. Intell",
+            "year": "2019",
+            "authors": "F Ishowo-Oloko; J.-F Bonnefon; Z Soroye; J Crandall; I Rahwan; T Rahwan"
+        },
+        {
+            "ref_id": "b42",
+            "title": "Ethics of artificial intelligence",
+            "journal": "Nature",
+            "year": "2015",
+            "authors": "S Russell; S Hauert; R Altman; M Veloso"
+        },
+        {
+            "ref_id": "b43",
+            "title": "Human Compatible: Artificial Intelligence and the Problem of Control",
+            "journal": "Penguin",
+            "year": "2019",
+            "authors": "S Russell"
+        },
+        {
+            "ref_id": "b44",
+            "title": "The ethics of ai ethics: An evaluation of guidelines",
+            "journal": "Minds Machines",
+            "year": "2020",
+            "authors": "T Hagendorff"
+        },
+        {
+            "ref_id": "b45",
+            "title": "Open player modeling: Empowering players through data transparency",
+            "journal": "",
+            "year": "2021",
+            "authors": "J Zhu; M S El-Nasr"
+        },
+        {
+            "ref_id": "b46",
+            "title": "The Ethics of Computer Games",
+            "journal": "MIT Press",
+            "year": "2011",
+            "authors": "M Sicart"
+        },
+        {
+            "ref_id": "b47",
+            "title": "Explainable ai for designers: A human-centered perspective on mixedinitiative co-creation",
+            "journal": "",
+            "year": "2018",
+            "authors": "J Zhu; A Liapis; S Risi; R Bidarra; G M Youngblood"
+        },
+        {
+            "ref_id": "b48",
+            "title": "Explainable artificial intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+            "journal": "Inf. Fusion",
+            "year": "2020",
+            "authors": "A B Arrieta"
+        },
+        {
+            "ref_id": "b49",
+            "title": "Transparent player model: Adaptive visualization of learner model in educational games",
+            "journal": "Springer",
+            "year": "2020",
+            "authors": "D Hooshyar; E Bardone; N E Mawas; Y Yang"
+        },
+        {
+            "ref_id": "b50",
+            "title": "Surveilling the gamers: Privacy impacts of the video game industry",
+            "journal": "Entertainment Comput",
+            "year": "2023",
+            "authors": "J L Kr\u00f6ger; P Raschke; J P Campbell; S Ullrich"
+        },
+        {
+            "ref_id": "b51",
+            "title": "The EU general data protection regulation (GDPR)",
+            "journal": "Springer International Publishing",
+            "year": "2017",
+            "authors": "P Voigt; A Von;  Bussche"
+        },
+        {
+            "ref_id": "b52",
+            "title": "Two years after: A scoping review of GDPR effects on serious games research ethics reporting",
+            "journal": "Springer",
+            "year": "2020",
+            "authors": "P Jost; M Lampert"
+        },
+        {
+            "ref_id": "b53",
+            "title": "Fit for purpose? Affective computing meets EU data protection law",
+            "journal": "Int. Data Privacy Law",
+            "year": "2021",
+            "authors": "A H\u00e4uselmann"
+        },
+        {
+            "ref_id": "b54",
+            "title": "Absolute and relative user perception of classification accuracy in an affective video game",
+            "journal": "Interacting Comput",
+            "year": "2017",
+            "authors": "S Mccrea; G Ger\u0161ak; D Novak"
+        },
+        {
+            "ref_id": "b55",
+            "title": "Video game loot boxes are linked to problem gambling: Results of a large-scale survey",
+            "journal": "PLoS One",
+            "year": "2018",
+            "authors": "D Zendle; P Cairns"
+        },
+        {
+            "ref_id": "b56",
+            "title": "Why loot boxes could be regulated as gambling",
+            "journal": "Nature Hum. Behav",
+            "year": "2020",
+            "authors": "A Drummond; J D Sauer; L C Hall; D Zendle; M R Loudon"
+        },
+        {
+            "ref_id": "b57",
+            "title": "The relationship between videogame micro-transactions and problem gaming and gambling: A systematic review",
+            "journal": "Comput. Hum. Behav",
+            "year": "2022",
+            "authors": "E Gibson; M Griffiths; F Calado; A Harris"
+        },
+        {
+            "ref_id": "b58",
+            "title": "What's in the box? exploring UK players' experiences of loot boxes in games; The conceptualisation and parallels with gambling",
+            "journal": "PLoS One",
+            "year": "2022",
+            "authors": "S E Hodge; M Vykoukal; J Mcalaney; R D Bush-Evans; R Wang; R Ali"
+        },
+        {
+            "ref_id": "b59",
+            "title": "The battle pass: A mixed-methods investigation into a growing type of video game monetisation",
+            "journal": "OSF Preprints",
+            "year": "2020",
+            "authors": "E Petrovskaya; D Zendle"
+        },
+        {
+            "ref_id": "b60",
+            "title": "Battle pass capitalism",
+            "journal": "J. Consum. Culture",
+            "year": "2021",
+            "authors": "D Joseph"
+        },
+        {
+            "ref_id": "b61",
+            "title": "Fortnite microtransaction spending was associated with peers' purchasing behaviors but not gaming disorder symptoms",
+            "journal": "Addictive Behaviors",
+            "year": "2020",
+            "authors": "D L King; A M Russell; P H Delfabbro; D Polisena"
+        },
+        {
+            "ref_id": "b62",
+            "title": "Churn prediction in mobile social games: Towards a complete assessment using survival ensembles",
+            "journal": "",
+            "year": "2016",
+            "authors": "\u00c1 Peri\u00e1\u00f1ez; A Saas; A Guitart; C Magne"
+        },
+        {
+            "ref_id": "b63",
+            "title": "Customer lifetime value in video games using deep learning and parametric models",
+            "journal": "",
+            "year": "2018",
+            "authors": "P P Chen; A Guitart; A F Del R\u00edo; A Peri\u00e1nez"
+        },
+        {
+            "ref_id": "b64",
+            "title": "A 'components' model of addiction within a biopsychosocial framework",
+            "journal": "J. Substance Use",
+            "year": "2005",
+            "authors": "M Griffiths"
+        },
+        {
+            "ref_id": "b65",
+            "title": "A latent feelings-aware RNN model for user churn prediction with behavioral data",
+            "journal": "",
+            "year": "2019",
+            "authors": "M Xi; Z Luo; N Wang; J Yin"
+        },
+        {
+            "ref_id": "b66",
+            "title": "Applications of machine learning in addiction studies: A systematic review",
+            "journal": "Psychiatry Res",
+            "year": "2019",
+            "authors": "K K Mak; K Lee; C Park"
+        },
+        {
+            "ref_id": "b67",
+            "title": "Ea faces yet another class-action lawsuit connected to loot boxes",
+            "journal": "",
+            "year": "2020",
+            "authors": "R Valentine"
+        },
+        {
+            "ref_id": "b68",
+            "title": "dynamic difficulty' loot box lawsuit against ea dropped",
+            "journal": "",
+            "year": "2021",
+            "authors": "J Batchelor"
+        },
+        {
+            "ref_id": "b69",
+            "title": "The challenge of believability in video games: Definitions, agents models and imitation learning",
+            "journal": "",
+            "year": "2010",
+            "authors": "F Tenc\u00e9; C Buche; P De Loor; O Marc"
+        },
+        {
+            "ref_id": "b70",
+            "title": "Transgression in Games and Play",
+            "journal": "MIT Press",
+            "year": "2019",
+            "authors": "K Jorgensen; F Karlsen"
+        },
+        {
+            "ref_id": "b71",
+            "title": "The woman worked as a babysitter: On biases in language generation",
+            "journal": "",
+            "year": "2019",
+            "authors": "E Sheng; K.-W Chang; P Natarajan; N Peng"
+        },
+        {
+            "ref_id": "b72",
+            "title": "Gender and representation bias in GPT-3 generated stories",
+            "journal": "",
+            "year": "2021",
+            "authors": "L Lucy; D Bamman"
+        },
+        {
+            "ref_id": "b73",
+            "title": "Hello, it's GPT-2-how can i help you? Towards the use of pretrained language models for task-oriented dialogue systems",
+            "journal": "",
+            "year": "2019",
+            "authors": "P Budzianowski; I Vuli\u0107"
+        },
+        {
+            "ref_id": "b74",
+            "title": "GPT-3: Its nature, scope, limits, and consequences",
+            "journal": "Minds Machines",
+            "year": "2020",
+            "authors": "L Floridi; M Chiriatti"
+        },
+        {
+            "ref_id": "b75",
+            "title": "It began as an AI-fueled dungeon game. it got much darker",
+            "journal": "",
+            "year": "2021",
+            "authors": "T Simonite"
+        },
+        {
+            "ref_id": "b76",
+            "title": "On the opportunities and risks of foundation models",
+            "journal": "",
+            "year": "2021",
+            "authors": "R Bommasani"
+        },
+        {
+            "ref_id": "b77",
+            "title": "Affective sensors, privacy, and ethical contracts",
+            "journal": "",
+            "year": "2004",
+            "authors": "C Reynolds; R Picard"
+        },
+        {
+            "ref_id": "b78",
+            "title": "Ethical issues in affective computing",
+            "journal": "Oxford Univ. Press",
+            "year": "2015",
+            "authors": "R Cowie"
+        },
+        {
+            "ref_id": "b79",
+            "title": "Surveilling the gamers: Privacy impacts of the video game industry",
+            "journal": "Entertainment Comput",
+            "year": "2021",
+            "authors": "J L Kr\u00f6ger; P Raschke; J P Campbell; S Ullrich"
+        },
+        {
+            "ref_id": "b80",
+            "title": "Like a dna string: Sequence-based player profiling in tom clancy's the division",
+            "journal": "",
+            "year": "2018",
+            "authors": "S Makarovych; A Canossa; J Togelius; A Drachen"
+        },
+        {
+            "ref_id": "b81",
+            "title": "Sequence analysis of user interaction data with a voice user interface",
+            "journal": "",
+            "year": "2021",
+            "authors": "C M Myers; L F Pardo; A Acosta-Ruiz; A Canossa; J Zhu"
+        },
+        {
+            "ref_id": "b82",
+            "title": "Automated stress detection using keystroke and linguistic features: An exploratory study",
+            "journal": "Int. J. Hum.-Comput. Stud",
+            "year": "2009",
+            "authors": "L M Vizer; L Zhou; A Sears"
+        },
+        {
+            "ref_id": "b83",
+            "title": "Privacy implications of voice and speech analysis-information disclosure by inference",
+            "journal": "Springer",
+            "year": "2019",
+            "authors": "J L Kr\u00f6ger; O H ; -M Lutz; P Raschke"
+        },
+        {
+            "ref_id": "b84",
+            "title": "",
+            "journal": "Springer",
+            "year": "2016",
+            "authors": "M S El-Nasr; A Drachen; A Canossa; Game Analytics"
+        },
+        {
+            "ref_id": "b85",
+            "title": "Player behavioural modelling for video games",
+            "journal": "Entertainment Comput",
+            "year": "2012",
+            "authors": "S C Bakkes; P H Spronck; G Van Lankveld"
+        },
+        {
+            "ref_id": "b86",
+            "title": "Player modelling and adaptation methods within adaptive serious games",
+            "journal": "",
+            "year": "2021",
+            "authors": "R Hare; Y Tang"
+        },
+        {
+            "ref_id": "b87",
+            "title": "Affect detection: An interdisciplinary review of models, methods, and their applications",
+            "journal": "IEEE Trans. Affect. Comput",
+            "year": "2010-01",
+            "authors": "R A Calvo; S D Mello"
+        },
+        {
+            "ref_id": "b88",
+            "title": "Game reward systems: Gaming experiences and social meanings",
+            "journal": "",
+            "year": "2011",
+            "authors": "H Wang; C.-T Sun"
+        },
+        {
+            "ref_id": "b89",
+            "title": "Theory of Fun for Game Design",
+            "journal": "O'Reilly Media, Inc",
+            "year": "2013",
+            "authors": "R Koster"
+        },
+        {
+            "ref_id": "b90",
+            "title": "Enjoying the possibility of defeat: Outcome uncertainty, suspense, and intrinsic motivation",
+            "journal": "Motivation Emotion",
+            "year": "2015",
+            "authors": "S Abuhamdeh; M Csikszentmihalyi; B "
+        },
+        {
+            "ref_id": "b91",
+            "title": "Toward an understanding of flow in video games",
+            "journal": "Comput. Entertainment",
+            "year": "2008",
+            "authors": "B Cowley; D Charles; M Black; R Hickey"
+        },
+        {
+            "ref_id": "b92",
+            "title": "Glued to Games: How Video Games Draw Us in and Hold Us Spellbound: How Video Games Draw Us in and Hold Us Spellbound",
+            "journal": "AbC-CLIo",
+            "year": "2011",
+            "authors": "S Rigby; R M Ryan"
+        },
+        {
+            "ref_id": "b93",
+            "title": "A Study of the Play Element in Culture",
+            "journal": "Beacon Press",
+            "year": "1955",
+            "authors": "J Huizinga; Homo Ludens"
+        },
+        {
+            "ref_id": "b94",
+            "title": "Rules of Play: Game Design Fundamentals",
+            "journal": "MIT Press",
+            "year": "2003",
+            "authors": "K S Tekinbas; E Zimmerman"
+        },
+        {
+            "ref_id": "b95",
+            "title": "Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy",
+            "journal": "Broadway Books",
+            "year": "2016",
+            "authors": "C O Neil"
+        },
+        {
+            "ref_id": "b96",
+            "title": "To predict and serve?",
+            "journal": "Significance",
+            "year": "2016",
+            "authors": "K Lum; W Isaac"
+        },
+        {
+            "ref_id": "b97",
+            "title": "Ethical implications of bias in machine learning",
+            "journal": "",
+            "year": "2018",
+            "authors": "A Yapo; J Weiss"
+        },
+        {
+            "ref_id": "b98",
+            "title": "Datasheets for datasets",
+            "journal": "Commun. ACM",
+            "year": "2021",
+            "authors": "T Gebru"
+        },
+        {
+            "ref_id": "b99",
+            "title": "Managing bias in AI",
+            "journal": "",
+            "year": "2019",
+            "authors": "D Roselli; J Matthews; N Talagala"
+        },
+        {
+            "ref_id": "b100",
+            "title": "Google 'fixed' its racist algorithm by removing gorillas from its image-labeling tech",
+            "journal": "",
+            "year": "2018",
+            "authors": "J Vincent"
+        },
+        {
+            "ref_id": "b101",
+            "title": "Autistic boy branded a cheater by xbox live [update]",
+            "journal": "",
+            "year": "2013",
+            "authors": "M Fahey"
+        },
+        {
+            "ref_id": "b102",
+            "title": "Korean woman kicks ass at overwatch, gets accused of cheating",
+            "journal": "",
+            "year": "2016",
+            "authors": "B Ashcraft"
+        },
+        {
+            "ref_id": "b103",
+            "title": "Humans forget, machines remember: Artificial intelligence and the right to be forgotten",
+            "journal": "Comput. Law Secur. Rev",
+            "year": "2018",
+            "authors": "E F Villaronga; P Kieseberg; T Li"
+        },
+        {
+            "ref_id": "b104",
+            "title": "Stealing machine learning models via prediction APIs",
+            "journal": "",
+            "year": "2016",
+            "authors": "F Tram\u00e8r; F Zhang; A Juels; M K Reiter; T Ristenpart"
+        },
+        {
+            "ref_id": "b105",
+            "title": "Certified data removal from machine learning models",
+            "journal": "",
+            "year": "2019",
+            "authors": "C Guo; T Goldstein; A Hannun; L Van Der Maaten"
+        },
+        {
+            "ref_id": "b106",
+            "title": "Amnesiac machine learning",
+            "journal": "",
+            "year": "2020",
+            "authors": "L Graves; V Nagisetty; V Ganesh"
+        },
+        {
+            "ref_id": "b107",
+            "title": "Machine unlearning",
+            "journal": "",
+            "year": "",
+            "authors": "L Bourtoule"
+        },
+        {
+            "ref_id": "b108",
+            "title": "Remember what you want to forget: Algorithms for machine unlearning",
+            "journal": "",
+            "year": "2021",
+            "authors": "A Sekhari; J Acharya; G Kamath; A T Suresh"
+        },
+        {
+            "ref_id": "b109",
+            "title": "Incremental and decremental support vector machine learning",
+            "journal": "",
+            "year": "2000",
+            "authors": "G Cauwenberghs; T Poggio"
+        },
+        {
+            "ref_id": "b110",
+            "title": "GPT-4 technical report",
+            "journal": "",
+            "year": "2023",
+            "authors": " Openai"
+        },
+        {
+            "ref_id": "b111",
+            "title": "Samsung workers made a major error by using ChatGPT",
+            "journal": "",
+            "year": "2023",
+            "authors": "L Maddison"
+        },
+        {
+            "ref_id": "b112",
+            "title": "Human ownership of artificial creativity",
+            "journal": "Nature Mach. Intell",
+            "year": "2020",
+            "authors": "J K Eshraghian"
+        },
+        {
+            "ref_id": "b113",
+            "title": "PS4 game dreams is an amazing creation tool with an exposure problem",
+            "journal": "",
+            "year": "2020",
+            "authors": "J Castello"
+        },
+        {
+            "ref_id": "b114",
+            "title": "Persuasive Games: The Expressive Power of Videogames",
+            "journal": "MIT Press",
+            "year": "2010",
+            "authors": "I Bogost"
+        },
+        {
+            "ref_id": "b115",
+            "title": "Violent video games and physical aggression: Evidence for a selection effect among adolescents",
+            "journal": "Psychol. Popular Media Culture",
+            "year": "2015",
+            "authors": "J Breuer; J Vogelgesang; T Quandt; R Festl"
+        },
+        {
+            "ref_id": "b116",
+            "title": "Gender composition of teams and studios in video game development",
+            "journal": "Games Culture",
+            "year": "2021",
+            "authors": "E N Bailey; K Miyata; T Yoshida"
+        },
+        {
+            "ref_id": "b117",
+            "title": "Racial diversity in indie games: Patterns, challenges, and opportunities",
+            "journal": "",
+            "year": "2017",
+            "authors": "C J Passmore; R Yates; M V Birk; R L Mandryk"
+        },
+        {
+            "ref_id": "b118",
+            "title": "How long before superintelligence?",
+            "journal": "Int. J. Futures Stud",
+            "year": "1998",
+            "authors": "N Bostrom"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 2 .2Fig. 2. In Fa\u00e7ade (Procedural Arts, 2005), the player can interact with the game's agents through free-form text. The underlying AI responds to the player input based on its semantic and emotional content.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 3 .3Fig. 3. In Nevermind (Flying Mollusk, 2016), the player explores dream-like horror environments. The game content is adjusted based on the player's emotional state by introducing more dangers as the player's stress level increases.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 4 .4Fig. 4. Traditional flagging methods for toxic behaviour in For Honor (Ubisoft, 2017). Such methods often depend on user reporting which, in turn, may allow many toxic events to remain unnoticed and stay unreported.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 5 .5Fig.5. In Dreams (Sony Interactive Entertainment, 2020), players are able to create their own experiences using a complex editor, reminiscent of the user interface of professional game engines.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "OF THE AFFECTIVE GAME LOOP WITH THEIR ASSOCIATED AI VIRTUES (INTRODUCED BY BOSTROM AND YUDKOWSKY [18]); MAJOR PITFALLS; AND POSITIVE INITIATIVES UPHOLDING AI VIRTUES AND BENEFITING END-USERS",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/TAFFC.2023.3276425"
+}

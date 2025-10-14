@@ -1,0 +1,966 @@
+{
+    "title": "A Privacy-Preserving Mechanism Based on Local Differential Privacy in Edge Computing",
+    "authors": "Mengnan Bi; Yingjie Wang; Zhipeng Cai; Xiangrong Tong",
+    "pub_date": "",
+    "abstract": "",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "IN recent years, due to the contradictions between cloud computing model and inherent features of the Internet of Everything (IoE) [1], if we rely solely on this centralized computing processing method of cloud computing, it is no longer able to support applications running on IoT and massive data processing. In addition, cloud computing model cannot effectively solve some problems, such as cloud center load, data privacy-preserving [2] - [4] and other issues. Therefore, edge computing emerges as the times require, which combined with the existing cloud computing centralized processing model, can effectively solve the problem of big data processing at cloud center and edge of network [5]. Edge computing is a concept opposite to cloud computing. It is a new service model in which data or tasks could be computed on the edge of network near the data source [6]. In short, edge computing is a method of processing data physically close to where it was generated. However, location data usually contains a large amount of sensitive information. If there is no privacy-preserving mechanism, the location Abstract: With the development of Internet of Things (IoT), the delay caused by network transmission has led to low data processing efficiency. At the same time, the limited computing power and available energy consumption of IoT terminal devices are also the important bottlenecks that would restrict the application of blockchain, but edge computing could solve this problem. The emergence of edge computing can effectively reduce the delay of data transmission and improve data processing capacity. However, user data in edge computing is usually stored and processed in some honest-but-curious authorized entities, which leads to the leakage of users' privacy information. In order to solve these problems, this paper proposes a location data collection method that satisfies the local differential privacy to protect users' privacy. In this paper, a Voronoi diagram constructed by the Delaunay method is used to divide the road network space and determine the Voronoi grid region where the edge nodes are located. A random disturbance mechanism that satisfies the local differential privacy is utilized to disturb the original location data in each Voronoi grid. In addition, the effectiveness of the proposed privacy-preserving mechanism is verified through comparison experiments. Compared with the existing privacy-preserving methods, the proposed privacy-preserving mechanism can not only better meet users' privacy needs, but also have higher data availability.\nthese, there are also some studies of incentive mechanisms that take into account the ability of participants to perform tasks, the data quality of the sensed tasks, or the credibility of the crowd workers [15]. According to the above analysis, users are more likely to want their data to be protected before leaving the device, even if data collectors cannot obtain user's accurate data.\nTherefore, how to adopt effective location privacy-preserving mechanism to protect location data is an important research content of edge computing. Existing differential privacy [16], [17] technologies could be classified as centralized differential privacy (CDP) [18], [19] technology and local differential privacy (LDP) [20] technology. CDP believes that the third-party data collectors are truthful, which is not necessarily true in reality, and clearly does not meet our requirements for location privacy-preserving of edge computing. LDP, which has emerged in recent years, is the best way to solve this problem. In LDP model, clients first perturb the original data and then send it to the edge data center via edge network. Finally, edge data center makes analysis and statistics on the perturbed data to obtain an effective analysis result. In this process, even data collection center cannot get users' accurate location data, thus achieving personal data will be leaked, which will cause serious privacy problems and threaten users' privacy [7]. Therefore, privacy-preserving has become a very important issue in the edge environment [8]. Through solving this problem, the effectiveness of crowdsourcing platform could be improved better.\nEdge computing has a tendency to decentralize, and another technology that also has a tendency to decentralize is blockchain technology [9]. From a technological perspective, blockchain involves many scientific and technological issues, such as mathematics, cryptography, the Internet, and computer programming. From an application point of view, in simple terms, blockchain is a distributed ledger and database, which is characterized by decentralization, immutability, leaving traces throughout, traceability, collective maintenance, and transparency. The limited computing power and available energy consumption of IoT terminal devices are the important bottlenecks that would restrict the application of blockchain, but edge computing could solve this problem.\nFigure1 is the architecture of edge computing for IoT. It can be seen that in edge computing, the location data of mobile objects are collected by data collectors. There are two important assumptions: (1) mobile objects are willing to provide accurate location for data collectors; (2) data collectors are truthful and will not sell data maliciously or disclose data to a third party [10]. However, the above two assumptions are not valid in most cases. There are two reasons. First, a large number of data collectors are not truthful. In real life, many service providers sell users' personal data, which leads to serious problems of privacy leakage. Even if data collectors are truthful, a malicious attacker may attack the data collector's server, causing a large amount of personal data leakage. Second, as people pay more attention to personal privacy, more and more users are not willing to share their accurate location data, which also requires applications to maximize social welfare through some specific incentive mechanisms [11]- [14]. In addition to This paper proposes a location data collection method that s a t i s f i e s t h e l o c a l differential privacy to protect users' privacy. cessing at a location close to the terminal of an IoT device. In simple terms, it can be understood that in most cases, the device does not need to be connected to the cloud platform, and the intelligent control of IoT device can be achieved through local data calculation. In addition, edge computing can solve the bottleneck for the application of blockchain, that is, the limited computing power and available energy consumption of IoT terminal devices. Xu et al. [23] combined blockchain and mobile edge computing to solve the problems of untruthful network and network congestion.\nUser data in edge computing is typically stored and processed in some honest-but-curious authorized entities (edge data center, infrastructure provider), including multiple attributes such as user identity information, location information, and sensitive data [24]. The secondary goal of these honest-but-curious authorized entities is to obtain users' privacy information in order to achieve illegal profits and other purposes. But in this open ecosystem of edge computing, multiple trust domains are controlled by different infrastructure providers. In this case, it is impossible for users to know in advance whether a service provider is truthful. Problems that threaten users' privacy are likely to occur, such as data leakage or loss [6]. Therefore, privacy preserving has become a concerned research system in edge computing, which mainly includes data privacy-preserving, location privacy-preserving and identity privacy-preserving.\nIn this section, we will discuss related works from different location privacy-preserving technologies.\nLocation privacy-preserving technology could prevent user's accurate location from being leaked when a user obtains location-based services using location information. At present, location privacy-preserving could be divided into three main categories: anonymity, encryption and perturbation. For anonymous methods, k-anonymity and its extension models have far-reaching, and were widely researched in the field of privacy-preserving. K-anonymity was proposed by Sa-location privacy-preserving. In the process of data perturbation, we use the random response (W-RR) [21] disturbance mechanism to protect the privacy of original data with uncertainty response.\nAccording to the above discussions, the effective location privacy-preserving mechanism of edge computing should be studied to solve following problems: (1) most methods are not sufficient to resist attacks by attackers with certain background knowledge; (2) prevent privacy attacks from untruthful third parties and provide more comprehensive protection for sensitive location data. Therefore, aiming at the existing problems, this paper studies location privacy-preserving mechanism in edge computing by combining LDP and Voronoi diagram [22].\nThis paper mainly studies the application of LDP in location data collection of edge computing. Specifically, the main contributions of this paper are summarized as follows.\n1) Based on LDP model, a method of location data collection in edge computing is proposed, which satisfies LDP properties.\n2) A road network space division method based on Voronoi diagram is proposed. The local differential privacy disturbance method is applied to each Voronoi grid to perturb original location data, and it is proved that our disturbance method satisfies LDP.\n3) The method proposed in this paper is verified by comparison experiments, and it is proved that the LDP could not only effectively protect user's location privacy in edge computing, but also has better data availability.\nThe rest of this paper is organized as follows. Section 2 presents the related works. Section 3 introduces the proposed location privacy-preserving mechanism for edge computing. Section 4 illustrates the experimental settings, followed by the results analysis and discussion. Finally, Section 5 concludes this paper.",
+            "publication_ref": [
+                "b13",
+                "b14",
+                "b1",
+                "b2",
+                "b3",
+                "b12",
+                "b28",
+                "b29",
+                "b30",
+                "b31",
+                "b32",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b11",
+                "b35",
+                "b36",
+                "b3",
+                "b33",
+                "b34"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORK",
+            "text": "Edge computing is a type of distributed computing technology. It is a method of data pro-serving model. This model can resist all forms of attack when attackers have the greatest background knowledge. Differential privacy is a new privacy definition proposed by Dwork in 2006 to address this issue of privacy disclosure in statistical databases [38]. Differential privacy has strong privacy-preserving capability and does not rely on any background knowledge of attackers.\nTraditional differential privacy technology centralizes raw data into a data center, and then publishes relevant statistical information satisfying differential privacy, i.e., CDP. Li et al. [39] proposed a privacy-preserving incentive scheme with a Truthful Third Party (TTP), which can protect users' privacy. Wang et al. [40] used differential privacy to establish an optimal model based on TTP. In this model, TTP can obtain some information from public datasets to better understand private datasets without breaking privacy. Wang et al. [41] proposed a location disturbance scheme based on differential privacy to protect location privacy with third-party geolocation services. It used TTP architecture to protect the location privacy of users. In the system architecture of [42], workers send their locations to a truthful Cellular Service Provider (CSP). It could achieve privacy-preserving based on TTP. Therefore, CDP's protection of sensitive information is always based on a premise: a truthful third-party data collector. In other words, it ensures that third-party data collectors will not steal or disclose sensitive information of users. However, in practical applications, even if third-party data collectors claim that they will not steal and disclose users' sensitive information, users' privacy is still not guaranteed. For example, some chat tools used every day may actually be monitoring our chat records, even if they claim that they will not disclose users' privacy information.\nIt can be seen that it is very difficult to find a truthful third-party data collection platform in practical applications, which greatly limits the application of CDP technology. According to the problem, in the scenario of untruthful third party data collectors, LDP technology emerges [43]. It inherits CDP to quantify privacy attacks' definition and refines sensitive personal marati and Sweeney in 1998 [25]. It protects personal privacy by requiring a certain number (at least k) of indistinguishable records for the published data, so that an attacker cannot distinguish which specific individual the private information belongs to. For example, Zheng et al. [26] proposed a clustering algorithm based on k-anonymity location privacy-preserving model to eliminate outliers. In order to balance the conflict between privacy-preserving and query quality caused by location information's accuracy, the anonymous groups were established in this anonymity model. However, this kind of privacy-preserving methods failed to provide sufficient security for users. They constantly improved due to the emergence of new types of attacks. For example, in order to resist consistency attacks, l-diversity [27], t-closeness [28], (a, k)-anonymity [29], M-invariance [30] and other models were proposed. Wong et al. [31] proposed an m-confidentiality model to resist minimum attacks. Moreover, Rohilla et al. [32] used encryption technology to protect the security of users. Cai et al. [33] adopted position disturbance method to protect privacy information of users.\nHowever, the above researches, such as k-anonymity [34], [35] and encryption technology, will consume a large amount of network bandwidth and computational overhead in practical applications. And they are not suitable for lightweight edge devices with limited resources. In addition, none of these methods considered attacks based on background knowledge, which cannot quantify the level of privacy-preserving. Nowadays, various operators and big data companies have rich user data. Large-scale data on Internet are interrelated. In addition, various data integration and fusion technologies are booming. At the same time, Internet has great convenience, making various types of information at your fingertips. The combination of these factors makes it is easy for attackers to obtain background knowledge. They can infer user's sensitive information by combining a large amount user-uploaded data [36], [37]. Therefore, researchers are trying to find a new privacy-pre-gorithm that satisfies LDP in edge computing is proposed. The proposed privacy-preserving mechanism is introduced in this section.",
+            "publication_ref": [
+                "b23",
+                "b24",
+                "b25",
+                "b26",
+                "b27",
+                "b42",
+                "b37",
+                "b38",
+                "b39",
+                "b40",
+                "b41",
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b22"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "System structure",
+            "text": "With the development of mobile devices, a large number of users hold a location data generated by their mobile devices. Untruthful servers want to know the number and distribution of mobile objects in a certain area. Due to privacy concerns, users do not send their precise location to servers, but send non-raw data that has been disturbed by our algorithm to protect users' location privacy.\nThe system structure of the proposed privacy-preserving mechanism is shown in Figure2. Cloud server sends Voronoi diagram division of a map to clients. Then clients will send their Voronoi diagram number of map to edge nodes. Edge nodes group users and feedback grouping information to clients. Finally, clients send their disturbed data via edge network to edge data center to complete location data collection.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Differential privacy technology",
+            "text": "Previously, most privacy-preserving methods failed to define attack models and could not quantify the knowledge possessed by attackers [49]. According to this problem, differential privacy strictly defines an attack model and reduces privacy leakage's risk [50]. At present, differential privacy could be divided into two types: centralized differential privacy (CDP) and local differential privacy (LDP). In this paper, we adopt local differential privacy to propose a privacy-preserving mechanism for edge computing.",
+            "publication_ref": [
+                "b48",
+                "b49"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Centralized differential privacy technology",
+            "text": "Traditional Differential Privacy (DP) technology, i.e., CDP, is the strongest privacy-preserving model currently known. However, CDP assumes that the third-party data collectors are truthful. It requires TTP to collect accurate data before privacy protection. But this assumption does not necessarily hold true in reality. For CDP technology, its privacy-pre-information's protection. Specifically, it transfers the privacy process of data to each user, enabling users to individually process and protect personal sensitive information, that is, to perform more through privacy-preserving. For example, Wang et al. [44] proposed a method to protect the location of participants based on local differential privacy preference in response to the location privacy problem of participants in mobile crowd sensing. In [45], the authors proposed a location privacy-preserving task allocation framework based on geo-obfuscation to protect users' locations during task assignments. This framework does not require the involvement of any third-party entity.\nTherefore, according to the above discussion, we apply LDP to the actual scenarios of edge computing. LDP is used to protect sensitive location data of each client in edge computing system and avoid disclosure of privacy by honest-but-curious authorized entities.\nNowadays, the concept of neural networks is very hot. Many scholars have done a lot of outstanding work on neural networks. For example, Jiang et al. [46] developed a new model based on neural networks by relying on NLP models for rich feature extraction. This model is called Mutual Attention Neural Network (abbreviated as MAN) to perform aspect-level sentiment classification tasks. Therefore, in future, we also look forward to using the knowledge of neural networks in the work of privacy protection. In addition, we also hope to apply the privacy-preserving work to the recommendation systems [47]. Recommendation system has become one of the main tools to search for users' interested papers. For example, Liu et al. [48] proposed a link prediction approach through combining time, keywords, and authors' information in order to optimize the existing paper citation network.",
+            "publication_ref": [
+                "b43",
+                "b44",
+                "b45",
+                "b46",
+                "b47"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. THE PROPOSED PRIVACY-PRESERVING MECHANISM FOR EDGE COMPUTING",
+            "text": "In order to protect the privacy information of users effectively, a location data collection al- if the attacker already has all the other data.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Local differential privacy technology",
+            "text": "LDP is the improved method of CDP. The difference between LDP and CDP is that LDP does not require truthful data collectors. Therefore, data perturbation's function is transferred from data collectors to each user. Each user perturbs original data by privacy-preserving algorithms and then uploads the disturbance data to data collectors. For LDP technology, its privacy-preserving occurs on the client side. LDP has the characteristics of traditional differential privacy-preserving technology and expands with random response disturbance mechanism to resist privacy attacks from untruthful third-party data collectors.\nThe formal definition of LDP is presented as follows. Therefore, the formal definition of CDP is presented as follows.\nDefinition 1. (\u03b5-CDP) Given a random algorithm K, if any neighboring datasets D and D\u2032, and any output S\u2286Range(K) satisfies Eq.( 1), the algorithm K satisfies \u03b5-CDP [38].\nPr[ ( ) ] Pr[ ( ) ] K D S e K D S \u2208 \u2208 \u2264 \u00d7 \u03b5 \u2032 . (1)\nDifferential privacy can ensure that adding or deleting a piece of data in the dataset will not affect the query output results. The choice of the random algorithm K is independent of the knowledge possessed by the attacker. As long as K satisfies Definition 1, the privacy of any data in the dataset can be protected, even  Each Voronoi grid v in Voronoi diagram has one generator. The distance from inner points of v to its generator is much smaller than the distance to other generators. We map each Voronoi grid generator in Voronoi diagram to an edge node of the region in edge computing. It satisfies the requirement that users can request services on the nearest edge of the network.",
+            "publication_ref": [
+                "b23"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Location data collection algorithm satisfies LDP",
+            "text": "Attackers may be from any party in our system structure. We assume that servers are all untruthful, that is, servers may also want to know mobile object's location. The biggest goal of attackers is to get mobile users' accurate location. Attack modes may include snooping, background knowledge association, collusion between servers and mobile users, etc.\nThe flow of location data collection algo-output result t*(t*\u2286 Ran(M)) on any two records t and t' (t, t'\u2208 Dom(M)) that satisfies Eq.( 2), then M satisfies \u03b5-LDP [43].\nPr[ ( ) ] Pr[ ( ) M t t e M t t = \u2264 \u00d7 = * * \u03b5 \u2032 ] (2)\nFrom Definition 2, it can be seen that LDP ensures that algorithm M satisfies \u03b5-LDP by controlling the similarity of any two records' output. In short, according to a certain output result of privacy algorithm M, it is almost impossible to infer which record its input data is. In CDP, its privacy algorithm M is defined by neighbor dataset, so it requires truthful third-party data collectors to protect data analysis results. For LDP, each user can independently process individual data. The privacy process is transferred from data collectors to each client, so that no TTP's intervention is required. It also eliminates privacy attacks that may be caused by untruthful third-party data collectors.\nLDP inherits two combined characteristics of CDP: sequence combinability and parallel combinability. Sequence combinability emphasizes that the privacy budget \u03b5 could be allocated in different steps. Parallel combinability could guarantee the privacy of algorithms that satisfy differential privacy on disjoint subsets of their datasets.\nProperty 1. (Sequence Combinability) Given a dataset D and n privacy algorithms {M 1 ,...,M n }, M i (1\u2264i\u2264n) satisfies \u03b5 i -LDP [43]. Then the sequence combination of {M 1 ,...,M n } ",
+            "publication_ref": [
+                "b42",
+                "b42"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Delaunay triangulation has the following characteristics:",
+            "text": "1) Empty circle: no other points are included in the circumcircle of any triangle.\n2) Closest: a triangle is formed with the nearest three points, and each line segment (sides of this triangle) does not intersect.\n3) Uniqueness: no matter where you start building from the region, you will end up with consistent results.\n4) Optimality: if diagonals of the convex quadrilateral formed by any two adjacent triangles are interchangeable, then the smallest of these six internal angles of the two triangles does not become larger.\n5) The most rule: if the minimum angle of each triangle in triangulation network is arranged in ascending order, the value obtained by the Delaunay triangulation's arrangement is the largest. 6) Regional: adding, deleting, and moving a vertex will only affect the adjacent triangles.\n7) Shell with convex polygons: the outermost boundary of triangulation network forms rithm that satisfies LDP in edge computing is summarized as follows:\n1) Cloud server divides an entire map with a Voronoi diagram and stores Voronoi grids region and corresponding number v i . Then it publishes the information to clients;\n2) Each user sends its own Voronoi grid number v i to the nearest edge node;\n3) Edge nodes divide users in the same Voronoi grid into a group and send the group message to clients; 4) According to LDP mechanism, we disturb location data within the group and send disturbance data to the edge data center.\nThis paper assumes that edge nodes are untruthful. Edge nodes know which Voronoi grid a user is in, but does not know user's accurate location. For a user, its Voronoi grid is its security area.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Road network division based on Voronoi diagram",
+            "text": "In this paper, we use Delaunay triangulation algorithm to divide network space into Voronoi grids. Generator point set P p p p = { 1 2 , ,..., n } is road intersections in road network space, which could be consider as edge nodes, as shown by solid black dots in Figure3. Delaunay triangulation algorithm means that when generating a Voronoi diagram, the first step is to make its dual Delaunay triangulation network. Then find the circumscribed circle center of each triangle in triangle network. Finally, we connect circumcircle centers of adjacent triangles to form a polygon network, which takes each triangle vertex as its generator. The process is shown in Figure4.\nAlgorithm 1 shows our basic steps of generating a Voronoi diagram. When generating a Voronoi diagram, the first step is to generate a dual element Delaunay triangulation DT based on the generator dataset P (step 1-2). Then find the circumscribed circle center c i of each triangle t i in triangle network DT and get circumcenters point set C (step 3-6). Finally, for each c i in C, connect the circumcenter c i of adjacent triangles to get the Voronoi diagram V (step 7-10). ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Disturbance of location data satisfies \u03b5-LDP",
+            "text": "Cloud server informs each client of packet data. Packet data could be represented as G={gid, N, v i ,<a 1 b 1 ,a 2 b 2 ,...,a m b m >}, where gid denotes group number, N is the number of moving objects in this group, v i denotes this group of objects' Voronoi grid number, <a 1 b 1 ,a 2 b 2 ,...,a m b m > is the boundary information of this Voronoi grid. After a client receives packet data G sent by cloud server, it generates a vector L={loc 0 , loc 1 ,..., loc n-1 }, where loc 0 is user's real location, loc 1 , loc 2 ,.., loc n-1 are other false locations randomly generated by this user within v i boundary.\nOur disturbance method needs to satisfy \u03b5-LDP. At present, random response mechanism is a mainstream technology for LDP. According to random response mechanism, given LDP's privacy parameter \u03b5, the probability that each user sends its own real position or a position in n-1 false positions is shown by\nP loc loc ( | ) i i \u2032 = \uf8f1 \uf8f4 \uf8f2 \uf8f4 \uf8f3 n e n e -+ -+ 1 e 1 1 \u03b5 \u03b5 \u03b5 , , loc loc loc loc i i i i = \u2260 \u2032 \u2032 . (4\n)\nTable I summarizes the notations used in our presentation.\nOur location data collection algorithm in edge computing satisfies \u03b5-LDP. The edge computing location data collection algorithm is shown by Algorithm 2. In Algorithm 2, the cloud server first uses the Voronoi diagram V to divide the map into a road network map G (V, E) and sends the packet data\nG gid N v a b a b a b i i m m = { , , , , ,..., 1 1 2 2\n} to each user u i (step 1-3). Then every client u i knows its Voronoi grid number v i and sends this number to the nearest edge node p j (step 5). Edge node p j divides moving object u i in the same Voronoi grid v i into a group G i according to the received Voronoi grid number v i (step 6).\nEvery u i will generate some false locations loc i ' in v i and send loc i or one of loc i ' to its nearest p j with P(loc i | loc i ' ) (step 7-11).\nThe privacy-preserving degree of Algo-a convex polygonal outer shell.\nThe key to establish a Voronoi diagram is to reasonably connect discrete data points into a triangulation network, that is, to construct a Delaunay triangulation network. Figure5 shows the Delaunay steps of generating a Delaunay triangulation network:\n(a) insert a new point in this grid; (b) associate the triangle to draw a circumcircle, record all triangles whose circumcircles contain new points;\n(c) delete common edges that affect triangles;\n(d) generate a new Delaunay triangulation network.\nRoad network division based on a Voronoi diagram is completed by cloud server, and division information is sent to clients. Then every client knows its Voronoi grid number and sends this number to the nearest edge node. Edge nodes divide moving objects in the same Voronoi grid into a group according to the received Voronoi grid number. RAM. The experiments are conducted on Win 7 OS. The experimental platform is MATLAB 2016a.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_0"
+            ]
+        },
+        {
+            "heading": "Experimental datasets",
+            "text": "The real-world dataset Gowalla [52] is utilized in this paper. Gowalla dataset is a user location dataset, which is obtained from a location-based social networking website Gowalla, where users share their locations by checking-in. The collection period is from Feb. 2009 to Oct. 2010, which mainly includes user ID, check-in time, location coordinates, and location ID, with approximately 6,442,890 rithm 2 satisfies Theorem 1. Theorem 1. For any moving object's position loc i , given privacy-preserving parameter \u03b5, the above disturbance method satisfies \u03b5-LDP.\nProof. According to the definition of LDP, it is necessary to prove Pr[ ( , , ) ] Pr [ ( , , ) ]\nLP loc N loc LP loc N loc i i i i \u03b5 \u03b5 = = \u2032 \u2264 e \u03b5(5)\nto indicate that privacy algorithm satisfies \u03b5-LDP, where N represents total number of mobile users in Voronoi grids. According to the generation method of N in privacy algorithm, if N includes m positions, only one position is user's real position, and the remaining positions are false positions within its group.\nAccording to the generation rule, the probability that loc i sends its real position is\nPr[ ( , , ) ] , LP loc N loc i i \u03b5 = = m e -+ e 1 \u03b5 \u03b5(6)\nand the probability of sending its false position is\nPr[ ( , , ) ] , LP loc N loc\ni i \u03b5 = = \u2032 m e -+1 1 \u03b5 (7)\nthen Pr[ ( , , ) ] Pr [ ( , , ) ]\nLP loc N loc LP loc N loc i i i i \u03b5 \u03b5 = = \u2032 = e \u03b5(8)\nis verified.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. PERFORMANCE EVALUATION",
+            "text": "In this section, we conduct comparison experiments to evaluate the effectiveness of the proposed data collection method in edge computing. In experimental results, LDP represents the proposed mechanism based on local differential privacy technology. We evaluate the changes in loss of the Quality-of-Service (QoS) under different privacy budgets \u03b5 and different privacy levels. Then, in order to verify the effectiveness of LDP, it is compared with CDP mechanism with Laplace noise and Gaussian white noise, and k-anonymity mechanism respectively [51].The hardware environment of the experiments is equipped with 4GB  , ,\n\u2026 n } . The user may respond to any of these n+1 positions, so h could be expressed by\nh LDP = n 1 +1 . (10\n)\nb) In CDP mechanism with Laplace noise, Laplace mechanism [53] implements \u03b5-differential privacy preserving. Adding Laplace-distributed random noise Lap(\u0394f/\u03b5) to the data, where \u0394f indicates the sensitivity and \u03b5 is the privacy budget. The calculation method of \u0394f is shown by\n\u2206 = - f f D f D max ( ) ( ) D D 1 2 , 1 2 . (11\n)\nD 1 and D 2 represent any two neighboring datasets, and f(x) is the real query result. There is at most one record difference between these two datasets. Therefore, in CDP-Laplace algorithm, h could be expressed by\nh f CDP = -\u2206 1 . (12\n)\nIn addition, b f = \u2206 \u03b5 is a scale parameter.\nFrom Figure 6(a), it can be seen that the added noise is proportional to \u0394f and inversely proportional to \u03b5. Therefore, the larger \u0394f is, the larger the added noise is, but h Lap is smaller. c) Similarly, in CDP mechanism with Gaussian white noise, we utilize Gaussian white noise Gau(\u0394f/\u03b5) to achieve \u03b5-differential privacy preserving. Gaussian white noise is statistical noise having a Probability Density Function (PDF) that obeys normal distribution, i.e., Gaussian distribution [50]. Gaussian white noise obeys N ( 0,\u03c3 2 ) normal distribu- tion, where \u03c3 2 is calculated by\n\u03c3 2 = \uf8eb \uf8f6 \uf8ec \uf8f7 \uf8ed \uf8f8 \u2206 \u03b5 f 2 . (13\n)\nThe noise function is shown by\nGau( ) exp( ) \u03c3 = - 2 1 \u03c0\u03c3 2 x \u03c3 2 2 . (14\n)\nrecords.",
+            "publication_ref": [
+                "b50",
+                "b51",
+                "b49"
+            ],
+            "figure_ref": [
+                "fig_9"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "Utility metric",
+            "text": "This paper uses the level of privacy-preserving (PL) and loss of service quality (Qloss) to evaluate the performances of privacy-preserving methods.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Level of privacy-preserving",
+            "text": "In this paper, h represents the probability that an attacker will succeed, so PL could be ex- lished central location lc ' . Therefore, the Qloss of N users is shown by Eq.( 20) in k-anonymity mechanism.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Qloss d l lc kanony",
+            "text": "i = \u2211 i N =1 ( , ) \u2032(20)",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Experimental settings",
+            "text": "We randomly draw 50 points from Gowalla dataset as road intersections (edge nodes) to draw the Voronoi diagram. Then, the location points are randomly taken from the dataset as users' real location points, and each user randomly generates a false position in the Voronoi grid where it is located.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Comparison Experiments",
+            "text": "In the comparison experiments, three different privacy-preserving methods were compared.\nIn the same dataset, we set the three algorithms' privacy-preserving level as PL=75%, and then change different privacy budgets \u03b5 to observe the effectiveness of Qloss, as shown in Figure7. From Figure 7, it can be seen that among the three algorithms, with the increase of \u03b5, Qloss tends to decrease. This is because that in the Voronoi diagram-based LDP mechanism, as \u03b5 increases, the higher the probability p that a user responds to its real location, the higher the availability of data. In the two From Figure6(b), it can be seen that the added noise is proportional to \u0394f, and inversely proportional to \u03b5. In CDP-Gaussian white algorithm, h could be represented by\nh f Gau = -\u2206 1 .(15)\nd) The k-anonymity mechanism publishes central location data with k location records through generalization and cloaking technology. Because there are at least k position records for the same published central position data, observers cannot connect to users' position records through the central position data. The implementation of k-anonymity model makes it impossible for an attacker to identify users through central location data with a confidence higher than 1/k. Therefore, h could be expressed by \nh kanony = 1 k . (16\nQloss LDP = \u2211 \u2211 z j p m = = 1 1 \u2211 i n =1 d l l n i i i ( , ) \u2032 .(17)\nIn CDP-Laplace mechanism, a user's Qloss could be regarded as the error distance between this user's real position l and its false position l ' . Eq.( 18) represents the Qloss of N users in CDP-Laplace mechanism.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_11"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "Qloss d l l",
+            "text": "Lap i\n= \u2211 i N =1 ( , ) \u2032(18)\nb) Similarly, in CDP-Gaussian white mechanism, Eq.( 19) could be used to represent the Qloss of N users.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Qloss d l l",
+            "text": "Gau i\n= \u2211 i N =1 ( , ) \u2032(19)\nc) In k-anonymity mechanism, a user's Qloss could be regarded as the error distance between this user's real location l and its pub- noise mechanism, and LDP mechanism, we did not compare these three mechanisms with k-anonymity mechanism in this experiment. In future works, more algorithm mechanisms will be compared with LDP mechanism to discover more deficiencies in LDP mechanism and improve them.\nFigure 8 shows the comparison results of Qloss under different privacy levels in the same dataset. We randomly take 100 location points as the user's real locations, and observe the changes of Qloss by changing PL. From the experimental results, it can be seen that the values of Qloss of k-anonymity mechanism and Laplace noise mechanism are too large. Therefore, the quality of service for users cannot be guaranteed. In addition, the Qloss of Gaussian White noise mechanism increases with the increase of PL. Therefore, the higher the PL, the greater the Qloss of these three mechanisms. However, it can be seen that the proposed LDP has the best performance on Qloss through compared with other three algorithms. In addition, the Qloss of LDP is basically unchanged with the increase of privacy level. Therefore, in the same dataset, the PL has almost no effect on the Qloss of LDP mechanism.\nFigure 9 shows the comparison results of Qloss in different numbers of users with the same PL. We randomly take 100, 200, 300, 400, 500 location points in Gowalla dataset as the user's 5 reallocation datasets, and observe the changes of Qloss under the same PL. From the experimental results, we can see that with the increase of users, the Qloss of each mechanism increases. Among them, Laplace noise mechanism and k-anonymity mechanism have a larger increase on Qloss. In addition, although the growth rate of the Gaussian white noise mechanism and LDP mechanism is small, LDP mechanism has the least Qloss. Therefore, by comparing with the other three mechanisms, we find that the proposed Voronoi diagram-based LDP mechanism has less Qloss and better algorithm performance. mechanisms of Laplace noise and Gaussian white noise, as \u03b5 increases, the added noise decreases, so Qloss is reduced. From the experimental results, we can see that the proposed LDP mechanism has the least Qloss, so the performance of the algorithm is better than the other two mechanisms. Because k-anonymity mechanism does not have the same parameters as Laplace noise mechanism, Gaussian white  ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSIONS",
+            "text": "In order to improve the efficiency of big data processing, edge computing is combined with cloud computing is an effective solution. In addition, how to establish an effective privacy-preserving mechanism has become increasingly important. LDP is an emerging privacy-preserving model after CDP. It breaks the assumption of truthful third-party data collectors in CDP and performs data privacy processing on the side of users. This paper proposes a location data collection method that satisfies LDP. A Voronoi diagram is used to divide the road network space to determine the Voronoi grid region where the edge nodes are located. The location data in each Voronoi grid is disturbed by random disturbance mechanism. The performance of the proposed Voronoi diagram-based location privacy-preserving mechanism is evaluated by comparing with three classical mechanisms respectively. Through comparison experiments, it is verified that the proposed LDP not only meets users' privacy needs, but also has higher data availability. However, since each user has to generate multiple fake locations to protect his real location, this mechanism may consume more resources.\nIn future work, we will continue to improve the privacy-preserving model and make the model to be in better accordance with the self-characteristics of edge computing. In addition, the convergence of edge computing and blockchain is the trend of IoT. We will focus on this issue to further research new and more effective privacy-preserving mechanism.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "A private and efficient mechanism for data uploading in smart cyber-physical systems",
+            "journal": "IEEE Transactions on Network Science and Engineering",
+            "year": "2020",
+            "authors": "Z Cai; X Zheng"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Privacy-preserved data sharing towards multiple parties in industrial IoTs",
+            "journal": "IEEE Journal on Selected Areas in Communications",
+            "year": "2020",
+            "authors": "X Zheng; Z Cai"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Edge computing: Vision and challenges",
+            "journal": "IEEE Internet of Things Journal",
+            "year": "2016",
+            "authors": "W Shi; J Cao; Q Zhang; Y Li; L Xu"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Survey on data security and privacy-preserving for the research of edge computing",
+            "journal": "Journal on Communications",
+            "year": "2018",
+            "authors": "J Zhang; Y Zhao; B Chen; F Hu; K Zhu"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Fakemask: A novel privacy preserving approach for smartphones",
+            "journal": "IEEE Transactions on Network and Service Management",
+            "year": "2016",
+            "authors": "L Zhang; Z Cai; X Wang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "A Two-stage Locality-Sensitive Hashing Based Approach for Privacy-Preserving Mobile Service Recommendation in Cross-Platform Edge Environment",
+            "journal": "Future Generation Computer Systems",
+            "year": "2018",
+            "authors": "L Qi; X Zhang; W Dou; C Hu; C Yang; J Chen"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Blockchain challenges and opportunities: A survey",
+            "journal": "International Journal of Web and Grid Services",
+            "year": "2018",
+            "authors": "Z Zheng; S Xie; H N Dai; X Chen; H Wang"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Crowdsourcing location data collection for local differential privacy",
+            "journal": "Journal of Computer Applications",
+            "year": "2019",
+            "authors": "Z Huo; K Zhang; P He; Y Wu"
+        },
+        {
+            "ref_id": "b8",
+            "title": "An incentive mechanism with privacy protection in mobile crowdsourcing systems",
+            "journal": "Computer Networks",
+            "year": "2016",
+            "authors": "Y Wang; Z Cai; G Yin; Y Gao; X Tong; G Wu"
+        },
+        {
+            "ref_id": "b9",
+            "title": "An optimization and auction-based incentive mechanism to maximize social welfare for mobile crowdsourcing",
+            "journal": "IEEE Transactions on Computational Social Systems",
+            "year": "2019",
+            "authors": "Y Wang; Z Cai; Z H Zhan; Y J Gong; X Tong"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Reward or penalty: Aligning incentives of stakeholders in crowdsourcing",
+            "journal": "IEEE Transactions on Mobile Computing",
+            "year": "2019",
+            "authors": "J Xu; S Wang; N Zhang; F Yang; X Shen"
+        },
+        {
+            "ref_id": "b11",
+            "title": "A worker-selection incentive mechanism for optimizing platform-centric mobile crowdsourcing systems",
+            "journal": "Computer Networks",
+            "year": "2020",
+            "authors": "Y Wang; Y Gao; Y Li; X Tong"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Toward optimal participant decisions with voting-based incentive model for crowd sensing",
+            "journal": "Information Sciences",
+            "year": "2020",
+            "authors": "N Jiang; D Xu; J Zhou; H Yan; T Wan; J Zheng"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Edge computing-an emerging computing model for the internet of everything era",
+            "journal": "Journal of computer research and development",
+            "year": "2017",
+            "authors": "W Shi; H Sun; J Cao; Q Zhang; W Liu"
+        },
+        {
+            "ref_id": "b14",
+            "title": "A distributed locality-sensitive hashing-based approach for cloud service recommendation from multisource data",
+            "journal": "IEEE Journal on Selected Areas in Communications",
+            "year": "2017",
+            "authors": "L Qi; X Zhang; W Dou; Q Ni"
+        },
+        {
+            "ref_id": "b15",
+            "title": "M-invariance: Towards privacy preserving republication of dynamic datasets",
+            "journal": "",
+            "year": "2007",
+            "authors": "X Xiao; Y Tao"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Minimality attack in privacy preserving data publishing",
+            "journal": "",
+            "year": "2007",
+            "authors": "R C W Wong; A W C Fu; K Wang; J Pei"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Location privacy using homomorphic encryption over cloud",
+            "journal": "International Journal of Computer Network and Information Security",
+            "year": "2017",
+            "authors": "A Rohilla; M Khurana; L Singh"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Collective data-sanitization for preventing sensitive information inference attacks in social networks",
+            "journal": "IEEE Transactions on Dependable and Secure Computing",
+            "year": "2018",
+            "authors": "Z Cai; Z He; X Guan; Y Li"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Achieving personalized k-anonymity based content privacy for autonomous vehicles in CPS",
+            "journal": "IEEE Transactions on Industrial Informatics",
+            "year": "2020",
+            "authors": "J Wang; Z Cai; J Yu"
+        },
+        {
+            "ref_id": "b20",
+            "title": "The truthful evolution and incentive for large-scale mobile crowd sensing networks",
+            "journal": "IEEE Access",
+            "year": "2018",
+            "authors": "Y Wang; Y Li; Z Chi; X Tong"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Latent-data privacy preserving with customized data utility for social network data",
+            "journal": "IEEE Transactions on Vehicular Technology",
+            "year": "2018",
+            "authors": "Z He; Z Cai; J Yu"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Task allocation model based on worker friend relationship for mobile crowdsourcing",
+            "journal": "Sensors",
+            "year": "2019",
+            "authors": "B Zhao; Y Wang; Y Li; Y Gao; X Tong"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Differential privacy: A survey of results",
+            "journal": "",
+            "year": "2008",
+            "authors": "C Dwork"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Providing privacy-aware incentives for mobile sensing",
+            "journal": "",
+            "year": "2013",
+            "authors": "Q Li; G Cao"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Selecting optimal subset to release under differentially private m-estimators from hybrid datasets",
+            "journal": "IEEE Transactions on Knowledge and Data Engineering",
+            "year": "2018",
+            "authors": "M Wang; Z Ji; H E Kim; S Wang; L Xiong; X Jiang"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Enhancing location privacy for geolocation service through perturbation",
+            "journal": "",
+            "year": "2018",
+            "authors": "Y Wang; H Zhang; S Su"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Differentially private location protection for worker datasets in spatial crowdsourcing",
+            "journal": "IEEE Transactions on Mobile Computing",
+            "year": "2017",
+            "authors": "H To; G Ghinita; L Fan; C Shahabi"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Differential privacy",
+            "journal": "",
+            "year": "2006",
+            "authors": "C Dwork"
+        },
+        {
+            "ref_id": "b29",
+            "title": "A differential-private framework for urban traffic flows estimation via taxi companies",
+            "journal": "IEEE Transactions on Industrial Informatics",
+            "year": "2019",
+            "authors": "Z Cai; X Zheng; J Yu"
+        },
+        {
+            "ref_id": "b30",
+            "title": "The novel location privacy-preserving CKD for mobile crowdsourcing systems",
+            "journal": "IEEE Access",
+            "year": "2018",
+            "authors": "Z Chi; Y Wang; Y Huang; X Tong"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Trading private range counting over big IoT data",
+            "journal": "",
+            "year": "2019",
+            "authors": "Z Cai; Z He"
+        },
+        {
+            "ref_id": "b32",
+            "title": "Privacy enhanced matrix factorization for recommendation with local differential privacy",
+            "journal": "IEEE Transactions on Knowledge and Data Engineering",
+            "year": "2018",
+            "authors": "H Shin; S Kim; J Shin; X Xiao"
+        },
+        {
+            "ref_id": "b33",
+            "title": "Randomized response: A survey technique for eliminating evasive answer bias",
+            "journal": "Journal of the American Statistical Association",
+            "year": "1965",
+            "authors": "S L Warner"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Voronoi diagram generation algorithm based on delaunay triangulation",
+            "journal": "Journal of Software",
+            "year": "2014",
+            "authors": "L Sun; Y Luo; Y Yu; X Ding"
+        },
+        {
+            "ref_id": "b35",
+            "title": "A blockchain-enabled trustless crowd-intelligence ecosystem on mobile edge computing",
+            "journal": "IEEE Transactions on Industrial Informatics",
+            "year": "2019",
+            "authors": "J Xu; S Wang; B K Bhargava; F Yang"
+        },
+        {
+            "ref_id": "b36",
+            "title": "An incentive mechanism based on multi-attribute reverse auction in mobile crowdsourcing",
+            "journal": "Sensors",
+            "year": "2018",
+            "authors": "Y Hu; Y Wang; Y Li; X Tong"
+        },
+        {
+            "ref_id": "b37",
+            "title": "Generalizing data to provide anonymity when disclosing information",
+            "journal": "",
+            "year": "1998",
+            "authors": "P Samarati; L Sweeney"
+        },
+        {
+            "ref_id": "b38",
+            "title": "K-anonymity location privacy algorithm based on clustering",
+            "journal": "IEEE Access",
+            "year": "2018",
+            "authors": "L Zheng; H Yue; Z Li; X Pan; M Wu; F Yang"
+        },
+        {
+            "ref_id": "b39",
+            "title": "Anonymization of sensitive quasi-identifiers for l-diversity and t-closeness",
+            "journal": "IEEE Transactions on Dependable and Secure Computing",
+            "year": "2019",
+            "authors": "Y Sei; H Okumura; T Takenouchi; A Ohsuga"
+        },
+        {
+            "ref_id": "b40",
+            "title": "Enhancing utility and privacy using t-closeness for multiple sensitive attributes",
+            "journal": "Advances in Natural and Applied Sciences",
+            "year": "2016",
+            "authors": "S Saraswathi; K Thirukumar"
+        },
+        {
+            "ref_id": "b41",
+            "title": "\"(a, k)-anonymous scheme for privacy-preserving data collection in IoT-based healthcare services systems",
+            "journal": "Journal of medical systems",
+            "year": "2018",
+            "authors": "H Li; F Guo; W Zhang; J Wang; J Xing"
+        },
+        {
+            "ref_id": "b42",
+            "title": "Survey on local differential privacy",
+            "journal": "Journal of Software",
+            "year": "2018",
+            "authors": "Q Q Ye; X F Meng; M J Zhu; Z Huo"
+        },
+        {
+            "ref_id": "b43",
+            "title": "Location protection method for mobile crowd sensing based on local differential privacy preference",
+            "journal": "",
+            "year": "2019",
+            "authors": "J Wang; Y Wang; G Zhao; Z Zhao"
+        },
+        {
+            "ref_id": "b44",
+            "title": "Location privacy-preserving task allocation for mobile crowdsensing with differential geo-obfuscation",
+            "journal": "",
+            "year": "2017",
+            "authors": "L Wang; D Yang; X Han; T Wang; D Zhang; X Ma"
+        },
+        {
+            "ref_id": "b45",
+            "title": "MAN: Mutual Attention Neural Networks Model for Aspect-Level Sentiment Classification in SIoT",
+            "journal": "IEEE Internet of Things Journal",
+            "year": "2020",
+            "authors": "N Jiang; F Tian; J Li; X Yuan; J Zheng"
+        },
+        {
+            "ref_id": "b46",
+            "title": "Privacy-aware multidimensional mobile service quality prediction and recommendation in distributed fog environment",
+            "journal": "",
+            "year": "2018",
+            "authors": "W Gong; L Qi; Y Xu"
+        },
+        {
+            "ref_id": "b47",
+            "title": "Link prediction in paper citation network to construct paper correlation graph",
+            "journal": "EURASIP Journal on Wireless Communications and Networking",
+            "year": "2019",
+            "authors": "H Li; H Kou; C Yan; L Qi"
+        },
+        {
+            "ref_id": "b48",
+            "title": "Location-privacy-aware review publication mechanism for local business service systems",
+            "journal": "",
+            "year": "2017",
+            "authors": "X Zheng; Z Cai; J Li; H Gao"
+        },
+        {
+            "ref_id": "b49",
+            "title": "Truthful incentive mechanism with location privacy-preserving for mobile crowdsourcing systems",
+            "journal": "Computer Networks",
+            "year": "2018",
+            "authors": "Y Wang; Z Cai; X Tong; Y Gao; G Yin"
+        },
+        {
+            "ref_id": "b50",
+            "title": "A QoS-aware virtual machine scheduling method for energy conservation in cloud-based cyber-physical systems",
+            "journal": "World Wide Web",
+            "year": "2020",
+            "authors": "L Qi; Y Chen; Y Yuan; S Fu; X Zhang; X Xu"
+        },
+        {
+            "ref_id": "b51",
+            "title": "A survey on differential privacy and applications",
+            "journal": "Chinese Journal of Computers",
+            "year": "2014",
+            "authors": "P Xiong; T Q Zhu; X F Wang"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. The architecture of edge computing for IoT.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig.2. Location data collection system structure for privacy-preserving in edge computing.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Definition 2 .2(\u03b5-LDP) Given n users, each user corresponds to a record. For a privacy algorithm M, its domain is Dom(M), and range is Ran(M). If algorithm M obtains the same serving is performed by data collectors. Suppose that the datasets D and D\u2032 have the same attribute structure, and the symmetric difference between them is denoted as D D \u2206 \u2032. D D \u2206 \u2032 represents the number of symmetric differences. If D D \u2206 \u2032 = 1, then D and D\u2032 are called neighboring datasets.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Property 2 .2Authorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:43:32 UTC from IEEE Xplore. Restrictions apply.on D satisfies \u03b5-LDP, where (Parallel Combinability) Given a dataset D, divide it into n disjoint subsets, D={D 1 ,...,D n }, let M be any privacy algorithm that satisfies \u03b5-LDP, then algorithm M satisfies \u03b5-LDP on {D 1 ,...,D n }[43].",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "3. 33Voronoi diagram Definition 3. (Voronoi Diagram) A Voronoi diagram consists of a set of continuous polygons that connect vertical bisectors of two adjacent line lines, also known as Tyson Polygon or Dirichlet Diagram. Among them, each continuous polygon is a Voronoi grid v. v contains only one point, called a generator. The distance from v's inner points to its generator is less than the distance to other generators, and the distance from points on the boundary to its generator is equal. Figure3 shows the division of a road network space by a Voronoi diagram. Among them, solid black dots are road intersections on road network, solid lines indicate roads, and dotted lines indicate the boundary of Voronoi grids. In Voronoi grid v', there are 4 moving objects shown by four black triangles.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "34",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig. 3 .Fig. 4 .34Fig. 3. Division of road network space by a Voronoi diagram.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "115",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "Algorithm 1 .Output: Voronoi diagram V 1 :Fig. 5 .115Fig. 5. Delaunay steps of generating a Delaunay triangulation network.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_7",
+            "figure_caption": "PAuthorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:43:32 UTC from IEEE Xplore. Restrictions apply.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_8",
+            "figure_caption": "Voronoi diagram-based LDP mechanism, a user has a real position l and n false positions { l l 1 ' '",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6",
+            "figure_type": "figure",
+            "figure_id": "fig_9",
+            "figure_caption": "Fig. 6 .6Fig. 6. The probability density functions.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "422",
+            "figure_type": "figure",
+            "figure_id": "fig_10",
+            "figure_caption": ") 4 . 2 . 2422Loss of service quality a) In Voronoi diagram-based LDP mechanism, we consider an user's Qloss as the average of the sum of n error distances d(l,l ' ) between this user's n false locations and its real location. Suppose there are p Voronoi grids and N users, and each Voronoi grid has m users. The Qloss of N users is shown by",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "7",
+            "figure_type": "figure",
+            "figure_id": "fig_11",
+            "figure_caption": "Fig. 7 .7Fig. 7. The comparison results of Qloss under different \u03b5.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "89",
+            "figure_type": "figure",
+            "figure_id": "fig_12",
+            "figure_caption": "Fig. 8 .Fig. 9 .89Fig. 8. The comparison results of Qloss under different privacy levels.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "Summary of notations. Cloud server sendsG i ={gid, N, v i , <a 1 b 1 , a 2 b 2 ,..., a m b m >} to u i",
+            "figure_data": "SymbolDefinitiongidGroup numberNTotal number of mobile users within a groupv iVoronoi grid number for a group of users<a 1 b 1 ,a 2 b 2 ,...,a m b m >Boundary information for a Voronoi gridG iPacket dataloc iUser's real locationloc i \u2032User's false locations within v iG(V,E)Road network diagram\u03b5Local differential privacy parameterVVoronoi diagramP={p 1 , p 2 ,..., p n }Edge node datasetU={u 1 , u 2 ,..., u m }User datasetAlgorithm 2. Edge computing location data collection algorithm satisfies \u03b5-LDP.Input: G(V,E), \u03b5, V, P, UOutput: Location collection L={loc, loc'}1: Divide the road network map G(V, E) with V2: for each user u i in U3:4:for each edge node p j in P5:u i informs its nearest p j of the v i6:p j divides u i in the same v i into a group G i7:u i loads its own real location data loc i8:u i generates false locations data loc i ' in v i9:L\u2190{loc i , loc i ' }10:u i sends loc i or one of loc i ' to its nearest p j with probability11:P(loc i |loc i ' )12:end for13: end for"
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "Pr[ ( ) ] Pr[ ( ) ] K D S e K D S \u2208 \u2208 \u2264 \u00d7 \u03b5 \u2032 . (1)",
+            "formula_coordinates": [
+                6.0,
+                58.74,
+                621.21,
+                179.37,
+                12.92
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "Pr[ ( ) ] Pr[ ( ) M t t e M t t = \u2264 \u00d7 = * * \u03b5 \u2032 ] (2)",
+            "formula_coordinates": [
+                7.0,
+                177.56,
+                126.65,
+                173.94,
+                12.92
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "P loc loc ( | ) i i \u2032 = \uf8f1 \uf8f4 \uf8f2 \uf8f4 \uf8f3 n e n e -+ -+ 1 e 1 1 \u03b5 \u03b5 \u03b5 , , loc loc loc loc i i i i = \u2260 \u2032 \u2032 . (4",
+            "formula_coordinates": [
+                9.0,
+                383.75,
+                399.02,
+                173.63,
+                48.3
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": ")",
+            "formula_coordinates": [
+                9.0,
+                557.37,
+                417.26,
+                3.89,
+                9.69
+            ]
+        },
+        {
+            "formula_id": "formula_4",
+            "formula_text": "G gid N v a b a b a b i i m m = { , , , , ,..., 1 1 2 2",
+            "formula_coordinates": [
+                9.0,
+                374.17,
+                580.95,
+                136.52,
+                13.71
+            ]
+        },
+        {
+            "formula_id": "formula_5",
+            "formula_text": "LP loc N loc LP loc N loc i i i i \u03b5 \u03b5 = = \u2032 \u2264 e \u03b5(5)",
+            "formula_coordinates": [
+                10.0,
+                95.14,
+                181.71,
+                142.97,
+                28.74
+            ]
+        },
+        {
+            "formula_id": "formula_6",
+            "formula_text": "Pr[ ( , , ) ] , LP loc N loc i i \u03b5 = = m e -+ e 1 \u03b5 \u03b5(6)",
+            "formula_coordinates": [
+                10.0,
+                56.02,
+                349.37,
+                182.09,
+                22.08
+            ]
+        },
+        {
+            "formula_id": "formula_7",
+            "formula_text": "i i \u03b5 = = \u2032 m e -+1 1 \u03b5 (7)",
+            "formula_coordinates": [
+                10.0,
+                104.81,
+                411.73,
+                133.3,
+                21.83
+            ]
+        },
+        {
+            "formula_id": "formula_8",
+            "formula_text": "LP loc N loc LP loc N loc i i i i \u03b5 \u03b5 = = \u2032 = e \u03b5(8)",
+            "formula_coordinates": [
+                10.0,
+                95.05,
+                458.71,
+                143.05,
+                28.74
+            ]
+        },
+        {
+            "formula_id": "formula_9",
+            "formula_text": "h LDP = n 1 +1 . (10",
+            "formula_coordinates": [
+                11.0,
+                438.23,
+                196.89,
+                118.87,
+                21.83
+            ]
+        },
+        {
+            "formula_id": "formula_10",
+            "formula_text": ")",
+            "formula_coordinates": [
+                11.0,
+                557.1,
+                201.75,
+                4.17,
+                9.69
+            ]
+        },
+        {
+            "formula_id": "formula_11",
+            "formula_text": "\u2206 = - f f D f D max ( ) ( ) D D 1 2 , 1 2 . (11",
+            "formula_coordinates": [
+                11.0,
+                377.48,
+                331.76,
+                179.71,
+                17.88
+            ]
+        },
+        {
+            "formula_id": "formula_12",
+            "formula_text": ")",
+            "formula_coordinates": [
+                11.0,
+                557.19,
+                333.31,
+                4.07,
+                9.69
+            ]
+        },
+        {
+            "formula_id": "formula_13",
+            "formula_text": "h f CDP = -\u2206 1 . (12",
+            "formula_coordinates": [
+                11.0,
+                434.73,
+                431.43,
+                122.36,
+                12.8
+            ]
+        },
+        {
+            "formula_id": "formula_14",
+            "formula_text": ")",
+            "formula_coordinates": [
+                11.0,
+                557.09,
+                432.97,
+                4.17,
+                9.69
+            ]
+        },
+        {
+            "formula_id": "formula_15",
+            "formula_text": "\u03c3 2 = \uf8eb \uf8f6 \uf8ec \uf8f7 \uf8ed \uf8f8 \u2206 \u03b5 f 2 . (13",
+            "formula_coordinates": [
+                11.0,
+                435.76,
+                658.71,
+                121.33,
+                28.75
+            ]
+        },
+        {
+            "formula_id": "formula_16",
+            "formula_text": ")",
+            "formula_coordinates": [
+                11.0,
+                557.09,
+                669.13,
+                4.17,
+                9.69
+            ]
+        },
+        {
+            "formula_id": "formula_17",
+            "formula_text": "Gau( ) exp( ) \u03c3 = - 2 1 \u03c0\u03c3 2 x \u03c3 2 2 . (14",
+            "formula_coordinates": [
+                11.0,
+                396.11,
+                717.72,
+                160.99,
+                21.74
+            ]
+        },
+        {
+            "formula_id": "formula_18",
+            "formula_text": ")",
+            "formula_coordinates": [
+                11.0,
+                557.1,
+                721.46,
+                4.17,
+                9.69
+            ]
+        },
+        {
+            "formula_id": "formula_19",
+            "formula_text": "i = \u2211 i N =1 ( , ) \u2032(20)",
+            "formula_coordinates": [
+                12.0,
+                342.19,
+                126.18,
+                105.69,
+                16.84
+            ]
+        },
+        {
+            "formula_id": "formula_20",
+            "formula_text": "h f Gau = -\u2206 1 .(15)",
+            "formula_coordinates": [
+                12.0,
+                112.43,
+                140.26,
+                125.68,
+                12.8
+            ]
+        },
+        {
+            "formula_id": "formula_21",
+            "formula_text": "h kanony = 1 k . (16",
+            "formula_coordinates": [
+                12.0,
+                116.81,
+                334.21,
+                117.13,
+                25.61
+            ]
+        },
+        {
+            "formula_id": "formula_22",
+            "formula_text": "Qloss LDP = \u2211 \u2211 z j p m = = 1 1 \u2211 i n =1 d l l n i i i ( , ) \u2032 .(17)",
+            "formula_coordinates": [
+                12.0,
+                63.84,
+                493.25,
+                174.27,
+                30.14
+            ]
+        },
+        {
+            "formula_id": "formula_23",
+            "formula_text": "= \u2211 i N =1 ( , ) \u2032(18)",
+            "formula_coordinates": [
+                12.0,
+                130.46,
+                608.3,
+                107.65,
+                16.84
+            ]
+        },
+        {
+            "formula_id": "formula_24",
+            "formula_text": "= \u2211 i N =1 ( , ) \u2032(19)",
+            "formula_coordinates": [
+                12.0,
+                130.86,
+                681.08,
+                107.25,
+                16.84
+            ]
+        }
+    ],
+    "doi": ""
+}

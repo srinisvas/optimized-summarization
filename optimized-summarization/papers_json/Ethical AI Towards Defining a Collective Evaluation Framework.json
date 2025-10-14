@@ -1,0 +1,495 @@
+{
+    "title": "Ethical AI: Towards Defining a Collective Evaluation Framework",
+    "authors": "Aasish Kumar",
+    "pub_date": "",
+    "abstract": "Artificial Intelligence (AI) is transforming sectors such as healthcare, finance, and autonomous systems, offering powerful tools for innovation. Yet its rapid integration raises urgent ethical concerns related to data ownership, privacy, and systemic bias. Issues like opaque decision-making, misleading outputs, and unfair treatment in high-stakes domains underscore the need for transparent and accountable AI systems. This article addresses these challenges by proposing a modular ethical assessment framework built on ontological blocks of meaning-discrete, interpretable units that encode ethical principles such as fairness, accountability, and ownership. By integrating these blocks with FAIR (Findable, Accessible, Interoperable, Reusable) principles, the framework supports scalable, transparent, and legally aligned ethical evaluations, including compliance with the EU AI Act. Using a real-world use case in AI-powered investor profiling, the paper demonstrates how the framework enables dynamic, behavior-informed risk classification. The findings suggest that ontological blocks offer a promising path toward explainable and auditable AI ethics, though challenges remain in automation and probabilistic reasoning.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Artificial Intelligence (AI) has emerged as a transformative technology, revolutionizing fields such as healthcare, finance, and autonomous systems. While AI offers significant benefits, including enhanced productivity and innovative solutions to global challenges, its rapid evolution also introduces profound ethical challenges that require immediate and thorough attention.\nOne of the foundational challenges lies in the data used to train AI systems. AI relies heavily on vast datasets sourced from the internet, private organizations, and other repositories. However, issues related to data ownership, consent, and privacy remain unresolved. Questions such as \"Who owns the data?\" and \"Was it ethically obtained?\" highlight potential risks of misuse and exploitation, raising concerns about intellectual property rights and individual privacy.\nAnother pressing issue is trustworthiness. AI systems occasionally produce misleading or incorrect outputs, a phenomenon known as \"hallucinations.\" Moreover, ensuring the safety of AI systems and maintaining detailed records of their decision-making processes are critical for fostering trust. Without robust mechanisms for safety and accountability, reliance on AI systems could lead to unforeseen risks, particularly in high-stakes domains such as healthcare, finance, and law enforcement.\nHowever, the most profound challenges arise from the ethical implications of AI's outcomes. AI systems, often operating as \"black boxes\", generate decisions and recommendations with far-reaching consequences. The absence of embedded ethical considerations can result in biased, unfair, or even harmful outcomes. For example:\n\u2022 Biased algorithms in hiring or lending processes can perpetuate societal inequalities. \u2022 Unethical use of AI in surveillance can infringe on civil liberties. \u2022 Lack of explainability can erode trust, particularly in lifecritical applications. Addressing these challenges requires a collaborative effort among technologists, policymakers, ethicists, and the public. Establishing robust frameworks for ethical AI development and deployment is imperative to ensure AI aligns with human values and serves humanity equitably and responsibly.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Key Ethical Challenges in AI",
+            "text": "\u2022 Data-Related Issues: These include questions around data accuracy, inclusion of purposefully misleading data or even data poisoning \u2022 Trustworthiness: AI systems must be reliable, safe, and explainable to avoid risks like hallucinations and over reliance on black-box outcomes. \u2022 Ethical Implications of Outcomes: The potential for biased or harmful decisions underscores the need to embed ethical principles directly into AI systems. As AI continues to integrate into society, the task of addressing these ethical dilemmas grows increasingly complex. While the challenges are significant, they also present an opportunity to build a future where AI aligns with the highest ethical standards. By fostering collaboration and establishing comprehensive frameworks, we can ensure that AI development progresses in a way that prioritizes transparency, fairness, and accountability.\nThe article is organized in five sections: Introduction (Section I), background (Section II), literature review (Section III), methodology and discussion (Section IV), then includes conclusion and recommendations (Section V).",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. BACKGROUND",
+            "text": "Ethical AI refers to the development and deployment of artificial intelligence systems that emphasize fairness, transparency, accountability, and respect for fundamental rights [1]. AI ethics emphasises the impact of AI on individuals, groups and wider society. The goal is to promote safe and responsible AI use, to mitigate AI's novel risks and prevent harm. Much of the work in this area centres around four main verticals: Frameworks such as the six core principles of the WHO [2], the EU AI Act [3] highlight the importance of protecting autonomy, promoting equity, and fostering responsibility. Despite these efforts, ethical frameworks often lack technical grounding and do not address the dynamic nature of AI systems [1], [4]- [8].\nFor example, Reinforcement-Learning (RL), particularly deep reinforcement learning, operates as a closed-box system, posing challenges in explainability [9]- [11]. Human-in-theloop (HITL) AI approaches [12] provide a potential solution by integrating human oversight at critical stages, but their implementation in Self Reinforcement Learning (SLR) remains limited.\nRecent studies highlight several state-of-the-art advances in ethical AI and SRL. Mehrabi et al. [13] explore bias mitigation techniques such as data cleaning, model adjustments, and output tuning. [14], [15] discusses interpretability approaches such as SHAP and LIME, which enhance explainability in complex models. Human-in-the-loop systems [12] integrate ethical oversight effectively, while the EU AI Act [3] offers risk-based regulations tailored for high-stakes applications.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b0",
+                "b3",
+                "b7",
+                "b8",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b11",
+                "b2"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Objectives",
+            "text": "This article addresses key challenges in ethical AI and aims to:\n1) Propose a unified system for monitoring AI outcomes in line with the EU AI Act and emerging global regulations. 2) Evaluate the feasibility of using ontological blocks of meaning for ethical assessment. 3) Explore the integration of FAIR (Findable, Accessible, Interoperable, Reusable) principles into these ontological blocks. Together, these objectives support the development of ethical AI frameworks that promote transparency, accountability, and fairness [16].",
+            "publication_ref": [
+                "b15"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. LITERATURE REVIEW",
+            "text": "The rising importance of ethical Artificial Intelligence (AI) has driven researchers and institutions to develop frameworks, methods, and applications that promote transparency, accountability, and fairness. This review is organized into subsections covering finance, healthcare, autonomous vehicles, ontological and FAIR approaches, and global initiatives.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Ethical AI in Finance",
+            "text": "AI-driven credit scoring in finance raises ethical concerns about bias and unequal treatment.\n\u2022 Hassani [17] shows how societal biases in training data reinforce discrimination in credit assessments, disproportionately affecting marginalized groups.\n\u2022 Packin [18] warns that lack of comprehensive data on disabled individuals can lead to exclusionary outcomes in AI-based scoring. Identified Gap: Independent tools like ontological blocks are proposed to detect and mitigate embedded bias in financial AI systems.",
+            "publication_ref": [
+                "b16",
+                "b17"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Ethical AI in Healthcare",
+            "text": "Healthcare-particularly oncology-illustrates the need for ethical AI frameworks to safeguard privacy, transparency, and fairness [19].\n\u2022 Ontological blocks have been applied to sensitive patient data under FAIR principles, aiding in personalized treatment planning [20], [21]. \u2022 Monteith et al. [22] caution against misinformation in AI mental health tools, stressing the need for explainability and oversight. \u2022 Antoniou et al. [23] highlight the need for explainable AI to manage complex diagnoses involving comorbidities. Identified Gap: Real-time, scalable use of explainable AI methods (e.g., SHAP, LIME) remains a key challenge in highstakes clinical settings [9].",
+            "publication_ref": [
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b22",
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Ethical AI in Autonomous Vehicles",
+            "text": "Autonomous vehicles demand AI systems that prioritize safety, accountability, and ethical reasoning.\n\u2022 Lin [24] and Jenkins et. al. [25] examines scenarios like the trolley problem, calling for transparent ethical decision-making in critical moments. \u2022 Goodall [26] advocates for programming rules that minimize harm during unavoidable accidents. \u2022 Nyholm and Smids [27] argue for clear accountability frameworks among manufacturers, users, and regulators. Identified Gap: Ensuring real-time ethical decisions and system adaptability remains a core technical and ethical challenge.",
+            "publication_ref": [
+                "b23",
+                "b24",
+                "b25",
+                "b26"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Ontological and FAIR Approaches for Ethical AI",
+            "text": "Ontological models and FAIR principles are emerging as foundational tools for ethical AI design.\n\u2022 Ontological blocks, drawing from Semantic Web standards [28], [29], provide scalable representations of principles like non-maleficence and equity [2]. \u2022 FAIR principles [7]-Findable, Accessible, Interoperable, and Reusable-support the openness and standardization of ethical modules. \u2022 Guizzardi et al. [30] emphasize the need for ontologies that model user-centric concerns like privacy, fairness, and risk.\nChallenges: Implementing FAIR-aligned ontological blocks is constrained by the manual effort needed to build and maintain interoperable frameworks.",
+            "publication_ref": [
+                "b27",
+                "b28",
+                "b1",
+                "b6",
+                "b29"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Global and Collaborative Efforts",
+            "text": "International collaborations aim to mitigate societal-scale risks and build governance frameworks for ethical AI [8], [31], [32].\n\u2022 The EU champions \"ethics-by-design,\" embedding ethics at the development stage [7]. \u2022 An international consortium proposes benchmarking societal risks, promoting transparency and cooperative oversight [33].\n\u2022 Responsible Research and Innovation (RRI) offers a governance model that aligns AI with societal values [34]- [38]. Future Direction: These efforts underscore the importance of global standards and shared accountability mechanisms for ethical AI deployment.",
+            "publication_ref": [
+                "b7",
+                "b30",
+                "b31",
+                "b6",
+                "b32",
+                "b33",
+                "b37"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. METHODOLOGY AND DISCUSSION",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Methodology",
+            "text": "This article uses descriptive research and qualitative observation to explore ethical AI pathways. Key variables include: Ethical outcomes -Benchmarks set by experts in ethics, AI, and policy; Verification -Methods to automate assessments against benchmarks; Scalability -Applicability across varied AI systems and domains.\nRather than conducting empirical simulations, the study synthesizes literature, expert insights, and theoretical models to propose actionable frameworks.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Flexibility Requirements for an Ethical AI",
+            "text": "Integrating ethical AI into legally binding decisions requires acknowledging that legal standards vary significantly by context. Ethical and legal thresholds are not fixed; they shift based on specific circumstances and competing interests. Therefore, ethical AI systems must be adaptable, aligning with legal norms while upholding fairness and accountability.\nFor example, in serious criminal investigations like murder, authorities may justifiably relax privacy protections to prioritize truth-seeking over individual rights. In contrast, financial transactions-such as a custodian bank managing client funds-demand stricter ethical and legal adherence, emphasizing fiduciary duty over operational flexibility. These scenarios highlight the need for dynamic ethical standards that adjust to context.\nThis variability challenges the one-size-fits-all ethics frameworks found in much of the AI literature, which often overlook the contextual nature of legal and ethical reasoning. An AI system cannot apply identical principles to a police investigation and a banking transaction, given their differing priorities and risks.\nWe propose a flexible, modular framework based on ontological blocks of meaning-discrete ethical principles that can be layered or combined. This allows AI systems to dynamically tailor their ethical reasoning to specific legal domains. For instance, an AI analyzing financial data might prioritize fiduciary responsibility, while one used in criminal justice may focus on due process. Such a system ensures ethical adaptability, legal alignment, and transparent oversight.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Ontological Blocks of Meaning",
+            "text": "Ontology-the philosophical study of definitions-offers a foundation for aligning human ethical concepts with AI systems. Just as the concept of light evolved from Newtonian particles to quantum duality, terms like responsibility or ownership must be redefined for AI interpretation while preserving their ethical core.\nIn AI ethics, this means translating abstract ethical terms-right, wrong, ownership, responsibility-into constructs that AI can process. These must be both philosophically robust and operationally viable. Ontological blocks are modular, structured representations of ethical principles that can be integrated into AI operations. Creating them involves: Translating ethical concepts into machine-readable constructs; Embedding them into modular, systematic representations; Preserving ethical meaning while ensuring scalability and precision.\nThis ensures AI systems align with human values while providing a functional, auditable ethical framework.\nPractically, creating ontological blocks involves developing a structured system to categorize ethical principles, values, and guidelines. Drawing from ontological practices in fields like oncology-e.g., the Cancer Care Treatment Outcome Ontology [21] and the NCI Thesaurus [20], [39]-this process starts by defining core ethical dimensions such as fairness, accountability, and transparency, and mapping them to relevant AI domains.\nCollaboration with domain experts ensures term accuracy and contextual relevance. Ethical AI frameworks such as those by Prem [14] support alignment with current standards. Recent models like the Ontology for Ethical AI Principles (AIPO) use vocabularies such as Dublin Core, SKOS, FOAF, and DCAT2 to generate dynamic knowledge graphs, enabling semantic querying and systematic analysis [40]. These approaches support transparency, consistency, and accountability in ethical AI development.",
+            "publication_ref": [
+                "b20",
+                "b19",
+                "b38",
+                "b13",
+                "b39"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Designing Ontological Blocks for Algorithmic Use",
+            "text": "Ontological blocks translate ethical concepts into structured, quantifiable forms. For instance, defining \"stealing is bad\" involves breaking it down into core concepts like property and ownership.\nExample: A dataset element (e.g., a car) represents property, while ownership (e.g., \"Tom owns the car\") provides context. Generalization: Instead of rule-based examples, AI evaluates principles of ownership, avoiding reliance on predefined scenarios. Incomplete data: AI may infer missing elements through cross-referencing. If cross-references are weak, human oversight is required. Short format: The point of the ontological block is that it would refer a single concept (e.g. ownership), therefore more complex ethical questions would be described as a sum of multiple ontological blocks.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Common Structure of Ontological Blocks of Meaning",
+            "text": "A major challenge in ethical AI is ensuring ontological blocks follow a common structure to support uniform testing and consistent term relationships. The proposed structure is simple: a primary concept paired with a binary ethical qualifier (e.g., good or bad).\nFor example, in the block \"stealing is bad\", stealing is defined as the unauthorized transfer of ownership outside quantifiable pathways like trade, gift, bequest, or taxation. This format supports clear, consistent, and transparent ethical evaluations. Block variables are selected by designers-researchers, practitioners, or stakeholders-ensuring both expert insight and public auditability. For complex concepts (e.g., medical emergency), multiple simpler blocks can be combined. This modular structure supports consistency and scalability across domains.\nThese are the foundational principles that could guide visualizing ethical AI ontological block. They include:\nFairness: Prevents bias and ensures equitable treatment. Accountability: Assigns responsibility for AI outcomes. Transparency: Promotes understandable, open AI processes AI Application Areas: Domains where ethical principles are applied. Ethical Frameworks: Structured sets of principles guiding ethical AI development.\nTogether, these components provide a robust structure for designing ethical AI systems that are principled, transparent, and aligned with current standards.\nF. Pros and Cons of the Proposed Framework 1) Advantages: Independence from training data, enabling robust ethical evaluations. Flexibility to combine blocks across fields, such as medicine or law. Auditability of standardized blocks, improving transparency and accountability.\n2) Drawbacks: Labor-intensive creation of noncontradictory, quantifiable blocks. Reliance on large language models (LLMs) or external tools to infer missing relationships, introducing potential biases. Additional processing power required for integration and maintenance.\nDespite challenges, the framework's flexibility, independence, and auditability make it a promising foundation for building ethically aligned AI systems.\nG. A Use-Case: AI-Powered CRM and Ontological Profiling for Investor Protection Overview: Brokerage firms are increasingly using AIpowered voice assistants to enhance investor classification and risk profiling. Moving beyond static binary systems, these tools enable more precise, ethical, and adaptive assessments of investor risk tolerance, protecting retail clients from unsuitable high-risk products [41].\n1) The Challenge: Regulations require firms to distinguish between professional and retail investors to prevent the latter from accessing high-risk instruments like synthetic options. However, current assessments often overlook real-world risk tolerance, especially under stress, leading to potential harm and regulatory noncompliance.\n2) The Innovation: This use case introduces ontological blocks of meaning for product classification. A financial product might trigger a \"Riskier\" block based on:\n-Financial risk -Potential economic loss.\n-Psychological risk -Emotional reaction to financial stress. This enables real-time, context-aware, and ethically grounded risk assessment.\n3) How It Works: AI voice assistants engage clients with adaptive questions (e.g., \"How did you react to your last investment loss?\"). A response like \"Not well\" may indicate emotional sensitivity. Using NLP and probabilistic modeling, the system estimates a behavioral risk profile.\nIf there's a high probability (e.g., 60%) of emotional vulnerability, a corresponding ontological block is triggered, ethically restricting access to high-risk products. This creates a personalized, behavior-informed investor classification framework.",
+            "publication_ref": [
+                "b40"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "H. Discussion",
+            "text": "The evaluation shows that combining ontological blocks with FAIR principles offers a strong foundation for ethical AI monitoring. Key insights include:\n\u2022 The unified monitoring system effectively identifies ethical risks and supports compliance (e.g., EU AI Act).\n\u2022 Ontological blocks provide structured, modular, and interpretable ethical encoding. \u2022 FAIR principles enhance discoverability, usability, and scalability. Remaining challenges include the manual effort required to build blocks and the reliance on probabilistic reasoning with incomplete data. Future work should focus on automating block creation and improving data integration.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION AND RECOMMENDATION",
+            "text": "This framework introduces ontological blocks as standardized, expert-designed tools for ethical AI assessment. These modular units enable transparent evaluations across diverse ethical contexts.\nKey strengths include independence from training data and flexibility across domains. However, challenges remain in automating block creation and managing dependencies on probabilistic models.\nBy integrating with FAIR principles, the framework supports ethical, transparent, and accountable AI systems-laying the groundwork for responsible AI development across sectors.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "The global landscape of ai ethics guidelines",
+            "journal": "Nature Machine Intelligence",
+            "year": "2019",
+            "authors": "A Jobin; M Ienca; E Vayena"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Ethical framework for artificial intelligence in healthcare research: A path to integrity",
+            "journal": "World Journal of Methodology",
+            "year": "",
+            "authors": "A A Abujaber; A J Nashwan"
+        },
+        {
+            "ref_id": "b2",
+            "title": "laying down harmonised rules on artificial intelligence and amending regulations (EC) no 300",
+            "journal": "",
+            "year": "2008",
+            "authors": ""
+        },
+        {
+            "ref_id": "b3",
+            "title": "Ethical ai for the governance of the society: Challenges and opportunities",
+            "journal": "",
+            "year": "2019",
+            "authors": "N Mika; G Nadezhda; L Jaana; K Raija"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Understanding artificial intelligence ethics and safety: A guide for the responsible design and implementation of ai systems in the public sector",
+            "journal": "",
+            "year": "2019",
+            "authors": "D Leslie"
+        },
+        {
+            "ref_id": "b5",
+            "title": "The ethics of artificial intelligence",
+            "journal": "",
+            "year": "2018",
+            "authors": "N Bostrom; E Yudkowsky"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Ethics by design for artificial intelligence",
+            "journal": "AI and Ethics",
+            "year": "2024",
+            "authors": "P Brey; B Dainow"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Ethics of artificial intelligence demarcations",
+            "journal": "",
+            "year": "2019",
+            "authors": "A B Hanssen; S Nichele"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Explainable AI: A review of machine learning interpretability methods",
+            "journal": "",
+            "year": "",
+            "authors": "P Linardatos; V Papastefanopoulos; S Kotsiantis"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Revisiting sparse rewards for goal-reaching reinforcement learning",
+            "journal": "",
+            "year": "2024",
+            "authors": "G Vasan; Y Wang; F Shahriar; J Bergstra; M Jagersand; A R Mahmood"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Comprehensive overview of reward engineering and shaping in advancing reinforcement learning applications",
+            "journal": "IEEE Access",
+            "year": "2024",
+            "authors": "S Ibrahim; M Mostafa; A Jnadi; H Salloum; P Osinenko"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Human-in-the-loop machine learning: a state of the art",
+            "journal": "Artificial Intelligence Review",
+            "year": "2023",
+            "authors": "E Mosqueira-Rey; E Hernandez-Pereira; D Alonso-Rios; J Bobes-Bascaran; A Fernandez-Leal"
+        },
+        {
+            "ref_id": "b12",
+            "title": "A survey on bias and fairness in machine learning",
+            "journal": "ACM Computing Surveys (CSUR)",
+            "year": "2021",
+            "authors": "N Mehrabi; F Morstatter; N Saxena; K Lerman; A Galstyan"
+        },
+        {
+            "ref_id": "b13",
+            "title": "From ethical ai frameworks to tools: a review of approaches",
+            "journal": "AI and Ethics",
+            "year": "2023",
+            "authors": "E Prem"
+        },
+        {
+            "ref_id": "b14",
+            "title": "A perspective on explainable artificial intelligence methods: Shap and lime",
+            "journal": "",
+            "year": "",
+            "authors": "A M Salih; Z Raisi-Estabragh; I Boscolo; P Galazzo; S E Radeva; K Petersen; G Lekadir;  Menegaz"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Building ethically bounded ai",
+            "journal": "",
+            "year": "2018",
+            "authors": "F Rossi; N Mattei"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Societal bias reinforcement through machine learning: a credit scoring perspective",
+            "journal": "AI and Ethics",
+            "year": "2021",
+            "authors": "B K Hassani"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Disability discrimination using ai systems, social media and digital platforms: Can we disable digital bias?",
+            "journal": "Journal of International and Comparative Law",
+            "year": "2021",
+            "authors": "N G Packin"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Artificial intelligence (ai) in mental health diagnosis and treatment",
+            "journal": "Journal of Knowledge Learning and Science Technology",
+            "year": "2023",
+            "authors": "D Talati"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Oncology ontology in the nci thesaurus",
+            "journal": "Springer",
+            "year": "2005",
+            "authors": "A Kumar; B Smith"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Cancer care treatment outcome ontology: a novel computable ontology for profiling treatment outcomes in patients with solid tumors",
+            "journal": "JCO clinical cancer informatics",
+            "year": "2018",
+            "authors": "F P Lin; T Groza; S Kocbek; E Antezana; R J Epstein"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Artificial intelligence and increasing misinformation",
+            "journal": "The British Journal of Psychiatry",
+            "year": "2024",
+            "authors": "S Monteith; T Glenn; J R Geddes; P C Whybrow; E Achtyes; M Bauer"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Mental health diagnosis: a case for explainable artificial intelligence",
+            "journal": "International Journal on Artificial Intelligence Tools",
+            "year": "2022",
+            "authors": "G Antoniou; E Papadakis; G Baryannis"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Autonomous driving: Technical, legal and social aspects",
+            "journal": "",
+            "year": "2016",
+            "authors": "P Lin"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Autonomous vehicle ethics: the trolley problem and beyond",
+            "journal": "Oxford University Press",
+            "year": "2022",
+            "authors": "R Jenkins; D Cern\u1ef3; T Hr\u00edbek"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Machine ethics and automated vehicles",
+            "journal": "",
+            "year": "2014",
+            "authors": "N J Goodall"
+        },
+        {
+            "ref_id": "b26",
+            "title": "The ethics of accident-algorithms for self-driving cars: An applied trolley problem?",
+            "journal": "Ethical theory and moral practice",
+            "year": "2016",
+            "authors": "S Nyholm; J Smids"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Owl web ontology language overview",
+            "journal": "",
+            "year": "2004",
+            "authors": "D L Mcguinness; F Van Harmelen"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Web ontology language: Owl",
+            "journal": "",
+            "year": "2009",
+            "authors": "G Antoniou; F V Harmelen"
+        },
+        {
+            "ref_id": "b29",
+            "title": "An ontology-based approach to engineering ethicality requirements",
+            "journal": "Software and Systems Modeling",
+            "year": "2023-07",
+            "authors": "R Guizzardi; G Amaral; G Guizzardi; J Mylopoulos"
+        },
+        {
+            "ref_id": "b30",
+            "title": "Contextualizing artificially intelligent morality: A meta-ethnography of theoretical, political and applied ethics",
+            "journal": "Journal of Artificial Intelligence Research",
+            "year": "2022",
+            "authors": "J S Roberts; L N Montoya"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Towards a framework for understanding societal and ethical implications of artificial intelligence",
+            "journal": "CoRR",
+            "year": "2020",
+            "authors": "R Benjamins; I Salazar"
+        },
+        {
+            "ref_id": "b32",
+            "title": "An international consortium for evaluations of societal-scale risks from advanced ai",
+            "journal": "",
+            "year": "2023-11",
+            "authors": "R Gruetzemacher; A Chan; K Frazier; C Manning; S Los; J Fox; J Hern\u00e1ndez-Orallo; J Burden; M Franklin; C N Ghuidhir; M Bailey; D Eth; T Pilditch; K Kilian"
+        },
+        {
+            "ref_id": "b33",
+            "title": "The role of rri in the ethical governance of AI | RRI-leaders",
+            "journal": "",
+            "year": "2023",
+            "authors": "R Leaders"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Exploring the dimensions of responsible research systems and cultures: a scoping review",
+            "journal": "Royal Society Open Science",
+            "year": "2024",
+            "authors": "S M Field; J Thompson; S De Rijcke; B Penders; M R Munaf\u00f2"
+        },
+        {
+            "ref_id": "b35",
+            "title": "Frames, interests, and incentives-a typology of institutionalizing rri in the business sector derived from ten pioneering projects",
+            "journal": "Journal of Responsible Innovation",
+            "year": "2023",
+            "authors": "S Ivanova; C Reichetzer; A Martinuzzi; F Findler; K Miko-Schefzig"
+        },
+        {
+            "ref_id": "b36",
+            "title": "Translations of Responsibility: Innovation Governance in Three European Regions. Taylor & Francis",
+            "journal": "",
+            "year": "2024",
+            "authors": "T V\u00f6lker; R Slaattelid; R Strand"
+        },
+        {
+            "ref_id": "b37",
+            "title": "Introducing responsible innovation in health: a policy-oriented framework",
+            "journal": "",
+            "year": "2018",
+            "authors": "H Silva; P Lehoux; F A Miller; J.-L Denis"
+        },
+        {
+            "ref_id": "b38",
+            "title": "A terminological and ontological analysis of the nci thesaurus",
+            "journal": "Methods of information in medicine",
+            "year": "2005",
+            "authors": "W Ceusters; B Smith; L Goldberg"
+        },
+        {
+            "ref_id": "b39",
+            "title": "An ontology for ethical ai principles",
+            "journal": "AI and Society",
+            "year": "2021",
+            "authors": "J Harrison; R Smith; L Thompson"
+        },
+        {
+            "ref_id": "b40",
+            "title": "Ai and data-driven insights: Transforming customer relationship management (crm) in financial services",
+            "journal": "Gulf Journal of Advance Business Research",
+            "year": "2025",
+            "authors": "N S Egbuhuzor; A J Ajayi; E E Akhigbe; O O Agbede; C P ; -M Ewim; D I Ajiga"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. An example of ontological block for ethical AI in RDF (Resource Description Framework) form",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 3 .3Fig. 3. Sketch: (b) Representation of ontological blocks for responsible AI. Each node represents a principle, and the relationships define their role in the AI system.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/COMPSAC65507.2025.00344"
+}

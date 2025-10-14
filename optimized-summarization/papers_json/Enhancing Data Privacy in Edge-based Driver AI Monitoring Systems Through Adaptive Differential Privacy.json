@@ -1,0 +1,376 @@
+{
+    "title": "Enhancing Data Privacy in Edge-based Driver AI Monitoring Systems Through Adaptive Differential Privacy",
+    "authors": "Paritosh Kumar; Sudhakar Pandey; Parth Pandey",
+    "pub_date": "",
+    "abstract": "Edge-based computing has appeared as a powerful paradigm to minimize latency and dependency on network delivery of data, with many intelligent systems now allowing for data to be processed locally, thus providing responses more quickly to the user. For instance, in driver monitoring systems (DMS), the privacy of sensitive driver data is handled in many edge-based scenarios which raises privacy and security concerns due to these non-traditional decomposition. Implicitly, current privacy-preserving techniques: datadisaggregation, anonymization, homomorphic encryption, etc. can get it wrong in certain analyses -such as driving behaviour analyses where inference is real-time. The research responds to this problem of data privacy without compromising on analysis accuracy in edge-based DMS. Hence, it examined whether it could introduce differential privacy using the Laplace and Gaussian noise methods which would help to preserve personal information but allow the important identification of driver behaviour, e.g. fatigue, distraction, unsafe actions, etc. We propose a method of differential privacy which is simply an adaptive differential privacy method that provides dynamic noise based on the context and sensitive environment of one's data. The results are novel, and provided a remarkably 28.7 % reduction in privacy leakage, +1.7% in utility (accuracy) and 10-20 % shorter latencies than existing differential privacy methods. Overall, this system premise presents a very balanced approach between privacy/accuracy/timeliness that follows to within the range of privacy-aware, real-time behavioural analytics with far better prospects in an edge-based computing space.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "The increase in the number of driver monitoring systems (DMS) has substantially improved road safety by detecting and tracking dangerous driving behaviours, driver fatigue, and driver inattention. DMS continuously samples and processes real-time sensor data from multiple sources, such as cameras, facial recognition software, and vehicle dynamics sensors [1]. This information is important for safe driving; however, it also raises significant privacy concerns, especially when local personal data is sent to centralized cloud servers for analysis. Edge computing has emerged as a viable way to address these issues by allowing for in-situ data processing that minimizes bandwidth requirements and reliance on centralized servers. Nonetheless, while dealing with sensitive data across many fragmented environments and lacking security measures, edge computing creates additional security vulnerabilities [2]. A key issue in intelligent transportation networks is ensuring privacy while maintaining validity and reliability of driver monitoring systems. Although there is a considerable amount of research on intelligent transportation systems, the most common privacy-preserving techniques such as encryption, anonymization, and access control processes cannot adequately insulate against advanced data reconstruction attacks [3]. Differential Privacy (DP) is a concept that adds statistical noise to datasets to provide strong mathematical guarantees for privacy. The DP concept adds randomness in the form of Laplace and Gaussian noise; thereby, protecting the data from each individual driver while making possible some aggregate-level analysis for operational and decisionmaking purposes [4].\nThe research investigates the role of differential privacy in edge-enabled driver monitoring systems, focusing on its ability to provide strong privacy protections while ensuring system integrity. Differential privacy can protect driver data from privacy concerns, keep compliance with data protection regulations, and foster the emergence of intelligent transportation systems.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. LITERATURE REVIEW",
+            "text": "The growing demand for privacy-preserving machine learning methods has compelled significant research into differential privacy (DP), federated learning (FL), and secure data processing methodologies. Xue et al. proposed an adaptive noise mechanism to upgrade differentially private federated learning, enhancing privacy and model performance [1]. Winograd-Cort et al. formulated a foundational work on adaptive differential privacy, which has been cited by many successive privacy-preserving methods [2]. Li et al. integrated differential privacy with deep learning to solve trajectory time prediction while keeping data publishing secure [3]. Feng and Ran investigated the mutualism between edge computing and machine learning in distributed energy management, which has a secondary positive effect on privacy due to decentralized processing of data [4]. Li et al. examined privacy-preserving auction mechanisms for IoT markets and the challenges involved in secure pervasive transactions [5]. Kim et al. surveyed privacy mechanisms for mobile crowd sensing, in which location privacy is still a major issue [6]. Wang et al. integrated privacy bounds under fdifferential privacy, providing stronger privacy guarantees for mixture mechanisms [7]. Yadav et al. designed a hybrid Laplace-Gaussian noise mechanism in edge-IoT settings to enhance privacy in data aggregation procedures [8]. In realworld applications, Pandey et al. applied convolutional neural networks to weed identification in crop care, respecting privacy in data exchange [9]. Vashistha et al. established strong ML architectures for detecting fraud, mirroring privacy-conscious data modeling strategies [10]. Almaiah et al. applied bibliometric examination to federated learning in the healthcare sector, highlighting privacy, security, and adversarial attacks [11]. At the theoretical level, Nissim and Wood explored the philosophical underpinnings of privacy per se [12], whereas Kokolakis emphasized the privacy paradox between user attitude and behavior [13]. Hassan [16]. Wang et al. carried the discussion through to emerging areas such as the metaverse, where privacy is also an increasingly difficulty [17]. Previous work such as Weber laid out core privacy and security issues for IoT, many of which continue to be pertinent today [18]. Regarding DP mechanisms, Phan et al. proposed the adaptive Laplace mechanism for deep learning [19], Dong et al. defined Gaussian differential privacy [20], and Muthukrishnan and Kalyani constructed hybrid noise mechanisms blending Laplace and Gaussian distributions [21]. Liu introduced a generalized Gaussian mechanism for general DP applications [22], and Zhu et al. stressed the applications of DP beyond privacy, including its importance in various AI subfields [23]. In addition, Dubey et al. investigated secrecy-enabled resource allocation in cloudassisted IoT networks [24], and Sun et al. used hybrid exponential-Laplace mechanisms for private kernel support vector machines [25]. Together, these studies highlight the various new advances in protecting data privacy while facilitating scalable, efficient, and ethical AI and ML.\narchitectures that leveraged differential privacy to protect driver behaviour assessment. Phan et al. ( 2021) also introduced a technique for adaptive noise injection that adjusted privacy budgets dynamically, thereby reducing its impact on model accuracy.\nA description of messages in comparison to existing studies with the proposed research is shown in Table I. ",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b15",
+                "b17",
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b22",
+                "b23",
+                "b24",
+                "b25"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_1"
+            ]
+        },
+        {
+            "heading": "Scalability [15]",
+            "text": "Limited by computational complexity Highly scalable with adaptive privacy control Although significant progress has been made in privacypreserving strategies, differential privacy methods, and secure offloading approaches, challenges still remain in achieving the desired balance between privacy, computational performance, and the correctness of the system. Current differential privacy methods offer tradeoffs between added noise and the utility of the analysis; thus; they need further refinement for real-time applications. In addition, secure offloading approaches, which require privacy-preserving cryptography methods, can add computational load that needs to be removed or at least ameliorated. This study aims to address these issues by providing a novel differential privacy framework for edgeenabled driver monitoring systems, that is, a framework that ensures strong privacy protection with high accuracy in analysis. The research highlights that even though there are diverse privacy-preserving methods, each has limits related to computing efficiency, scalability, and vulnerability to inference attacks. The combination of differential privacy with secure offloading using trusted execution environments and blockchain technology could present a possible solution to these issues. The proposed approach will attempt to strike a balance between privacy protection and system performance so that edge-based driver monitoring systems are secure and efficient. Future work should focus on enhancing privacy-preserving methods to minimize real time relevance and scalability while ensuring that analytics are accurate.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. PROPOSED WORK",
+            "text": "Implemented work is dedicated to the development of a privacy-preserving driver monitoring system using deep learning. Image data is processed to classify driver behaviour while preserving data privacy using differential privacy; to accomplish this, image data is first processed to enhance their quality and applicability to training. Then, the dataset, which has previously been pre-processed, will be split according to an 80% training and 20% testing split to ensure that evaluation of the model performs well. A convolutional neural network (CNN) is created to categorise driver states by determining eye states (open / closed) and mouth states (yawning / not yawning). CNNs have been proven to classify images due to their ability to assess the spatial hierarchies of the data. The CNN is trained to identify and use visual facial features for detecting tiredness and distractions of the driver [20]. The model training employs a hybrid differential privacy strategy that integrates both Laplace and Gaussian noise techniques to augment privacy. The Laplace mechanism incorporates calibrated noise according to the subsequent formula:\nLap(b) = (1 / 2b) * e^(-|x| / b) (1)\nThe scale parameter, b, determines the dispersion of the noise, x is the element to which noise is added, and e is Euler's number which allows the the type of probability distribution to decay logarithmically.\nN(0, \u03c3^2) (2) In the Gaussian mechanism equation, N(0, \u03c3\u00b2), 0 signifies the mean of the normal distribution, while \u03c3\u00b2 indicates the variance that determines the level of noise added for privacy protection. In the gaussian same the following:\n\ud835\udc43\ud835\udc5f[ \ud835\udc34(\ud835\udc37) \u2208 \ud835\udc46 ] \u2264 \ud835\udc52 \u2208 . \ud835\udc43\ud835\udc5f[\ud835\udc34(\ud835\udc37 \u2032 ) \u2208 \ud835\udc46](3)\nThis means that no matter if we add or remove one individual's data, the outcome will not change by more than a factor of e^\u2208 in probability. \u03b5: It is a measure of privacy guarantee but not guarantee of privacy. It sets a bound for how much the presence or absence of a single data point could have an effect on the outcome. D, D\u2032: Adjacent datasets that have exactly one element difference. A : Variably private algorithm. S : Any potential algorithmic result. Pr[A(D)\u2208S] : The probability that a differentially private algorithm A performed on a dataset D would result in an output that is contained in a set S [21]. An algorithm A is (\u03b5,\u03b4)-differentially private if and only if, for all datasets D and D\u2032 that do not differ by more than one element, and for all potential algorithm outputs S.",
+            "publication_ref": [
+                "b20",
+                "b21"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "\ud835\udc43\ud835\udc5f[ \ud835\udc34(\ud835\udc37) \u2208 \ud835\udc46 ] \u2264 \ud835\udc52 \u2208 . \ud835\udc43\ud835\udc5f[\ud835\udc34(\ud835\udc37 \u2032 ) \u2208 \ud835\udc46] + \ud835\udeff",
+            "text": "(4) \u03b4 : probability of failure of privacy guarantee The paper puts forward an Adaptive Differential Privacy (DP) Mechanism for driver monitoring systems (DMSs) within an edge-supported context. The primary goal is to protect driver identity and behaviour while maximally preserving the meaningfulness of the system's analytics. The proposed system utilizes a combination of Laplace or Gaussian noise mechanisms, allowing it to select one or the other depending on how sensitive the data is and what level of risk the situational context presents, representing a fundamental trade-off between privacy and performance for the system [22].\nSystem Overview: Driver data (video frames, biometric signals, vehicle telemetry) is captured by the DMS sensors. Each data type is categorized according to its sensitivity level (e.g. identity markers, location data, emotion indicators). An Adaptive DP engine selects the most appropriate privacy mechanism (Laplace or Gaussian) for every data stream. Each processed data type is analyzed on edge devices that infer risky behaviors, while still preserving privacy. Table III. Mathematical Formulation of Adaptive Differential Privacy [24]. The mechanism identified in Table III illustrates the mathematical design of an adaptive approach to Differential Privacy (DP) that will be used for processing driver monitoring applications securely [23]. This mechanism provides an adaptive approach, allowing selection of the Laplace or Gaussian mechanisms, based on the sensitivity of the data. When the data sensitivity is below the established threshold, Laplace noise only is applied, providing strong utility with adequate privacy protection. When data sensitivity is above the threshold, the mechanism uses Gaussian noise to provide stronger privacy protection in cases of high risk. The further this mechanism can employ both Laplace and Gaussian methods, it can spend less utility managing privacy violations, establishing a heterogeneous risk level and trade-off development toward softening our privacy promise. With the adaptive approaches included here, we ensure our systems can be made durable against inference attacks while providing sufficient fidelity to justify collecting this data for achieving behavioral analytics, which is essential for some policy enactments, e.g., driver monitoring [25].",
+            "publication_ref": [
+                "b22",
+                "b24",
+                "b23",
+                "b25"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_2",
+                "tab_2"
+            ]
+        },
+        {
+            "heading": "Component",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. RESULT AND DISCUSSION",
+            "text": "To assess the effectiveness of the proposed Adaptive Differential Privacy (ADP) mechanism for Driver\nMonitoring Systems (DMS), we ran experiments comparing it to standard privacy mechanisms-standard Laplace and Gaussian models-on a simulated driving dataset comprising facial cues, steering behavior, and acceleration patterns. We reported on important performance metrics including privacy leakage, utility (accuracy), and latency. Here, Privacy Leakage: Measured as percentage of sensitive attributes inferred by adversarial simulation models.\nUtility: Percentage accuracy in detecting driver drowsiness and distraction.\nLatency: Time taken by the DMS to process inputs and output a safety recommendation.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Fig.1. Comparision of Privacy Mechanisms",
+            "text": "The comparison of privacy mechanisms in Fig. 1 reveals the trade-off between privacy protection, utility, and computational time. The baselines with No Privacy have excellent utility scores of 98.2%, but total privacy leakage of 100% makes it unsuitable for any application where privacy is a concern. The Laplace DP and Gaussian DP mechanisms show much lower privacy leakage of 45.3% and 32.6%, respectively, but worse accuracies of 91.7% and 89.1% and added latency. The Proposed Adaptive DP was the best performing mechanism with the lowest privacy leakage (28.7%), strong utility score (93.4%), and relatively low latency score (29 ms). Based on these findings, this is a good method for maintaining data protection while emphasizing a quality, high-performance machine learning function.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Fig.2. Latency Comparison of All Mechanisms",
+            "text": "Figure 2 presents a comparison of latency between the four privacy mechanisms, which provides a useful indication on their computational efficiency. The No Privacy option unsurprisingly demonstrated the lowest latency at 20 ms, as there was no additional computational effort made to preserve privacy. Both the Laplace DP and Gaussian DP mechanisms introduced additional overhead via the noise injection processes and exhibit higher latencies of 32 ms and 35 ms respectively. The Proposed Adaptive DP method is an interesting case as the latency of 29 ms gives a good balance between traditional DP methods, but still maintains a sufficient amount of privacy while providing better utility. This suggests that the adaptive mechanism exhibited an optimized design that provisions a reasonable trade-off between performance and privacy. It can be conclude that adaptive approaches may be able to effectively provide privacy guarantees without sacrificing significant performance and accuracies that data-driven models provide. In Fig. 4, the trade-off between utility and latency exemplifies the balancing act of achieving high model accuracy while aiming for a timely (fast) response. Usually, privacy mechanisms (e.g., Laplace DP and Gaussian DP) add more computation (to sample the noise designed and perturb) thus increasing latency (32 ms and 35 ms respectively) while sacrificing utility (91.7% and 89.1%).\nConversely, the No Privacy mechanism achieved the highest utility (98.2%) while having the lowest latency (20 ms). However, it did this at the cost of total privacy. We can see that the Proposed Adaptive DP is able to preserve fairly good utility (93.4%) while having fairly low latency (29 ms). This represents a value compromise that is suitable for practical use in deployment scenarios where both accuracy and speed are important. In Fig. 5, the trade-off between privacy leakage and latency demonstrates the trade-off of privacy for computational overhead. As privacy leakage goes down, meaning increased privacy protections, latency is more likely to increase as more processing is undertaken to implement privacy-preserving techniques. For example, Gaussian DP and Laplace DP have a privacy leakage of 32.6% and 45.3% yet exhibited longer latencies (35 ms and 32 ms, respectively). The No Privacy approach has the fastest latency at 20 ms but experiences 100% privacy leakage and has no privacy at all. Proposed Adaptive DP again exhibited the lowest privacy leakage (28.7%) for acceptable latency (29 ms) demonstrating that privacy risks can be mitigated by employing smart adaptive methods without too much impact on speed or performance.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_1",
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION AND FUTURE SCOPE",
+            "text": "This research systematically compared several current approaches to privacy-preserving mechanisms and the trade-offs between privacy leakage, utility and latency.\nBased on this evaluation, the Proposed Adaptive Differential Privacy (DP) mechanism has the greatest tradeoff of all approaches in that it has the lowest privacy leakage while maintaining a relatively high degree of utility and low latency. While other approaches to DP such as Laplace and Gaussian DP leverage some form of approximate statistical noise to account for privacy, and in so doing typically will require a trade-off to utility and/or speed, this Adaptive DP method is able to exploit contextual sensitivity through the use of a Dynamic Data Processing approach at the Distributor layer to create high generalizability of solutions across all measures. Therefore, based on our research, the Adaptive DP method makes the most reasoned approach towards real-world Data Policies where secure and efficient data mobilization is critical. Future work could explore the integration of the adaptive mechanism into federated learning frameworks, where privacy is critical, and latency varies across decentralized devices. Additionally, there is potential to enhance the adaptivity of the mechanism using machine learning models that dynamically tune privacy parameters based on real-time feedback. Expanding the analysis to include adversarial robustness and energy efficiency would also provide a more holistic assessment of privacy mechanisms in edge and mobile computing environments. Lastly, benchmarking against emerging privacy techniques such as homomorphic encryption or secure multiparty computation could further validate and strengthen the applicability of the proposed method.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Differentially private federated learning with an adaptive noise mechanism",
+            "journal": "IEEE Transactions on Information Forensics and Security",
+            "year": "2023",
+            "authors": "R Xue; K Xue; B Zhu; X Luo; T Zhang; Q Sun; J Lu"
+        },
+        {
+            "ref_id": "b1",
+            "title": "A framework for adaptive differential privacy",
+            "journal": "Proceedings of the ACM on Programming Languages",
+            "year": "2017",
+            "authors": "D Winograd-Cort; A Haeberlen; A Roth; B C Pierce"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Trajectory time prediction and dataset publishing mechanism based on deep learning and differential privacy",
+            "journal": "Journal of Intelligent & Fuzzy Systems",
+            "year": "2023",
+            "authors": "D Li; S Shen; Y Yang; J He; H Shen"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Design and optimization of distributed energy management system based on edge computing and machine learning",
+            "journal": "Energy Informatics",
+            "year": "2025",
+            "authors": "N Feng; C Ran"
+        },
+        {
+            "ref_id": "b4",
+            "title": "The privacy preserving auction mechanisms in iot-based trading market: A survey",
+            "journal": "",
+            "year": "2024",
+            "authors": "D Li; Y Zhao; Y Wang; D An; Q Yang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Privacy-preserving mechanisms for location privacy in mobile crowdsensing: A survey",
+            "journal": "Journal of Network and Computer Applications",
+            "year": "2022",
+            "authors": "J W Kim; K Edemacu; B Jang"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Unified Enhancement of Privacy Bounds for Mixture Mechanisms via $ f $-Differential Privacy",
+            "journal": "Advances in Neural Information Processing Systems",
+            "year": "2023",
+            "authors": "C Wang; B Su; J Ye; R Shokri; W Su"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Hybrid Laplace-Gaussian Differential Privacy to Secure Data Aggregation in Edge-IoT Systems",
+            "journal": "IEEE",
+            "year": "2024-12",
+            "authors": "P K Yadav; S Pandey; P Singh; P Pandey"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Improving crop management with convolutional neural networks for binary and multiclass weed recognition",
+            "journal": "IEEE",
+            "year": "2024-01",
+            "authors": "S Pandey; P K Yadav; R Sahu; P Pandey"
+        },
+        {
+            "ref_id": "b9",
+            "title": "A Robust Framework for fraud Detection in Banking using ML and NN",
+            "journal": "Proceedings of the National Academy of Sciences, India Section A: Physical Sciences",
+            "year": "2024",
+            "authors": "A Vashistha; A K Tiwari; P Singh; P K Yadav; S Pandey"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Federated Learning in Healthcare: A Bibliometric Analysis of Privacy, Security, and Adversarial Threats",
+            "journal": "",
+            "year": "2021",
+            "authors": "M A Almaiah; R B Sulaiman; U Islam; Y Badr; F A El-Qirem"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Is privacy privacy?",
+            "journal": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+            "year": "2018",
+            "authors": "K Nissim; A Wood"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Privacy attitudes and privacy behaviour: A review of current research on the privacy paradox phenomenon",
+            "journal": "Computers & security",
+            "year": "2017",
+            "authors": "S Kokolakis"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Differential privacy techniques for cyber physical systems: A survey",
+            "journal": "IEEE Communications Surveys & Tutorials",
+            "year": "2019",
+            "authors": "M U Hassan; M H Rehmani; J Chen"
+        },
+        {
+            "ref_id": "b14",
+            "title": "On differential privacy for federated learning in wireless systems with multiple base stations",
+            "journal": "IET communications",
+            "year": "2024",
+            "authors": "N Tavangaran; M Chen; Z Yang; J M B Da Silva Jr; H V Poor"
+        },
+        {
+            "ref_id": "b15",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": "Q Yang; A Huang; L Fan; C S Chan; J H Lim; K W Ng; . "
+        },
+        {
+            "ref_id": "b16",
+            "title": "Federated Learning with Privacy-preserving and Model IP-right-protection",
+            "journal": "Machine Intelligence Research",
+            "year": "2023",
+            "authors": "B Li"
+        },
+        {
+            "ref_id": "b17",
+            "title": "A survey on metaverse: Fundamentals, security, and privacy",
+            "journal": "IEEE communications surveys & tutorials",
+            "year": "2022",
+            "authors": "Y Wang; Z Su; N Zhang; R Xing; D Liu; T H Luan; X Shen"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Internet of Things-New security and privacy challenges",
+            "journal": "Computer law & security review",
+            "year": "2010",
+            "authors": "R H Weber"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Adaptive laplace mechanism: Differential privacy preservation in deep learning",
+            "journal": "IEEE",
+            "year": "2017-11",
+            "authors": "N Phan; X Wu; H Hu; D Dou"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Gaussian differential privacy",
+            "journal": "Journal of the Royal Statistical Society: Series B (Statistical Methodology)",
+            "year": "2022",
+            "authors": "J Dong; A Roth; W J Su"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Grafting laplace and gaussian distributions: A new noise mechanism for differential privacy",
+            "journal": "IEEE Transactions on Information Forensics and Security",
+            "year": "2023",
+            "authors": "G Muthukrishnan; S Kalyani"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Generalized gaussian mechanism for differential privacy",
+            "journal": "IEEE Transactions on Knowledge and Data Engineering",
+            "year": "2018",
+            "authors": "F Liu"
+        },
+        {
+            "ref_id": "b23",
+            "title": "More than privacy: Applying differential privacy in key areas of artificial intelligence",
+            "journal": "IEEE Transactions on Knowledge and Data Engineering",
+            "year": "2020",
+            "authors": "T Zhu; D Ye; W Wang; W Zhou; P S Yu"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Secrecy-enabled resource allocation in cloud-assisted IoT networks",
+            "journal": "Transactions on Emerging Telecommunications Technologies",
+            "year": "2024",
+            "authors": "K Dubey; S Pandey; S Kumar"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Differentially private kernel support vector machines based on the exponential and Laplace hybrid mechanism",
+            "journal": "Security and Communication Networks",
+            "year": "2021",
+            "authors": "Z Sun; J Yang; X Li; J Zhang"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 3 .3Fig.3. Comparison of Trade off b/w Privacy Leakage vs Utility The trade-off between privacy leakage and utility in Fig.3 demonstrates a principle of privacy-preserving systems: as privacy protection increases (lower privacy leakage), the utility (accuracy of the system) typically decreases. We can see this with the Laplace DP and Gaussian DP mechanisms. Enhancing privacy considerably decreases the model's utility compared to the No Privacy model. The Proposed Adaptive DP is unique because it demonstrates the inability to have any trade-off. It has the least amount of privacy leakage (28.7% ) and the highest amount of utility (93.4% ).It can be conclude that adaptive approaches may be able to",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 4 .4Fig.4. Comparison of Trade off b/w Utility vs Latency.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 5 .5Fig.5. Comparison of Trade off b/w Privacy Leakage vs Latency.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "Comparison of existing research with proposed.",
+            "figure_data": "Offloading SecurityTraditionalTrusted execution[13]encryptionandenvironments (TEE)multi-partyandblockchain-computationbasedsecureoffloadingPrivacy MechanismHomomorphicDifferential privacy[14]encryption,k-(Gaussian & Laplaceanonymity,mechanisms)federated learningFeatureExisting ResearchProposedApproachComputationalHigh overhead inOptimizednoiseEfficiency [12]homomorphicadditionwithencryptionandminimal overheadfederated learning"
+        },
+        {
+            "figure_label": "II",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "Features comparison of different approaches.",
+            "figure_data": "FeatureHomomorphK-FederateProposeicAnonymiddEncryptiontyLearningReal-timeLowHighModerate VeryfeasibilityHigh[16]ComputationHighLowModerate Lowal Overhead[17]ScalabilityLowHighHighVery[18]HighPrivacyHighModerateHighVeryStrength [19]High"
+        },
+        {
+            "figure_label": "IV",
+            "figure_type": "table",
+            "figure_id": "tab_4",
+            "figure_caption": "Comparative analysis of Privacy Mechanisms",
+            "figure_data": "Mechanism PrivacyUtility(Accuracy%) Latency(ms)Leakage(%)No Privacy10098.220Laplace DP45.391.732Gaussian32.689.135DPProposed28.793.429AdaptiveDP"
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "Lap(b) = (1 / 2b) * e^(-|x| / b) (1)",
+            "formula_coordinates": [
+                3.0,
+                64.7,
+                271.43,
+                194.97,
+                9.05
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "\ud835\udc43\ud835\udc5f[ \ud835\udc34(\ud835\udc37) \u2208 \ud835\udc46 ] \u2264 \ud835\udc52 \u2208 . \ud835\udc43\ud835\udc5f[\ud835\udc34(\ud835\udc37 \u2032 ) \u2208 \ud835\udc46](3)",
+            "formula_coordinates": [
+                3.0,
+                63.98,
+                395.32,
+                196.41,
+                11.35
+            ]
+        }
+    ],
+    "doi": "10.1109/ICSSAS66150.2025.11080921"
+}

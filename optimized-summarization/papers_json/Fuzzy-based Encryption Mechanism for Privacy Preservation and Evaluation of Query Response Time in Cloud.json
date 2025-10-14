@@ -1,0 +1,231 @@
+{
+    "title": "Fuzzy-based Encryption Mechanism for Privacy Preservation and Evaluation of Query Response Time in Cloud",
+    "authors": "L Selvam; N Mekala; Annish A Kumar",
+    "pub_date": "",
+    "abstract": "Data is considered as a resource, where security is a critical factor in the potential growth of data mining. The protection offered by public infrastructure is insufficient to ensure the privacy of personal data. Edge devices are used by analysts to obtain data. Data accessible by unauthorized parties and privacy leaks at the edge layer are prevalent issues found in earlier study. To tackle the problem, this study introduces fuzzy mechanism, which provides differential privacy with Laplace mechanism. This is where operations like query processing and data processing are performed. The data owner encrypts the dataset by using encryption and adds noise after sending it to the data provider and then moves it to the cloud. Based on the uploaded dataset, the data owner employs the encryption technique to generate an index from the recovered key properties. Conversely, the data supplier authenticates the requests and queries made by the data analyst. After that, the edge server's hash tree looks for the matching data, retrieves it from the cloud, and sends it in an encrypted format to the data analyst. A decryption key is given to each verified data analyst to access the query result. MATLAB 2020a is used to perform this task, and the outcomes demonstrate improved throughput, response time and encryption time.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Since most of the well-known companies and organizations have been negatively impacted by regular data breaches, it is more important to secure an individual's privacy in the modern industrial era [1]. Traditional methods of data security, including cryptography, would protect the data. By retaining the individual's personal data, data privacy is ensured via the assured standard method known as Differential Privacy (DP) [2]. These days, information is gathered from several sources. The Internet of Things (IoT) is also a part of it. As a result, the data may be relevant to applications such as smart grid, automobile communication, smart home, and healthcare [3]. Privacy is a must for all real-time applications. Differential attacks are a concern for the personal information gathered from individuals in these applications. Generally, there are two types of DP: local Differential Privacy (LDP) and centralized Differential Privacy (CDP). When using CDP, the collected information is kept on file with a reliable party that perform data processing before giving analysts access to the processed data [4]. A privacy parameter in DP is essential to figure out the security of the data. It is ensured that the qualities of DP will completely secure the personal data. DP is used for the following purposes: 1) By using less complex calculations, it offers data privacy and facilitates the building of blocks of privacy.\n2) Analysts must know the details of the database, where the result was uploaded in order to extract the obtained result during post-processing.\n3) Effective management is used to balance accuracy and data privacy.\nBy introducing noise into the uploaded data, DP allows for the privacy of a dataset. Greater noise tends to increase privacy but it also decreases the precision [5]. Thus, in order to strike a balance between precision and privacy, the noise must be added up in the right ratio. DP is the result of combining two machine learning algorithms: Support Vector Machine (SVM) and deep learning. [6]. The most popular approach for adding privacy to a dataset is Laplace random noise. The use of various algorithms has an impact on data privacy. Similarly, the query results ought not to be affected by the inclusion or deletion of a small portion of the dataset [7]. Meanwhile, because of DP's performance, attackers find it more difficult to forecast the sensitive properties included in the dataset. In order to handle every security concern from the query through the database result, the DP process becomes crucial [8]- [10]. This work presents the efficient addition of noise to differential privacy by using a combination of fuzzy techniques. This approach feeds fuzzy membership functions, which are then combined with fuzzy logic. Since the things near the periphery are not reliable, their only responsibility is to relay requests and search for the results related to specific queries. In order to preserve search security, this work suggests edge, which can search and retrieve relevant data from the cloud, which is encrypted using lightweight encryption technique. As a result, an entirely sophisticated security system is created. The subsequent subsections illustrate the structure of this research report. The following is a summary of the suggested research work's main contribution.\n9 The procedure involves uploading the dataset owned by the data owner and responding analyst queries while improving accuracy and protecting privacy.\n9 By employing the Laplace approach, the parameter is successfully secured using fuzzy mechanism. To ensure that it works with the datasets of various sizes, the dataset's characteristics and sensitivity are examined.\n9 Since public clouds are unreliable, data is uploaded to them after being encrypted using an optimal lightweight algorithm.\n9 Untrusted edge devices are configured to search analyst queries to ensure that they are not aware of the data. The search outcomes are downloaded in an encrypted fashion from the cloud.\n9 Before the analyst is provided with a decryption key, they must authenticate themselves using the unique credentials.\n9 The proposed fuzzy-based encryption mechanism is used to ensure that fewer resources are used and that the system operates more quickly. An efficient way to show the use of an untrusted edge device and the public cloud is to look up the hash values and store the information in a secure manner.\nThe work is organized as: section 2 gives detailed explanation on prevailing approaches. The methodology is briefed in section 3 with outcomes in section 4. The summary is provided in section 5",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b9"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORKS",
+            "text": "In the conventional paradigm of cloud computing, edge devices often function as consumers. However, with the growing potential of cloud computing and the Internet of Things (IoT), the edge network's data volume is growing quickly [11]. The shift from being consumers of data to providers of it has aided in the expansion of edge network features and services. Cloud and edge computing services are combined by using Location-Based Services (LBS) [12] to guarantee the effectiveness and real-time nature of online commerce. Though these applications provide easy services to consumers, they also encounter several data security issues [13].\nIn recent years, academia has developed a number of alternatives, such as encryption technologies [14] and dynamic pseudonym schemes [15]. Nevertheless, the majority of these solutions are focused on cloud services [16], and the edge environment is not well researched. Furthermore, the potential of location privacy breaches is increased once more with the emergence of Mobile Crowd-Sensing (MCS) networks.\nMCS has been extensively researched and developed recently as a significant sensor network in the Internet of Things. If participants in a group sensing task use their personal smartphones, the job requester's (server's) submitted sensor data may vary [17]. This implies that in order to deduce the location relationship network, by obtaining multidimensional participant data, a hostile attacker might be able to influence the relationship between activities and determine the position correlation weight between the individuals. Since the user is nearer the edge server, the attacker can choose the users to include in the sensing work based on the prior knowledge if the job allocation is done via the edge server. This allows the attacker to gather pertinent data, create a location-based friendship network, and determine the participants' exact locations [18]. The edge-centric sensing task differs from the server-centric design of the cloud in that it has a smaller geographic scope and makes it simpler to conduct targeted attacks based on the past information. If the attacker creates a location relationship network instead of focusing on a task with a broad geographic scope, the inferred location data will be more accurate.",
+            "publication_ref": [
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b17"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. METHODOLOGY",
+            "text": "This section presents the suggested fuzzy-based encryption method along with a thorough fix for handling the differential privacy challenges. The proposed methodology is explained in three sub-sections: Query Processing, Data Processing, and System Design.\nThe proposed system comprises several key entities, each serving a distinct role in facilitating the secure and efficient exchange of data. These entities include the data owner, data provider, edge server, cloud, and data analyst. The definitions and responsibilities of each entity within the system are elaborated as follows:\nData Owner: The data owner is responsible for uploading datasets to the system. The entire dataset, along with the corresponding index that data analysts use to search for information, is uploaded by the data owner. It is presumed that the data owner is a trusted entity in the system.\nData Provider: The data provider is a trusted component of the system tasked with adding noise, encrypting data, hashing index values, and verifying the identity of data analysts.\nEdge Server: The edge server acts as an intermediary between the cloud and data provider, facilitating data access for data analyst queries. It retrieves files from the cloud, performs index lookups using hash trees, and forwards queries to the data provider.\nCloud: The cloud serves as the public database in the system, storing the data received from data providers and distributing it to data analysts through edge servers.\nData Analyst: Data analysts, also referred to as data miners, send queries to the edge server. In response, the edge server provides decryption keys and query results to the data analyst.\nThe proposed system involves two main processes: one for the data owner and another for the data analyst. Initially, the data owner uploads datasets to the data provider, which then encrypts the data using lightweight encryption methods and adds noise using the Laplace technique. The encrypted data is subsequently stored in the public cloud. Meanwhile, index terms provided by the data owner are hashed in the edge server using a hashing function. The data source, serving as the only trusted entity in the system, is responsible for authenticating data analysts and ensuring privacy protection throughout the data exchange process.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "a) Data analysis based on query",
+            "text": "The data analyst processes queries by sending them to an online edge server. The data analyst requests authentication using biometric and identification is considered. The fingerprint is the biometric utilized here, and since it is unique to each person, it is regarded as credentials for security. The request for authentication is sent to the data provided by the edge server after reaches it. The data supplier keeps track of identity, password, and biometric information in addition to the licensed data analysts. The authentication is carried out by using this saved data.\nThe request for authentication represents the credentials for security as for the identification, password, and fingerprint respectively. This is the request R that was sent to the data analyst.\nThe data analyst is authorized to send the authentication request if is obtained. This becomes illegitimate if . Hashed queries are only accepted by authorized data analysts for searching. Every security credential is separated by a XOR operator as the edge server cannot be trusted. As a result, the XOR operator secures the data analyst's credentials. Based on the XOR operator's simplicity, this operation requires fewer resources and takes less time. After authentication, the data analyst sends a hashed query to the edge server. The hash query provided examines the tree from the root to the left and right nodes. Using the matching hash values discovered in the search results, the necessary query data is retrieved from the cloud. Cloud data extraction results in cipher text that needs to be decrypted with a decryption key. Once the data analyst is authorized, the data source also provides this key. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Fuzzy network model",
+            "text": "With the integration of fuzzy logic with neural networks, this system is often referred to as a fuzzy system. The architecture of a fuzzy system can be changed to satisfy the framework's specifications. The goal of this research study is to provide differential privacy and hence we have chosen to use fuzzybased mechanism as an input in the proposed framework. This suggests a loss of accuracy due to a compromise between privacy and accuracy. To handle tabular data, we have used fuzzy rules; one example of this is the adult and heart disease dataset, despite the fact that they are often used for data. Which has spatial elements, such as image and video data. A fuzzy system's architecture typically consists of the following components:\n9 The input variables' input layer. 9 Fuzzy sets are utilized as the fuzzy connection weights in conjunction with fuzzy rules for training the dataset, which is typically found in the second layer. 9 The variables provided by the third layer of output; 9 As it gets the fuzzy membership functions, the second layer also known as the neural layer depicts the fuzzy rules.\nIn this case, the clear values of private attributes like the adult dataset's age and wage attributes become fuzzy. Data disturbance caused by this fuzzification protects the privacy of original data. Here, the fuzzy logic is selected for performing data randomization instead of other techniques like k-anonymity, l-diversity, etc., since fuzzy logic can be used to ensure both discrete and numerical (continuous) qualities. Previous research demonstrates that a Fuzzy neural system outperforms a regular network model in terms of accuracy for the given task. According to Reference [12], the accuracy of a handwriting recognition system using a fuzzybased encryption is higher of about 99% than that of a regular neural network for the training set, which has an accuracy of 97%.",
+            "publication_ref": [
+                "b11"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. RESULTS",
+            "text": "This study has considered 5000 edges and 1,000 vertices. The weight of each edge is determined randomly. MATLAB 2020 programming languages, Windows 10 operating system, an Intel (R) Core (TM) i5-5350U CPU running at 1.80 GHz, and 8.00 GB of RAM are used in this experiment. To assess the level of privacy protection, entropy is utilized to calculate the location privacy protection for fuzzy-based encryption mechanism. Let represent the quantity of occurrences that make up an event. Given and , the total number of occurrences. Here, is the degree of ambiguity inherent in occurrence and is the overall amount of uncertainty. is the uncertainty . When a system's uncertainty rises, the information entropy also rises. It means that there is better privacy protection, making it harder for an attacker to determine the exact position of the mobile user. In general, the k-anonymous algorithm has an entropy of information of . To find the precise location of a user, an attacker must first deduce UserSquare from the SensingGrid and acquire the unique location from UserSquare. Fuzzing sites are located at k different locations to confound the attacker. As a result, in our approach, the information entropy , and the likelihood P of privacy in a location leaking can be characterized as\nTo assess the uncertainties of fuzzy model as a variable, We made use of different fixed and user grids' area ratios. The scheme's information entropy matches that of the standard k anonymous process, which is regarded as the baseline, when the user grid equals the fixed grid. Based on the experimental outcomes shown in Fig [ ], we may conclude that, for a given conditions, the attacker's likelihood of determining the perceived user position decreases as entropy increases. It can show that the fuzzy-based model has more expressiveness in this situation while maintaining the privacy protection. Furthermore, the information entropy also shows a monotonically increasing trend as the anonymous level increases while is fixed, suggesting that location information leaks are difficult to execute. Overall, the anonymized algorithm-driven on user grids contributes well to the privacy feature of the proposed model. Control privacy is measured by the DP's privacy parameter with specification. The definition of DP makes it clear that the query privacy approach offers greater security with the smaller . The cacophony enhanced the question results follow a Laplace distribution, or what is referred to as the Laplacian mechanism. When determining the global sensitivity, a smaller \u03b5 corresponds to a larger b, indicating a stronger ability to withstand attacks, greater added noise, and comparatively less data availability. Global sensitivity and \u03b5 are related to the scale parameter . Thus, the purpose of this experiment is to investigate how various \u03b5 values affect the accessibility of data.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION",
+            "text": "This research study has focused on query processing, or safe data analyst access to the data, and data processing, or safe uploading of data by the data owner. The following parties were involved in the design of this system: the edge server, cloud, data owner, data provider, and data analyst. In this approach, the data source, which is regarded as a trusted entity performs Differential Privacy (DP). To protect the privacy of personal data, the Laplace mechanism is used in conjunction with the fuzzy-based encryption to introduce noise into the dataset. The sensitivity property is used to determine the parameter. Before the data is transferred to the public cloud, it is encrypted using the portable Piccolo algorithm. Since the public cloud cannot be trusted, data is encrypted before being stored. Using the proposed technique for searching, the hashed key phrases are provided. Before granting the data analyst access to decrypt the data, the security credentials are verified. After testing, the system design is considered as more efficient than earlier research regarding processing time, accuracy, and scalability in the field. It is intended that the fuzzy model will be improved in the future by adding more trustworthy entities in order to address single point failures. By adding Differential Privacy (DP) for privacy protection, hybrid machine learning algorithms can further expand the work.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Energy-efficient task scheduling and resource allocation in downlink C-RAN",
+            "journal": "",
+            "year": "2018-04",
+            "authors": "J Xia; T Q S Zhang; S Quek; H Jin;  Zhu"
+        },
+        {
+            "ref_id": "b1",
+            "title": "On designing energy-efficient heterogeneous cloud radio access networks",
+            "journal": "IEEE Trans. Green Commun. Netw",
+            "year": "2018",
+            "authors": "T Liu; N Han; G Ansari;  Wu"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Elasticity in cloud computing: State of the art and research challenges",
+            "journal": "IEEE Trans. Serv. Comput",
+            "year": "2018-03",
+            "authors": "F Al-Dhabi; N Paraiso; P Djarallah;  Merle"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Integration of cloud computing and internet of things: A survey",
+            "journal": "Futur. Gener. Comput. Syst",
+            "year": "2016-03",
+            "authors": "W Botta; V Donato; A Persico;  Pescap\u00e9"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Failure recovery in wireless content distribution networks with device-to-device cooperation",
+            "journal": "Comput. Networks",
+            "year": "2017-12",
+            "authors": "K Sharafeddine; O Jahed; Z Farhat;  Day"
+        },
+        {
+            "ref_id": "b5",
+            "title": "A secure content caching scheme for disaster backup in fog computing enabled mobile social networks",
+            "journal": "IEEE Trans. Ind. Informatics",
+            "year": "2018",
+            "authors": "Q Su; J Xu; H Luo; Y Pu; R Peng;  Lu"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Energy and traffic aware fullduplex communications for 5G systems",
+            "journal": "IEEE Access",
+            "year": "2017",
+            "authors": "O A Yadav; N Dobre;  Ansari"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Achieving ef_cient cloud search services: Multi-keyword ranked search over encrypted cloud data supporting parallel computing",
+            "journal": "IEICE Trans. Commun",
+            "year": "2015",
+            "authors": "X Fu; Q Sun; L Liu; J Zhou;  Shu"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Fuzzy keyword search over encrypted data in cloud computing",
+            "journal": "",
+            "year": "2010-03",
+            "authors": "Q Li; C Wang; N Wang; K Cao; W Ren;  Lou"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Security and privacy for storage and computation in cloud computing",
+            "journal": "Information Sciences",
+            "year": "2014",
+            "authors": "H Wei; Z Zhu; X Cao; W Dong; Y Jia; A V Chen;  Vasilakos"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Enabling personalized search over encrypted outsourced data with efficiency improvement[J]",
+            "journal": "IEEE Transactions on Parallel and Distributed Systems",
+            "year": "2016",
+            "authors": "Z Fu; K Ren; J Shu"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Component ranking for faulttolerant cloud applications [J]",
+            "journal": "IEEE Transactions on Services Computing",
+            "year": "2012",
+            "authors": "Z Zheng; T C Zhou; M R Lyu"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Adaptive multiple-workflow scheduling with task rearrangement [J]",
+            "journal": "The Journal of Supercomputing",
+            "year": "2015",
+            "authors": "W Chen; Y C Lee; A Fekete"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Multiple DAGs reliability model and fault-tolerant scheduling algorithm in cloud computing system[J]",
+            "journal": "Computer Modeling and New Technologies",
+            "year": "2014",
+            "authors": "W Jing; Y Liu"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Replication and Re-submission Based Adaptive Decision for Fault Tolerance in Real-Time Cloud Computing: A New Approach[J]",
+            "journal": "International Journal of Service Science, Management, Engineering, and Technology",
+            "year": "2016",
+            "authors": "P K Patra; H Singh; R Singh"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Energy-aware scheduling of virtual machines in heterogeneous cloud computing systems",
+            "journal": "Future Generation Computer Systems",
+            "year": "2017",
+            "authors": "C Duan; G Chen; Y Min;  Wu"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Energy efficient VM scheduling for cloud data centers: Exact allocation and migration algorithms",
+            "journal": "",
+            "year": "2013",
+            "authors": "M Ghribi; D Hadji;  Zeghlache"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Adaptive check pointing strategy to tolerate faults in economy based grid",
+            "journal": "Journal of Supercomputing",
+            "year": "2009",
+            "authors": "K Nazir; P Qureshi;  Manuel"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig 11Fig 1 Fuzzy-based data encryption b) 3.2. Fuzzy network model",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig 22Fig 2 Response time of cloud servers",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "34",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig 3 Fig 434Fig 3 Throughput of cloud servers",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ICOECA62351.2024.00034"
+}

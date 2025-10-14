@@ -1,0 +1,340 @@
+{
+    "title": "A Novel Framework to Prevent Privacy Breach in Cloud Data Storage Area Service",
+    "authors": "",
+    "pub_date": "",
+    "abstract": "The present paper focuses on user data privacy invasion and it is more important in cloud data storage. Numerous approaches and techniques have proposed so for, to preserve the cloud user privacy. This paper introduces a layered framework for preserving secrecy of cloud user and preventing digital data loss, using onion privacy layer, garlic privacy layer. This layered framework prevents the confidential information by multiple encryption of onion and garlic privacy preserving layered approach.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "This paper focuses on cloud digital data loss and its privacy preserving by proposing a novel framework approach to mitigate the risk and protect the data from attackers. The high digital data storage center, user privacy maintenance is a wearisome chore for end-user and service provider. Unceremonious seclusion contracted with habitual user personal information, the main reason to develop and propose this novel framework for maneuver in sequence data progression and maturity. The current information dispensation conceded slightest relationship and input circumstances. Radical usages of cloud data irrespective of consign and contrivance may direct to violate user's privacy and their needs. [1][2][3][4][5] et al expresses the dominant usage of critical data and its preserving techniques are handled in an earlier data protection method. Virtual swarm is ensuing cohesion with provider and user. More informational confidentiality has personage precincts for user acquiescence and admittance to data exodus in storage area. This paper focuses the general privacy issue and its preserving methodologies adopted so for are not meeting the requirement of cloud user. The limitation of data attackers generally overcomes to preserve better utilization of authorized user data. [5], [7], [13] author et al uses a cookie based monitoring the user behavior, an identity based data storage and retrieval and a frame work to establish enough trust among user on providers. To illustrate the scientific structure for normal systems are not adequate more over a perfunctory approach for preserving confidential data. It is noted to be less cost effective process for implementing in many field whereever privacy is necessity. [6][7][8][9], The general behavior proposed in this approach experiments a better data utility option with improved privacy preserving technique. Once all information readily available online one can easily get into others storage without any risk and makes the data into risk and there is no information privacy in it. [18], [21], [26], and [28] a secure and efficient data retrieval by data using attribute based encryption, theoretical analysis of authentication and an novel architecture to preserve user privacy and authentication. If and only if no one else knows even something regarding your personal data, it may climb to be information privacy. Why the social networking providers need of user personal information, literally they are utilizing it for business and making confidential data into profit. [1][2][3][4] author et al proposed a privacy preserving approach for mitigating the security for user data using encryption and decryption technique, a Petri-net based framework approach to preserve user information, and an evolutionary model for protecting digital data. [6], [29][30][31] cloud service privacy representation to ensure the trust in cloud providers. An intelligent model based hybrid approach to preserve user digital content, pervasive and ubiquitous computing environment privacy preservation carried out, and a generic approach to molt the assurance of secrecy in maintain cloud digital data. [8][9][10][11][12], [22,23,25] author et al proposes a multi agent system to accommodate the software process and a framework to mitigate the issue. [10], author et al a SVIP based mechanism for SIP dependent system and its security measures are handled. [14][15][16][17], [19][20], author et al proposed a global replica management by ensuring and enhancing the QOS parameters, and an efficient service cache management for mobile peer to peer network. [24], [27] a testbed and an evaluation criteria for a distributed web service environment for the service suitability.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b4",
+                "b6",
+                "b12",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b17",
+                "b20",
+                "b25",
+                "b27",
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b5",
+                "b28",
+                "b29",
+                "b30",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b21",
+                "b22",
+                "b24",
+                "b9",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b18",
+                "b19",
+                "b23",
+                "b26"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. PROPOSED APPROACH",
+            "text": "Cloud computing researches have few scratches with serious issue of data privacy invasion. There are several approaches, techniques, algorithms, protocols, and framework to prevent the user privacy in cloud environment. this paper shows its importance in proposing a novel privacy preserving framework to prevent digital data loss happening in current cloud data storage. Privacy breach directly propositional to the cloud technologies as the technology grows one way, its data privacy breach happening in many ways. There is no end to technological advancement and also privacy breach. This paper focused on privacy issue and proposed a framework to mitigate the privacy preserving in the cloud digital storage area, with a novel onion and garlic privacy preserving cohesive approach to prevent the data loss. Onion and garlic privacy preserving approach-OGPPA have a right to prevent the privacy of communication happening in cloud systems. Keeping users data online are not guaranteed to be protected from attackers. Unknown observers are watching it and holding the stuffs easily without the knowledge of data owners. It should be possible for every individual to hide their data and communication details as a log file. Onion and garlic privacy preserving approach can be launched on the top of the cloud layer. The basic idea of onion routing proposed by [D.Chawan]. Onion privacy preserving approach layer b)\nGarlic privacy preserving approach layer c) Virtualization management",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "1) Onion privacy preserving approach layer-OPPA",
+            "text": "Large number of mixed nodes to serve as the simple layer of accepting user request and encrypting the details with public key and decrypting it and then sending them to next layer of onion privacy preserving approach-OGPPA. Fig. 1 Each layer of OGPPA would also perform certain time variation of the request and send to next layer. It provides both side encryption and decryption for users and service providers and enables them to communicate anonymously. It also transfers the user data only to original users against all attacks and hackings. This complicates the cloud intermediates to get through the process.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "d) Anonymous communication over a computer networks e)",
+            "text": "Messages are repeatedly encrypted and then sent through several network nodes called onion routing f)\nBy unpeeling an onion, each onion router removes a layer of encryption to check the routing intrusions.\nAn onion privacy preserving approach is a multiple encryption layered structured approach with information about the users kept inside the cloud. Whenever a user request for any information from the cloud digital storage, the OPPA decrypts it and contains the next hop of the onion layer, this process will continue until the user identification matches the requested and log maintained of current system. The decryption packet is identical to the user data that was produced by the user application beginning of the process. Onion privacy relies on using the public key cryptography, which allows it to encrypt the data using OPPA such that it intended the recipients of each layer can decrypt it with their private keys.  ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "2)",
+            "text": "Garlic privacy preserving approach layer-GPPA\nThe current research focuses on cloud computing worldwide growth through communication systems and internet, the privacy and security breach of concerns of cloud users have increased. Either side of coin user suffers from privacy issue of their data and the other side the vast utilization and enjoying the benefits of cloud in their door steps. Fig. 1, This work intends to mitigate these conflicting issues by proposing a novel onion privacy preserving approach. Government and private sector are concerned about the anonymous user access to confidential data by unknown hackers. It presents a nominal solution for revocable user access to cloud data and monitors the behavior and attempts on others data.\na) It encrypts multiple messages together to make it more difficult for attackers to interrupt.\nGarlic privacy preserving approach is a variant onion privacy that encrypts multiple messages together to make it more difficult for attacks to perform users request analysis and preserve their data. Garlic privacy is one of the key factors that distinguish cloud user and providers. Distributing data storage area uses the current GPPA.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "3) Virtualization management a)",
+            "text": "Load balancing b) Storage c)\nConnecting storage to a virtual host d)\nAllocating storage properly e)\nNetwork knowledge to configure hosts properly.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. CONCLUSION",
+            "text": "Cloud computing is taking forward the technological advancement at smart phone door steps and holding hands with other cloud supporting devices. Enormous development in the cloud increases the risk factor simultaneously for user information stored in it. The proposed system converts the user data by onion encryption technique and stored in cloud environment. Onion and garlic privacy preserving framework gives a strong back up with encryption and decryption techniques to handle the privacy breach happens during critical attacks by unknown users. Future research focuses on three factor encryption in cloud layer to boost up and mitigate the privacy prevention in cloud storage service.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "MSRCC-Mitigation of Security Risks in Cloud Computing",
+            "journal": "",
+            "year": "",
+            "authors": "D Chandramohan; T Vengattaraman; M S S Basha; P Dhavachelvan"
+        },
+        {
+            "ref_id": "b1",
+            "title": "HPPC-Hierarchical Petri-Net based Privacy nominal model approach for Cloud",
+            "journal": "",
+            "year": "2012",
+            "authors": " D Chandramohan; . T Vengattaraman; P Dhavachelvan"
+        },
+        {
+            "ref_id": "b2",
+            "title": "A Privacy Breach Preventing and Mitigation Methodology For Cloud Service Data Storage",
+            "journal": "IEEE-IACC Proceedings",
+            "year": "2013",
+            "authors": "Student D Chandramohan;  Member;  Ieee; Rajaguru T D Vengattaraman;  P Baskaran.R And Dhavachelvan"
+        },
+        {
+            "ref_id": "b3",
+            "title": "EMPPC-An Evolutionary Model Based Privacy Preserving Technique for Cloud Digital Data Storage Service",
+            "journal": "IEEE-IACC Proceedings",
+            "year": "2013",
+            "authors": "Student D Chandramohan;  Member;  Ieee; Rajaguru T D Vengattaraman;  P Baskaran.R And Dhavachelvan"
+        },
+        {
+            "ref_id": "b4",
+            "title": "The use of cookies in Federal agency web sites: Privacy and recordkeeping issues",
+            "journal": "Elsevier",
+            "year": "2010",
+            "authors": "Laura Mccarthy; Dave Yates"
+        },
+        {
+            "ref_id": "b5",
+            "title": "A Privacy Preserving Representation for Web Service Communicators' in the Cloud",
+            "journal": "",
+            "year": "",
+            "authors": " D Chandramohan; Rajaguru T D Vengattaraman;  P Baskaran.R And Dhavachelvan"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Identity-based data storage in cloud computing",
+            "journal": "Elsevier-Future Generation Computer Systems",
+            "year": "",
+            "authors": "Jinguang Han; Yimu Willysusilo"
+        },
+        {
+            "ref_id": "b7",
+            "title": "An Application Perspective Evaluation of Multi-Agent System in Versatile Environments",
+            "journal": "International Journal on Expert Systems with Applications",
+            "year": "",
+            "authors": "T Vengattaraman; S Abiramy; P Dhavachelvan; R Baskaran"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Performance analysis of mobile agent failure recovery in e-service applications",
+            "journal": "International Journal of Computer Standards and Interfaces",
+            "year": "",
+            "authors": "S Venkatesan; P Dhavachelvan; C Chellapan"
+        },
+        {
+            "ref_id": "b9",
+            "title": "SVIP-Enhanced Security Mechanism for SIP Based VoIP Systems and Its Issues",
+            "journal": "",
+            "year": "",
+            "authors": "D Chandramohan; D Veeraiah; M Shanmugam; N Balaji; G Sambasivam"
+        },
+        {
+            "ref_id": "b10",
+            "title": "An Agent-Based Personalized E-Learning Environment: Effort Prediction Perspective",
+            "journal": "",
+            "year": "",
+            "authors": "T Vengattaraman; P Dhavachelvan"
+        },
+        {
+            "ref_id": "b11",
+            "title": "A New Approach in Development of Distributed Framework for Automated Software Testing Using Agents",
+            "journal": "International Journal on Knowledge Based Systems",
+            "year": "2006-08",
+            "authors": "P Dhavachelvan; G V Uma; V S K Venkatachalapathy"
+        },
+        {
+            "ref_id": "b12",
+            "title": "A framework for establishing trust in the Cloud",
+            "journal": "Elsevier-Computers and Electrical Engineering",
+            "year": "2012",
+            "authors": "M Imad; Muntaha Abbadi;  Alawneh"
+        },
+        {
+            "ref_id": "b13",
+            "title": "QoS Enhancements for Global Replication Management in Peer to Peer networks",
+            "journal": "Future Generation Computer Systems",
+            "year": "2011-03",
+            "authors": "P Victer Paul; N Saravanan; S K V Jayakumar; P Dhavachelvan; R Baskaran"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Analytical Inspection for Replica Management in WANET using Distributed Spanning Tree",
+            "journal": "",
+            "year": "2012-05",
+            "authors": "R Baskaran; P Victer; P Paul;  Dhavachelvan"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Algorithm and Direction for Analysis of Global Replica Management in P2P Network",
+            "journal": "",
+            "year": "2012-05",
+            "authors": "R Baskaran; P Victer; P Paul;  Dhavachelvan"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Ant Colony Optimization for Data Cache Technique in MANET",
+            "journal": "Springer",
+            "year": "2012",
+            "authors": "R Baskaran; P Victer; P Paul;  Dhavachelvan"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Secure and efficient data retrieval over encrypted data using attribute-based encryption in cloud storage",
+            "journal": "Elsevier-Computers and Electrical Engineering",
+            "year": "2012",
+            "authors": "Dongyoung Koo; Junbeom Hur; Hyunsoo Yoon"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Efficient service cache management in mobile P2P networks",
+            "journal": "Elsevier",
+            "year": "2012-12-22",
+            "authors": "P Victer Paul; D Rajaguru; N Saravanan; R Baskaran; P Dhavachelvan"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Improving efficiency of Peer Network Applications by formulating Distributed Spanning Tree",
+            "journal": "IEEE",
+            "year": "2010-05",
+            "authors": "P Victer Paul; T Vengattaraman; P Dhavachelvan"
+        },
+        {
+            "ref_id": "b20",
+            "title": "A Theoretical Analysis of Authentication, Privacy, and Reusability Across Secure Biometric Systems",
+            "journal": "IEEE TRANSACTIONS ON INFORMATION FORENSICS AND SECURITY",
+            "year": "2012",
+            "authors": "Ye Wang; Shantanu Rane; C Stark; Prakash Draper;  Ishwar"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Reliability Enhancement in Software Testing: An Agent-Based Approach for Complex Systems",
+            "journal": "Springer Verlag",
+            "year": "",
+            "authors": "P Dhavachelvan; G V Uma"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Multi-agent Framework Construction for Intra Class Testing of Object-Oriented Software",
+            "journal": "Springer Verlag",
+            "year": "",
+            "authors": "P Dhavachelvan; G V Uma"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Web Service Based Secure E-Learning Management System-EWeMS",
+            "journal": "International Journal of Convergence Information Technology",
+            "year": "",
+            "authors": "M S Saleem Basha; P Dhavachelvan"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Complexity Measures For Software Systems: Towards Multi-Agent Based Software Testing Proceedings, ICISIP'05 2005",
+            "journal": "",
+            "year": "",
+            "authors": "P Dhavachelvan; G V Uma"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Wordless Sounds: Robust Speaker Diarization Using Privacy-Preserving Audio Representations",
+            "journal": "IEEE TRANSACTIONS ON AUDIO, SPEECH, AND LANGUAGE PROCESSING",
+            "year": "2013",
+            "authors": "Sree Hari; Krishnan Parthasarathi; Herv\u00e9 Bourlard; Daniel Gatica-Perez"
+        },
+        {
+            "ref_id": "b26",
+            "title": "DWSE-Simulator For Distributed Web Service Environment",
+            "journal": "",
+            "year": "",
+            "authors": "D Chandramohan; S K V Jayakumar; M S Shailesh Khapre;  Nanda Kishore"
+        },
+        {
+            "ref_id": "b27",
+            "title": "A Novel Group-Based Handover Authentication Scheme with Privacy Preservation for Mobile WiMAX Networks",
+            "journal": "IEEE COMMUNICATIONS LETTERS",
+            "year": "2012",
+            "authors": "Anmin Fu; Shaohua Lan; Bo Huang; Zhenchao Zhu; Yuqing Zhang"
+        },
+        {
+            "ref_id": "b28",
+            "title": "IMBPC-An Intelligent Model Based Hybrid Authentication Technique to Preserve User Privacy and Secrecy for Cloud Users",
+            "journal": "Springer",
+            "year": "",
+            "authors": " D Chandramohan; Dhavachelvan T Vengattaraman;  R Baskaran"
+        },
+        {
+            "ref_id": "b29",
+            "title": "An Approach to Provide Privacy Preservation for User Data in Pervasive & Ubiquitous Environment",
+            "journal": "Springer",
+            "year": "",
+            "authors": " D Chandramohan; Dhavachelvan T Vengattaraman;  R Baskaran"
+        },
+        {
+            "ref_id": "b30",
+            "title": "A Generic Privacy Preserving Approach for Cloud Providers and Users",
+            "journal": "Springer",
+            "year": "",
+            "authors": " D Chandramohan; Rajaguru T D Vengattaraman; Dhavachelvan P Baskaran"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 11Fig.1 Onion Garlic Privacy Preserving Approach (OGPPA)-Framework a)Onion privacy preserving approach layer b)Garlic privacy preserving approach layer c)Virtualization management",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 22Fig.2 OGPPA-Privacy Preserving Process for Cloud",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/INDCON.2012.6420771"
+}

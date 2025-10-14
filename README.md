@@ -14,6 +14,14 @@ This project aims to design a summarization workflow tailored for small-scale LL
 4. **Summarization**: Apply lightweight LLMs with self-check loops to refine outputs.
 5. **Evaluation**: Benchmark results against outputs from large LLMs and manual evaluation.
 
+## PDF to JSON Conversion Utility
+
+This project uses the [scipdf_parser](https://github.com/titipata/scipdf_parser/blob/master/scipdf/pdf/parse_pdf.py) utility to convert research papers in PDF format to structured JSON. This enables downstream processing and summarization workflows to operate on clean, machine-readable data.
+
+The conversion process leverages the `grobid:0.8.0` container for robust PDF parsing and extraction of metadata, sections, and references. This ensures high-quality extraction even from complex technical documents.
+
+Extracted JSON files are stored in the `papers_json` folder, mirroring the original PDF filenames for easy traceability.
+
 ---
 
 For more details, see the source code and documentation in this repository.

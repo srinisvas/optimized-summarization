@@ -1,0 +1,214 @@
+{
+    "title": "Privacy Protected Documents On Openstack Cloud",
+    "authors": "Junior Manager",
+    "pub_date": "",
+    "abstract": "Cloud computing has become an extremely attractive area of research and practice over the last few years. However, there are many concerns over privacy of s h a r e d documents while adopting and using public cloud solutions. Private c l o u d solution is useful for organizations to implement their own privacy policies. Through this paper we propose a method to upload privacy preserving application on private cloud and later privacy protected documents can be publish in public cloud by using a hybrid cloud approach. This is a suitable solution for organizations those who want to share their valuable documents to outside world for data mining and research purpose. Applications running on virtual cloud environment are accessible to more users than a non cloud application. In this paper we discuss about various aspects in designing and setting up a private cloud infrastructure in academic as well as scientific environments by means of the open source software known as OpenStack and analyzing performance of applications on installed cloud infrastructure.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Cloud computing system usually offers services (DaaS, SaaS, IP-MaaS, PaaS, and so on) on the other side of the Internet in terms of its users [5].The secret information of individual users and business are stored and managed by the service providers, which consequently results in privacy concerns. Privacy issues exist for a long time in the computing literature, and many legal acts have been formulated and published to protect user's individual privacy as well as business secrets. Nevertheless, these acts are become outdated and inapplicable to the new scenarios, where an entirely different relationship has been evolved between users and providers [6].\nHealth research is central to the advancement of health care, which imperatively requires access to health data. However, health records are intrinsically identifiable, and control over the use of the data is necessary. When trying to publish health data, custodians of such data encounter inevitable hurdles in connection with privacy. To address such issues, a privacy rule was established in the United States which constitutes a comprehensive federal protection for individual's medical records and is known as Health Insurance Portability and Accountability Act (HIPAA). The legislation regulates health care groups, organizations or businesses, on how to use and disclose privacy critical data [4].\nOpenStack is open source software designed to provision and manages large networks of virtual machines, creating a redundant and scalable private cloud computing environment [1].\nThe forthcoming sections of this paper discuss how to implement a privacy preserving solution using OpenStack to protect the private information, while publishing precious datasets to the outside world. For this, we propose an anonymization application as cloud computing service using OpenStack.",
+            "publication_ref": [
+                "b4",
+                "b5",
+                "b3",
+                "b0"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORKS",
+            "text": "Pierangela Samarati [7] addresses the problem of releasing micro data while safeguarding the anonymity of the respondents to which the data refer. The approach is based on the definition of k-anonymity. The paper introduces the concept of minimal generalization that captures the property of the release process not to distort the data more than needed to achieve k-anonymity, and present an algorithm for the computation of such a generalization. Kabir et al. [8] presents a systematic clustering method based on k-anonymization technique to minimize the information loss while at the same time assuring data quality. Lin et al. [9] proposes a method to minimize the information loss due to anonymization,group similar data together and then anonymize each group individually. L.Sweeney [10] propose k-anonymity protection model for protecting privacy. Zhang et al. [11]investigate and classify various privacy issues in cloud environment and point out potential key areas in cloud privacy protection and preservation.\nMany anonymization applications already developed in non cloud applications. While using anonymizing application on cloud system, it is possible to share application as Software as a Service among users.\nSo here this paper discusses about private cloud implementation using OpenStack software, in which three node architecture is used for implementation. The rest of the paper is organized as follows; Section 3 describes the proposed method. The experimental results and discussion of them are presented in section 4. Then conclusion and future work are presented.",
+            "publication_ref": [
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. OPENSTACK",
+            "text": "OpenStack is open source cloud computing software, released under the same terms as of apache license. It has the ability to control extensive processes, storage and resources all through the data centre, all supervised through a dashboard that gives the admin control while enabling the clients with procurement assets through a web interface. It ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Core Projects",
+            "text": "OpenStack is defined as a collection of independently developed software projects, glued together. Each service has an HTTP REST interface to communicate with OpenStack clients. \u2022 Cloud Controller (Server1) Installation\nThe API processes as well as the single-instance ones (MySQL, RabbitMQ, Keystone) run on the controller node. Beyond API processes, some services like Cinder, Glance, and Horizon have additional processes on the controller node.\n\u2022 Compute Node (Server2) Installation\nThis node runs a hypervisor to create virtual machines.\nThe most important process that runs on the node is novacompute responsible for -gathering all the necessary resources needed for a VM -creating the hypervisor related configuration for the VM -commanding the hypervisor to start the VM   ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION AND FUTURE WORK",
+            "text": "In this experiment we created a private cloud infrastructure with minimum hardware requirements that can be used for small, mid sized and large scale organizations demanding high efficiency and security. This experimental setup of OpenStack found to be very much suitable for various communities, organizations, institutions, research centers to setup a cloud infrastructure in a cost effective way. Also implemented privacy preservation models for data management in cloud environment, which is highly beneficial to organizations, those who share cloud data with outside world.\nThe action plan for future aims to explore the scope of improving the performance of private cloud by adding more nodes to cloud infrastructure and to design and setup a hybrid cloud model for sharing of sensitive data with public cloud for publishing in outside world [12].",
+            "publication_ref": [
+                "b11"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. ACKNOWLEDGMENT",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "OpenStack: toward an open-source solution for cloud computing",
+            "journal": "International Journal of Computer Applications",
+            "year": "2012",
+            "authors": "Omar Sefraoui; Mohammed Aissaoui; Mohsine Eleuldj"
+        },
+        {
+            "ref_id": "b1",
+            "title": "H S GuruprasadBuilding a Private Cloud Using Open-Stack",
+            "journal": "International Journal of Emerging Trends and Technology In Computer Science Vol",
+            "year": "2014-06",
+            "authors": " L Girish;  Dr"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Private Cloud for Organizations:An Implementation using OpenStack",
+            "journal": "International Journal of Scientific and Engineering Research",
+            "year": "2013-10",
+            "authors": "P Aruna; L Yamuna; D Devi;  Sudha; N Devi; S Priya; K Vasantha;  Thilagavathy"
+        },
+        {
+            "ref_id": "b3",
+            "title": "A Possible Solution For Privacy-Preserving Cloud Data Storage",
+            "journal": "IEEE",
+            "year": "2015",
+            "authors": "Mithun Paul; Christian Collberg; Derek Bambauer"
+        },
+        {
+            "ref_id": "b4",
+            "title": "The NIST Definition of Cloud Computing",
+            "journal": "",
+            "year": "2009",
+            "authors": "P Mell; T Grance"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Providing privacy preserving in cloud computing",
+            "journal": "IEEE",
+            "year": "2010",
+            "authors": " Wa N G , Jian"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Protecting Respondents Identities in Microdata Release",
+            "journal": "IEEE Transactions On Knowledge And Data Engineering",
+            "year": "2001-12",
+            "authors": "Pierangela Samarati"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Efficient systematic clustering method for k-anonymization",
+            "journal": "Acta Informatica",
+            "year": "2011",
+            "authors": "M E Kabir; H Wang; E Bertino"
+        },
+        {
+            "ref_id": "b8",
+            "title": "An efficient clustering method for k-anonymization",
+            "journal": "ACM",
+            "year": "2008",
+            "authors": "Meng-Cheng Li N , Jun-Lin;  Wei"
+        },
+        {
+            "ref_id": "b9",
+            "title": "K-anonymity: a model for protecting privacy",
+            "journal": "International Journal on Uncertainty Fuzziness and Knowledge-based Systems",
+            "year": "2002",
+            "authors": "L Sweeney"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Key research issues for privacy protection and preservation in cloud computing",
+            "journal": "IEEE",
+            "year": "2012",
+            "authors": "Gaofeng Zhang"
+        },
+        {
+            "ref_id": "b11",
+            "title": "A secure storage service in the hybrid cloud",
+            "journal": "IEEE",
+            "year": "2011",
+            "authors": " Nep A L;  Surya"
+        },
+        {
+            "ref_id": "b12",
+            "title": "",
+            "journal": "",
+            "year": "2011-07",
+            "authors": "Ken Pepple; Deploying Openstack"
+        },
+        {
+            "ref_id": "b13",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": " Op En Stack"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "is a cloud solution to provide an Infrastructure as a Service (IaaS). OpenStack is basically a collection of open source projects. Organizations can set up and run their cloud compute and storage infrastructure using this collection of open source OpenStack project is founded by NASA and Rackspace (RAX) and NASA provided a code for compute part and Rackspace provided hosting and storage infrastructure. OpenStack has become a non-profit organization entity which was established in September 2012.It manages and promotes distribution, development and adoption of the cloud computing software. OpenStack is a global collaboration of developers and cloud computing technologists, producing a ubiquitous open source cloud computing platform for public and private clouds. The project aims to deliver solutions for all types of clouds by being simple to implement, massively scalable, feature rich. A. Openstack Architecture Open stack has a modular architecture which provides users the flexibility to design the cloud as required, without any proprietary issues related to hardware or software requirements. Further it has the ability to put together with existing as well as third party technologies.The architecture of the OpenStack is shown in fig 1.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 1 :1Fig. 1: OpenStack Architecture",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 2 :2Fig. 2: List of all nova services",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 3 :3Fig. 3: Openstack login",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "Storage Node (Server3) Installation Storage nodes usually provide distributed object store, or distribute block storage service.Installed OpenStack Block Storage service (cinder), which adds persistent storage to a virtual machine. Provides an infrastructure for managing volumes -Interacts with OpenStack Compute to provide volumes for instances. -Enables management of volume snapshots, and volume types.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "\u2022 Compute Node (Server2) Installation",
+            "formula_coordinates": [
+                3.0,
+                58.92,
+                190.01,
+                157.53,
+                9.32
+            ]
+        }
+    ],
+    "doi": ""
+}

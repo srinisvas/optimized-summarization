@@ -1,0 +1,155 @@
+{
+    "title": "Thou Shalt Not\u2026 A Look at the Ethics of Copying Software Code",
+    "authors": "Sarah J Duda; Vickie Peters",
+    "pub_date": "",
+    "abstract": "Since the 1970's, the field of ethics in software engineering has attempted to define the boundaries of what was morally correct when dealing with problems aggravated, transformed, or created by computer technology. Efforts to codify ethics for computer software engineers resulted in bright line rules such as \"thou shalt not appropriate other people's intellectual output\" [1] and \"honor property rights including copyrights and patent\" [2]. Few instances in practice are, however, as black and white as these rules suggest. Rather, there are a number of grey areas where computer software engineers must question whether an action is morally correct. One ambiguity is when and to what extent it is morally acceptable to copy computer software code. This paper investigated whether software engineers comply with existing ethical standards surrounding intellectual property rights associated with computer software code.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "The evolution of computer technology over the last 50 years has brought with it an increase in the use and functionality of computer software code. This increase has been driven, in part, by new developments in programming technologies, programmer expertise, and industry recognition of the value associated with computer software code. Some businesses and individuals have sought to protect valuable computer software code using intellectual property rights including copyrights, patents, and trade secrets. Yet others have chosen to freely offer their computer software code so that other software engineers can use, modify, and learn from the computer software code. These competing ideologies make it difficult for software engineers to know whether, and to what extent, it is permissible to copy computer software code.\nSoftware engineers have ethical duties to the profession [3]. This includes an inherent duty to respect the work product and intellectual property rights of others. To determine whether software engineers are complying with this duty, we surveyed a number of software engineers and asked them ethical questions about their practice. We then focused our analysis on those questions that touch upon intellectual property issues associated with copying computer software code. Our analysis determined that the software engineers in the survey profess to comply with ethical standards set forth by the Association for Computing Machinery (ACM) as they relate to intellectual property issues associated with the copying of computer software code.",
+            "publication_ref": [
+                "b2"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RESEARCH METHODOLOGY",
+            "text": "We designed a descriptive study to gather categorical data to test ethical standards associated with the copying of computer software code. In particular, our study utilized one of the most common sources of gathering data, namely a survey. The survey was based on the ACM/IEEE-CS software engineering code of ethics and professional practice (version 5.2); however, the principles articulated in the code of ethics were rewritten in an interrogative format. The software code of ethics encompassed eight principles that included public, client and employer, product, judgment, management, profession, colleagues, and self. For the sake of brevity, we focused on select questions in each category -some of which related to intellectual property rights. We designed the survey with a total of 27 questions and analyzed the survey data using, inter alia, frequency tables.\nThe survey was designed using Microsoft Excel 2007\u00ae. This software application was selected because it did not capture the IP address or other information that would potentially compromise the confidentiality and anonymity of the respondents who completed the survey utilizing the Internet. The survey was distributed to the IEEE Region 4 active members via an email blast. The responses were measured utilizing a semantic differential scale with a scoring system that ranged from one to seven.\nA random sample was selected from the IEEE active members who were included in the software engineer population. Once responses were tabulated, a coding scheme was devised for the 27 survey questions that subcategorized and delineated five survey questions that relate to intellectual property issues. A frequency table for each of the intellectual property questions was utilized to examine and summarize valid responses. We defined valid responses as questions that were actually answered while questions left blank were invalidated.\n978-1-4799-4992-2/14/$31.00 \u00a92014 IEEE",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. RESEARCH FINDINGS",
+            "text": "A total of 25 survey responses were received. The results indicated that software engineers professed to comply with ethical principles that relate to intellectual property issues associated with the copying of computer software code. This finding is based on an analysis of five survey questions that are related to intellectual property issues including copyrights, patents, and trade secrets. The details of each survey question, and the intellectual property implications associated with the survey results are discussed throughout this section with an emphasis on how compliance or noncompliance with the respective ethical principles are linked to the copying of computer software code.\nFor purposes of this paper and the sake of brevity, we focused our analysis on copyright, patent, and trade secret intellectual property rights as they relate to the copying of computer software code [4]. Copyright law, as discussed herein, refers to protections provided for \"original works of authorship fixed in any tangible medium of expression. [5]\" Copyright protections are available for computer programs that consist of \"a set of statements or instructions to be used directly or indirectly in a computer in order to bring about a certain result. [6]\" Therefore, software engineers that copy computer software code without proper authorization or permission may be violating a copyright.\nImportantly, copyright law protects the expression of an idea but does not extend to ideas themselves nor does it extend to \"program logic, algorithms, systems, methods, concepts, or layouts\" [7]. Affirmative protections of such aspects of computer programs are instead accomplished through patent law. Patent law provides the owner of the patent the right to exclude others from making, using, selling, offering for sale, and importing the patented invention into the United States [8]. To obtain a patent, the computer software must be new, useful, and non-obvious [9]. Whereas copyright law prevents duplication of computer software or a portion thereof, patent law prevents others from creating computer software that performs a function in a certain way. Thus, software engineers that create new computer software code that performs the same logic or algorithm as patented computer software may be violating the intellectual property rights of the patent owner.\nAnother avenue of intellectual property protection is trade secret law. A trade secret refers to \"information, including a formula, pattern, compilation, program, device, method, technique, or process\" that derives economic value from being kept secret [10]. To maintain a trade secret, a person must make reasonable efforts to maintain the secrecy of the information [11]. A trade secret is lost once it becomes known. Software engineers that acquire or disclose computer software code that is protected by a trade secret may be illegally misappropriating the intellectual property rights of the trade secret owner.\nWe focused our analysis on survey questions that were directed to one or more of the above described forms of intellectual property. Those survey questions included: The first survey question that was analyzed is directed to whether software engineers knowingly use software that is obtained or retained illegally or unethically. As illustrated in Figure 1, the results of this survey question demonstrated that approximately 60% of the respondents indicated that they did not knowingly use such software, while approximately 40% varied on whether and to what degree they use software that is illegally or unethically obtained or retained. Of the 40%, some 8% indicated that it was unlikely or highly unlikely that they would not knowingly use software illegally or unethically. The standard deviation for the first survey question was 1.8 (see Figure 2), which indicated that the majority of respondents displayed a tendency to view themselves as ethical regarding the illegal or unethical use of software. While a majority of the respondents had very strong convictions against using illegally or unethically obtained or retained software, it is notable that nearly 40% of the respondents had some waiver in their response [12]. This waiver can be attributed to a number of factors. For instance, there are situations where software engineers willingly use software that is obtained or retained illegally or unethically. An example may include copying software code without permission. Another example would include copying software without paying for a license. From an intellectual property viewpoint, the waiver may suggest a growing divide on if, and under what circumstances, a software engineer may be willing to violate another's copyright by illegally or unethically using or otherwise copying computer software code.\nThe second survey question asked if the respondents assisted colleagues in being fully aware of current standard work practices that included policies and procedures for protecting passwords, files, other confidential information, and security measures in general. Inherent in this survey question was the assumption that the respondent must be cognizant of the work practices to make others aware of such practices. With this assumption, we looked at whether an employee was aware of and made others aware of work practices for protecting a trade secret such as confidential information. The results demonstrated that approximately 95% of respondents were somewhat likely, likely, or highly likely to make others aware of such work practices (see Figure 3). This indicated that software engineers were aware or should be aware of company policies surrounding the protection of confidential information. The third survey question asked respondents what their experience was in keeping private any confidential information gained in their professional work. This survey question was directed to trade secret law, and questioned an employee's ability to maintain employer trade secrets. The survey responses were varied with a mean of 4.3, which indicated that respondents were on average neutral as to whether they kept private their employer's confidential information. When compared to the results of the second survey question, the results of the third survey question suggested that 31% of the respondents chose not to keep private employer's confidential information despite knowledge of current work practices for protecting such confidential information.\nThe results of the third survey question give pause because of the extremely polarized responses coupled with the otherwise strong ethical trend throughout the other survey responses. Two possible interpretations were identified for this polarization. The first interpretation was that 31% of software engineers do not keep private confidential information gained in their professional work. The second interpretation was that the results were skewed (see Figure 3) because of negative language (i.e., \"I do not\") used in the format of the question. Such language when juxtaposed against affirmative language (e.g., \"I do\") used in other questions may have confused respondents when answering this question. The fourth and fifth survey questions related to whether, and to what extent, software engineers take undue credit or make false claims as to the characteristics of software. Specifically, the fourth survey question asked software engineers if they were accurate in stating the characteristics of software on which they work, avoiding not only false claims but also claims that might reasonably be speculative, vacuous, deceptive, misleading, or doubtful. The fifth survey question asked the related question if software engineers credit fully the work of others while refraining from taking undue credit. We used these survey results to investigate the ethics surrounding copying or misappropriating another's software code without providing proper credit, and potential misrepresentations or liabilities surrounding such intellectual property rights violations.\nIn analyzing the fourth and fifth survey questions, we found that 63% of respondents indicated that they most likely accurately state the characteristics of the software on which they work (see Figure 5) and 83% of respondents (see Figure 6) indicated that they most likely fully credited the work of others. The mean for the fourth survey question was 6.5 with a .8 standard deviation (see Figure 7), and the mean for the fifth survey question was 6.8 with a .4 standard deviation (see Figure 8). This suggested that software engineers that do copy or misappropriate software code were ethical in attributing proper credit to the source of the software code. However, such credit may not be satisfactory when the underlying software code is protected by intellectual property. Future research could utilize the same software code of ethics; however, the instrument design could be modified with the use an alternative software package to promote ease of use and better flexibility. If confidentiality is not an issue, then perhaps a survey package can be utilized to gather data.\nResearch findings were limited due to the sample size. Since the sample results were relatively small, it proved to be difficult to generalize findings that are representative of the total population of software engineers in IEEE Region 4. Additional study into the details and rational surrounding the maintenance of employer trade secrets is needed to provide insight on whether, and to what extent, software engineers stray ethically when it comes to maintaining trade secrets. It is further recommended that software engineers become more familiar with copyright, patent, and trade secret laws as they relate to copying computer software code.\nIn conclusion, there are a number competing ideologies when it comes to copying computer software code. Nonetheless, it appears that software engineers inherently respect the work product and intellectual property rights of others. While bright line ethical rules may be too stringent, our survey results suggest that more flexible codes of ethics appear to be successful in providing software engineers with ethical standards surrounding the copying of software code. ",
+            "publication_ref": [
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9"
+            ],
+            "figure_ref": [
+                "fig_0",
+                "fig_1",
+                "fig_1",
+                "fig_5"
+            ],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Pursuit of a 'Ten Commandments' of Computer Ethics",
+            "journal": "",
+            "year": "1992-02-26",
+            "authors": "R C Barquin"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Association for Computing Machinery",
+            "journal": "Retrieved Febrary",
+            "year": "1992",
+            "authors": ""
+        },
+        {
+            "ref_id": "b2",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": " Id"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Although a form of intellectual property, trademarks were not a focus of the survey questions and were not included in our analysis",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b4",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": " Id"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Copyright Registration for Computer Programs, Circular 61",
+            "journal": "U.S. Copyright Office",
+            "year": "2014-02-26",
+            "authors": ""
+        },
+        {
+            "ref_id": "b6",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": " Id"
+        },
+        {
+            "ref_id": "b7",
+            "title": "",
+            "journal": "Uniform Trade Secrets Act, \u00a7",
+            "year": "1979",
+            "authors": ""
+        },
+        {
+            "ref_id": "b8",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": " Id"
+        },
+        {
+            "ref_id": "b9",
+            "title": "For purposes of analysis, waiver is considered any deviation from the mode",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Figure 1 .1Figure 1. Percentage of respondents that do not knowingly use software illegally or unethically",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Figure 3 .3Figure 3. Percentage of respondents that assist colleagues in being aware of current work practices",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Figure 4 .4Figure 4. Histogram of respondents that keep confidential information private",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "56",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Figure 5 .Figure 6 .56Figure 5. Percentage of respondents that accurately state characteristics",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "7",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Figure 7 .7Figure 7. Histogram of respondents accurately stating characteristics",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": ""
+}

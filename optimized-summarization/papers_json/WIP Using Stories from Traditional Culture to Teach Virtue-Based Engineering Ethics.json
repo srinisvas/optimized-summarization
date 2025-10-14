@@ -1,0 +1,286 @@
+{
+    "title": "WIP: Using Stories from Traditional Culture to Teach Virtue-Based Engineering Ethics",
+    "authors": "Jiamin Zhang; Olivier Truong; Bryan Sutjipto; Dena K Plemmons",
+    "pub_date": "",
+    "abstract": "describes research-based approaches for the development of course modules for teaching virtue-based engineering ethics in undergraduate engineering courses. Engineers play a pivotal role in society. Therefore, it is critical to train engineering students to be ethical engineers. Most of the engineering ethics training offered currently focuses on technical ethics, not focusing on the development of the whole person. Furthermore, students often show a lack of interest in current engineering ethics training and case studies often lack context. Prior research has shown that virtue-based character education offers a viable approach for more holistic engineering ethics training. A character approach to engineering ethics offers personal motivation and actionable dimensions to ethical reasoning. However, within the field of engineering ethics, currently only limited studies have been done on virtue-based character education in undergraduate engineering courses. In this study, we develop stories from traditional culture of different countries into teaching modules to help engineering students identify virtues present in the stories and make connections to engineering ethics. The teaching modules include short virtue-of-the-week stories at the beginning of class and team-based class activities for connecting virtues to ethics. We integrate the teaching of ethics with students' coursework to help them realize the importance of virtues and ethics when solving problems and working as a team in class. Preliminary findings from the pilot study in a capstone design course at a large public university in the US suggest the teaching modules help students be more aware of the connections between virtues and engineering ethics and students are engaged and interested in our approach. Our study will advance knowledge in the field of engineering ethics by investigating how stories from traditional culture help students understand engineering ethics and inform students' ethical decision-making. The teaching modules developed in this study will also be useful resources for other engineering faculty who are interested in incorporating engineering ethics in their courses.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION AND THEORY",
+            "text": "Ethics is an integral part of the development of engineering identity. Engineers play a pivotal role in society. Therefore, it is critical to train engineering students to be ethical engineers.\nHowever, studies have shown that employers often see a lack of ethical decision-making skills among recent graduates [1], [2]. Additionally, with the wide use of AI technology, such as ChatGPT, it is even more important to train students to use technology responsibly [3], [4].\nCurrent challenges with engineering ethics education include students' lack of interest in and engagement with the current ways of teaching ethics, lack of context in case studies and code of ethics, and ethics training being disconnected from student coursework [5], [6]. Traditional approaches to engineering ethics education have been largely limited to the use of codes of ethics of engineering societies and regulatory boards and the so-called \"disaster cases\" as case studies. However, rules cannot adequately account for the place of discretion, judgment, and background knowledge in meeting some professional obligations. Additionally, there is an internal, motivational element present in professional life that cannot adequately be accounted for by rules [7]. Furthermore, current engineering ethics training focuses on technical ethics, not focusing on the development of the whole person.\nIn addition to rule ethics, there is another ethical tradition with a long history that can provide a more adequate framework for teaching engineering ethics: \"virtue ethics\" or \"ethics of character\". The chief work in ancient philosophical ethics, Aristotle's Nicomachean Ethics [8], is a treatise in virtue ethics. Aristotle lists liberality, magnanimity, courage, and justice as virtues. Additionally, classical Chinese literature has a strong focus on virtues, such as Ren (benevolence), Yi (righteousness), Li (propriety), Zhi (wisdom), and Xin (trustworthiness).\nOne prominent virtue ethics framework used to connect virtue ethics to professional education is the Jubilee Centre Framework, which divides virtues into four categories: performance, intellectual, moral, and civic. All of these virtues culminate into one integrated virtue -practical wisdom [9]. Outside of engineering, character education has been used for teaching research ethics [10] and in fields like medicine, education, nursing, and business [11], [12].\nA comprehensive review [13] showed that although there had been fairly widespread implicit incorporation of character education in engineering, the emphasis has been on technical skill building and not clear acknowledgement of the ethical and moral dimensions of character. Recently, a few engineering educators proposed to use virtue-based character education as the framework for teaching engineering ethics [7], [14], [15]. The virtue-based character education is a more holistic approach for teaching engineering ethics and can capture the internal and motivational element present in professional life that cannot be adequately accounted for by rules. Additionally, virtues exert a positive impact on people's lives through enabling one to engage in virtuous activities, adopt positive coping strategies when facing adversity, and experience positive emotions [16].\nWithin the virtue-based character education framework, we used stories that are associated with virtues emphasized in the traditional culture of different countries. We asked students to identify the virtues present in the stories and connect those to the engineering ethics. Stories from traditional cultures in different countries can serve as moral exemplars, give more cultural context than the case studies developed from disaster cases, and can make the activities about engineering ethics more interesting and positive for students.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b6",
+                "b13",
+                "b14",
+                "b15"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. DESIGN OF TEACHING MODULES",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Selecting Stories",
+            "text": "For this pilot study, we started by selecting stories using the following criteria: 1) the story is from traditional culture (e.g., documented stories about historical figures, stories from traditional fables); 2) the story features people with virtues that are important for engineering students to learn; 3) stories will be selected from cultures in different countries; 4) since the emphasis is on the virtues presented in the stories, the stories do not have to feature an engineer. By working with undergraduate student researchers from different cultural backgrounds, we were able to broaden the sources of the stories.\nHere is a short summary of two stories we used. One story that focused on the virtues of diligence and perseverance was about an ancient Chinese carpenter and engineer, Lu Ban (507 -440 B.C.E) and his son Ya Zi. Lu Ban taught Ya Zi to be perseverant when learning a new profession by showing him a big box containing Lu Ban's used axes that all had wear and tear because of Lu Ban's hard work [17], [18]. Another story that focused on the virtue of honesty was the story about Mercury and the Woodman from Aesop's Fable [19]. Aesop is a Greek story-teller who lived between 620 and 560 B.C.E. The first column in Fig. 1 illustrates both of these stories.",
+            "publication_ref": [
+                "b16",
+                "b17",
+                "b18"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Virtue of the Week",
+            "text": "We developed the stories into modules that help students identify virtues represented in the story and connect the virtues to engineering ethics. These teaching modules were short 10-minute discussions at the beginning of class each week. The first author of the paper is the instructor of the course. The first Virtue of the Week module was implemented after students filled out a pre-survey (see the Assessment section), in which students were introduced to the definition of virtues and some examples of virtues. When implementing the Virtue-of-the-Week modules, the instructor first gave a brief background about the story, then told the story and included key information and figures on PowerPoint slides. Next, the instructor asked students the following questions: What virtues are present in the story? How are these virtues related to engineering ethics? The instructor then offered her perspectives on the virtues that are exemplified in the story. Fig. 1 outlines the connection between stories, virtues, and engineering ethics in two Virtue-of-the-Week modules we have developed. When developing the Virtue-of-the-Week teaching modules, we also made connections to excerpts from classics whenever possible (e.g., Aristotle's Nicomachean Ethics, The Analects by Confucius, etc.) to help explain the relevant virtues present in the stories. In the two-quarter capstone design course, we have implemented ten Virtue-of-the-Week modules using traditional stories from countries such as China, Greece, West Africa, the U.S, and the Philippines. These stories exemplified virtues such as perseverance, teamwork, honesty, integrity, kindness, courage, forbearance, and respect. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Connecting Virtues to Ethics",
+            "text": "To give students more guidance on connecting virtues to ethics, we developed an in-class activity using Google Jamboard. The instructor pre-populated the Jamboard with digital sticky notes for virtues that were discussed in class previously and segments of the AIChE Code of Ethics [20]. In part 1 of the activity (implemented in the 1st quarter of the course), the instructor asked students to first work individually then work in their teams to use arrows to draw connections between virtues and segments of the code of ethics on the page of Jamboard for their team. Students were asked to consider the question, \"which virtues are needed to support this aspect of engineering ethics\" when making connections between virtues and ethics. Teams were also asked to write a short explanation for two connections they made. After 5 minutes of individual work and 10-15 minutes of team discussion, each team was asked to select a representative to share the highlights of their discussion with the class. In part 2 of the activity (implemented in the 2nd quarter of the course), the instructor asked students to revisit the Jamboard they made in the 1st quarter and add more connections between virtues and ethics, especially on virtues that students hadn't connected to ethics previously. Students were also encouraged to write additional code of ethics for their team, and to write explanations for two connections they made. More time (25-30 minutes) was given to students in part 2 of the activity. At the end of the activity, the instructor asked each team to share the highlights of their discussion.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. IMPLEMENTATION OF TEACHING MODULES",
+            "text": "As a pilot study, the teaching modules were implemented in the 2-quarter chemical engineering (CHE) capstone design course at a large public university in the Southwest US. Students in the course worked in teams of five to design a chemical engineering process. This project was reviewed and approved by the university's Institutional Review Board (IRB protocol number: 30232). The first author is the course instructor. The control group for the study is the environmental engineering (ENVE) capstone design course taught at the same university. The two courses have one hour of shared lecture per week and each course has six hours of tutorial/team consultation per week. In the shared lecture, the first author of the paper taught both CHE and ENVE students the engineering code of ethics and case studies from engineering ethics textbooks [21], [22] (not the teaching modules we developed). In the section specifically for CHE students, the first author of the paper implemented the teaching modules we developed. Figure 2 illustrates the timeline for the order in which the teaching modules and assessments were implemented in the capstone design course. We used an integrated approach for the teaching modules to help students realize the importance of virtues for their daily life and their undergraduate studies. To maximize student participation in the teaching modules, the longer activities (part 1 and part 2 of Connecting Virtues to Ethics activity) were scheduled in weeks when students did not have other major assignments due. During part 2 of the Connecting Virtues to Ethics activity, the instructor walked around the classroom more and encouraged teams to discuss their ideas, which resulted in more connections between virtues and ethics and more thoughtful explanations of the connections. Additionally, since this was the first time these modules were developed and implemented, the instructor asked for students' feedback often (e.g., using surveys).",
+            "publication_ref": [
+                "b19",
+                "b20"
+            ],
+            "figure_ref": [
+                "fig_1"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. ASSESSMENT",
+            "text": "For this pilot study, we developed both informal and formal assessments to 1) assess students' abilities to identify virtues in stories and connect virtues to engineering ethics and 2) to gather students' feedback on the teaching modules.\nCourse Pre-Post Survey: We developed a course pre-survey and asked CHE students to fill out the survey for participation points at the beginning of the 1st quarter of capstone design. Students were first asked about if and when they have learned about engineering ethics and how important engineering ethics is to them. Then, after giving students a brief definition of virtue and some examples of virtues, we asked students which sources are the most important for their learning of virtues, which virtues they value the most, how important these virtues are to them, and how they exemplify these virtues. CHE students completed the post-survey at the end of the 2nd quarter of capstone design. Similar questions as the pre-survey were included in the post-survey about importance of ethics and virtues. Additionally, students were asked to give feedback on the teaching modules about virtues and engineering ethics.\nFeedback Survey: To also encourage anonymous feedback, the instructor distributed an anonymous survey in the middle of the 1st quarter of the course and asked students about the most interesting thing and most useful thing they've learned in the course. Students were also given the option to provide additional feedback on the course. Additionally, the university in which this study took place administers an end-of-course evaluation survey for all courses. The course evaluation survey is anonymous by design.\nIn-class Activities: Connecting Virtues to Ethics Activities were used as formative assessment. The quantity and quality of the connections teams made between virtues and ethics on the Jamboard and the depth of thinking that was evident during the class discussion allowed the instructor to gauge students' understanding of virtues she discussed in the stories and how to connect these virtues to engineering ethics.\nWriting Assignment on Virtue and Ethics: After part 2 of the Connecting Virtues to Ethics activity, the instructor asked students to complete an individual assignment about virtue and ethics. Specifically, students were asked to summarize a story from their culture or a culture they are interested in, describe the virtues that are exemplified in the story, then discuss how these virtues support engineering ethics.\nEthics Quizzes: For summative assessment of students' understanding of engineering ethics, we developed a short ethics quiz (end of 1st quarter) and a long ethics quiz (end of 2nd quarter). Both CHE and ENVE students completed the quizzes. The 1st ethics quiz contained 10 multiple-choice questions, some of which asked students to make decisions based on the short engineering scenario that was given. For the longer ethics quiz, we used a validated instrument published in the literature, the Engineering and Science Issues Test (ESIT) [23]. The results of the ethics quizzes will allow us to compare the performance of CHE and ENVE students.\nAssessing Other Related Areas: We hypothesize that in addition to the improvement in areas directly related to the teaching modules (identify virtues in stories and connect to engineering ethics), students will also benefit from the teaching modules in other related ways. For example, by understanding the importance of compassion and diligence, students will become more considerate and more hardworking team members. We used the validated instrument CATME [24] to assess students' teamwork skills in capstone design.",
+            "publication_ref": [
+                "b21",
+                "b22"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. PRELIMINARY RESULTS",
+            "text": "Since the two-quarter capstone design course was still ongoing when we initially submitted the manuscript, as the course instructor, the first author couldn't know which students gave consent to participate in the research until final course grades were submitted. Thus, we could only analyze anonymous survey results (in which students indicated anonymously whether they gave consent), analyze the course evaluation survey results (anonymous survey implemented by the university), and report general observations during in-class activities.\nOut of 37 students who completed the anonymous survey (in week 5 of the first quarter) and gave consent, two students wrote about the Virtue-of-the-Week modules when responding to the question about the most interesting thing they've learned in the course: \"I really enjoy the virtues that you go over at the beginning of lab sometimes. I've never heard of Ya Zi before, so it was very interesting to learn about.\" \"The most interesting thing is the virtue mini stories which give a nice break from just engineering work.\" At this point the instructor had discussed three Virtue-of-the-Week stories. The majority of the class time was spent to teach students relevant software (Aspen Plus and AutoCAD) and to meet with teams to discuss their progress on the project. Most of the other comments in the anonymous survey were about the software students were learning, project design, and teamwork.\n31 out of 50 students answered the numerical questions in the end-of-first-quarter course evaluation survey for the CHE course implemented by the university and 15 out of the 31 students wrote comments. Of the 15 students who wrote comments, 3 students mentioned they enjoyed the discussion of ethics in the course: \"The emphasis [the instructor] placed on engineering ethics throughout this course was greatly appreciated and should be continued in future iterations of senior design.\" \"Enjoyed ethics stories.\" \"I appreciate the addition of some ethics discussions at the beginning of class.\"\nDuring Part 2 of Connecting Virtues to Ethics Activity (in the 2nd quarter), the instructor observed that compared to Part 1 of the activity (in the 1st quarter) students made more connections between virtues and engineering ethics. Students also added additional virtues and code of ethics. Without being prompted by the instructor, students frequently connected the virtues and ethics to other aspects of the course, such as teamwork and learning the software.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. DISCUSSION",
+            "text": "Our pilot study demonstrates a novel approach for teaching engineering ethics, which incorporates using traditional stories to teach virtues and helping students connect virtues to engineering ethics. With a good understanding of virtues, students have richer context to work with when practicing ethical decision-making and the decisions they make will be more connected to their character. Our approach helps address the challenge of the lack of students' interest in previous approaches for teaching ethics (e.g., using code of ethics and case studies alone). We think students are interested in our approach for two main reasons. 1) Students have learned about virtues since they were young and connecting virtues to engineering ethics makes ethics more relatable to students. 2) Students are interested in hearing stories from different cultures and using stories to teach virtues gives students more context to understand the meaning of virtues. Preliminary results suggest that students are quite engaged and interested in the teaching modules we developed. Overall, our approach helps students make the important connection between being a virtuous person and being an ethical engineer.\nIn addition to helping students identify the importance of virtues for their future profession, we aim to help students realize the importance of virtues for their daily life and their undergraduate studies. For example, after discussing the virtues of diligence and perseverance in a teaching module, we asked students to remember these virtues when they work on challenging course assignments. When a student was not contributing enough to their team, we discussed with the student the virtues of empathy and kindness and gave the student suggestions for how to be a better team member. With this integrated approach, the teaching of ethics is no longer isolated in a separate teaching module, but rather it becomes an essential part throughout the engineering course.\nLimitations and Future Work: With only 50 CHE students and 20 ENVE students, our sample size is quite small. After this capstone design course ends, we will analyze data we gathered from this pilot study to assess the effectiveness of the teaching modules. We plan to also develop teaching modules to teach students ethical decision-making, for example, by incorporating consideration of virtues in ethics case studies. Additionally, we will develop more rigorous assessments to quantify improvements in students' understanding of virtues, engineering ethics, and ethical decision-making. Furthermore, we plan to collaborate with other engineering faculty to incorporate these teaching modules in their courses as well.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Re-engineering graduate skills-a case study",
+            "journal": "European journal of engineering education",
+            "year": "2009",
+            "authors": "C S Nair; A Patil; P Mertova"
+        },
+        {
+            "ref_id": "b1",
+            "title": "mind the gaps\": An empirical approach to engineering ethics, 1997-2001",
+            "journal": "Science and Engineering Ethics",
+            "year": "2003",
+            "authors": "R E Mcginn"
+        },
+        {
+            "ref_id": "b2",
+            "title": "A high-level overview of ai ethics",
+            "journal": "Patterns",
+            "year": "2021",
+            "authors": "E Kazim; A S Koshiyama"
+        },
+        {
+            "ref_id": "b3",
+            "title": "A virtue-based framework to support putting ai ethics into practice",
+            "journal": "Philosophy & Technology",
+            "year": "2022",
+            "authors": "T Hagendorff"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Reimagining engineering ethics: From ethics education to character education",
+            "journal": "IEEE",
+            "year": "2019",
+            "authors": "O Pierrakos; M Prentice; C Silverglate; M Lamb; A Demaske; R Smout"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Engineering practice and engineering ethics",
+            "journal": "",
+            "year": "2017",
+            "authors": "W T Lynch; R Kline"
+        },
+        {
+            "ref_id": "b6",
+            "title": "The good engineer: Giving virtue its due in engineering ethics",
+            "journal": "Science and Engineering Ethics",
+            "year": "2008",
+            "authors": "C E Harris"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Nicomachean Ethics",
+            "journal": "",
+            "year": "",
+            "authors": "Aristotle "
+        },
+        {
+            "ref_id": "b8",
+            "title": "The jubilee centre framework for character education in schools",
+            "journal": "University of Birmingham",
+            "year": "2022",
+            "authors": "J Arthur; K Kristj\u00e1nsson"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Beyond research ethics: How scientific virtue theory reframes and extends responsible conduct of research",
+            "journal": "Routledge",
+            "year": "2018",
+            "authors": "R T Pennock"
+        },
+        {
+            "ref_id": "b10",
+            "title": "The value of character-based judgement in the professional domain",
+            "journal": "Journal of Business Ethics",
+            "year": "2021",
+            "authors": "J Arthur; S R Earl; A P Thompson; J W Ward"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Cultivating moral character and virtue in professional practice",
+            "journal": "",
+            "year": "2018",
+            "authors": "D Carr"
+        },
+        {
+            "ref_id": "b12",
+            "title": "What can we learn from character education? a literature review of four prominent virtues in engineering education",
+            "journal": "",
+            "year": "2020",
+            "authors": "J Koehler; O Pierrakos; M Lamb; A Demaske; C Santos; M D Gross; D F Brown"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Character development in the engineering classroom: An exploratory, mixed-methods investigation of student perspectives on cultivating character",
+            "journal": "",
+            "year": "2023",
+            "authors": "J Koehler; O Pierrakos; A Yeaman"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Character-based engineering virtues",
+            "journal": "",
+            "year": "2023",
+            "authors": "K Mcdonald"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Virtue, happiness, and well-being",
+            "journal": "The Monist",
+            "year": "2016",
+            "authors": "M Rossi; C Tappolet"
+        },
+        {
+            "ref_id": "b16",
+            "title": "The Book of Rites (Liji)",
+            "journal": "",
+            "year": "",
+            "authors": " Disciplesofconfucius"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Mozi, 5th-3rd Centuries BC",
+            "journal": "",
+            "year": "",
+            "authors": "D Mo"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Mercury and the woodman",
+            "journal": "",
+            "year": "2015",
+            "authors": " Aesop"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Engineering Ethics: Concepts and Cases",
+            "journal": "",
+            "year": "2018",
+            "authors": "C E Harris; M S Pritchard; M J Rabins; R James; E Englehardt"
+        },
+        {
+            "ref_id": "b20",
+            "title": "The ethical engineer: Contemporary concepts and cases",
+            "journal": "Princeton University Press",
+            "year": "2018",
+            "authors": "R Mcginn"
+        },
+        {
+            "ref_id": "b21",
+            "title": "The engineering and science issues test (esit): A discipline-specific approach to assessing moral judgment",
+            "journal": "Science and Engineering Ethics",
+            "year": "2010",
+            "authors": "J Borenstein; M J Drake; R Kirkman; J L Swann"
+        },
+        {
+            "ref_id": "b22",
+            "title": "The comprehensive assessment of team member effectiveness: Development of a behaviorally anchored rating scale for self-and peer evaluation",
+            "journal": "Academy of Management Learning & Education",
+            "year": "2012",
+            "authors": "M W Ohland; M L Loughry; D J Woehr; L G Bullard; R M Felder; C J Finelli; R A Layton; H R Pomeranz; D G Schmucker"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Virtue-of-the-Week-Teaching-Modules. The excerpts of code of ethics in the last column are taken from AIChE Code of Ethics [20].",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig. 2. Timeline of Teaching Modules and Assessments Implemented in the Capstone Design Course.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/FIE61694.2024.10893578"
+}

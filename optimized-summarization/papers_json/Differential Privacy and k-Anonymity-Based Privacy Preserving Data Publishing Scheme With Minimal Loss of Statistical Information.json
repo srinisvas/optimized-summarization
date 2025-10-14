@@ -1,0 +1,696 @@
+{
+    "title": "",
+    "authors": "Seong Oun",
+    "pub_date": "2023-09-20",
+    "abstract": "",
+    "sections": [
+        {
+            "heading": "",
+            "text": "Abstract-Though anonymization mechanisms have made huge progress in fostering the secondary use of data, it is still very challenging to obtain adequate knowledge from anonymized data while preserving privacy. Most existing mechanisms anonymize entire sections of data and fail to maximally preserve the structure/values of real data. Consequently, the performance of those mechanisms and the output (i.e., the anonymized data) remain problematic in real-life scenarios due to the extensive and unneeded anonymization applied. To address these issues, we propose and implement a hybrid (differential privacy (DP) and k-anonymity) anonymization scheme that produces supreme-quality anonymized data that offers knowledge similar to real data without compromising privacy. Specifically, we implement a pair of algorithms that divide the dataset into privacy-violating and nonprivacy-violating partitions. Afterward, in a nonprivacy-violating partition, a relaxed privacy budget \u03f5 is applied to numerical attributes, but most of the categorical attributes are retained (as is) for informative analysis. In privacyviolating partitions, fewer changes are applied to the data by using a reasonable value for \u03f5 and by exploiting the diversity in sensitive information. Experiments are conducted on three real-life datasets to prove the feasibility of our scheme for futuristic AI applications. Compared with state-of-the-art (SOTA) methods, our scheme preserves 60.81% of the originality in the anonymized data. The privacy risks are reduced by 20.05%, and utility is enhanced by 54.01% and 15.33% based on information loss (IL) and accuracy metrics. Furthermore, the time overhead is 3.13\u00d7 lower than the SOTA methods.\nIndex Terms-k-anonymity, differential privacy (DP), privacy, privacy-preserving data publishing (PPDP), statistical information, utility.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "R ECENTLY, personal data has replaced oil as the most economically desirable resource in the world, and therefore, most companies are striving to make the most of the economic rewards from it by using advanced data mining tools. Data are no longer just raw materials, but products with tremendous opportunities for profit [1]. Data are becoming a powerful source in augmenting the performance of many real-world, data-driven services such as healthcare, epidemic mitigation, and decision-making. Although data has become an economic resource, there is a growing demand for fair, and responsible use of data in the AI era. 1 Besides, privacy preservation is the main barrier to exploiting the full potential of personal data [2]. Due to privacy concerns, most organizations are not willing to share their data, and therefore, extracting valuable knowledge is the stuff of dreams. The COVID-19 pandemic has also shown that privacy is a major bottleneck when it comes to handling personal data [3]. The recent European law (i.e., GDPR) put special emphasis on the responsible use of data without sacrificing privacy [4]. Under such law, all firms that deal with any kind of personal data are required to use privacy protection technology to stay legally compliant.\nWell-known methods for preserving privacy in personal data are syntactic and semantic [5]. The former, such as kanonymity [6], \u2113-diversity [7], t-closeness [8], and their latest versions [9], preserve privacy by generalizing the data. The latter, such as differential privacy (DP) [10] and its improved versions [11], preserve privacy by adding noise to the data. Many improved versions of these methods have demonstrated effectiveness in anonymizing big data with a greater balance of both utility and privacy [12], [13], [14]. Although both methods (syntactic and semantic) help in data publishing, there are five major problems with these methods from the perspective of responsible data science (RDS). 1  1) Most syntactic methods anonymize all parts of data, which makes knowledge extraction harder, and the exceedingly anonymized data cannot be used in AI applications. In addition, poorly anonymized data increases the difficulty for data consumers/analysts. 2) Most syntactic methods lose truthfulness in data during anonymization by either using suppression or wide generalization intervals, leading to concept-/data-drift issues in ML applications. 3) Most semantic methods apply a fixed \u03f5 value to the entire dataset, which adds more noise, leading to lower usability in data-driven applications [15]. 4) Most semantic methods add excessive noise to values in a minor population, which can hinder knowledge discovery from all perspectives of the data. 5) Both methods do not identify and abstract the privacy-violating and nonprivacy-violating patterns imperative to preserving privacy in data sharing [16]. The major contributions of this article are given as follows.\n1) We explore invisible issues with syntactic and semantic methods when it comes to the quality of data in the context of RDS 1 and data-hungry AI applications. By implementing a new anonymity scheme, we identify opportunities to amalgamate DP and k-anonymity to safeguard privacy and to produce supreme-quality data that enable informed decision-making. Our scheme successfully resolves the above-cited challenges in the existing methods. 2) Our scheme divides data into two partitions: nonprivacyviolating and privacy-violating. It retains most values in their original form in the former partition and performs the minimal necessary anonymization in the latter by applying a k-member clustering that incorporates similarity and diversity in attributes, and that produces compact and diverse clusters while satisfying k-anonymity criteria. 3) We implement an ML-based pattern-computing method that can assist in identifying attributes that encompass the possibility of nonprivacy-violating and privacyviolating patterns, whereas prior methods do not identify such patterns, and lead to extensive anonymization and poor privacy guarantees. 4) We developed a hybrid data transformation scheme, which applies a relaxed \u03f5 to numerical attributes and lower-level generalization to categorical attributes to create a very close representation of the original data. 5) We performed exhaustive experiments on three real-life datasets to prove the technical effectiveness of our scheme for futuristic AI applications. When anonymized data is intended to be used in AI applications, it is necessary to maximally preserve the statistical information (e.g., all feature values and their distributions) in it to prevent harmful/biased decisions. To this end, our scheme is handy as it can preserve higher truthfulness in the anonymized data and better retain the semantics of real data, leading to correct data use in AI applications. 6) The main novelty of our scheme lies in the preprocessing of data through the identification of pattern-friendly QIDs via ML, classification of data into privacy-violating and nonprivacy-violating parts that allow distinct values of \u03f5 rather than fixed ones, anonymization of some parts only rather than entire dataset, preserving most parts of data in their original form for higher utility along with the strong privacy guarantees, and least computing overheads. The rest of this article is organized as follows. Section II provides the system model and formulates the problem. Section III introduces our hybrid scheme in detail. Section IV demonstrates the results and comparison on three different datasets. Section V concludes this article.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+            "text": "In this work, we consider a generic data publishing scenario in which five actors are involved (record owners, database owners, database publishers, analysts, and adversaries) as shown in Fig. 1. Record owners provide their data in the form of tuples/records to database owners. The data collected from N record owners are orchestrated by database owners. Subsequently, the data in the anonymized form is either directly released by the database owners or by database publishers and is used by analysts for knowledge discovery. The knowledge derived from the released data is used to improve real-world applications (e.g., healthcare). In this system, there exists an adversary whose goal is to jeopardize record owner privacy in the published data by linking auxiliary information. Each of the N record owners in the system can have distinct values for his/her attributes. For example, if N = 20, 18 record owners might have White as their race attribute, and two might have Black as that attribute. In this situation, we can divide race information into two parts, privacy-violating (Black) and nonprivacy-violating (White). Our goal is to devise a privacy-preserving scheme for data sharing that protects privacy-violating information from adversaries while effectively releasing nonprivacy-violating data (as is) for analytics. We assume that the dataset (D) to be anonymized has been gathered from pertinent record owners, and rows in D are associated with real-life persons with their demographics, both quasi-identifiers (QIDs) and sensitive attributes (SAs). Any real-life D containing QIDs and SAs can be anonymized with our algorithm.\nThreat Model: This work assumes that most entities in the system are honest. They perform only the required actions and help accomplish the desired tasks from data releases. However, some data analysts can behave like an adversary and jeopardize privacy. Although we remove all kinds of directly identifiable information from the data, QIDs can still be acquired from various sources and can be linked to identify people [17]. Hence, our algorithm is vulnerable to identity and corresponding SA disclosure in two ways.\n1) Adversaries may already have access to some QIDs and might attempt to figure out the remaining QIDs. For example, an adversary who knows the sex and age of a person might try to identify his/her zip code. 2) Adversaries may know the entire tuple (e.g., all the QIDs) of a record owner in advance and might also know with a high probability that that person's information is among the released data. Based on this reliable information, he/she essay to obtain the SAs of a target user. For instance, data can include record owners' SAs on monthly income or diseases contracted. If the adversary can somehow identify or associate QIDs correctly, he/she can also determine an SA akin to that record owner. To this end, we intend to protect personal privacy from these present-day privacy perils that can emerge in privacy-preserving data publishing (PPDP).\nPrivacy Model: Our model uses a generalization and a Laplace mechanism to anonymize data. An overview of the privacy model, including both techniques, is in Fig. 2. The definitions for both models are as follows.\nDefinition 1 (k-Anonymity): A sanitized/anonymized dataset, D \u2032 , obtained from real dataset D adheres to k-anonymous if each record has at least k identical records in each QID group.\nDefinition 2 (Laplace Mechanism): The Laplace mechanism is used to ensure \u03f5-DP, where the output of function F on D is in the form of a real-number vector [18]. It injects noise n into every value in the output of F(D) to guarantee \u03f5-DP. The n is taken from a Laplace distribution having mean 0 and scale (sensitivity/scale).\nDesign Goals and Problem Formulation: This article aims to achieve the following three major goals in PPDP.\nOriginality: Ensures that most QID values in nonprivacy-violating partitions are not generalized in the anonymity process and remain as close as possible to D.\nUtility: Ensures that D \u2032 (anonymized data) retains maximal knowledge to improve real-life services. Concisely, it lowers information loss (IL) and enhances accuracy.\nPrivacy: Ensures that an adversary having myriad auxiliary information/data cannot match/link QIDs and infer SAs with a higher probability. It guarantees that when an adversary tries to associate a person in D \u2032 to any auxiliary data, there will be a link from any record to numerous SA values. Concisely, it prevents linking the SAs of any record.\nThe main problem to be addressed with our hybrid scheme is formally expressed in Problem 1.\nProblem 1: Given real-world dataset D encompassing various attributes (name, age, sex, race, income/disease, privacy parameter k, and privacy budget \u03f5), how do we produce an anonymized data D \u2032 where 1)\nD \u2286 D \u2032 , 2) D \u2032 is k-anonymous, 3) D \u2032\n\u223c D (e.g., most parts in D \u2032 are highly the same as original D), and 4) D \u2032 has exceptional quality (also known as utility) in terms of analytics (i.e., has both significantly low IL and high accuracy).",
+            "publication_ref": [
+                "b16",
+                "b17"
+            ],
+            "figure_ref": [
+                "fig_0",
+                "fig_1"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "III. HYBRID ANONYMITY SCHEME",
+            "text": "In this section, we present the proposed hybrid anonymity scheme in detail. Fig. 3 shows the workflow of our scheme. There are four main components: preprocessing, identification of pattern-friendly QIDs in which patterns exist, dividing data into privacy-violating and nonprivacy-violating partitions, and applying data transformation (generalization and noise addition) to both partitions. Descriptions of each component are as follows. After getting D, we apply preprocessing to clean D for further processing via the five steps shown in Fig. 3. First, we remove two types of attributes (NSAs and EIs) per the standard routine for PPDP. EIs are removed to lessen identity leakage from D \u2032 , whereas NSAs have a minimum effect on utility/privacy. It is worth noting that NSAs can have some impact on utility in some cases. For example, the weight has the least utility when analyzing with respect to income or political/religious views. However, weight can be an important attribute when doctors want to analyze the relationship between illness and weight. Therefore, ample attention is required while removing the NSAs from the data. In our recent work [19], we examined the impact of NSAs on data utility and found that NSAs can yield only very small improvements in accuracy. Therefore, the decision concerning the retention of NSAs in the final anonymized data can be made depending on either the objectives of the data release or the nature of information consumers. In practice, NSAs are usually not collected from individuals at the data collection time. If NSAs are collected then two approaches are traditionally followed: 1) removed from data and 2) published as is in the anonymized data. After NSA and EI removal, QIDs and SAs are restructured (an SA is placed in the last column usually). The final structure of D becomes D{Q, Y }, where Y = {y 1 , y 2 , . . . , y m } and Q = {q 1 , q 2 , . . . , q p }. An example \nD U,A = \uf8eb \uf8ec \uf8ec \uf8ed u i q 1 = age q 2 = sex q p = race Y = disease 1 39 F \u2022 \u2022 \u2022 Black Cancer \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 9000 37 M \u2022 \u2022 \u2022 White HIV \uf8f6 \uf8f7 \uf8f7 \uf8f8(1)\nwhere each row and column provide complete and partial (one item) information about a person, respectively. Because D is curated from diverse sources and people, it can contain outliers (i.e., undesirable values in some columns; for instance, age value \u0338 = 600, but is highly likely 60). Outliers can corrupt analytical results and therefore should be eliminated. To remove outliers, we perform minmax analysis and create visual plots to ensure whether each attribute value is within a valid range or not. Afterward, we remove records with incomplete information. Furthermore, we check the consistency of attributes' values with respect to data type (numerical, categorical). Redundant records are discarded at this stage to lessen computing complexity. In the end, we transform some QID types (discrete \u2192 numerical) by using the key-value concept. For example, sex can be transformed as either discrete or numerical via two key-value pairs like [0, F] and [1, M]. Furthermore, in some cases, data are not in the desired format due to the direct scanning of documents. Hence, the values' format can be transformed accordingly to perform the relevant operations. By adopting the above-cited steps, a good quality D is curated for additional processing.",
+            "publication_ref": [
+                "b18"
+            ],
+            "figure_ref": [
+                "fig_2",
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Identifying Pattern-Friendly QIDs From D",
+            "text": "Identifying QIDs that can possess privacy-violating and nonprivacy-violating patterns can contribute to preserving both privacy and utility [16]. To identify such QIDs, we employ a machine learning technique named random forest (RF) [20]. RF is a highly reliable ML method that has shown remarkable achievements in accomplishing prediction/classification tasks in many domains. In this work, we build an RF model with a data-shuffling strategy to figure out the desired QIDs. Specifically, we build the model with D using QIDs as predictors and SAs as target classes and obtain a reference accuracy value. Subsequently, we shuffle the data (one QID at a time) in each iteration and build the RF model again. Due to the shuffled data, the new accuracy value can be either higher or lower than the reference accuracy. If a QID has many similar values, the accuracy does not change much, and such a QID can have a higher possibility of containing privacy-violating and nonprivacy-violating patterns. With the help of the above method and with some minor postprocessing, we can correctly identify QIDs that possibly have the patterns. The procedure for identifying pattern-friendly QIDs is given in Fig. 5.",
+            "publication_ref": [
+                "b15",
+                "b19"
+            ],
+            "figure_ref": [
+                "fig_4"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Dividing D Into Privacy and Nonprivacy Violating Partitions",
+            "text": "We partition D into two parts based on the pattern-friendly QIDs identified in the previous step. We identify four types of values (super major, major, minor, and super minor) from relevant QIDs, and then partition D. We explain the mathematical foundation for dividing D via Example 1.\nExample 1: For any pattern-friendly QID, q i \u2208 Q, the unique values \u2208 q i can lie into one of the four categories (c 1 , c 2 , c 3 , c 4 ) with very high probability (P), and the difference between the c 1 and c 4 categories, |c 1 -c 4 |, is large.\nFor a chosen q i , we determine the unique values and then denote them with v * 1 , v * 2 , . . . , v * e . Thus, for each v * l (unique value), there prevail many records f (q i , v * l ). After finding f (q i , v * l ), v * l can be mapped to one of the four candidates( e.g.,\nc 1 , c 2 , c 3 , c 4 ) depending on f where f = |(v * l , q i )|. In simple words, if f of v *\nl is very high, it can be mapped to c 1 directly, and if the f is lowest, it is included in c 4 . The other two categories are settled based on values of f . Since in pattern-friendly QIDs, the values' distribution is highly imbalanced, each value can be correctly mapped to the respective category with high P. Due to the imbalanced distributions, the discrepancy between c 4 and c 1 is large in most cases. A formal aspect by taking the example of race QID in Q focusing on Example 1 is expressed below\nq i (race) = \uf8ee \uf8ef \uf8ef \uf8ef \uf8ef \uf8f0 v * 1 = white, f (white) = 27 816, v * 1 \u2208 c 1 v * 2 = black, f (black) = 3124, v * 2 \u2208 c 2 v * 3 = API, f (API) = 1039, v * 3 \u2208 c 3 v * 4 = AIE, f (AIE) = 311, v * 4 \u2208 c 4 v * 5 = other, f (other) = 271, v * 5 \u2208 c 4 \uf8f9 \uf8fa \uf8fa \uf8fa \uf8fa \uf8fb .\nIn the above formalization, race value AIE \u2208 c 4 rather than c 3 due to relatively less representation (e.g., # of records) of it in the data. For example, if a k value close to 300 is used to create classes from data having AIE in each record, there will be hardly one class that can be generated from c 4 , which indicates that it is a super minor value. In contrast, a similar k value will result in more than 3 classes from c 3 because it is a minor value. The major difference between c 3 and c 2 is the # of records and their dilution chances when anonymity is applied to them. Since c 2 has a relatively higher record than c 3 , and therefore, the chances of its dilution are comparatively less than the c 3 , and vice versa. It is worth noting that in some real-world datasets, the cardinality of QIDs can be low, and therefore, only a few categories among four can be enforced depending upon the scenario.\nIn application, the QID can be categorized based on their availability at external sites, privacy and utility requirements, and the association with an individual's identity [21]. In our scheme, we have chosen a subset of attributes from data as QIDs just like previous approaches do. Later, pattern-friendly QIDs were categorized through the implementation of the RF method discussed in the former step. From experiments, we found that a particular QID can be categorized as patternfriendly, when the respective QIDs has one/two value that makes up more than 80%/85% of the data, and the rest of the data constitute multiple least frequency values. These findings enabled us to apply anonymity to some parts of the data only, leading to significantly better results than the state-of-the-art (SOTA) methods.\nA similar process is applied to all pattern-friendly QIDs, and D is partitioned based on major and minor values. The procedure applied to partition D is given in Fig. 6.\nThe main innovation of our scheme lies in the preprocessing of data through the identification of pattern-friendly QIDs. However, even if a QID is considered pattern-friendly, there is still a certain risk of privacy disclosure associated with it. Through experiments, we found that in the adult dataset, the country QID is highly pattern-friendly, but there is still an 8.84% risk of privacy disclosure associated with it. However, the risk of privacy disclosure is reduced in subsequent steps by applying the generalization operation.",
+            "publication_ref": [
+                "b20"
+            ],
+            "figure_ref": [
+                "fig_5"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Anonymization of Data in Both Partitions",
+            "text": "In the last step, D is anonymized to yield D \u2032 . We add noise (with a relaxed \u03f5) to numerical QIDs, and apply the least generalization to discrete QIDs. Algorithm 1 details the process of numerical QID anonymization located at index 1 of P 1 . In Algorithm 1, the relevant partition, \u03f5, and the sensitivity are provided as input, and partially anonymized data is returned as output. The keys to anonymity are steps 6 and 7. Further explanation of Algorithm 1 that was applied to numerical QIDs is given in Fig. 7. Referring to Fig. 7, the QIDs are first split into numerical (N ) and categorical (C), respectively. Afterward, noise is generated with an optimal value of \u03f5, and added to numerical QIDs only. In noise curation, it is vital to choose a suitable \u03f5 to preserve privacy and utility. In our algorithm, we have chosen optimal values of \u03f5 for each partition.\nThe \u03f5 given to each partition was 3.0 (privacy-violating) and 5.0 (nonprivacy-violating), respectively. Categorical QIDs can be anonymized using Algorithm 2 with the help of generalization hierarchies. In Algorithm 2, first, the compact clusters are formed using k-anonymity criteria with the help of k-member clustering; diversity div is computed from an SA in each cluster and is compared with the threshold, and then, anonymity is performed considering the div values.\nFurther explanation of Algorithm 2 that was applied to categorical QIDs is given in Fig. 8. Referring to Fig. 8 \ndiv(R i ) \u2190 - |Y | i=1 [( p i ) \u00d7 ln( p i ) 7: if (div(R i ) \u2265 T div ) then \u25b7 Case-I 8:\nfor j = 1 to |Q| do 9:\nAcquire T q j \u25b7 Least generalization case 10:\nq * j \u2190 Anonymi ze(q j , T q j ), delete q j from R i 11:\nR * * i \u2190 R * i \u222a q * j \u25b7 Temp. var. to hold results.\n12:\nRepeat same process for q j+1 to |Q| else if (div(R i ) < T div ) then \u25b7 Case-II 16:\nfor j = 1 to |Q| do 17:\nAcquire T q j \u25b7 Average generalization case 18:\nq * j \u2190 Anonymi ze(q j , T q j ), delete q j from R i 19:\nR * i \u2190 R * i \u222a q * j\n\u25b7 Temp. var. to hold results.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_9",
+                "fig_9"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "20:",
+            "text": "Repeat same process for q j+1 to |Q|  is determined, and a whole in the form of a tree is created. The leaf nodes are real values of QIDs, and the other levels are generalized values. It is important to note that lower levels are suitable for better utility, and vice versa. In the anonymization of QIDs, it is vital to choose a suitable level from the taxonomy to effectively balance both privacy and utility. In our algorithm, we have chosen suitable levels for anonymization in each partition by exploiting the diversity of SA. Algorithms 1 and 2 both assist in anonymizing D in both partitions with the fewest changes.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. EXPERIMENT EVALUATION",
+            "text": "In this section, we discuss the results attained from exhaustive experiments on three real-life benchmark datasets.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Description of Datasets Used in Experimentation",
+            "text": "We performed extensive tests on three datasets: Adults (A) [22], Bkseq (B) [23], and Careplans (C) [24]. These datasets contain a variety of private and public information. We utilized multiple QIDs and SAs in the experiments and removed other non-QID attributes from each D. A concise overview of all three D is in Table I. Preprocessing was rigorously applied to all datasets before experiments. Hereafter, we use the concise form to refer to each dataset (i.e., A, B, and C).",
+            "publication_ref": [
+                "b21",
+                "b22",
+                "b23"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_1"
+            ]
+        },
+        {
+            "heading": "B. Implementation Setup and Comparison Criteria",
+            "text": "We implemented the scheme on a computer with an Intel Core i5-3320M CPU with at 2.60 GHz clock speed running Windows 10 with 8 GB RAM. Implementation was done using two software packages: MATLAB version (R2022a) and RTools, R version 4.0.0 with the help of built-in packages. The other libraries employed in finding pattern-friendly QIDs were RF2 and ranger3 (a fast RF implementation). Descriptions of salient parameters/variables employed in RF are in Table II. Default values of some parameters (sampling scheme and sample size) were used. After experimentation with RF and postprocessing, the following pattern-friendly QIDs were determined from each D: (A: race and country), (B: gender), and (C: race and state). We reanalyzed these findings by checking each QID's real values' domain and distribution in D. The validation results verified reliability.\nBaselines and Evaluation Metrics: We compared the results from our scheme with three SOTA algorithms, k-anonymity [6], SVD3DR [9], and RKA [11]. To the best of our knowledge, these are the only recent and relevant SOTA algorithms in this line of work. For fair comparison and assessment, we chose baselines that either strictly follow k-anonymity or do not strictly follow k-anonymity. We also compared our scheme with the RKA method [11], which is also a hybrid method (e.g., uses k-anonymity along with the DP) for data anonymization. Finally, we performed experiments and comparisons at the dataset level (e.g., using entire anonymized datasets produced with different methods), and therefore, the analysis/comparisons are sound and valid. We generated different versions of D \u2032 from all datasets, and compared the performance of these algorithms by using the four metricsoriginality of values in D \u2032 , SA disclosure risk (DR), accuracy (Acc), and IL via distortion measure (DM)-as follows:\nDR = max u i \u2208D,y\u2208Y Pr u i [D] = y|D \u2032 \u2227 \u03bd(2)\nwhere \u03bd is background knowledge and D \u2032 denotes anonymous data tuples that correspond to \u03bd. Because the tuple that can likely be exploited by an adversary during an attack is unknown, we considered the worst case scenario in which any tuple can be exploited to infer an SA of an individual Acc = TP + TN TP + FP + TN + FN (3) where FN, TP, TN, FP, refer to a false negative, true positive, true negative, and false positive, respectively,\nDM = N i=1 p j=1 l l \u2032 \u00d7 w q j (4)\nwhere l shows the actual level of generalization and l \u2032 shows the total # of levels in T .",
+            "publication_ref": [
+                "b5",
+                "b8",
+                "b10",
+                "b10",
+                "b2"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_2"
+            ]
+        },
+        {
+            "heading": "C. Identification of Pattern-Friendly QIDs From D",
+            "text": "In this section, we present the results of the RF-based implementation and the corresponding pattern-friendly QIDs that were identified in each real-life dataset in Fig. 9. The circled QIDs in Fig. 9 are pattern-friendly QIDs because of their super major and minor categorizations based on the values. For example, in the Adults dataset, 89.58% of the records had the USA as the person's native country, which is a super major value. Similarly, 85.42% of the tuples contain White as the race value. On the other hand, the Other race value had 271 occurrences (0.0083%) in the Adults dataset, which is super minor. These statistics highlight the greater possibility of finding major patterns in some QIDs (e.g., race and country) that can be identified and released in their original form because the risk of privacy violation is low Fig. 9. Pattern-friendly QIDs identified from real-world datasets. [16]. By identifying pattern-friendly QIDs, most values can be retained in their original form, which can lessen the burden on data analysts. Furthermore, ample attention can be paid to privacy-violating data (e.g., super minor values) to effectively protect privacy against adversaries.",
+            "publication_ref": [
+                "b15"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Originality Preservation in Anonymized Data",
+            "text": "Anonymization has been successfully applied in many commercial sectors, especially in healthcare, to preserve data privacy while making data broadly available to researchers and data miners. Unfortunately, the data produced by most of the existing anonymization models have poor utility when given as input to AI applications due to extensive and unnecessary anonymization and changes. In Fig. 10, we illustrate such problems with existing methods and suggest a new perspective to overcome them by taking a sample of nine medical records. As shown in Fig. 10(b) (e.g., anonymization performed by existing methods), most data items are hidden, and the open attributes are overly anonymized, leading to the poor utility for general and data-mining tasks. In this article, we suggest opening most data items, e.g., QIDs, without compromising record owner privacy by identifying privacy-violating and nonprivacy-violating patterns, relaxing privacy budget \u03f5, utilizing SA diversity, similarity-based user grouping, and lower-level anonymization. As shown in Fig. 10(c), our proposal can retain most QID values in pure form while offering higher privacy guarantees, compared to existing methods.\nOur method injects less noise in numerical QIDs than existing methods and preserves statistical information adequately. We believe that restricting changes in anonymized data can assist in retaining higher knowledge, thereby maximally improving real-world services (e.g., healthcare, reliable predictions). In Sections IV-E-IV-H, we discuss important results from using our scheme on three datasets. To the best of our knowledge, this is a maiden approach to extracting and preserving most parts of data in their original form with strong privacy guarantees. The results and comparisons with respect to retaining originality in the three real-life datasets are given in Table III. From the results, it can be seen that the proposed scheme has preserved most values in their original form in all three datasets compared to previous SOTA algorithms. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_10",
+                "fig_10",
+                "fig_10"
+            ],
+            "table_ref": [
+                "tab_2"
+            ]
+        },
+        {
+            "heading": "TABLE III ORIGINALITY PRESERVATION: PROPOSED SCHEME VERSUS EXISTING METHODS",
+            "text": "To the best of our knowledge, this is the maiden approach that preserves most data in its original form, thereby contributing significantly to data mining and analytical scenarios.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Privacy Preservation",
+            "text": "We performed experiments by changing the degree of \u03bd (background knowledge) and then compared the results from our scheme with existing algorithms: k-anonymity (KA) [6], RKA [9], and SVD3DR [11]. The \u03bd used in evaluating the privacy preservation capabilities of our scheme are the true records drawn from D in partial/full form that might be available to adversaries. For example, \u03bd can be age, sex, and race information along with some other factual information such as an individual X is part of D \u2032 . In real scenarios, it is hard to guess which information is available to adversaries, and therefore, we chose \u03bd randomly from D to effectively handle worst case scenarios. We rigorously performed a de-anonymization to find the true SA from D ' , and compared the results with the existing SOTA methods. The results and comparisons with respect to preserving privacy (e.g., SA disclosure) in the three real-life datasets are given in Table IV.\nReferring to Table IV, the numbers such as 0.5 show the probabilistic disclosure of SA (e.g., DR) which can occur against \u03bd. For example, in a cluster of ten individuals, if five  records are correctly matched based on the chosen \u03bd, then DR = (5/10) = 0.5. In some cases, the correct matches can exist in multiple clusters, and therefore, we took the average of DR in respective clusters to measure the total DR. The reasons for improved results from our scheme are SA diversity preservation in each cluster, and establishing the privacy-violating partition to ensure the needed anonymization. The results in Table IV highlight how SA disclosure from using our scheme is lower in most cases than from the existing SOTA algorithms. These results verify the capabilities of our scheme concerning privacy preservation in worst case scenarios, making it well-suited to real-life scenarios. The overall results and comparisons with respect to average SA disclosure by varying k values seven times and choosing \u03bd differently in each test are given in Table V. The numbers in Table V represent the average DR computed from the seven different k values and corresponding DR given in Table IV.\nThe SA values that were used to test the efficacy of the proposed scheme concerning privacy preservation in each dataset are income, disease, and expense categories, respectively. For example, the income information has two distinct values, >50 K and \u226450 K in the adult's dataset. Similarly, the disease has 17 different values such as liver infection, liver cirrhosis, liver decomposition, liver transplant, liver carcinoma, HIV-I stage, HIV-II stage, HIV-III stage, HIV-IV stage, Alzhamir mild stage, Alzhamir moderate stage, Alzhamir severe stage, no sirs, sirs, sepsis moderate stage, sepsis severe stage, and septic shock stage in the bkseq dataset. The expense categories are of four types, (<5000) category-I, (<10 000) category-II, (<15 000) category-III, and (<20 000) category-IV in the care plans dataset. We performed detailed experiments to determine the disclosure level of each SA value. From the analysis and results cited above, our scheme has lower SA disclosure than previous SOTA algorithms for most k values. These results prove the main assertion of this study regarding strong privacy guarantees while retaining most QIDs' values in their original form. These results fortify the significance of our scheme in realistic scenarios when privacy preservation is imperative.\nPrivacy Analysis: In this section, we investigate and prove that our hybrid scheme satisfies both k-anonymity and \u03f5-DP.\nTheorem 1: The Laplace mechanism and k-member-based hybrid anonymity scheme satisfies \u03f5-DP and k-anonymity.\nProof: Considering the parallel composition property of the DP model, an algorithm M with \u03f5 was applied to disjoint tuples, and it guarantees that whole D \u2032 satisfied \u03f5-DP. The proposed hybrid scheme divides D into nonoverlapping clusters using a k-member clustering algorithm that exploits similarities of numerical data alongside the categorical data. Due to nonoverlapping (e.g., no-intersections) records in clusters, each cluster's \u03f5 is equivalent to overall \u03f5 as per the parallel composability property of the DP. There are no intersections between numeric and discrete data, and each cluster has at least k records with identical QID values in most parts, therefore, the k-anonymity criteria is also met in all clusters. Hence, the proposed scheme satisfies the \u03f5-DP and k-anonymity simultaneously.\nIn our proposed scheme, DP was applied to numerical data and k-anonymity was applied to categorical data. The k-anonymity aims to hide the QIDs with groups, but the numerical data can break the k-anonymity. However, we experimentally prove that although the numerical values are not the same as k-anonymity in the final D \u2032 , the distribution of values in each cluster is aligned to that of k-anonymity. For example, in real data, if the values of age are: [33,34,39,31,38], then the generalization interval for this data produced with k-anonymity model is likely [30][31][32][33][34][35][36][37][38][39][40]. Moreover, the clusters produced with DP in final D \u2032 have also a similar range of age values (e.g., the range of values falls between 30 and 40) or only marginally differ in some clusters, therefore, the numeric data does not strictly violate the k-anonymity property from an analysis perspective. In some cases, there can be strict requirements of satisfying k-anonymity on both parts of data, and therefore, minor postprocessing is needed in our scheme. However, it can be accomplished by utilizing generalization hierarchies of numerical QIDs and converting singular values to either interval or generalized form. In the above example, if the noised output from DP is [32, 35, 39, 32, 37], then kanonymity can be satisfied by applying minor postprocessing on the above output, and results like [30-40] or >30 can be produced which are identical to k-anonymity. Also, if the attacker correctly figures out the numerical data of someone, he/she cannot identify the SA of that person due to categorical data anonymization and SA's diversity in each cluster. Also, the categorical data can defend against differential attacks as  the frequency of values of categorical QID changes in D \u2032 as some records undergo anonymization and some do not. Hence, the proposed scheme can fulfill the generic properties of both models and therefore, it is fair to say that the joint use of two different kinds of methods can complement each other in the PPDP scenario.",
+            "publication_ref": [
+                "b5",
+                "b8",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_3",
+                "tab_3",
+                "tab_3",
+                "tab_4",
+                "tab_3"
+            ]
+        },
+        {
+            "heading": "F. Enhancement of Utility",
+            "text": "In this section, we present utility results that were attained from large-scale experiments on three real-life benchmark datasets. Specifically, we present the numerical results and their comparison with the SOTA algorithms from the perspective of reduction in IL, enhancement of accuracy, and capability of preserving statistical information in anonymized data. All these criteria(s) are widely used to assess the quality of anonymized data in data-driven applications.\n1) Reduction in IL: In this section, we highlight the performance of our scheme in terms of reducing IL. IL is the unfortunate consequence of any anonymity scheme. However, IL can be restrained by exploiting the intrinsic characteristics of D, and applying careful anonymization. In our work, we perform only minimal and required generalization of data, and therefore, IL is restrained to the extent possible. We present the results and comparisons of using our scheme with different k values in Figs. 11 and12. Fig. 11 shows IL results from the nonprivacy-violating partition. In this partition, most QID values are preserved as close to the original as possible by using a relaxed \u03f5, lower-level anonymization, and no anonymization. IL increases with k due to an increase in records in each class. However, the proposed scheme results in significantly lower IL from most k values, compared to the existing SOTA algorithms in most cases.\nFig. 12 highlights the results in privacy-violating partitions where relatively higher anonymity is required to preserve privacy. In the proposed scheme, the diversity of an SA is considered to lower the anonymity and restrain IL. As delineated in Fig. 12, IL increases with k due to an increase in generalization and the number of records. The proposed scheme shows better performance for most k values than existing algorithms. The results given in Figs. 11 and12 prove the superiority of our scheme over prior SOTA algorithms with respect to IL. The overall IL results and comparisons in both privacy-violating and nonprivacy-violating partitions are given in Table VI.\n2) Enhancement of Accuracy: In this section, we highlight the performance of our scheme in terms of enhancing accuracy. We created different variants of anonymized data and applied the RF method to get the accuracy values. The results and comparisons with respect to accuracy using the whole of D \u2032 and D are depicted in Table VII. From Table VII, it can be observed that our scheme has yielded better results in all three datasets than prior SOTA algorithms. In addition, the accuracy results of our scheme are slightly lower than the original datasets. The main reason for the higher accuracy of our scheme is due to the preservation of co-relations among QIDs and lower changes in data during anonymization. These results signify the efficacy of our scheme in analytical and data mining scenarios.\nThe accuracy results and comparisons with different k values are shown in Fig. 13. From the results given in Fig. 13, it can be noticed that the accuracy value increases with k due to the decrease in variability in QIDs' values. Our scheme yielded higher accuracy results for most k values than previous SOTA algorithms.\n3) Capability of Preserving Statistical Information: In this section, we present the efficacy of our scheme in preserving statistical information while anonymizing numerical QIDs. Specifically, we highlight how our scheme uses a nonfixed value for \u03f5 in each partition and effectively preserves statistical information (e.g., value frequency) for data miners/analysts. By preserving statistical information, knowledge discovery becomes easier, and data-specific biases can be eliminated. In addition, data with the right balance of statistical information can contribute to RDS 1 and feed data-hungry applications, which are now growing and exciting areas of interest. Fig. 14 compares the performance of our scheme with the existing  algorithms and real data. From the results, we can see that the loss of statistical information from our scheme is marginally lower than D. In contrast, the existing algorithms had higher losses of statistical information than D even with a bounded interval [0, 100]. For example, in D, no age value was less than 16, but in D \u2032 , some values were lower than 16 (some values are even negative, as shown in Fig. 15). From Fig. 15, we can see that our scheme adequately preserved most age values, and there were no negative age values in the data. These results validate the effectiveness of our scheme in real-life scenario(s), especially when data of excellent quality is imperative for conducting research or validating/generating new hypotheses. The D \u2032 produced by our scheme is well-suited to futuristic AI data-hungry applications and RDS, where data of high quality is imperative for informed and fair decision-making. Our results align with the recent trends toward responsible use of data while preserving privacy in the AI era [25]. By preserving statistical information in D \u2032 , data-specific biases can be eliminated in real-life scenarios when D \u2032 is used in training AI models.\nOur scheme accurately preserves statistical information using different values of \u03f5 in each partition. For example, it uses a relatively higher \u03f5 in a nonprivacy-violating partition and a reasonable value of \u03f5 in the privacy-violating partition. However, the previous methods use a fixed value of \u03f5 for an entire dataset and thereby add too much noise to the data. Applying fixed \u03f5 for whole datasets degrades the structure of data, and overly anonymized data has poor utility in analytical and data mining scenarios. Over-anonymized data can lead to highly biased and unreliable results/decisions in real-life data-driven applications. In contrast, our scheme produces high-quality anonymized data that maintains an equilibrium between privacy and utility. Our scheme is most suitable for the healthcare sector where data of high quality is imperative for conducting research (or generating new hypotheses) [26].\nFrom the results and comparisons, it can be seen that the  proposed scheme strikes a balance well between individual privacy and anonymized data quality in the PPDP.",
+            "publication_ref": [
+                "b24",
+                "b25"
+            ],
+            "figure_ref": [
+                "fig_11",
+                "fig_12",
+                "fig_11",
+                "fig_12",
+                "fig_12",
+                "fig_11",
+                "fig_12",
+                "fig_13",
+                "fig_13",
+                "fig_14",
+                "fig_15",
+                "fig_15"
+            ],
+            "table_ref": [
+                "tab_4",
+                "tab_4"
+            ]
+        },
+        {
+            "heading": "G. Effect of Varying Privacy Budget \u03f5 on the Performance",
+            "text": "The small value of \u03f5 offers a strong privacy guarantee, but the utility loss can be very high. In some cases, the small value of \u03f5 can destroy the truthfulness of data, and induce fake records in the anonymized data, leading to wrong conclusions/analytics after data release. In our scheme, we applied the reasonable values of \u03f5 in each partition by exploiting the pattern-friendly nature of QIDs. A small value was used in the privacy-violating part, and a higher value was used in the nonprivacy-violating part to strike the balance between privacy and utility. The effect of varying \u03f5 on change in the distribution of numerical QID in the adult's dataset is given in Fig. 16.\nFrom the results, it can be seen that the value of \u03f5 has a great effect on data distributions. The small value of the \u03f5 causes a higher change in the values, and vice versa.\nIn the experiment evaluation, we used two distinct values of the \u03f5 for each data partition. However, the value of \u03f5 has a direct impact on both privacy protection and data usability. We present the effect of varying privacy budget \u03f5 on the proposed scheme performance, such as SA disclosure and IL in Fig. 17. Referring to Fig. 17, it can be noticed that IL and SA disclosure have opposite behavior with varied \u03f5. The IL for numerical QIDs was determined by taking the ratio between truly preserved values in anonymized data the real data. For the higher value of \u03f5 (e.g., when \u03f5 \u2265 10), the IL becomes almost zero, meaning that most values are highly similar to that of real data. Similarly, when \u03f5 is small (e.g., \u03f5 = 0.01), privacy protection is higher. Furthermore, the results vary based on the characteristics of the data. For example, the B dataset yield higher IL when \u03f5 is small, due to more numerical QIDs in it. In our proposed scheme, privacy is effectively safeguarded as the SA column has sufficient diversity and categorical QIDs are generalized. The IL is better as some parts of the data are anonymized rather than entire parts by exploiting the information of QIDs in a fine-grained manner.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_16",
+                "fig_17",
+                "fig_17"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "H. Reduction in Time Complexity",
+            "text": "In this section, we highlight the performance of our scheme in terms of reducing time complexity. To compute and compare time performance, we recorded the running time of our scheme on all three datasets. For fair analysis, we conducted repetitive experiments and took an average computing time after ten tests. The results and comparisons with respect to time complexity in the three real-life datasets are given in Table VIII.\nFrom the results shown in Table VIII, it can be noticed that our scheme runs much faster compared to the previous SOTA algorithms. The reason for the higher time complexity of existing algorithms is the anonymization of entire sections of the data. In contrast, our scheme applies anonymity to fewer sections of data, and therefore, the time overheads are significantly small compared to previous algorithms. Hence, our scheme is also applicable in resource-constrained environments. Apart from the overall time consumption, the breakdown of the time consumed by each data processing step is provided in Fig. 18. The main data processing steps in our scheme are: identifying pattern-friendly QIDs, implementing k-anonymity, and adding Laplace noise perturbation. Referring to Fig. 18, steps 2 and 3 have had a relatively shorter time than step 3 because they were implemented in highly optimized libraries. However, step 2 has the highest time consumption, due to complex operations involved in similarity and diversity consideration while making clusters. Hence, it can be concluded that implementing k-anonymity has the greatest impact on the overall method. Finally, it is worth noting that time consumption heavily depends on the characteristics of datasets. Dataset A has less time because there exist many records in the nonprivacy-violating partition, and therefore, very little anonymity was applied. In contrast, dataset B has  mostly numerical QIDs due to which the noise addition time is relatively higher. The overall time for dataset C is higher because many QIDs are categorical, and higher lookups are required in generalization hierarchies during anonymization. The proposed scheme is generic and can be applied to any dataset encompassed in tabular format. It can also be applied to big data scenarios (e.g., many records and many attributes are present in D) with slight modifications in relevant parameters (e.g., ntree, \u03f5, mtry, and k). However, while dealing with big data scenarios, our scheme may yield certain performance bottlenecks such as a rise in computing time, memory overheads, and # of operations. Also, some additional preprocessing techniques may be required to clean the data depending on the data source and quality. However, these issues can be resolved by using distributed frameworks (e.g., MapReduce), precomputed statistics of some steps, data conversions to some easier formats (categorical \u2192 numeric and vice versa), and data reduction strategies. Nowadays, many high-performance computing hardware (e.g., GPU/accelerators) are also available which can assist in overcoming performance bottlenecks while anonymizing big data. To lessen the data preprocessing time, some sophisticated low-code or no-code tools such as KNIME 4 can be utilized. Based on the above analysis, it is fair to say that the proposed scheme can effectively deal with big data scenarios with slight modifications.\nThe privacy, utility, and time complexity results cited above prove the superiority of our scheme over prior SOTA algorithms. Finally, our scheme can ease the burden on data 4 https://www.knime.com/ analysts by preserving most sections of the anonymized data in their original form.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_18",
+                "fig_18"
+            ],
+            "table_ref": [
+                "tab_4",
+                "tab_4"
+            ]
+        },
+        {
+            "heading": "V. CONCLUSION",
+            "text": "This article implemented a hybrid anonymity scheme for PPDP by combining DP and k-anonymity, making it well-suited to futuristic AI applications and RDS, where obtaining data of excellent quality is imperative. The anonymized data not having similar functional relationships to that of real data inadvertently propagates biases in the training process of AI models. As a result, AI models can make biased or wrong decisions/predictions, leading to conflicts in society. The solution for data-specific biases is urgent to yield the intended performance with AI models. Recently, there has been a growing debate to rectify the privacy protection technologies as they may destroy important information regarding minorities from data, leading to low/no benefits for them [27]. Our scheme offers sufficient resilience against privacy attacks by identifying privacy-violating partitions and ensuring the needed anonymization in them. Different from prior methods, our scheme uses distinct values for privacy budget \u03f5, thereby significantly reducing the offset in numerical QID values in real and anonymized data. The values of categorical QIDs are released, as is, in nonprivacy-violating partitions, and are minimally generalized in the privacy-violating partition by exploiting SA diversity information. This is the pioneer scheme to extract and preserve most parts of data in their original form with strong privacy guarantees, making the anonymized data most suitable for data-hungry AI applications. The experiment results and comparisons from using three benchmark datasets indicate that our scheme significantly outperformed SOTA methods from the perspective of originality preservation, providing the ability to defend against privacy breaches, ensuring higher utility in the anonymized data, and significantly lowering computing overhead.",
+            "publication_ref": [
+                "b26"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Data marketplaces with a free sampling service",
+            "journal": "",
+            "year": "2022-07",
+            "authors": "R Gen\u00e9s-Dur\u00e1n"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Data analytics in a privacy-concerned world",
+            "journal": "J. Bus. Res",
+            "year": "2021-01",
+            "authors": "J Wieringa; P K Kannan; X Ma; T Reutterer; H Risselada; B Skiera"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Privacy and healthcare during COVID-19",
+            "journal": "IGI Global",
+            "year": "2022",
+            "authors": "A Bhardwaj; V Kumar"
+        },
+        {
+            "ref_id": "b3",
+            "title": "An introduction to the principle of transparency in automated decision-making systems",
+            "journal": "",
+            "year": "2022-05",
+            "authors": "L G Rend\u00f3n"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Rectification of syntactic and semantic privacy mechanisms",
+            "journal": "IEEE Secur. Privacy",
+            "year": "2023-10",
+            "authors": "A Majeed; S O Hwang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "k-anonymity: A model for protecting privacy",
+            "journal": "Int. J. Uncertainty, Fuzziness Knowl.-Based Syst",
+            "year": "2002-10",
+            "authors": "L Sweeney"
+        },
+        {
+            "ref_id": "b6",
+            "title": "L-diversity: Privacy beyond k-anonymity",
+            "journal": "ACM Trans. Knowl. Discovery Data (TKDD)",
+            "year": "2007",
+            "authors": "A Machanavajjhala; D Kifer; J Gehrke; M Venkitasubramaniam"
+        },
+        {
+            "ref_id": "b7",
+            "title": "t-closeness: Privacy beyond k-anonymity and l-diversity",
+            "journal": "",
+            "year": "2007-04",
+            "authors": "N Li; T Li; S Venkatasubramanian"
+        },
+        {
+            "ref_id": "b8",
+            "title": "An improved privacy-preserving data mining technique using singular value decomposition with threedimensional rotation data perturbation",
+            "journal": "J. Supercomput",
+            "year": "2021-09",
+            "authors": "N Kousika; K Premalatha"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Differential privacy: A survey of results",
+            "journal": "Springer",
+            "year": "2008",
+            "authors": "C Dwork"
+        },
+        {
+            "ref_id": "b10",
+            "title": "A new method of privacy protection: Random k-Anonymous",
+            "journal": "IEEE Access",
+            "year": "2019",
+            "authors": "F Song; T Ma; Y Tian; M Al-Rodhaan"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Local generalization and bucketization technique for personalized privacy preservation",
+            "journal": "J. King Saud Univ.-Comput. Inf. Sci",
+            "year": "2023-01",
+            "authors": "B Li; K He"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Improved l-diversity: Scalable anonymization approach for privacy preserving big data publishing",
+            "journal": "J. King Saud Univ.-Comput. Inf. Sci",
+            "year": "2022-04",
+            "authors": "B B Mehta; U P Rao"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Privacy preserving big data publishing: A scalable k-anonymization approach using MapReduce",
+            "journal": "IET Softw",
+            "year": "2017",
+            "authors": "B B Mehta; U P Rao"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Data anonymization with diversity constraints",
+            "journal": "IEEE Trans. Knowl. Data Eng",
+            "year": "2023-04",
+            "authors": "M Milani; Y Huang; F Chiang"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Data privacy and trustworthy machine learning",
+            "journal": "IEEE Secur. Privacy",
+            "year": "2022-09",
+            "authors": "M Strobel; R Shokri"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Attack risk analysis in data anonymization in Internet of Things",
+            "journal": "IEEE Trans. Computat. Social Syst., early access",
+            "year": "2023-02-22",
+            "authors": "T Yang; L S Cang; M Iqbal; D Almakhles"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Improving Laplace mechanism of differential privacy by personalized sampling",
+            "journal": "",
+            "year": "2020-12",
+            "authors": "W Huang; S Zhou; T Zhu; Y Liao; C Wu; S Qiu"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Towards optimization of privacy-utility trade-off using similarity and diversity based clustering",
+            "journal": "IEEE Trans. Emerg. Topics Comput., early access",
+            "year": "2023-03-22",
+            "authors": "A Majeed; S Khan; S O Hwang"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Random forests",
+            "journal": "Mach. Learn",
+            "year": "2001",
+            "authors": "L Breiman"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Quantifying the effects of anonymization techniques over micro-databases",
+            "journal": "IEEE Trans. Emerg. Topics Comput",
+            "year": "2022-10",
+            "authors": "D Sadhya; B Chakraborty"
+        },
+        {
+            "ref_id": "b21",
+            "title": "UCI Repository of Machine Learning Databases",
+            "journal": "",
+            "year": "1998",
+            "authors": "D Newman"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Hierarchical anonymization algorithms against background knowledge attack in data releasing",
+            "journal": "Knowl.-Based Syst",
+            "year": "2016-06",
+            "authors": "F Amiri; N Yazdani; A Shakery; A H Chinaei"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Proximity measurement for hierarchical categorical attributes in big data",
+            "journal": "Secur. Commun. Netw",
+            "year": "2021-07",
+            "authors": "Z El Ouazzani; A Braeken; H El Bakkali"
+        },
+        {
+            "ref_id": "b24",
+            "title": "A two-levels data anonymization approach",
+            "journal": "Springer",
+            "year": "2020",
+            "authors": "S Zouinina; Y Bennani; N Rogovschi; A Lyhyaoui"
+        },
+        {
+            "ref_id": "b25",
+            "title": "From raw data to FAIR data: The FAIRification workflow for health research",
+            "journal": "Methods Inf. Med",
+            "year": "2020",
+            "authors": "A A Sinaci"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Abdul Majeed received the Ph.D. degree in computer information systems and networks from the Korea Aerospace University, Goyang, South Korea, in 2021. He is currently working as an Assistant Professor with the Department of Computer Engineering, Gachon University, Seongnam, South Korea. His research interests include privacy-preserving data publishing, privacy-aware computing, statistical disclosure control, social network analysis and mining, and machine learning",
+            "journal": "IEEE Secur. Privacy",
+            "year": "2021-11",
+            "authors": "D Pujol; A Machanavajjhala"
+        },
+        {
+            "ref_id": "b27",
+            "title": "D. degree in computer science from the Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea",
+            "journal": "",
+            "year": "2004",
+            "authors": "Oun Seong;  Hwang"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Schematic of system model considered in this article.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig. 2. Privacy model: (left) domain generalization hierarchy (DGH) for the race and (right) noise addition for age via the Laplace mechanism.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 3 .3Fig. 3. Workflow of the proposed hybrid anonymity scheme.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 4 .4Fig. 4. Attribute types present in the data: (a) definitions and (b) examples.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Fig. 5 .5Fig. 5. Proposed method for identifying pattern-friendly QIDs in D.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig. 6 .6Fig. 6. Proposed method for partitioning D into the two categories.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "Algorithm 11Fig. 7. Explanation of algorithm applied to numerical QIDs.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_7",
+            "figure_caption": "5 :5, the QIDs are first split into numerical (N ) and categorical (C), Algorithm 2 CreateAnonymizedDataCategorical(P 2 , T , k) Require: P 2 , T, k Ensure: D \u2032 1: D \u2032 \u2190 \u2205 \u25b7 D \u2032 will store the anonymized data. 2: Clus N um \u2190 \u2308 |P 2 | k \u2309 \u25b7 Find total # of classes. 3: R \u2190 kmember (Clus N um, k, P 2 ) \u25b7 Create clusters. 4: for i = 1 to |R| do Compute diversity div of SA values in R i 6:",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "8",
+            "figure_type": "figure",
+            "figure_id": "fig_9",
+            "figure_caption": "Fig. 8 .8Fig. 8. Explanation of algorithm applied to categorical QIDs.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "10",
+            "figure_type": "figure",
+            "figure_id": "fig_10",
+            "figure_caption": "Fig. 10 .10Fig. 10. Conceptual overview of the existing and the proposed anonymization scheme on personal data. (a) Original medical records. (b) Anonymized medical records. (c) Compact and diverse clusters.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "11",
+            "figure_type": "figure",
+            "figure_id": "fig_11",
+            "figure_caption": "Fig. 11 .11Fig. 11. IL comparisons in nonprivacy-violating partition. (a) A dataset. (b) B dataset. (c) C dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "12",
+            "figure_type": "figure",
+            "figure_id": "fig_12",
+            "figure_caption": "Fig. 12 .12Fig. 12. IL comparisons in privacy-violating partition. (a) A dataset. (b) B dataset. (c) C dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "13",
+            "figure_type": "figure",
+            "figure_id": "fig_13",
+            "figure_caption": "Fig. 13 .13Fig. 13. Accuracy comparisons: proposed scheme versus existing algorithms. (a) A dataset. (b) B dataset. (c) C dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "14",
+            "figure_type": "figure",
+            "figure_id": "fig_14",
+            "figure_caption": "Fig. 14 .14Fig. 14. Comparison of statistical ILs between D and D \u2032 . (a) Original data. (b) D \u2032 (ours). (c) D \u2032 (existing).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "15",
+            "figure_type": "figure",
+            "figure_id": "fig_15",
+            "figure_caption": "Fig. 15 .15Fig. 15. Comparison of statistical ILs between D and D \u2032 . (a) Original data. (b) D \u2032 (ours). (c) D \u2032 (existing).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "16",
+            "figure_type": "figure",
+            "figure_id": "fig_16",
+            "figure_caption": "Fig. 16 .16Fig. 16. Effect of varying privacy budget \u03f5 on QID values. (a) Real data. (b) \u03b5 = 0.01. (c) \u03b5 = 0.1. (d) \u03b5 = 1. (e) \u03b5 = 5. (f) \u03b5 = 10.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "17",
+            "figure_type": "figure",
+            "figure_id": "fig_17",
+            "figure_caption": "Fig. 17 .17Fig. 17. Effect of varying privacy budget \u03f5 on SA disclosure and IL. (a) Average IL. (b) Average SA disclosure.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "18",
+            "figure_type": "figure",
+            "figure_id": "fig_18",
+            "figure_caption": "Fig. 18 .18Fig. 18. Breakdown of the time consumed by each data processing step (1 = identifying pattern-friendly QIDs, 2 = implementing k-anonymity, and 3 = adding Laplace noise perturbation).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "Differential Privacy and k-Anonymity-Based Privacy Preserving Data Publishing Scheme With Minimal Loss of Statistical Information Abdul Majeed and Seong Oun Hwang , Senior Member, IEEE",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "OF THE DATASETS USED IN EXPERIMENT EVALUATIONS",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "II",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "PARAMETERS/VARIABLES USED TO IDENTIFY PATTERN-FRIENDLY QIDS",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "IV",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "PRESERVATION: PROPOSED SCHEME VERSUS EXISTING ALGORITHMS (BY VARYING PRIVACY PARAMETER (k) VALUE)",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "V",
+            "figure_type": "table",
+            "figure_id": "tab_4",
+            "figure_caption": "",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "D \u2286 D \u2032 , 2) D \u2032 is k-anonymous, 3) D \u2032",
+            "formula_coordinates": [
+                3.0,
+                48.96,
+                564.9,
+                251.06,
+                20.77
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "D U,A = \uf8eb \uf8ec \uf8ec \uf8ed u i q 1 = age q 2 = sex q p = race Y = disease 1 39 F \u2022 \u2022 \u2022 Black Cancer \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 9000 37 M \u2022 \u2022 \u2022 White HIV \uf8f6 \uf8f7 \uf8f7 \uf8f8(1)",
+            "formula_coordinates": [
+                4.0,
+                50.49,
+                294.76,
+                250.25,
+                59.72
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "c 1 , c 2 , c 3 , c 4 ) depending on f where f = |(v * l , q i )|. In simple words, if f of v *",
+            "formula_coordinates": [
+                4.0,
+                311.97,
+                551.56,
+                251.06,
+                21.92
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "q i (race) = \uf8ee \uf8ef \uf8ef \uf8ef \uf8ef \uf8f0 v * 1 = white, f (white) = 27 816, v * 1 \u2208 c 1 v * 2 = black, f (black) = 3124, v * 2 \u2208 c 2 v * 3 = API, f (API) = 1039, v * 3 \u2208 c 3 v * 4 = AIE, f (AIE) = 311, v * 4 \u2208 c 4 v * 5 = other, f (other) = 271, v * 5 \u2208 c 4 \uf8f9 \uf8fa \uf8fa \uf8fa \uf8fa \uf8fb .",
+            "formula_coordinates": [
+                4.0,
+                313.9,
+                675.81,
+                240.34,
+                60.59
+            ]
+        },
+        {
+            "formula_id": "formula_4",
+            "formula_text": "div(R i ) \u2190 - |Y | i=1 [( p i ) \u00d7 ln( p i ) 7: if (div(R i ) \u2265 T div ) then \u25b7 Case-I 8:",
+            "formula_coordinates": [
+                6.0,
+                54.71,
+                153.18,
+                245.3,
+                33.15
+            ]
+        },
+        {
+            "formula_id": "formula_5",
+            "formula_text": "R * i \u2190 R * i \u222a q * j",
+            "formula_coordinates": [
+                6.0,
+                111.54,
+                309.45,
+                59.1,
+                10.85
+            ]
+        },
+        {
+            "formula_id": "formula_6",
+            "formula_text": "DR = max u i \u2208D,y\u2208Y Pr u i [D] = y|D \u2032 \u2227 \u03bd(2)",
+            "formula_coordinates": [
+                7.0,
+                95.91,
+                347.16,
+                204.1,
+                16.02
+            ]
+        },
+        {
+            "formula_id": "formula_7",
+            "formula_text": "DM = N i=1 p j=1 l l \u2032 \u00d7 w q j (4)",
+            "formula_coordinates": [
+                7.0,
+                123.27,
+                492.0,
+                176.75,
+                31.02
+            ]
+        }
+    ],
+    "doi": "10.1109/TCSS.2023.3320141"
+}

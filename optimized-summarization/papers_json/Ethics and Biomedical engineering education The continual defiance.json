@@ -1,0 +1,300 @@
+{
+    "title": "Ethics and Biomedical Engineering education: the continual defiance",
+    "authors": "Jorge E Monzon; Alvaro Monzon-Wyngaard",
+    "pub_date": "",
+    "abstract": "All engineering programs must demonstrate that their students attain an understanding of professional and ethical responsibility. BM engineers are expected to be introduced to ethics at the beginning of their career. The ethical issues to be included in the curriculum and their extent still represent a challenge in Biomedical Engineering education. In this paper we present the outline of an Ethics program of study for engineering students. We discuss some of the topics that must integrate the courses on the foundations and on the practice of Ethics, as Biomedical Engineering schools must prepare professionals able to perform their duties under strong moral standards.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Engineering schools worldwide are re-examining their programs in accordance with international accreditation criteria. This process is aimed to incorporating the study of Ethics along with the understanding of the societal and environmental impacts of engineering decisions [1].\nThe US Accreditation Board for Engineering and Technology indicates that all engineering programs must demonstrate that their students attain an understanding of professional and ethical responsibility. Specifically for Biomedical Engineering programs, ABET requires that these programs must demonstrate that graduates have, among other qualifications, the ability to address the problems associated with the interaction between living and nonliving materials and systems. Needless to say that working with living material has strong ethical implications [2].\nThe rapid advancements in the field of medicine, achieved by biomedical scientist and engineers in the past decades, gave birth to new ethical problems that need to be addressed. Consequently, the community expects BM engineers to be introduced to ethics from the very beginning of their lifelong learning [3], [4].\nNevertheless, the ethical issues to be included in the curriculum and their extent still represent a challenge in Biomedical Engineering education.\nAnd concerning Ethics educators, a classical argument used in engineering schools is that ethics should be taught by engineering professors as a way of showing students that ethics is central to engineering and not peripheral to it, as students might assume if all ethical issues were taught by philosophy faculty. It should be emphasized, however, that either approach is insufficient for an integrated ethics education. Studies have shown that beginning students who took fundamental ethics courses that were taught by ethicists scored higher on the Defining Issues Test (DIT), -a test designed by James Rest [5] to assess the development of moral judgement-, when they took the test later in their educational program [6] II. ETHICS PROGRAM OF STUDY An Ethics education program for biomedical engineers should address the main ethical issues of interest for BME students. However, due to the dynamic nature of BME and the frequent incorporation of new sub-disciplines, identification of those issues is not a straightforward process.\nAs mentioned by Frize [7], current fields of work for BM engineers may include medical devices, instrumentation, sensor technologies, medical informatics, biomaterials, prosthesis, tissue engineering, molecular imaging, nanotechnologies, and so on.\nClearly, it is difficult to design a single Ethics course covering the material needed by future BM engineers. It is more appropriate to consider the contents of an integral program of study on Ethics, embedded in the BME curriculum, rather that discussing the description of a single course. A number of essential topics representing minimal contents of such a program are presented in the next subsections. They include the fundamentals of Ethics as well as research, professional and social Ethics, that is, the foundations of Ethics and the practice of Ethics. Organizing this program into a set of courses and inserting them into the chronology of the core BME curriculum will depend upon the needs, the resources and the goals of each academic institution.\nIt must be noted that developing this program requires highly qualified instructors with different background and experience. Participation of ethicists for the study of Ethics as a discipline, as well as contributions from field and research engineers, and research physicians and clinicians with expertise in practice, is essential to achieving success of the program of studies.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Ethics fundamentals",
+            "text": "The study of the basic concepts of right and wrong, good and bad, will eventually lead to the foundations of Ethics. If students are left with only a dogmatic reaction to ethical dilemmas -with no insight into the genesis of the principles of right and wrong-, they will be dependent on the ethical decisions of others. An understanding of Meta-ethics, that is Ethics as a discipline, will increase the potential for moral autonomy in the student [8].\nThe analysis of morality within different cultures will present the concepts of Descriptive or Comparative Ethics, whereas the inclusion of Normative or Prescriptive Ethics allows the study of ethical theories that prescribe how people should act.\nUtilitarianism, value theory and divine command would complement the topics on Ethics fundamentals.",
+            "publication_ref": [
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Research Ethics",
+            "text": "Human subjects and animals for experimentation represent a main issue in research ethics. Biomedical engineers must know the role of ethical review boards within an institution, and how to prepare strict research protocols for cases involving human subjects and animals.\nStudents should be prepared to identify conflicts of interest in research, and to avoid scientific misconduct and inadequate management of experimental data.\nScientists and BM engineers should also consider authorship and plagiarism, intellectual property, academic freedom, assurance of privacy and confidentiality, and in general the guiding principles defining the conduct of ethical research [9].\nA good source of information on research Ethics is provided by the National Institutes of Health. Engineering instructors may access numerous documents and reports on the subject [10].",
+            "publication_ref": [
+                "b7",
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Professional Ethics",
+            "text": "For biomedical engineers, professional Ethics should cover engineering ethics as well as medical ethics.\nBM engineering consolidates the concept of modern engineering which must take into account the social, economical and political context of professional practice [11]. Engineers currently engage in a wider range of activities, and BME, far from being the exemption, stands as a clear and almost unique example of strong multidisciplinary integration [12].\nMain topics in Engineering Ethics refer to the rise of conflicts of interests and to public health and public safety. Designing and manufacturing, testing and commercialization could have ethical implications related to risk and to cost-benefit analysis. Moral obligations in resources allocation should be studied, as this topic cannot be ignored in a world of technological scarcity.\nProfessional restriction and professional responsibility are tied to the rights of engineers and should also be discussed in class.\nNormative ethics leads, in many engineering organizations, to the codes of ethics that synthesize the obligations of a moral conduct. Even in the absence of a specific code, it is valid the analysis of the fundamental canons that illustrate the ethical dilemmas that BM engineers confront in the field [13].\nA strong patient-physician relationship characterizes health care. This highly personal bond delimits and delineates medical morality at the hospital environment. This situation also affects in particular the work of clinical engineers, as autonomy and privacy of the patient must be preserved. Therefore, the ethical implications of the patientdoctor relation should be presented at engineering schools.\nIt is important to BM engineering students to be exposed to other issues of medical ethics as well: professional conduct and confidentiality, truth telling, informed consent. The moral impact of some bioethics issues as biotechnologies and reproductive techniques, genetic engineering, stem cell research, must be discussed in engineering classrooms.\nThe analysis of the Hippocratic Oath will illustrate to engineers the code of ethics for the medical profession, as adopted by the World Medical Association [14] Finally, a close interaction between physicians and engineers is required for the development of medical devices. This degree of interaction, however, creates conflicts of interest that must be managed to avoid compromising trust, credibility, and patient care [15].",
+            "publication_ref": [
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Social Ethics",
+            "text": "Bioethics implies a community concern, as it integrates ethical, social and legal issues. This ethics of life is not just a matter of a specific professional morality, as society is responsible as a whole.\nTherefore, any ethics program must include the analysis of social morality and personal ethics. Consideration of public policies or ethical criteria in governmental or institutional resources allocation would be of interest to engineering students. In the classroom, scientific advances and legal changes should be assessed in parallel with legal ethics.\nIn accordance with modern criteria for accrediting engineering programs, as mentioned earlier, health and welfare, environmental ethics, studies of world population and natural resources, rural development, among other issues, should be included in the ethics program. This would provide engineering graduates with the knowledge of contemporary issues and with a broad education necessary to understand the impact of engineering solutions in a global context, as recommended by accreditation institutions.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Teaching and learning",
+            "text": "The general procedure of problem solving, used in engineering schools, will also be used in classroom work in ethics. It should be mentioned that the decision-making process is not foreign to ethics, since the first step in this process is problem identification, a main issue in ethics not always achieved. Students must be aware that once the problem is identified, a solution is possible. And some solving strategies for moral problems could be common to other disciplines like math or physics [16].\nSeveral pedagogical methodologies may be applied for teaching and learning. Group and panel discussions, debates, case studies, role playing, assignments writing, seminars, are valid strategies.\nWhile these traditional pedagogical techniques are commonly used, additional activities, such as implementing codes of ethics and student-developed scenarios, may be employed to encourage critical thinking [17].\nMowry et al. [18] propose a learning cycle, in accordance with the learning principles addressed by Bransford et al. [19]. The cycle can be applied to solving problems in biomedical engineering ethics by analogy to the process of solving engineering problems. Students are introduced to case studies as an engineering challenge. Based on their own information on the topic, they generate ideas about the problem and gain insight into it after an analysis from different perspectives. Expert advice on the topic and classroom discussions enlighten the knowledge of the group. Students then research their ideas and revise published information to bring solutions to a discussion setting. They finally present a reasonable solution to the class and to the instructor.\nAfter completing the program of study, BME students should have learned the essential values of morality and achieved the necessary skills to solving ethical problems.",
+            "publication_ref": [
+                "b14",
+                "b15",
+                "b16",
+                "b17"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. CASE STUDIES",
+            "text": "The case study approach is a classical tool to teach moral reasoning.\nWe mentioned earlier that several didactic procedures can be used to teaching Ethics. It is valid to even combine them to case studies, as suggested by Collins and Mathieson: role playing and group discussion [20]. By this methology, the class is divided into small groups representing advocacy positions (government, regulatory agencies, research community, manufacturers, pharmaceutical companies, the public) for response to a challenge with ethical implications. Group opinions are formed and stated orally and in writing, and after in-class group presentations, individuals summarize group positions and state their own conclusions in writing.\nExamples of case studies often include the conflict between cost and performance of medical equipment. The failure rate of reconditioned devices, or low cost alternative medical instruments used for assistance for healthcare practice in places of extreme poverty raise an ethical issue [21]. Some illustrative cases for teaching are presented next.",
+            "publication_ref": [
+                "b18",
+                "b19"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. The Bj\u00f6rk-Shiley heart valve",
+            "text": "The Bj\u00f6rk-Shiley Convexo-Concave mechanical heart valve, known as BSCC, became the most popular prosthetic valve for over a decade after its introduction in 1976. From 1979 to 1986 a total of 86,000 valves were implanted. However, it is famous for a history of failure. During clinical trials, the valve showed material fatigue leading to weld fractures, causing sudden cardiac arrest and death in more than 600 reported cases. Although Shiley, the manufacturer, modified the welding protocol and the quality control procedure, there was no recall of valves. Patients were not notified of eventual failures either. This would be a highly illustrative case study and a good example of ethical violations involving not only the manufacturer but also FDA as regulatory agency. FDA did not thoroughly investigate the manufacturer nor enforce patient notification [22].\nAs approved by the US District Court for Ohio, just recently a set of guidelines -to determine if patients with BSCC will benefit for defective valve replacement surgerywere endorsed, which still illustrates the importance of the issue. [23].",
+            "publication_ref": [
+                "b20",
+                "b21"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Therac-25",
+            "text": "Another emblematic case for study in biomedical engineering is the Therac-25, a medical linear accelerator, jointly developed by the Canadian AECL and CGR, a French company to treat cancer patients. Between the period of 1985-1987, a human error did occur, costing six patients their lives. This mistake is known as Therac-25, and it is the biggest and most disastrous case of human error relating computer controlled radiation and human death to date.\nMost of the patients using the machine had already undergone surgical removal of the majority of the carcinoma and were receiving the radiation to remove any leftover growth. Patients were usually exposed to low energy radiation treatments to gradually and safely remove any remaining cancerous growth [24].\nThe Therac-25 massively overdosed patients. While operator\u00b4s error cannot be excluded, overdoses occurred primarily because of errors in the machine software and because the manufacturer did not follow proper software engineering practices [25].",
+            "publication_ref": [
+                "b22",
+                "b23"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Other cases",
+            "text": "Infant respirators and computer failure in the intensive care unit are some of other documented cases reported to the IEEE Ethics Committee [26].\nA set of respirators designed for pediatric use had a relief valve -intended to protect against overpressure being applied to the infant\u00b4s lung-incorrectly placed. Under certain circumstances, the patient could experience dangerously high pressure. The problem was not appropriately corrected and the engineer reporting the fault was wrongfully discharged from the company.\nThe work of a computer group on the interface between a piece of commercial data processing software and various units in the Intensive Care Unit (ICU) -including real-time patient monitoring devices-fell significantly behind schedule, and the group considered reduced testing to close the schedule gap. This case was reported as a basic problem of incompetence of the group.\nDue to the individual nature of each case under study, it is often difficult to identify the most important information and to see what moral considerations are most relevant [27].\nV. CONCLUSION Biomedical Engineering curricula need proper planning and preparation to include ethics studies as a way to providing society with not only the required skilled BM engineers, but at the same time professionals able to perform their duties under strong moral standards.",
+            "publication_ref": [
+                "b24",
+                "b25"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Engineering Education for a Changing World",
+            "journal": "American Society for Engineering Education",
+            "year": "2009",
+            "authors": ""
+        },
+        {
+            "ref_id": "b1",
+            "title": "Ethical Considerations in Bioengineering Research",
+            "journal": "Biomedical Sciences Instrumentation",
+            "year": "2003",
+            "authors": "N Naurato; T J Smith"
+        },
+        {
+            "ref_id": "b2",
+            "title": "",
+            "journal": "Ethics and the Biomedical Engineer\". Engineering Science and Education Journal",
+            "year": "2000",
+            "authors": "M G Brennan; M A Tooley"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Development in Judging Moral Issues",
+            "journal": "University of Minnesota Press",
+            "year": "1979",
+            "authors": "J Rest"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Teaching Ethical Issues in Biomedical Engineering",
+            "journal": "The International Journal of Engineering Education",
+            "year": "1999",
+            "authors": "J E Monzon"
+        },
+        {
+            "ref_id": "b5",
+            "title": "The importance of teaching Ethics to biomedical engineers",
+            "journal": "International Journal of Medical Implant and Devices",
+            "year": "2007",
+            "authors": "M Frize"
+        },
+        {
+            "ref_id": "b6",
+            "title": "The importance of meta-ethics in engineering education",
+            "journal": "Science and Engineering Ethics",
+            "year": "2004",
+            "authors": "D R Haws"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Research ethics",
+            "journal": "Emergency Medicine Clinics of North America",
+            "year": "2006",
+            "authors": "J B Shahan; G D Kelen"
+        },
+        {
+            "ref_id": "b8",
+            "title": "",
+            "journal": "Bioethics Resources on the Web. National Institutes of Health",
+            "year": "2009",
+            "authors": ""
+        },
+        {
+            "ref_id": "b9",
+            "title": "Engineering Education for a Changing World",
+            "journal": "American Society for Engineering Education",
+            "year": "2009",
+            "authors": ""
+        },
+        {
+            "ref_id": "b10",
+            "title": "A Code of Bioethics for promoting Biomedical Engineering",
+            "journal": "",
+            "year": "2004",
+            "authors": "J E Monzon"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Professional ethics in Biomedical Engineering practice and research",
+            "journal": "",
+            "year": "2008",
+            "authors": "J E Monzon; A Monzon-Wyngaard"
+        },
+        {
+            "ref_id": "b12",
+            "title": "",
+            "journal": "World Medical Association. International Code of Medical Ethics",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b13",
+            "title": "Medical devices and conflict of interest: unique issues and an industry code to address them",
+            "journal": "Cleveland Clinic Journal of Medicine",
+            "year": "2007",
+            "authors": "P A Laviolette"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Educating ethical engineers",
+            "journal": "IEEE Spectrum",
+            "year": "1998",
+            "authors": "W Sweet"
+        },
+        {
+            "ref_id": "b15",
+            "title": "A team-taught interdisciplinary approach to engineering ethics",
+            "journal": "Science and Engineering Ethics",
+            "year": "2006",
+            "authors": "G C Graber; C D Pionke"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Creation of a Bioethics course for the undergraduate Biomedical Engineering curriculum",
+            "journal": "",
+            "year": "2003",
+            "authors": "E Mowry; J Collins; S Brophy"
+        },
+        {
+            "ref_id": "b17",
+            "title": "How people learn: Brain, mind, experience, and school",
+            "journal": "National Academy Press",
+            "year": "2000",
+            "authors": ""
+        },
+        {
+            "ref_id": "b18",
+            "title": "Case studies in Economics and Ethics in an early Biomedical Engineering class",
+            "journal": "",
+            "year": "2002",
+            "authors": "J Collins; C Mathieson"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Biomedical Engineerng Ethics and standards in the developing world",
+            "journal": "",
+            "year": "2007",
+            "authors": "L E Olson; M R Glucksberg; R A Malkin; M Poluta"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Defects and deceptions: The Bjork-Shiley heart valve",
+            "journal": "IEEE Technology and Society Magazine",
+            "year": "1995",
+            "authors": "J H Fielder"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Amended guidelines to assess patients with BSCC heart valves for elective explantation",
+            "journal": "",
+            "year": "2007",
+            "authors": "Bowling-Pfizer Supervisory Panel"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Graduate seminar at Stanford University School of Medicine",
+            "journal": "",
+            "year": "1998",
+            "authors": "R M Felciano"
+        },
+        {
+            "ref_id": "b23",
+            "title": "An Investigation of the Therac-25 Accidents",
+            "journal": "Computer",
+            "year": "1993",
+            "authors": "N Leveson; C Turner"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Some Recent Engineering Ethics Cases That Have Come to the IEEE",
+            "journal": "Online Ethics Center for Engineering",
+            "year": "2009",
+            "authors": "S H Unger"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Linking biomedical engineering ethics case study approach and policy",
+            "journal": "Journal of Long-term Effects of Medical Implants",
+            "year": "2007",
+            "authors": "W Dibrell; E A Dobie"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": ""
+}

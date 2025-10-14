@@ -1,0 +1,413 @@
+{
+    "title": "Factors Influencing Information Privacy Concern in Cloud Computing Environment",
+    "authors": "Ahmad Mohammad; Zaher Asadullah; Ishaq Oyebisi Oyefolahan",
+    "pub_date": "",
+    "abstract": "Cloud computing technology is one of the newest technologies widely used by consumers globally due to its advantages. One of the common advantages is that users can get access to applications and their own files and data on demand. However, there are privacy concerns and issues which discourage users from being active in cloud computing. This paper attempts to investigate the factors that influence information privacy concern in cloud computing environment by using a quantitative research approach. A total of 340 cases were gathered from a sampled population of students. Based on SPSS analysis, the study found that perceived privacy risk is influencing information privacy concern in cloud computing environment. Meanwhile, perceived privacy control and perceived effectiveness of privacy policy have no significant impact on information privacy concern in cloud computing environment.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "Cloud computing technology is a recent trend in the field of information and communication technology. It is defined by the US National Institute of Standards and Technology (NIST) as \"a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g. networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction\". This definition seems to be the most accepted and satisfied definition of cloud computing as the Federal Bureau of Investigation (FBI) and Criminal Justice Information Services department (CJIS) has agreed and acknowledged this definition as shown in their 2012 CJIS Cloud Computing Report [1]. It can be said that cloud computing technology is a kind of storing and accessing of applications and computer data often through a Web browser rather than running installed software on personal computer or office server [2].",
+            "publication_ref": [
+                "b0",
+                "b1"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. BACKGROUND OF STUDY",
+            "text": "Cloud computing technology offers various types of services and applications for the public and organizations. One of the most commonly used cloud computing services is social networking websites such as Facebook, LinkedIn, Twitter, Instagram and many others, although these were not initially considered cloud computing services. Another example of cloud computing services is E-mail services. Other major example of cloud computing services is Google Drive. All of Google's services could be considered as cloud computing such as Gmail, Google Calendar, Google Reader, Google Voice, Google glass and so on. In addition, Apple's cloud service is primarily used for online storage and synchronization of user mail, contacts, calendar, and more. All the data you need is available to you on your iOS, Mac OS, or Windows device. Prior studies found that information privacy concerns is an essential factors that discourage and influence users from transiting through online channel [3].On the other hand, many issues have been raised in cloud computing environment, from the consumer's perspective. According to D. Chen & Zhao (2012) argued that information privacy and security concern in cloud computing are the main inhibitor for adopting and using cloud computing services [4]. Also, S, Daniel, & Vasanthi (2013) claimed that privacy concern is the major barriers in the growth and adoption of Cloud Computing by the IT industry and public consumers due to absence of any reliable and efficient privacy evaluation mechanism [5].\nTherefore, it is required to conduct an empirical investigation upon the factors that influence users' information privacy concern in cloud computing environment. As a result, it would give a clear view to cloud computing service providers regarding the gap that they have in their cloud services, which should be assessed and overcome.",
+            "publication_ref": [
+                "b2",
+                "b3",
+                "b4"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. RESEARCH MODEL AND HYPOTHESES",
+            "text": "Fig. 1 shows research model and hypotheses. It has been developed based on Communication Privacy Management theory (CPM). CPM theory established by Sandra Petronio who is communication professor at Indiana University, it provides researchers a comprehensive view on the processes of exchanging individuals' private information [6]. According to Hammonds (2009) Communication privacy management theory illustrates a very clear and inclusive guideline while examining how people measure and manage their private information. ",
+            "publication_ref": [
+                "b5"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Information Privacy Concern in Cloud Computing Environment (CCE)",
+            "text": "In this study information privacy concern is a dependent variable which has been addressed by allocating four variables. Hence, in this study it is assumed that these variables are influencing information privacy concern in cloud computing environment. However, according to Oxford Dictionaries privacy means \"The state or condition of being free from being observed or disturbed by other people\". While, Mishra, Ranjita; Dash, Sanjit K (2011) indicated that privacy is the of transmitted data from passive attacks [7]. Another popular definition provided by the American Institute of Certified Public Accountants (AICPA) and the Canadian Institute of Chartered Accountants (CICA) in the Generally Accepted Privacy Principles (GAPP) standard is \"The rights and obligations of individuals and organizations with respect to the collection, use, retention, and disclosure of personal information\". In other words, it is the matter which is related to the data collection, use, disclosure, storage, and destruction of personal data or personally identifiable information [4]. In addition, as cloud computing system usually offers services (e.g. DaaS, SaaS, IPMaaS, PaaS, and so on) on the other hand of the Internet in terms of its users, the secret information of individual users' and business' are stored and managed by the service providers in cloud, and consequently results in privacy concerns. In fact, privacy issues exist since a long time in the computing literature [4]. Nevertheless, most of the information system literatures researchers have addressed and approach the concept of information privacy concern as general concern which reflect users' natural worries and concerns upon the possibility of information privacy loss [8][9]; whereas, in this study the researcher is attempting to investigate and find out the factors that influences users' information privacy concern in cloud computing environment.",
+            "publication_ref": [
+                "b6",
+                "b3",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Perceived Privacy Control",
+            "text": "Cloud computing technology involves distributed computation on multiple large-scale data sets across a large number of computer nodes. Every Internet user is able to share his or her personal data to the Cloud Computer systems which are located on the other side of the Internet. For instance, a user's click stream across a set of webs (e.g., Amazon book store, Google search web pages, etc.) can be used to provide targeted advertising [10]. However, few studies tried to clarify the nature of control in the privacy context. For instance, in privacy literature, control has been utilized to refer to several objectives such as social power and procedural fairness of an organization's privacy [8]. Studies have specified perceived privacy control based on three dimensions: 1) knowledge: users should be aware of a service provider's information practices. It is assumed that without this knowledge, a consumer is unable to make a decision as to either disclose personal information or not. 2) Choice/access: users should be provided with choices as to how their personal information is utilized beyond the use for which the information was provided. 3) Use of privacy tools: when privacy tools like protocol for privacy preferences (P3P) or privacy seals are used by some service providers then the user begins to believe that his control over his personal information is growing [11] [12].\nTherefore, hypotheses1: Perceived privacy control will negatively influence consumers' information privacy concern in cloud computing environment [8].",
+            "publication_ref": [
+                "b9",
+                "b7",
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Perceived Privacy Risk",
+            "text": "Overall, risk has been defined as the uncertainty resulting from the potential for a negative outcome [13] and the possibility of another party's opportunistic behaviour that can result in losses for oneself [14]. Therefore, usually negative perceptions are related to risk and it may influence an individual emotionally, materially, and physically [15]. Previous studies agreed that since online service providers requesting users' personal information as a part of online transactions, the users express their concern about such information being misused, sold, disclosed, or exchanged with other parties without authorization from the owners [16]. It has been proved that such risk perceptions of online users constitute an obstacle to the widespread acceptance of online transactions mainly when sensitive information is required [17] [18]. There is thus a consensus among researchers that risk is vital factors in making any kind of online decisions [19]. According to S. Chen & Li (2010) unlike consumers in the physical market, consumers may be dealing with remote vendors that they have never met and products that cannot be touched and felt. Hence, consumers tend to be reluctant to conduct businesses based only on the information provided by e-commerce vendors because such information may not be reliable [20].\nTherefore, this study is trying to measure users' privacy risk and its impact on users' information privacy concern. Thus, hypotheses2: Perceived Privacy Risk will positively influence consumers' information privacy concern in cloud computing environment [8] [21] [11].",
+            "publication_ref": [
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b7",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Perceived Effectiveness of Privacy Policy",
+            "text": "Privacy policies are notices that are displayed on an online service provider, accessible to the public, and describe an organization's information practices. In fact, privacy policy not always true in practice. Privacy policies are made to reflect a service provider's actual privacy practices and serve as a contract between the service provider and the users. The privacy policies and strategies that online service providers adopt, implement and communicate to users can have an impact on users' information privacy concern [22] [23].\nPrior studies found that perceived effectiveness of privacy policy is influencing users' information privacy concern. According to Milne and Culnan (2002) reported that privacy policy notices are an important means for reducing users' privacy concerns by providing users with information about the service providers' information practices [24]. Also, Shepard (2004) illustrated that roughly 60% of a sample of online service users said they decided not to use a website or not to purchase something from a web site because they were not sure about the collection and use of their personal information [25].\nTherefore, hypotheses3: Perceived effectiveness of privacy policy will negatively influence consumers' information privacy concern in cloud computing environment [26].\nIV. METHODOLOGY A quantitative survey method has been adopted to collect data from targeted respondents. For that, we conducted a selfadministered and online questionnaire to be answered by Undergraduate and Postgraduate students from the International Islamic University Malaysia. A total of 340 cases were usable. The survey items were adopted from prior studies where a five point-Likert scale was applied for each item.",
+            "publication_ref": [
+                "b21",
+                "b22",
+                "b23",
+                "b23",
+                "b24",
+                "b24",
+                "b25"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. DATA ANALYSIA AND RESULT",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Reliability Test",
+            "text": "Cronbach's alpha test was used to measure the reliability of the items. Overall, the result of the reliability test was successful; it was agreed upon the lower limit which is 0.7 across all constructs. Table I ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_1"
+            ]
+        },
+        {
+            "heading": "B. Demographic Information of respondents",
+            "text": "The demographic profile of the respondents is shown in Table II. The largest number of cases was from female students (51.2.1%) and 35.6% of the total respondents were aged in the group of below 20. Moreover, the majority of the respondents were undergraduate students (70.9%). ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_2"
+            ]
+        },
+        {
+            "heading": "C. Measuring users' information privacy concern in cloud computing environment",
+            "text": "The dependent variable in this study is information privacy concern in cloud computing environment. The researcher tried to measure users' information privacy concern, throughout the instrument for measuring information privacy concern the result of individual items are depicted, the first item which stats that 'I am concerned that the data I submit to the cloud could be misused' indicates that 32.4% of the respondents are agree with the statement, while 4.7% of the respondents are strongly disagree. Moreover, 10.9% of the respondents are disagreeing, 21.5% are strongly agreed and 30.9% remained neutral. The second statement says that 'I am concern about submitting my data in the cloud because of what others might do with it' the result shows that 39.4% of the respondents agree while 3.8% strongly disagree. Disagree has 7.1% of the respondents, 24.7% neutral, 25% strongly agree. The third statement 'I am concerned that others can find data about me in the cloud computing services' resulted that 37.6% of the respondents agree whereas 3.2% strongly did not agree with statement. While 31.5% of the respondents strongly agree, 19.7% remain neutral, 7.9% did not agree with the statement. The last statement says that 'I am concerned about providing my data to the cloud services, because it could be used in a way I did not foresee' the result shows that 34.7% of the respondents agree whereas 2.9% strongly disagree. Meanwhile, 27.6% of the respondents strongly agree, 27.1% neutral, 7.6% did not agree.\nTherefore, users' are concerned about the privacy of their information in CCE.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Cloud computing services usage rate",
+            "text": "Based on the previous studies cloud computing services categorized into five categories: Social Networking (e.g., Facebook, Twitter and others), Email Services (e.g., Hotmail, Gmail, Yahoo and others), Google Services (e.g., Google Drive, Google Apps and others), Apple Services (e.g., iCloud, iTunes and others) and Data Storage Services (e.g., Box, Dropbox and others). However, it can be seen that Social Networking services has the highest percentage of respondents with 29.93%, whereas apple services has the lowest percentage of respondents with 7%. Between the highest and the lowest percentage of respondents there are other categories Email services 26.70%, Google services 21.64% and Data storage services 14.73% respectively. Fig. 2 explains that. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_1"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Testing research hypotheses",
+            "text": "Multiple linear regression technique was used to test research hypotheses. Information privacy concern was enrolled as a dependent variable. While perceived privacy risk, perceived privacy control and perceived effectiveness of privacy policy were entered as independent variable. The result of multiple regression provides two tables. The first table entitled ANOVA which illustrates the goodness of fit of the model, while the second table entitled Coefficients shows the significance of the independent variables (perceived privacy risk, perceived privacy control and perceived effectiveness of privacy policy) drivable to the dependent variable (Information Privacy concern). The result of ANOVA demonstrates that the model is significant at 99% because P value is less than 0.05, this result strongly validate and show the goodness of fit of the model. According to Gupta (1999) if Significance value is < .01, then the model is significant at 99%.\nHowever, the Coefficients table provides information about the effect of independents factors on the dependent variable and the confidence with which we can support the estimate for each such estimate. Moreover, it can be seen that there is a significant relation between perceived privacy risk and information privacy concern (p= .000, < 0.05), which means that P value is true at 95% level of confidence. In another word, the result shows that consumers with high degree of privacy risk in Cloud Computing Environment (CCE) have high degree of information privacy concern in CCE as well.\nTherefore, H2: \"Perceived Privacy Risk will positively affect consumers' information privacy concern in CCE\" is supported. While, perceived privacy control and perceived effectiveness of privacy policy have no significant relation with information privacy concern in CCE (perceived privacy control P = .210, perceived effectiveness privacy policy P = .396, > 0.05). This result indicates that perceived privacy control and perceived effectiveness of privacy policy does not influence individuals' information privacy concern in CCE. In another word, perceived privacy control and perceived effectiveness of privacy policy have no significant relation with information privacy concern.\nTherefore, H1: \"Perceived privacy control will negatively affect consumers' information privacy concern in CCE\" is not supported.\nAlso, H3: \"Perceived effectiveness of privacy policy will negatively affect consumers' information privacy concern in CCE\" is not supported.\nTo conclude, perceived privacy risk is influencing information privacy concern positively in CCE. Whereas, perceived privacy control and perceived effectiveness of privacy policy have no significant relationship with information privacy concern in CCE.  ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. DISCUSSION",
+            "text": "This study revealed that, Social Networking (e.g., Facebook, LinkedIn, MySpace, Twitter, Instagram, WhatsApp others) services has the highest percentage of usage rate among the participants. The outcome proves the prior studies [27] [25] where their investigations found that more than 98.6% of the consumers engaged and using social networking websites such as Facebook, Friendster, MySpace and Twitter.\nOn the other hand, this study found that perceived privacy risk is influencing information privacy concern in cloud computing environment statistically and significantly. Yet, In the same time the finding of Odeyinde (2013), Yuan, Shu, Yifeng, Tong, & Wei (2009) and Smith (2009) have found that there is positive relationship between privacy risk and privacy concern. In other words, when users have the feeling of privacy risk the concern of information privacy would be high [11][21] [29]. Whereas, this study found that perceived privacy control has significant impact on information privacy concern in CCE, but Xu et al. (2011) study showed that there is statistically and significantly negative relation between perceived privacy control and privacy concern [8]. The difference in the result might because of the difference in the targeted population whereby this study have been conducted on the population of International Islamic University, while, Xu et al's (2011) study have been conducted on three large universities in the southeastern and northeastern of United States of America. Moreover, the previous reason goes to the result of hypotheses three where perceived effectiveness of privacy policy has no significant relationship with information privacy concern, while Wu et als' (2012) study showed that privayc policy has negative influence on privacy concern and it was partially supported [26].",
+            "publication_ref": [
+                "b10",
+                "b28",
+                "b7",
+                "b25"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VII. CONCLUSION AND RECOMMENDATION",
+            "text": "In this study, the primary objective was to find out the factors that influence information privacy concern in cloud computing environment. Prior studies focused on the factors that influence privacy concern in e-commerce and online banking environment and so on, whereas, this study investigate it in cloud computing environment. Our findings proved that perceived privacy risk has statistically significant on information privacy concern in CCE. Meanwhile, perceived privacy control and perceived effectiveness of privacy policy has no significant on information privacy concern. Therefore, the researcher believes that the main objective of this study is accomplished and this finding is really vital to understand users' information privacy concern in CCE. Also, this study recommends that the quality of cloud service should be improved to overcome privacy's gap. Moreover, cloud service providers should have a clear privacy risk management plan, so that users' information privacy concern would be reduced. .",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Recommendations for Implementation of Cloud Computing Solutions",
+            "journal": "",
+            "year": "2012",
+            "authors": "T Report"
+        },
+        {
+            "ref_id": "b1",
+            "title": "A Fresh Graduate's Guide to Software Development Tools and Technologies: Cloud Computing",
+            "journal": "",
+            "year": "2013",
+            "authors": "W T Lai; H Trancong; S Goh"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Measuring Inherent Privacy Concern and Desire for Privacy -A Pilot Survey Study of an Instrument to Measure Dispositional Privacy Concern",
+            "journal": "Int. Conf. Soc. Comput",
+            "year": "2013-09",
+            "authors": "A Morton"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Data Security and Privacy Protection Issues in Cloud Computing",
+            "journal": "Int. Conf. Comput. Sci. Electron. Eng",
+            "year": "2012-03",
+            "authors": "D Chen; H Zhao"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Surveyon Various Data Integrity Attacks in Cloud Environment and the Solutions",
+            "journal": "",
+            "year": "2013",
+            "authors": "M S ; E Daniel; N Vasanthi"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Communication Privacy Management Theory",
+            "journal": "",
+            "year": "2002",
+            "authors": "S Petronio"
+        },
+        {
+            "ref_id": "b6",
+            "title": "A privacy preserving repository for securing data across the cloud",
+            "journal": "Conf. Electron. Comput. Technol",
+            "year": "2011-04",
+            "authors": "R Mishra; D P Mishra; A Tripathy; S K Dash"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Linking Individual Perceptions with Institutional Privacy Assurances Institutional Privacy Assurances",
+            "journal": "",
+            "year": "2011",
+            "authors": ""
+        },
+        {
+            "ref_id": "b8",
+            "title": "",
+            "journal": "",
+            "year": "2009",
+            "authors": "Effects Antecedents"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Security and Privacy in Cloud Computing: A Survey",
+            "journal": "",
+            "year": "2010-11",
+            "authors": "M Zhou; R Zhang; W Xie; W Qian; A Zhou"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Information Privacy Concerns of Undergraduate Students in a Nigerian University and their Willingness to Provide Personal Information to Transact on the Internet by Olufemi Babajide Odeyinde A dissertation submitted to the faculty of Wilmington University",
+            "journal": "",
+            "year": "2013-11",
+            "authors": "O Odeyinde"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Users' perceptions on privacy and their intention to transact online: a study on Greek internet users",
+            "journal": "Direct Mark. An Int. J",
+            "year": "2009-06",
+            "authors": "A Zorotheos; E Kafeza"
+        },
+        {
+            "ref_id": "b12",
+            "title": "On the Measurement of Perceived Consumer Risk",
+            "journal": "Decis. Sci",
+            "year": "1991",
+            "authors": "W J Havlena; W S Desarbo"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Determinants of long-term orientation in buyer-seller relationships",
+            "journal": "J. Mark",
+            "year": "1994",
+            "authors": "S Ganesan"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Intimate Exchanges: Using Computers to Elicit Self Disclosure From Consumers",
+            "journal": "Journal of Consumer Research",
+            "year": "2000",
+            "authors": "Y Moon"
+        },
+        {
+            "ref_id": "b15",
+            "title": "An extended privacy calculus model for ecommerce transactions",
+            "journal": "Inf. Syst. Res",
+            "year": "2006",
+            "authors": "T Dinev; P Hart"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Understanding online Bto-C relationships: An integrated model of privacy concerns, trust, and commitment",
+            "journal": "J. Bus. Res",
+            "year": "2006",
+            "authors": "M A Eastlick; S L Lotz; P Warrington"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Concern for Information Privacy and Online Consumer Purchasing",
+            "journal": "J. Assoc. Inf. Syst",
+            "year": "2006",
+            "authors": "C Van Slyke; J T Shim; R Johnson; J Jiang"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Examining the impact of privacy, trust and risk perceptions beyond monetary transactions: An integrated model",
+            "journal": "",
+            "year": "2011",
+            "authors": "C Liao; C.-C Liu; K Chen"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Examining Consumers' Willingness to Buy in Chinese Online Market",
+            "journal": "J. Comput",
+            "year": "2010-05",
+            "authors": "S Chen; J Li"
+        },
+        {
+            "ref_id": "b20",
+            "title": "The Impact of Perceived Emergency and Essentiality on Perceived Privacy Risk, Privacy Concern and Intention to Use in Mobile LBS Environment: An Example of China Mobile and Unicom",
+            "journal": "",
+            "year": "2009",
+            "authors": "W Yuan; Y Shu; X Yi-Feng; Z Tong; G Wei"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Privacy Policies, Fairness, Trustworthiness And Willingness To Transact With Firms Online",
+            "journal": "",
+            "year": "2005",
+            "authors": "J S Mollick"
+        },
+        {
+            "ref_id": "b22",
+            "title": "The value of privacy assurance: An exploratory field experiment",
+            "journal": "MIS Q. Manag. Inf. Syst",
+            "year": "2007",
+            "authors": "K L Hui; H H Teo; S Y T Lee"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Using the Content of Online Privacy Notices to Inform Public Policy: A Longitudinal Analysis of the 1998-2001 U.S. Web Surveys",
+            "journal": "Information Society",
+            "year": "2002",
+            "authors": "G R Milne; M J Culnan"
+        },
+        {
+            "ref_id": "b24",
+            "title": "The practitioner's bottom line",
+            "journal": "J. Interact. Mark",
+            "year": "2004",
+            "authors": "D Shepard"
+        },
+        {
+            "ref_id": "b25",
+            "title": "The effect of online privacy policy on consumer privacy concern and trust",
+            "journal": "Comput. Human Behav",
+            "year": "2012-05",
+            "authors": "K.-W Wu; S Y Huang; D C Yen; I Popova"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Comparing privacy control methods for smartphone platforms",
+            "journal": "Work. Eng. Mobile-Enabled Syst",
+            "year": "2013-05",
+            "authors": "M Alhamed; K Amiri; M Omari; W Le"
+        },
+        {
+            "ref_id": "b27",
+            "title": "An exploratory study to understand the pattern of information revelation in Facebook",
+            "journal": "",
+            "year": "2012",
+            "authors": "A Dhami; N Agarwal; T K Chakraborty; B P Singh; J Minj"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Examining the Formation of Individual's Privacy Concerns: Toward an Integrative View",
+            "journal": "",
+            "year": "2008",
+            "authors": "H Xu; T Dinev; H J Smith; P Hart"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Research Model",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig. 2. Cloud computing services usage rate",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "",
+            "figure_data": "RELIABILITY RESULTConstructNumber ofReliabilityItemsvaluePrivacy concern4.841Perceived Privacy Control4.845Perceived Effectiveness of Privacy Policy3.842Perceived Privacy Risk4.854"
+        },
+        {
+            "figure_label": "II",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "",
+            "figure_data": ".DEMOGRAPHIC INFORMATIONCharacteristicsItemFrequencyPercentGanderMale16648.8Female17451.2Total340100.0AgeBelow 2012135.622 to 2514241.126 to 304412.930 and above339.7Total340100.0Educational LevelUndergraduate24170.9Postgraduate9929.1Total340100.0"
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "Table III illustrates that.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "III",
+            "figure_type": "table",
+            "figure_id": "tab_4",
+            "figure_caption": "RESULT OF MULTIPLE REGRESSION ANALYSIS",
+            "figure_data": "ANOVAaModelSum ofDfMeanFSig.SquaresSquareRegression 108.876336.29284.431 .000b1Residual144.427336.430Total253.303339a. Dependent Variable: Privacy_Concernb. Predictors: (Constant), Privacy_Control, Priavcy_Risk, Privacy_PolicyCoefficientsaModel UnstandardizedStandardizedTSig.CoefficientsCoefficientsBStd. ErrorBeta(Constant)1.457.2555.703.0001Priavcy_Risk Privacy_Policy .039 .648.043 .046.652 .03915.206 .850.000 .396Privacy_Control -.057.046-.057-1.255.210a. Dependent Variable: Privacy_Concern"
+        }
+    ],
+    "formulas": [],
+    "doi": ""
+}

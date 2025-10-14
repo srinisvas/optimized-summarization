@@ -1,0 +1,112 @@
+{
+    "title": "Implementing AI Ethics in the Design of AI-assisted Rescue Robots",
+    "authors": "",
+    "pub_date": "",
+    "abstract": "",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "For implementing ethics in AI technology, there are at least two major ethical challenges. First, there are various competing AI ethics guidelines and consequently there is a need for a systematic overview of the relevant values that should be considered. Second, if the relevant values have been identified, there is a need for an indicator system that helps assessing if certain design features are positively or negatively affecting their implementation. This indicator system will vary with regard to specific forms of AI technology. An adequate indicator system for the ethical development of recommendation algorithms, for example, will diverge considerably from another for autonomous road vehicles, although both are based on shared values. In this contribution, we propose solutions to both challenges with regard to the special case of the development of an AI-assisted rescue robot.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. TOWARDS AN NORMATIVE CONSENSUS ON AI",
+            "text": "In order to find a solution to the first challenge, we compare prominent AI ethics guidelines [1]- [4] and recent proposals for AI regulation [5], [6]. On this basis, we identify shared values and principles and systematize them. To base the ethical development of AI technology on shared values is important, since liberal democracies exhibit a reasonable pluralism concerning comprehensive moral doctrines [7]. In our systematization, we take action-guiding, normative principles to aim at (or be in accordance with) the values of \"justice\", \"well-being\" and \"understanding\". \"Value\", in this context, refers broadly to states, which are morally desirable or are instrumentally valuable for such desirable states. Principles provide orientation on how to act to reach such a state. Explainability, for example, is a principle that aims at the value of understanding [8]. Understanding and explainability have a moral dimension when we think of people affected by AI, that do not have the chance to understand what happens. Understanding might be regarded as a final value, but is also of instrumental value to other final values, such as justice and its corresponding principles, like accountability. The result is a relational list of shared values and principles that should be implemented in AI technology.",
+            "publication_ref": [
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. TOWARDS AN INDICATOR SYSTEM FOR THE ETHICAL",
+            "text": "DEVELOPMENT OF AI-ASSISTED RESCUE ROBOTS Based on the resulting relational list of shared values and principles and in an interdisciplinary dialogue with technical developers and end-users we propose an indicator system for the ethical design of AI-assisted rescue robots. A theoretical background for the construction of the indicator system is the so-called VCIO model, which is hierarchically composed of values, criteria, indicators, and observables [9]. Our proposal complements the VCIO model with the category of principles. Their inclusion is necessary, since principles figure prominently in the considered ethics guidelines and allow for a more nuanced structure of the indicator system. Principles are further specified by criteria. Indicators, in turn, point to observable features of the technological system that allow to measure the degree to which the system meets the relevant criteria reliably. Suppose, for example, that an AIassisted robot is intended to support the reconnaissance of hazardous substances. Consider the value of understanding, the higher-level principle of explainability, and the lowerlevel principle of transparency. A corresponding criterion might be the transparency of uncertainties in the AI-assisted detection process. One indicator in that case might be \"Are uncertainties made transparent throughout the operation?\". A possible observable is: \"Yes, information on uncertainties is visualized for the operator of the robot in a map.\"",
+            "publication_ref": [
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Asilomar conference (Beneficial AI)",
+            "journal": "Future of Life Institute",
+            "year": "2017-08",
+            "authors": ""
+        },
+        {
+            "ref_id": "b1",
+            "title": "AI4People-An Ethical Framework for a Good AI Society: Opportunities, Risks, Principles, and Recommendations",
+            "journal": "Minds & Machines",
+            "year": "2018-12",
+            "authors": "L Floridi"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Expert Group on Artificial Intelligence set up by the European Commission",
+            "journal": "",
+            "year": "2019",
+            "authors": " High-Level"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems, version 2",
+            "journal": "",
+            "year": "2017",
+            "authors": ""
+        },
+        {
+            "ref_id": "b4",
+            "title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonized Rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+            "journal": "COM",
+            "year": "2021",
+            "authors": ""
+        },
+        {
+            "ref_id": "b5",
+            "title": "Blueprint for an AI Bill of Rights",
+            "journal": "White House Office of Science and Technology Policy",
+            "year": "2022",
+            "authors": ""
+        },
+        {
+            "ref_id": "b6",
+            "title": "Justice as Fairness: A Restatement",
+            "journal": "Harvard University Press",
+            "year": "2001",
+            "authors": "J Rawls"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Understanding, Idealization, and Explainable AI",
+            "journal": "Episteme",
+            "year": "2022-11",
+            "authors": "W Fleisher"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Research presented in this contribution has been supported by the German Federal Ministry of Education and Research (BMBF) within the subproject \"Ethical Issues Concerning the Opportunities and Risks of AI-Assisted Robotics for Radiological Hazards",
+            "journal": "",
+            "year": "2020",
+            "authors": "S Hallensleben"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Authorized licensed use limited to: Kennesaw State University",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1007/s11023-018-9482-5"
+}

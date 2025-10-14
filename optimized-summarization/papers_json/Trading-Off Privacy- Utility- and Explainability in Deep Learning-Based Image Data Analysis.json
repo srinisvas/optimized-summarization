@@ -1,0 +1,1265 @@
+{
+    "title": "Trading-Off Privacy, Utility, and Explainability in Deep Learning-Based Image Data Analysis",
+    "authors": "Wisam Abbasi; Paolo Mori; Andrea Saracino",
+    "pub_date": "",
+    "abstract": "This paper proposes a novel approach for multi-party collaborative data analysis problems, where analysis accuracy and divergence are required, as well as both privacy of shared data and explainability of results. The proposed approach aims at trading-off data privacy, decision explainability, and data utility by analytically relating these three measures, evaluating how they impact each other, and proposing a methodology to find the best possible tradeoff among them. In particular, given a set of requirements from the participants for a collaborative analysis problem, we propose a method to properly tune the parameters of privacy-preserving mechanisms and explainability techniques to be adopted by all participants, obtaining the best trade-off. The paper is focused on deep learning-based image data analysis problems, though the approach can be generalized to other data types. The ( , \u03b4)-Differential Privacy and the Autoencoders privacy-preserving techniques have been adopted to preserve data privacy, while the SmoothGrad mechanism has been used to provide decision explainability. The proposed methodology has been validated with a set of experiments on three multi-class deep learning classifiers and three well-known image datasets, MNIST, FER, and CIFAR-10.",
+    "sections": [
+        {
+            "heading": "",
+            "text": "information, and their exposure to the other participants of a collaborative data analysis system might tamper the reputation of a party or disclose personal, sensitive, or critical data. To address this issue, Privacy-Preserving Machine Learning (PPML) [5] techniques are used to protect such data from being disclosed, while still allowing the execution of meaningful data analysis. Performing data analysis involves other concerns beyond privacy. In particular, recently, there has been a growing need for decision explainability. In fact, by following recent directives, such as the European Artificial Intelligence Act, understanding decision-making criteria is important for both technical and ethical reasons. As privacy requirements and their enforcement through PPML normally affect the effectiveness (accuracy) of a decision system, considering explainability adds another dimension, which might be in contrast with both the accuracy of the decision and ensured privacy. Still, all these elements are of crucial importance as they pose the basis for the Trustworthy AI paradigm. To the best of our knowledge, up to now, these three concepts have been addressed as standalone, by focusing either on Explainable/ Explicable AI (XAI) concepts [6], [7], or on trading-off privacy with data utility (accuracy) [4], [8], [9], [10], [11], [12], [13].\nThis work proposes a methodology and logical framework for collaborative data analysts, to shape and define the optimal trade-off between data utility, privacy, and explainability, applied to a deep learning-based image data analysis system. In particular, we selected techniques for preserving data privacy and ensuring model explainability, which can be tuned through input parameters, and we applied them to a data analysis problem involving image data (pictures or video streams). In this context, the proposed approach defines a measure for evaluating the trade-off among the data Privacy Gain, Data Utility Loss, and model Explainability Gain obtained by applying such techniques. This measure is meant to allow the tuning of the techniques and parameters for preserving data privacy and ensuring model explainability for a specific data analysis problem, to define the configuration that maximizes the Privacy Gain and the model explainability while minimizing the Data Utility Loss. The methodology defines, thus, a general trade-off measure and exploits novelly designed tridimensional compatibility matrices to find the configuration yielding the best trade-off value. Furthermore, given a set of requirements on minimum Privacy Degree and explainability level, which are provided by the participants to collaborative analysis, the proposed framework will calculate the optimal solution satisfying these requirements.\nAs a reference example, we use a facial expression recognition model, which classifies individual faces into different emotion categories, such as happy, sad, or angry, based on the expression detected in an image or a video frame. Both privacy and explainability are extremely relevant in this problem, as privacy of classified faces might be a requirement, and it is interesting to understand which physical features are relevant for the classification decision. We will refer in the following to the Facial Expression Recognition (FER) dataset. 1 For the sake of validation and to demonstrate the capability of generalization of the proposed methodology, we also apply it to the classification of handwritten digits, using the MNIST dataset, 2 and to object recognition, using the CIFAR-10 dataset. 3 Privacy preservation and explainability are handled by applications of Autoencoders, Differential Privacy, and the SmoothGrad techniques.\nThis paper provides the following contributions:\nr we propose a novel framework for collaborative data anal- ysis that balances data privacy, data utility loss, and model explainability in deep learning classification of imagebased datasets;\nr we propose a methodology and a measure to compute the optimal trade-off between privacy, data utility, and explainability aimed at evaluating the impact of the application of privacy-preserving and explainability techniques to the data analysis process;\nr we define the concept of the tri-dimensional compatibility matrix, extending the concept defined in [4] as a tool to find the optimal trade-off among data utility, privacy, and explainability for defined constraints;\nr we implemented an instance of the classification problem of handwritten digit classification, facial expression recognition, and object recognition by using Autoencoders, Differential Privacy, and the SmoothGrad techniques, and we measured Privacy Gain, Explainability Gain, classification Utility Loss, and the trade-off among them;\nr we validate the proposed methodology through three use cases based on image datasets, by performing a set of experiments to measure the capability of reaching the best trade-off, where privacy and explainability are maximized, still with a limited impact on data utility. Specifically, we show and discuss how it is possible to tune the Privacy Degree and the Explainability Degree parameters to maximize at the same time privacy and explainability. The experiments conducted in this paper show that the adoption of the Autoencoders, the Differential Privacy, and the SmoothGrad techniques for preserving privacy and increasing explainability always positively affected the trade-off score. In particular, the results we obtained shed light on the relationship between privacy, explainability, and data utility. As a matter of fact, according to our measures, a Utility Loss has been observed when we adopted the two privacy preserving techniques previously mentioned, but the extent of this loss remains relatively low and stable even increasing Privacy Degree parameters. Moreover, the Utility Loss resulting from adopting privacy mechanisms is notably more pronounced in facial expression recognition due to the sensitivity associated with identifying facial attributes. Achieving an optimal trade-off score involves balancing privacy and explainability degrees, considering the specific requirements of each use case. 1 https://www.kaggle.com/msambare/fer2013. 2 https://huggingface.co/datasets/mnist 3 http://www.cs.toronto.edu/ kriz/cifar.html While the overall contribution of this work is focused on image-based data analysis, the underlying concept promise for potential application to tabular data, through specific adaptation. For an exploration of the application of this methodology to tabular data, please refer to [14].\nThe rest of the paper is structured as follows. In Section II, background about privacy-preserving and explainable AI is reported. Section III describes the reference scenario of this paper and the problem we are addressing. Section IV formally presents the measures used in this work for privacy, explainability, and data utility. Section V describes the proposed trade-off formulation and the methodology to compute the optimal trade-off. Section VI presents the experiments conducted. Section VII presents and compares related work, while Section VIII concludes by proposing some future work directions.",
+            "publication_ref": [
+                "b4",
+                "b5",
+                "b6",
+                "b3",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b3",
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. BACKGROUND",
+            "text": "This section discusses privacy-preserving and XAI techniques.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Privacy-Preserving Techniques",
+            "text": "Data privacy-preserving techniques are aimed at protecting dataset attributes that are considered sensitive or may lead to the re-identification of the person the data refers to. There are two main approaches for data privacy protection: the first one is related to hiding sensitive attributes to prevent person re-identification, and the second is about delivering models that perform responsible data analysis by learning general patterns instead of memorizing specific sensitive attributes and data instances. To protect data privacy when being shared or analyzed by third parties, anonymization-based techniques are exploited. The most popular ones are k-anonymity [8], l-diversity with all its variants [9], t-closeness [10], [15], ( , \u03b4)-Differential Privacy [11] and Autoencoders [16]. In this work, we use the last two techniques, which are powerful and effective, especially when working with image datasets.\n1) ( , \u03b4)-Differential Privacy: ( , \u03b4)-Differential Privacy (DP) is considered one of the most powerful privacy-preserving techniques. DP technique differs from the traditional methods in the mechanism it uses to add noise to the data either before or during analysis, which makes it invulnerable to re-identification or data reconstruction attacks. More in details, traditional methods add noise to individual records, while the DP technique adds Laplace or Gaussian distribution noise during the analysis phase and to the learning model used. When the DP technique is applied to two neighboring datasets (i.e., datasets differing by one data instance), the outputs of the same data analysis on the two datasets are indistinguishable, thus don't disclose whether the given data instance was included in the original dataset or not. The degree to which these outcomes are indistinguishable depends on the values of the privacy budget parameter and the sensitivity parameter, which measures the algorithm sensitivity to the insertion or removal of an individual item from the dataset [11]. ( , \u03b4)-Differential Privacy equation is presented in (1) [11].\nP r[M (D 1 ) \u2208 S] \u2264 P r[M (D 2 ) \u2208 S] \u00d7 exp( ) + \u03b4 (1)\nIn ( 1), P r is the probability of the event, is the privacy budget that is used in our approach, \u03b4 is the failure probability, M is the randomized algorithm which provides ( , \u03b4)-Differential Privacy, and D 1 and D 2 are two datasets that differ in at least one data instance, and S \u2286 Range(M ).\nFor privacy analysis we use the moments accountant privacy budget tracking method [17], which uses a Differential Private Stochastic Gradient Descent (DP-SGD) algorithm with an additive Sampled Gaussian Mechanism (SGM). SGM is an additive Gaussian noise [18] and Sampling [19] mechanism used in Differential Privacy as defined in (2) for a real-valued function f mapping subsets of D to R d :\nM (D) f (D) + N (0, S f \u03c3 2 ) (2)\nwhere D is the dataset and a subset of its elements are sampled randomly and independently from each other with sampling rate 0 < q \u2264 1 to be used by the algorithm f . N (0, \u03c3 2 ) is the Gaussian distribution of the noise added with a mean equal to 0, and \u03c3 is the noise added with S f \u03c3 2 standard deviation of the noise bounded to 2 sensitivity. The moments accountant method exploits the Composability and Group privacy attributes of DP for several applications of the Gaussian mechanism on random samples of the dataset and accumulates the overall privacy budget for these executions using the privacy accountant concept introduced in [20] by implementing the accountant procedure at each execution of the Gaussian mechanism on a sample data according to the sampling ratio and performs privacy budget accumulation at the end of all procedure executions.\nUsing moments accountant, the accounting procedure allows proving that an algorithm is ( , \u03b4)-differentially private for appropriately selected configurations of the parameters for any < c 1 q 2 T and for any \u03b4 > 0 if the noise multiplier \u03c3 was defined to be as in (3) proposed in [17]:\n\u03c3 \u2265 c 2 q T log(1/\u03b4) (3)\nwhere c 1 and c 2 are constants so that given the sampling probability q = L/n, L is the sampling ratio of each Lot, n is the size of the dataset, and T is the number of training steps and T = E q and E is the number of Epochs. The relationship between the noise multiplier and the privacy budget is negative, which implies better privacy protection when increasing the value of the noise multiplier. TensorFlow Privacy provides an implementation of the DP privacy accountant method for SGM 4and a documentation5 for the privacy framework.\nThere are three ways to add noise to machine learning models to satisfy the Differential Privacy property, the first one is to add the noise to the objective function, the second is to add noise to the gradients at each iteration of the training phase, and the third is to add noise to the output of the training phase [21].\n2) Autoencoders: This technique is a type of neural network that is trained to compress data and represent their most important features as a latent representation code. The technique involves two components: an encoder and a decoder. The encoder takes an input dataset and encodes it in a latent representation (code), to get its important features represented as a code. Then, the decoder takes the latent representation and decodes it to get the reconstructed image. The Utility Loss in Autoencoders is represented as the distance between the original image and the reconstructed one. The anonymization degree is controlled by the code size, i.e., the latent representation: the lower the code size, the higher anonymization we get. The underlying mechanism can be considered similar to the compression one [22], [23]. As illustrated in Fig. 1, by compressing the original input data into a latent representation code (the compression structure), the reconstructed data loses many of its features but keeps the ones that most affect the analysis function decision.\nAutoencoders are used as a privacy-preserving technique themselves [24], [25], but they may be fine-tuned or combined with other privacy-preserving methods [22], [26].",
+            "publication_ref": [
+                "b7",
+                "b8",
+                "b9",
+                "b14",
+                "b10",
+                "b15",
+                "b10",
+                "b10",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b2",
+                "b16",
+                "b20",
+                "b21",
+                "b22",
+                "b23",
+                "b24",
+                "b21",
+                "b25"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Explainable Artificial Intelligence",
+            "text": "Explainable/Explicable Artificial Intelligence (XAI) is a recent concept that has been proposed to enforce safety, fairness, trust, and transparency in AI models. XAI provides insights into how the predictive model works, the correlations among data sources and features. Hence, XAI can be exploited for discrimination avoidance and for granting users the right to get an explanation of why certain decisions have been made by AI models. On the other hand, XAI represents a threat to data privacy and allows exploration and exploitation of the model by possible malicious users. In this paper, we use Saliency Maps enhanced with the SmoothGrad technique for addressing explainability.\n1) Saliency Maps: The Saliency Maps [27] is a gradientbased method to explain deep neural networks. The maps generated using this technique make the pixels of the input image that have the highest gradient, i.e., the most influence on the classification of the image, more visible in the image. These gradients are computed using two alternative methods which differ in the scope (local vs global):\nImage-specific class saliency visualization method (local scope): an approximation class score is being calculated in this technique using (4) where S l (d ) is the class scoring function, d represents the input image, l is the label class, w l is the weight vector, and b l is the model bias.\nS l (d) = w T l d + b l (4)\nIn the case of a Convolutional Neural Network (CNN) model, the equation is updated to be as in (5a), where w is the derivative of S l concerning the image d at the point d 0 computed using (5b):  \nS l (d) \u2248 w T d + b (5a) w = \u2202S l \u2202d d 0 (5b)\narg max d S l (d) -\u03a9 d 2 2 (6)\n2) SmoothGrad: This technique smooths the saliency maps produced by gradient-based models through noise elimination by adding Gaussian noise, which is the standard deviation of the Gaussian perturbations. The perturbation is responsible for saliency maps sharpening to generate better and more accurate explanations of the model predictions. The explanation quality can be controlled by regulating the introduced Gaussian noise, as illustrated in Fig. 2 [28], unlike other explainability mechanisms. The choice of the SmoothGrad method as an explainability mechanism in this paper is motivated by its unique ability to allow to control the explanation quality through the manipulation of the explainability noise parameter. Indeed, this distinctive feature makes SmoothGrad particularly suitable for our goal of dynamically investigating the trade-off between privacy, explainability, and data utility varying the explainability quality.\nThe higher the value of Gaussian noise, the better the explanation. According to [28], SmoothGrad method visually sharpen gradient-based sensitivity maps based on the Gaussian Noise parameter.",
+            "publication_ref": [
+                "b26",
+                "b3",
+                "b27",
+                "b27"
+            ],
+            "figure_ref": [
+                "fig_1"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "III. REFERENCE SCENARIO AND PROBLEM STATEMENT",
+            "text": "The reference scenario we are considering is made of several stakeholders who produce image data, i.e., faces taken from surveillance cameras, and they are looking to perform collaborative analysis to increase the accuracy of a facial expression detector. To this aim, such stakeholders share their data with a centralized honest-but-curious server that will perform the analysis (as shown in Fig. 3). Anonymization might be required before sharing, through the techniques described in Section II-A. Fig. 3 shows an example where the stakeholders on the left adopt the Differential Privacy technique for model anonymization, and they share the predictions obtained using these differential private models and/or locally trained model weights with the central server, while the stakeholders on the top right adopt the Autoencoders technique for data anonymization, and they share the anonymized datasets with the central server.\nExplainability is another key requirement for the image recognition model, as it is imperative for stakeholders to comprehend the criteria underlying decision-making processes. For instance, a stakeholder should have the capability to understand why a given image submitted by his smart device has been classified as a \"happy\" face . Furthermore, the adoption of privacy and explainability techniques might impact the overall Data Utility, and they may mutually affect each other.\nThe methodology we propose in this paper addresses the problem of properly configuring the techniques to preserve data privacy and to provide explainability in order to obtain the best trade-off among Privacy Gain, Data Utility Loss, and Explainability Gain (which are formally defined in the next section) related to the process for the classification analysis of image datasets. Moreover, the problem could also include constraints on the values of the parameter passed to the privacy and explainability techniques, i.e., the Privacy Degree and the Explainability Degree, as requirements imposed by the stakeholders for sharing their data. For instance, a stakeholder could authorize the usage of their dataset only if the Autoencoders technique is applied and the code size, i.e., a Privacy Degree, is less than 55% of the image size. Although in this paper we take into account only the techniques shown in Section II, the methodology could be easily extended to take into account further techniques. This can be accomplished by seamlessly incorporating alternative privacy and explainability mechanisms, provided they meet specific criteria: i) both the levels of privacy and explainability should be configurable acting on proper input parameters; ii) a proper metric for assessing the Privacy Gain and a proper metric for assessing the Explainability Gain resulting from the application of such alternative privacy and explainability techniques should be available; and iii) a proper metric for measuring the associated Data Utility Loss should be available as well. For instance, our study employs two distinct Data Utility Loss evaluation metrics that are tailored specifically to the characteristics of the two privacy mechanisms we utilized.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_2",
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. CONCEPTS AND MODEL",
+            "text": "This section formally discusses the three key measures on which the proposed approach is based, namely: the Privacy Gain, the Data Utility Loss, and the Explainability Gain. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Anonymization and Privacy Gain",
+            "text": "Autoencoders technique is used to disturb the original images before being fed to the model, i.e., before being sent to the server, while the Differential Privacy technique in this proposal is used during the analysis phase, i.e., on the stakeholder side to restrict model memorization of specific attributes and dataset entries and to let the model only learn general patterns about the dataset. Cryptographic methods are another alternative that could be used to preserve privacy in image analysis and ensure that data remain confidential and can be accessed only by authorized parties. For instance, Fully Homomorphic Encryption (FHE) has been used in [29] to protect privacy in neural network models used to deliver AI as a service on the cloud. Following such an approach, FHE-encoded data are analyzed by neural networks to produce encrypted results within an acceptable time. In addition, the authors of [30] proposed a privacy-preserving model for healthcare services in IoT environments, leveraging secure multiparty computing (SMPC) and federated learning. Moreover, in [31], SMPC has been used as a privacy mechanism with human activity recognition models, yielding the same accuracy gains as with no privacy mechanism applied. However, cryptographic methods impact the explanations generated by explainability mechanisms. For instance, the application of Homomorphic Encryption (HE) shows a noticeable impact on the highlighted regions of GradCAM attention maps in domains like Face Recognition [32] and Medical Image Analysis [33]. In contrast, our approach integrates flexible privacy protection methods with lower overhead and controllable impact on model explainability.\nReferring back to the facial expression recognition example, applying the previous two privacy-preserving mechanisms on the face images would alter either the original images to produce anonymized faces that are unrecognizable, or the gradients computed during the data processing phase. However, in both cases, this anonymization could affect the accuracy of the facial expression recognition model causing some facial expressions to be not correctly recognized anymore. Moreover, the explainability of the decisions in terms of saliency maps could be affected since the dataset images are less visible.\nAutoencoder deep neural networks, first encodes the original image into a latent representation and then decodes the latent representation to reconstruct the anonymized image. This phase is executed on the smart device which captures the image. The anonymized image is then fed to the classifier, which runs on the server. Fig. 4 shows an example of the application of such a technique to an MINST dataset element. The integration of the Autoencoders technique within the image classification system shown in Fig. 3 is illustrated in Fig. 5.\nDifferential Privacy, instead of operating on the dataset images, it adds noise to the gradients during the training process  using a differential private optimizer. Hence, the classification model memorization of data instances is limited, as the used model only learns general patterns of the dataset. In fact, the trained differential private model can't distinguish whether specific dataset instances were used for training, thus protecting against reconstruction and membership inference attacks [34], [35], [36]. The integration of a DP mechanism within our image classification system is depicted in Fig. 6.\nBoth the previous anonymization techniques accept an input parameter, the Privacy Degree. In particular, when adopting the Differential Privacy technique, such a parameter is represented by the noise introduced in the model, as explained in Section II-A. Instead, when adopting the Autoencoders technique, such a parameter is represented by the size of the code, as explained in Section II-A as well. Figs. Applying such techniques in the image classification process results in a Privacy Gain, i.e., the modifications made by these techniques introduce an uncertainty degree in the resulting model. This uncertainty is due to the lack of knowledge of all dataset attributes caused by the application of the anonymization techniques, and it reduces the confidence in the predictions performed using this model [37].\nThe Privacy Gain obtained by applying the Differential Privacy technique to the dataset D and the classifier \u03bb, denoted by P G DP (D, \u03bb), is measured according to the returned privacy budget, i.e., the value we got from (1). The lower the value, the higher the Privacy Gain returned, as shown in (7a).\nWhen the Autoencoders method is applied, the Privacy Gain is measured as the percentage of the code size C compared to the original image size I, as expressed in (7b). Considering that the code size C is always not greater than the size of the images in the dataset D (denoted by I(D)), we observe that\nP G Auto (C, D) is normalized in the interval (0,1]. P G DP (D, \u03bb) = 1 (D, \u03bb) (7a) P G Auto (C, D) = 1 - C I(D) (7b)",
+            "publication_ref": [
+                "b28",
+                "b29",
+                "b30",
+                "b31",
+                "b32",
+                "b33",
+                "b34",
+                "b35",
+                "b36",
+                "b0"
+            ],
+            "figure_ref": [
+                "fig_3",
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Classifier and Data Utility Loss",
+            "text": "The enforcement of the privacy-preserving techniques discussed in Section IV-A may reduce data utility and affect model performance. Data Utility Loss computation depends on the privacy technique used. When adopting the Autoencoders technique, the Utility Loss, U Auto , can be measured as shown in (8) based on the divergence concept, which represents the change between two distributions (or two datasets in this case):\nU Auto (D, D ) = GD(D, D )(8)\nwhere GD is the divergence between the original dataset distribution D and the anonymized dataset distribution D . In our approach, we adopt the Earth Mover's distance (EMD, Wasserstein distance) as a divergence computation method because it defines the ground distance between any pair of values [15]. EMD is simply the minimum cost or work in (9) needed to match two distributions normalized by the weight of one of these distributions (D, D ), as shown in (10):\nW ork(D, D , F ) = m i=1 n j=1 d ij f ij (9) EM D(D, D ) = m i=1 n j=1 d ij f ij m i=1 n j=1 f ij (10\n)\nwhere D is the first dataset distribution with m elements, D is the second dataset distribution with n elements, [d ij ] is the ground distance matrix where d ij is the ground distance between clusters D i and D j , and F represents a flow matrix [f ij ] among the two dataset distributions D and D with f ij the flow between D i and D j , that minimizes the overall cost to get the optimal flow F . We recall that in our scenario m = n because the dataset D has been produced by anonymizing each element of the dataset D applying Instead, the Differential Privacy technique does not anonymize the original dataset before the training process, but it adds the noise to the gradients during gradients computation. Thus, the method we use to compute the Utility Loss compares the accuracy of the classification results of the original data analysis model against the accuracy of the classification results obtained from the differential private model and converts this percentage reference into a decimal number, following the approach proposed in [21]. The resulting Utility Loss measure is shown in (11) and it falls in the range 0 -1:\nU DP (D, \u03bb, \u03bb ) = Acc(D, \u03bb) -Acc(D, \u03bb )(11\n) where D is the original dataset, \u03bb is the analysis model, \u03bb is the differential private analysis model that adds noise to the gradients during training, and Acc is the accuracy of the results of the analysis model applied to the dataset.",
+            "publication_ref": [
+                "b7",
+                "b14",
+                "b9",
+                "b20",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Explainer and Explainability Gain",
+            "text": "A relevant requirement of the reference scenario concerns the understanding of why the model has produced a given prediction, e.g., the classification of a face image as a \"happy\" facial expression. For instance, the prediction could have been made due to edges at certain positions of the image, brightness in some areas, or some other aspects. XAI provides the possibility to understand this by producing explanations of why a specific prediction has been made.\nIn our approach, we produce these explanations in the form of Saliency Maps, using the SmoothGrad explainability method described in Section II-B. The SmoothGrad method takes an input image, generates n sample images by adding Gaussian noise, computes a Saliency Map for each of these sample images, and computes a single Saliency Map as an average of the previous ones. Despite adding the same amount of Gaussian noise to the same image, the resulting n samples are different due to the random nature of the noise addition process. This process is controlled acting on the number of samples used during the averaging process and on the Gaussian noise level parameter used for map sharpening. In summary, the computation of a saliency map for each data instance of any image dataset used by a classification model \u03bb is shown (12):\n\u03b1l (d) = 1 n n 1 \u03b1 l (d + N (0, \u03c3 2 )) (12\n)\nwhere d is a data instance representing an input image, l is the class predicted for an input image among a set of classes L, n is the number of sample images used to produce the final saliency map, \u03b1(d + N (0 , \u03c3 2 )) is a Saliency Map for a sample image generated by adding Gaussian noise (N (0, \u03c3 2 )) to the original one. The saliency map of a sample image is computed by differentiating \u03b1 l concerning the input image d based on the analysis function \u03bb, as shown in (13):\n\u03b1 l (d) = \u2202S l (d) \u2202d (13\n)\nwhere S l is the class scoring function. SmoothGrad method uses (12) to enhance originally generated saliency maps by basing a visualization on a smoothing of gradient \u2202S l (d) with a Gaussian kernel instead of basing it directly on \u2202S l (d). Detailed equations explanation is presented in [28]. SmoothGrad mechanism improves the quality of the saliency maps generated by increasing the degree of Gaussian noise used to smooth the map compared to the original non-smoothed map as indicated in [28]. Thus, to compute the Explainability Gain EG(d) for the smoothed saliency map, we use (14):\nEG(d) = n max(n) \u00d7 N (0, \u03c3 2 ) d \u00d7 100 (14\n)\nwhere d is a data instance (an input image), n is the number of sample images used for averaging saliency maps to produce one saliency map, max n is the maximum number of used samples, and N (0, \u03c3 2 ) is the Gaussian noise. However, this equation needs to be modified in case a privacy mechanism has been used, since the privacy mechanisms applied in our methodology either modifies the analysis model in the way it computes gradients when using Differential Privacy or alters the input dataset in case of Autoencoders. Therefore, to quantify Explainability Gain EG DP when applying Differential Privacy mechanism, we need to take into consideration the model performance change represented by model accuracy, because explainability mechanisms do explain model decisions. Thus, when the model's accuracy decreases due to the use of a differential private model, the Explainability Gain needs to be bounded to this change represented by U DP in (11). Explainability Gain when using Differential Privacy mechanism is reported in (15), where d is a data instance (an input image), D is the Dataset, \u03bb is the analysis function, and \u03bb is the differential private analysis function obtained from \u03bb.\nEG DP (d, \u03b3) = n \u00d7 N (0, \u03c3 2 ) d max(n) -U DP (\u03b3) n \u00d7 N (0, \u03c3 2 ) d max(n)(15)\nFor Autoencoders privacy-preserving mechanism, (16), where \u03b8 = {D, D } is used to compute the Explainability Gain, where \u03b3 = {D, \u03bb, \u03bb }, by taking into consideration the change percentage between images of the original dataset and anonymized dataset, since saliency maps are generated on these input image. Any change to the input image affects the output saliency map and the EG(d). This change percentage is measured by the geometric divergence using the EMD method.\nEG A (d, \u03b8) = n \u00d7 N (0, \u03c3 2 ) d max(n) -GD(\u03b8)( n \u00d7 N (0, \u03c3 2 ) d max(n) )(16)\nProviding decision explanations for classifications made on image datasets means highlighting the pixels that have the most influence on the model prediction in the generated saliency maps. For instance, in the facial expression recognition case, the pixels representing eyes and mouth are highlighted, as shown in the maps of Fig. 12 for the FER dataset.\nAs a matter of fact, controlling the noise parameter affects saliency map explanations. The higher the value we define for the Gaussian noise, the more explainable the analysis result is. Therefore, the Explainability Gain is quantified using the noise value.",
+            "publication_ref": [
+                "b11",
+                "b12",
+                "b11",
+                "b27",
+                "b27",
+                "b13",
+                "b10",
+                "b14",
+                "b15"
+            ],
+            "figure_ref": [
+                "fig_13"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "V. PROPOSED METHODOLOGY",
+            "text": "This section describes the data format and the methodology we defined to properly set up the data analysis process, i.e., to find the values for the Privacy Degree and for the Explainability Degree parameters (see Section IV-A), to balance preserved data privacy, explainability of the model and classification analysis accuracy. As discussed in Section III, we are considering a scenario where several stakeholders produce image datasets consisting of faces taken from surveillance cameras and they want to exploit them to perform collaborative analysis, by training a common analysis model which would give more accurate results than a model built from the dataset of a single user only. In particular, each stakeholder defines their own privacy and explainability requirements in terms of constraints on the values of Privacy Degree and Explainability Degree parameters, which must be respected for the stakeholder to consent to the use of their dataset. In this scenario, the proposed methodology is aimed at finding a proper configuration of the data analysis process which allows for obtaining an analysis model that respects the stakeholders' requirements while balancing preserved data privacy, explainability level, and classification accuracy.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Data Format",
+            "text": "In this paper, we are focusing on image datasets, i.e., datasets where each element is a picture. Typical features of the elements of such datasets are thus pixel-related, such as: color, brightness, edges. A further feature is the image resolution, n, which is equal to x \u00d7 y (where x and y are the dimensions of the image) in the case of gray-scale images and to x \u00d7 y \u00d7 3 in the case of colored images. In particular, we are considering two labeled gray-scale image datasets, FER and MNIST, in addition to a labeled colored image dataset, CIFAR-10. The FER dataset is relevant for the reference scenario because the images in the dataset are people's faces, and the labels paired with the images represent the facial expression category and are classified into seven emotions (classes). In the MNIST dataset, instead, the images are handwritten digits and the label paired with each image corresponds to the digit represented by the image. Hence MNIST images are classified into ten classes, with labels ranging from 0 to 9. This dataset has been chosen because it is a well-known dataset typically used as a benchmark to validate proposed approaches. In the CIFAR-10 dataset, instead, the images are of various objects and the label paired with each image corresponds to the object represented by the image. Hence, the images are classified into ten classes. This dataset has been chosen because it is a more complex well-known dataset and is used usually as a benchmark for validation. All datasets are divided into a training set and a testing set. Each dataset is thus processed by the multi-class classifier \u03bb, one image at a time to be divided into pixels based on the image resolution as an input layer in the neural network.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Optimal Trade-Off Computation Through Compatibility Matrix",
+            "text": "As discussed, two possible techniques can be used for performing the analysis in a privacy-preserving way, namely Autoencoders and Differential Privacy. When the Autoencoders technique is used, our methodology determines the optimal values of the Privacy Degree and Explainability Degree parameters as follows. First of all, the stakeholders apply the autoencoder technique to their datasets. In particular, each stakeholder computes a set of anonymized datasets varying the value of the Privacy Degree parameter according to the requirements they defined, and computes locally both the Privacy Gain and the Utility Loss for each of these datasets. Then, each stakeholder shares requirements, the set of anonymized datasets, and the related Privacy Gains and Utility Losses with the server. The server executes the data analysis process on each of the received datasets, applies the SmoothGrad technique for a set of values of the Explainability Degree and for each of them computes the related Explainability Gain. Finally, using the values of the Privacy Gain, Utility Loss, and Explainability Gain computed varying the values of the Privacy Degree and Explainability Degree parameters, the server computes the trade-off scores to fill the compatibility matrix.\nIf the Differential Privacy technique is selected, then the analysis process is performed on the stakeholder side and only analysis results will be shared with the server. The values of Privacy Gain, Explainability Gain, Utility Loss, and trade-off score are computed on the stakeholder's side for each configuration of Privacy Degree and Explainability Degree satisfying the stakeholder's requirements. Afterward, all these values, along with the stakeholder's requirements, are shared with the server to find the optimal trade-off score.\nHence, as a first step of our methodology, we define the formula to calculate the trade-off among the aforementioned three measures, i.e., T DP (D, \u03bb, \u03bb ) (shown in (17)) when the Differential Privacy technique is applied or T Auto (D, D , \u03bb) (shown in (18)) when the Autoencoders technique is applied. The trade-off formulas enable us to balance the conflicting objectives of privacy, explainability, and utility loss by aggregating them into a single score. The numerator of the formula captures the desirable goals of privacy and explainability, while the denominator represents the undesirable objective of utility loss. Dividing the desirable objectives by the undesirable objective yields a trade-off score that reflects the optimal balance between these objectives.\nT DP (D, \u03bb, \u03bb ) = P G DP (D, \u03bb) + EG DP (d, D, \u03bb, \u03bb ) 2 + U DP (D, \u03bb, \u03bb ) (17\n)\nwhere D is the original dataset, \u03bb is the analysis function, \u03bb is the differential private analysis function, P G DP (D, \u03bb) is the Privacy Gain defined by (7a), EG DP (d, D, \u03bb, \u03bb ) is the Explainability Gain defined by (15), and U DP (D, \u03bb, \u03bb ) is the Utility Loss defined by (11);  16), and U Auto (D, D ) is the Utility Loss defined by (8).\nT Auto (D, D , \u03bb) = P G Auto (C, D) + EG Auto (d, D, D ) 2 + U Auto (D, D )(18\nBy first performing discretization on the intervals defined for Privacy Degree and Explainability Degree, we transform these continuous intervals into two sets of discrete values across the original interval range. Thus, for any specific dataset, privacy parameter value, and explainability value in the discretized ranges, the related trade-off is computed. Considering the available datasets, the computed trade-off values can be represented schematically by means of a tri-dimensional compatibility matrix.",
+            "publication_ref": [
+                "b16",
+                "b17",
+                "b14",
+                "b10",
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Compatibility Matrix",
+            "text": "The compatibility matrix has been defined in [4] as a mechanism to compute the best trade-off between data utility and privacy in a multi-stakeholder collaborative analysis problem. Each element of the compatibility matrix represents, in fact, the trade-off value computed on a specific dataset (row) for a given privacy configuration (column). In this work, we are considering a further dimension: explainability. Hence, we define a tri-dimensional compatibility matrix which on the x dimension reports the values obtained from the discretization of the Privacy Degree (\u03c6 k ) interval, on the y dimension it reports the available datasets (D i , generally one per stakeholder), and on the z dimension the values obtained from the discretization of the Explainability Degree (\u03c9 j ) interval. Each element CM i,k,j represents the trade-off value computed with the specified combination of the three parameters, i.e., the trade-off computed on dataset D i , with Privacy Degree \u03c6 k according to the selected privacy-preserving mechanism, and with the Explainability Degree \u03c9 j .\nThe proposed methodology is always able to find an optimal trade-off point for a given setup, given that the domain we define is finite in two dimensions (privacy and explainability) for each dataset/stakeholder and discretized into points. In particular, the compatibility matrix, ensures a finite number of configurations couples (privacy degree, explainability degree) for each dataset and hence a finite number of trade-off values to be computed by the algorithm. Consequently, the algorithm consistently identifies the optimal solution choosing the maximum trade-off score among the computed ones. For the sake of performance a trade off is also to be found in the discretization interval, in order to minimize the discretization error while looking for the maximum, still being able to compute it in a feasible time.\nIn the image analysis problem that we are considering, we are using two different privacy mechanisms, whose trade-off values are not comparable, since they are computed in different ways. To this end, two compatibility matrices will be defined respectively for the Differential Privacy-based analysis, and for the Autoencoders-based one. Thus, the compatibility matrix representing the Differential Privacy mechanism uses (17) to compute the trade-off, while the compatibility matrix representing the Autoencoders mechanism uses (18). Fig. 9 reports the structure of a compatibility matrix.\nIf the values of either \u03c6 k or \u03c9 j do not respect specific requirements expressed on the dataset D i by the owning stakeholder, the corresponding element CM i,k,j is set to 0, representing thus the impossibility of computing a trade-off for that specific configuration. Once the compatibility matrix has been computed, it is reduced to 2 dimensions by aggregating the dataset dimension. In particular, the trade-offs obtained for distinct datasets with the same Privacy Degree and Explainability Degree are averaged to compute the optimal trade-off, according to (19) for Differential Privacy mechanism and (20) for Autoencoders mechanism:\nTDP ( D, \u03bb, \u03bb ) = m i=1 w i T (D i , \u03bb, \u03bb )(19)\nTAuto ( D, D , \u03bb) = m i=1 w i T (D i , D i , \u03bb) (20\n)\nwhere w i is the inverse of the number of datasets for which the trade-off value is not 0. Finally, after obtaining the best trade-off score using the concept of linear objective optimization, the corresponding privacy and Explainability Degrees are used.",
+            "publication_ref": [
+                "b3",
+                "b16",
+                "b17",
+                "b18"
+            ],
+            "figure_ref": [
+                "fig_9"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Applicative Example",
+            "text": "Let us consider a case where three stakeholders, S 1 , S 2 , and S 3 are willing to perform collaborative analysis. The stakeholders request an analysis function on their datasets, D 1 , D 2 , and D 3 , respectively, from a central server using the architecture defined in Section III, where\nD 1 \u222a D 2 \u222a D 3 represent the whole dataset D.\nEach stakeholder shares its privacy and explainability requirements R 1 , R 2 , and R 3 , where each requirement defines the privacy mechanism, and constraints on the Privacy Degree and on the Explainability Degree to be used. The Privacy Degree and Explainability Degree are both defined by each stakeholder to be higher than a specific threshold or to obtain the maximum achievable degree. Hence, the requirement items provided by stakeholder S i are as follows:\nr P m i : Privacy mechanism selected, which is either Autoen- coders or Differential Privacy in this work. r \u03c6 i : Minimum Privacy Degree, which is the code size for Autoencoders mechanism and Privacy Degree parameter for Differential Privacy.\nr \u03c9 i : Minimum Explainability Degree.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "TABLE I STAKEHOLDER'S REQUIREMENTS",
+            "text": "To find the best trade-off score, all returned configurations trade-off scores are investigated for the datasets using (19) or (20), which refers, respectively to the Differential Privacy and the Autoencoders privacy-preserving techniques. Then the trade-off score that has the maximum value representing the optimal solution is returned.\nAs an example, taking into account the reference scenario described in Section III, in the following we consider 3 stakeholders having an image dataset of 20,000 images each. These stakeholders want to analyze these datasets with the help of a central server. To do so, each stakeholder selects the privacy mechanism of interest and defines his own privacy and explainability requirements with specific degrees for each of them. For instance, we assume that all stakeholders have chosen the same privacy technique, e.g., Differential Privacy, and that they defined their privacy and explainability requirements as shown in Table I. For instance, Stakeholder1 wants that the Privacy Degree, \u03c6, is greater than 1.7, and that the Explainability Degree, \u03c9, is greater than 0.6. Instead, Stakeholder3 does not specify any requirement, meaning that he is interested in getting the optimal value among all.\nFrom the above-mentioned details, the compatibility matrix shown in Fig. 10  Step 1: For Stakeholder1, trade-off score is calculated for all possible combinations of Privacy Degrees 1.8 \u2264 \u03c6 \u2264 2.0 and Explainability Degrees 0.7 \u2264 \u03c9 \u2264 1.0 and reported in the related cells of the compatibility matrix;\nStep 2: For Stakeholder2, trade-off score is calculated for all possible combinations of Privacy Degrees 1.6 \u2264 \u03c6 \u2264 2.0 and Explainability Degrees 0.7 \u2264 \u03c9 \u2264 1.0 and reported in the related cells of the compatibility matrix;\nStep 3: For Stakeholder3, trade-off score is calculated for all possible combinations of Privacy Degrees \u03c6 and Explainability Degrees \u03c9 and reported in the related cells of the compatibility matrix;\nStep 4: The remaining empty cells of the compatibility matrix are filled with 0, because the corresponding combination of Privacy Degrees and Explainability Degrees do not satisfy the requirements defined by stakeholders. The resulted tri-dimensional matrix is represented in Fig. 10;\nStep 5: The averaged trade-off score is calculated on the y dimension by aggregating the trade-off values obtained for the 3 datasets using (19) with their respective weights. For instance, the trade-off score cells for \u03c6 = 1.0 and \u03c9 = 0.5 would  have the value 0 for Stakeholder1 and Stakeholder2, while it would be greater than 0 for Stakeholder3. Therefore the trade-offs aggregation equation will have the following weights: w 1 = 0, w 2 = 0, w 3 = 1. On the other hand, the trade-off score cells for \u03c6 = 1.8 and \u03c9 = 0.7 would have values greater than 0 for Stakeholder1, Stakeholder2, and Stakeholder3 since they have all defined requirements having these values for privacy and Explainability Degrees. Therefore the trade-off aggregation equation will have the following weights: the w 1 = 1/3, w 2 = 1/3, w 3 = 1/3. The averaged compatibility matrix is represented in Fig. 11;\nStep 6: Finally, the combination of privacy and Explainability Degrees yielding the best-averaged trade-off score is considered the optimal solution, which is at \u03c6 = 2.0 and \u03c9 = 1.0 in our example as it returns the maximum trade-off score highlighted in Fig. 11.",
+            "publication_ref": [
+                "b18",
+                "b19",
+                "b18"
+            ],
+            "figure_ref": [
+                "fig_11",
+                "fig_11",
+                "fig_12",
+                "fig_12"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. USE CASES AND EXPERIMENTS",
+            "text": "This section reports the classification experiments performed on the three image datasets described in Section V-A, i.e., MNIST, FER, and CIFAR-10, using the two privacy-preserving techniques shown in Section II-A, i.e., Autoencoders, and Differential Privacy, and the explainability technique described in Section II-B, i.e., SmoothGrad. In the experiments, we use the metrics described in Section IV to measure the Privacy Gain, the Explainability Gain, and the Utility Loss, and then we choose the solution providing the best trade-off according to (19) or (20). We are considering a use case in which the stakeholders do not specify any privacy and explainability requirements.\nThe MNIST dataset is a well-known dataset of gray-scale handwritten digit images of size 28 \u00d7 28 pixels, classified into 10 classes, i.e., the digits from 0 to 9. The dataset consists of 70,000 images divided into a labeled training dataset of 60,000 images and a labeled test dataset of 10,000 images [38]. The FER dataset consists of gray-scale images of size 48 \u00d7 48 pixels, representing faces. This dataset is meant for facial expression recognition and the images are classified into 7 classes: angry, disgusted, fear, happy, neutral, sad, and surprised. The dataset consists of 32,298 images divided into a labeled training dataset of 28,709 images and a labeled test dataset of 3,589 images [39]. The CIFAR-10 dataset consists of colored images of size 32 \u00d7 32 and 3 channels, representing objects. This dataset is meant for object recognition and the images are classified into 10 classes: Airplane, Automobile, Bird, Cat, Deer, Dog, Frog, Horse, Ship, and Truck. The dataset consists of 60,000 images, with 6000 images per class. It is divided into a labeled training dataset of 50,000 images and a labeled test dataset of 10,000 images. For each of the three datasets, the experiments have been conducted by computing the compatibility matrix both for the Differential Privacy and the Autoencoders techniques. For the former, the value of the noise parameter we used ranges from 0.0 to 2.0.\nFor the latter, since the dimensions and number of color channels of the images of the datasets are different, three different ranges for the code size have been chosen: for the MNIST dataset, the code size ranges between 1.02% and 78.57% of the original image size. For the FER dataset, the code size ranges between 0.35% and 89.58%. The CIFAR-10 dataset code size ranges between 8.33% and 83.33%. The Gaussian noise in SmoothGrad is set to be in [0,1] for all experiments. Fig. 12 presents a sample image of the FER dataset with the use of different privacy degrees of the Autoencoder method and several explainability degrees and the effect they have on the anonymized image and the resulting saliency maps.",
+            "publication_ref": [
+                "b18",
+                "b19",
+                "b37",
+                "b38"
+            ],
+            "figure_ref": [
+                "fig_13"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Experimental Model Architecture",
+            "text": "We point the reader to Appendix A for the description of the classifiers used to analyze the 3 datasets.\nFor conducting the experiments using the Autoencoders technique, we implemented our own prototype in Python. The original image is transformed by this prototype into the latent representation, whose dimension is used to control the Privacy Degree. The output is a reconstructed image perturbated based on the latent space size.\nFor Differential Privacy, the original image is processed using Tensorflow privacy framework. 6 It uses data patches and clipping for gradients computation and it averages multiple mini-gradient updates from the data mini-patches. Each minigradient value is clipped to restrict its individual impact, then these mini-gradients are averaged together, so no individual example will be memorized by the model. In the experiments, the sensitivity parameter default value is set to s = 1.5 like applied in Tensorflow-Privacy, and it represents the influence each training point in the mini-batch has on the gradient computation and its effect on the model parameters update. The clipping value is set to 1 and we define multiple noise values to control the added noise. The model returns the value as the privacy budget. Moreover, mini-batches are used to select a subset of the predefined size of the dataset during model training to compute gradients, error, and model parameters instead of using patches that pass the entire dataset to the model to enhance performance and randomness.\nAdditionally, tf-explain framework 7 is used for enhancing the explainability using the SmoothGrad mechanism by defining multiple values of the noise in the interval [0,1]. For each classifier, this approach results in two matrices for each of the privacy mechanisms, each of them has a privacy and explainability parameter defined, Privacy Gain, Explainability Gain, and Utility Loss for the defined requirements. Afterward, a trade-off score is calculated for each row in these matrices based on the trade-off equation defined previously. Then the maximum tradeoff score for each privacy-preserving mechanism is selected and the scores are compared between the two mechanisms with their parameters.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Experiments Adopting the Autoencoders Technique for Preserving Data Privacy",
+            "text": "Fig. 13 present the results in a 2D representation of the experiment performed on the handwritten digit classification problem of the MNIST dataset, using the autoencoder technique for data privacy and the SmoothGrad mechanism for explainability. On the X-axis of Fig. 13 we report the two input parameters: the explainability noise (below) and the code size (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off varying the value of the code size in the range from 1.02% to 78.57% of the original image size. In Section B of the Appendix, a 3D representation of Fig. 13 is provided.\nThe results show that there is a positive relationship between Explainability Gain (orange line) and the Explainability Noise Degree parameter, and a negative relation between the code size and the Privacy Gain (blue line). As a matter of fact, the Explainability Gain increases when the noise introduced by the SmoothGrad technique increases. The Privacy Gain (blue line), instead, is high when the code size is low, and it decreases with the code size. Moreover, we can see that the value of the explainability noise does not affect the Privacy Gain. The Privacy Gain plot is represented by a constant function, since the explainability mechanism is applied to investigate the models predictions after the analysis finishes. The observed trends of the Explainability Gain and of the Privacy Gain is observed in all the performed experiments, not reported here for the sake of brevity.\nThe Utility Loss (green line) is calculated using the EMD divergence between the histograms of the original dataset and the anonymized dataset using (10). Its value is almost close to 0 for all the values of explainability noise and of code size, thus indicating that the Utility Loss is almost negligible and it is not significantly affected by such parameter values when the Autoencoders technique is applied.\nFinally, the trend of the trade-off scores (red line) shows that such score is negatively affected by the code size and positively affected by the explainability noise parameter. Hence, the lower the code size and the higher the noise, the higher the trade-off, which means that the greater compression rate and privacy implemented on the data with the greater explainability parameter applied, return the better trade-off score.\nFig. 14 presents the results of the experiment conducted on the FER dataset for facial expression recognition in a 2D representation, where the autoencoder technique was used for data privacy preservation, and the SmoothGrad mechanism was used for explainability. For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the value of the trade-off varying the code size, ranging from 0.35% to 89.58% of the original image size. The trends of the Explainability Gain and of the Privacy Gain are as expected. The Utility Loss (green line) is calculated using the EMD divergence between the histograms of the original dataset and the anonymized dataset. In this experiment too, its value is close to 0 for all the values of explainability noise and code size, thus indicating that the Utility Loss is almost negligible and it is not significantly affected by such parameters.\nThe trade-off score (red line) is negatively affected by the code size and positively affected by the explainability noise parameter, as also observed in the previous experiment. Hence, in this case, too, the lower the code size and the higher the explainability noise are, the higher the trade-off is, meaning that the greater compression rate and privacy implemented with the greater explainability parameter applied, returns a better trade-off score. In our experiment, the best trade-off score is obtained with the explainability noise degree equal to 1 and the code size equal to 0.35% of the original image size.\nFig. 15 present the results of the experiment conducted on the CIFAR-10 dataset for object recognition in a 2D representation, where the autoencoder technique was used for data privacy preservation, and the SmoothGrad mechanism was used for explainability. For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the value of the trade-off varying the code size, ranging from 8.33% to 83.33% of the original image size.\nThe Explainability Gain and of the Privacy Gain trends are as expected. The Utility Loss (green line) is calculated using the EMD divergence between the histograms of the original  dataset and the anonymized dataset. Its value is close to 0 for all the values of explainability noise and code size and is not significantly affected by such parameters.\nThe trade-off score (red line) is negatively affected by the code size and positively affected by the explainability noise parameter, as observed in the previous experiments.",
+            "publication_ref": [
+                "b9"
+            ],
+            "figure_ref": [
+                "fig_14",
+                "fig_14",
+                "fig_14",
+                "fig_15",
+                "fig_16"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Experiments Adopting the Differential Privacy Technique for Preserving Data Privacy",
+            "text": "Fig. 16 reports, in a 2D representation, the results of an experiment that has been conducted on the same testbed of the first experiment of the previous section (handwritten digits classification problem, the MNIST dataset, and the SmoothGrad technique for increasing explainability), with the only difference being that we used the Differential Privacy technique to protect data privacy. On the X-axis we report the two input parameters: the explainability noise (below) and the Differential Privacy noise multiplier (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the Differential Privacy noise multiplier from 0 to 2 with step 0.1. The DP noise multiplier value of 0 means no privacy restriction is applied, resulting in a returned value of infinity according to (3). Hence, the higher the noise value, the lower the value, and the higher the Privacy Gain. Therefore, we set the maximum value of the DP noise multiplier to 2, as it results in value close to 0 and a high Privacy Gain accordingly. In Section B of the Appendix, a 3D representation of Fig. 16 is provided. Fig. 17     In this experiment, since we used the Differential Privacy technique, the Utility Loss depends on the accuracy loss, and the Privacy Gain depends on the value of , as shown in (7a). Hence, Fig. 18   Privacy noise multiplier in the same range as Fig. 16. When the Differential Privacy noise multiplier is set to 0, which means no privacy restriction is applied, the returned epsilon value is infinity according to (3). The values of the Privacy Gain shown in Fig. 16 are then obtained by applying (7a) to the values of in Fig. 18(a). Hence, the higher the value of the noise, the lower the value of epsilon, and the higher is the Privacy Gain, as shown by the blue line in the graph of Fig. 16. Differently from Fig. 14, in Fig. 16 the privacy degree has a different semantic, in fact, a higher code size (Fig. 14) implies a lower privacy level, whilst a higher DP-Noise (Fig. 16) implies a higher privacy level. This has been discussed in detail in Section IV-A. The Utility Loss (green line in Fig. 16) does not increase significantly when increasing the explainability and privacy parameters. The results comparison on the classification accuracy on both the original dataset and the dataset anonymized through Differential Privacy and the SmoothGrad techniques is reported in Fig. 18(b) with Utility Loss represented as a percentage.\nFor what concerns the trade-off score, from the graph of Fig. 16 (red line) we observe that it increases with the Differential Privacy noise multiplier parameter and the explainability noise parameter as from Fig. 17(a)-(c). In our experiment, the best trade-off score occurs when the explainability noise parameter is set to 1 and the Differential Privacy noise multiplier is set to 2. This means that the higher Privacy Degree and the higher explainability parameter values return a better trade-off within the value range defined.\nThe next experiment was conducted on the FER Dataset for facial expression recognition problem using the Differential Privacy technique to preserve data privacy and the SmoothGrad mechanisms for increasing explainability (Fig. 19). As in the previous experiment, for each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the value of the Differential Privacy noise multiplier within the interval [0,2] with step 0.1.\nThe Privacy Gain depends on the values of computed by the Differential Privacy technique, which are reported in Fig. 20(a). When the Differential Privacy noise multiplier is set to 0, which means no privacy restrictions, the Differential Privacy technique returns an epsilon value of infinity. The higher value of the noise is defined, the lower value of epsilon is returned, as shown in Fig. 20(a), which means better Privacy Gain (Fig. 19).\nThe Utility Loss (green line in Fig. 19) is negatively affected when the value of the noise multiplier is greater than zero. However, it does not increase significantly when increasing the noise multiplier as well as the explainability parameter. The accuracy of the results applying the classification function to the original dataset and to the anonymized dataset by applying the Differential Privacy technique and SmoothGrad is reported in Fig. 20(b) with Utility Loss represented as a percentage. We observe that there is a decrease in the classification accuracy after applying Differential Privacy and SmoothGrad, and we noticed that the loss of utility in percentage is lower than 48% for all degrees of privacy and explainability. Finally, the trade-off score (red plot in the graph of Fig. 19) increases with the Differential Privacy noise multiplier parameter and the explainability noise parameter. The best trade-off score occurs when the explainability noise parameter is set to 1 and the Differential Privacy noise multiplier is set to 2. This means that the higher privacy restriction and the higher explainability parameter values return a better trade-off within the value range defined.\nThe last experiment was conducted on the object recognition problem applied to the CIFAR-10 dataset using the Differential Privacy technique to preserve data privacy and the SmoothGrad mechanisms for increasing explainability. The results are reported in Fig. 21 in a 2D representation. For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the value of the Differential Privacy noise multiplier within the interval [0,2] with step 0.1. Section B of the Appendix contains a 3D visualization of Fig. 21.\nThe Privacy Gain depends on the values of computed by the Differential Privacy technique, which are reported in Fig. 22(a). In this case too, when the Differential Privacy noise multiplier is set to 0 the Differential Privacy technique returns an epsilon value of infinity. The higher value of the noise is defined, the lower value of epsilon is returned, as shown in Fig. 22(a), which means better Privacy Gain (Fig. 21).\nThe Utility Loss (green line in Fig. 21) is negatively affected when the noise multiplier is greater than zero, but it does not increase significantly when increasing the noise multiplier as well as the explainability parameter. The accuracy of the results applying the classification function to the original dataset and to the anonymized dataset by applying the Differential Privacy technique and SmoothGrad is reported in Fig. 22(b) with Utility Loss represented as a percentage. We observe that there is no major decrease in the classification accuracy after applying Differential Privacy and SmoothGrad.\nFinally, the trade-off score (red plot in the graph of Fig. 21) increases with the Differential Privacy noise multiplier parameter  and the explainability noise parameter. The best trade-off score occurs when the explainability noise parameter is set to 1 and the Differential Privacy noise multiplier is set to 2. This means that the higher privacy restriction and the higher explainability parameter values return a better trade-off within the value range defined.",
+            "publication_ref": [
+                "b2"
+            ],
+            "figure_ref": [
+                "fig_17",
+                "fig_17",
+                "fig_19",
+                "fig_26",
+                "fig_17",
+                "fig_17",
+                "fig_26",
+                "fig_17",
+                "fig_15",
+                "fig_17",
+                "fig_15",
+                "fig_17",
+                "fig_17",
+                "fig_26",
+                "fig_17",
+                "fig_24",
+                "fig_27",
+                "fig_28",
+                "fig_28",
+                "fig_27",
+                "fig_27",
+                "fig_28",
+                "fig_27",
+                "fig_29",
+                "fig_29",
+                "fig_30",
+                "fig_30",
+                "fig_29",
+                "fig_29",
+                "fig_30",
+                "fig_29"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Results Discussion",
+            "text": "The main objective of this study is to propose a comprehensive model for image data analysis that places equal importance on data privacy, explainability, and data utility. In our experiments, we investigated the effect of varying Privacy and Explainability Degrees on the trade-off score, which is defined as a function of data Utility Loss, Privacy Gain, and Explainability Gain. In the three classification use cases investigated in our experiments and for both Autoencoders and Differential Privacy techniques, we found out that using a privacy mechanism resulted in a Utility Loss, but the loss does not increase significantly when the value of the Privacy Degree parameter is increased. Interestingly, the impact on the Utility Loss of the adoption of the Differential Privacy technique was more significant on the facial expression recognition model than on the digit classification model and the object recognition model. The reason behind this is that, on the one hand, the facial expression recognition model uses face attributes, such as the shape of the eyes, that in many cases might be identifying or sensitive for different individuals. On the other hand, the Differential Privacy technique preserves data privacy by minimizing model memorization of such identifying face attributes, thus affecting the accuracy of the analysis function, as explained in Section IV-A.\nThe trade-off between privacy, explainability, and data utility is a crucial consideration when configuring our approach for specific applications. Our experimental results indicate a relevant positive relationship between the trade-off score and the increase in both the privacy degree and explainability degree. This relationship is primarily attributed to the improved privacy gain and explainability gain achieved as the values of these parameters are incremented. However, this increase of the trade-off is restricted by the decrease in data utility, that generally starts with a relatively high loss with the utilization of a privacy mechanism with a low privacy degree, then it remains somehow steady with the increase of the privacy degree.\nAnother aspect to be analysed of the trade-off model we defined is its sensitivity to the variations of input parameters values. In particular, from the experimental results we can observe that, as we tune the privacy degree parameter to increase the privacy level, a relevant increase in the trade-off value occurs. For instance, in Fig. 16, choosing 0.5 as value for the explainability noise degree, we can see that increasing the DP noise value from 0.0 to 2.0 we have an increase in trade-off score from 0.2 to 1.3. Similarly, when we increase the explainability degree parameter a meaningful increase of the trade-off score can be observed. For instance, in Figs. 16 and 17(b) we can see that, choosing 1.0 as value for the DP noise degree (Medium Gaussian Noise), increasing the Explainability noise degree value from 0.0 to 1.0 results in an increase in trade-off score from 0.32 to 0.78.\nIn summary, our experiments reveal that the privacy and explainability degree parameters play a pivotal role in shaping the outcomes of our methodology. Achieving a balance between privacy, explainability, and data utility is a non-trivial task and should be tailored to the specific requirements of each use case and per-user requirements. These trade-offs necessitate careful consideration, and the choice of parameter settings should align with the specific objectives of the application. Furthermore, practical implementation often involves domain-specific requirements and constraints, making parameter tuning a nuanced process. Thus, it is recommended to experiment with different parameter configurations and assess their impact on privacy, explainability, and data utility to find the optimal balance for different use cases.\nOur method formalizes the common elements of trustworthy AI, data privacy, data utility, and model explainability, and can be applied to various data analysis types without losing generality. While we cannot elaborate on the applicability of   our method to all image analysis models, we offer the necessary tools and methodologies, as demonstrated by our experiments on three distinct problems. Our method can serve as a guideline for designing customized image analytics systems that align with user requirements and specifications for a safer, more explainable, and trustworthy analytics experience.",
+            "publication_ref": [
+                "b15"
+            ],
+            "figure_ref": [
+                "fig_17"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "VII. RELATED WORK",
+            "text": "This section reviews related work in Privacy-Preserving Machine Learning, Explainable Artificial Intelligence, and Privacypreserving AI systems with explainability and possible trade-off computation.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Privacy-Preserving Machine Learning",
+            "text": "Sample anonymization methods for images include resolution quality reduction techniques [40], image obfuscation [41], image blurring [42], face swapping [43], and image altering with the K-Same algorithm [44]. Nevertheless, these methods can cause a major drop in the accuracy of the model results or do not provide strong privacy guarantees. Autoencoder Neural Networks are used as a compression mechanism and also for privacy protection [22]. Similarly, in [26], a method has been proposed to privacy-preserving surveillance video streams anomaly detection. It employs a privacy-preserving mechanism based on autoencoder neural networks implemented with three different types of differential private optimizers. Furthermore, the prevailing approach for assuring the privacy guarantees of a deep learning model predominantly relies on the application of optimization techniques that enforce Differential Privacy. Differential Privacy has proven to be a successful defence against several models' privacy attacks, but its drawback lies in the degradation of the models' performance. In [36], the authors assess the effectiveness of the DP-SGD algorithm in comparison to conventional optimization approaches coupled with regularization techniques. They analyze the resulting models' utility, training performance, and the effectiveness of membership inference and model inversion attacks against the learned models.",
+            "publication_ref": [
+                "b39",
+                "b40",
+                "b41",
+                "b42",
+                "b43",
+                "b21",
+                "b25",
+                "b35"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Explainable Artificial Intelligence (XAI)",
+            "text": "XAI emerged to produce human-level explanations for complex AI models that are not transparent by design [45]. Examples of such complex models include Support Vector Machines (SVM), Convolutional Neural Networks (CNN), and Recurrent Neural Networks (RNN) [46]. XAI methods can be applied pre-model to explore the dataset used, in-model as in interpretable by design models, or post-hoc for methods that are applied to complex models. From a model scope perspective, XAI methods are either model specific applicable to a single model or a type of models [47], or model agnostic being applicable to any model [48]. Furthermore, explanation methods can produce local explanation related to a certain prediction, or global explanations enforced in the model structure and are referred to as dataset-level explanations since the techniques applied to produce such explanations examine the model used in the entire dataset [6].",
+            "publication_ref": [
+                "b44",
+                "b45",
+                "b46",
+                "b47",
+                "b5"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Privacy-Preserving AI Systems With Explainability and Possible Trade-Off Computation",
+            "text": "In [49], a Differential Privacy mechanism combined with feature-based model explanation techniques and gradient descent algorithm was proposed as an adaptive approach for privacy protection in local model-agnostic explanations. In this approach, the analysis accuracy was not considered in the evaluation, and no optimization of the considered evaluation metrics was performed. In [52], the authors discuss that explainable privacy-preserving systems can be improved by defining the privacy guarantees that are being treated as constraints to be optimized, where the optimization function is the Utility Loss. This method has been proposed as a theory with no application, no trade-off was presented between the privacy and Utility Loss, and explainability was presented only to explain what privacy guarantees a system offers, not the prediction an AI system makes. Furthermore, in [51] a fuzzy logic system has been proposed for indoor gestures classification as a replacement to the traditional AI systems, with a close accuracy but completely interpretable compared to the traditional systems. This method can be applied to only one type of analysis method which is fuzzy logic, it does not consider controlling the privacy, utility, or explainability, and does not optimize them or do a trade-off on these parameters as a result. The authors in [12] propose a solution to investigate the trade-off between explainability, privacy, and accuracy. The solution deploys a family of inherently explainable models that use Locally Linear Maps (LLM) for mapping between input data and the class score function in the classification problem. DP was leveraged to ensure privacy at local and global levels of explanation. The proposed approach was adopted only on simple datasets with the trade-off and optimization criteria performed on Sample-based on pairs of trust aspects only. In [32], the authors introduced a methodology aimed at enhancing the trustworthiness of AI systems. Their approach incorporates principles of privacy, explainability, and fairness into the design, specifically applied in the context of face recognition. The authors employed Homomorphic Encryption for privacy protection, provided explainable predictions with local and global explanations, and ensured fairness by learning a fair representation from the data. Fairness constraints are set to measure the impact on result accuracy and corresponding explanations, employing Demographic Parity as the fairness metric. However, the study lacked explicit control over the levels of explainability and privacy, and did not introduce a trade-off criterion for balancing these crucial aspects.\nAccording to [52], case-based explanations are frequently applied in domains featuring sensitive visual data, such as medical diagnosis. They involve retrieving instances of similar disease-matching images as the entered image for diagnoses, thus yielding additional insights to explain a diagnosis. However, retrieving an image containing sensitive identity information from a private dataset has the potential to compromise the privacy of the individual depicted. Therefore, an anonymization process is needed to ensure the removal of identifying attributes from the image before for sharing as an explanation. The authors formalize the generation of Privacy-Preserving Case-Based Explanations as a multi-objective problem for future work, aiming to minimize the inclusion of identity information while maintaining realism and preserving explanatory evidence within the images. In [53], the authors investigated the impact of privacypreserving methods, specifically masking techniques, employed in machine learning algorithms on tabular datasets. Their focus was on explainability, gauged through Shapley values. The study involved two analyses: one examining differences in Shapley values and another assessing the rank correlation of these values.\nThe findings suggest that, under certain assumptions, explainability and privacy are not incompatible. Nevertheless, it is important to note that the paper did not measure privacy gain, utility loss, or explore the trade-off and optimization aspects in this context. The authors of [14] propose an approach leveraging machine learning techniques tailored for tabular datasets. The model establishes a comprehensive trade-off optimization criterion that considers data privacy, model explainability, and data utility. It involves regulating the privacy parameter within the privacy-preserving mechanism applied to analysis algorithms and explainability techniques. The method explores various configurations for the privacy parameter, identifying the optimal setup that maximizes privacy gain and explainability similarity while minimizing the impact on data utility. Table II provides a general comparison of our proposed approach with existing methodologies addressing the combined trust aspects of privacy, utility, and explainability.",
+            "publication_ref": [
+                "b48",
+                "b51",
+                "b50",
+                "b11",
+                "b31",
+                "b51",
+                "b52",
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_1"
+            ]
+        },
+        {
+            "heading": "VIII. CONCLUSION",
+            "text": "In this paper, we have proposed a model which pushes toward the direction of Trustworthy AI, considering altogether a set of measures that, up to now, have been mainly considered as separate problems, representing privacy, data utility and model explainability. We proposed three use cases based on a novel deep learning-based approach for image datasets analysis, which preserves data privacy and achieves model explanation with an optimal compromise among data privacy, data utility, and model explainability. The experiments have demonstrated how it is possible to improve, by regulating noise levels, both the level of privacy and of explainability, with minimal impact on data utility. As a future extension, we plan to apply different perturbation mechanisms like the Generative Adversarial Network (GAN), and investigating trade off options for the utilization of cryptographic methods. Andrea Saracino received the PhD degree. He is associate professor of applied cybersecurity and AI with Scuola Superiore Universitaria Sant'Anna. He co-authored more than 80 papers on access control, ML applied to cybersecurity, mobile and distributed system security. He coordinates and participates to EU and national research project. He co-chairs the Cybersecurity and AI group in the Italian Association for Artificial Intelligence.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "A cloud-edge based data security architecture for sharing and analysing cyber threat information",
+            "journal": "Future Gener. Comput. Syst",
+            "year": "2020",
+            "authors": "D W Chadwick"
+        },
+        {
+            "ref_id": "b1",
+            "title": "An empirical study of patients' privacy concerns for health informatics as a service",
+            "journal": "Technological Forecasting Social Change",
+            "year": "2019",
+            "authors": "Z Xu"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Aspects of transparency in machine learning",
+            "journal": "",
+            "year": "2019",
+            "authors": "M Strobel"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Privacy preserving data sharing and analysis for edge-based architectures",
+            "journal": "Int. J. Inf. Secur",
+            "year": "2021",
+            "authors": "M Sheikhalishahi; A Saracino; F Martinelli; A L Marra"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Privacy-preserving machine learning: Threats and solutions",
+            "journal": "IEEE Secur. Privacy",
+            "year": "2019-04",
+            "authors": "M Al-Rubaie; J M Chang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Explainable AI: A review of machine learning interpretability methods",
+            "journal": "Entropy",
+            "year": "2021",
+            "authors": "P Linardatos; V Papastefanopoulos; S Kotsiantis"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Explainable AI: Interpreting, Explaining and Visualizing Deep Learning",
+            "journal": "Springer",
+            "year": "2019",
+            "authors": "W Samek; G Montavon; A Vedaldi; L K Hansen; K.-R M\u00fcller"
+        },
+        {
+            "ref_id": "b7",
+            "title": "k-Anonymity: A model for protecting privacy",
+            "journal": "",
+            "year": "2002",
+            "authors": "L Sweeney"
+        },
+        {
+            "ref_id": "b8",
+            "title": "L-diversity: Privacy beyond k-anonymity",
+            "journal": "ACM Trans. Knowl. Discov. Data",
+            "year": "2007",
+            "authors": "A Machanavajjhala; D Kifer; J Gehrke; M Venkitasubramaniam"
+        },
+        {
+            "ref_id": "b9",
+            "title": "t-Closeness: Privacy beyond k-anonymity and l-diversity",
+            "journal": "",
+            "year": "2007",
+            "authors": "N Li; T Li; S Venkatasubramanian"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Differential privacy: A survey of results",
+            "journal": "",
+            "year": "2008",
+            "authors": "C Dwork"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Interpretable and differentially private predictions",
+            "journal": "",
+            "year": "2020",
+            "authors": "F Harder; M Bauer; M Park"
+        },
+        {
+            "ref_id": "b12",
+            "title": "On the privacy risks of model explanations",
+            "journal": "",
+            "year": "2021",
+            "authors": "R Shokri; M Strobel; Y Zick"
+        },
+        {
+            "ref_id": "b13",
+            "title": "The explainability-privacy-utility trade-off for machine learning-based tabular data analysis",
+            "journal": "",
+            "year": "2023",
+            "authors": "W Abbasi; P Mori; A Saracino"
+        },
+        {
+            "ref_id": "b14",
+            "title": "The earth mover's distance as a metric for image retrieval",
+            "journal": "Int. J. Comput. Vis",
+            "year": "2000",
+            "authors": "Y Rubner; C Tomasi; L J Guibas"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Autoencoders",
+            "journal": "Elsevier",
+            "year": "2020",
+            "authors": "W H L Pinaya; S Vieira; R Garcia-Dias; A Mechelli"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Deep learning with differential privacy",
+            "journal": "",
+            "year": "2016",
+            "authors": "M Abadi"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Our data, ourselves: Privacy via distributed noise generation",
+            "journal": "",
+            "year": "2006",
+            "authors": "C Dwork; K Kenthapadi; F Mcsherry; I Mironov; M Naor"
+        },
+        {
+            "ref_id": "b18",
+            "title": "What can we learn privately",
+            "journal": "",
+            "year": "2008",
+            "authors": "S Raskhodnikova; A Smith; H K Lee; K Nissim; S P Kasiviswanathan"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Privacy integrated queries: An extensible platform for privacy-preserving data analysis",
+            "journal": "",
+            "year": "2009",
+            "authors": "F D Mcsherry"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Evaluating differentially private machine learning in practice",
+            "journal": "",
+            "year": "2019",
+            "authors": "B Jayaraman; D Evans"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Latent representation learning and manipulation for privacy-preserving sensor data analytics",
+            "journal": "",
+            "year": "2020",
+            "authors": "O Hajihassani; O Ardakanian; H Khazaei"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Mobile sensor data anonymization",
+            "journal": "",
+            "year": "2019",
+            "authors": "M Malekzadeh; R G Clegg; A Cavallaro; H Haddadi"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Autoencoder as a new method for maintaining data privacy while analyzing videos of patients with motor dysfunction: Proofof-concept study",
+            "journal": "J. Med. Internet Res",
+            "year": "2020",
+            "authors": "M D Souza"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Embedded autoencoders: A novel framework for face de-identification",
+            "journal": "",
+            "year": "2019",
+            "authors": "J Liu; J Liu; P Li; Z Kuang"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Privacy-preserving analysis for remote video anomaly detection in real life environments",
+            "journal": "J. Wireless Mobile Netw. Ubiquitous Comput. Dependable Appl",
+            "year": "2022",
+            "authors": "G Giorgi; W Abbasi; A Saracino"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Deep inside convolutional networks: Visualising image classification models and saliency maps",
+            "journal": "",
+            "year": "2013",
+            "authors": "K Simonyan; A Vedaldi; A Zisserman"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Smooth-Grad: Removing noise by adding noise",
+            "journal": "",
+            "year": "2017",
+            "authors": "D Smilkov; N Thorat; B Kim; F Vi\u00e9gas; M Wattenberg"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Efficient FHE-based privacy-enhanced neural network for trustworthy AI-as-a-service",
+            "journal": "IEEE Trans. Dependable Secure Comput., early access",
+            "year": "2024-01-12",
+            "authors": "K.-Y Lam; X Lu; L Zhang; X Wang; H Wang; S Q Goh"
+        },
+        {
+            "ref_id": "b29",
+            "title": "Secure multi-party computation-based privacy-preserving data analysis in healthcare iot systems",
+            "journal": "Springer",
+            "year": "2023",
+            "authors": "K Sahinbas; F O Catak"
+        },
+        {
+            "ref_id": "b30",
+            "title": "Secure multi-party computation for personalized human activity recognition",
+            "journal": "Neural Process. Lett",
+            "year": "2023",
+            "authors": "D Melanson; R Maia; H.-S Kim; A Nascimento; M D Cock"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Toward learning trustworthily from data combining privacy, fairness, and explainability: An application to face recognition",
+            "journal": "Entropy",
+            "year": "2021",
+            "authors": "D Franco; L Oneto; N Navarin; D Anguita"
+        },
+        {
+            "ref_id": "b32",
+            "title": "Privacy-preserving deep learning with learnable image encryption on medical images",
+            "journal": "IEEE Access",
+            "year": "2022",
+            "authors": "Q.-X Huang; W L Yap; M.-Y Chiu; H.-M Sun"
+        },
+        {
+            "ref_id": "b33",
+            "title": "Differential privacy protection against membership inference attack on machine learning for genomic data",
+            "journal": "",
+            "year": "2021",
+            "authors": "J Chen; W H Wang; X Shi"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Defending against reconstruction attacks with R\u00e9nyi differential privacy",
+            "journal": "",
+            "year": "2022",
+            "authors": "P Stock; I Shilov; I Mironov; A Sablayrolles"
+        },
+        {
+            "ref_id": "b35",
+            "title": "On the utility and protection of optimization with differential privacy and classic regularization techniques",
+            "journal": "",
+            "year": "2022",
+            "authors": "E Lomurno; M Matteucci"
+        },
+        {
+            "ref_id": "b36",
+            "title": "Comprehensive privacy analysis of deep learning: Passive and active white-box inference attacks against centralized and federated learning",
+            "journal": "",
+            "year": "2019",
+            "authors": "M Nasr; R Shokri; A Houmansadr"
+        },
+        {
+            "ref_id": "b37",
+            "title": "Mnist handwritten digit database",
+            "journal": "",
+            "year": "2010",
+            "authors": "Y Lecun; C Cortes; C J Burges"
+        },
+        {
+            "ref_id": "b38",
+            "title": "Challenges in representation learning: A report on three machine learning contests",
+            "journal": "",
+            "year": "2013",
+            "authors": "I J Goodfellow"
+        },
+        {
+            "ref_id": "b39",
+            "title": "Privacy-preserving human activity recognition from extreme low resolution",
+            "journal": "",
+            "year": "2017",
+            "authors": "M S Ryoo; B Rothrock; C Fleming; H J Yang"
+        },
+        {
+            "ref_id": "b40",
+            "title": "A scalable and privacy-aware IoT service for live video analytics",
+            "journal": "",
+            "year": "2017",
+            "authors": "J Wang; B Amos; A Das; P Pillai; N Sadeh; M Satyanarayanan"
+        },
+        {
+            "ref_id": "b41",
+            "title": "The privacy-utility tradeoff for remotely teleoperated robots",
+            "journal": "",
+            "year": "2015",
+            "authors": "D J Butler; J Huang; F Roesner; M Cakmak"
+        },
+        {
+            "ref_id": "b42",
+            "title": "Faces in places: Compound query retrieval",
+            "journal": "",
+            "year": "2016",
+            "authors": "Y Zhong; R Arandjelovi\u0107; A Zisserman"
+        },
+        {
+            "ref_id": "b43",
+            "title": "Preserving privacy by deidentifying face images",
+            "journal": "IEEE Trans. Knowl. Data Eng",
+            "year": "2005-02",
+            "authors": "E M Newton; L Sweeney; B Malin"
+        },
+        {
+            "ref_id": "b44",
+            "title": "Explainable AI: From black box to glass box",
+            "journal": "J. Acad. Marketing Sci",
+            "year": "2020",
+            "authors": "A Rai"
+        },
+        {
+            "ref_id": "b45",
+            "title": "The Black Box Society: The Secret Algorithms That Control Money and Information",
+            "journal": "Harvard Univ. Press",
+            "year": "2015",
+            "authors": "F Pasquale"
+        },
+        {
+            "ref_id": "b46",
+            "title": "On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation",
+            "journal": "PLoS One",
+            "year": "2015",
+            "authors": "S Bach; A Binder; G Montavon; F Klauschen; K.-R M\u00fcller; W Samek"
+        },
+        {
+            "ref_id": "b47",
+            "title": "Model agnostic multilevel explanations",
+            "journal": "",
+            "year": "2020",
+            "authors": "K N Ramamurthy; B Vinzamuri; Y Zhang; A Dhurandhar"
+        },
+        {
+            "ref_id": "b48",
+            "title": "Model explanations with differential privacy",
+            "journal": "",
+            "year": "2022",
+            "authors": "N Patel; R Shokri; Y Zick"
+        },
+        {
+            "ref_id": "b49",
+            "title": "Interpretable privacy with optimizable utility",
+            "journal": "",
+            "year": "2020",
+            "authors": "J Ramon; M Basu"
+        },
+        {
+            "ref_id": "b50",
+            "title": "Privacy-preserving gesture recognition with explainable type-2 fuzzy logic based systems",
+            "journal": "",
+            "year": "2020",
+            "authors": "J Ro\u017eman; H Hagras; J A Perez; D Clarke; B M\u00fcller; S F Data"
+        },
+        {
+            "ref_id": "b51",
+            "title": "Privacy-preserving case-based explanations: Enabling visual interpretability by protecting privacy",
+            "journal": "IEEE Access",
+            "year": "2022",
+            "authors": "H Montenegro; W Silva; A Gaudio; M Fredrikson; A Smailagic; J S Cardoso"
+        },
+        {
+            "ref_id": "b52",
+            "title": "Privacy and explainability: The effects of data protection on Shapley values",
+            "journal": "",
+            "year": "2022",
+            "authors": "A Bozorgpanah; V Torra; L Aliahmadipour"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Autoencoder effect on the MNIST dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig.2. Effect of Gaussian noise[28].",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 3 .3Fig. 3. Privacy-preserving image recognition scenario.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 4 .4Fig. 4. Autoencoders applied to \"2\" of the MNIST dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "56",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Fig. 5 .Fig. 6 .56Fig. 5. Autoencoders for dataset anonymization with multi-class classifier architecture.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "7",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig. 7 .7Fig. 7. Autoencoders privacy-preserving with different code (latent space representation) sizes on FER Dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "7 and 8 illustrate, respectively, two examples of the application of the Autoencoders technique on the FER dataset and on the CIFAR-10 dataset with different code sizes.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "8",
+            "figure_type": "figure",
+            "figure_id": "fig_7",
+            "figure_caption": "Fig. 8 .8Fig. 8. Autoencoders privacy-preserving with different code (latent space representation) sizes on CIFAR-10 Dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_8",
+            "figure_caption": ") where D is the original dataset, D is the anonymized dataset, \u03bb is the analysis function, C is the Code size used for the Autoencoders technique, P G Auto (C, D) is the Privacy Gain defined by (7b), EG Auto (d, D, D ) is the Explainability Gain defined by (",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "9",
+            "figure_type": "figure",
+            "figure_id": "fig_9",
+            "figure_caption": "Fig. 9 .9Fig. 9. Tri-dimensional compatibility matrix.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_10",
+            "figure_caption": "is created. The x dimension of the matrix consists of 21 values for Privacy Degree in the interval [0.0 -2.0] with step 0.1, the y dimension of the matrix consists of 3 rows representing the 3 stakeholders' datasets, while the z dimension consists of 11 possible degrees of explainability \u03c9 of the SmoothGrad mechanism in the interval [0.0 -1.0] with step 0.1. Hence, the size of the compatibility matrix is 21 \u00d7 3 \u00d7 11 and is computed following the below steps:",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "10",
+            "figure_type": "figure",
+            "figure_id": "fig_11",
+            "figure_caption": "Fig. 10 .10Fig. 10. Tri-dimensional compatibility matrix for three stakeholders using DP mechanism example.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "11",
+            "figure_type": "figure",
+            "figure_id": "fig_12",
+            "figure_caption": "Fig. 11 .11Fig. 11. Averaged tri-dimensional compatibility matrix for three stakeholders using DP mechanism example.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "12",
+            "figure_type": "figure",
+            "figure_id": "fig_13",
+            "figure_caption": "Fig. 12 .12Fig. 12. Autoencoders with different privacy degrees and code (latent space representation) sizes on FER dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "13",
+            "figure_type": "figure",
+            "figure_id": "fig_14",
+            "figure_caption": "Fig. 13 .13Fig. 13. Results computed on the MNIST dataset using autoencoders and SmoothGrad techniques.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "14",
+            "figure_type": "figure",
+            "figure_id": "fig_15",
+            "figure_caption": "Fig. 14 .14Fig. 14. Results computed on the FER dataset using autoencoders and Smooth-Grad techniques.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "15",
+            "figure_type": "figure",
+            "figure_id": "fig_16",
+            "figure_caption": "Fig. 15 .15Fig. 15. Results computed on the CIFAR-10 dataset using autoencoders and SmoothGrad techniques.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "16",
+            "figure_type": "figure",
+            "figure_id": "fig_17",
+            "figure_caption": "Fig. 16 .16Fig. 16. DP with SmoothGrad on MNIST dataset results.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_18",
+            "figure_caption": "Fig.16 reports, in a 2D representation, the results of an experiment that has been conducted on the same testbed of the first experiment of the previous section (handwritten digits classification problem, the MNIST dataset, and the SmoothGrad technique for increasing explainability), with the only difference being that we used the Differential Privacy technique to protect data privacy. On the X-axis we report the two input parameters: the explainability noise (below) and the Differential Privacy noise multiplier (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the Differential Privacy noise multiplier from 0 to 2 with step 0.1. The DP noise multiplier value of 0 means no privacy restriction is applied, resulting in a returned value of infinity according to (3). Hence, the higher the noise value, the lower the value, and the higher the Privacy Gain. Therefore, we set the maximum value of the DP noise multiplier to 2, as it results in value close to 0 and a high Privacy Gain accordingly. In Section B of the Appendix, a 3D representation of Fig.16is provided. Fig.17(a)-(c) report the results of the same experiment, each for a single value of the Differential Privacy noise multiplier (i.e., 0.1 in Fig.17(a), 1.0 in Fig.17(b), and 2.0 in Fig. 17(c)) and varying the value of the explainability noise in the previously mentioned range.In this experiment, since we used the Differential Privacy technique, the Utility Loss depends on the accuracy loss, and the Privacy Gain depends on the value of , as shown in (7a). Hence, Fig.18(a) shows the values of returned applying the Differential Privacy technique varying the value of the Differential",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "17",
+            "figure_type": "figure",
+            "figure_id": "fig_19",
+            "figure_caption": "1717Fig.16 reports, in a 2D representation, the results of an experiment that has been conducted on the same testbed of the first experiment of the previous section (handwritten digits classification problem, the MNIST dataset, and the SmoothGrad technique for increasing explainability), with the only difference being that we used the Differential Privacy technique to protect data privacy. On the X-axis we report the two input parameters: the explainability noise (below) and the Differential Privacy noise multiplier (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the Differential Privacy noise multiplier from 0 to 2 with step 0.1. The DP noise multiplier value of 0 means no privacy restriction is applied, resulting in a returned value of infinity according to (3). Hence, the higher the noise value, the lower the value, and the higher the Privacy Gain. Therefore, we set the maximum value of the DP noise multiplier to 2, as it results in value close to 0 and a high Privacy Gain accordingly. In Section B of the Appendix, a 3D representation of Fig.16is provided. Fig.17(a)-(c) report the results of the same experiment, each for a single value of the Differential Privacy noise multiplier (i.e., 0.1 in Fig.17(a), 1.0 in Fig.17(b), and 2.0 in Fig. 17(c)) and varying the value of the explainability noise in the previously mentioned range.In this experiment, since we used the Differential Privacy technique, the Utility Loss depends on the accuracy loss, and the Privacy Gain depends on the value of , as shown in (7a). Hence, Fig.18(a) shows the values of returned applying the Differential Privacy technique varying the value of the Differential",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_20",
+            "figure_caption": "Fig.16 reports, in a 2D representation, the results of an experiment that has been conducted on the same testbed of the first experiment of the previous section (handwritten digits classification problem, the MNIST dataset, and the SmoothGrad technique for increasing explainability), with the only difference being that we used the Differential Privacy technique to protect data privacy. On the X-axis we report the two input parameters: the explainability noise (below) and the Differential Privacy noise multiplier (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the Differential Privacy noise multiplier from 0 to 2 with step 0.1. The DP noise multiplier value of 0 means no privacy restriction is applied, resulting in a returned value of infinity according to (3). Hence, the higher the noise value, the lower the value, and the higher the Privacy Gain. Therefore, we set the maximum value of the DP noise multiplier to 2, as it results in value close to 0 and a high Privacy Gain accordingly. In Section B of the Appendix, a 3D representation of Fig.16is provided. Fig.17(a)-(c) report the results of the same experiment, each for a single value of the Differential Privacy noise multiplier (i.e., 0.1 in Fig.17(a), 1.0 in Fig.17(b), and 2.0 in Fig. 17(c)) and varying the value of the explainability noise in the previously mentioned range.In this experiment, since we used the Differential Privacy technique, the Utility Loss depends on the accuracy loss, and the Privacy Gain depends on the value of , as shown in (7a). Hence, Fig.18(a) shows the values of returned applying the Differential Privacy technique varying the value of the Differential",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_21",
+            "figure_caption": "Fig.16 reports, in a 2D representation, the results of an experiment that has been conducted on the same testbed of the first experiment of the previous section (handwritten digits classification problem, the MNIST dataset, and the SmoothGrad technique for increasing explainability), with the only difference being that we used the Differential Privacy technique to protect data privacy. On the X-axis we report the two input parameters: the explainability noise (below) and the Differential Privacy noise multiplier (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the Differential Privacy noise multiplier from 0 to 2 with step 0.1. The DP noise multiplier value of 0 means no privacy restriction is applied, resulting in a returned value of infinity according to (3). Hence, the higher the noise value, the lower the value, and the higher the Privacy Gain. Therefore, we set the maximum value of the DP noise multiplier to 2, as it results in value close to 0 and a high Privacy Gain accordingly. In Section B of the Appendix, a 3D representation of Fig.16is provided. Fig.17(a)-(c) report the results of the same experiment, each for a single value of the Differential Privacy noise multiplier (i.e., 0.1 in Fig.17(a), 1.0 in Fig.17(b), and 2.0 in Fig. 17(c)) and varying the value of the explainability noise in the previously mentioned range.In this experiment, since we used the Differential Privacy technique, the Utility Loss depends on the accuracy loss, and the Privacy Gain depends on the value of , as shown in (7a). Hence, Fig.18(a) shows the values of returned applying the Differential Privacy technique varying the value of the Differential",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_22",
+            "figure_caption": "Fig.16 reports, in a 2D representation, the results of an experiment that has been conducted on the same testbed of the first experiment of the previous section (handwritten digits classification problem, the MNIST dataset, and the SmoothGrad technique for increasing explainability), with the only difference being that we used the Differential Privacy technique to protect data privacy. On the X-axis we report the two input parameters: the explainability noise (below) and the Differential Privacy noise multiplier (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the Differential Privacy noise multiplier from 0 to 2 with step 0.1. The DP noise multiplier value of 0 means no privacy restriction is applied, resulting in a returned value of infinity according to (3). Hence, the higher the noise value, the lower the value, and the higher the Privacy Gain. Therefore, we set the maximum value of the DP noise multiplier to 2, as it results in value close to 0 and a high Privacy Gain accordingly. In Section B of the Appendix, a 3D representation of Fig.16is provided. Fig.17(a)-(c) report the results of the same experiment, each for a single value of the Differential Privacy noise multiplier (i.e., 0.1 in Fig.17(a), 1.0 in Fig.17(b), and 2.0 in Fig. 17(c)) and varying the value of the explainability noise in the previously mentioned range.In this experiment, since we used the Differential Privacy technique, the Utility Loss depends on the accuracy loss, and the Privacy Gain depends on the value of , as shown in (7a). Hence, Fig.18(a) shows the values of returned applying the Differential Privacy technique varying the value of the Differential",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_23",
+            "figure_caption": "Fig.16 reports, in a 2D representation, the results of an experiment that has been conducted on the same testbed of the first experiment of the previous section (handwritten digits classification problem, the MNIST dataset, and the SmoothGrad technique for increasing explainability), with the only difference being that we used the Differential Privacy technique to protect data privacy. On the X-axis we report the two input parameters: the explainability noise (below) and the Differential Privacy noise multiplier (above). For each value of the explainability noise, ranging from 0 to 1 with step 0.1, we computed the trade-off value varying the Differential Privacy noise multiplier from 0 to 2 with step 0.1. The DP noise multiplier value of 0 means no privacy restriction is applied, resulting in a returned value of infinity according to (3). Hence, the higher the noise value, the lower the value, and the higher the Privacy Gain. Therefore, we set the maximum value of the DP noise multiplier to 2, as it results in value close to 0 and a high Privacy Gain accordingly. In Section B of the Appendix, a 3D representation of Fig.16is provided. Fig.17(a)-(c) report the results of the same experiment, each for a single value of the Differential Privacy noise multiplier (i.e., 0.1 in Fig.17(a), 1.0 in Fig.17(b), and 2.0 in Fig. 17(c)) and varying the value of the explainability noise in the previously mentioned range.In this experiment, since we used the Differential Privacy technique, the Utility Loss depends on the accuracy loss, and the Privacy Gain depends on the value of , as shown in (7a). Hence, Fig.18(a) shows the values of returned applying the Differential Privacy technique varying the value of the Differential",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "17",
+            "figure_type": "figure",
+            "figure_id": "fig_24",
+            "figure_caption": "Fig. 1717Fig. 17. DP and SmoothGrad results on MNIST dataset with varying privacy levels.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_25",
+            "figure_caption": "Fig. 17. DP and SmoothGrad results on MNIST dataset with varying privacy levels.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "18",
+            "figure_type": "figure",
+            "figure_id": "fig_26",
+            "figure_caption": "Fig. 18 .18Fig. 18. Utility loss and epsilon results on MNIST dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "19",
+            "figure_type": "figure",
+            "figure_id": "fig_27",
+            "figure_caption": "Fig. 19 .19Fig. 19. DP with SmoothGrad on FER dataset results.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "20",
+            "figure_type": "figure",
+            "figure_id": "fig_28",
+            "figure_caption": "Fig. 20 .20Fig. 20. Utility loss and epsilon results on FER dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "21",
+            "figure_type": "figure",
+            "figure_id": "fig_29",
+            "figure_caption": "Fig. 21 .21Fig. 21. DP with SmoothGrad on CIFAR-10 dataset results.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "22",
+            "figure_type": "figure",
+            "figure_id": "fig_30",
+            "figure_caption": "Fig. 22 .22Fig. 22. Utility loss and epsilon results on CIFAR-10 dataset.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_31",
+            "figure_caption": "WisamAbbasi is currently working toward the PhD degree with the Computer Science Program, Pisa University. She is also a research fellow with CNR-IIT, Pisa. Her research interests include design and development of trustworthy AI models that implement privacy-preserving data analysis mechanisms and interpretable (explainable) techniques. Paolo Mori received the PhD degree. He is currently a senior researcher in the Trust, Security, and Privacy research unit with CNR-IIT. He has co-authored more than 150 papers on trust, security, and privacy in distributed systems, such as Cloud, IoT, and mobile devices. His research interests include Blockchain technology and its applications. Since 2016, he has been the program co-chair of the International Conference of Information System Security and Privacy. He is usually actively involved in EU-funded research projects on information and communication security.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "Authorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:41:54 UTC from IEEE Xplore. Restrictions apply.",
+            "figure_data": "Class model visualizations (global scope): generate numeri-cally computed images representing the appearance of classes"
+        },
+        {
+            "figure_label": "II",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "WITH THE EXISTING METHODOLOGIES ADDRESSING COMBINED ASPECTS OF PRIVACY, UTILITY, AND EXPLAINABILITY",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "P r[M (D 1 ) \u2208 S] \u2264 P r[M (D 2 ) \u2208 S] \u00d7 exp( ) + \u03b4 (1)",
+            "formula_coordinates": [
+                2.0,
+                317.69,
+                734.96,
+                234.28,
+                10.71
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "M (D) f (D) + N (0, S f \u03c3 2 ) (2)",
+            "formula_coordinates": [
+                3.0,
+                106.27,
+                204.39,
+                186.91,
+                12.58
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "\u03c3 \u2265 c 2 q T log(1/\u03b4) (3)",
+            "formula_coordinates": [
+                3.0,
+                123.6,
+                443.72,
+                169.58,
+                17.01
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "S l (d) = w T l d + b l (4)",
+            "formula_coordinates": [
+                3.0,
+                393.79,
+                619.6,
+                162.4,
+                13.11
+            ]
+        },
+        {
+            "formula_id": "formula_4",
+            "formula_text": "S l (d) \u2248 w T d + b (5a) w = \u2202S l \u2202d d 0 (5b)",
+            "formula_coordinates": [
+                3.0,
+                395.32,
+                674.18,
+                160.87,
+                45.86
+            ]
+        },
+        {
+            "formula_id": "formula_5",
+            "formula_text": "arg max d S l (d) -\u03a9 d 2 2 (6)",
+            "formula_coordinates": [
+                4.0,
+                113.64,
+                323.87,
+                175.32,
+                14.59
+            ]
+        },
+        {
+            "formula_id": "formula_6",
+            "formula_text": "P G Auto (C, D) is normalized in the interval (0,1]. P G DP (D, \u03bb) = 1 (D, \u03bb) (7a) P G Auto (C, D) = 1 - C I(D) (7b)",
+            "formula_coordinates": [
+                6.0,
+                37.91,
+                362.21,
+                251.05,
+                77.73
+            ]
+        },
+        {
+            "formula_id": "formula_7",
+            "formula_text": "U Auto (D, D ) = GD(D, D )(8)",
+            "formula_coordinates": [
+                6.0,
+                104.5,
+                554.54,
+                184.47,
+                10.71
+            ]
+        },
+        {
+            "formula_id": "formula_8",
+            "formula_text": "W ork(D, D , F ) = m i=1 n j=1 d ij f ij (9) EM D(D, D ) = m i=1 n j=1 d ij f ij m i=1 n j=1 f ij (10",
+            "formula_coordinates": [
+                6.0,
+                88.11,
+                664.61,
+                200.86,
+                65.61
+            ]
+        },
+        {
+            "formula_id": "formula_9",
+            "formula_text": ")",
+            "formula_coordinates": [
+                6.0,
+                284.8,
+                712.2,
+                4.16,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_10",
+            "formula_text": "U DP (D, \u03bb, \u03bb ) = Acc(D, \u03bb) -Acc(D, \u03bb )(11",
+            "formula_coordinates": [
+                6.0,
+                340.95,
+                263.59,
+                206.87,
+                10.71
+            ]
+        },
+        {
+            "formula_id": "formula_11",
+            "formula_text": "\u03b1l (d) = 1 n n 1 \u03b1 l (d + N (0, \u03c3 2 )) (12",
+            "formula_coordinates": [
+                6.0,
+                360.92,
+                607.4,
+                186.92,
+                30.62
+            ]
+        },
+        {
+            "formula_id": "formula_12",
+            "formula_text": ")",
+            "formula_coordinates": [
+                6.0,
+                547.83,
+                618.05,
+                4.17,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_13",
+            "formula_text": "\u03b1 l (d) = \u2202S l (d) \u2202d (13",
+            "formula_coordinates": [
+                6.0,
+                393.46,
+                735.34,
+                154.36,
+                23.12
+            ]
+        },
+        {
+            "formula_id": "formula_14",
+            "formula_text": ")",
+            "formula_coordinates": [
+                6.0,
+                547.83,
+                742.96,
+                4.15,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_15",
+            "formula_text": "EG(d) = n max(n) \u00d7 N (0, \u03c3 2 ) d \u00d7 100 (14",
+            "formula_coordinates": [
+                7.0,
+                88.97,
+                181.24,
+                200.05,
+                22.92
+            ]
+        },
+        {
+            "formula_id": "formula_16",
+            "formula_text": ")",
+            "formula_coordinates": [
+                7.0,
+                289.02,
+                188.23,
+                4.15,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_17",
+            "formula_text": "EG DP (d, \u03b3) = n \u00d7 N (0, \u03c3 2 ) d max(n) -U DP (\u03b3) n \u00d7 N (0, \u03c3 2 ) d max(n)(15)",
+            "formula_coordinates": [
+                7.0,
+                60.29,
+                438.63,
+                232.88,
+                56.2
+            ]
+        },
+        {
+            "formula_id": "formula_18",
+            "formula_text": "EG A (d, \u03b8) = n \u00d7 N (0, \u03c3 2 ) d max(n) -GD(\u03b8)( n \u00d7 N (0, \u03c3 2 ) d max(n) )(16)",
+            "formula_coordinates": [
+                7.0,
+                78.98,
+                594.0,
+                214.19,
+                56.2
+            ]
+        },
+        {
+            "formula_id": "formula_19",
+            "formula_text": "T DP (D, \u03bb, \u03bb ) = P G DP (D, \u03bb) + EG DP (d, D, \u03bb, \u03bb ) 2 + U DP (D, \u03bb, \u03bb ) (17",
+            "formula_coordinates": [
+                8.0,
+                46.23,
+                589.08,
+                238.58,
+                24.28
+            ]
+        },
+        {
+            "formula_id": "formula_20",
+            "formula_text": ")",
+            "formula_coordinates": [
+                8.0,
+                284.81,
+                596.7,
+                4.15,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_21",
+            "formula_text": "T Auto (D, D , \u03bb) = P G Auto (C, D) + EG Auto (d, D, D ) 2 + U Auto (D, D )(18",
+            "formula_coordinates": [
+                8.0,
+                48.32,
+                676.94,
+                236.49,
+                33.29
+            ]
+        },
+        {
+            "formula_id": "formula_22",
+            "formula_text": "TDP ( D, \u03bb, \u03bb ) = m i=1 w i T (D i , \u03bb, \u03bb )(19)",
+            "formula_coordinates": [
+                9.0,
+                102.31,
+                359.17,
+                190.86,
+                30.74
+            ]
+        },
+        {
+            "formula_id": "formula_23",
+            "formula_text": "TAuto ( D, D , \u03bb) = m i=1 w i T (D i , D i , \u03bb) (20",
+            "formula_coordinates": [
+                9.0,
+                90.77,
+                395.35,
+                198.25,
+                30.74
+            ]
+        },
+        {
+            "formula_id": "formula_24",
+            "formula_text": ")",
+            "formula_coordinates": [
+                9.0,
+                289.02,
+                406.0,
+                4.16,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_25",
+            "formula_text": "D 1 \u222a D 2 \u222a D 3 represent the whole dataset D.",
+            "formula_coordinates": [
+                9.0,
+                42.12,
+                563.11,
+                251.04,
+                21.09
+            ]
+        }
+    ],
+    "doi": "10.1109/TDSC.2024.3400608"
+}

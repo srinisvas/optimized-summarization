@@ -1,0 +1,269 @@
+{
+    "title": "Privacy-Preserving Keyword Search Schemes over Encrypted Cloud Data: An Extensive Analysis",
+    "authors": "Prasanthi Sreekumari",
+    "pub_date": "",
+    "abstract": "Big Data has rapidly developed into a hot research topic in many areas that attracts attention from academia and industry around the world. Many organization demands efficient solution to store, process, analyze and search huge amount of information. With the rapid development of cloud computing, organization prefers cloud storage services to reduce the overhead of storing data locally. However, the security and privacy of big data in cloud computing is a major source of concern. One of the positive ways of protecting data is encrypting it before outsourcing to remote servers, but the encrypted significant amounts of cloud data brings difficulties for the remote servers to perform any keyword search functions without leaking information. Various privacy-preserving keyword search (PPKS) schemes have been proposed to mitigate the privacy issue of big data encrypted on cloud storage. This paper presents an extensive analysis of the existing PPKS techniques in terms of verifiability, efficiency and data privacy. Through this analysis, we present some valuable directions for future work.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Cloud computing has become an unavoidable component for data storage due to its unlimited data storage capabilities, easy access and decreased costs. With the rapid development of cloud computing, individuals and enterprise users prefer cloud storage services to outsource large volume of documents to reduce the overhead of storing data locally. However, the privacy of these data on cloud storage is a major concern. This is because once data are outsourced, the owners lose direct control of these data and the cloud service providers cannot be fully trusted [1] [2]. There are several reports that confirm data breaches related to cloud servers, due to malicious attack, theft or internal errors [3]. As a result, to protect the privacy of data, users/organizations encrypt the data before outsourcing to remote servers. However, the encrypted significant amounts of cloud data brings Keyword search is one of the fundamental and most frequent data operations [2]. It enables the user to search for a certain keyword on the cloud data [3][4]. To provide a secure and efficient retrieval of data, one needs to ensure that the user can perform a search over the encrypted data without revealing the information to the server. The cryptographic primitive that provides this feature is widely known as searchable encryption [3][5] [6]. Searchable encryption enables the users to generate a search token from the searched keyword in such a way that the cloud server can retrieve the encrypted contents containing the searched keyword [3].\nAs shown in Fig. 1 [3], a data owner has a collection of documents to outsource and generates searchable encrypted indexes for outsourced data to protect the data on the cloud storage. The user can generate some search encrypted keywords based on the granted key from the data owner and keywords based on the interest of data owner, meanwhile, it is required that nothing should be leaked from the encrypted keywords, indexes or files or keywords of search queries. Although traditional searchable encryption schemes could achieve the guarantee of security and efficiency, they may fail to protect the privacy of cloud data [4] [5]. To mitigate the issue of data privacy, privacy-preserving keyword search techniques have been proposed. In this paper, we presents an extensive analysis of the existing PPKS techniques in terms of privacy, verifiability and efficiency. Through analysis, we present some valuable directions for future work.\nThe remainder of this paper is organized as follows:\nSection II discusses about big data in cloud computing. Section III discusses about PPKS. We introduce the existing research related to PPKS in section IV. Section V compares and analyze the existing solutions. Finally, section VI draws conclusions of our work and present some directions for future work.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b1",
+                "b2",
+                "b5",
+                "b2",
+                "b3",
+                "b4"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "II. BIG DATA IN CLOUD COMPUTING",
+            "text": "Storing and processing big volumes of data requires scalability, fault tolerance and availability [9]. The traditional infrastructure of storing and managing data is now proving to be slower and not easy to manage. Cloud computing delivers all the essential requirements for storing big data through hardware virtualization. Thus, big data and cloud computing are two compatible concepts as cloud enables big data to be available, scalable and fault tolerant. Several new companies such as Cloudera, Hortonworks, Teradata and many others, have started to focus on delivering big data as a Service or Database as a Service [6]. Companies such as Google, IBM, Amazon and Microsoft also provide ways for consumers to consume big data on demand.\nHowever, in the high speed connectivity era, moving large datasets on cloud and providing the details needed to access it, is a current issue. Because, these large sets of data often carry sensitive information like credit or debit card numbers, addresses, medical records and other details, raising data privacy concerns [10]. In order to ensure data privacy, the data can be encrypted at the client side before outsourcing the data to the cloud server. However, once the data is encrypted, the server cannot make a plaintext keyword search and it affects the efficient retrieval of data using keyword search from the cloud [10] [11]. For mitigating this issue, researchers proposed efficient privacy-preserving keyword search solutions. We present the recently proposed solutions in section V.",
+            "publication_ref": [
+                "b8",
+                "b5",
+                "b9",
+                "b9",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. PRIVACY-PRESERVING KEYWORD SEARCH",
+            "text": "To maintain data privacy, the keyword search functionality need to be performed over encrypted cloud data without leaking any information about the search keyword or the retrieved document. This is known as privacy-preserving keyword search [12]. As shown in Fig. 2., following are the list of some requirements for protecting the privacy of users from cloud server.\nx Data privacy-We protect the outsourced data without leaking any confidential information to unauthorized party from the cloud server.\nx Index privacy-We must guarantee that the third party cannot steal the information from index stored on cloud.\nx Keyword privacy-The cloud server should not get any details about data collection, index and encrypted keywords.\nx Trapdoor unlinkability-We should randomize the trapdoors (encrypted keywords) for protecting the privacy of data. And we also should make each trapdoor generated for query is different. The cloud cannot infer the relationship between these trapdoors.",
+            "publication_ref": [
+                "b11"
+            ],
+            "figure_ref": [
+                "fig_1"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. PRIVACY-PRESERVING KEYWORD SEARCH",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "SCHEMES",
+            "text": "This section surveys the most recently proposed privacy-preserving keyword search schemes.\nJiang et al. [13] proposed a novel privacy preserving keyword search scheme over encrypted cloud data. The authors firstly use a structure named as Inverted Matrix (IM) to create search index. The IM is made up of a number of index vectors which are sub-indices for distinct words in the data set. Specifically, during the index construction, each keyword is associated with an index vector denoted by binary bits, where each bit represents whether the keyword appears in the corresponding document. Then, map a keyword to a value as an address used to locate the corresponding index vector. As a result, users can avoid the overhead of storing a dictionary locally.\nIn addition, to preserve users' privacy, the authors blind the index vectors using pseudo-random bits to obtain an Encrypted Enlarged Inverted Matrix (EEIM) which can prevent the server from learning information from the index. Therefore, when a search query is submitted, the server just needs to find the matching index vector via the inputted valid request. Users only need a single interaction with the server to get the data files they are interested in.\nZhang et al. [14] proposed PRMSM, a privacy preserving ranked multi-keyword search protocol in a multi-owner cloud model as shown in Fig. 3 [4].\nTo enable cloud servers to perform secure search without knowing the actual value of both keywords and trapdoors, the authors systematically construct a novel secure search protocol. As a result, different data owners use different keys to encrypt their files and keywords. Authenticated data users can issue a query without knowing secret keys of these different data owners. To rank the search results and preserve the privacy of relevance scores between keywords and files, a new additive order and privacy preserving function family (AOPPF) was proposed, which helps the cloud server return the most relevant search results to data users without revealing any sensitive information.\nTo prevent the attackers from eavesdropping secret keys and pretending to be legal data users submitting searches, a novel dynamic secret key generation protocol and a new data user authentication protocol was proposed. As a result, attackers who steal the secret key and perform illegal searches would be easily detected. Extensive experiments on real-world datasets confirm the efficacy and efficiency of the proposed schemes.\nGurjar et al. [15] proposed a new approach using MIR-tree, it provides privacy of outsourced data, Wan et al. [16] design an efficient, verifiable and privacy-preserving multi-keyword ranked searchable encryption scheme called VPSearch for outsourced cloud data under the partially honest cloud server model. It is realized by integrating an adapted homomorphic MAC technique with a privacy preserving multi-keyword search scheme. The proposed scheme is very efficient as it relies on only one-way function for security. The authors also provide the random challenge technique to verify top-k search results for a given query.\nWith this solution, the client can be sure that the top-k results are authentic for probability close to 1. Also, the authors provide detailed analysis on security, privacy, verifiability and efficiency of VPSearch.\nSpecifically, the underlying homomorphic MAC scheme used in VPSearch can be proved to be secure. The authors implement VPSearch using Matlab and evaluate its performance over three UCI data sets. Experiment results on a laptop showed that VPSearch is very efficient on authentication tag generation and keyword search operations. Moreover, we observed that the search functionality of each scheme varied from single keyword, multi-keyword, ranked multikeyword, similarity search, smart semantic search and ranked fuzzy keyword search. We noted that these schemes greatly reduces the system usability and efficiency, except the scheme ranked fuzzy keyword search. In terms of system model, cloud servers mostly support multiple data owners to share the benefits from cloud computing. Among these compared schemes only two schemes [17] and [14] used multiple data owner system model. Most importantly, the malicious cloud service provider may delete the unused encrypted files for saving space. As a result the scheme should have the ability to verify the correctness of the search results. From our analysis, only one scheme [16] has the verifiability technique.",
+            "publication_ref": [
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b13",
+                "b15"
+            ],
+            "figure_ref": [
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. CONCLUSION AND FUTURE WORK",
+            "text": "In this paper, we presented the survey of recently proposed privacy-preserving keyword search schemes specifically to mitigate the privacy issues in cloud data by highlighting the advantages and limitations of the prominent search schemes. In addition, we have provided a comparative study of the currently existing keyword search schemes in detail to further assist readers to understand the specific design goal required for the keyword search techniques especially in terms of privacy.\nFor future work, the readers can design an efficient privacy-preserving ranked fuzzy keyword search scheme based on the following requirements such as security, privacy, efficiency and verifiability.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Fig. 4. Overview of VPSearch",
+            "text": "As shown in Fig. 4. [16] the client first encrypts the plaintext index, then the encrypted index is authenticated with homomorphic MAC technique, which produces authentication tags for the encrypted index. Next, the index and authentication tags are uploaded to the cloud. Then the client can generate a search trapdoor, and uses our homomorphic MAC technique to authenticate the trapdoor. With the authenticated trapdoor, the cloud server can homomorphically execute the search function over the authentication tags to derive the result with a proof, which can certify the search result.\nLi et al. [17] focused on enabling efficient and privacy preserving similarity keyword search scheme termed PSS in a multi-cloud scenario. The key contributions of this paper can be summarized as follows: First, the authors formalized the problem of efficient and privacy preserving similarity search in a multi-cloud scenario as shown in Fig 5. [17], and establish corresponding system and threat models. Second, the authors proposed algorithms for keyword-order computation, Chord-ring construction and similarity search processing, over encrypted data stored in multiple cloud servers with high efficiency, and without the privacy leakage of keywords and files. Third, the authors justified the privacy-preserving property of proposed scheme. Also, performance evaluations are done on a realworld dataset, and the results show the efficiency of proposed scheme.",
+            "publication_ref": [
+                "b15",
+                "b16",
+                "b16"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Fu et al. [18],",
+            "text": "propose two practical and processing schemes to solve the challenging problem: conceptual graph (CG) match in the encrypted form. The authors used conceptual graphs as a knowledge representation to substitute traditional keywords and solve the problem of privacy-preserving smart Xu et al. [19] introduced a complete framework of privacy preserving ranked fuzzy keyword search over encrypted cloud data. For the efficiency and security consideration, the scheme adopted the dictionary-based fuzzy keyword search and the One-to-many Order-Preserving Mapping scheme to build the inverted index and search. Through performance and security analysis, the scheme showed that the proposed scheme is privacy preserving and efficient.",
+            "publication_ref": [
+                "b18"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. COMPARISON AND ANALYSIS OF PRIVACY-PRESERVING KEYWORD SEARCH SCHEMES",
+            "text": "We presented the most recently proposed keyword search schemes for mitigating the privacy issue over encrypted data in cloud computing. Table 1 summarizes the comparative study of each scheme. Apart from the novelty of the proposed search schemes, we evaluate each solution using the following seven main criteria: Search functionality, system model, threat model, entities, privacy, efficiency and verifiability. From our analysis, we observed that evaluation of verifiability was missing except the scheme VPSearch.\nFurthermore, in addition to the existing requirements, privacy preserving search schemes should meet the requirements such as dynamic and verifiability.\nAuthorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:43:32 UTC from IEEE Xplore. Restrictions apply. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Privacy-preserving public auditing for secure cloud storage",
+            "journal": "IEEE Trans. Comput",
+            "year": "2013-02",
+            "authors": "C Wang; S S Chow; Q Wang; K Ren; W Lou"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Practical techniques for searches on encrypted data",
+            "journal": "",
+            "year": "2000-01",
+            "authors": "D Song; D Wagner; A Perrig"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Secure indexes",
+            "journal": "",
+            "year": "2003",
+            "authors": "E Goh"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Searchable symmetric encryption: Improved definitions and efficient constructions",
+            "journal": "",
+            "year": "2006-10",
+            "authors": "R Curtmola; J Garay; S Kamara; R Ostrovsky"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Public key encryption with keyword search",
+            "journal": "Springer",
+            "year": "2004",
+            "authors": "D Boneh; G Di Crescenzo; R Ostrovsky; G Persiano"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Secure conjunctive keyword search over encrypted data",
+            "journal": "Proc. Appl. Cryptography Netw. Security, Yellow Mountain",
+            "year": "2004-06",
+            "authors": "P Golle; J Staddon; B Waters"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Achieving efficient conjunctive keyword searches over encrypted data",
+            "journal": "",
+            "year": "2005-12",
+            "authors": "L Ballard; S Kamara; F Monrose"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Secure ranked keyword search over encrypted cloud data",
+            "journal": "",
+            "year": "2010-06",
+            "authors": "C Wang; N Cao; J Li; K Ren; W Lou"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Privacy-preserving multi-keyword ranked search over encrypted cloud data",
+            "journal": "",
+            "year": "2011-04",
+            "authors": "N Cao; C Wang; M Li; K Ren; W Lou"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Privacy-preserving multi-keyword ranked search over encrypted cloud data",
+            "journal": "IEEE Trans. Parallel Distrib. Syst",
+            "year": "2014-01",
+            "authors": "N Cao; C Wang; M Li; K Ren; W Lou"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Verifiable privacy-preserving multi-keyword text search in the cloud supporting similarity-based ranking",
+            "journal": "IEEE Trans. Parallel Distrib. Syst",
+            "year": "2014-11",
+            "authors": "W Sun; B Wang; N Cao; M Li; W Lou; Y T Hou; H Li"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Efficient multikeyword ranked query on encrypted data in the cloud",
+            "journal": "",
+            "year": "2012-12",
+            "authors": "Z Xu; W Kang; R Li; K Yow; C Xu"
+        },
+        {
+            "ref_id": "b12",
+            "title": "A Novel Privacy Preserving Keyword Search Scheme over Encrypted Cloud Data",
+            "journal": "Krakow",
+            "year": "2015",
+            "authors": "X Jiang; J Yu; F Kong; X Cheng; R Hao"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Privacy Preserving Ranked Multi-Keyword Search for Multiple Data Owners in Cloud Computing",
+            "journal": "IEEE Transactions on Computers",
+            "year": "2016-05-01",
+            "authors": "W Zhang; Y Lin; S Xiao; J Wu; S Zhou"
+        },
+        {
+            "ref_id": "b14",
+            "title": "A privacypreserving multi-keyword ranked search scheme over encrypted cloud data using MIR-tree",
+            "journal": "",
+            "year": "2016",
+            "authors": "S P S Gurjar; S K Pasupuleti"
+        },
+        {
+            "ref_id": "b15",
+            "title": "VPSearch: Achieving Verifiability for Privacy-Preserving Multi-Keyword Search over Encrypted Cloud Data",
+            "journal": "",
+            "year": "",
+            "authors": "Z Wan; R H Deng"
+        },
+        {
+            "ref_id": "b16",
+            "title": "PSS: Achieving high-efficiency and privacy-preserving similarity search in multiple clouds",
+            "journal": "Kuala Lumpur",
+            "year": "2016",
+            "authors": "J Li; M Wen; C Gu; H Li"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Privacy-Preserving Smart Semantic Search Based on Conceptual Graphs Over Encrypted Outsourced Data",
+            "journal": "",
+            "year": "2017-08",
+            "authors": "Z Fu; F Huang; K Ren; J Weng; C Wang"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Privacy-Preserving Ranked Fuzzy Keyword Search over Encrypted Cloud Data",
+            "journal": "",
+            "year": "2013",
+            "authors": "Q Xu; H Shen; Y Sang; H Tian"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Searchable encryption scheme difficulties for the remote servers to perform any keyword search on encrypted cloud data without leaking information.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig.2. Requirements for Protecting Privacy",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 3 .3Fig. 3. Architecture of PRMSMand also provide the authentication of the search results, thus ensures correctness and the completeness of top-k results. An authentication set is designed to verify the top-k result and provide efficient searching and ranking techniques to get top-k result. The MIR-tree based index is developed to make a secure and flexible index structure which supports efficient search or traversal with the help of the query trapdoor. In addition, the authors used the ranking function to get top-k results and an authentication set is designed to verify the top-k results. The security analysis proved that the scheme is fully able to perform privacy-preserving multi-keyword search along with the verification of the top-k results.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/BDS/HPSC/IDS18.2018.00035"
+}

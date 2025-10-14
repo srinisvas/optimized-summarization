@@ -1,0 +1,299 @@
+{
+    "title": "SDG-based AI Ethics: an analysis of recent Computer Vision research",
+    "authors": "Silvio De Magistris; Alberto Del Bimbo",
+    "pub_date": "",
+    "abstract": "The impressive advancements of AI have marked the progress of technological solutions in many fields in the last few years. A key role in this progress has been played by Computer Vision, providing machines with the capability to observe, interpret and based on such understanding predict. These progresses require to consider this technology with respect to its ethical impact, particularly on human rights, sustainable development, and planet earth. The 2030-Agenda for Sustainable Development defines 17 Sustainable Development Goals (SDGs) that can be assumed as references for ethical development targets of technology. In this paper we analyse the extent to which Computer Vision research has focused on the SDG targets, understanding its potential to contribute to an ethical development of this technology.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "The distinction between Ethics and Moral has been a long term subject of philosophical investigation in the western culture. According to Hegel, while Moral defines abstract values that are references for the human behaviour, Ethics is a concrete set of social actions that are defined by people to realize moral values.\nMost ethical systems accord moral consideration first and foremost to humans (anthropocentrism), in few cases to nature (ecocentrism). In the last century there has been an important stimulus to include the natural world in the object of Ethics. An Ethics that takes meaningful account of both humans and nature as an inseparable and interconnecting parts. In the late 1970s, the so-called Ecological Ethics was defined, to which numerous important contributions were added, such as the Deep Ecology [1] and the Responsibility Principles [2]. The Rights of Nature [3] extended Ethics from humans to the animal, plant, and mineral worlds, assuming also ecosystems as the object of Ethics.\nIn 2015, United Nations have defined a detailed agenda for Sustainable Development, \"a shared blueprint for peace and prosperity for people and the planet, now and in the future\", that includes global moral values for humans in the XXI century, covering Society, Economy and Environment and defined for each of them several goal targets that can be regarded as ethical actions to be pursued in the short-medium term.  [4] [5] for Society, Economy and Environment.\nOn the side of technological evolution of our society, there is already evidence that Artificial Intelligence (AI) and its applications have already found growing application almost in any field and much more impact is expected in the next few years. The impressive advancements of AI in the last few years require to consider this technology with respect to its impact on human rights, sustainable development, and planet earth. It is no coincidence that AI is considered by some to be a potential catastrophic risk [6].\nEthical implications of usage of AI are therefore becoming a key issue to make its use a positive factor of growth of our society. Several ethical guidelines have been released in the few recent year that include normative principles and recommendations to mitigate possible technological risks and abuses [7].\nIn general terms, AI systems must be as transparent, explainable, safe, robustness and reliable as possible and must also have clear evidence of trustworthiness and regulatory accountability. In parallel, the idea of Artificial Intelligence for Social Good is gaining traction within information societies, considering the potential of AI to address social problems effectively [8]. Particularly, AI systems can contribute to achieving the targets of the SDGs.\nSeveral works have recently investigated the potential impact of AI over the SDGs, to understand the extent AI can contribute to the achievement of the SDG targets. In [4], Vinuesa et al. discussed the role of AI in achieving the SDGs. Particularly, from the analysis of several AI-related papers they provided a summary of positive and negative impact of AI on the various SDGs. In [9] Kumar Kar et al. reviewed 287 AI papers selected from a large corpus and analysed their potential to contribute to a sustainable development of our society, environment, economy, focusing on different use cases. Nasir et al. in [10] investigated the extent to which SDGs are addressed by AI research papers. They extracted data from Scopus using keywords as AI, Machine Learning, SDG, etc\u2026and used the abstract of the papers to find the relevant SDGs and the affiliation of the authors to build a geographic map of their distribution worldwide. Unfortunately, their research was of limited size: only 200 papers were analysed. Palomares et al. [11] state that \"AI could -and must-further the attainment of the 17 Sustainable Development Goals (SDGs) established in the United Nations' Agenda 2030, becoming a facilitator to achieve the 169 targets underlying such goals.\" They provided an overview of the progress of the relationship between AI and the SDGs, reviewing a larger share of the existing AI literature. They considered several main areas of AI, namely Knowledge Representation, Natural Language Processing, Computer Vision, Machine Learning, Automated Reasoning. They identified a few relevant publications related to the application of AI to the SDGs and hence matched those publications to their goal targets. They analysed 819 publications.\nA few others provided tools to evaluate AI projects in relationship with SDG targets. Cowls et al. presented a benchmark dataset for AI projects addressing SDGs [8]. ITU launched a global AI repository to identify AI-related projects that can accelerate progress towards the SDGs [12].\nHowever, the growth of AI research and increasing spread of its applications calls for a more focused analysis that specifically accounts of the distinct sub-fields of AI. According to this, in this paper, we investigate the current impact of AI for the SDGs, focusing on the Computer Vision sub-field. Computer Vision is a key AI technology aiming at enabling computers to derive meaningful information from digital images and video. Key Computer Vision functions are detection, recognition, classification, prediction and more recently image and video generation either starting from visual or text data. Progress in Computer Vision in the past few years has been exploited the results of Machine Learning and marked the progress of Artificial Intelligence and its application in many fields. According to this, Computer Vision can contribute significantly to the achievement of the SDGs in security, health, infrastructure, climate changes monitoring, resource usage and waste, agriculture, productivity, and production among the others, helping to maintain the planet ecosystem.\nTo assess the potential impact of Computer Vision on SDG's ethical targets, we conducted a systematic analysis of 8672 papers that were published in the past three editions of the two main conferences on Computer Vision, namely Computer Vision and Pattern Recognition (CVPR) and the European Conference on Computer Vision (ECCV).\nWe hope that our findings contribute to the development of an SDG-oriented research in Computer Vision and AI that will drive the ethical usage of this technology in a more conscious and systematic way.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b3",
+                "b8",
+                "b9",
+                "b10",
+                "b7",
+                "b11"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. CVPR AND ECCV CONFERENCES ANALYSIS",
+            "text": "CVPR is the top reference conference in Computer Vision that gathers annually over 8000 researchers from any developed country worldwide. Typically, it is hosted in the US. For our research we analysed the editions of CVPR2020, CVPR2021 and CVPR2022.\nECCV is biennially hosted in Europe and gathers almost all the European research laboratories and large part of the international Computer Vision community with a global attendance of more than 5000 people per edition. In our research we analysed the ECCV2018, ECCV2020 and ECCV2022 editions. Overall, our investigation covers a temporal window ranging from 2018 to 2022.\nWe analysed in total 8672 papers that were presented in these conferences. We checked their impact for the implementation of the SDGs considering the focus of their research and the SDG targets. To match the paper with the SDG targets we resorted on a team of experts from the MICC research group at the University of Florence, that analysed for each paper both the title (for a broad screening) and abstract (for more fitting analysis). The entire paper was also analysed when the subject was not clearly defined either in the title or in the abstract.\nAfter our screening we obtained the following data that can be assumed as a clue of where and how much Computer Vision can contribute to the achievement of the SDG targets. They also indicate the more mature directions for an ethical AI, as to the Computer Vision technology.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. CVPR",
+            "text": "The total number of papers considered for CVPR conferences is 4893, specifically 1466 in CVPR2020, 1661 in CVPR2021 and 1766 in CVPR2022. The percentage of papers impacting on SDGs over the total number of submissions was approximately the same for the three editions analysed: 37.8% (CVPR2020), 37.0% (CVPR2021) and 34.4% (CVPR2022) (Fig. 1).   From CVPR2020 to CVPR2022 there was a sensible increase in the number of papers impacting on SDGs (+9%) although it was lower than the increase in the number of presentations (+20%). Particularly, the increase was observed in SDG3, SDG11, SDG12, SDG13, SDG14, SDG15, SDG16 (Fig. 3). The analysis of the aggregate data of CVPR editions of 2020, 2021 and 2022 shows that research in Computer Vision has focused mostly (about 90% of the total) on 9 SDGs (Fig. 4). The most impacted SDGs are in the order: SDG11 (15.86%), SDG9 (13.53%), SDG3 (11.76%), SDG14 (9.95%) and SDG15 (9.54%). The SDGs that have low impact are SDG16 (4.27%), SDG4 (2.10%), SDG8 (1.62%), SDG7 (1.43%) and SDG10 (0.67%). No impactful papers were found for SDG1, SDG5 and SDG17. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_0",
+                "fig_3",
+                "fig_4"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. ECCV",
+            "text": "The number of papers considered for ECCV conferences is 3779, specifically 776 in ECCV2018, 1358 in ECCV2020 and 1645 in ECCV2022. The percentage of papers impacting the SDGs was: 38.4% (ECCV2018), 45.1% (ECCV2020) and 36.2% (ECCV2022)(Fig. 5).     There was a huge increase (100%) in the number of papers impacting on SDGs from ECCV2018 to ECCV2022, following the increase (124%) in the number of presentations (776 at ECCV2018 and 1645 at ECCV2022). This has made the European conference nearly the same size as the older and prestigious US-based conference. The SDGs that received the largest increase at ECCV were SDG3, SDG11, SDG12, SDG13, SDG14, SDG15, SDG16 (Fig. 7). The research papers addressing SDG11, SDG9, SDG3, SDG14, SDG15, SDG13, SDG2, SDG6, SDG12 and SDG16 cover 89,74% of the total, similarly to CVPR (Fig. 8.) ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_5",
+                "fig_10",
+                "fig_11"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. CVPR AND ECCV",
+            "text": "A few considerations can be drawn from the comparison of the CVPR and ECCV data. In absolute terms, the number of Computer Vision research papers including solutions in the scope of SDGs has largely increased in ECCV starting from 2020, reaching almost the same size as CVPR. The highest increase was observed in 2020 where papers in the SDGs scope at ECCV were about 45.1% of the total, against 37.8% at CVPR (Fig. 9). In 2022, percentages were 36.2% and 34.4% for ECCV and CVPR, respectively. The distribution of these percentages over the SDGs shows that most addressed SDGs are: SDG3, SDG11, SDG13, SDG14 and SDG15 (Fig. 10).  An interesting consideration that emerges from the analysis is that percentage trends are similar in both conferences over the period under analysis.\nConsidering all the papers in the scope of the SDGs presented at both CVPR and ECCV (3282 papers), interestingly their distribution over the SDGs is similar to the distribution of general AI papers observed by Palomares et al. in [11] (Fig. 11 and12). In both histograms, peaks are observed in SDG11, SDG9 and SDG3. Very similar pattern is for the set of SDG12, SDG13, SDG14, SDG15 and SDG16. SDG1, SDG5, SDG10 and SDG17 confirm no or minimal presence of related papers.  Following [4], clustering the SDGs according to Society (SDG1 to SDG7, SDG11, SDG16), Economy (SDG8, SDG9, SDG10, SDG12 and SDG17) and Environment (SDG13, SDG14 and SDG15) (Fig. 13), we can observe again similar distributions between general AI as in Palomares [11]. However, Computer Vision confirms being a key AI technology for Environment. ",
+            "publication_ref": [
+                "b10",
+                "b3",
+                "b10"
+            ],
+            "figure_ref": [
+                "fig_12",
+                "fig_13",
+                "fig_14",
+                "fig_15",
+                "fig_16"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "III. CONCLUSIONS",
+            "text": "In this analysis, we have assessed the extent of Computer Vision research to address SDG targets. While it cannot be stated that this is a measure of Computer Vision (hence AI partially) ethical impact -we should analyse the bunch of papers more in depth and understand the extent to which their content can contribute to the achievement of SDG targets -we believe this analysis reveals at least the extent of coincidence between Computer Vision research scope and the scope of SDGs. This research is also relevant for a critical assessment of the potential of Computer Vision to contribute to the SDGs and is an indication of sensibility of the Computer Vision research community for SDG issues. We did not observe any substantial difference between ECCV and CVPR.\nFrom the analysis, it emerges that among Artificial Intelligence technologies, Computer Vision can play a pivotal role for the achievement of SDGs, particularly in SDG11 -supporting accessible and sustainable transport systems and therefore promoting inclusive and sustainable urbanisation -, in SDG9 -to promote sustainable industrialisation and improve industrial production methods -, and in SDG3 -to support health solutions for diagnosis, prognosis, and prevention. Finally, compared to AI, Computer Vision has a higher relative impact on environment-related SDG targets than Society and Economy.\nImpact of CV on the SDGs has improved due to the increased use of CV in real applications over the years. In the large majority of cases the authors do not mention the SDGs among the motivation of their research. According to this we can deduct that there is little sensitivity of the potential impact of CV on the SDGs in the CV research community. These findings suggest working to promote greater awareness of the SDGs and sustainable ethics by the Computer Vision community. To this end, disseminating information on SDGs and their targets is an essential task for a Computer Vision and AI Ethics to guide these technologies to improve the well-being of both human beings and the planet's ecosystem.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "The shallow and the deep, long-range ecology movement. A summary",
+            "journal": "Inquiry",
+            "year": "",
+            "authors": "A Naess"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Das Prinzip Verantwortung: Versuch einer Ethik f\u00fcr die technologische Zivilisation",
+            "journal": "",
+            "year": "1979",
+            "authors": "J Hans"
+        },
+        {
+            "ref_id": "b2",
+            "title": "The Rights of Nature: A History of Environmental Ethics",
+            "journal": "University of Wisconsin Press",
+            "year": "1989",
+            "authors": "R F Nash"
+        },
+        {
+            "ref_id": "b3",
+            "title": "The role of artificial intelligence in achieving the Sustainable Development Goals",
+            "journal": "Nat Commun",
+            "year": "2020",
+            "authors": "R Vinuesa; H Azizpour; I Leite"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Information and communications technologies for sustainable development goals: State-of-the-art, needs and perspectives",
+            "journal": "IEEE Communications Surveys Tutorials",
+            "year": "2018",
+            "authors": "J Wu; S Guo; H Huang; W Liu; Y Xiang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Global Catastrophic Risks Survey",
+            "journal": "",
+            "year": "2008",
+            "authors": "A Sandberg; N Bostrom"
+        },
+        {
+            "ref_id": "b6",
+            "title": "The ethics of AI ethics: an evaluation of guidelines, Minds Mach",
+            "journal": "",
+            "year": "2020",
+            "authors": "T Hagendorff"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Designing AI for Social Good: Seven Essential Factors",
+            "journal": "",
+            "year": "2019",
+            "authors": "J Cowls; T King; M Taddeo; L Floridi"
+        },
+        {
+            "ref_id": "b8",
+            "title": "How can artificial intelligence impact sustainability: A systematic literature review",
+            "journal": "Journal of Cleaner Production",
+            "year": "2022",
+            "authors": "Arpan Kumar Kar; Shweta Kumari Choudhary; Vinay Kumar Singh"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Artificial intelligence and sustainable development goals nexus via four vantage points",
+            "journal": "Technology in Society",
+            "year": "2022",
+            "authors": "Osama & Nasir; Rana & Javed;  Gupta; & Shivam; Ricardo & Vinuesa; Junaid Qadir"
+        },
+        {
+            "ref_id": "b10",
+            "title": "A panoramic view and swot analysis of artificial intelligence for achieving the sustainable development goals by 2030: progress and prospects",
+            "journal": "Appl Intell",
+            "year": "2021",
+            "authors": "I Palomares; E Mart\u00ednez-C\u00e1mara; R Montes"
+        },
+        {
+            "ref_id": "b11",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": "Un Itu Ai Repository"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Computer Vision impact on SDGs at CVPR.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2abc reportFig. 2abc report which SDGs are addressed by Computer Vision research in the three CVPR editions with the number of papers and the relative percentage of the total impact. We can observe that percentages are almost the same in the three editions.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2a",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 2a .2aFig. 2a. Impact and number of papers for each SDG (CVPR2020)",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 3 .3Fig. 3. Number of papers addressing SDGs (CVPR2020, 2021 and 2022).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Fig. 4 .4Fig. 4. Impact of Computer Vision research on SDGs (aggregated data from CVPR2020, 2021 and 2022).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig. 5 .5Fig. 5. Computer Vision impact on SDGs at ECCV.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "Fig. 6abc reportFig. 6abc report which SDGs are addressed by Computer Vision research in the three ECCV editions with the number of papers and the relative percentage of the total impact. We can observe that SDG percentages are almost the same in the three conferences.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6a",
+            "figure_type": "figure",
+            "figure_id": "fig_7",
+            "figure_caption": "Fig. 6a .6aFig. 6a. Impact and number of papers for each SDG (ECCV2018).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6b",
+            "figure_type": "figure",
+            "figure_id": "fig_8",
+            "figure_caption": "Fig. 6b .6bFig. 6b. Impact and number of papers for each SDG (ECCV2020).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6c",
+            "figure_type": "figure",
+            "figure_id": "fig_9",
+            "figure_caption": "Fig. 6c .6cFig. 6c. Impact and number of papers for each SDG (ECCV2022).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "7",
+            "figure_type": "figure",
+            "figure_id": "fig_10",
+            "figure_caption": "Fig. 7 .7Fig. 7. Number of papers addressing SDGs (ECCV2018, 2020 and 2022).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "8",
+            "figure_type": "figure",
+            "figure_id": "fig_11",
+            "figure_caption": "Fig. 8 .8Fig. 8. Impact of Computer Vision research on SDGs (aggregated data from ECCV2018, 2020 and 2022).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "9",
+            "figure_type": "figure",
+            "figure_id": "fig_12",
+            "figure_caption": "Fig. 9 .9Fig. 9. Number of papers addressing SDGs at ECCV2020 and CVPR2020.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "10",
+            "figure_type": "figure",
+            "figure_id": "fig_13",
+            "figure_caption": "Fig. 10 .10Fig. 10. Percentage of papers addressing SDGs for ECCV2020 and CVPR2020.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "11",
+            "figure_type": "figure",
+            "figure_id": "fig_14",
+            "figure_caption": "Fig. 11 .11Fig. 11. Distribution of Computer Vision research papers of CVPR2020, 2021, 2022, ECCV2018, 2020, 2022 over the SDGs (aggregated).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "12",
+            "figure_type": "figure",
+            "figure_id": "fig_15",
+            "figure_caption": "Fig. 12 .12Fig. 12. Distribution of Artificial Intelligence research papers over the SDGs (Source: Palomares et al. [11]).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "13",
+            "figure_type": "figure",
+            "figure_id": "fig_16",
+            "figure_caption": "Fig. 13 .13Fig. 13. AI and CV for 3 SDG clusters of [4].",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "Equality, 6-Clean Water and Sanitation, 7-Affordable and Clean Energy\", 8-Decent Work and Economic Growth, 9-Industry, Innovation and Infrastructure, 10-Reduced Inequalities, 11-Sustainable Cities and Communities, 12-Responsible Consumption and Production, 13-Climate Action, 14-Life below Water, 15-Life on Land, 16-Peace, Justice and Strong Institutions, 17-Partnerships for the Goals. Goal targets are 169. Different SDGs clustering has been proposed by",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/METROXRAINE58569.2023.10405796"
+}

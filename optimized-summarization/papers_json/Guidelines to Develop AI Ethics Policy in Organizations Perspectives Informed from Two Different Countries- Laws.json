@@ -1,0 +1,708 @@
+{
+    "title": "Guidelines to develop AI ethics policy in Organizations: Perspectives informed from two different countries' laws",
+    "authors": "Ahmad Ghandour; Brendon J Woodford",
+    "pub_date": "",
+    "abstract": "This paper draws on actual attempts being made to develop and implement ethical frameworks and discusses AI regulatory approaches of two countries (United Arab Emirates and New Zealand) and provides recommendations for organizations developing their own AI ethics policies. These recommendations aim to address key ethical considerations related to the adoption and implementation of AI tools, including data protection and ownership, accountability and responsibility, error management, physical safety, societal harms, and economic implications.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "AI is increasingly developing and said to change our lives positively in many aspects. It is a comprehensive change at various levels, security, economic, social and others. In the last few decades, a lot of work and effort has been done for the sovereignty and intelligence of AI systems. Many proposals have been made to set standards on the \"levels of automation\" based on the application. While these applications are now challenging the morals of society and the laws, they are also jeopardizing the ethics of society.\nOn one hand, there have been ongoing efforts to theorize and study AI ethics across research communities in information systems, organization studies, legal studies, computer science, economics, philosophy, political science, and sociology. On the other hand, many countries around the world have already started a legislative process to throw a common regulatory net over a consequential emerging technology. The EU has recently released a comprehensive AI regulation which requires all providers and users of AI systems that process data about EU citizen irrespective of their location to comply [1].\nWhile there is no universally agreed definition for AI, it can be defined as a branch of computer science where computerized systems can be enabled to perform tasks that previously required human intellect. Profoundly put, AI is the process of simulating human intelligence through computer systems that are capable of thinking the same way the human brain works, learns, decide, and act [2].\nMore recently, the OECD defined AI as machine-based systems that generates predictions, recommendations or decisions. However this definition is now somewhat outdated as it does not include generative AI systems [3] . There is also the issue of whether the current definitions of AI encompasses recent complex systems which adopt deep learning to traditional rule-based expert systems which do not learn [4]. Given the complex nature of the issues in defining AI the OECD has provided a framework to assist policymakers to classifying AI systems [5].\nRegardless of the different definitions of AI there can be no doubt that AI have created situations that human beings have never dealt with before. It is gaining unprecedented levels of applications across various day-to-day activities in all sectors. Although AI would have additional benefits to organizations and individuals, it raises an array of ethical concerns that warrant addressing to enhance the chances of relaxing the expected goals. Further, government officials around the world now face challenges and choices regarding how to apply AI technology in their country.\nMany countries around the world are now investing strategically in their AI capabilities and many policy documents/strategies and future AI outlooks have been seen lately. The US government published report on the future of AI [6], European Union produced few policy documents the latest of which in 2019 is guidelines for trustworthy and explainable AI [1], European countries published reports and strategies, for example the UK [7] and France [8].\nTwo countries of interest that are also focusing on the impact, innovation, and investment in AI are The United Arab Emirates (UAE) and New Zealand (NZ). We selected New Zealand as one country since in 2019 an influential report on how AI could have a positive impact on the economy and society of the country was released by a Non-Governmental Organization (NGO) known as the AI Forum whose main objective is \"Harnessing the power of AI to enable a prosperous, inclusive and thriving future New Zealand.\" [9]. This report spurred the NZ Government to advance the design of ethical frameworks for understanding the impact of AI on NZ society and its economy. Recent initiatives for its regulatory bodies to define AI has resulted in policy that do not have a specific definition of AI but instead focus on the impact of using such technologies. This work has resulted in The New Zealand Algorithm Charter [10] which NZ Government agencies have adopted to carefully manage how algorithms are used. In addition, some NZ Government agencies have now provided advice on the use of Large Language Models (LLM)s and Generative AI which are informed by the objectives of the Algorithm Charter [11].\nThe UAE has adopted an approach to employ AI applications in its various service and infrastructure sectors. It is on the road to building an economy based on artificial intelligence to prepare for the post-oil era. A Minister of State for Artificial Intelligence was appointed (joined the Federal Government in October 2017 to improve government performance by investing and applying the latest technologies and tools of artificial intelligence in various fields of work). A strategy has been set up and AI platform has been created along with many initiatives that have been launched at national level. UAE aims to achieve a qualitative development in the overall performance at all levels by building an intelligent digital system that provides practical and fast solutions that are quality and efficient [12]. Similarly, in NZ, although there had been innovation and investment in AI, it is only within the past four years that a concerted effort to set up a national strategy [9].\nAlthough the UAE and NZ differ in population size, cultural, societal, governmental, and legislative dimensions, they have been both recently influenced by other major countries work in adopting AI technologies. This means we can compare and contrast the approaches taken in light of the framework we have used for our study.\nIn light of the rapid developments in the field of AI and its applications in both the UAE and NZ, many experts and policy makers demand the need to set limits through rules governing its work and ensure that its use in different sectors does not lead to negative consequences for humans or other systems. At the same time these rules should not stand as an obstacle to the development and innovations that develop on a daily basis [13].\nGranted there has already been work done in evaluating existing guidelines for ethical frameworks for the development of AI ethics policy in organisations [14]. But in this work it was found that the focus of these existing guidelines does not account for the \"hidden\" social and ecological costs of AI systems even though AI has been included in the conversation of systems for approaching a sustainable society [14]. Another finding was that none of these guidelines cover the issues with the relationship between research, industry and the objectives of the organization [14].\nGiven these shortcomings in the existing guidelines and the appetite of UAE and NZ to provide guidance on how organizations can better understand the ethical concerns raised by AI, this study aims to analyze the moral concerns brought forth by AI along five moral dimensions grounded with two national strategies for the purpose of not only drawing attention to such issues but also for developing AI ethics policies for organizations. Such research provides further insights strengthening the need for and the importance of what these issues are the study and future work in this space.\nFor this work we adopt the definition of AI from the European Union (EU) \"Artificial intelligence (AI) refers to systems that display intelligent behaviour by analysing their environment and taking actions -with some degree of autonomy -to achieve specific goals \" [15]. This definition includes the more traditional approaches adopted by governments to more advanced machine learning technologies such as deep learning but excludes rule-based systems which do not learn [4]. Additionally, this definition is broad enough to cover future developments.\nThis study is structured as follows: In Section II ethical issues raised by AI followed by the research design (guidance) in Section III. Section IV is where recommendations for companies and organizations have been posited followed by the limitation of the study. Finally, Section VI contains our conclusion.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b0",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b8",
+                "b12",
+                "b13",
+                "b13",
+                "b13",
+                "b14",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. ETHICAL ISSUES RAISED BY AI",
+            "text": "Ethics in its simple definition refers to the code that guides a person's actions and behavior, distinguishing between what is thought and believed as right or wrong. It is an inherent tenet in some societies and organizations while it is instilled through continuous education and observation of the same until it becomes a part of the system (Mason, 1986).\nAlthough AI has been in existence for decades, its recent applications that are being applied to business rules such as developing algorithms, autonomous vehicles, drones, and 3Ds technology are expanding rapidly. These applications are not only shaping businesses profoundly around the world but also many professions have been buffered by these applications. AI is having a profound impact on the way professions provide their services such as the practice of life sciences [16], healthcare [17], [18] and medicine [19] are increasingly applying AI to it. For example, the practices of law are applying solutions that are AI driven to help judicial decision-making [20], search functions, and contract review [21]. Recent advances in generative AI, like ChatGPT, are becoming more creative and powerful which has the potential not only to automate many jobs due to its ability to perform tasks that previously required human expertise, but also to increase customer satisfaction by responding quickly and accurately to customer concerns.\nWhile AI presents a wide range of benefits that make their use not exciting but overly rewarding, they have downsides that in some cases erode the rewards presented. AI is introducing changes that create new ethical issues for societies to debate and resolve. It has raised new possibilities for behavior for which law and rules of acceptable conduct have not yet been developed. These challenges posed by the ethical and social impact of AI raise several problems; specifically, the need to understand the moral risk of this new applications and the difficulty of establishing organizational ethics policies that address AI issues. Indeed, with the use of AI, pressure has increased to change the legal environment [22] to tighten regulation and reduce the standards adhered to by technology. As the AI environment becomes more sophisticated, the pressure to change the legal environment increases [23].\nHowever, regulation has proved incapable of keeping up with technology and the inconsistency between law and technology has created a gap between the theoretical legal framework and technical application. This would impede technical development as well as the emergence of negative practices that could harm both the consumer and the producer, from waiting for the outputs of the technical process then engaging in trying to apply legal rules to these outputs [24]. AI has opened the door to potential misuse and abuse which creates moral and ethical dilemmas that people are likely to face in their workplace [22]. These dilemmas are the need to understand the moral risk of new technology and the difficulty of establishing corporate ethics policies that address AI issues.",
+            "publication_ref": [
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b22",
+                "b23",
+                "b21"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. GUIDANCE",
+            "text": "As ethics prescribing what should and what should not be done, a set of guidelines deemed necessary to be employed for all stakeholders including developers and operators of AI technologies [25]. Other stakeholders such as policy makers and regulators have also their challenges and are in great demand for guidelines to create robust law, regulations, and policies to apply for AI technology. However, such guidelines as seen in the reports of most policies that concerns AI ethics rely on a number of ethical principles [26].\nLaudon and Laudon [27] identified five moral dimensions that corporations should use to develop a corporate ethics policy statement to guide individuals and to encourage appropriate decision making. The policy areas are: ",
+            "publication_ref": [
+                "b24",
+                "b25",
+                "b26"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Information rights and obligations",
+            "text": "This dimension discusses the possession and protection of data regulation. An individual and organization must focus on the information rights and find a way to protect the information. Both the organization and the individual have mutual interest in exchanging information and this type of data is being collected by the organization through the individual will. For example, if an individual is engaged in a transaction, the organization needs information about the individual to support the transactionboth are interested parties in the transaction. However, organizations have the right to collect such data from their customers only if they have systems in place to protect it and use it appropriately. Today's organizations are increasingly becoming dependent on AI systems to collect and protect data. Unfortunately, these systems collect information while customers do not know that their information is being collected. Of more concern is that customers' online behavior are analyzed to disclose all information about them including information that have never been revealed to anyone online [28].The vast amounts of data collected by AI system can be a threat to privacy. Without proper safeguards this data can be used for unauthorised purposes like targeted advertising, political manipulation, and identity theft.\nThe exacerbation of privacy externalities created by AI systems have raised widespread privacy concerns which have pushed the challenges to a whole new level. According to [29] violation of the private life of individuals in the age of technology are in many ways, some of our will, some of our ignorance, and others by force. This may entail the entry of information into the world of commerce, creating a market of its own, and growing numbers of people familiar with it, the good guys and the bad guys [30].\nAnother well-known problem is data security, AI systems can pave way for intruders to find new loopholes to hack into the system for malicious purposes. Information about individuals can be accessed, hacked and manipulated, which could destroy the future of many [31]. Thus, the dilemma in this AI era is the need for data to fuel databases which have the potential to be mined for a number of services with the protections that consumers are demanding. Informational privacy has become increasingly complex with the rise of AI while data protection is still a requirement. This is a call for the need for new privacy rules where policymakers need to craft new national privacy legislation that accounts for these numerous possible privacy breaches.\nThe UAE has no law regarding privacy rights, but some legislation is relevant to the matter. For example, Federal Law No.5 of 2012 article 21 states the use of electronic systems for invading one's privacy leads to legal consequences [32]. On the other hand, organizations have the right to collect data from their customers, but only if they have systems in place to protect it and use it appropriately. The Penal Code, specifically Article 378, ensures the protection of people's personal data from disclosure or interception [33]. Likewise, in NZ the 2020 Privacy Act does not directly reference AI but any organizations using personal data in the context of AI must comply with this Act including adhering to any discipline-specific codes of practice [34]. Therefore, in AI ethics, one major concern is the infringement of privacy rights, and this aspect remains pertinent for all users in all industry and government.",
+            "publication_ref": [
+                "b27",
+                "b28",
+                "b29",
+                "b30",
+                "b31",
+                "b32",
+                "b33"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Property rights and obligation",
+            "text": "This dimension discusses how will Intellectual Property (IP) rights be protected when AI application is being used in which tracing and accounting for ownership are difficult and ignoring such property rights is so easy. The use of AI techniques leads to a change in IP concepts in patents, designs, literary and artistic works, etc. Consequently, the rights and obligations that they entail should be defined. Companies and individuals are increasingly required to commit themselves to intellectual property rights and awareness of ethics in terms of patents, trademarks, industrial designs, and copyright, at an accelerated pace, and are becoming more complex. AI applications developers can copyright any newly written codes if they want to protect their IP in them. Nevertheless, AI software code can be different but leading to the same functionality. Thus, its patentability should be centered on how the developer designed the software to work. Additionally, AI functionality evolves with time. Hence, consideration to provide AI developers the most robust means of IP protection in terms of copyright, patent protection or even trade secrets will have to be made. Cautions, however, should be taken when algorithms are a trade secret which could be biased. This might require algorithms to be developed transparently to determine the ethical responsibility of those working in AI [35]. Moreover, AI is the intellectual agent that can already invent, create music and art, and even write books or at least short texts. The dilemma thus becomes if the AI agent can own IP like a person owning any other kind of possession. This would be true when the electronic person comes to exist.\nThe problem that UAE facing is determining how to ensure that these valuable IP rights are usable, and how to ensure that their value is preserved in the face of continued massive infringement. Some actions must ensure that IP should be implemented effectively and that rights cannot be ignored even if they are too expensive to enforce to meet the challenges. One of the main priorities is knowledge of the offender. Good evidence and clear intelligence on the damage caused by the infringement and business models that facilitate and benefit from it, are key to developing a robust methodology for measuring the damage caused by infringement of intellectual property [36].\nIn the UAE, a number of laws are applicable in case of property rights violations. The mentioned Federal Law No. 5 of 2012, or the Cyber Crimes Law, makes it illegal to access and misuse electronic information without the owner's permission, so this legislation can be important when dealing with stolen propriety information [32]. Therefore, individuals also have the obligation to ensure that such information is secure and inaccessible by cyber criminals. It is rather easy to lose important ownership information electronically. But what about AI-generated content itself? The most recent major review of New Zealand's Copyright Act of 1994 was in 2004 so it has not taken into account the availability of new digital services. Steps, however, are being taken to address this issue to make copyright law more robust and flexible. One confounding factor is that although there is a clause of the Copyright Act for \"computer generated works\" when it comes to AI-generated content it is not clear who would have ownership. Is it the programmers who are the authors or what if the new work was jointly created by multiple AI systems [37]. It is important, therefore, that there is more clarity incorporated into such acts.",
+            "publication_ref": [
+                "b34",
+                "b35",
+                "b31",
+                "b36"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Accountability and control",
+            "text": "This dimension discusses who can and will be held accountable and liable for the harm done to individual and collective information and property rights when AI applications are being used. As seen above, the line between humans and machines is not yet clear. Although humans create AI applications, these can operate independently and act autonomously, against the will of their creators, owners, or proprietors in ways that their creators could not have predicted. Thus complicating the task of determining responsibility [38]. AI is increasingly being used to make decisions that affect people's lives such as hiring, lending, and policing. If the algorithms used to make these decisions are flawed or biased, they can lead to unfair outcomes. For example, predictive policing algorithms have been criticised for reinforcing racial biases in the criminal justice system. The question becomes If an algorithm makes an autonomous decision and it is a bad one, then who is legally responsible? When a medical practitioner in a public hospital uses judgment of an AI-based system for diagnosis, who is liable if the diagnosis is incorrect? If a self-driving or autonomous vehicle is involved in an accident. Who should ultimately be held responsible? Can robots be held accountable for their unintended actions? Legal liability is an important issue for AI systems, especially when it comes to the public sector where the liability has no restrictions. Questions pertaining to liability should be answered from the outset to assess the viability of an AI project in a public organization. There should be a clear accountability structure that governs who is accountable for AI decisions in case of liability issues [39]. This structure requires theoretical grounds to for developing legislation [40], [41]. Karliuk [35] discussed the numerous options in terms of regulation based on AI can be regulated as: 1) items subject to copy right or as a property. In this case AI can be regulated as a special kind of ownership, namely animals. 2) Legal entity since it is an artificially constructed subject of the law. Hence, AI agents including robots can be given the status of a legal entity.\nHowever, these proposals of the law have not been unanimously agreed upon and applying it is still not clear as it is all based on analogy that creates risks of liability to AI inventors. There is no consensus but decisions around incidents happening around the world raising the question of who is ultimately liable. No single responsible individual or entity tends to be mixed, there is some shared responsibility and that will feed into this debate towards global standards. According to the European resolution, liability \"should be proportionate to the actual level of instructions given to the robot and to its degree of autonomy. Rules on liability could be complemented by a compulsory insurance scheme for robot users, and a compensation fund to pay out compensation in case no insurance policy covered the risk.\" [35].\nIn UAE, guidelines have been put forward by Smart Dubai Government Establishment to develop AI in a safe and ethical way. These guidelines are making the AI system accountable, explainable and transparent while all losses should not be attributed to the system itself [12]. Some measures to address these issues have been undertaken in New Zealand. For example, an amendment to financial services legislation which has yet to come into force has removed the requirement that only a natural person can give financial advice paving the way for robo-advisors in the financial services sector permissible subject to certain requirements [9]. However, although the New Zealand government is encouraging the testing of autonomous vehicles there is currently no specific legislation around the testing and operation of autonomous vehicles [9]. At present only guidelines from the New Zealand Ministry of Transport are in place . Furthermore, we are now in an era of AI-based recommendations and automated buying. For example, New Zealand's Consumers Guarantees Act 1993 and its Fair Trading Act 1986 have yet to be tested in court as to if they provide adequate protection to consumers [9].\nA recent report investigating New Zealand's Government's use of Artificial Intelligence which may also be applicable to organizations and companies has identified concerns around its use. The accuracy of the AI-based systems, to what degree the human should be \"in the loop\", transparency and a right to reasons/explanations, bias, fairness, and discrimination, and privacy [42], has been identified and informed by the EU GDPR.",
+            "publication_ref": [
+                "b37",
+                "b38",
+                "b39",
+                "b40",
+                "b34",
+                "b34",
+                "b11",
+                "b8",
+                "b8",
+                "b8",
+                "b41"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. System quality",
+            "text": "This dimension discusses the standards of data and system quality should we demand to protect individual rights and the safety of society when developing AI applications. AI applications and algorithms are made up of software codes which can have errors in them. Such malfunctions could have very real effect of people's lives as evidenced by may worldwide examples [43], [44], [45]. The problem arises when these malfunctions are subtle glitches that go unnoticed but have an adverse effect on these systems' users. To mitigate these risks one recommendation is that organizations adopt and adapt the lessons learnt from the aerospace and healthcare industries [46] where the response processes to harms are often formalized.\nMore importantly it should not be forgotten that AI systems are created by humans, who can be biased and governed. Systems could develop biases either inherently from their software or from the environments they are exposed to. Programmers can bequeath their bias into the codes they write and biased can be developed through the data sets on which the models are trained. Hashmi et al. [39], mentioned that AI programs are only as good as, the data we feed into them. If the information used to teach AI systems is biased, then the decisions made by the programs can also be biased. This means that if the data used to teach AI systems is flawed, then any outcomes that they generate may be discriminatory. For instance, if an AI program is taught using data that has implicit racial or gender biases, then it may make decisions that are biased as well.\nAI algorithms are only as reliable as the data that they are trained on. If the data used to teach an AI model is biased, then the model itself may also be biased, leading to unfair outcomes. For example, facial recognition technology has been found to have a higher error rate for people with dark skin, which is a major concern. Furthermore, most of the AI-based image creators have been trained using Western faces, making it challenging to create images resembling people from different regions.\nThe use of AI is becoming more common in making important decisions that impact people's lives, such as hiring, lending, and policing. However, if the algorithms used to make these decisions are flawed or biased, they can lead to unfair outcomes. For example, predictive policing algorithms have been criticized for reinforcing racial biases in the criminal justice system.\nIt is therefore imperative that data used for building AI systems should be unbiased and unconscious preferences of the AI designers should not seep into training data [47]. Satell and Sutton [48], think that the effect of bias cannot be eliminated but can be mitigated by making AI systems explainable, auditable, and transparent.\nIn UAE, such issues of AI have been recognized. For example, AI have been used for social profiling in education which have produced biased results. That has prompted the government to put algorithmic systems that are known to have biases under scrutiny.\nIn New Zealand there is already a law which has a provision for an individual's right to the reasons for a decision by an official governmental agency under Section 23 of the Official Information Act 1982. Predictive tools used by government must support meaningful explanations and in cases where the system is complex then the system must be augmented with an \"explanation system\" to generate understandable explanations [49], [42]. In addition, these algorithms must also be publicly inspectable even if purchased from outside vendors [42]. This requirement, however, could introduce ethical issues if the algorithms are a trade secret as shown in the previous dimensions.",
+            "publication_ref": [
+                "b42",
+                "b43",
+                "b44",
+                "b45",
+                "b38",
+                "b46",
+                "b47",
+                "b48",
+                "b41",
+                "b41"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Quality of life",
+            "text": "This dimension discusses the values that should be preserved when AI application is being used, the institutions should be protected from violation. And the cultural values and practices that are supported by AI and its application. AI systems have potential implications for the world and decrease the ability of humans to understand, predict and control their work. Most people underestimate the true level of automation of these systems, which have the ability to learn from their own experience and perform work beyond those intended by creators. This leads to a number of ethical issues and difficulties. If we rely on AI to move into a new world of work, safety and efficiency, we need to make sure that the machine works as planned, and that people cannot overcome it to use it for their own purposes. Although AI is capable of speed and processing capacity that far exceeds that of humans, it cannot always be trusted to be fair and neutral.\nAI has significant economic implications by increasing productivity by automation and replacing the workforce with robots and chat bots. This will lead to 1) Unemployment, many jobs will be operated by machines. 2) Inequality, wealth created by machines (AI-driven companies) will be distributed to fewer people. 3) Machines affecting human behavior and interaction and the limitations of relationships with robots [23]. A report investigating these and other issues as it pertains to New Zealand was published in 2021 and highlighted that when work hours are decreased with the introduction of such AI technologies that productivity does not suffer as a result. Moreover, it discussed direct effects on work and wellbeing may be enhanced with the careful and considered introduction of these AI technologies [50]. Some people use AI for massive manipulation by falsifying images, movies or sounds and expanding threats, vulnerabilities and potentially harmful and malicious uses through hacking and theft [51]. Many machine learning models are vulnerable to attack and AI systems can cause damage if used maliciously. Hence, cybersecurity is becoming more important. Damaged systems and loss of system security lead to the financial burden of companies or organizations on data protection because data breaches and data leaks that allocate individuals and businesses can be expensive and devastating for companies or organizations.\nFinally, the possible implementation of AI in the development of lethal Autonomous Weapons Systems (AWS) will raise an important ethical decision that will affect humanity. This issue has parallels with the use of nuclear weapons, chemical agents, and disease agents in warfare. In New Zealand this is an ongoing concern for its government. A survey of New Zealanders in 2021 indicated that although 15% of those surveyed had some understanding of AWS 72% of respondents were against using AWS as weapons of war. The main reasons stated were because of unreliability, morality, and unaccountability [52].",
+            "publication_ref": [
+                "b22",
+                "b49",
+                "b50",
+                "b51"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. RECOMMENDATIONS FOR COMPANIES AND ORGANIZATIONS",
+            "text": "Considering these previously discussed dimensions, we present four guidelines to AI ethics policy initially motivated by the AI Forum for New Zealand [9] but also informed by the aforementioned research elaborated in this paper for organizations and companies in a global context:\nA. Contribute to an external ethics committee.\nThe important lesson of Google's failed attempt at establishing an AI ethics committee [53] suggests that more external ethical oversight is warranted. The healthcare sector already has a long history of ethics committees and institutional review boards. Informed by the structure and governance of these ethics committees, organizations and companies should seek to form similar groups or at least have an ethics officer appointed to deal with ethical AI conduct issues. This way how new or existing AI systems are being used could be independently assessed according to established and mutually agreed-upon principles of AI ethics.",
+            "publication_ref": [
+                "b8",
+                "b52"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Compile ethical product reports",
+            "text": "Microsoft has taken the lead in planning to add an AI ethics checklist to recent product releases [54]. Other companies could do the same by mandating an ethical product report be written before the AI system is released. Microsoft has also made available Fairlearn, an open-source toolkit that can assess the fairness of AI systems for developers and data scientists to enable a trade-off between fairness and model performance [55].\nReports based on Fairlearn output should identify which groups of people might be negatively impacted by a model based on criteria such as \"sex\", \"age\", or \"disability status\". In addition, the comparison of multiple models in terms of their fairness and performance should be included to show the tradeoffs between them leading to the recommendation of a final model. These trade-offs would be informed by the objectives of the organization in combination with its code of ethics. The use of generalized additive models or Shapley additive values can also make the operation of AI systems transparent; the results of which can be added to such reports [56].",
+            "publication_ref": [
+                "b53",
+                "b54",
+                "b55"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Encourage ethical AI practitioners",
+            "text": "The human factor is an essential in the design and development of AI systems, so it is important to ensure that \"ethical behavior begins with ethical people\" [9]. Existing professional codes of conduct both internal and external to an organization or company could be augmented with ethical duties that directly address professionals that are involved in AI related professions. For example, the IEEE is but one organization that is involved reviewing its current code of ethics with respect to advancements in autonomous systems and AI [57]. Although its central focus is on Autonomous Weapons Systems with the expanding application domain of AI these recommendations should be extended to other types of AI systems. This would add to more consumers expecting certified or licensed conduct from these providers.\nTo enable the effective adoption of AI ethics policies there should be sufficient support for both senior and local management as well as the need for adequate training of employees in AI ethics policies [58].",
+            "publication_ref": [
+                "b8",
+                "b56",
+                "b57"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Develop practices for rigorous safety assessment of AI technologies",
+            "text": "The risk of harm caused by autonomous robotic systems has been well documented. There is also the concern of unexpected algorithm failure which can range from individuals losing money in a transaction to a pacemaker causing physical harm to a patient [59]. Examples of a self-driving Uber killing a pedestrian [60] and the more recent issue with the Boeing 737 MAX AI flight system malfunctioning [61] has highlighted the increased and immediate need for all companies to adopt safety assessments before releasing AI solutions. And as the AI Forum stresses, extra consideration must be given to AI technologies which affect populations rather than individuals [9]. The IEEE has also provided guidance on these and more issues. For example, to encourage designing for safety early in the AIsystem lifecycle and working to build a safe and secure infrastructure for development, testing and deployment of these types of systems [57].\nAlthough these four guidelines can be recommended to companies and organizations, which measures could be taken to enforce them? The use of audits by both internal and external parties can be undertaken which might also be the role of the external ethics committee [58]. It has also suggested that penalties ranging from fines to dismissal for not adhering to codes of ethics should be introduced [62].\nAs an example, one country that has adopted a pilot study for large companies to adopt its guidance for AI ethics principles is Australia. The learnings as a result of implementing these recommended ethics principles by large institutions or commercial entitles such as the National Bank of Australia and the telecommunications company Telstra has now provided a better understanding of how such AI ethics policies can be shaped [63].",
+            "publication_ref": [
+                "b58",
+                "b59",
+                "b60",
+                "b8",
+                "b56",
+                "b57",
+                "b61",
+                "b62"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. LIMITATION AND FURTHER STUDY",
+            "text": "It is important to mention that the above recommendations are abstract and cannot be universal, simply because of the boundary conditions set forth for this research and the specific local contexts which can make these recommendations difficult to carry out. Whether it is a guideline, or a code of ethics are contingent on the cultural context and our rights as human beings differ across contexts (nations, organizations, social situations) [64], [65]. Organizations in particular are notorious for being unable to perfectly implement institutionally prescribed models such as laws [66]. Given this, further enquiry is called for to identify what kinds of difficulties might corporations face while attempting to follow the mentioned recommendations. Further, the recommendations are about structures that might put in place to regulate corporations. A long history of study on organization members' attempts at decoupling what they say they are doing from what they actually do on the ground may be helpful in thinking through some of these issues [67], [68]. consequently, how these recommendations be effective at ensuring that corporations create ethical AI technologies is another further inquiry is called for.",
+            "publication_ref": [
+                "b63",
+                "b64",
+                "b65",
+                "b66",
+                "b67"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. CONCLUSION",
+            "text": "In this paper we covered actual attempts being made to develop and implement ethical frameworks in two countries. Specifically, our work focused on what initiatives The United Arab Emirates and New Zealand have for introducing AI regulatory approaches. We examined these initiatives through the lens of the five moral dimensions proposed by Laudon and Laudon [27]. Our findings showed that although both countries have demonstrated a level of maturity in establishing such regulations there is still much to be done in this area. Furthermore, informed by our findings, we presented recommendations for companies and organizations to develop their own ethics policies which were partially informed by what New Zealand and the United Arab Emirates are currently implementing.\nFuture work will involve investigating how recent work on the EU Artificial Intelligence Act [69] will further shape AI ethics policy for both companies and organizations.",
+            "publication_ref": [
+                "b26",
+                "b68"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Ethics guidelines for trustworthy AI",
+            "journal": "",
+            "year": "2019",
+            "authors": " "
+        },
+        {
+            "ref_id": "b1",
+            "title": "Artificial Intelligence: A Modern Approach",
+            "journal": "Pearson",
+            "year": "2020",
+            "authors": "S Russell; P Norvig"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Regulating ChatGPT and other Large Generative AI Models",
+            "journal": "",
+            "year": "2023",
+            "authors": "P Hacker; A Engel; M Mauer"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Rule-Based Expert Systems",
+            "journal": "Springer",
+            "year": "2011",
+            "authors": "C Grosan; A Abraham"
+        },
+        {
+            "ref_id": "b4",
+            "title": "OECD Framework for the Classification of AI systems",
+            "journal": "",
+            "year": "2022",
+            "authors": " Oecd"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Preparing For the Future of Artificial Intelligence",
+            "journal": "",
+            "year": "2016",
+            "authors": " United; J P States; M Holdren;  Smith"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Algorithms in Decision-Making",
+            "journal": "House of Commons Science and Technology Committee",
+            "year": "2018",
+            "authors": ""
+        },
+        {
+            "ref_id": "b7",
+            "title": "For a Meaningful Artificial Intelligence -Towards a French and European Strategy",
+            "journal": "",
+            "year": "2018",
+            "authors": "C\u00e9dric Villani"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Towards Our Intelligent Future -An AI Roadmap for New Zealand",
+            "journal": "",
+            "year": "2019",
+            "authors": " "
+        },
+        {
+            "ref_id": "b9",
+            "title": "Algorithm Charter for Aotearoa New Zealand",
+            "journal": "",
+            "year": "2020",
+            "authors": "New Zealand; Government "
+        },
+        {
+            "ref_id": "b10",
+            "title": "Initial advice on Generative Artificial Intelligence in the public service",
+            "journal": "",
+            "year": "2023",
+            "authors": "New Zealand; Government "
+        },
+        {
+            "ref_id": "b11",
+            "title": "AI Ethics Principles & Guidlines",
+            "journal": "",
+            "year": "2018",
+            "authors": "Smart Dubai"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Artificial Intelligence in the UAE: economic, legal and ethical considerations",
+            "journal": "",
+            "year": "",
+            "authors": "W Dino; G Ben"
+        },
+        {
+            "ref_id": "b13",
+            "title": "The Ethics of AI Ethics: An Evaluation of Guidelines",
+            "journal": "Minds and Machines",
+            "year": "2020-01-03",
+            "authors": "T Hagendorff"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Artificial Intelligence for Europe",
+            "journal": "European Union",
+            "year": "2018",
+            "authors": ""
+        },
+        {
+            "ref_id": "b15",
+            "title": "Introducing artificial intelligence in the life sciences",
+            "journal": "Artificial Intelligence in the Life Sciences",
+            "year": "",
+            "authors": "M Zheng; C H Andrade; J Bajorath"
+        },
+        {
+            "ref_id": "b16",
+            "title": "The potential for artificial intelligence in healthcare",
+            "journal": "Future healthcare journal",
+            "year": "2019",
+            "authors": "T Davenport; R Kalakota"
+        },
+        {
+            "ref_id": "b17",
+            "title": "The Potential for Artificial Intelligence in Healthcare",
+            "journal": "",
+            "year": "2020",
+            "authors": "J M Puaschunder"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Overview of artificial intelligence in medicine",
+            "journal": "Journal of family medicine and primary care",
+            "year": "2019",
+            "authors": "P M Amisha; M Pathania; V K Rathaur"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Judge v Robot?: Artificial intelligence and judicial decision-making",
+            "journal": "Law Journal",
+            "year": "2018",
+            "authors": "T Sourdin"
+        },
+        {
+            "ref_id": "b20",
+            "title": "The Art of Contract Drafting in the Age of Artificial Intelligence: A Comparative Study Based on US, UK and Austrian Law",
+            "journal": "",
+            "year": "2017",
+            "authors": "I Ng"
+        },
+        {
+            "ref_id": "b21",
+            "title": "The Cambridge handbook of artificial intelligence",
+            "journal": "",
+            "year": "2014",
+            "authors": "N Bostrom; E Yudkowsky"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Top 9 ethical issues in artificial intelligence",
+            "journal": "World Economic Forum",
+            "year": "",
+            "authors": "J Bossmann"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Why machine ethics?",
+            "journal": "IEEE Intelligent Systems",
+            "year": "2006",
+            "authors": "C Allen; W Wallach; I Smit"
+        },
+        {
+            "ref_id": "b24",
+            "title": "An ethical framework for guiding the development of affectively-aware artificial intelligence",
+            "journal": "",
+            "year": "2021-10-01",
+            "authors": "D C Ong"
+        },
+        {
+            "ref_id": "b25",
+            "title": "Ethics of artificial intelligence: Some ethical issues and regulatory challenges",
+            "journal": "Technology and Regulation",
+            "year": "2019",
+            "authors": "M Coeckelbergh"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Management information systems: managing the digital firm",
+            "journal": "Pearson",
+            "year": "2018",
+            "authors": "K C Laudon; J P Laudon"
+        },
+        {
+            "ref_id": "b27",
+            "title": "How to address new privacy issues raised by artificial intelligence and machine learning",
+            "journal": "",
+            "year": "2019",
+            "authors": "M Maccarthy"
+        },
+        {
+            "ref_id": "b28",
+            "title": "The challenge of protecting intellectual property",
+            "journal": "",
+            "year": "2016",
+            "authors": "B Neville-Rolfe"
+        },
+        {
+            "ref_id": "b29",
+            "title": "Privacy's Blueprint: The Battle to Control the Design of New Technologies",
+            "journal": "Kindle Edition",
+            "year": "2018",
+            "authors": "W Hartzog"
+        },
+        {
+            "ref_id": "b30",
+            "title": "MFDM\u2122: Ensuring Ethical AI Models in Enterprises",
+            "journal": "",
+            "year": "2020-02-12",
+            "authors": "P R Krishnan"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Data and privacy protection in the UAE",
+            "journal": "",
+            "year": "2019-10-20",
+            "authors": "Uae Government"
+        },
+        {
+            "ref_id": "b32",
+            "title": "National Program for Artificial Intelligence",
+            "journal": "",
+            "year": "2019-10-20",
+            "authors": "Uae Government"
+        },
+        {
+            "ref_id": "b33",
+            "title": "New Zealand Privacy Act",
+            "journal": "",
+            "year": "2021-04-24",
+            "authors": "New Zealand; Government "
+        },
+        {
+            "ref_id": "b34",
+            "title": "The Ethical and Legal Issues of Artificial Intelligence. Modern Diplomacy",
+            "journal": "",
+            "year": "2018",
+            "authors": "M Karliuk"
+        },
+        {
+            "ref_id": "b35",
+            "title": "Ethics in artificial intelligence: introduction to the special issue",
+            "journal": "Ethics and Information Technology, journal article",
+            "year": "2018-03-01",
+            "authors": "V Dignum"
+        },
+        {
+            "ref_id": "b36",
+            "title": "WIPO Conversation on Intellectual Property (IP) and Artificial Intelligence (AI)",
+            "journal": "",
+            "year": "2021",
+            "authors": "S Flynn"
+        },
+        {
+            "ref_id": "b37",
+            "title": "The liability problem for autonomous artificial agents",
+            "journal": "",
+            "year": "2016",
+            "authors": "P M Asaro"
+        },
+        {
+            "ref_id": "b38",
+            "title": "AI Ethics: The Next Big Thing In Government",
+            "journal": "",
+            "year": "2019",
+            "authors": "A Hashmi; R Lalwani; A C Perricos; V Clemancon"
+        },
+        {
+            "ref_id": "b39",
+            "title": "On Certain Issues Regarding the Theoretical Grounds for Developing Legislation on Robotics: Aspects of Will and Legal Personality",
+            "journal": "Zakon",
+            "year": "2017",
+            "authors": "V Arkhipov; V Naumov"
+        },
+        {
+            "ref_id": "b40",
+            "title": "Theoretical Foundations for the Responsibility of Autonomous Agents",
+            "journal": "Artificial Intelligence Law",
+            "year": "2017",
+            "authors": "J Hage"
+        },
+        {
+            "ref_id": "b41",
+            "title": "Government Use of Artificial Intelligence in New Zealand",
+            "journal": "",
+            "year": "2019",
+            "authors": "A I Forum"
+        },
+        {
+            "ref_id": "b42",
+            "title": "Dow Jones said that Google was buying Apple, and the bots bought it",
+            "journal": "",
+            "year": "2017",
+            "authors": "J Mannes"
+        },
+        {
+            "ref_id": "b43",
+            "title": "Twitter taught Microsoft's AI chatbot to be a racist asshole in less than a day",
+            "journal": "",
+            "year": "2016",
+            "authors": "J Vincent"
+        },
+        {
+            "ref_id": "b44",
+            "title": "Apple's credit card is being investigated for discriminating against women",
+            "journal": "",
+            "year": "2019",
+            "authors": "J Vincent"
+        },
+        {
+            "ref_id": "b45",
+            "title": "How to Use Data to Improve Quality and Patient Safety",
+            "journal": "",
+            "year": "2017",
+            "authors": "S Pestotnik"
+        },
+        {
+            "ref_id": "b46",
+            "title": "Millions of black people affected by racial bias in health-care algorithms",
+            "journal": "Nature",
+            "year": "2019",
+            "authors": "H Ledford"
+        },
+        {
+            "ref_id": "b47",
+            "title": "We Need AI That Is Explainable, Auditable, and Transparent",
+            "journal": "Harvard Business Review (Technology)",
+            "year": "2019",
+            "authors": "G Satell; J Sutton"
+        },
+        {
+            "ref_id": "b48",
+            "title": "",
+            "journal": "Algorithm Assessment Report. Retrieved from",
+            "year": "2018-10",
+            "authors": " Govt Data;  Nz"
+        },
+        {
+            "ref_id": "b49",
+            "title": "The Impact of Artificial Intelligence on Jobs and Work in New Zealand (Commissioned Report for External Body). University of Otago",
+            "journal": "",
+            "year": "2021",
+            "authors": "C Gavaghan; A Knott; J Maclaurin"
+        },
+        {
+            "ref_id": "b50",
+            "title": "Determining authenticity of video evidence in the age of artificial intelligence and in the wake of Deepfake videos",
+            "journal": "The International Journal of Evidence & Proof",
+            "year": "2019",
+            "authors": "M.-H Maras; A Alexandrou"
+        },
+        {
+            "ref_id": "b51",
+            "title": "Autonomous Weapons Systems Survey",
+            "journal": "",
+            "year": "2021-10-08",
+            "authors": "New Zealand; Government "
+        },
+        {
+            "ref_id": "b52",
+            "title": "Hey Google, sorry you lost your ethics council, so we made one for you",
+            "journal": "MIT Technology Review Retreived",
+            "year": "2019",
+            "authors": "B Johnson; G Lichfield"
+        },
+        {
+            "ref_id": "b53",
+            "title": "Let's take a look",
+            "journal": "",
+            "year": "2020",
+            "authors": "J Kobielus"
+        },
+        {
+            "ref_id": "b54",
+            "title": "Fairlearn: Assessing and Improving Fairness of AI Systems",
+            "journal": "Journal of Machine Learning Research",
+            "year": "2023",
+            "authors": "H Weerts; M Dudi-K; R Edgar; A Jalal; R Lutz; M Madaio"
+        },
+        {
+            "ref_id": "b55",
+            "title": "A unified approach to interpreting model predictions",
+            "journal": "",
+            "year": "2017",
+            "authors": "S M Lundberg; S.-I Lee"
+        },
+        {
+            "ref_id": "b56",
+            "title": "The IEEE global initiative on ethics of autonomous and intelligent systems",
+            "journal": "Springer",
+            "year": "2019",
+            "authors": "R Chatila; J C Havens"
+        },
+        {
+            "ref_id": "b57",
+            "title": "Employee Perceptions of the Effective Adoption of AI Principles",
+            "journal": "Journal of Business Ethics",
+            "year": "2022-01",
+            "authors": "S Kelley"
+        },
+        {
+            "ref_id": "b58",
+            "title": "Sudden death in patients with cardiac implantable electronic devices",
+            "journal": "JAMA internal medicine",
+            "year": "2015",
+            "authors": "Z H Tseng"
+        },
+        {
+            "ref_id": "b59",
+            "title": "Safety driver charged in 2018 incident where self-driving Uber car killed a woman",
+            "journal": "",
+            "year": "2021-09-24",
+            "authors": "S Levin"
+        },
+        {
+            "ref_id": "b60",
+            "title": "Psychological Safety in Aviation New Product Development Teams: Case Study of 737 MAX Airplane",
+            "journal": "Sustainability",
+            "year": "2020",
+            "authors": "M Naor; N Adler; G D Pinto; A Dumanis"
+        },
+        {
+            "ref_id": "b61",
+            "title": "Determinants of the Effectiveness of Corporate Codes of Ethics: An Empirical Study",
+            "journal": "Journal of Business Ethics",
+            "year": "2011-01",
+            "authors": "J B Singh"
+        },
+        {
+            "ref_id": "b62",
+            "title": "Testing the AI Ethics Principles",
+            "journal": "",
+            "year": "2023-11-06",
+            "authors": "Australian Government"
+        },
+        {
+            "ref_id": "b63",
+            "title": "The new sociology of morality",
+            "journal": "Annual Review of Sociology",
+            "year": "2013",
+            "authors": "S Hitlin; S Vaisey"
+        },
+        {
+            "ref_id": "b64",
+            "title": "Management and Morality/Ethics-The Elusive Corporate Morals",
+            "journal": "Oxford University Press",
+            "year": "2016",
+            "authors": "M Anteby; C Anderson"
+        },
+        {
+            "ref_id": "b65",
+            "title": "Gifts, donations, and loose coupling: responses to changes in academic entrepreneurship among bioscientists in Japan",
+            "journal": "Theory and Society",
+            "year": "2015",
+            "authors": "N Kameo"
+        },
+        {
+            "ref_id": "b66",
+            "title": "Institutionalized organizations: Formal structures as myth and ceremony",
+            "journal": "American journal of sociology",
+            "year": "1977",
+            "authors": "J W Meyer; B Rowan"
+        },
+        {
+            "ref_id": "b67",
+            "title": "From smoke and mirrors to walking the talk: Decoupling in the contemporary world",
+            "journal": "Academy of Management annals",
+            "year": "2012",
+            "authors": "P Bromley; W W Powell"
+        },
+        {
+            "ref_id": "b68",
+            "title": "Laying Down Harmonised Rules On Artificial Intelligence (Artificial Intelligence Act)",
+            "journal": "",
+            "year": "2021",
+            "authors": " "
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "1 .1Information rights and obligations 2. Property rights and obligations 3. Accountability and control 4. System quality 5. Quality of life",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ACIT58888.2023.10453750"
+}

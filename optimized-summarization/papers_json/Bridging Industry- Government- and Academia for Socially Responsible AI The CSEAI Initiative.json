@@ -1,0 +1,73 @@
+{
+    "title": "Bridging Industry, Government, and Academia for Socially Responsible AI: The CSEAI Initiative",
+    "authors": "Pablo Rivas; Jorge Ortiz; Daniel A D\u00edaz-Pach\u00f3n; Laura N Montoya",
+    "pub_date": "",
+    "abstract": "The mission of the Center for Standards and Ethics in Artificial Intelligence (CSEAI) is to promote safe, effective, and ethical AI standards through research, outreach, and education in partnership with industry and government. We briefly discuss CSEAI's workforce development plan, including mentoring undergraduate and graduate students and providing continuing education for industry professionals. The CSEAI aims to facilitate the production of standardized, ethical AI products that are safe for users and promote diversity in the field. By underscoring the importance of socially responsible innovation and ethical standards in AI, we show the CSEAI's aims to protect consumers and increase trust in responsible AI products and services.",
+    "sections": [
+        {
+            "heading": "I. PURPOSE AND ARGUMENT",
+            "text": "Various regulatory groups have recently produced critical standards for artificial intelligence (AI) ethics [1]- [3]; however, the number of standards currently in production is unprecedented. Furthermore, the probability that such standards will become recommended practice is very high [4]. Moreover, the rise of AI-enabled technologies in practically every industry has created a pressing need for socially responsible innovation. The CSEAI aims to address this need by advancing research in AI protocols, procedures, and technologies that enable the design, implementation, and adoption of safe, effective, and ethical AI standards. Through education and outreach, the CSEAI seeks to promote the adoption of these standards in industry and government, ultimately increasing trustworthiness in AI products and services. By recruiting, training, and mentoring undergraduates, graduate students, and postdocs from diverse backgrounds, the CSEAI will also produce a diverse workforce trained in responsible AI. The CSEAI's focus on bias mitigation, fairness evaluation, and product safety through AI-guided adversarial attacks demonstrates the center's commitment to responsible, equitable, traceable, reliable, and governable development of AI-fueled technologies. These initiatives align with the conference theme, showcasing the CSEAI's dedication to promoting ethical practices in AI and advancing socially responsible innovation.",
+            "publication_ref": [
+                "b0",
+                "b2",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. ALIGNMENT WITH ETHICS-2023",
+            "text": "The CSEAI's initiatives align with the Ethics in the Global Innovation Helix conference theme by promoting adopting ethical practices in AI. The center's research in AI protocols, procedures, technologies, and standard readiness, along with its education and outreach initiatives, demonstrates its commitment to society. The CSEAI's focus on bias mitigation and fairness evaluation metrics aligns with the conference theme from a global perspective. It showcases the center's dedication to responsible, equitable, traceable, and reliable AI.\nThe CSEAI promotes the adoption of safe, effective, and ethical AI standards in industry and government. The center's workforce development plan, which includes undergraduate and graduate student research mentoring and industry professionals continuing education, also aligns with the subtheme, as it ensures that a diverse workforce is trained in standardized and ethical AI. The CSEAI's focus on assessing products' sensitivity to AI-guided adversarial attacks further aligns with the subtheme. It highlights the center's dedication to producing safe, trustworthy AI products and services.\nThe CSEAI, www.cseai.center, led by Baylor University, is partnered with Rutgers University and the University of Miami. The CSEAI investigators enable fundamental research on challenges associated with the responsible, equitable, traceable, reliable, and governable development of AI-fueled tech.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. CONCLUSION",
+            "text": "The Center for Standards and Ethics in Artificial Intelligence initiative promotes socially responsible innovation through education, outreach, and research. The CSEAI is dedicated to promoting ethical AI practices and advancing socially responsible innovation. By promoting the adoption of safe, effective, and ethical AI standards in industry and government, the CSEAI is increasing trustworthiness in AI products and services, ultimately benefiting society as a whole.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "ACKNOWLEDGMENT",
+            "text": "This work is funded by the NSF under grant CNS-2136961.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Ieee p70xx, establishing standards for ethical technology",
+            "journal": "",
+            "year": "2018-08",
+            "authors": "A Koene; A L Smith; T Egawa; S Mandalh; Y Hatada"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Ieee p7003\u2122 standard for algorithmic bias considerations: work in progress paper",
+            "journal": "",
+            "year": "2018",
+            "authors": "A Koene; L Dowthwaite; S Seth"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Standardizing ethical design for artificial intelligence and autonomous systems",
+            "journal": "Computer",
+            "year": "2017",
+            "authors": "J Bryson; A Winfield"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Authorized licensed use limited to: Kennesaw State University",
+            "journal": "",
+            "year": "2005",
+            "authors": "D Kerwer"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1109/ETHICS57328.2023.10155071"
+}

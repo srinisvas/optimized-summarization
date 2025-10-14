@@ -1,0 +1,1291 @@
+{
+    "title": "Robust and Secure Federated Learning With Verifiable Differential Privacy",
+    "authors": "Chushan Zhang; Jian Weng; Jiasi Weng; Yijian Zhong; Jia-Nan Liu; Cunle Deng; Jian Weng",
+    "pub_date": "",
+    "abstract": "Federated Learning (FL) has emerged as a popular paradigm for training machine learning models on data from multiple sources without the need for data to leave their respective locations. Although FL is widely used, recent research indicates its vulnerability to data privacy breaches and Byzantine attacks. Addressing both threats simultaneously remains challenging, as previous defense mechanisms struggle to balance Byzantine resilience, data privacy, and training accuracy. Although combining Differential Privacy (DP) with Byzantine-resilience in FL offers potential solutions, it presents challenges due to theoretical incompatibilities that can impact the performance of large-scale models. Addressing this underexplored challenge, we propose a novel approach that enhances privacy and Byzantine-resilient in FL while maintaining training accuracy. Our method integrates DP with Byzantine-resilience techniques, overcoming the limitations of existing methods that often sacrifice accuracy or even Byzantine resistance. Our experiments carefully analyze the impact of DP noise on training accuracy and Byzantine-resilience, guiding appropriate parameter selection. The experimental results demonstrate that our approach achieves superior global model accuracy compared",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "a S AN emerging distributed machine learning paradigm, fed- erated learning (FL) has garnered significant attention from both academia and industry. In FL, users independently train their own local models using their private data, and subsequently submit these local models to a central server. Next, the server aggregates these local models to form a new global model, which is then sent back to the users for further local training. This iterative process continues until the global model reaches convergence [1]. Importantly, throughout this process, the users are not required to share their private data with the central server.\nHowever, recent studies have highlighted several privacy and security threats faced by FL, including gradient-based data inference attacks [2], [3], [4], [5], model poisoning and backdoor attacks [6], [7], [8], [9], [10]. First, adversaries can exploit membership inference attacks (MIA) to infer sensitive local information, thereby compromising data privacy [2], [3]. Second, the inherently non-independent and identically distributed (non-IID) nature of local datasets in FL often leads to significant bias variations in local models. Given that these biased local models directly influence the global model, malicious actors may leverage this vulnerability to launch Byzantine attacks, such as poisoning the global model [8], [11] or injecting backdoors into it [6].\nTo address privacy leakage, prior works [12], [13], [14], [15], [16] have focused on implementing secure aggregation (SA) algorithms using secure multiparty computation (MPC) techniques to preserve the privacy of local models and ensure lossless aggregation; however, continuous exposure to global models still poses risks of local privacy leakage [4], [5], [17], [18]. Thus, there is a critical need to preserve the global model's privacy throughout each round, employing methods like Homomorphic Encryption (HE) [19], [20], [21] and Differential Privacy (DP) [5], [19], [22], [23], [24], [25], [26]. Although promising, HE remains nascent when it comes to preserving the global model. DP, in particular, is gaining favor due to its ability to add noise to local updates, making it challenging for adversaries to extract sensitive information. Despite its effectiveness, DP's noise injection can potentially reduce model accuracy.\nThe combination of DP and SA offers a promising approach to balancing model utility and privacy, as demonstrated in recent works [22], [25], [27].\nIn parallel, defenses against Byzantine attacks have primarily focused on Byzantine-resilient (BR) methods, which aim to tolerate and mitigate the impact of maliciously altered model updates [28], [29], [30]. To simultaneously address the threats of Byzantine attacks and privacy inference attacks in FL, many works combine BR methods with privacy protection methods [16], [30], [31]. As mentioned above, combining DP with SA is a comparatively effective method for protecting privacy. Combining DP with BR in FL offers a potential solution. However, the previous approaches for achieving DP and BR are incompatible, as demonstrated by Guerraoui et al. [32]. Specifically, the theoretical conflict arises from the interference between DP noise and BR detection mechanisms. For example, directly superimposing DP noise blurs gradient directions (e.g., invalidating cosine similarity-based detection), which could cause BR methods to misclassify benign updates as malicious (false positives) or fail to detect carefully crafted Byzantine gradients (false negatives). They further found that directly combining DP and BR techniques causes the guarantees of the distributed SGD algorithm to depend unfavorably on model size. This makes the training of large-scale models practically infeasible. Our work addresses the challenge: how to combine the properties of DP and BR while maintaining the global model quality as much as possible?\nTo address the incompatibility between privacy and robustness in FL, we introduce secondary servers between users and the central aggregator. Unlike prior methods that burden users or the aggregator with both tasks, our design decouples responsibilities: secondary servers first validate model updates via Byzantine detection using MPC, then aggregate the validated updates with verifiable DP noise. This sequential approach ensures robust aggregation is performed on clean data before noise injection, which is crucial because BR mechanisms depend on precise gradient statistics. DP noise, if injected prematurely, could distort these statistics. Additionally, noise levels can be minimized once malicious updates are filtered out.\nBuilding on this architecture, our scheme separates robustness evaluation from privacy preservation by employing secret sharing-based secure aggregation to protect local model privacy while applying DP mechanisms only to the global model. This separation reduces overall noise and enhances accuracy, overcoming limitations of methods that directly combine DP and BR.\nWe also propose a Noise-Immune Shamir Secret Sharing protocol that enables verifiable noise addition while ensuring correct secret reconstruction-a feat traditional Shamir schemes cannot achieve under noisy conditions. By isolating and integrating DP and BR components, our framework optimally balances privacy, robustness, and model utility. Experimental results show that our approach effectively defends against Byzantine and privacy inference attacks while improving convergence and overall performance, making it a promising solution for secure and scalable federated learning.\nWe highlight our contributions as follows:\nr A novel FL architecture with intermediary secondary servers that decouple Byzantine resilience from differential privacy. This is the first framework enabling both verifiable DP and BR without mutual interference. ",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b8",
+                "b9",
+                "b10",
+                "b1",
+                "b2",
+                "b8",
+                "b11",
+                "b5",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b3",
+                "b4",
+                "b17",
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b4",
+                "b19",
+                "b22",
+                "b23",
+                "b24",
+                "b25",
+                "b26",
+                "b22",
+                "b25",
+                "b27",
+                "b28",
+                "b29",
+                "b30",
+                "b16",
+                "b30",
+                "b31",
+                "b32"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORKS",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Byzantine Resilient FL",
+            "text": "To defend against poisoning attacks, which encompass both data poisoning and model poisoning, several BR schemes have been proposed [27], [28], [29], [33], [34], [35]. Yin et al. proposed an assumption based on the statistical differentiation between honest and Byzantine models, which led to the design of a robust federated aggregation algorithm known as Krum [28]. Dong et al. proposed the \u03a0 P2BROFL protocol, which combined the Shuffle protocol with a malicious Top-K strategy. This enhanced the Multi-Krum protocol's resistance to poisoning attacks, limiting the model accuracy drop to a mere 1.05% even when up to 50% of users were malicious [28]. Tang et al. [36] introduced PILE, which utilized zero-knowledge proofs (ZKPs) to verify dummy model gradients without decryption. However, PILE is designed to defend against model poisoning attacks but not data poisoning, as it does not validate local datasets. These works comprehensively analyzed poisoning attacks from diverse perspectives and, recognizing their unique characteristics, devised a variety of potent defenses accordingly. In this work, we adopt norm-based [37] and cosine similarity-based [29] BR methods for easy implementation on MPC circuits.",
+            "publication_ref": [
+                "b27",
+                "b28",
+                "b29",
+                "b33",
+                "b34",
+                "b35",
+                "b28",
+                "b28",
+                "b36",
+                "b37",
+                "b29"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Privacy Preserving FL",
+            "text": "Currently, numerous privacy-preserving mechanisms are employed to counter privacy leakage in FL, which can be broadly categorized into cryptographic primitives [12], [14], [21] and DP techniques [23], [25], [38]. Bonawitz et al. [12] devised a practical SA algorithm, SecAgg, based on threshold Shamir secret sharing. This algorithm efficiently safeguards the privacy of local models against honest-but-curious servers. Given that SA cannot ensure the global model remains secret throughout the training process in FL, and considering the immaturity of homomorphic encryption (HE) for this purpose, DP remains the widely recognized method for preserving privacy in FL.\nTo balance the global model accuracy and privacy utility in DP-based FL, some studies aim to integrate the properties of SA and DP [23], [38]. SA preserves the privacy of local models and ensures lossless aggregation, while DP preserves the privacy of the global model but may decrease accuracy. Kairouz et al. [23] analyzed the attributes of the discrete Gaussian mechanism for differential privacy, highlighting that the sum of multiple discrete Gaussian noises approximates a discrete Gaussian distribution. Leveraging this characteristic, they have integrated SA with DP, outlining an interpretable and manageable federated secure aggregation scheme that achieves 1  2 \u03b5 2 -concentrated DP for the global model, demonstrating a mean squared error bound of O( c 2 d \u03b5 2 ). Building on this work, Chen et al. [38] employed the Johnson-Lindenstrauss lemma to implement sparse random projections and counting sketches, which reduced vector dimensions and information redundancy to enhance data privacy protection. However, these works predominantly assumed semihonest FL users, failing to account for the possibility that, in realworld scenarios, malicious adversaries might tamper with the global model parameters by introducing fraudulent noise. This vulnerability potentially heightens the risk of privacy breaches for honest users. To address this vulnerability, we introduce verifiable differential privacy as a safeguard in our work.",
+            "publication_ref": [
+                "b12",
+                "b14",
+                "b21",
+                "b23",
+                "b25",
+                "b38",
+                "b12",
+                "b23",
+                "b38",
+                "b23",
+                "b38"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Byzantine Resilient and Privacy Preserving FL",
+            "text": "In pursuit of combining BR with privacy preservation methods, many works have achieved comprehensive BR technologies employing MPC circuits [16], [30], [31], [39]. Corrigan et al. introduced Prio [39], which employed Shamir secret sharing to implement a generic validation circuit named SNIP. Building upon Prio, Roy et al. proposed EIFFeL [16], enhancing it with homomorphic commitment technology as a defense against malicious adversaries. However, they did not consider the risk of privacy leakage from the global model. Zhou et al. [27] formulated a dynamic differential privacy protocol aiming to strike a balance between privacy preservation and model utility, while also integrating Byzantine-resilient methods to repel malicious poisoning attacks. Nonetheless, it might not have fully optimized model accuracy, given that the dynamic DP protocol prioritized establishing a minimum level of DP noise, potentially sacrificing model performance. Moreover, their work did not account for the possibility that the adversary could have corrupted FL training by falsifying the size of the noise. When evaluating FL in terms of privacy preservation, model utility, and defense against malicious attacks, it becomes clear that current methods often excel in one or two of these areas but have not yet achieved an ideal balance across all three.",
+            "publication_ref": [
+                "b16",
+                "b30",
+                "b31",
+                "b39",
+                "b39",
+                "b16",
+                "b27"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. PRELIMINARIES",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Notations",
+            "text": "In this section, we provide a summary of the key symbols used throughout this paper. TABLE I lists the important notations, along with their definitions, to facilitate understanding of the formulas and concepts presented in the subsequent sections.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Federated Learning",
+            "text": "Federated Learning (FL) is distinguished into two primary categories: Cross-silo FL and Cross-device FL [40]. In this work, we particularly focus on the Cross-device FL. The workflow of FL generally adheres to the following steps:  \nw = u\u2208U q u \u2022 w u , (1\n)\nwhere w u is the vector of the local model parameters of the user u, and q u is their weight, determined by the size of the user's dataset. And q u is published to all the participants. 5) Round until Convergence: Steps 2 through 4 are repeated over multiple communication rounds until the global model converges to a satisfactory performance level or until predefined stopping criteria are met.",
+            "publication_ref": [
+                "b40"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Pedersen's Verifiable Secret Sharing",
+            "text": "Pedersen's Verifiable Secret Sharing (VSS) [41] enhances Shamir's threshold secret sharing by adding verification steps that ensure the correctness and authenticity of the distributed secret. Informally, \u03a0 pvss is the Pedersen's VSS protocol involving five algorithms.\nr Ped.Setup(n, \u03bb) \u2192 pp = (p, q, g, h, t): Given the num- ber of participants n and the security parameter \u03bb, this algorithm products the public parameters pp, which its general process is as follows: -Generates public parameters including two large primes p and q (with q dividing p -1, forming the finite field Z p ). -Chooses two generators g and h for the subgroup G q . -Sets the threshold t which defines the minimum number of shares required to reconstruct the secret.\nr Ped.Com(v, r) \u2192 c: This algorithm creates a commit- ment c to a message v \u2208 Z q and randomness r \u2208 Z q . The commitment scheme used is based on the discrete logarithm problem, ensuring that the commitment is binding and hiding. It also verifies the correctness of the reconstructed secret through the commitments cs and outputs a boolean value b \u2208 {0, 1} to confirm the integrity of the secret. Pedersen's VSS has an additive homomorphic property. This property allows it to integrate seamlessly with tools like Beaver triples for MPC. Pedersen's VSS also provides robust protection against passive adversaries and defends against active adversaries who try to steal or disrupt the secret. This ensures both the confidentiality and integrity of the secret. Typically, we set the threshold t as n/3 \u2264 t \u2264 n/2 [42] to maintain system robustness even when some participants are dishonest.",
+            "publication_ref": [
+                "b41",
+                "b42"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Verifiable Differential Privacy",
+            "text": "Verifiable differential privacy ensures the randomness and unbiasedness of noise in untrusted environments. Approaches like VerDP [43], which uses the Fuzz query language, and DPrio [44], which integrates differential privacy into share distribution based on Prio, address this need. Biswas et al. [45] enhanced the approach to prevent active adversaries using the \u03a3-Protocol, and proved the impossibility of perfect verification with unlimited computational power. We adopt and revise the approach of Biswas et al. [45] in this work. The protocol requires the prover s and verifier A to negotiate and sum verifiable random coins to achieve verifiable Binomial DP through the following steps.\nr Setup: The provers and verifier generate public parameters.\nThe client sending an additive share of its secret value to the prover and the commitment of the share to the verifier.\nr Generate private coins: The prover s samples private bits b s,j , j \u2208 [n b ] and sends their commitment c s,j = Ped.Com(b s,j , r s,j ) to the verifier.\nr Check the update from the prover: The verifier checks the commitments c s,j from the prover using an oracle O OR .\nr Generate public coins: If the checks pass, both parties obtain public random and unbiased bits v s,j using an oracle O Morra .\nr Obtain the verifiable noise: The prover XORs the private and public coins to obtain the verifiable noise v s :\nv s = n b j=1 (b s,j \u2295 v s,j ) , r s = n b j=1 (-1) v s,j r s,j . (2)\nAnd the verifier calculates the commitment c s of the noise:\nc s = n b j=1 Ped.Com(1, 0) * c -1 s,j , If v s,j = 1; c s,j , Otherwise.(3)\nIn the above protocol, the verifier ensures the integrity of the noise using commitment c s , while the prover keeps the privacy of the noise with random number r s . This protocol involves two oracles. First, the oracle O OR confirms that c s,j indeed commits to the secret b s,j , which must be either 0 or 1. However, it suffers from a security vulnerability due to its use of two incompatible \u03a3-protocols in verification, potentially allowing adversaries to steal the secret b s,j by analyzing verification messages (details can be found in [45]). Second, the oracle O Morra is responsible for generating unbiased public coins but incurs a high communication cost.\nTo address these concerns, we improve the above two oracles as follows:\nr Verification employs the secure protocol \u03a0 OR [46] rather than the vulnerable O OR , which is based on the property that\nx(x -1) = 0 \u21d0\u21d2 x \u2208 {0, 1}.\nr Under the semi-honest assumption about the aggregator, public coins can be directly generated by the aggregator and distributed to secondary servers, thereby reducing communication costs.",
+            "publication_ref": [
+                "b43",
+                "b44",
+                "b45",
+                "b45",
+                "b45",
+                "b46"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. SYSTEM MODEL",
+            "text": "Fig. 1 illustrates our DPSFL scheme with three entities: Users, Secondary Servers, and an Aggregator. Unlike traditional FL systems with only users and a central aggregator, the introduction of secondary servers is essential for ensuring both privacy and Byzantine resilience. We conduct a theoretical analysis of the necessity of secondary servers in Section VI-A.\nAuthorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:38:37 UTC from IEEE Xplore. Restrictions apply. adding the negotiated DP noise, and forwarding the resulting noisy aggregated share to the aggregator. Aggregator (A): Its tasks are as follows: 1) Verification: Checks the correctness of both the verifiable DP noise and the robustness evaluation carried out by the secondary servers. 2) Global Model Reconstruction: Verifies the received noisy shares (using commitments for both the shares and the noise) and reconstruct the noisy aggregate, which is used as the updated global model. We consider a scenario where a malicious adversary may control a subset of users and a limited number of secondary servers, while the aggregator is assumed to be honest-butcurious. Specifically, we assume that:\n1) Malicious Users: Users may attempt to poison the model, manipulate updates, or collude with Secondary Servers. 2) Compromised Secondary Servers: A fraction of secondary servers (fewer than t in quantity) may attempt to distort the robustness evaluation or reconstruct user model updates. 3) Curious Aggregator: The aggregator is honest-but-curious and follows the protocol but may attempt to infer private information. As the core coordinating party, the aggregator can reduce the risk of malicious behavior by leveraging trusted hardware (such as Intel SGX [47]) or regulatory constraints. These assumptions reflect realistic scenarios in which critical infrastructure (e.g., edge hubs or cloud secondary servers) is better protected than end-user devices.",
+            "publication_ref": [
+                "b47"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "V. PROPOSED SCHEME",
+            "text": "In this section, we formally introduce our scheme. Firstly, we introduce the design overview of our scheme in Section V-A. Secondly, we propose the protocol \u03a0 ln for the noise-immune Shamir secret sharing in Section V-B. Finally, we then propose the details of our DPSFL scheme in Section V-C and the correctness analyzing in Section V-D.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Design Overview",
+            "text": "Current FL architectures struggle to harmonize DP and BR due to inherent statistical conflicts and centralized bottlenecks. While prior works [27], [32] attempt to combine DP noise injection with Byzantine-robust aggregation rules, they face two critical limitations: (1) DP noise distorts gradient statistics essential for BR detection mechanisms (e.g., invalidating cosine similarity metrics), and (2) centralized aggregators become single points of failure that undermine both privacy and robustness guarantees. Our DPSFL framework introduces three interconnected innovations to overcome these challenges.\n1) Sequential Validation-Noise Pipeline: We decouple BR validation from DP noise injection via intermediary secondary servers. Specifically, secondary servers first perform MPC-based Byzantine detection on raw updates of users (Phase 3) before applying verifiable DP noise to aggregated shares (Phase 4). This sequential approach preserves gradient statistics for accurate BR detection while confining DP perturbations to the final aggregation step.\n2) Noise-Immune Shamir Secret Sharing: Traditional Shamir schemes fail under noisy conditions due to Lagrange interpolation errors (Section VII-A). Our protocol embeds binomial noise directly into secret shares using pairwise PRF masking, enabling correct aggregation while satisfying (\u03b5, \u03b4)-DP. This  \nReceives V s s \u2208 S t . w u \u2190 s\u2208S t ([w u ] s \u0394 s S t + V s ).\nallows verifiable noise addition without exposing raw gradients to the aggregator.\n3) Distributed Workload Allocation: We offload computational heavy operations (Pedersen commitment verification, SNIP validation circuits) to secondary servers through parallelizable MPC protocols while users only perform lightweight operations.\nThe protocol progresses through four phases: Phase 1: Users split local models into verifiable Shamir shares using Pedersen VSS, ensuring privacy against compromised secondary servers (Section V-C).\nPhase 2: Secondary servers negotiate binomial noise with the aggregator.\nPhase 3: Collaborative MPC validation filters malicious updates using a BR method (such a norm-based or cosine similarity checks) before any noise injection, addressing the statistical conflict of DP and BR.\nPhase 4: The aggregator reconstructs the global model from verified noisy shares using Lagrange interpolation. To prevent excessive noise amplification, DPSFL leverages controlled noise injection and adaptive thresholding techniques.\nDPSFL balances model accuracy, privacy, and robustness by integrating noise into secret sharing and leveraging hierarchical validation. This design supports scalability and adversarial resilience in large-scale edge deployments.",
+            "publication_ref": [
+                "b27",
+                "b32"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Noise-Immune Shamir Secret Sharing",
+            "text": "In Shamir's secret sharing scheme, Lagrange interpolation is conventionally employed for secret reconstruction. Consider a perturbed share defined as [w] s = [w] s + v s for each secondary server s \u2208 S, where [w] s denotes the original share and v s represents additive perturbation introduced by secondary server s. Through Lagrange interpolation, the reconstructed secret exhibits the following error propagation characteristic:\nw org = s\u2208S t [w] s \u0394 s S t = w + s\u2208S t v s \u0394 s S t .\nWhere the Lagrange coefficient\n\u0394 s S t = s \u2208S t \\{s} x s x s -x s demonstrates factorial scaling behavior. Specifically, \u0394 s S t = t t-1 (t-1)! \u221d e t \u221a\nt via Stirling approximation, implying that the aggregated perturbation grows super-exponentially with threshold parameter t. Empirical validation of this error amplification phenomenon is provided in Section VII-A.\nTo address this t-dependent error amplification, we propose an optimized reconstruction operator:\nw opt = s\u2208S t [w] s \u0394 s S t + s\u2208S t v s -v s \u0394 s S t = w + s\u2208S t v s .\n(4) This construction effectively decouples the final reconstruction error from the threshold parameter t. The formal specification of our Noise-Immune Shamir Secret Sharing protocol \u03a0 ln appears in Algorithm 1. We then prove the correctness in Section V-D.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Design of DPSFL",
+            "text": "The full protocol is presented in Fig. 2. Our scheme involves a setup phase and the following four phases.\nSetup Phase: Given a security parameter \u03bb and the set of secondary servers S, the aggregator runs Ped.Setup(|S|, \u03bb) \u2192 (p, q, g, h, t), and generates two empty sets S M , U M to store the malicious party. To keep log g h private, and to generate the key for the parties, we split this step as follows:\nr The aggregator A and the secondary servers s \u2208 S generate their own secret number a, a s \u2208 Z q for s \u2208 S; r The aggregator A and the secondary servers s \u2208 S calcu- late h = g a s\u2208S a s together.  r The aggregator A checks the integrity of the private coins using the protocol \u03a0 OR [46]. r If checks pass, the aggregator A sends the public coins v s,j to the secondary server s. Otherwise, the aggregator regards the secondary server s as the malicious party and s \u2192 S M .\nr The secondary server s calculates the verifiable noise (v s , r s ) using the (2), where v s is the raw noise. The aggregator A calculates the commitment of the noise c s =: Ped.Com(v s , r s ) using the (3).",
+            "publication_ref": [
+                "b46"
+            ],
+            "figure_ref": [
+                "fig_3"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "Phase 3. Evaluating the Integrity and Byzantine Robustness of Local",
+            "text": "In this phase, the secondary server s \u2208 S first checks the commitment and the share from users u \u2208 U using Ped.Verify(\u2022) \u2192 b.\n\u2022 If there is more than |S|t secondary servers to obtain the result b = 0, we then regard the user u as a malicious adversary and u \u2192 U M .\nNext, to evaluate the robustness of the local models, we first construct an interactive evaluation of the function Valid(\u2022) using the MPC methods, as in SNIP [39]. Because of the homomorphism of Pedersen's VSS, we can further design a verifiable Valid(\u2022) by synchronously calculating the commitments of the intermediate and final values of the function Valid(\u2022) and verify the integrity of the evaluation.\n\u2022 If a secondary server s identifies another secondary server s as the abnormal party during the evaluation, the aggregator A then verifies the integrity of the evaluation. If the verification fails, we classify s as the malicious party; otherwise, we classify s as the malicious party.\nBased on Valid(w u ), we decide whether the local model w u participates in the current round of aggregation and the user u involves the set U H .\nPhase 4. Aggregation and Verification: In this phase, the secondary servers s \u2208 S first aggregate the share and add the noise as follows:\n[w] s = u\u2208U H (q u \u2022 [w u ] s ) + v s ; [r] s = u\u2208U H (q u \u2022 [r u ] s ) + r s .\n(5) Where q u is the weight of user u determined by the size of the user's dataset and u\u2208U H q u = 1.\nSecondly, the secondary servers s sends ([w] s , [r] s ) to the aggregator A, A checks these share of noisy parameters of the global model using the commitment as follows:\nPed.Com ([w] s , [r] s ) ? = u\u2208U H t-1 k=1 c x k s u,k \u00d7 c u q u \u00d7 c s . (6)\nNext, the aggregator A chooses t secondary servers s \u2208 S t , where s \u2208 S t is selected from the set of secondary servers that can be executed normally in the previous steps. The aggregator A and the set of secondary servers S t interactively reconstruct the noisy parameters of the global model (w , r ) using the protocol \u03a0 ln . (Since the protocol \u03a0 ln requires two passes of execution, we label the intermediate variables V s and R s to distinguish between the two passes. Note that V s represents the intermediate variable at the first execution of the protocol, while R s is the intermediate variable at the second execution.)\nFinally, the aggregator A then checks the correctness of the noisy parameters of the global model (w , r ) using the commitment as follows:\nPed.Com (w , r ) ? = u\u2208U H c q u u \u00d7 s\u2208S t c s . (7\n)",
+            "publication_ref": [
+                "b39"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Correctness of DPSFL 1) Aggregation Correctness With Noise:",
+            "text": "The correctness of the aggregation directly follows from the correctness of the protocol \u03a0 ln . We prove the correctness of the protocol \u03a0 ln as follows:\nw = s\u2208S t [w] s \u0394 s S t + s\u2208S t v s -v s \u0394 s S t = s\u2208S t ([w] s + v s ) \u0394 s S t + v s -v s \u0394 s S t = w + s\u2208S t v s ,(8)\nwhere\n[w] s = u\u2208U H (q u \u2022 [w u ] s )\nis the share of the raw global model, and w = u\u2208U H q u \u2022 w u is the raw global model. Furthermore, the noise s\u2208S t v s is the sum of verifiable binomial noises, each of which follows a Binomial(n b , 1  2 ) distribution. Consequently, s\u2208S t v s follows a Binomial(n b \u2022 t, 1  2 ) distribution.\nTherefore, w is the noisy global model that satisfies our goals and is correct.\nSimilarly, we have:\nr = u\u2208U H q u \u2022 r u + s\u2208S t r s . (9\n)\n2) Verification Correctness: We now discuss the correctness of the ( 6) and (7).\nFor the (6), because t-1 k=1 c\nx k s u,k \u00d7 c u = Ped.Com([w u ] s , [r u ] s ) according to the algorithm Ped.Verify(\u2022), and c s = Ped.Com(v s , r s ) according to the protocol of verifiable DP, we can get that:\nPed.Com([w] s , [r] s ) = Ped.Com u\u2208U H q u \u2022 [w u ] s + v s , u\u2208U H q u \u2022 [r u ] s + r s = u\u2208U H Ped.Com ([w u ] s , [r u ] s ) q u \u00d7c s = u\u2208U H t-1 k=1 c x k s u,k \u00d7 c u q u \u00d7 c s .\nBased on ( 8) and ( 9), the left hand side of ( 7) is that:\nPed.Com (w , r ) = Ped.Com w + s\u2208S t v s , u\u2208U H q u \u2022 \u2022r u + s\u2208S t r s = Ped.Com u\u2208U H q u \u2022 w u , u\u2208U H q u \u2022 r u \u00d7 s\u2208S t c s = u\u2208U H c q u u \u00d7 s\u2208S t c s .\nTherefore, the correctness of ( 6) and ( 7) is guaranteed.\nAuthorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:38:37 UTC from IEEE Xplore. Restrictions apply.",
+            "publication_ref": [
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. THEORETICAL ANALYSIS",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Theoretical Analysis of the Necessity of Secondary Servers",
+            "text": "In conventional FL architectures (user-aggregator systems), three methods exist to achieve both DP and BR. We analyze their fundamental limitations to demonstrate the necessity of introducing secondary servers.\nCase 1. Local DP with BR: In this case, users inject DP noise into their local updates before transmitting them to the aggregator, which subsequently applies BR mechanisms. While theoretically appealing, this approach suffers from a critical statistical incompatibility as demonstrated in recent studies [32], [48]. Specifically, the introduction of DP noise significantly increases the variance of updates (such as gradients), severely disrupting the statistical properties used to identify malicious (Byzantine) updates.\nCase 2. BR with Global DP: This approach employs SA to protect individual updates during transmission, followed by BR filtering at the aggregator and global DP on the final model. While SA prevents direct access to individual gradients, critical privacy risks persist:\nFirst, even with SA protecting individual updates, the exact global update (e.g. gradient) becomes accessible to the aggregator after decryption. Through iterative observations of unprotected global updates across rounds, curious aggregator can reconstruct individual contributions through inference attacks, such as membership inference [18] or privacy reconstruct attack [4]. This risk escalates in long-running training processes, as cumulative information leakage violates the compositional privacy principle-a flaw unaddressed by SA alone.\nSecond, the architecture further introduces contradictory trust assumptions. The aggregator must be trusted to faithfully execute BR faithfully using raw updates (to ensure robustness) while simultaneously being distrusted from exploiting those same updates to infer private information (to ensure privacy). This paradox cannot be efficiently resolved within a conventional FL architecture, as highlighted in [49]. SA alone cannot mitigate this conflict, as it only secures the aggregation process and does not protect the privacy of the decrypted global states. Thus, global DP must directly perturb the aggregated model to break statistical correlations, but doing so after BR operations fails to protect intermediate results.\nCase 3. Fully Decentralized MPC Implementation: A theoretically viable alternative employs secure MPC among users to jointly implement BR and DP without centralized aggregators. However, practical implementation faces insurmountable scalability barriers. For n participants, MPC protocols like SPDZ [50] require O(n 2 ) communication complexity per training round due to pairwise consistency verifications-a prohibitive overhead for large-scale FL systems with n > 10 3 users. Moreover, resource-constrained edge devices cannot sustain the cryptographic computations required for high-dimensional models (e.g., neural networks with d > 10 6 parameters), as shown by latency measurements in [51]. These limitations reduce theoretical guarantees to impractical ideals, particularly for time-sensitive applications.\nIn summary, the three aforementioned approaches for achieving both DP and BR in conventional FL architectures are all impractical. The necessity of secondary servers thus emerges not as an optional optimization but as a foundational requirement for achieving practical, privacy-preserving, and Byzantine-resilient FL systems. No existing conventional FL architecture or fully decentralized protocol can meet these requirements simultaneously without introducing significant trade-offs in security, efficiency, or statistical validity.",
+            "publication_ref": [
+                "b32",
+                "b48",
+                "b18",
+                "b3",
+                "b49",
+                "b50",
+                "b51"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Cryptographic Assumptions and Definitions",
+            "text": "Definition 1 (Discrete Logarithm Assumption (DLA) [52], [53]): Let G be a finite cyclic group of order n with generator \u03b1, and let \u03b2 \u2208 G. The discrete logarithm of \u03b2 to the base \u03b1, denoted log \u03b1 \u03b2, is the unique integer x such that \u03b2 = \u03b1 x mod n. The discrete logarithm problem is considered hard if for any probabilistic polynomial-time adversary M, there exists a negligible function negl(n) such that\nPr [M(\u03b1, \u03b2) = x] \u2264 negl(n).\nDefinition 2 ((\u03b5, \u03b4)-Differential Privacy [54]): A randomized mechanism M : X \u2192 Y satisfies (\u03b5, \u03b4)-differential privacy if for any two adjacent inputs x, x \u2208 X differing in at most one element and any subset S \u2286 Y ,\nPr [M (x) \u2208 S] \u2264 e \u03b5 Pr [M (x ) \u2208 S] + \u03b4.",
+            "publication_ref": [
+                "b52",
+                "b53",
+                "b54"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Differential Privacy Analysis",
+            "text": "Lemma 1 (Binomial Mechanism [45], [55]): Let X = (x 1 , . . . , x n ) \u2208 Z n q and define the counting query\nQ(X) = n i=1 x i . Fix n b > 30, 0 < \u03b4 \u2264 O(1/n b )\n, and let Z \u223c Binomial(n b , 1  2 ). Then Q(X) + Z satisfies (\u03b5, \u03b4)-differential privacy with \u03b5 = 10 1 n b ln 2 \u03b4 . A detailed derivation follows the proof structure in [23]. Theorem 1 (Global Model Privacy): In DPSFL, the global model update is computed as\nw = w + s\u2208S t v s ,\nwhere w is the aggregated model update from honest users and v s is the noise injected by secondary server s. Under the Binomial Mechanism, the global model satisfies (\u03b5, \u03b4)-differential privacy with\n\u03b5 = 10 1 t \u2022 n b ln 2 \u03b4 ,\nwhere t is the threshold for secret reconstruction, and n b is the per-server noise parameter. Proof: Since each secondary server injects noise v s \u223c Binomial(n b , 1  2 ), the total noise added to the global model is\ns\u2208S t v s \u223c Binomial(t \u2022 n b , 12\n). Applying Lemma 1 with total noise parameter t \u2022 n b , the privacy guarantee follows directly.",
+            "publication_ref": [
+                "b45",
+                "b55",
+                "b23"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Impact of Secondary Servers on Privacy Corollary 1 (Impact of Secondary Servers on Privacy):",
+            "text": "Let the global model satisfy (\u03b5, \u03b4)-DP with noise generated collaboratively by |S| secondary servers under threshold t. For fixed \u03b5, if t = \u0398(|S|) (e.g., t = |S| 2 + 1), then the per-server noise parameter n b scales as n b = O( 1|S| ). Thus, increasing |S| reduces individual noise requirements while preserving privacy.\nProof: From Theorem 1, the global model guarantees (\u03b5, \u03b4)-DP with: \u03b5 = 10\n1 t\u2022n b ln 2 \u03b4 . Rearranging for t \u2022 n b : t \u2022 n b = 100 \u03b5 2 ln 2 \u03b4 C(\u03b5, \u03b4),\nwhere C(\u03b5, \u03b4) is a constant for fixed \u03b5, \u03b4.\nUnder the threshold scheme t = \u0398(|S|), let t = k|S| for constant 1/3 \u2264 k \u2264 1/2 (e.g., k = 1/2 for t = |S|/2 + 1). Substituting t = k|S| into the equation:\nk|S| \u2022 n b = C(\u03b5, \u03b4) \u21d2 n b = C(\u03b5, \u03b4) k|S| .\nThus,\nn b = O( 1 |S|\n). This implies: 1. For fixed \u03b5, increasing |S| linearly reduces the per secondary server noise parameter n b . 2. The total noise budget t \u2022 n b = C(\u03b5, \u03b4) remains constant, preserving the global (\u03b5, \u03b4)-DP guarantee. 3. Distributed noise generation across |S| secondary servers avoids single-point bottlenecks while maintaining privacy.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Information-Theoretic Security",
+            "text": "Definition 3 (Information-Theoretic Security (IT-Security) [56]): A cryptosystem is information-theoretically secure if its security does not rely on computational assumptions. That is, even an adversary with unlimited computational power cannot break the system, except by directly accessing the secret key.\nTheorem 2 (Security Under Collusion): The colluding malicious users (u M \u2208 U M ) and a few secondary servers (s M \u2208 S M , |S M | < t) are unknown for any information of another user under IT-Security and the DLA.\nProof: Firstly, the aggregator A is not under adversarial control and does not collude with malicious parties. Thus, we do not consider the security threat of the aggregator in this proof.\nAs we known, such as Shamir secret sharing are informationtheoretically secure in that having less than the requisite number of shares of the secret provides no information about the secret [57].\nThe adversary can perform two types of attacks: passive (eavesdropping and analytical inference) and active (protocol manipulation).",
+            "publication_ref": [
+                "b56",
+                "b57"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Passive listening and analytical attack",
+            "text": "In this way, the adversary passively collects information and attempts to analyze the privacy of honest users. It can obtain the following information about user u during training: Based on information-theoretic security, the adversary cannot gain any information about the user u from the share ([w u ] s , [r u ] s ). Furthermore, the adversary cannot gain any information from the commitment: (cs u ), unless it can solve the discrete logarithm problem. During the process of calculating Valid(\u2022), the secondary servers interactively perform the multiplication by using the multiplication triple. However, the information in the interaction is random and does not contain any privacy. Therefore, the passive adversary does not gain any privacy about the honest user u.\nActive attack against the protocol: In this way, the adversary can attack the protocol to obtain information or even break it. Consider a malicious adversary M who controls some users u M \u2208 U M and a few secondary servers s M \u2208 S M , where |S M | < t. The adversary M can perform the following attacks:\n1) DoS/DDoS Attack: The adversary M can initiate Denial-of-Service (DoS) or Distributed Denial-of-Service (DDoS) attacks leveraging controlled users and secondary servers. These attacks aim to make the system inaccessible by overwhelming it with traffic or requests that exceed its processing capacity. 2) Data tampering: The adversary M can alter the data submitted by the users and the secondary servers to distort the results or mislead other parties. This attack can undermine the trustworthiness and availability of the system. The adversary can tamper following data:\nr ([w u M ] s , [r u M ] s , cs u M ):\nThe data from malicious users\nu M . r {P s M ,j , c s M ,j |j \u2208 [n b ]}:\nThe data from malicious sec- ondary servers s M during the phase 2. Verifiable Noise Negotiation.\nr The interaction data with other secondary servers in phase 3. Evaluating the Integrity and Byzantine Robustness of Local Models.\nr ([w] s M , [r] s M , V s M , R s M ):\nThe data from malicious secondary servers s M during aggregation. For the DoS / DDoS attacks, the DPSFL has a powerful detection and filtering mechanism. If some users drop out, the honest secondary servers report this occurrence to the aggregator and remove the updates related to the dropped users. If the updates from malicious secondary servers do not align with those from most other secondary servers or if they drop out, the aggregator will broadcast the IDs of these secondary servers and exclude them from the training process.\nFor data tempering, our scheme incorporates a verification mechanism based on Pedersen's Commitment into all enumerated updates to verify their correctness. Therefore, an adversary cannot temper with any updates unless it can solve the discrete logarithm problem.\nIn summary, Theorem 3. is proved to be correct.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "F. Trade-Offs Between Differential Privacy and Byzantine Resilience",
+            "text": "The DPSFL framework theoretically reconciles DP and BR through three interconnected mechanisms.\nFirst, its hierarchical architecture isolates BR validation from DP noise injection: Byzantine detection is performed on raw gradients using Secure MPC to preserve detection accuracy, while binomial noise is applied solely to the aggregated model. This prevents DP perturbations from distorting BR statistical analysis (Theorem 2).\nSecond, cryptographic protocols (e.g., \u03a0 OR proofs, Shamir sharing) ensure adversarial collusion cannot bypass BR checks or reconstruct raw updates (local and global), securing both phases against adaptive threats (Theorem 2).\nAdjustable parameter tuning further harmonizes these guarantees-tightening BR thresholds under attacks while proportionally adjusting n b to maintain DP-via verifiable MPC protocols. By confining BR to raw data and DP to aggregated outputs, DPSFL eliminates their mutual interference, achieving provable equilibrium between privacy, robustness, and utility.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VII. EXPERIMENTS",
+            "text": "In this section, we empirically examine the accuracy of the global model when different noise sizes are added to DPSFL. Next, we evaluate its integrity using common BR methods and a series of attacks. Additionally, we compare the accuracy of the global model with different proportion of adversaries in DPSFL to the work of Zhou et al. [27].\nExperiments are conducted on a single NVIDIA A5000-24 G GPU with AMD EPYC 7551P processors. Our scheme is implemented in Python using the PyTorch library, with cryptographic operations handled by the PyCrypto library [58].",
+            "publication_ref": [
+                "b27"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Evaluation on Noise of the Lagrange's Interpolation",
+            "text": "To assess the noise amplification effect in the secret recovery phase of noise-immune Shamir secret sharing, we design a comprehensive simulation experiment as outlined here:\nThe experimental setup involves a single secret holder and n participants (dealers) within a secret sharing framework. The secret holder possesses a confidential value x, which is initially disseminated among all dealers in accordance with an (n, t)threshold Shamir secret sharing scheme. Subsequently, each dealer introduces noise to their respective share, where the noise is modeled by a Binomial distribution Binomial(n b , 1  2 ), symbolizing a controlled disturbance. These augmented shares are then transmitted to a central server. The server, employing Lagrange interpolation, attempts to reconstruct the original secret, yielding an estimate x . A pivotal aspect of our analysis entails comparing x with x to quantify the magnitude of noise amplification, thereby elucidating how the introduced noise propagates through the reconstruction process.\nIn exploring the behavior of noise amplification under varying noise profiles and thresholds t, we establish a noise magnitude spectrum defined by \u03b5 = {1, 2, 3, 4, 5} and \u03b4 = 10 -32 . The values of n = t both range from 3 to 50. The result of this experiment is as Fig. 3. We found that the noise size grows exponentially with the number of threshold t for \u03b5 ranging from 1 to 5. This means that we cannot recover the secret value when the secret share is noisy. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_5"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Evaluation on Accuracy",
+            "text": "In the following experiment, we evaluate DPSFL on three datasets (MNIST, FMNIST and CIFAR-10), and divide the datasets by using Dirichlet distribution (\u03b1 = 0.5) to obtain non-IID datasets for FL training. The specific descriptions of the datasets and corresponding models are as follows:\nDatasets:\nr MNIST [59] is a handwritten digit recognition dataset con- taining 60,000 training images and 10,000 testing images of size 28x28 pixels, each labeled with one of ten digits from 0 to 9.\nr FMNIST (Fashion-MNIST) [60]   r We re-designed a small VGG net with 14 layers and 5, 621K parameters for CIFAR-10. To investigate the impact of noise intensity on federated learning performance, we configure a system with |U | = 50 users and |S| = 5 secondary servers, employing a user dropout rate of 0.01. Fig. 4(a)-(c) presents the per-round accuracy trajectories under differential privacy constraints (\u03b5 \u2208 {1.0, 0.5, 0.1, 0.05}, \u03b4 = 10 -32 ) and a noiseless baseline across MNIST, Fashion MNIST, and CIFAR-10 datasets.\nThe experimental results (Fig. 4) demonstrate the impact of DP noise levels (\u03b5 = 1.0, 0.5, 0.1, 0.05) on model accuracy and convergence across three benchmark datasets: MNIST, FM-NIST, and CIFAR10. The analysis reveals significant variations in noise sensitivity depending on task complexity and training phases.\nNoise Robustness Across Architectures: For MNIST (MLP model, Fig. 4(a)), the accuracy remains at 98.12% under \u03b5 = 1.0 (baseline: 98.24%) and 97.59% even at \u03b5 = 0.05, attributed to the global feature modeling capability of fully connected layers on low-dimensional grayscale data. In contrast, Fashion MNIST (LeNet-5 model, Fig. 4(b)) exhibits significant accuracy degradation to 88% at \u03b5 = 0.05 (baseline: 91.5%), primarily due to the sensitivity of its shallow convolutional structure (e.g., 5 \u00d7 5 kernels in the first layer) to local texture perturbations. CIFAR-10 (VGG-14 model, Fig. 4(c)) shows unexpected robustness, with only a 2% drop at \u03b5 = 0.1 (73% vs 75% baseline), suggesting that hierarchical nonlinear transformations in deep convolutional networks can partially buffer noise propagation, albeit with notable late-training instability.\nConvergence Dynamics and Stability: Under identical noise levels, convergence efficiency decreases with task complexity. MNIST/MLP (Fig. 4(d)) stabilizes within 50 rounds (loss 0.1 \u00b1 0.02), while CIFAR-10/VGG-14 (Fig. 4(f)) requires 65 rounds at \u03b5 = 0.1 (18% longer than baseline), accompanied by significant late-stage accuracy fluctuations (standard deviation \u00b11.8% vs baseline \u00b10.6%). Further analysis reveals that DP noise amplifies gradient norms in the classification layers of deep networks, destabilizing parameter updates.\nPractical Recommendations: Based on these findings, we propose: (1) For shallow convolutional models (e.g., LeNet-5), set \u03b5 \u2265 0.1 to prevent feature extraction degradation; (2) Deep networks (e.g., VGG-14) benefit from extended training (20% additional rounds) and progressive noise decay (e.g., linearly reducing to 30% of initial noise in the final 10% of training), which experimentally reduces CIFAR-10 fluctuations to \u00b11.1%;\n(3) Under high-privacy constraints (\u03b5 = 0.05), task viability varies: MNIST/MLP (Fig. 4(a)) maintains > 97.5% accuracy, whereas CIFAR-10/VGG-14 (Fig. 4(c)) is limited to 69.2% absolute accuracy (5.8% drop from baseline).",
+            "publication_ref": [
+                "b58",
+                "b59"
+            ],
+            "figure_ref": [
+                "fig_7",
+                "fig_7",
+                "fig_7",
+                "fig_7",
+                "fig_7",
+                "fig_7",
+                "fig_7",
+                "fig_7",
+                "fig_7"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Evaluation on Integrity",
+            "text": "To analyze the integrity of our scheme in the setting of malicious parties, we compare DPSFL with EIFFeL [16]. According to the above conclusion, we set the noise size \u03b5 = 0.1.\nAdditionally, we further select various effective BR methods, such as norm ball [37], cosine similarity validation [29], and FLAME [62]. To implement these defense strategies within MPC circuits, we initially note that the pivotal operations in these techniques all involve computing the dot product of two vectors, which may be held as secret shares among the parties. We recognize that the dot product's result does not compromise the vectors' privacy without prior knowledge of their relationships. Our goal is to create a function that computes the dot product of two secret-shared vectors and then reveals the dot product's result for further processing.\nThe comparative evaluation of DPSFL and EIFFeL under 30% malicious users reveals nuanced performance trade-offs shaped by their respective defense mechanisms. As shown in Fig. 5(a)-(e), the two frameworks exhibit nearly overlapping accuracy trajectories across additive noise, sign-flipping, and gradient manipulation attacks. This parity suggests that the shared BR methods-norm clipping, cosine similarity validation, and FLAME-dominate robustness outcomes in this threat regime. The marginal performance gap (< 0.5% across datasets) further indicates that DPSFL's calibrated DP noise neither degrades nor enhances robustness significantly when applied alongside these BR techniques, effectively preserving utility while enforcing privacy.\nDivergence emerges in backdoor attack resilience (Fig. 5(g)). While EIFFeL achieves a 1% higher main-task accuracy on CIFAR-10, DPSFL reduces backdoor success rates by 5%-a Authorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:38:37 UTC from IEEE Xplore. Restrictions apply. critical advantage for security-sensitive applications. This aligns with the hypothesis that DP noise disrupts the stealthy gradient patterns required for persistent backdoor embedding, whereas EIFFeL's non differential privacy design remains vulnerable to such latent perturbations. The inverse relationship between main-task accuracy and backdoor suppression underscores a fundamental tension: privacy noise introduces targeted randomness that selectively degrades adversarial features more than legitimate learning signals.\nNotably, the cosine similarity validation mechanism (Fig. 5(b), (d), and (f)) demonstrates equivalent efficacy in both frameworks, with MPC-secured computation preserving detection fidelity despite DPSFL's noised gradients. This consistency confirms that the BR methods operate independently of the privacy layer under moderate attack intensities (30% malicious nodes), challenging the presumed incompatibility between DP and Byzantine resilience. However, DPSFL's 0.2% accuracy drop on FMNIST under coordinated additive noise attacks (Fig. 5(c)) hints at edge cases where DP perturbations may slightly amplify benign gradient misalignment-a trade-off warranting further theoretical analysis.\nThese results collectively demonstrate that integrating DP with established BR mechanisms achieves functionally equivalent robustness to non-private alternatives (EIFFeL) within the 30% adversarial threshold, while providing quantifiable privacy benefits. The framework's backdoor resistance further positions DP as a complementary defense layer against gradient-space attack vectors.",
+            "publication_ref": [
+                "b16",
+                "b37",
+                "b29",
+                "b61"
+            ],
+            "figure_ref": [
+                "fig_8",
+                "fig_8",
+                "fig_8",
+                "fig_8"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Experimental Evaluation of System Overheads",
+            "text": "The DPSFL framework was evaluated for end-to-end latency and model performance under varying user scales (|U |) and the number of secondary servers (|S|), with \u03b5 = 0.1 and Byzantine tolerance t = |S|/2 . Experiments on MNIST and CIFAR-10 (Fig. 6, Table II) reveal critical trade-offs between scalability and efficiency.\nFor MNIST (Fig. 6 Communication and accuracy metrics (Table II) further highlight task-specific sensitivities. MNIST maintains stable accuracy (97.12-98.12%) with modest communication growth These results establish practical guidelines: For lightweight tasks (e.g., MNIST), |S| = 20 balances latency (< 500s) and accuracy (> 98%). For complex tasks (e.g., CIFAR-10), limiting |S| \u2264 20 prevents verification overhead from dominating system latency (> 65%) while compensating convergence loss via dynamic local training adjustments. This empirically  ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_11",
+                "fig_11"
+            ],
+            "table_ref": [
+                "tab_6",
+                "tab_6"
+            ]
+        },
+        {
+            "heading": "E. Compare With Others",
+            "text": "In Section II-C, we reference a related study introduced by Zhou et al. [27], which likewise proposes a framework integrating DP with BR. Subsequently, we delve deeper into comparing the advantages and disadvantages of our proposed scheme versus that of Zhou et al. [27] through a series of experiments.\nTo enhance the efficiency of BR amidst noisy conditions, Zhou et al. [27] put forth a novel BR strategy that combine normbased detection with accuracy-based detection. To elucidate the distinctions between our scheme and that of Zhou et al. [27], we incorporate their BR methodology within a MPC circuit. This integration poses several pivotal challenges:\ni) The circuit must compute the accuracy of local models on a sample dataset, yet the parameters of these models are secret-shared, necessitating intricate handling of confidential information. ii) Unlike a straightforward filtering of anomalous models, the output of the circuit is intended to be the updated weight of each local model, further complicating the design. For experimental purposes, we consider MLP and CNN models as the analysis cases. Recognizing that fully connected layers correspond to vector calculations and that convolutional and pooling layers can be translated into linear operations simplifies the process. Moreover, a compact validation dataset is shared among all secondary servers, simplifying accuracy computations. Regarding the weights of local models, we adopt a twostep approach: initially calculating and subsequently disclosing them, followed by aggregation across all local models. To analyze the Byzantine robustness of DPSFL and the scheme proposed by Zhou et al. [27], we first consider a scenario where malicious users conduct label-flipping attacks while secondary servers perform cosine-similarity validation.\nThis experiment systematically evaluates the robustness of DPSFL and Zhou et al. [27]'s method under varying malicious users ratios (0%, 20%, 40%, 60%) in federated learning. As shown in Table III, DPSFL consistently outperforms Zhou et al.'s method, particularly under high-adversarial conditions. On MNIST, DPSFL achieves 97.28% accuracy at 60% malicious users, surpassing Zhou et al. by 0.57%, while on CIFAR-10, the accuracy gap widens to 4.16% (68.75% vs. 64.59%), highlighting its effectiveness in complex scenarios.\nWe observe three key aspects emerging:\n1. Progressive Robustness Degradation: While both methods exhibit declining accuracy with increasing adversarial ratios, DPSFL maintains smaller accuracy drops. For MNIST, DPSFL's accuracy declines by 0.76% (98.04% \u2192 97.28%) versus Zhou et al.'s 0.86% (97.57% \u2192 96.71%). This trend amplifies for high-dimensional tasks: on CIFAR-10, DPSFL's 5.62% drop contrasts sharply with Zhou et al.'s 9.39% decline, underscoring its resilience to gradient-space attacks.\n2. Task-Specific Superiority: DPSFL excels in both simple and complex learning tasks. For FMNIST, it sustains > 90% accuracy even at 60% malicious users (90.41% vs. 89.71%), whereas Zhou et al. falters earlier, reflecting DPSFL's adaptive noise allocation and centralized Byzantine validation.\n3. Backdoor Resistance: The widening performance gap under higher adversarial ratios (e.g., +4.16% for CIFAR-10 at 60%) suggests DPSFL's fixed-parameter DP noise effectively disrupts adversarial model updates, while Zhou et al.'s dynamic noise adjustment introduces instability that exacerbates accuracy loss.\nThese results validate DPSFL's architectural advantages: its sequential validation-noise pipeline isolates Byzantine detection from DP perturbations, ensuring precise gradient filtering before noise injection. In contrast, Zhou et al.'s integrated approach struggles with mutual interference between BR and DP, leading to suboptimal equilibrium. The experiments further confirm DPSFL's scalability across heterogeneous tasks, positioning it as a robust solution for privacy-preserving federated learning in adversarial environments.",
+            "publication_ref": [
+                "b27",
+                "b27",
+                "b27",
+                "b27",
+                "b27",
+                "b27"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_7"
+            ]
+        },
+        {
+            "heading": "VIII. CONCLUSION",
+            "text": "In this paper, we introduced a novel federated learning framework that balances privacy protection with Byzantine robustness. By using secondary servers, our approach separates robustness checking from differential privacy noise injection. First, the system detects malicious local updates without interference; then, during aggregation, it adds verifiable DP noise to secure the data and ensure reliable model updates.\nThe key innovation is our noise-added Shamir secret sharing protocol, which incorporates (\u03b5, \u03b4)-DP noise into the sharing process. With cryptographic commitments and secure multiparty computation, this method overcomes the noise amplification issues found in traditional approaches. Experiments on MNIST, FMNIST, and CIFAR-10 show that the framework maintains nearly 98% of baseline accuracy for \u03b5 \u2265 0.1 and tolerates up to 60% malicious users, improving accuracy by 0.57-4.16% compared to existing methods. Moreover, the system scales linearly with the number of participants.\nOur framework's success is driven by three main ideas: 1) Using secondary servers to separately handle robustness evaluation and privacy protection. 2) Integrating MPC-based verification with Pedersen commitments to secure model updates and noise generation. 3) distributing the noise generation across multiple secondary servers, which lowers the noise burden on individual nodes while still meeting DP guarantees. This approach shows strong resistance against attacks such as label flipping, model poisoning, and backdoor injections, making it promising for applications in privacy-sensitive areas like healthcare and smart grids. Future work could investigate dynamic noise adjustment and hardware-accelerated verification to further enhance system reliability in adversarial environments.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Communication-efficient learning of deep networks from decentralized data",
+            "journal": "",
+            "year": "2017",
+            "authors": "B Mcmahan; E Moore; D Ramage; S Hampson; B A Arcas"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Deep leakage from gradients",
+            "journal": "",
+            "year": "2019",
+            "authors": "L Zhu; Z Liu; S Han"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Inverting gradients -How easy is it to break privacy in federated learning",
+            "journal": "Curran Associates, Inc",
+            "year": "2020",
+            "authors": "J Geiping; H Bauermeister; H Dr\u00f6ge; M Moeller"
+        },
+        {
+            "ref_id": "b3",
+            "title": "SRATTA: Sample re-ATTribution attack of secure aggregation in federated learning",
+            "journal": "",
+            "year": "2023",
+            "authors": "T Marchand; R Loeb; U Marteau-Ferey; J O D Terrail; A Pignet"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Eavesdrop the composition proportion of training labels in federated learning",
+            "journal": "",
+            "year": "2019",
+            "authors": "L Wang; S Xu; X Wang; Q Zhu"
+        },
+        {
+            "ref_id": "b5",
+            "title": "How to backdoor federated learning",
+            "journal": "",
+            "year": "2020",
+            "authors": "E Bagdasaryan; A Veit; Y Hua; D Estrin; V Shmatikov"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Poisoning attacks on federated learning-based IoT intrusion detection system",
+            "journal": "",
+            "year": "2020",
+            "authors": "T D Nguyen; P Rieger; M Miettinen; A.-R Sadeghi"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Authorized licensed use limited to: Kennesaw State University",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b8",
+            "title": "Machine learning with adversaries: Byzantine tolerant gradient descent",
+            "journal": "",
+            "year": "2017",
+            "authors": "P Blanchard; E M El Mhamdi; R Guerraoui; J Stainer"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Local model poisoning attacks to Byzantine-robust federated learning",
+            "journal": "",
+            "year": "2020",
+            "authors": "M Fang; X Cao; J Jia; N Gong"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Manipulating the byzantine: Optimizing model poisoning attacks and defenses for federated learning",
+            "journal": "",
+            "year": "2021",
+            "authors": "V Shejwalkar; A Houmansadr"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Analyzing federated learning through an adversarial lens",
+            "journal": "",
+            "year": "2019",
+            "authors": "A N Bhagoji; S Chakraborty; P Mittal; S Calo"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Practical secure aggregation for privacy-preserving machine learning",
+            "journal": "",
+            "year": "2017",
+            "authors": "K Bonawitz"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Secure single-server aggregation with (poly) logarithmic overhead",
+            "journal": "",
+            "year": "2020",
+            "authors": "J H Bell; K A Bonawitz; A Gasc\u00f3n; T Lepoint; M Raykova"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Fast-SecAgg: Scalable secure aggregation for privacy-preserving federated learning",
+            "journal": "",
+            "year": "2020",
+            "authors": "S Kadhe; N Rajaraman; O O Koyluoglu; K Ramchandran"
+        },
+        {
+            "ref_id": "b15",
+            "title": "LightsSecAgg: Rethinking secure aggregation in federated learning",
+            "journal": "",
+            "year": "2021",
+            "authors": "C.-S Yang; J So; C He; S Li; Q Yu; S Avestimehr"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Eiffel: Ensuring integrity for federated learning",
+            "journal": "",
+            "year": "2022",
+            "authors": "A Roy Chowdhury; C Guo; S Jha; L Van Der Maaten"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Eluding secure aggregation in federated learning via model inconsistency",
+            "journal": "",
+            "year": "2022",
+            "authors": "D Pasquini; D Francati; G Ateniese"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Client-specific property inference against secure aggregation in federated learning",
+            "journal": "",
+            "year": "2023",
+            "authors": "R Kerkouche; G \u00c1cs; M Fritz"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Privacypreserving federated learning in fog computing",
+            "journal": "IEEE Internet Things J",
+            "year": "2020-11",
+            "authors": "C Zhou; A Fu; S Yu; W Yang; H Wang; Y Zhang"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Private federated learning on vertically partitioned data via entity resolution and additively homomorphic encryption",
+            "journal": "",
+            "year": "2017",
+            "authors": "S Hardy"
+        },
+        {
+            "ref_id": "b21",
+            "title": "BatchCrypt: Efficient homomorphic encryption for cross-silo federated learning",
+            "journal": "",
+            "year": "2020",
+            "authors": "C Zhang; S Li; J Xia; W Wang; F Yan; Y Liu"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Federated learning with differential privacy: Algorithms and performance analysis",
+            "journal": "IEEE Trans. Inf. Forensics Secur",
+            "year": "2020",
+            "authors": "K Wei"
+        },
+        {
+            "ref_id": "b23",
+            "title": "The distributed discrete gaussian mechanism for federated learning with secure aggregation",
+            "journal": "",
+            "year": "2021",
+            "authors": "P Kairouz; Z Liu; T Steinke"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Secure aggregation is insecure: Category inference attack on federated learning",
+            "journal": "IEEE Trans. Dependable Secure Comput",
+            "year": "2023-02",
+            "authors": "J Gao"
+        },
+        {
+            "ref_id": "b25",
+            "title": "LDP-fed: Federated learning with local differential privacy",
+            "journal": "",
+            "year": "2020",
+            "authors": "S Truex; L Liu; K.-H Chow; M E Gursoy; W Wei"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Efficient differentially private secure aggregation for federated learning via hardness of learning with errors",
+            "journal": "",
+            "year": "2022",
+            "authors": "T Stevens; C Skalka; C Vincent; J Ring; S Clark; J Near"
+        },
+        {
+            "ref_id": "b27",
+            "title": "A differentially private federated learning model against poisoning attacks in edge computing",
+            "journal": "IEEE Trans. Dependable Secure Comput",
+            "year": "2023-06",
+            "authors": "J Zhou"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Byzantine-robust distributed learning: Towards optimal statistical rates",
+            "journal": "",
+            "year": "2018",
+            "authors": "D Yin; Y Chen; R Kannan; P Bartlett"
+        },
+        {
+            "ref_id": "b29",
+            "title": "Fltrust: Byzantine-robust federated learning via trust bootstrapping",
+            "journal": "",
+            "year": "2020",
+            "authors": "X Cao; M Fang; J Liu; N Z Gong"
+        },
+        {
+            "ref_id": "b30",
+            "title": "RoFL: Attestable robustness for secure federated learning",
+            "journal": "",
+            "year": "2021",
+            "authors": "L Burkhalter; H Lycklama; A Viand; N K\u00fcchler; A Hithnawi"
+        },
+        {
+            "ref_id": "b31",
+            "title": "ELSA: Secure aggregation for federated learning with malicious actors",
+            "journal": "",
+            "year": "2023",
+            "authors": "M Rathee; C Shen; S Wagh; R A Popa"
+        },
+        {
+            "ref_id": "b32",
+            "title": "Differential privacy and Byzantine resilience in SGD: Do they add up?",
+            "journal": "",
+            "year": "2021",
+            "authors": "R Guerraoui; N Gupta; R Pinot; S Rouault; J Stephan"
+        },
+        {
+            "ref_id": "b33",
+            "title": "Zeno: Robust fully asynchronous SGD",
+            "journal": "",
+            "year": "2020",
+            "authors": "C Xie; S Koyejo; I Gupta"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Privacy-preserving and Byzantine-robust federated learning",
+            "journal": "IEEE Trans. Dependable Secure Comput",
+            "year": "2024-04",
+            "authors": "C Dong"
+        },
+        {
+            "ref_id": "b35",
+            "title": "Flguard: Secure and private federated learning",
+            "journal": "Cryptol. ePrint Arch",
+            "year": "2021",
+            "authors": "T D Nguyen"
+        },
+        {
+            "ref_id": "b36",
+            "title": "PILE: Robust privacy-preserving federated learning via verifiable perturbations",
+            "journal": "IEEE Trans. Dependable Secure Comput",
+            "year": "2023-12",
+            "authors": "X Tang; M Shen; Q Li; L Zhu; T Xue; Q Qu"
+        },
+        {
+            "ref_id": "b37",
+            "title": "Certified defenses for data poisoning attacks",
+            "journal": "",
+            "year": "2017",
+            "authors": "J Steinhardt; P W W Koh; P S Liang"
+        },
+        {
+            "ref_id": "b38",
+            "title": "The fundamental price of secure aggregation in differentially private federated learning",
+            "journal": "",
+            "year": "2022",
+            "authors": "W.-N Chen; C A C Choo; P Kairouz; A T Suresh"
+        },
+        {
+            "ref_id": "b39",
+            "title": "Prio: Private, robust, and scalable computation of aggregate statistics",
+            "journal": "",
+            "year": "2017",
+            "authors": "H Corrigan-Gibbs; D Boneh"
+        },
+        {
+            "ref_id": "b40",
+            "title": "Federated learning: Challenges, methods, and future directions",
+            "journal": "IEEE Signal Process. Mag",
+            "year": "2020-05",
+            "authors": "T Li; A K Sahu; A Talwalkar; V Smith"
+        },
+        {
+            "ref_id": "b41",
+            "title": "Non-interactive and information-theoretic secure verifiable secret sharing",
+            "journal": "",
+            "year": "1991",
+            "authors": "T P Pedersen"
+        },
+        {
+            "ref_id": "b42",
+            "title": "Multiparty Computation Over z/2 Kz",
+            "journal": "",
+            "year": "2021",
+            "authors": "D Escudero"
+        },
+        {
+            "ref_id": "b43",
+            "title": "Verifiable differential privacy",
+            "journal": "",
+            "year": "2015",
+            "authors": "A Narayan; A Feldman; A Papadimitriou; A Haeberlen"
+        },
+        {
+            "ref_id": "b44",
+            "title": "DPrio: Efficient differential privacy with high utility for Prio",
+            "journal": "Proc. Privacy Enhancing Technol",
+            "year": "2023",
+            "authors": "D Keeler; C Komlo; E Lepert; S Veitch; X He"
+        },
+        {
+            "ref_id": "b45",
+            "title": "Verifiable differential privacy",
+            "journal": "",
+            "year": "2022",
+            "authors": "A Biswas; G Cormode"
+        },
+        {
+            "ref_id": "b46",
+            "title": "One-out-of-many proofs: Or how to leak a secret and spend a coin",
+            "journal": "",
+            "year": "2015",
+            "authors": "J Groth; M Kohlweiss"
+        },
+        {
+            "ref_id": "b47",
+            "title": "Securefl: Privacy preserving federated learning with sgx and trustzone",
+            "journal": "",
+            "year": "2021",
+            "authors": "E Kuznetsov; Y Chen; M Zhao"
+        },
+        {
+            "ref_id": "b48",
+            "title": "Bridging differential privacy and Byzantinerobustness via model aggregation",
+            "journal": "",
+            "year": "2022",
+            "authors": "H Zhu; Q Ling"
+        },
+        {
+            "ref_id": "b49",
+            "title": "Byzantine-resilient secure federated learning",
+            "journal": "IEEE J. Sel. Areas Commun",
+            "year": "2021-07",
+            "authors": "J So; B G\u00fcler; A S Avestimehr"
+        },
+        {
+            "ref_id": "b50",
+            "title": "Multiparty computation from somewhat homomorphic encryption",
+            "journal": "",
+            "year": "2012",
+            "authors": "I Damg\u00e5rd; V Pastro; N Smart; S Zakarias"
+        },
+        {
+            "ref_id": "b51",
+            "title": "Decentralized federated learning: A survey on security and privacy",
+            "journal": "IEEE Trans. Big Data",
+            "year": "2024-04",
+            "authors": "E Hallaji; R Razavi-Far; M Saif; B Wang; Q Yang"
+        },
+        {
+            "ref_id": "b52",
+            "title": "Handbook of Applied Cryptography",
+            "journal": "CRC Press",
+            "year": "2018",
+            "authors": "A J Menezes; P C Van Oorschot; S A Vanstone"
+        },
+        {
+            "ref_id": "b53",
+            "title": "Introduction to Modern Cryptography. 2nd Ed",
+            "journal": "CRC Press",
+            "year": "2014",
+            "authors": "J Katz; Y Lindell"
+        },
+        {
+            "ref_id": "b54",
+            "title": "Calibrating noise to sensitivity in private data analysis",
+            "journal": "",
+            "year": "2006",
+            "authors": "C Dwork; F Mcsherry; K Nissim; A Smith"
+        },
+        {
+            "ref_id": "b55",
+            "title": "On the power of multiple anonymous messages",
+            "journal": "",
+            "year": "2020",
+            "authors": "B Ghazi"
+        },
+        {
+            "ref_id": "b56",
+            "title": "Information-theoretic cryptography",
+            "journal": "Springer",
+            "year": "1999",
+            "authors": "U Maurer"
+        },
+        {
+            "ref_id": "b57",
+            "title": "Common randomness in information theory and cryptography. I. secret sharing",
+            "journal": "IEEE Trans. Inf. Theory",
+            "year": "1993-07",
+            "authors": "R Ahlswede; I Csisz\u00e1r"
+        },
+        {
+            "ref_id": "b58",
+            "title": "Gradient-based learning applied to document recognition",
+            "journal": "",
+            "year": "1998-11",
+            "authors": "Y Lecun; L Bottou; Y Bengio; P Haffner"
+        },
+        {
+            "ref_id": "b59",
+            "title": "Fashion-mnist: A novel image dataset for benchmarking machine learning algorithms",
+            "journal": "",
+            "year": "2017",
+            "authors": "H Xiao; K Rasul; R Vollgraf"
+        },
+        {
+            "ref_id": "b60",
+            "title": "Learning multiple layers of features from tiny images",
+            "journal": "",
+            "year": "2009",
+            "authors": "A Krizhevsky"
+        },
+        {
+            "ref_id": "b61",
+            "title": "f lame: Taming backdoors in federated learning",
+            "journal": "",
+            "year": "2022",
+            "authors": "T D Nguyen"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. The figure illustrates our DPSFL scheme.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Algorithm",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "rThe aggregator A generates a index for all of the secondary servers s \u2208 S:x s \u2208 [|S|].r The aggregator A then generates the parameter of DP noise n b according to \u03bb. The aggregator A publishes the system parameters pp = (p, q, g, h, t, {x s |s \u2208 S}, n b ) to u \u2208 U and s \u2208 S. To mask the noise in the protocol \u03a0 ln , secondary servers s \u2208 S and s \u2208 S \\ {s} interactively generate a secret key m s,s via the Diffie-Hellman key agreement protocol. Phase 1. Local Training and Parameters Sharing: Each user u \u2208 U trains its local model using their local private dataset D u and obtains the parameters of the local model w u , which is a n dimensional vector. Next, the user u distributes w u and shares to s \u2208 S as follow: r The user u executes Ped.Share(w u , r u , |S|) \u2192 (([w u ] s , [r u ] s ) s\u2208S , cs u ) , where r u \u2208 Z * q is a random vector chosen by the user u. r The user u sends ([w u ] s , [r u ] s ) to the secondary servers s and publishes the Pedersen commitments of the share cs u . Authorized licensed use limited to: Kennesaw State University. Downloaded on October 13,2025 at 18:38:37 UTC from IEEE Xplore. Restrictions apply.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 2 .2Fig. 2. Detailed description of the DPSFL.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "r ([w u ] s , [r u ] s ): The share of the local model of the user u; r (cs u ): The commitment of the local model of the user u and the commitment of the coefficient; r The information leaked during calculating Valid(w u ).",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig. 3 .3Fig. 3. The figure above shows how the average noise changes with the threshold t under below setting.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "rCIFAR-10 [61] is a dataset containing 60,000 32x32 color images in 10 different classes, widely employed for training and evaluating image classification algorithms. Models: r Multilayer Perceptron (MLP): We utilize a neural network of two layers and 400K parameters to train on the MNIST datasets.r LeNet-5: We utilize the LeNet-5, a simple CNN network, with 5 layers and 1, 986K parameters for FMNIST.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_7",
+            "figure_caption": "Fig. 4 .4Fig. 4. Training accuracy and loss varies with noise size.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_8",
+            "figure_caption": "Fig. 5 .5Fig. 5. with different attacks and BR methods.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_9",
+            "figure_caption": "(a)), latency scales linearly from 68.4 s (|U | = 50, |S| = 10) to 142.3 s (|U | = 500), a 2.08\u00d7 increase. However, with |U | = 50, |S| = 50, latency surges to 214.5 s (3.14\u00d7 higher), reflecting quadratic complexity growth in MPC verification. CIFAR-10 exhibits similar trends, with |S| = 50 and |U | = 500 incurring 2196.5 s latency, where 68% of time is spent on noise verification due to 10\u00d7 larger parameter size amplifying Shamir secret sharing and Pedersen commitment overheads. Notably, both tasks achieve sub-minute latency at |S| = 10 (MNIST: 68.4 s, CIFAR-10: 357.6 s), demonstrating real-time feasibility in lightweight configurations.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_10",
+            "figure_caption": "(5.1 MB/user at |S| = 10 vs. 15.3 MB at |S| = 50), aligning with secret sharing redundancy k = 2t + 1 (error < 2% ). In contrast, CIFAR-10 shows pronounced trade-offs: communication increases from 10.2MB (|S| = 10) to 30.6MB (|S| = 50), while accuracy declines from 75.2% to 70.1%, indicating high-dimensional models' vulnerability to noise accumulation and data heterogeneity. Convergence efficiency also diverges: MNIST converges in 42 rounds (|S| = 20), whereas CIFAR-10 requires 230 rounds under the same configuration, escalating to 415 rounds at |S| = 50, as higher server counts reduce global update frequency through latency accumulation.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6",
+            "figure_type": "figure",
+            "figure_id": "fig_11",
+            "figure_caption": "Fig. 6 .6Fig. 6. End to end latency.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "",
+            "figure_data": "r Ped.Share(v, r, n) \u2192 (([v] s , [r] s ) s\u2208S , cs): Given a se-cret v and randomness r, this algorithm constructs randompolynomials F (x) and G(x) of degree t -1. The secretv and randomness r are used as the constant terms ofthese polynomials. The algorithm then distributes shares([v] s , [r] s ) to each participant s, where [v] s and [r] s arethe values of the polynomials evaluated at the participant'sidentifier. Additionally, it computes commitments cs to thepolynomial coefficients and the original pair (v, r). r Ped.Verify([v] s , [r] s , cs, pp) \u2192 b: Participants use thisalgorithm to verify whether the shares they have receivedare correct. The algorithm takes the shares [v] s and [r] s , thecommitments cs, and the public parameters pp as input, andoutputs a boolean value b \u2208 {0, 1} indicating whether theshares are consistent with the commitments., pp) \u2192 (v, r, b): This al-gorithm allows the reconstruction of the secret (v, r) usingat least t correct shares from the set of participants S t ."
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "table",
+            "figure_id": "tab_4",
+            "figure_caption": "Noise-Immune Shamir Secret Sharing \u03a0 ln . Public Parameters: t, p, {x s , s \u2208 S} Private Parameters: User u has w u ; Secondary server s has ({m s,s , s \u2208 S \\ {s}}, v s ). User u Sharing: distributes w u to [w u ] s using Shamir secret sharing. Sends to secondary servers s \u2208 S: [w u ] s . Secondary server s executes: [w u ] s \u2190 [w u ] s + v s ; and sends to Aggregator: [w u ] s . Aggregator A executes: Receives [w u ] s , s \u2208 S. Selects S t \u2286 S, |S t | = t and sends S t to secondary servers s \u2208 S t . Secondary server s \u2208 S t executes: Receives S t . V s \u2190 v sv s \u0394 s S t + s <s,s \u2208S t PRF(m s,s ) s >s,s \u2208S t PRF(m s,s ). Sends to Aggregator V s .",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "II",
+            "figure_type": "table",
+            "figure_id": "tab_6",
+            "figure_caption": "OF DPSFL SYSTEM PERFORMANCE ON MNIST AND CIFAR-10 DATASETS validates DPSFL's capability to harmonize privacy, efficiency, and robustness in cross-heterogeneous federated learning scenarios.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "III",
+            "figure_type": "table",
+            "figure_id": "tab_7",
+            "figure_caption": "DPSFL WITH ZHOU ET AL.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "w = u\u2208U q u \u2022 w u , (1",
+            "formula_coordinates": [
+                3.0,
+                403.4,
+                656.46,
+                144.7,
+                20.82
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": ")",
+            "formula_coordinates": [
+                3.0,
+                548.1,
+                657.33,
+                3.87,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "v s = n b j=1 (b s,j \u2295 v s,j ) , r s = n b j=1 (-1) v s,j r s,j . (2)",
+            "formula_coordinates": [
+                4.0,
+                340.3,
+                311.34,
+                215.9,
+                30.74
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "c s = n b j=1 Ped.Com(1, 0) * c -1 s,j , If v s,j = 1; c s,j , Otherwise.(3)",
+            "formula_coordinates": [
+                4.0,
+                334.67,
+                370.26,
+                221.51,
+                30.74
+            ]
+        },
+        {
+            "formula_id": "formula_4",
+            "formula_text": "x(x -1) = 0 \u21d0\u21d2 x \u2208 {0, 1}.",
+            "formula_coordinates": [
+                4.0,
+                343.49,
+                590.41,
+                128.59,
+                9.96
+            ]
+        },
+        {
+            "formula_id": "formula_5",
+            "formula_text": "Receives V s s \u2208 S t . w u \u2190 s\u2208S t ([w u ] s \u0394 s S t + V s ).",
+            "formula_coordinates": [
+                6.0,
+                59.84,
+                297.45,
+                125.74,
+                24.56
+            ]
+        },
+        {
+            "formula_id": "formula_6",
+            "formula_text": "w org = s\u2208S t [w] s \u0394 s S t = w + s\u2208S t v s \u0394 s S t .",
+            "formula_coordinates": [
+                6.0,
+                349.83,
+                101.4,
+                161.67,
+                23.23
+            ]
+        },
+        {
+            "formula_id": "formula_7",
+            "formula_text": "\u0394 s S t = s \u2208S t \\{s} x s x s -x s demonstrates factorial scaling behavior. Specifically, \u0394 s S t = t t-1 (t-1)! \u221d e t \u221a",
+            "formula_coordinates": [
+                6.0,
+                305.14,
+                135.74,
+                251.05,
+                41.72
+            ]
+        },
+        {
+            "formula_id": "formula_8",
+            "formula_text": "w opt = s\u2208S t [w] s \u0394 s S t + s\u2208S t v s -v s \u0394 s S t = w + s\u2208S t v s .",
+            "formula_coordinates": [
+                6.0,
+                309.93,
+                248.6,
+                241.45,
+                23.23
+            ]
+        },
+        {
+            "formula_id": "formula_9",
+            "formula_text": "[w] s = u\u2208U H (q u \u2022 [w u ] s ) + v s ; [r] s = u\u2208U H (q u \u2022 [r u ] s ) + r s .",
+            "formula_coordinates": [
+                8.0,
+                44.5,
+                420.32,
+                246.28,
+                21.66
+            ]
+        },
+        {
+            "formula_id": "formula_10",
+            "formula_text": "Ped.Com ([w] s , [r] s ) ? = u\u2208U H t-1 k=1 c x k s u,k \u00d7 c u q u \u00d7 c s . (6)",
+            "formula_coordinates": [
+                8.0,
+                48.47,
+                518.75,
+                244.71,
+                34.36
+            ]
+        },
+        {
+            "formula_id": "formula_11",
+            "formula_text": "Ped.Com (w , r ) ? = u\u2208U H c q u u \u00d7 s\u2208S t c s . (7",
+            "formula_coordinates": [
+                8.0,
+                85.65,
+                721.6,
+                203.65,
+                25.07
+            ]
+        },
+        {
+            "formula_id": "formula_12",
+            "formula_text": ")",
+            "formula_coordinates": [
+                8.0,
+                289.31,
+                725.88,
+                3.87,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_13",
+            "formula_text": "w = s\u2208S t [w] s \u0394 s S t + s\u2208S t v s -v s \u0394 s S t = s\u2208S t ([w] s + v s ) \u0394 s S t + v s -v s \u0394 s S t = w + s\u2208S t v s ,(8)",
+            "formula_coordinates": [
+                8.0,
+                342.56,
+                135.27,
+                213.63,
+                82.01
+            ]
+        },
+        {
+            "formula_id": "formula_14",
+            "formula_text": "[w] s = u\u2208U H (q u \u2022 [w u ] s )",
+            "formula_coordinates": [
+                8.0,
+                331.97,
+                224.68,
+                106.69,
+                12.6
+            ]
+        },
+        {
+            "formula_id": "formula_15",
+            "formula_text": "r = u\u2208U H q u \u2022 r u + s\u2208S t r s . (9",
+            "formula_coordinates": [
+                8.0,
+                376.43,
+                341.93,
+                175.88,
+                21.67
+            ]
+        },
+        {
+            "formula_id": "formula_16",
+            "formula_text": ")",
+            "formula_coordinates": [
+                8.0,
+                552.31,
+                342.81,
+                3.87,
+                8.76
+            ]
+        },
+        {
+            "formula_id": "formula_17",
+            "formula_text": "Ped.Com([w] s , [r] s ) = Ped.Com u\u2208U H q u \u2022 [w u ] s + v s , u\u2208U H q u \u2022 [r u ] s + r s = u\u2208U H Ped.Com ([w u ] s , [r u ] s ) q u \u00d7c s = u\u2208U H t-1 k=1 c x k s u,k \u00d7 c u q u \u00d7 c s .",
+            "formula_coordinates": [
+                8.0,
+                305.24,
+                459.31,
+                250.33,
+                124.6
+            ]
+        },
+        {
+            "formula_id": "formula_18",
+            "formula_text": "Ped.Com (w , r ) = Ped.Com w + s\u2208S t v s , u\u2208U H q u \u2022 \u2022r u + s\u2208S t r s = Ped.Com u\u2208U H q u \u2022 w u , u\u2208U H q u \u2022 r u \u00d7 s\u2208S t c s = u\u2208U H c q u u \u00d7 s\u2208S t c s .",
+            "formula_coordinates": [
+                8.0,
+                318.12,
+                609.49,
+                222.21,
+                118.95
+            ]
+        },
+        {
+            "formula_id": "formula_19",
+            "formula_text": "Pr [M(\u03b1, \u03b2) = x] \u2264 negl(n).",
+            "formula_coordinates": [
+                9.0,
+                366.27,
+                300.71,
+                120.34,
+                9.96
+            ]
+        },
+        {
+            "formula_id": "formula_20",
+            "formula_text": "Pr [M (x) \u2208 S] \u2264 e \u03b5 Pr [M (x ) \u2208 S] + \u03b4.",
+            "formula_coordinates": [
+                9.0,
+                342.79,
+                380.03,
+                167.31,
+                11.52
+            ]
+        },
+        {
+            "formula_id": "formula_21",
+            "formula_text": "Q(X) = n i=1 x i . Fix n b > 30, 0 < \u03b4 \u2264 O(1/n b )",
+            "formula_coordinates": [
+                9.0,
+                311.44,
+                439.4,
+                240.54,
+                23.26
+            ]
+        },
+        {
+            "formula_id": "formula_22",
+            "formula_text": "w = w + s\u2208S t v s ,",
+            "formula_coordinates": [
+                9.0,
+                390.38,
+                541.74,
+                72.12,
+                21.22
+            ]
+        },
+        {
+            "formula_id": "formula_23",
+            "formula_text": "\u03b5 = 10 1 t \u2022 n b ln 2 \u03b4 ,",
+            "formula_coordinates": [
+                9.0,
+                385.06,
+                630.2,
+                82.78,
+                23.53
+            ]
+        },
+        {
+            "formula_id": "formula_24",
+            "formula_text": "s\u2208S t v s \u223c Binomial(t \u2022 n b , 12",
+            "formula_coordinates": [
+                9.0,
+                322.83,
+                709.38,
+                111.81,
+                14.33
+            ]
+        },
+        {
+            "formula_id": "formula_25",
+            "formula_text": "1 t\u2022n b ln 2 \u03b4 . Rearranging for t \u2022 n b : t \u2022 n b = 100 \u03b5 2 ln 2 \u03b4 C(\u03b5, \u03b4),",
+            "formula_coordinates": [
+                10.0,
+                52.08,
+                169.27,
+                173.49,
+                56.28
+            ]
+        },
+        {
+            "formula_id": "formula_26",
+            "formula_text": "k|S| \u2022 n b = C(\u03b5, \u03b4) \u21d2 n b = C(\u03b5, \u03b4) k|S| .",
+            "formula_coordinates": [
+                10.0,
+                92.09,
+                287.26,
+                151.11,
+                22.67
+            ]
+        },
+        {
+            "formula_id": "formula_27",
+            "formula_text": "n b = O( 1 |S|",
+            "formula_coordinates": [
+                10.0,
+                67.02,
+                318.35,
+                45.16,
+                14.34
+            ]
+        },
+        {
+            "formula_id": "formula_28",
+            "formula_text": "r ([w u M ] s , [r u M ] s , cs u M ):",
+            "formula_coordinates": [
+                10.0,
+                332.76,
+                383.53,
+                105.58,
+                16.24
+            ]
+        },
+        {
+            "formula_id": "formula_29",
+            "formula_text": "u M . r {P s M ,j , c s M ,j |j \u2208 [n b ]}:",
+            "formula_coordinates": [
+                10.0,
+                332.76,
+                400.92,
+                106.76,
+                22.76
+            ]
+        },
+        {
+            "formula_id": "formula_30",
+            "formula_text": "r ([w] s M , [r] s M , V s M , R s M ):",
+            "formula_coordinates": [
+                10.0,
+                332.76,
+                479.17,
+                118.7,
+                17.21
+            ]
+        }
+    ],
+    "doi": "10.1109/TDSC.2025.3574745"
+}

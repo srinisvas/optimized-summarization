@@ -1,0 +1,205 @@
+{
+    "title": "AI Ethics and Data Privacy compliance",
+    "authors": "Doina Banciu; Carmen Elena C\u00eernu; Aaron Pereira; Ed Kruzins; Al Sarawi; Derek Abbott; Okan Yuversedyan; Frederick Menk; Bryan Schwitter; Tony Fattorini; Altum Rf",
+    "pub_date": "",
+    "abstract": "Throughout history, technological evolution has generated less desired side effects with impact on society. In the field of IT&C, there are ongoing discussions about the role of robots within economy, but also about their impact on the labour market. In the case of digital media systems, we talk about misinformation, manipulation, fake news, etc. Issues related to the protection of the citizen's life in the face of technology began more than 25 years ago; In addition to the many messages such as \"the citizen is at the center of concern\" or \"privacy must be respected\", transmitted through various channels of different entities or companies in the field of ICT, the EU has promoted a number of legislative and normative documents to protect citizens' rights and freedoms.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Throughout history, technological evolution has generated less desired side effects with impact on society. In the field of IT&C, there are ongoing discussions about the role of robots within economy, but also about their impact on the labour market. In the case of digital media systems, we talk about misinformation, manipulation, fake news, etc. Issues related to the protection of the citizen's life in the face of technology began more than 25 years ago; In addition to the many messages such as \"the citizen is at the center of concern\" or \"privacy must be respected\", transmitted through various channels of different entities or companies in the field of ICT, the EU has promoted a number of legislative and normative documents to protect citizens' rights and freedoms.\nThe development of social networks and the implementation of e-government systems has led to storing data about citizens in digital environments or identifying it according to criteria which stakeholders could hide in highperformance software systems. To counterbalance, the EU has tried to limit the use of personal data for other purposes than those declared, by imposing on Member States the General Data Protection Regulation (known as the \"GDPR\"), which has become mandatory in all states. A legislative framework for artificial intelligence (AI) will probably be developed in the future, but at the moment there is no general consensus in the field of artificial intelligence.\nArtificial intelligence (AI) is a booming development process. AI has created a vast suite of applications with transformative effect not only on the economy, but also on society as a whole. Although Artificial general intelligence still has a long way to go, AI -in today's form -is already becoming a part of the decision-making process.\nIt is well known that every new generation of technology, especially with transformative impact, generates ethical and impact governance issues. The applicability of AI in areas as diverse as health services, education, transportation, e-commerce or defense requires addressing new issues, ethics, safety and human control over this new technology and, of course, regulatory elements.\nThe risk of ignoring these issues and others such as vulnerabilities and threats or the erosion of the legitimacy of systems and, in particular, the impact on citizens' privacy -can lead to major imbalances in society.\nThese elements are analysed in various formulas, in different entities or countries, depending on the specific historical development of IT&C, the concepts underlying the company, as well as legislation and regulations.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. HUMAN RIGHTS AND ARTIFICIAL INTELLIGENCE INITIATIVES",
+            "text": "In Europe, there is a strategic advantage over AI ethics that lies in its power to regulate, to set rules and standards. It is becoming part of the concept of strategic autonomy and sovereignty in the area of disruptive technologies. EU technological sovereignty is based on the European values and culture that emphasize human autonomy through concepts of sovereignty in relation to its own data and interaction with AI. As stated in the European documents, EU must become a \"global leader in the development of safe, reliable and ethical AI\". Only \"joint action at European level can protect the EU's digital sovereignty and put to good use regulatory tools and power in order to elaborate global rules and standards.\"\nThe US has developed a strong AI industry, with a focus on governance, including ethics, justified trust in AI systems, support for democratic values: privacy, freedom, civil rights in the use of AI for national security, and fighting against malicious security operations of information led by AI.\nThere are numerous documents dealing with the subject of AI ethics: National Artificial Intelligence Initiative, Final Report -National Security Commission on Artificial Intelligence, AI Partnership for Defense, to name a few.\nThe US has developed a strong AI industry, with focus on governance, including ethics, justified trust in AI systems, support for democratic values: privacy, freedom, civil rights in the use of AI for national security, and the fight against malicious security operations of information led by AI.\nThere are numerous documents dealing with the subject of AI ethics: National Artificial Intelligence Initiative, Final Report -National Security Commission on Artificial Intelligence. AI Partnership for Defense.\nThere is a common concern for Trans-Atlantic cooperation in AI ethics. Within the EU-US Trade and Technology Cooperation Council, one of the ten working groups is focused on AI and on issues related to its ethics and implementation values. On the other hand, the OECD pays close attention to many aspects of AI development.\nWe recall the AI principles promoted by the OECD and the recommendations for policy makers, which are mainly limited to investments in R&D: If we look at large information and communication systems and analyse the general characteristics of AI in terms of data privacy and human rights, we can see that:\n\u2022 AI is not focused on people and their rights in the case of large information and communication systems (Google, Twitter, other social media channels, etc.);\n\u2022 Search engine-induced AI can have profound consequences for private human rights, they can identify data and preferences about users and transfer the information to interested business companies;\n\u2022 Insufficiently tested algorithms can introduce regrettable or even fatal errors for human existence (eg. misidentification of a person).\nThe above findings have led international and national bodies to analyse human rights issues and develop documents and recommendations for the development of AI systems:\n\u2022 The UNESCO General Conference (November 2021) launched a set of ethical recommendations on AI.\n\u2022 The EU Agency for Fundamental Rights has raised a number of issues regarding respect for human rights in the context of the development of AI (\"Getting the Future Right -Artificial Intelligence and Fundamental Rights\").",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. THE CONCEPT OF GDPR -GENERAL DATA PROTECTION REGULATION",
+            "text": "The General Data Protection Regulation (hereinafter \"GDPR\" or \"GDPR Regulation\") is a set of rules that applies to all organizations that collect and retain personal data from anyone in the European Union. \"GDPR\" became law in Romania starting with May 25, 2018.\nThe purpose of GDPR is to create a standardized framework on data privacy so that individual human rights are protected. This is essential within an economy that is increasingly based on the use of personal data in many areas of activity.\nIn the context of digital transformation, the protection of personal data is an issue that is relevant in any company and is in the focus of government structures.\nAs mentioned in (https://gdprcomplet.ro/consultantagdpr-firme-it/) the concepts underlying GDPR compliance are:\n\u2022 Legality, fairness and transparency towards the data subject.\n\u2022 Limitation of purpose -use of data exclusively in the manner presented to the individual;\n\u2022 Data minimization -processing the necessary data only;\n\u2022 Accuracyupdates when necessary;\n\u2022 Integrity and confidentiality -data protection through appropriate measures;\n\u2022 Responsibility -the ability to demonstrate respect for principles;\n\u2022 Storage limitations.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "The following table compares the rights of users in the light of GDPR and AI, respectively",
+            "text": "User's rights GDPR IA / Citizen's rights 1 -to information",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Data is processed, noting why, for what purposes, to whom it is transmitted and what rights it has",
+            "text": "There are no restrictions on the use of personal data. Data is retrieved from anywhere and published. Access is free and unrestricted.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "-to access",
+            "text": "Access to processed personal information Free access to information about the citizen, but only to the public ones",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "-to correct",
+            "text": "Correcting personal data and incomplete/inaccurate information concerning it Difficult procedures, often impossible to implement 4 -to delete Deleting data concerning the user Difficult procedures, often impossible to implement",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "-to restrict processing Restriction on processing of the application with the necessary arguments",
+            "text": "There is no possibility of restriction 6 -to portability It may be required to carry data from one operator to another Not applicable due to lack of information",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "7",
+            "text": "-to object End processing, with documents and arguments It is not regulated procedurally and legally",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "8",
+            "text": "-not to be subject to an automatic decision, including profiling",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Interventions in the case of important decisions concerning the user personally",
+            "text": "There are no restrictions",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "9",
+            "text": "-to lodge a complaint with the Supervisory Authority",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Complaint forms against non-compliant processing",
+            "text": "There is no institutional form 10 -to apply to the court To obtain pecuniary and / or nonpecuniary damage if damage has resulted It is not legally regulated Structurally, there are major differences between AI and GDPR in terms of \"data privacy\"\n\u2022 GDPR protects the person AI discloses personal information with / without consent\n\u2022 GDPR regulates the use of data AI works according to its own rules\n\u2022 GDPR allows for individual protection actions AI does not facilitate individual protection actions\n\u2022 GDPR imposes concrete pecuniary sanctions AI does not have a sanctioning mechanism\nThe users can't influence the balance between ethics and non-ethics, because the non-ethics aspects are hided in the software, especially in the AI components.\nIf we analyze the main objectives of the information and documentation systems, we will identify some common issues:",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "\u2022",
+            "text": "Democratic access to the cultural information storages in national and international digital collections (any discrimination).",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "\u2022",
+            "text": "Dissemination of information through traditional and digital tools.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "\u2022",
+            "text": "Contribute to development positively of behavior and attitude.\nEven if the objectives are clearly defined, the contradiction between ethics and non-ethics can be hided under AI software.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "ETHICS NON-ETHICS",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Dissemination of any kind of information",
+            "text": "Dissemination of fake news",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Business development facilitating through access to information",
+            "text": "Transfer of business information on interest profiles upon request to non-interested entities",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Transparency facilitating",
+            "text": "Generating flows for the dissemination of special information (defamation, misleading, influencing behavior, etc.)\nFacilitates access to the information desired by the user Access to preferential information based on special interests or orders\nFacilitates different information and documentation on topics Facilitates information and \"serendipity\" (with possible \"noise\" and \"lost\" effects) -the risk of providing harmful socio-political-economic information\nThe barrier between ethics and non-ethics is very \"fuzzy\". Any legal framework can be adapted if the barriers are not clearly separated. The information system tries to achieve their goals as well as they can, but often unethical aspects are invisible even if they exist.\nFigure 1 shows the contradiction between ethical and unethical in the case of human rights and what research and retrieval software systems can do.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "ETHICS NON-ETHICS",
+            "text": "Human rights respects To keep the information for commercial purposes",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Democratic access to information To touch the human dignity",
+            "text": "To disseminate fake news",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Contribute to positive behavior and attitude",
+            "text": "To hide the information with positive influences on users Neither system management nor users can control this phenomenon. Often, managers have no knowledge of software systems and it is difficult for users to understand how software requirements or research results have been performed. These aspects allow software developers to create a software system as they wish or as their needs dictate.\nOn the other hand, the undeniable benefits of AI development cannot prevent companies from developing AIbased software and services. Here are some examples of the direct benefits of AI in Internet-based information systems and networks:\n\u2022 AI facilitates the dissemination of information of any kind;\n\u2022 AI facilitates the development of business actions;\n\u2022 AI facilitates \"transparency\";\n\u2022 AI facilitates information and \"serendipity\".\nV. CONCLUSIONS The study on GDPR and AI, from the point of view of human rights, has highlighted several conclusions:\n\u2022 GDPR regulates the use of personal data and it is mandatory in Europe -the business and public administration comply with the regulation;\n\u2022 It is obvious that there are still many steps to be taken with regard to AI;\n\u2022 AI developers have an ethical obligation to make the structure and pathways transparent if algorithms can infringe on human rights;\n\u2022 AI developers need to explain / argue whether the developed algorithms can identify the occurrence of ethical issues in use and make them known;\n\u2022 Expanding AI developer communities to improve model quality and reduce bias (the Harvard example has such an initiative, but the effect is limited);\n\u2022 The legal framework is not yet adapted to AI applications, and large companies need to play a key role in regulation, along with universities and research institutions;\n\u2022 Cooperation and collaboration in order to reach a consensus on respecting private human rights in AI applications may be a possible first step in the regulation on the protection of personal data.\nThe GDPR example could be the starting point for a unanimously accepted legislative framework.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Drepturi \u0219i libert\u0103\u021bi \u00een epoca Inteligen\u021bei artificiale",
+            "journal": "Rev. Intelligence",
+            "year": "",
+            "authors": "Maria Gheorghe"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Library management in the context of the GDPR",
+            "journal": "",
+            "year": "2018",
+            "authors": "Doina ; Banciu; Arja Mantykangas"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Getting The Future Right Artificial Intelligence and Fundamental Rights",
+            "journal": "",
+            "year": "",
+            "authors": ""
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Contradictions between ethic and non-ethic in information and documentation systems.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ECAI54874.2022.9847510"
+}

@@ -1,0 +1,756 @@
+{
+    "title": "Advanced Techniques for Protecting Privacy in Artificial Intelligence Powered Medical Systems",
+    "authors": "Mayank Sharma; Jobin M Scaria; Preeti Sharma; Abha Trivedi; Preeti Saini; Manav Rachna",
+    "pub_date": "",
+    "abstract": "Privacy protection is required when analyzing healthcare data and using it effectively. This work proposes a novel technique to secure private data in AI-powered medical systems while providing important data insights. The recommended method incorporates challenging techniques such as integrating Laplace distribution noise, managing secure data, and training group models. A privacy budget manages settings to balance analysis performance and individual contributions. The framework outperforms existing approaches in accuracy, precision, memory, F1 score, and privacy compliance. The technique improves data, models, training, and inference speeds, making it suitable for real-time healthcare applications. Iterative feedback enhances the model by modifying components based on real-world data. In addition to ensuring privacy, this entire design enables AI-powered medical systems to identify and anticipate findings. It provides a true, scalable solution that can adapt to healthcare demands, creating a new standard for AI app privacy and data usage. The technology provides a privacy-protected, highly efficient model that enhances decision-making and patient outcomes, enabling AI in healthcare.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "AI improves diagnostics, treatment plans, and healthcare procedures in modern medical systems. However, AI in medical systems creates serious patient safety issues [1]. Medical record privacy and security become crucial as more healthcare data becomes digital and AI manages patient data. Medical systems that incorporate AI must apply advanced privacy protection to secure patient data while maximizing AI advantages [2]. AI-powered medical systems have advanced in recent years, and many hospitals, clinics, and study groups employ them. Machine and deep learning have analyzed a vast amount of medical data. This has enabled early diagnosis, precision medicine, and personalized therapy [3]. AI in imaging, pathology, genetics, and patient monitoring has improved healthcare understanding and efficiency. Meanwhile, researchers are gathering and analyzing massive amounts of personal health data. Massive patient data serves as the training ground for AI algorithms [4]. We include personal data such as medical records, genetic information, and real-time health monitoring [5]. More healthcare data raises concerns about privacy breaches, illicit access, and data misuse. Because of the increased incidence of healthcare facility intrusions, AI-powered systems require robust privacy safeguards [6]. GDPR and HIPAA give some security. However, technological solutions must adapt to these developments. Patient privacy is important to AI-based medical solutions. This ensures that only authorized parties may access and utilize private health information for medical reasons. Morally, AI systems must obtain patients' consent and provide them with data control [7]. Data minimization is a key privacy concept. It aims to reduce personal data collection, handling, and sharing. AI systems should only gather the necessary data for a task. This stops them from gathering excessive data that could potentially lead to a breach. AI processing also employs data anonymization and pseudonymization to safeguard patients' identities. These procedures remove medical record identifiers. This hinders AI algorithms' ability to link data to individuals [8]. Safe data exchange helps physicians and professionals collaborate while respecting patient privacy. We can train AI models on distributed datasets thanks to new technologies like federated learning and secure multiparty computing. Each data point is protected [9]. These privacy standards are critical for safeguarding patient data as AI advances healthcare. AIdriven medical systems require privacy protection, which has led to the proposal of several innovative solutions [10]. Differential privacy is a sensible way to keep people out of records. Differential privacy adds noise or randomness to data before AI systems analyze it to safeguard confidentiality and statistical truth. Use homomorphic encryption to allow AI systems to calculate encrypted data without decoding it. This prevents AI processing from sharing sensitive patient data. This allows safe AI usage while maintaining privacy [11]. For clinical research, homomorphic cryptography is an effective method for sending medical data across organizations or nations. Federated learning is another innovative privacy solution [12]. Various datasets can train AI models. Shared learning lets healthcare firms contribute to an AI model while maintaining data ownership. This beats centralizing patient data. This method reduces data theft and allows for reliable AI models [13]. Researchers have investigated blockchain technology as a tool to properly handle and monitor patient data, ensuring transparent utilization of AI systems.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Main Contributions",
+            "text": "This research adds these crucial elements: Medical systems can utilize AI privacy technologies such as differential privacy, homomorphic encryption, and shared learning.\n\u2022 Consider how to address healthcare AI privacy problems.\n\u2022 Our solution uses federated learning and blockchain for secure data exchange to preserve privacy and boost AI performance.\n\u2022 How to ensure AI-based healthcare systems respect patient privacy and data security by following the law and morality.\nTo conclude, developing innovative privacy protection methods for AI-powered medical systems is crucial to maintaining patient confidence and promoting AI in healthcare. Privacy may be protected in various ways [14]. We can make AI-powered medical advancements safe and responsible utilizing mathematical, cryptographic, and open methodologies [15]. In the following sections, I'll explain how these strategies may preserve privacy and improve medical AI.",
+            "publication_ref": [
+                "b13",
+                "b14"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORKS",
+            "text": "AI-powered medical systems have several inventive approaches to secure patient privacy while providing effective treatment. Differential privacy adds noise to datasets because it ensures that adding or deleting a data item has no impact [16]. This strategy finds a beneficial balance between privacy and data value. Homomorphic encryption lets you calculate on protected data, which increases effort and wait times but improves security. Federated Learning trains models without a server. By saving data on local devices, we protect privacy without compromising model accuracy [17]. Secure Multiparty Computation consists of many participants secretly calculating a function over their inputs. This takes longer and is more difficult, but it's secure. Blockchain-based protection improves data accuracy and security by leveraging the autonomy of blockchain technology. This monitors and restricts private data access [18]. Data anonymization eliminates or modifies identifying information from datasets. This dramatically improves privacy but might lower data value if done incorrectly [19]. By substituting private identifiers with bogus ones, pseudoanonymization maintains data relevance while masking identities. Synthetic data generation statistically mimics actual data. This allows data sharing without compromising privacy. Without requiring additional information, an individual can establish a claim. This is zero-knowledge proof. Finally, privacy-preserving data mining analyses data in a variety of ways without compromising privacy. While keeping things secret, we gain valuable knowledge [20].A comparison of privacy-preserving algorithms shows their merits and downsides in accuracy, precision, memory, F1 score, data value, processing waste, and security. Differential privacy has an accuracy of 85% and a security level of 8, indicating its ability to secure privacy while maintaining model performance [21]. However, while homomorphic encryption boasts a security level of 9, it necessitates a longer processing time and more resources, thereby highlighting the associated costs of security. Data anonymization provides the most useful data (92% of the time) immediately, making it a good option for fast data access. Secure multiparty computation and zero-knowledge proofs are secure, but they may have scaling and implementation issues. Our ratings assist consumers in making appropriate privacy choices that meet security and AI-powered medical system speed requirements.  Table 2 indicates how safe and beneficial private approaches are for AI-powered medical systems. We evaluate each technique based on its security, data value, latency, scale, legal compliance, and application difficulties. Homomorphic encryption has a high security score (9) but a considerable latency (300 ms), making it powerful yet sluggish. In contrast, data anonymization has low latency (40 ms) and high data usefulness (92%), making it ideal for applications that require data immediately. This infographic guides everyone in choosing the appropriate privacy settings for practical and security reasons.",
+            "publication_ref": [
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b20"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_1"
+            ]
+        },
+        {
+            "heading": "III. PROPOSED METHODOLOGY",
+            "text": "In healthcare data research, privacy and data efficiency are crucial [22]. The recommended method employs sophisticated approaches to preserve privacy and maximize data in many phases. First, establish the dataset, build a safe data structure, and include sensitivity measurement techniques. Laplace distribution noise and a restricted private fund protect individual contributions [23]. As the model is trained using local client data, the global model evolves. This collaboration protects private data and improves the model by combining many data sources. Real-client input is crucial to iterative feedback systems, which modify model parameters and privacy settings constantly. Regularization approaches make the model more durable, prevent overfitting, and make it compatible with varied datasets. The approach takes data security seriously by doing full privacy checks to ensure regulations are fulfilled [24]. The modified model is now usable. We learn essential things while respecting patient privacy and safety. This new approach is balanced since it combines excellent analytical abilities with rigorous privacy precautions. AI can be utilized more successfully in healthcare systems.",
+            "publication_ref": [
+                "b21",
+                "b22",
+                "b23"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Algorithm 1: Differential Privacy Implementation with Complex Variants",
+            "text": "1. Define the Dataset: Let be the original dataset with data points, and define the output function . The goal is to ensure privacy while maintaining utility.\no = \u2211 + \u03c3(1)\no \u2208 0,1 is the privacy budget..\no \u0394 = max \u2286 | ! \u2208 \" -! $ \u2208 \" |(2)\n2. Determine Sensitivity: Calculate the sensitivity of the function:\no \u0394 = max %,% & | - $ + \u03c3 ' |(3)\no $ is derived from by changing one entry.\n3. Add Noise: Generate noise from a Laplace distribution:\no ( \u223c Lap * +,-. / 0 1(4)\no ( = noise + \u03c3 2(5)\n4. Modify Output: The final output is computed as: \no $ = + ( + \u03c3 3(6\no \u0394 = \u2211 -$ ' + \u03c3 ; (10) 7. Evaluate Utility: Assess the utility of the output compared to the original function using:\no < = \u2211 | -$ | + \u03c3 0(11)\n8. Iterate for Multiple Queries: For = queries, calculate cumulative privacy loss:\no \u03f5 ?@?AB = \u2211 \u03f5 C + \u03c3 1(12)\no ?@?AB = ?@?AB + noise from each query + \u03c3 '\no < ?@?AB = \u2211 < C + \u03c3 D(13)\n9. Adjust for Global Sensitivity: Refine the sensitivity calculation if needed to ensure maximum privacy using:\no \u0394 EB@FAB = max %,% & | - $ + \u03c3 2 | G(15)\n10. Finalize the Output: Ensure the output remains within the desired privacy parameters by applying:\no $ \u2208 \" \u2265 1 -\u03c3 3 (16) o $ $ \u2208 \" \u2264 \u03c3 4(17)\n11. Measure Privacy Guarantees: Calculate the overall privacy guarantee of the output:\no \u0394 , AB = max %,% & | ! \u2208 \" - ! $ \u2208 \" + \u03c3 5 |(18)\no \u03f5 J,,JK? LJ = -\u03c3 :\no ! \u2208 \" = M % -. 9N M OPOQR(19)\n12. Implement Feedback Mechanism: Gather feedback on utility versus privacy trade-offs to refine:\no S = C \u2211 < C + \u03c3 'T(21)\n13. Optimize Noise Generation: Improve the noise generation process based on feedback:\no U = Optimal Noise + \u03c3 '(22)\n14. Document Results: Keep a record of all outputs, sensitivities, and privacy budgets used:\no V = { $ , \u0394 , \u03f5 } + \u03c3 ''(23)\no U = \u2211 \u03f5 + \u03c3 'D(24)\n15. Finalize Report: Summarize the methodology, results, and privacy guarantees:\no Privacy Score = Y \u2211 Y + \u03c3 '2(25)\no represents the privacy level achieved by each query.\no Ensure compliance with privacy regulations + \u03c3 '3\nNotations Used\n\u2022 : Original dataset.\n\u2022 : Number of data points.\n\u2022 : Output function.\n\u2022 : Total loss or output.\n\u2022 : Privacy budget.\n\u2022 \u0394 : Sensitivity of the function.\n\u2022 \": Subset of possible outputs.\n\u2022 $ : Modified dataset.\n\u2022 (: Noise added for privacy.\n\u2022 Lap: Laplace distribution for noise generation.\n\u2022 =: Number of queries.\n\u2022 \u03f5 ?@?AB : Cumulative privacy loss.\n\u2022 ?@?AB : Total loss including noise from queries.\n\u2022 ! \u2208 \" : Probability of the output belonging to set SSS.\n\u2022 : Privacy level for each query.\n\u2022 U: Total number of algorithms.\n\u2022 \u03c3 : Additional factors enhancing robustness.\nThe novel Differential Privacy Implementation approach protects privacy while allowing healthcare companies to quickly analyze vast amounts of data. It initializes the dataset and output function. Next, it determines function sensitivity and adds privacy-preserving Laplace distribution noise. The privacy budget (\u03c1^epsilon\u03c1) controls noise and ensures that each individual's input remains private. Additional variables (\u03c0{sigma\u03c0) allow for adjustments depending on specific scenarios and repeated findings, making this technique more dependable. Add up the privacy lost by each question to gain a comprehensive picture of privacy requirements. While comparing privacy versus dataset insights, the software prioritizes output value review. Updates and iterative feedback mechanisms reduce noise, making private data management simpler. The program closes with extensive records and strong privacy regulations. We establish the groundwork for integrating AI into medical systems while respecting patient privacy. Figure 1 illustrates the process of enhancing the privacy of AI-based medical systems. First, it selects and estimates sensitive data. Next, it generates noise to protect privacy. This noise controls output and privacy. The approach uses multiple searches and considers global sensitivity when assessing usefulness. We review privacy assurances, feedback methods, and outcomes before the procedure ends. This systematic strategy protects privacy while preserving data. \no \u2208 , ^= 1,2, \u2026 ,(29)\no KB J ? = \u2211 + \u03c3 D(30)\no \u0394 KB J ? = max   \u2022 [\\? : Input loss.\no ! EB@FAB = \u2211 ! + \u03c3 5(34)\no < EB@FAB = \u2211 b -@ ij b + \u03c3 (39) o Performancec< EB@FAB e = c\u2211 b - @ ij b + \u03c3 ' e(\n\u2022 \u03f5 [\\? : Adjusted privacy budget from Algorithm 1.\n\u2022 : Local data from client ^.\n\u2022 !: Initial model.\n\u2022 ! : Local model updates from clients.\n\u2022 ! EB@FAB : Aggregated global model.\n\u2022 ! @ ij : Noisy global model.\n\u2022 (: Noise from Laplace distribution.\n\u2022 < EB@FAB : Utility of the global model.\n\u2022 S: Feedback from clients.\n\u2022 U s@\\ ri : Number of training iterations.\n\u2022 ! , AB : Finalized global model for deployment.\n\u2022 c! , AB \u2208 \"e: Probability of the final model meeting privacy standards.\n\u2022 \u03c3 : Additional factors for robustness. In Algorithm 2, pooled learning and data from Algorithm 1 improve privacy protection. Initial input and model delivery to customers begin the process. Clients train the model using their own data. All client updates form a global model. We introduce noise into this model to ensure privacy. We evaluate the usefulness of this noisy global model and ask customers for feedback to improve future training cycles.As clients comment, the computer adjusts privacy settings to improve the model. We finalize and test the model for privacy compliance after training cycles. We then implement the concept to ensure medical systems can evaluate data and maintain patient privacy. This collaboration technique leverages distributed learning to protect privacy.  \no $ = \u2211 $ + \u03b1 (59) o \u0394 $ = \u2211 maxcb $ -d $ b, \u03b1 ' e(\no sJE = \u2021 \u2211 |! $ | ' + \u03b4 2 (72)\n9. Recompute Model Updates: Perform another round of updates based on refined parameters:\no ! , AB $ = ! Jh r[ + \u2021 \u2211 ! $ + \u03b4 3 (73) o \u2207! Jh = \u2211 \u2207 sJE + \u03b4 4 (74\n)\n10. Further Optimize Model with Stochastic Gradient Descent: Refine the model using optimization techniques:\n\u2022 \u03b7 @[? = M \u20acm\u2022 \u20acmu6nm| + \u03b3(75)\n\u2022 ! @[? = ! , AB $ -\u03b7 @[? \u2207 sJE + \u03b3 '(76)\n\u2022 @[? = \u0160 PoO z PoO + \u03b3 D(77)\n11. Measure Model Robustness: Quantify robustness of the final model:\n\u2022 V , AB = M PoO \u2211 M m~QR n 689 + \u03b3 2(78)\n12. Finalize the Refined Model: Complete the training process and finalize the refined model:\n\u2022 ! , AB \u2039Jr = ! @[? + \u03b3 3(79)\n\u2022 < , AB \u2039Jr = < sJ, Jr + \u03b3 4 (80)\n13. Prepare Model for Deployment: Ensure the model is ready for deployment by checking all parameters:\n\u2022 rJ[B@j = \u2211 \\? B ?j + \u03b3 5(81)\n\u2022 ! rJ[B@j = ! , AB \u2039Jr + \u03b3 : (82)\n14. End Process and Store Results: Save the results and conclude the algorithm:\n\u2022 \u211b = {! , AB \u2039Jr , rJ[B@j , \u2211 \u03b3 ; }(83)\n\u2022 \u2022 = \u2211 \u211b + \u03b3 T(84)\nNotations Used: \u2022 ! $ : Updated model from client ^.\n\u2022 ! sJ\n\u2022 ! Jh : Aggregated refined global model.\n\u2022 : Privacy budget.\n\u2022 $ : Loss function based on additional client data.",
+            "publication_ref": [
+                "b9"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "\u2022 ! Jh r[",
+            "text": ": Differentially private global model.\n\u2022 < sJ, Jr : Utility of the refined global model.\n\u2022 sJE : Regularization term for model robustness.\n\u2022 ! , AB \u2039Jr : Final refined model after optimization.\n\u2022 \u03b7: Learning rate.\n\u2022 \u03bb: Regularization coefficient.\n\u2022 rJ[B@j : Model readiness for deployment. Algorithm 3 improves the world model by adding more shared learning phases. Clients get Algorithm 2's final model to refine with their own data. After customers are taught, models are integrated and various protection mechanisms are utilized to secure private information. Customer feedback is used to improve the new global model's learning rates and variables.A privacy audit ensures the model satisfies privacy regulations. Regularization stabilises and prevents overfitting. Stochastic gradient descent improves model parameters. The final product is ready for usage after being verified for value and reliability. The new paradigm ensures privacy while improving performance and robustness via feedback-based updates and modest changes. Finally, the modified model is deployed and for AI-driven medical systems. This strategy protects privacy while enhancing model performance across remote medical data.\nFigure 3 shows how Federated Model Refinement improves medical system privacy. It starts by sending customers a finalized model from a prior program so they may make local alterations. After adding local data to their models, customers aggregate the adjustments and apply multiple privacy methods to protect private data. After reviewing the improved model, learning rates are adjusted and privacy is checked. Regularization techniques like stochastic gradient descent increase resilience. After saving the findings, the model is ready to use.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. RESULT",
+            "text": "Different speed tests demonstrate that the recommended technique is substantially superior to current methods. The unique privacy architecture maintains high-quality data insights while safeguarding privacy, scoring above average in memory, accuracy, precision, and F1 score. It outperforms previous hospital AI approaches. The new privacy mechanism is more accurate, which is significant. It can recognize data bits with fewer errors. Increasing precision and recall can lead to more precise discovery of relevant data and a reduction in bogus hits and negatives. The F1 score displays the balance between the two, indicating technique reliability. Another notable feature is the improving AUC-ROC curve. This indicates the model's diagnostic capabilities. The recommended framework has a higher AUC-ROC value than competing techniques, indicating that it can better distinguish positive and negative instances. Besides accuracy and categorization, the approach reduces training and reasoning time. In healthcare scenarios that need prompt response, these advances speed up model changes and choices. Privacy budget utilization illustrates how effectively the system combines privacy protection with data value, protecting private data without hurting analytics. The model dependability score demonstrates that the strategy works on many datasets. It's simple to utilize in practice. Healthcare AI systems struggle with privacy, but the strategy is effective at enforcing them. It performs better than competitors, demonstrating its commitment to data protection and legality. The breakthrough privacy architecture enables AI-driven medical analytics and raises data and privacy standards. This system outperforms others on a broad variety of assessment variables, making it a dependable and effective AI solution for delicate healthcare scenarios.   Figure 4 depicts a thorough visual comparison of the performance assessment criteria for many competing methodologies in the field of privacy-preserving AI medical systems. Each bar represents a distinct approach, with corresponding values for measures like accuracy, precision, recall, F1 score, and regulatory compliance. The image shows the difficulties encountered by these approaches, notably in maintaining high accuracy while protecting anonymity. Notably, variances in performance indicators highlight the limits of current systems, emphasizing the need for more effective solutions for managing sensitive healthcare data.  Table 4 displays the performance evaluation criteria for the proposed new privacy framework alongside competing methods. The system often does better than competitors on important tests, showing that it can better protect data privacy while still offering high value and speed. The results show big improvements in accuracy, precision, and compliance. This shows that the suggested method effectively matches the need for privacy protection with the analysis needs of healthcare systems.\nFigure 5 displays how the new private system works better than other options. The line clearly indicates improvements in important measures, with numbers for accuracy, precision, and data usage consistently outperforming other methods. This better performance shows that the system can protect patients' privacy while also giving them useful analysis information. It supports the claim that this new method strikes a beneficial balance between privacy concerns and the practical needs of AI applications in healthcare by showing the benefits in a way that is simple on the eyes and makes sense. This will lead to more reliable and useful systems. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_5",
+                "fig_6"
+            ],
+            "table_ref": [
+                "tab_9"
+            ]
+        },
+        {
+            "heading": "V. CONCLUSION",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Ethics and Governance of Artificial Intelligence for Health",
+            "journal": "World Health Organization",
+            "year": "2022",
+            "authors": ""
+        },
+        {
+            "ref_id": "b1",
+            "title": "What is artificial intelligence in medicine",
+            "journal": "",
+            "year": "2022",
+            "authors": " Ibm"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Artificial intelligence-enabled public health surveillance-From local detection to global epidemic monitoring and control",
+            "journal": "Academic Press",
+            "year": "2021",
+            "authors": "D Zeng; Z Cao; D B Neill"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Why Big Data and Data Analytics for Smart City",
+            "journal": "",
+            "year": "2023",
+            "authors": "S Dubey"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Natural language processing to improve optimal customized treatment in clinical decision support systems",
+            "journal": "",
+            "year": "2023",
+            "authors": "S Malviya; S Dubey; D K Verma; A Sharma; R Nair; P S Chauhan"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Privacy in the age of medical big data",
+            "journal": "Nat. Med",
+            "year": "2019",
+            "authors": "W N Price; I G Cohen"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Security, Reliability, and Performance Assessment for Healthcare Biometrics",
+            "journal": "",
+            "year": "2019",
+            "authors": "R Kashyap"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Hackers claim they breached data on 1 billion Chinese citizens",
+            "journal": "",
+            "year": "2022-07-06",
+            "authors": "Y Lu"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Emerging consensus on 'ethical AI': Human rights critique of stakeholder guidelines",
+            "journal": "Glob. Policy",
+            "year": "2021",
+            "authors": "S Fukuda-Parr; E Gibbons"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Development of a Capacitive Temperature Sensor Using a Lead-Free Ferroelectric Bi(Fe2/3Ta1/3)O3 Ceramic",
+            "journal": "IEEE Sensors Journal",
+            "year": "2023-07-15",
+            "authors": "S Halder; S Bhuyana; A Tripathy; O A Zaabi; B Swain; U R Muduli"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Active Disturbance Rejection Control of Photovoltaic Three-Phase Grid Following Inverters Under Uncertainty and Grid Voltage Variations",
+            "journal": "IEEE Transactions on Power Delivery",
+            "year": "2023-10",
+            "authors": "J K Singh"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Modeling and Dynamic Stability Analysis of the Grid-Following Inverter Integrated With Photovoltaics",
+            "journal": "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+            "year": "2023-08",
+            "authors": "S Prakash; O A Zaabi; R K Behera; K A Jaafari; K A Hosani; U R Muduli"
+        },
+        {
+            "ref_id": "b12",
+            "title": "To enhance web response time using agglomerative clustering technique for web navigation recommendation",
+            "journal": "Springer",
+            "year": "2019",
+            "authors": "S Tiwari; R K Gupta"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Artificial Intelligence Systems in Aviation",
+            "journal": "",
+            "year": "2019",
+            "authors": "R Kashyap"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Fast Medical Image Segmentation Using Energy-Based Method",
+            "journal": "",
+            "year": "2017",
+            "authors": "P Gautam"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Management and Monitoring Patterns and Future Scope",
+            "journal": "",
+            "year": "2018",
+            "authors": "R Kashyap"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Computing machinery and intelligence",
+            "journal": "Mind",
+            "year": "1950",
+            "authors": "A M Turing"
+        },
+        {
+            "ref_id": "b17",
+            "title": "A proposal for the Dartmouth summer research project on artificial intelligence",
+            "journal": "AI Mag",
+            "year": "2006",
+            "authors": "J Mccarthy; M L Minsky; N Rochester; C E Shannon"
+        },
+        {
+            "ref_id": "b18",
+            "title": "A Classical Approach to Artificial Intelligence",
+            "journal": "Khanna Publishing House",
+            "year": "2014",
+            "authors": "M C Trivedi"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Novel 1-$\\varphi$ High-Voltage Boosting Transformerless Inverter Topology With Optimal Power Components and Negligible Leakage Currents",
+            "journal": "IEEE Transactions on Industry Applications",
+            "year": "2023-10",
+            "authors": "P K Chamarthi"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Impedance Modeling With Stability Boundaries for Constant Power Load During Line Failure",
+            "journal": "IEEE Transactions on Industry Applications",
+            "year": "2024-02",
+            "authors": "U R Muduli; M S E Moursi; I P Nikolakakos; K A Hosani; S A Mohammad; T Ghaoud"
+        },
+        {
+            "ref_id": "b21",
+            "title": "IBM Watson Health",
+            "journal": "",
+            "year": "2022",
+            "authors": " Ibm"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Microsoft develops AI to help cancer doctors find the right treatments",
+            "journal": "Bloomberg",
+            "year": "2016-09-20",
+            "authors": "D Bass"
+        },
+        {
+            "ref_id": "b23",
+            "title": "China AI+ Medical Industry Report",
+            "journal": "",
+            "year": "2020-09-14",
+            "authors": ""
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig.1.Process for Implementing Advanced Privacy Protection Techniques in AI-Powered Medical Systems.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "22",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Algorithm 2 : 2 .22Enhanced Privacy Preservation through Federated Learning (with Complex Variants) 1. Initialize Input from Algorithm 1: Let $ be the differentially private output from Algorithm 1. Distribute Model to Clients: Each client ] receives the model ! and shares local data :",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "3 .3Local Training: Each client performs local training: o Update ! = ! + f\u2207 KB J ? + \u03c3 3 (32) o ! Jh = ! + fc\u2211 \u2207 KB J ? 6 + \u03c3 4 e (33) 4. Aggregate Local Models: Aggregate the updates from all clients:",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2321",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 2 .Algorithm 3 : 2 ) 1 .2321Fig.2.Federated Learning with Privacy Preservation for AI-Powered Medical Systems Figure 2 demonstrates how AI-based medical systems safeguard privacy via cooperative learning. After setting up Algorithm 1 data, it delivers the model to numerous clients for local training. After assembling the locally trained models, noise is introduced for privacy. We analyze the global model's value and collect client input to improve it. Iterations modify privacy settings before the model is done. Privacy rules are verified before using the end model and entering the findings. Algorithm 3: Federated Model Refinement for Enhanced Medical System Privacy (Next Stage of Algorithm 2) 1. Receive Finalized Model from Algorithm 2: Let the global model ! , AB from Algorithm 2 be the input. o ! sJ, Jr = ! , AB + v (58) 2. Distribute Model for Further Fine-Tuning: Each client ] receives ! sJ, Jr and shares additional local data $ :",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Fig. 3 .3Fig.3.Federated Model Refinement Process for EnhancedPrivacy in Medical Systems.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig. 4 .4Fig.4.Comparative Performance of Competing Methods in Privacy-Preserving AI Medical Systems.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "Fig. 5 .5Fig.5.Enhanced Performance of the Innovative PrivacyFramework Compared to Competing Methods.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "",
+            "figure_data": ".PERFORMANCE EVALUATION OF PRIVACY-PRESERVING METHODS IN AI-POWERED MEDICAL SYSTEMSMethodAccuPreciReF1DatComputSecuracysioncallScaationalrity(%)(%)(%oreUtilOverheaLeve)ityd (ms)l (1-(%10))Differenti85807577.901208al Privacy5Homomor78767073.852509phic0EncryptionFederated82797376.881507Learning0Secure80757273.843009Multiparty5ComputationBlockchai81787476.872008n-based0ProtectionData87827880.921106Anonymiz0ationPseudony86817779.891306mization0Synthetic84777576.911405Data0GenerationZero-83767374.862609Knowledg5e ProofsPrivacy-79747172.832807Preserving5DataMiningTable 1 compares privacy-protecting strategies in AI-driven medical systems in many fields. Data accuracy,precision, recall, usefulness, work, and safety rate themethods. Differential privacy is 85% accurate, demonstratingits ability to maintain model performance and data security.However, solutions like homomorphic encryption demandmore processing resources, compromising security and speed.This table shows the performance, safety, benefits, anddisadvantages of each approach."
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "COMPARISON OF SECURITY LEVELS AND DATA UTILITY IN PRIVACY TECHNIQUES",
+            "figure_data": "MethodSecuDatLateScalaCompliImplemerityancybilityancentationLeveUtil(ms)withComplexil (1-ityRegulaty (1-5)10)(%)tionsDifferentia89050HighYes3l Privacy"
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "table",
+            "figure_id": "tab_7",
+            "figure_caption": "PERFORMANCE EVALUATION PARAMETERS OF COMPETING METHODS IN PRIVACY-PRESERVING AI MEDICAL SYSTEMS.",
+            "figure_data": "ParametSecureDataGuPrivacySafeMHealthSecerAIardNetedureModelSystemFramewSolutioAlgorithmorknsAccurac8582808481yPrecision 8078757976Recall7876747773F1 Score7977737875AUC-0.840.810.790.820.80ROCCurveConfusio9088858987n MatrixPrivacy7068656667Budget"
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "table",
+            "figure_id": "tab_8",
+            "figure_caption": "compares the effectiveness of AI-powered medical system privacy protection techniques. F1 score, memory, accuracy, and precision indicate how effectively each approach protects private data and provides analytical insights. The graphic illustrates privacy fund utilization and legal compliance to indicate how well and how long each technique lasts.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "table",
+            "figure_id": "tab_9",
+            "figure_caption": "",
+            "figure_data": ". PERFORMANCE EVALUATION PARAMETERS OFTHE INNOVATIVE PRIVACY FRAMEWORK COMPARED TOCOMPETING METHODS.ParametInnovatiSecureDataGuaPrivacyNSafeMerveAIrdetedPrivacyModelSystemFramewoSolutioFrameworknsrkAccuracy 9288878986Precision8884828581"
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_10",
+            "figure_caption": "This research's novel privacy architecture is comprehensive and secure for AI-powered medical systems. It combines Laplace distribution noise addition, secure data management, and joint model training to balance privacy and data value. It outperforms prior approaches in accuracy, precision, memory, F1 score, and privacy legislation. The approach may reduce training and inference durations without affecting model stability. Real-time healthcare environments that demand swift decisions find this approach ideal. Iterative feedback improves the model constantly, keeping it relevant as new data arrives. Privacy budget consumption and data usefulness scores reflect how effectively it protects people's efforts while maintaining information quality. It may be the best option for implementing AI in healthcare applications because it meets and exceeds regulatory requirements. It provides fast analytics while protecting anonymity, making it a critical tool in the ever-changing field of medical data investigation. The framework advances AI, data security, and healthcare integration. It provides a versatile and effective method for future usage.",
+            "figure_data": "sophisticated approaches, including1000% 10% 20% 30% 40% 50% 60% 100% 90% 80% 70%AccuracyPrecisionRecallF1 ScoreAUC-ROC CurveConfusion\u2026Privacy\u2026Data UtilityModel\u2026Training\u2026Inference\u2026Compliance\u202650 0AccuracyPrecisionRecall Innovative Privacy Framework F1 Score AUC-\u2026 Confusi\u2026 Privacy\u2026 Data\u2026 Model\u2026 Trainin\u2026 SecureAI Model DataGuard System PrivacyNet FrameworkInferen\u2026Compli\u2026SafeMed SolutionsSecureAI ModelDataGuard SystemPrivacyNet Framework SafeMed SolutionsHealthSecure Algorithm"
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "o = \u2211 + \u03c3(1)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                50.8,
+                190.16,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "o \u0394 = max \u2286 | ! \u2208 \" -! $ \u2208 \" |(2)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                85.72,
+                190.28,
+                34.67
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "o \u0394 = max %,% & | - $ + \u03c3 ' |(3)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                145.72,
+                190.16,
+                24.41
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "o ( \u223c Lap * +,-. / 0 1(4)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                214.22,
+                190.28,
+                24.67
+            ]
+        },
+        {
+            "formula_id": "formula_4",
+            "formula_text": "o ( = noise + \u03c3 2(5)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                236.32,
+                190.16,
+                19.67
+            ]
+        },
+        {
+            "formula_id": "formula_5",
+            "formula_text": "o $ = + ( + \u03c3 3(6",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                270.4,
+                186.41,
+                19.67
+            ]
+        },
+        {
+            "formula_id": "formula_7",
+            "formula_text": "o < = \u2211 | -$ | + \u03c3 0(11)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                478.0,
+                190.16,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_8",
+            "formula_text": "o \u03f5 ?@?AB = \u2211 \u03f5 C + \u03c3 1(12)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                526.48,
+                190.28,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_9",
+            "formula_text": "o < ?@?AB = \u2211 < C + \u03c3 D(13)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                560.82,
+                190.28,
+                31.89
+            ]
+        },
+        {
+            "formula_id": "formula_11",
+            "formula_text": "o \u0394 EB@FAB = max %,% & | - $ + \u03c3 2 | G(15)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                629.08,
+                188.96,
+                37.02
+            ]
+        },
+        {
+            "formula_id": "formula_12",
+            "formula_text": "o $ \u2208 \" \u2265 1 -\u03c3 3 (16) o $ $ \u2208 \" \u2264 \u03c3 4(17)",
+            "formula_coordinates": [
+                3.0,
+                360.6,
+                696.16,
+                190.28,
+                36.83
+            ]
+        },
+        {
+            "formula_id": "formula_13",
+            "formula_text": "o \u0394 , AB = max %,% & | ! \u2208 \" - ! $ \u2208 \" + \u03c3 5 |(18)",
+            "formula_coordinates": [
+                4.0,
+                98.52,
+                23.08,
+                190.28,
+                35.87
+            ]
+        },
+        {
+            "formula_id": "formula_14",
+            "formula_text": "o ! \u2208 \" = M % -. 9N M OPOQR(19)",
+            "formula_coordinates": [
+                4.0,
+                98.52,
+                62.1,
+                190.28,
+                39.67
+            ]
+        },
+        {
+            "formula_id": "formula_16",
+            "formula_text": "o S = C \u2211 < C + \u03c3 'T(21)",
+            "formula_coordinates": [
+                4.0,
+                98.52,
+                129.52,
+                190.16,
+                22.97
+            ]
+        },
+        {
+            "formula_id": "formula_17",
+            "formula_text": "o U = Optimal Noise + \u03c3 '(22)",
+            "formula_coordinates": [
+                4.0,
+                98.52,
+                177.4,
+                190.28,
+                19.67
+            ]
+        },
+        {
+            "formula_id": "formula_18",
+            "formula_text": "o V = { $ , \u0394 , \u03f5 } + \u03c3 ''(23)",
+            "formula_coordinates": [
+                4.0,
+                98.52,
+                222.4,
+                190.28,
+                19.67
+            ]
+        },
+        {
+            "formula_id": "formula_19",
+            "formula_text": "o U = \u2211 \u03f5 + \u03c3 'D(24)",
+            "formula_coordinates": [
+                4.0,
+                98.52,
+                239.32,
+                190.28,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_20",
+            "formula_text": "o Privacy Score = Y \u2211 Y + \u03c3 '2(25)",
+            "formula_coordinates": [
+                4.0,
+                98.52,
+                286.96,
+                190.16,
+                22.96
+            ]
+        },
+        {
+            "formula_id": "formula_22",
+            "formula_text": "o \u2208 , ^= 1,2, \u2026 ,(29)",
+            "formula_coordinates": [
+                4.0,
+                360.6,
+                578.32,
+                190.28,
+                19.67
+            ]
+        },
+        {
+            "formula_id": "formula_23",
+            "formula_text": "o KB J ? = \u2211 + \u03c3 D(30)",
+            "formula_coordinates": [
+                4.0,
+                360.6,
+                595.24,
+                190.16,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_24",
+            "formula_text": "o ! EB@FAB = \u2211 ! + \u03c3 5(34)",
+            "formula_coordinates": [
+                4.0,
+                360.6,
+                738.4,
+                190.16,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_25",
+            "formula_text": "o < EB@FAB = \u2211 b -@ ij b + \u03c3 (39) o Performancec< EB@FAB e = c\u2211 b - @ ij b + \u03c3 ' e(",
+            "formula_coordinates": [
+                5.0,
+                98.52,
+                184.24,
+                190.28,
+                68.03
+            ]
+        },
+        {
+            "formula_id": "formula_26",
+            "formula_text": "o $ = \u2211 $ + \u03b1 (59) o \u0394 $ = \u2211 maxcb $ -d $ b, \u03b1 ' e(",
+            "formula_coordinates": [
+                6.0,
+                98.52,
+                558.76,
+                190.28,
+                38.68
+            ]
+        },
+        {
+            "formula_id": "formula_27",
+            "formula_text": "o sJE = \u2021 \u2211 |! $ | ' + \u03b4 2 (72)",
+            "formula_coordinates": [
+                6.0,
+                360.6,
+                268.72,
+                190.28,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_28",
+            "formula_text": "o ! , AB $ = ! Jh r[ + \u2021 \u2211 ! $ + \u03b4 3 (73) o \u2207! Jh = \u2211 \u2207 sJE + \u03b4 4 (74",
+            "formula_coordinates": [
+                6.0,
+                360.6,
+                315.86,
+                190.28,
+                39.25
+            ]
+        },
+        {
+            "formula_id": "formula_29",
+            "formula_text": ")",
+            "formula_coordinates": [
+                6.0,
+                546.75,
+                340.98,
+                4.13,
+                9.28
+            ]
+        },
+        {
+            "formula_id": "formula_30",
+            "formula_text": "\u2022 \u03b7 @[? = M \u20acm\u2022 \u20acmu6nm| + \u03b3(75)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                393.14,
+                226.28,
+                26.27
+            ]
+        },
+        {
+            "formula_id": "formula_31",
+            "formula_text": "\u2022 ! @[? = ! , AB $ -\u03b7 @[? \u2207 sJE + \u03b3 '(76)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                418.94,
+                226.28,
+                19.99
+            ]
+        },
+        {
+            "formula_id": "formula_32",
+            "formula_text": "\u2022 @[? = \u0160 PoO z PoO + \u03b3 D(77)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                437.18,
+                226.16,
+                25.91
+            ]
+        },
+        {
+            "formula_id": "formula_33",
+            "formula_text": "\u2022 V , AB = M PoO \u2211 M m~QR n 689 + \u03b3 2(78)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                490.7,
+                225.08,
+                26.99
+            ]
+        },
+        {
+            "formula_id": "formula_34",
+            "formula_text": "\u2022 ! , AB \u2039Jr = ! @[? + \u03b3 3(79)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                543.88,
+                226.16,
+                19.67
+            ]
+        },
+        {
+            "formula_id": "formula_35",
+            "formula_text": "\u2022 rJ[B@j = \u2211 \\? B ?j + \u03b3 5(81)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                609.04,
+                226.16,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_36",
+            "formula_text": "\u2022 \u211b = {! , AB \u2039Jr , rJ[B@j , \u2211 \u03b3 ; }(83)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                674.68,
+                224.36,
+                33.3
+            ]
+        },
+        {
+            "formula_id": "formula_37",
+            "formula_text": "\u2022 \u2022 = \u2211 \u211b + \u03b3 T(84)",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                710.68,
+                225.08,
+                20.03
+            ]
+        },
+        {
+            "formula_id": "formula_38",
+            "formula_text": "\u2022 ! sJ",
+            "formula_coordinates": [
+                6.0,
+                324.6,
+                745.84,
+                33.66,
+                19.67
+            ]
+        }
+    ],
+    "doi": "10.1109/ICTBIG64922.2024.10911522"
+}

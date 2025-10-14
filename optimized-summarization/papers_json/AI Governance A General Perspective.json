@@ -1,0 +1,517 @@
+{
+    "title": "AI Governance: A General Perspective",
+    "authors": "Moustafa Elmetwaly Kandeel; Eid Abo Hamza; Ghaleb Elrefae",
+    "pub_date": "",
+    "abstract": "This paper addresses one of the most important and urgent topics of the present time, namely \"Governance of Artificial Intelligence\". If artificial intelligence is currently used in all fields and sectors such as healthcare, education, research, business, transportation, drones and other fields, these multiple uses raise many risks related to the possibility of infringing the right to privacy and protection of personal data, bias and discrimination, as well as risks related to unemployment, security, transparency, and regulatory and legislative gaps. In this paper, we discuss defining the concept of artificial intelligence governance and the parties responsible for achieving this governance. Then we study the initiatives of artificial intelligence governance at the international level, such as Shanghai Declaration on Global AI Governance, IMF Framework for AI Governance, UNESCO's AI Ethics Recommendation, The OECD AI Principles and the European AI Act. Through these initiatives, we have reached the most important principles of artificial intelligence governance such as Accountability,",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "In light of the development and technological revolution that the world is currently witnessing, artificial intelligence has become an advanced position, as it has acquired control over many fields and sectors in daily life [1]. With a little study, it becomes clear that artificial intelligence appears in many daily images and applications. Examples of this include its role in social media platforms, Judicial system [2], education, scientific research [2], the business field, and health magazines [3], where it is used in detecting diseases, diagnosing them, and managing medical data [4]. Artificial intelligence can also be used in the fields of agriculture, navigation, transportation, banking services, and many daily fields in which the use of artificial intelligence is mainly evident in appearance and tangible use. In addition to the above, artificial intelligence has created a scientific revolution that plays an important role in other fields such as ecommerce, transportation and communications [5].\nThere is no doubt that the increasing use of artificial intelligence in all daily activities and at the level of all sectors and fields may entail many risks that may affect the right to privacy and the protection of personal data. In addition to the possibility of inequality in some cases and a breach of some ethical values. In addition to the unemployment that may accompany the fields of artificial intelligence, it is necessary to establish frameworks and rules that ensure the governance of artificial intelligence so that its use in the aforementioned fields is consistent with the ethical frameworks and rules and within the framework of legal systems that guarantee the protection of privacy and personal data and nondiscrimination, transparency, integrity and other rules and foundations on which the idea of governance is based. Therefore, talking about the AI governance requires establishing a legal framework through which we ensure that the uses of artificial intelligence are within the ethical and legal frameworks, justice, equality, transparency, integrity and impartiality. In this regard, many initiatives have emerged at the international level, such as the Shanghai Declaration on Artificial Intelligence Governance, in addition to some efforts and initiatives at the regional level, such as those undertaken by the United Arab Emirates [6].\nIn addition to the above, the governance of artificial intelligence is not limited to the existence of legal and ethical frameworks, but also requires the development of human cadres that have an effective role in supervising artificial intelligence systems in order to ensure the achievement of this governance.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b1",
+                "b2",
+                "b4",
+                "b5",
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. THE IMPORTANCE OF AI GOVERNANCE",
+            "text": "The importance and necessity of AI governance lies in establishing frameworks and regulations that ensure that AI serves humanity ethically and is developed and applied responsibly in various industries and sectors, and in defining safety standards for AI and its applications [6]. This importance and necessity are highlighted by the possibility of AI affecting many matters, including:",
+            "publication_ref": [
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Privacy Risks",
+            "text": "Despite the many positives of artificial intelligence applications, their use is still undoubtedly fraught with risks and raises many problems that affect the basic rights of individuals and entail many legal consequences. With the recent increase in the use of artificial intelligence applications, the chances of invading on individuals' privacy have increased [7] and new forms of violating the privacy of their data and infringing on their right to image and other elements of the right to privacy have emerged [8]. It has become common that the use of artificial intelligence applications to access, for example, the goods and services provided are conditional on the user providing personal information about himself, such that he will not be able to access and use these applications without providing this data , and that when the user declares his consent to the terms of the so-called privacy policy of these sites or applications, this is often done without reading the terms of these policies, and one of the terms of these policies may include the possibility of using this user's personal data by a third party in pursuit of certain commercial or advertising purposes that may have an impact on the lives of users [9].\nIn addition to the above, many applications include obtaining a person's photos and biometric characteristics and sharing them with different parties, which may constitute an infringement on the right to image and physical privacy, in addition to what tracking applications and cookies represent in terms of monitoring. The user's browsing of websites and creating a file on his interests and desires without his permission [10]. It should also be noted that geolocation applications allow the user's location to be determined at any moment, and all of the above represents risks that fundamentally affect the right to privacy and personal data of users.\nFinally, many countries have resorted in recent years to using smart surveillance cameras that record videos and analyze all photos and video clips taken of individuals. While this may contribute to reducing crimes and violations and apprehending violence, it may constitute an infringement on individuals' privacy, in addition to the fact that the use of smart drones in surveillance work and flying taxis may infringe on the right to privacy for individuals [ 11].",
+            "publication_ref": [
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Discrimination Risks",
+            "text": "Some writers have raised the issue of AI bias against certain groups based on the information stored, as recent developments in generative AI and its growing applications continue to raise serious human rights concerns [12], including concerns about racial discrimination and the infringement of minority rights [13].\nA prominent example of the potential for AI bias is racial biases brought about by technological advances in \"predictive policing,\" which can make assessments that predict who is likely to commit future crimes and where they will occur based on their geolocation and personal data, and which could exacerbate the long-standing practice of police targeting specific neighborhoods based on racial considerations for policing purposes. Police then focus on these neighborhoods, and individuals living there become registered on police records. This in turn affects where algorithms predict future crime will occur, leading to increased police presence in those areas.",
+            "publication_ref": [
+                "b13",
+                "b14"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. The Impact of AI on Economy Market and Job opportunities",
+            "text": "Since artificial intelligence has become a reality that we live on a daily basis, with its multiple uses and its contact with all fields [14], and taking into account that it is still currently standing at the beginning of the launch of more advanced future innovations and systems, and with the full conviction of what the application of artificial intelligence can achieve in terms of creating opportunities for real partnership between humans and machines [15], and thus creating more new jobs, achieving the impact of productivity. There should be monitoring of the negative effects that the expansion in the use of artificial intelligence applications can cause, represented by crowding out workers in their jobs and those applications taking over many job opportunities, which could lead to more unemployment. Studies indicate that many manual and routine human workers will be dispensed with as a result of relying on applications of artificial intelligence systems instead of Human beings, which causes an increase in the scope of unemployment as a result of reducing job opportunities by 50% [16].",
+            "publication_ref": [
+                "b15",
+                "b16",
+                "b17"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Security Risks",
+            "text": "There are concerns that AI could be used to generate fake images, videos, audio or text (deepfakes) using advanced machine learning tools, leading to the spread of misinformation on massive scales online. This could undermine the integrity of information and undermine trust in news sources and the integrity of democratic institutions. There is a terrifying scenario, the emergence of deep fakes may one day push national security decision-makers to take actual action based on false information, which may lead to a major crisis, or worse, wars [17]. A group of health experts have warned of the dangers of developing artificial intelligence technologies, describing them as an \"existential\" threat to humanity if they are not regulated. Although artificial intelligence has the potential to revolutionize healthcare, artificial intelligence technologies also have the potential to cause negative health effects [12].",
+            "publication_ref": [
+                "b18",
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Accountability and Transparency Risks",
+            "text": "The principle of transparency and explainability is essential for building trust in AI systems and technologies. Therefore, AI systems must be built with a high degree of clarity and explainability, with features to track the stages of automated decision-making, especially those that may lead to harmful effects on individuals. This means that, the data, algorithms, capabilities, processes and purpose of an AI system all need to be transparent and explainable to those directly and indirectly affected by it [11]. The degree to which a system is traceable, auditable, transparent and explainable depends on the context of the AI system, its purpose and the results it may produce. AI systems and their developers are able to justify the foundations of their design, practices, operations, algorithms, decisions, and behaviors that are ethically permissible and not harmful to the public.\nThe principle of accountability and responsibility holds designers, developers, administrators and evaluators of AI systems morally responsible for decisions and actions that may lead to potential risks and negative impacts on individuals and societies [11]. Human oversight, governance and appropriate management must be applied throughout the entire life cycle of an AI system to ensure the existence of Appropriate mechanisms to avoid harm and misuse of this technology. AI systems should not deceive people or unjustifiably harm their freedom of choice. Designers, developers and people implementing the AI system should be identified and accessible to stakeholders [9]. Responsible parties should take the necessary preventive measures and put in place risk assessment and mitigation strategy to limit the harm caused by the AI system. The parties responsible for the AI system must ensure that the system's fairness and sustainability are maintained through oversight mechanisms. All parties involved in the AI system's life cycle must take these principles into account when making decisions.",
+            "publication_ref": [
+                "b12",
+                "b12",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "F. Ethical Concerns",
+            "text": "UNESCO has highlighted that the rapid rise of artificial intelligence has created many opportunities globally, from facilitating diagnostics for healthcare purposes, to enabling people to communicate with each other via social media, and enhancing the efficiency of the workforce through automated tasks. However, these rapid changes naturally raise serious ethical concerns, stemming from the potential of AI systems to inculcate bias, exacerbate climate degradation, threaten human rights, and much more. The risks posed by AI are already compounding existing inequalities, further harming already marginalized groups.\nAmong the recent uses of AI technologies are self-driving cars and their futuristic design and cabin features, as well as drones. However, the use of self-driving cars, for example, raises many ethical concerns, such as the inability to sometimes make decisions. The right decision at the right time [18]. For example, a Tesla Model Y failed to avoid a school bus on a North Carolina highway and struck a person, causing serious and multiple injuries. According to the Washington Post report on the incident and witness accounts, the autonomous system did not slow down or attempt to stop at all and continued to cruise at 43 mph. The National Highway Traffic Safety Administration reports that such accidents occur at a much higher rate, occurring once for every 470,000 miles driven. Self-driving system.\nAnother pressing concern about the use of AI applications in military decisions seems to be whether AI might lead to \"inflating enemy capabilities,\" and then using worst-case scenario assessments to justify the use of military force. In the military realm, it might lead to \" \"Algorithmic bias\" arising from data collection, training and application has \"deadly consequences.\" If it is settled that humans created AI, then new technology and its evolution may in turn shape future decision-making. In this case, no technical fixes, including In that AI, to overcome humanity's insecurities [17].\nAmong the recent uses of AI technologies are self-driving cars and their futuristic design and cabin features, as well as drones. However, the use of self-driving cars, for example, raises many ethical concerns, such as the inability to sometimes make the right decision in a timely manner [18]. For example, a Tesla Model Y failed to avoid a school bus on a North Carolina highway, hitting a person and causing him serious and various injuries. According to the Washington Post report on the incident and witness accounts, the selfdriving system did not slow down or attempt to stop at all and continued to travel at a speed of 70 kilometers per hour. The National Highway Traffic Safety Administration reports that such accidents occur at a much higher rate, occurring once for every 770,000 kilometers traveled by the self-driving system.\nAnother pressing concern regarding the use of AI applications in military decisions seems to revolve around whether AI might lead to \"inflating the enemy's capabilities,\" and thus using worst-case scenario assessments to justify the use of military force. In the military, \"algorithmic bias\" arising from data collection, training, and application could have \"deadly consequences.\" If it is established that humans created AI, then new technology and its evolution could shape future decision-making. In this case, no technological fix, including AI, can overcome humanity's feelings of insecurity [17].",
+            "publication_ref": [
+                "b19",
+                "b18",
+                "b19",
+                "b18"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "G. Regulatory and Governance Gaps",
+            "text": "If artificial intelligence has penetrated many fields, and its applications have taken over many sectors, it still represents, as we mentioned earlier, many concerns, the most important of which is the infringement of human rights [19].\nThe main reason for these concerns is the lack of a legal framework for governing artificial intelligence. Despite the existence of some legislation aimed at protecting personal data [20], the right to privacy, and others, these legislations are still insufficient in the technology sector to address the serious challenges that these highly advanced technological systems can impose.",
+            "publication_ref": [
+                "b20",
+                "b21"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. CONCEPT OF AI GOVERNANCE",
+            "text": "Talking about AI governance and identifying who is responsible for setting the frameworks for this governance, supervising its implementation, and contributing to its success requires defining the concept of AI governance as well as who is responsible for setting the frameworks for governance, implementing them, and supervising the achievement of its goal.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Definition of AI Governance",
+            "text": "AI governance refers to the processes, standards and barriers that help ensure the safety and ethics of AI systems and tools. AI governance frameworks guide AI research, development and application to help ensure safety, fairness, respect for human rights, and the protection of the right to privacy, non-discrimination and non-bias [21].\nAI governance is the way in which rules or procedures are organized and maintained, and often accountability is determined. The idea of AI governance embodies the idea of a framework within which principles and ethics for the safe and responsible use of AI technologies are applied, with the aim of ensuring that intelligent technologies are used responsibly in order to minimize the risks associated with those technologies. AI principles are applied to various fields in which AI technologies are used, such as medicine, commerce, finance, self-driving cars, institutional prejudice etc [11]. The standards and principles necessary for AI governance in all these fields are defined, making them interpretable, transparent, and ethical.",
+            "publication_ref": [
+                "b22",
+                "b12"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Responsible AI Institutions",
+            "text": "Establishing frameworks for AI governance requires cooperation from all parties and institutions, whether at the international or regional level, whether these institutions are governmental, private, civil, or even international bodies. Establishing these frameworks requires intensive and joint efforts from everyone.\nOn the one hand, governments have an effective role in applying AI governance frameworks and working to implement and develop them whenever possible, although this may be difficult for some countries that may not have the necessary capabilities to keep pace with rapid technological developments [22].\nOn the other hand, the role of the private sector cannot be overlooked, as it contributes effectively to the economic aspects of societies and countries, and thus has a close and growing connection to the uses of AI, which requires it to have an effective role in establishing and implementing these governance frameworks, especially since some firms lack sufficient internal ethical frameworks for protection [23]. In addition, the role of international organizations in establishing these frameworks cannot be overlooked, such as the role that the United Nations and UNESCO can play [15].\nFinally, in order for this vision to be complete, civil society institutions must also have a role in this governance, given their prominent role in the local community.",
+            "publication_ref": [
+                "b23",
+                "b24",
+                "b16"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. INITIATIVES OF AI GOVERNANCE",
+            "text": "There have been many international initiatives to establish rules for the governance of artificial intelligence.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Shanghai Declaration on Global AI Governance",
+            "text": "Shanghai Declaration on Global AI Governance (2024, July 4) emphasized the far-reaching impact of artificial intelligence on the world and its great potential, and recognized that AI is leading a scientific and technological revolution and profoundly affecting the way people work and live. With the rapid development of AI technologies, there are unprecedented challenges, especially in terms of safety and ethics. The declaration stressed the need to promote the development and application of AI technologies while ensuring safety, reliability, control and fairness in the process, and to encourage the use of AI technologies to enable the development of human society. It emphasized that global cooperation and collective effort are the only way to realize the full potential of AI for the well-being of humanity [24].",
+            "publication_ref": [
+                "b25"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. IMF Framework for AI Governance",
+            "text": "In 2023, the IMF has emphasized the pillars of AI governance, and that if global AI governance is to be successful, it must reflect the unique characteristics of this technology. First among these is the fact that, as a highly advanced technology, the progress it can make is unpredictable. Policymakers must take into account that, given this unpredictability, any rules they enact today may not be effective or even relevant in a few months, let alone years. It would be a mistake to constrain today's regulators with inflexible regulations. Good governance would be best served by establishing a set of overarching principles on which AI decision-making can be based that are preventive, comprehensive, robust, and targeted.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. UNESCO's AI Ethics Recommendation",
+            "text": "UNESCO has developed a set of global standards, whether in the field of genetic research, climate change or scientific research, to maximize the benefits of scientific discoveries and reduce the risks of undermining them, as well as to ensure that they are harnessed to build a more inclusive, sustainable and peaceful world. UNESCO has also identified new challenges in several areas, including the ethics of neuroethology, climate engineering and the Internet of Things. In November 2021, UNESCO developed the first global document of its kind in the field of the ethics of artificial intelligence, the \"Recommendation on the Ethics of Artificial Intelligence\", which was adopted by all 133 Member States [25].",
+            "publication_ref": [
+                "b26"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. The OECD AI Principles",
+            "text": "In May 2019, the OECD unanimously adopted the OECD Principles on Artificial Intelligence at its annual meeting of the OECD Council of Ministers [26]. The recommendations called for AI to be developed in a manner that respects human rights, democratic values and diversity, and emphasized that AI should benefit humanity and the planet through synergies with sustainable development and well-being.\nThe OECD advised that AI systems should be developed in a manner that respects the rule of law, human rights, democratic values and diversity, and that they should include appropriate security mechanisms to build a fair and just society, with human intervention when necessary. The recommendations also stipulate that transparent disclosure procedures for AI systems should be ensured so that users can understand and record the results when using these systems.\nThe OECD also urged governments to encourage the public and private sectors to invest their capital in reliable research and development of AI systems, and to cooperate in the exchange of information and the development of international standards for responsible management and oversight of AI",
+            "publication_ref": [
+                "b27"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. European AI Act",
+            "text": "On 13 June 2024, after three years of debate, the European Parliament approved the final version of the Common AI Act, a global first for AI regulation [27]. It is the first global AI regulation and is part of a broader package of measures under the Coordinated Investment Plan for AI. The Act is based on three fundamental principles: (1) Classifying AI systems according to risk; (2) Establishing a federal governance structure for oversight and cooperation; and (3) Establishing measures to encourage innovation.\nThe Act balances a security objective to regulate the use of AI with an investment objective to support technological innovation. It supports the \"digital single market\" strategy that Europeans are betting on in the commercial and industrial fields.",
+            "publication_ref": [
+                "b28"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. PRINCIPLES OF AI GOVERNANCE",
+            "text": "Through careful study of previous initiatives that attempted to adopt principles for global AI governance, the most important of these principles can be summarized as follows:",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Accountability",
+            "text": "The rapid pace of AI development makes it imperative to create a framework for independently verifying AI systems even as the technology continues to advance. The global accountability community needs a toolkit for evaluating this ever-changing technology, and more importantly, organizations that build, purchase, and deploy AI need a framework for understanding how to evaluate AI systems.\nRecognizing the urgent need for AI governance, the U.S. Government Accountability Office (GAO) has published an AI Accountability Framework designed to help ensure accountability and responsible use of AI in government programs and operations [8].\nDeveloped using a truly collaborative approach-uniting experts across the federal government, industry, and nonprofit sectors-the framework is organized around four complementary principles that address (1) governance, (2) data, (3) performance, and (4) oversight, each of which includes essential real-world practices, including questions to ask, audit procedures, and the types of evidence to collect [28].",
+            "publication_ref": [
+                "b9",
+                "b29"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Transparency",
+            "text": "AI systems must be built with a high degree of clarity and explainability, with features to track the stages of automated decision-making, especially those that may lead to harmful effects on individuals. This means that data, algorithms, capabilities, processes and purpose of an AI system all need to be transparent and explainable to those directly and indirectly affected by it. The degree to which a system is traceable, auditable, transparent and explainable depends on the context of the AI system, its purpose and the results it may produce [9]. AI systems and their developers are able to justify the foundations of their design, practices, operations, algorithms, decisions, and behaviors that are ethically permissible and not harmful to the public.",
+            "publication_ref": [
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Fairness",
+            "text": "Bias in AI can be defined as the ability of machine learning algorithms to replicate and amplify pre-existing biases in the training dataset. This can lead to unfair and unethical outcomes, disproportionately impacting marginalized communities [10]. For example, biased hiring practices, loan approvals, and unequal criminal sentences.\nMitigating AI bias requires a thoughtful approach to data selection, preprocessing techniques, and algorithm design to minimize bias and promote fairness. Continuous monitoring and evaluation of AI systems also helps identify and correct bias [16]. Thus, promoting fairness through AI-based decision-making processes.",
+            "publication_ref": [
+                "b11",
+                "b17"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Data Privacy",
+            "text": "Data security and privacy are key issues because AI systems require large amounts of data to operate and train. To avoid leaks, breaches, and misuse, one must ensure the security, availability, and integrity of data. Building trust among users through transparent data processes and ethical data handling protocols is critical to user confidence in AI systems and responsible data management [28]. The key here is to implement robust data governance policies, employ encryption and anonymization techniques, and ensure compliance with evolving regulations-such as the General Data Protection Regulation (GDPR) in Europe. This perspective focuses not only on implementing technical safeguards, but also on establishing comprehensive governance structures that oversee the ethical use of data and AI [12].",
+            "publication_ref": [
+                "b29",
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Ethical Use of AI",
+            "text": "The reality is that the opportunities for AI are not equal, with AI capabilities concentrated in the hands of a few powerful companies -and even fewer countries. At the same time, many countries face significant challenges in accessing AI tools. The risks posed by AI are also uneven. Without adequate controls to protect human rights and maintain ethical foundations [21], AI could further exacerbate inequality and digital divides, disproportionately affecting the most vulnerable. This requires laying the foundations for comprehensive AI governance for the benefit of all humanity.",
+            "publication_ref": [
+                "b22"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "F. Inclusivity",
+            "text": "Designers and engineers should prioritize building AI systems and algorithms that are human-centered, allow and facilitate decision-making, and are consistent with human rights and cultural values, as automated decisions generated by AI systems do not operate autonomously without considering human rights and social and cultural values.\nDesigners and engineers must develop AI systems using ethical standards and train algorithms to achieve outcomes that advance humanity. Periodic evaluations of the AI system are conducted to ensure that its results do not conflict with human rights and social and cultural values, to verify the accuracy of key performance indicators, and to monitor its impact on individuals or groups in order to ensure continuous improvement of the technology [10]. In the event that any negative and harmful results are observed from the use of AI, the AI system administrator must identify the areas that need to be addressed and apply corrective measures to improve the performance of the AI system and its results and follow up on this periodically and continuously.",
+            "publication_ref": [
+                "b11"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "G. Sustainability",
+            "text": "As artificial intelligence systems continue to develop, concerns arise about the \"environmental costs\" and the impact on increased greenhouse gas emissions. Operating these smart systems requires the same amount of energy as 126 Danish homes consume in a whole year, and emits an amount of \"carbon dioxide\" equivalent to the emissions from driving 700,000 kilometers, according to an IT expert [29].\nTherefore, these systems have \"negative repercussions\" on energy consumption, and cause \"an increase in greenhouse gas emissions,\" which means an increase in \"global pollution\" rates. The more \"modern technological devices\" are used, the higher the levels of greenhouse gases that cause \"global warming,\" leading to \"serious climate changes.\"\nStudies indicate that \"artificial intelligence\" is entering several fields and thus consumes more than 5 percent of electricity production worldwide, which affects \"increased global warming and carbon emissions [21]. Artificial intelligence may cause pollution rates to \"multiply\" by rates 5 to 7 times higher than the current situation, which threatens the safety of living organisms. While the world is looking to \"reduce environmental pollution\", artificial intelligence can \"make the situation worse\", in light of the growing trend of reliance on these smart systems in many fields. If \"artificial intelligence systems\" develop in an \"uncontrolled\" manner in the future, this will have \"catastrophic consequences\" for the planet. Therefore, \"alternative energy sources\" are the only way to reduce carbon emissions, and thus avoid an \"environmental disaster\" that may be caused by the rapid development of artificial intelligence systems.",
+            "publication_ref": [
+                "b30",
+                "b22"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "H. Adaptability",
+            "text": "Despite the importance of establishing frameworks for AI governance, it is well known that technological progress has no limits, and that the world is witnessing the emergence of new AI applications every day, which may entail new risks, whether in terms of privacy, ethical considerations, or others [14]. Therefore, establishing any frameworks for AI governance must be characterized by their ability to evolve and adapt to daily technological changes and the emerging risks that accompany them.",
+            "publication_ref": [
+                "b15"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "I. Collaboration",
+            "text": "Developing a global framework for AI governance requires international cooperation between governments and civil society institutions to build a more sustainable and equitable future for all. While AI represents an opportunity to achieve the Sustainable Development Goals, it also poses significant challenges that require broad international cooperation [21]. For example, the UAE seeks to lead international cooperation efforts in the field of AI by participating in strategic partnerships and promoting common guidelines for the responsible use of AI, which enhances the UAE's influence on the international stage.",
+            "publication_ref": [
+                "b22"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "J. Human Oversight",
+            "text": "Many industries are using AI applications to ensure that high-stakes decisions are made in an informed way. For example, AI now helps businesses and users make investment choices, medical diagnoses, hiring decisions, criminal convictions, and more. In these cases, the potential consequences of biased or inaccurate AI outputs are much more severe [18]. People could lose their life savings, career opportunities, or years of their lives. That's why it's so important for human oversight of AI applications and decisions. For stakeholders to trust that AI is making effective and fair decisions on their behalf, they need a clear view of how the models work, the logic of the algorithms, and how the model is evaluated for accuracy and fairness. They also need to know more about the data used to train and tune the model, including where the data comes from and how the data is processed, weighted, and classified. In short, AI systems should not cause, accelerate, or negatively impact humans, but should enable and complement technological, social, and environmental progress while seeking to address the associated challenges.",
+            "publication_ref": [
+                "b19"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. CONCLUSION",
+            "text": "It has become clear that although artificial intelligence offers humanity enormous potential for use in all fields, it entails significant risks, especially infringement of the right to privacy, discrimination, and harm to marginalized groups or minorities, especially since not all countries have the same technological capabilities and a small number of companies control artificial intelligence systems. All of this requires the development of frameworks for the governance of artificial intelligence, including the basic principles that must be relied upon in its uses. However, the development of these frameworks requires cooperation at all levels. Therefore, we recommend holding an international conference under the auspices of the United Nations and with the attendance of the world's largest technology companies to develop rules and frameworks for the governance of artificial intelligence. In this regard, we appreciate what the European Union has done by enacting or enacting legislation regulating artificial intelligence at the level of the European Union countries.\nFinally, this paper paves the way for other researchers to conduct further studies, whether related to the idea of AI governance frameworks in general, or to a specialized and indepth study of one of these frameworks such as privacy protection, transparency, or others. It also opens the way for other studies related to the challenges facing the development of AI governance frameworks, foremost of which is the rapid technological progress, and the extent to which these frameworks can be modified, changed, and developed to keep pace with these technological developments.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "The impact of the UAE legislator's use of telecommunications technology on judicial notices",
+            "journal": "The Lawyer Quarterly",
+            "year": "2020",
+            "authors": "M E Kandeel"
+        },
+        {
+            "ref_id": "b1",
+            "title": "The Impact of Artificial Intelligence on Achieving the Efficiency of Justice \"AI & Speedy Justice",
+            "journal": "IEEE",
+            "year": "2023-12",
+            "authors": "M E Kandeel; G Elrefae"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Using artificial intelligence to resolve disputes through online arbitration",
+            "journal": "",
+            "year": "2022-11",
+            "authors": "A G Shalaby; G M Abdelaziz; M E Kandeel"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Downloaded on October 13,2025 at 18:40:09 UTC from IEEE Xplore. Restrictions apply. Security (SNAMS)",
+            "journal": "IEEE",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b4",
+            "title": "Using sanctions in enforcing Digital Markets Act in the EU",
+            "journal": "Springer",
+            "year": "2024",
+            "authors": "G M Abdelaziz; A Hashish"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Regulations for UAV Operation in Social Applications and Services: A General Perspective",
+            "journal": "IEEE",
+            "year": "2022-11",
+            "authors": "M E Kandeel; H B Salameh; G A Elrefae; A Qasim"
+        },
+        {
+            "ref_id": "b6",
+            "title": "",
+            "journal": "",
+            "year": "2024-05-22",
+            "authors": "I Mazrouei"
+        },
+        {
+            "ref_id": "b7",
+            "title": "",
+            "journal": "",
+            "year": "",
+            "authors": " \ufe8d\ufefb\ufebb\ufec4\ufee8\ufe8e\ufecb\ufef2\u202c"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Regulations for the Use of Information and Communication Technology in Health Fields: A Case Study of the UAE",
+            "journal": "Springer",
+            "year": "2023",
+            "authors": "M E Kandeel; A Abueida; M M Kandeel"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Intellectual property and data privacy: The hidden risks of AI",
+            "journal": "Nature",
+            "year": "2024",
+            "authors": "A Heidt"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Privacy in an AI era: How do we protect our personal information?",
+            "journal": "",
+            "year": "2023",
+            "authors": "Hai Stanford"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Algorithms of oppression: How search engines reinforce racism",
+            "journal": "NYU Press",
+            "year": "2018",
+            "authors": "S U Noble"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Automating inequality: How high-tech tools profile, police, and punish the poor",
+            "journal": "St. Martin's Press",
+            "year": "2018",
+            "authors": "V Eubanks"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Security and Privacy Risks in Artificial Intelligence Systems",
+            "journal": "Journal of Computer Research and Development",
+            "year": "2019",
+            "authors": "Y Chen; C Shen; Q Wang; Q Li; C Wang; S Ji; K Li; X Guan"
+        },
+        {
+            "ref_id": "b14",
+            "title": "The impact of selfconscious emotions on willingness to pay for sustainable products",
+            "journal": "Humanities & Social Sciences Reviews",
+            "year": "2019",
+            "authors": "Y Elsantil; E Abo Hamza"
+        },
+        {
+            "ref_id": "b15",
+            "title": "The second machine age: Work, progress, and prosperity in a time of brilliant technologies",
+            "journal": "W.W. Norton & Company",
+            "year": "2014",
+            "authors": "E Brynjolfsson; A Mcafee"
+        },
+        {
+            "ref_id": "b16",
+            "title": "AI and the future of government: Unexpected effects and critical challenges. Policy Center for the New South",
+            "journal": "",
+            "year": "2024",
+            "authors": "T C Peixoto; O Canuto; L Jordan"
+        },
+        {
+            "ref_id": "b17",
+            "title": "The future of employment: How susceptible are jobs to computerisation?",
+            "journal": "Technological Forecasting and Social Change",
+            "year": "2017",
+            "authors": "C B Frey; M A Osborne"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Handle with care: Autonomous weapons and why the laws of war are not enough",
+            "journal": "",
+            "year": "2022",
+            "authors": "L Eggert"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Machine ethics and automated vehicles",
+            "journal": "Springer",
+            "year": "2014",
+            "authors": "N J Goodall"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Race after technology: Abolitionist tools for the new Jim code",
+            "journal": "",
+            "year": "2019",
+            "authors": "R Benjamin"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Personal data protection in the United Arab Emirates and the European Union regulations",
+            "journal": "Journal of Governance & Regulation",
+            "year": "2024",
+            "authors": "A Abouahmed; M E Kandeel; A Zakaria"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Governing artificial intelligence: Ethical, legal, and technical opportunities and challenges",
+            "journal": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+            "year": "2018",
+            "authors": "C Cath"
+        },
+        {
+            "ref_id": "b23",
+            "title": "The road to digital unfreedom: How artificial intelligence is reshaping repression",
+            "journal": "Journal of Democracy",
+            "year": "2019",
+            "authors": "S Feldstein"
+        },
+        {
+            "ref_id": "b24",
+            "title": "The age of surveillance capitalism: The fight for a human future at the new frontier of power",
+            "journal": "PublicAffairs",
+            "year": "2019",
+            "authors": "S Zuboff"
+        },
+        {
+            "ref_id": "b25",
+            "title": "International Focus: Shanghai's Development Initiatives",
+            "journal": "Shanghai Municipal Government",
+            "year": "2024-07-04",
+            "authors": ""
+        },
+        {
+            "ref_id": "b26",
+            "title": "Recommendation on the ethics of artificial intelligence",
+            "journal": "UNESCO",
+            "year": "2021",
+            "authors": ""
+        },
+        {
+            "ref_id": "b27",
+            "title": "Recommendation of the Council on Artificial Intelligence",
+            "journal": "OECD",
+            "year": "2019",
+            "authors": ""
+        },
+        {
+            "ref_id": "b28",
+            "title": "of the European Parliament and of the Council of 13",
+            "journal": "Regulation",
+            "year": "2024-06",
+            "authors": ""
+        },
+        {
+            "ref_id": "b29",
+            "title": "Fairness in machine learning: Lessons from political philosophy",
+            "journal": "",
+            "year": "2018",
+            "authors": "R Binns"
+        },
+        {
+            "ref_id": "b30",
+            "title": "There's a greater cost of deploying AI and ML models in production -The AI carbon footprint",
+            "journal": "",
+            "year": "2023-10-17",
+            "authors": " Hyperight"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1109/GCET64327.2024.10934585"
+}

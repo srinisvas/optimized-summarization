@@ -1,0 +1,378 @@
+{
+    "title": "Privacy and Copyright Protection in Generative AI: A Lifecycle Perspective",
+    "authors": "Dawen Zhang; Yue Liu",
+    "pub_date": "",
+    "abstract": "The advent of Generative AI has marked a significant milestone in artificial intelligence, demonstrating remarkable capabilities in generating realistic images, texts, and data patterns. However, these advancements come with heightened concerns over data privacy and copyright infringement, primarily due to the reliance on vast datasets for model training. Traditional approaches like differential privacy, machine unlearning, and data poisoning only offer fragmented solutions to these complex issues. Our paper delves into the multifaceted challenges of privacy and copyright protection within the data lifecycle. We advocate for integrated approaches that combines technical innovation with ethical foresight, holistically addressing these concerns by investigating and devising solutions that are informed by the lifecycle perspective. This work aims to catalyze a broader discussion and inspire concerted efforts towards data privacy and copyright integrity in Generative AI.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "Since the dawn of the digital age, data protection, particularly concerning copyright and privacy, has been a focal point of public discourse [12,16]. The internet has enabled an unprecedented free flow and wide distribution of information on a global scale, which largely accelerated the democratization of information, fueling platforms like Wikipedia, YouTube, and StackOverflow. While this facilitated information democratization, it concurrently lowered barriers against unauthorized data use and piracy.\nThe success of Deep Learning (DL) owes significantly to the availability of large-scale datasets available for training DL models [21], predominantly sourced from the internet [10]. These datasets frequently encompass personal and copyrighted content [10,24], leading to a complex interplay of legal and ethical considerations. The emergence of Generative AI (GenAI) technologies, exemplified by applications like ChatGPT1 , Bard2 , and Midjourney3 , has intensified these concerns, despite marking a pivotal evolution and shift in AI applications. GenAI models, also known as Foundation Models, differs from traditional smaller-scale narrow-scoped DL models in its capability to generate diverse content forms, including text, audio, and visuals. This advancement, however, brings to the forefront the risks such as reproducing memorized data from training sets [6,26].\nThe legal and ethical implications of GenAI have become increasingly contentious, as evidenced by recent legal disputes (e.g., [3,7,23]). These cases highlight the growing contention surrounding privacy and copyright concerns in AI. In a comment submitted to United States (US) Copyright Office, the US Federal Trade Commission (FTC) stated that training Generative AI models on protected expression or personal data without consent may constitute copyright infringement or privacy violation [15]. The use of online data for AI training, commonly justified under conditions such as Legitimate Interests for personal data and Fair Use for copyrighted content, is now under greater scrutiny in the context of GenAI [8].\nIn response to these emerging challenges in GenAI, various approaches have been proposed to safeguard privacy and copyright. These including Differential Privacy [4], Machine Unlearning [5], and Data Poisoning [20,22]. While these methods offer valuable strategies, they predominantly target specific aspects and segments of the data handling process in isolation instead of the broader spectrum of challenges throughout the entire data lifecycle.\nAcknowledging this critical gap, our paper aims to delve into the interconnected challenges of data protection across the GenAI data lifecycle. In pursuing this, we aim to chart new directions in AI engineering research, focusing on the development of an integrated and holistic framework. This framework is envisioned to comprehensively address data privacy and copyright protection across the entire data lifecycle, while being meticulously attuned to the intricacies of GenAI systems.",
+            "publication_ref": [
+                "b11",
+                "b15",
+                "b20",
+                "b9",
+                "b9",
+                "b23",
+                "b5",
+                "b25",
+                "b2",
+                "b6",
+                "b22",
+                "b14",
+                "b7",
+                "b3",
+                "b4",
+                "b19",
+                "b21"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "LEGAL BASIS OF PRIVACY AND COPYRIGHT CONCERNS OVER GENERATIVE AI",
+            "text": "Khan and Hanna [10] highlight two predominant legal and policy dimensions-privacy and copyright-that are pivotal in AI training contexts. To contextualize these aspects, our analysis centers on two critical legislative frameworks: the General Data Protection Regulation (GDPR) of the European Union (EU) and the Copyright Law of the United States (US). The essential provisions of these frameworks are succinctly summarized in Table 1. ",
+            "publication_ref": [
+                "b9"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_0"
+            ]
+        },
+        {
+            "heading": "Privacy",
+            "text": "The GDPR encompasses several provisions that are pertinent to GenAI systems such as Large Language Models (LLMs) [27]. Key among these are the Right to be Informed, the Right of Access, the Right to Rectification, and the Right to Erasure 4 . Under the GDPR, when personal data is collected, individuals are entitled to 4 Rights of the data subject: https://gdpr.eu/tag/chapter-3/ be informed about the collection and use of their data (Article 13, Article 14), irrespective of whether their data is acquired directly from them or through alternate sources. They also have the right to request information about the processing of their data (Article 15), including whether or not the data is processed, the access to the personal data, the purpose and the duration of processing. Moreover, the GDPR grants individuals the right to rectify inaccuracies in their data (Article 16) and to request the deletion of their data (Article 17). It is important to note that these rights are not absolute. For instance, the processing of personal data can be justified on the grounds of Legitimate Interest (Article 6), though these grounds may be superseded by the interests of the data subject.",
+            "publication_ref": [
+                "b26"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Copyright",
+            "text": "The US Copyright Law, as codified in Title 17 of the US Code, protects six exclusive rights 5 . These rights include the rights to reproduce work, prepare derivative works based upon the work, distribute copies of the work, publicly perform the work, publicly display the work, and digitally transmit the work. It also grant authors the right to terminate licenses 6 . The Copyright Law also introduces limitations on these rights, notably through the Fair Use doctrine (Section 107).\nThe application of Fair Use is determined on a case-by-case basis, and the integration of copyrighted works in AI presents new challenges distinct from traditional cases [10,17,19]. The legality of using copyrighted material in training GenAI models hinges on the specifics of each use case. Furthermore, the US Federal Trade Commission (FTC) has raised concerns in its commentary to the US Copyright Office, suggesting that using copyrighted content in AI training without consent, or commercializing GenAI outputs, could potentially constitute copyright infringement, unfair competition, or deceptive practices [15].\nIn light of these legal ambiguities and the evolving nature of GenAI, there is an evident need for robust data privacy and copyright protection mechanisms. These mechanisms must be specifically tailored to address the unique challenges and stakeholder concerns in the rapidly advancing field of GenAI.",
+            "publication_ref": [
+                "b9",
+                "b16",
+                "b18",
+                "b14"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "MAPPING CHALLENGES THROUGHOUT THE DATA LIFECYCLE",
+            "text": "Khan and Hanna [10] summarized the dataset development into eight stages: problem formulation, data collection, data cleaning, data annotation, model training, model evaluation, model deployment and inference, and data distribution. In this section, the data distribution is expanded to downstream distribution to cover a broader range of distribution forms. We identify the following key challenges and maps them onto these stages of the data lifecycle (see Fig. 1).",
+            "publication_ref": [
+                "b9"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "Consent and License Acquisition",
+            "text": "The challenges of obtaining consent in GenAI are intensified by the enormous volume of data and its diverse origins. Legal frameworks, such as the EU GDPR, mandate obtaining consent from data subjects or authors. However, the practical implementation of these mandates is complex due to the scale and heterogeneity of data used in training GenAI models. Novel web architectures such as SOLID [18] and Consent Tagging [29] aim to streamline consent acquisition. SOLID, for example, is a decentralized platform designed for social web applications, enabling independent management of users' data from the applications that generate and use it. It utilizes personal online datastores that are web-accessible, granting users control over their data and the flexibility to switch between applications. Consent Tagging empowers web users to manage their data privacy by tagging their online content, enabling better control and tracking of data usage in GenAI model training. However, these solutions are primarily effective in scenarios where data is directly posted by individuals. They fall short in more complex contexts involving data derived from third-party sources or when the data subject is inaccessible.\nA practical example of this challenge is evident in scenarios where GenAI models are trained using data from platforms like artwork sharing sites. In such cases, obtaining consent from each content creator is fraught with difficulties, including the absence of contact details, unclear permissions, and the lack of a systematic approach for managing consent in such vast and varied datasets. This not only poses logistical challenges but also raises significant ethical concerns regarding the use of such data without explicit consent.\nThe inability to effectively manage consent and licensing in GenAI underscores the need for more robust systems and frameworks. These systems must be capable of addressing the unique complexities of data management in GenAI, ensuring compliance with legal requirements while respecting the rights and privacy of individuals.\nFor the challenge of consent and license acquisition, it's closely tied to the stages of Problem Formulation and Data Collection. In Problem Formulation, defining the machine learning tasks can influence whether these tasks fall within the scopes of legitimate interest and fair use. This, in turn, affects the requirements for obtaining consent and licenses. Meanwhile, the Data Collection stage determines the sources of data, which is pivotal in identifying the origins of data that might necessitate consent. Both stages are strongly related to the challenge of consent and licensing in the data lifecycle.",
+            "publication_ref": [
+                "b17",
+                "b28"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Transparency and Data Access",
+            "text": "The lack of transparency in GenAI training data usage poses significant challenges for data subjects and authors. A notable example is the discovery by authors that their books were utilized in training Large Language Models, often only becoming aware of this through third-party reporting. This lack of direct communication and transparency has led to legal actions, such as the class action against Meta Platforms Inc. 7 , highlighting the issue of using potentially pirated data in GenAI training.\nIn contrast to traditional data usage scenarios, where access to personal data and the visibility of copyright infringements are more straightforward, GenAI presents unique challenges. The use of personal and copyrighted data in training these models often only becomes visible through the specific outputs generated in response to certain prompts. Without in-depth investigation, identifying such uses is challenging, underscoring the need for enhanced transparency mechanisms.\nAdditionally, the dilemma of providing public access to datasets used in GenAI training complicates the matter. On one hand, finegrained public access could increase awareness among data subjects and authors about the use of their data or works. On the other hand, it could exacerbate privacy and copyright concerns. This paradox mirrors the technical and ethical complexities encountered in Consent Acquisition, where balancing accessibility with privacy and copyright protection remains a significant challenge.\nThis challenge is closely linked with the Data Collection and Model Deployment and Inference stages. During Data Collection, it is crucial to clearly communicate about the nature and purpose of data being gathered in data collection. In the Model Deployment and Inference phase, enabling easy access for data subjects or authors to learn how their data is being used is equally important.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Consent Modification and Withdrawal",
+            "text": "The GDPR endows data subjects with the right to erasure (commonly known as the \"right to be forgotten\") and the right to rectification, allowing them to demand the deletion or correction of their data. Similarly, the Copyright Law grants authors the authority to withdraw consent for the use of their copyrighted works. These rights are pivotal in enabling individuals and creators to retain control over their data and intellectual property, even after initial sharing or utilization.\nHowever, the practical application of these rights is significantly impeded in the GenAI domain, primarily due to transparency deficits and flawed consent acquisition processes. This obscurity often leaves individuals oblivious to whether their personal or copyrighted data has been harvested for GenAI model training, thereby complicating the enforcement of their legal rights of consent modification and withdrawal.\nMoreover, even when individuals are aware of their data's use in GenAI models and seek its withdrawal, the technical feasibility of such requests is daunting. Once data is embedded into a model's weights through training, its removal can be resource-intensive, frequently necessitating complete model retraining. Current techniques like machine unlearning have not been proven effective for large-scale foundational models. Additionally, current guardrail approaches for blocking certain outputs are not always reliable and can be potentially exploited by simple tricks such as \"Grandma Exploit\" 8 .\nThis challenge is primarily associated with Data Collection and Model Training Stages. The origins and nature of the collected data play a critical role in the likelihood of modifications and withdrawals of consent. Furthermore, the techniques employed in Model Training may influence the feasibility and complexity of removing data from the model.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Provenance and Attribution",
+            "text": "GenAI models have the capability to generate outputs that closely resemble original works which may have been used for the model training, raising significant copyright concerns 9 , especially in instances where no license has been obtained. Even when licenses are obtained, certain licenses mandate attribution to the original creators. Ensuring such attribution within the outputs of GenAI models is technically challenging. The complexity of these models, coupled with the intricate manner in which they process and integrate data, makes it difficult to guarantee consistent and accurate attribution. This issue is not just a technical hurdle but also a legal one, as failure to properly attribute can lead to copyright infringement, despite the presence of a license.\nMoreover, if a request for data removal is made based on the specific output, tracing the specific training data can be particularly challenging due to the inherent complexity of GenAI models that obscures the direct link between specific training data and outputs, and the lack of traceability mechanisms within these models. Such factors significantly complicate the process of identifying and removing specific data upon request, especially when the output involves fabricated or factually incorrect information generated by the model, known as hallucination [14]. Alternatively, using band-aid solutions to filter the outputs directly is also not reliable, as mentioned previously.\nThe challenge of provenance and attribution arises due to complexities in Data Collection, Data Annotation, Model Training, and Model Deployment and Inference stages. Inadequate provenance and attribution often stem from the initial stages of data collection and annotation, where there may be a lack of privacy and copyright considerations. As the process progresses through model training and deployment, these challenges can become more intricate and difficult to manage.",
+            "publication_ref": [
+                "b13"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Side Effects",
+            "text": "The implementation of privacy and copyright protection measures in GenAI systems can inadvertently lead to a range of unforeseen side effects. These may include reduced model performance [9], limitations on the diversity of data available for training [25], or even potentially emergence of fairness issues if certain types of data are excluded for privacy or copyright reasons [11,28]. Predicting the specific impacts of these protection measures on GenAI systems is challenging. While statistical models can forecast certain outcomes, such as the effects of data removal, these predictions are not always entirely accurate or comprehensive. This uncertainty necessitates a careful, ongoing evaluation process. A human-in-theloop strategy is recommended to continuously assess and mitigate these impacts. This approach involves making informed architectural decisions and adjustments as the side effects of privacy and copyright protection measures become evident in practice.\nSide effects are closely related to Data Collection, Model Training and Model Evaluation. They often emerge following data removal in response to relevant requests. Minimizing these effects necessitates a thorough understanding of the collected data, including the likelihood of data removal requests. The training methods adopted and the model evaluation also play significant roles in how these side effects manifest and can be mitigated.",
+            "publication_ref": [
+                "b8",
+                "b24",
+                "b10",
+                "b27"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Continuous Monitoring of Privacy Breaches and Copyright Violations",
+            "text": "GenAI companies often deploy rudimentary safeguards such as keyword filters or prompt prefixes to mitigate privacy breaches and copyright violations 10 . However, these initial measures are not foolproof and can be susceptible to circumvention [13]. Therefore, it is crucial to establish a mechanism of continuous monitoring. This involves not only detecting attempts to bypass existing protective methods but also adapting and updating these methods regularly. Such vigilance is essential to ensure that privacy and copyright protections keep pace with the advancements and novel exploitation methods in GenAI. At the same time, continuous monitoring should be complemented by a proactive approach in updating and refining protective measures. The goal is to create a robust and adaptive system that can effectively respond to the ever-changing challenges posed by GenAI, thereby safeguarding privacy and copyright. This challenge is particularly intertwined with the phase of Model Deployment and Inference, and this stage is essential for the prevention and detection of instances of privacy breaches or copyright violations in production.",
+            "publication_ref": [
+                "b12"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Downstream Distribution",
+            "text": "The concept of downstream distribution in the context of GenAI encompasses the transfer of personal data, copyrighted work, or derivative data to new locations, potentially extending beyond the original intended scope of use. This process poses significant legal implications, particularly in the realms of privacy and copyright law. A critical concern in downstream distribution is the inadvertent or intentional use of these outputs for training subsequent GenAI models. Such practices can perpetuate and amplify existing privacy and copyright issues embedded within the data. This recursive cycle of data utilization and re-utilization in GenAI systems exacerbates the challenges in managing and mitigating the legal and ethical repercussions associated with downstream distribution.\nMoreover, the propagation of data through downstream distribution channels complicates the traceability and accountability of data usage. It raises questions about the extent of responsibility and liability of original data providers and subsequent users, especially when the data is further processed or transformed. This scenario underscores the need for robust frameworks to manage the complexities and potential risks inherent in the downstream distribution of data within GenAI ecosystems.\nWhile the challenges related to downstream distribution can arise from various stages of the lifecycle, they are particularly pertinent to the Data Distribution stage. The manner in which data is distributed or transferred plays a critical role in shaping the downstream privacy and copyright implications.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "LIFECYCLE APPROACHES",
+            "text": "The challenges of privacy and copyright protection are pervasive throughout the entire data lifecycle. Each of these challenges can span across multiple stages, underscoring the interconnected and continuous nature of these issues. Lifecycle-centric approaches are essential for these critical issues being addressed consistently and integrally, rather than in isolation. In light of this, we highlight and call for further research into the following directions. Consent across Data Lifecycle. As demonstrated in section 3, issues around consent pose significant challenges in privacy and copyright protection at various stages of data lifecycle. One effort is Consent Tagging [29], which uses cryptographic tags in HTTP requests and HTML DOM elements, facilitates tracking data and verifying authorship without compromising identities. However, its effectiveness is limited to scenarios where data or copyrighted work is directly posted by the data subject or owner. This limitation underscores the need for developing novel approaches that offer comprehensive consent management throughout the entire data lifecycle, addressing a wider array of data sourcing scenarios. Machine Forgetting and Side Effects Mitigation. Machine Forgetting techniques like machine unlearning, including methods like SISA [2], can lead to side effects that necessitate mitigation strategies. These methods often require comprehensive training information and metadata from across the data lifecycle to effectively enable unlearning. This highlights the need for a holistic view of the data lifecycle and the sensible integration of machine forgetting methods. Reliable Guardrails for Privacy and Copyright Protection. It is essential to establish guardrails to protect against privacy breaches and copyright violations in GenAI. This should be not only filters on the input or output, but also a multi-layered solution throughout the entire data lifecycle. It can incorporate advanced algorithms for detecting and preventing the use of personal data or copyrighted materials, as well as sophisticated data privacy protection techniques including differential privacy training. These techniques should be an integral part of the AI system's architecture, ensuring the reliability and robustness of the privacy and copyright protection mechanisms. AI Bill of Materials for Privacy and Copyright Compliance. Similar to Software Bill of Materials (SBOMs) in traditional software include licenses for compliance [1], an AI Bill of Materials (AIBOMs) for GenAI should detail encrypted consent information and licenses of copyrighted works. The inclusion of this information is vital due to the significant role training data plays in GenAI, particularly regarding privacy and copyright implications. This approach necessitates a comprehensive and coordinated effort throughout the entire data lifecycle in GenAI, ensuring that the usage of data and the downstream distribution of model and derivative data are legally compliant.",
+            "publication_ref": [
+                "b28",
+                "b1",
+                "b0"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "CONCLUSION",
+            "text": "Our paper underscores the urgency to address the intertwined challenges of privacy and copyright protection from the data lifecycle perspective. These concerns, magnified by GenAI's reliance on expansive datasets, necessitate holistic approaches on top of traditional isolated methods. By mapping the challenges and advocating for solutions informed by a data lifecycle perspective, we aim to bridge the gap between technical innovation and legal responsibility. This paper contributes to the ongoing dialogue in the field, seeking to inspire collaborative efforts towards privacy and copyright protection in Generative AI.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "On the Way to SBOMs: Investigating Design Issues and Solutions in Practice",
+            "journal": "",
+            "year": "2023",
+            "authors": "Tingting Bi; Boming Xia; Zhenchang Xing; Qinghua Lu; Liming Zhu"
+        },
+        {
+            "ref_id": "b1",
+            "title": "David Lie, and Nicolas Papernot. 2021. Machine unlearning",
+            "journal": "IEEE",
+            "year": "",
+            "authors": "Lucas Bourtoule; Varun Chandrasekaran; Christopher A Choquette-Choo; Hengrui Jia; Adelin Travers; Baiwu Zhang"
+        },
+        {
+            "ref_id": "b2",
+            "title": "More writers sue OpenAI for copyright infringement over AI training",
+            "journal": "",
+            "year": "2023",
+            "authors": "Blake Brittain"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Differentially private bias-term only fine-tuning of foundation models",
+            "journal": "",
+            "year": "2022",
+            "authors": "Zhiqi Bu; Yu-Xiang Wang; Sheng Zha; George Karypis"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Towards making systems forget with machine unlearning",
+            "journal": "IEEE",
+            "year": "2015",
+            "authors": "Yinzhi Cao; Junfeng Yang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Extracting training data from large language models",
+            "journal": "",
+            "year": "2021",
+            "authors": "Nicholas Carlini; Florian Tramer; Eric Wallace; Matthew Jagielski; Ariel Herbert-Voss; Katherine Lee; Adam Roberts; Tom Brown; Dawn Song; Ulfar Erlingsson"
+        },
+        {
+            "ref_id": "b6",
+            "title": "GitHub, Microsoft, OpenAI fail to wriggle out of Copilot copyright lawsuit",
+            "journal": "",
+            "year": "2023",
+            "authors": "Thomas Claburn"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Copyright in generative deep learning",
+            "journal": "Data & Policy",
+            "year": "2022",
+            "authors": "Giorgio Franceschelli; Mirco Musolesi"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Making ai forget you: Data deletion in machine learning",
+            "journal": "Advances in neural information processing systems",
+            "year": "2019",
+            "authors": "Antonio Ginart; Melody Guan; Gregory Valiant; James Y Zou"
+        },
+        {
+            "ref_id": "b9",
+            "title": "The Subjects and Stages of AI Dataset Development: A Framework for Dataset Accountability",
+            "journal": "",
+            "year": "2022",
+            "authors": "Mehtab Khan; Alex Hanna"
+        },
+        {
+            "ref_id": "b10",
+            "title": "No Matter How You Slice It: Machine Unlearning with SISA Comes at the Expense of Minority Classes",
+            "journal": "",
+            "year": "2023",
+            "authors": "Korbinian Koch; Marcus Soll"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Revising copyright law for the information age. Or",
+            "journal": "L. Rev",
+            "year": "1996",
+            "authors": "Jessica Litman"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Jailbreaking chatgpt via prompt engineering: An empirical study",
+            "journal": "",
+            "year": "2023",
+            "authors": "Yi Liu; Gelei Deng; Zhengzi Xu; Yuekang Li; Yaowen Zheng; Ying Zhang; Lida Zhao; Tianwei Zhang; Yang Liu"
+        },
+        {
+            "ref_id": "b13",
+            "title": "On faithfulness and factuality in abstractive summarization",
+            "journal": "",
+            "year": "2020",
+            "authors": "Joshua Maynez; Shashi Narayan; Bernd Bohnet; Ryan Mcdonald"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Federal Trade Commission of USA",
+            "journal": "",
+            "year": "2023",
+            "authors": ""
+        },
+        {
+            "ref_id": "b15",
+            "title": "Privacy as a common good in the digital world. Information",
+            "journal": "",
+            "year": "2002",
+            "authors": " Priscilla M Regan"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Copyright in Generative AI training: Balancing Fair Use through Standardization and Transparency",
+            "journal": "",
+            "year": "2023",
+            "authors": "Daniel Rodriguez; Maffioli "
+        },
+        {
+            "ref_id": "b17",
+            "title": "Solid: a platform for decentralized social applications based on linked data",
+            "journal": "",
+            "year": "2016",
+            "authors": "Andrei Vlad Sambra; Essam Mansour; Sandro Hawke; Maged Zereba; Nicola Greco; Abdurrahman Ghanem; Dmitri Zagidulin; Ashraf Aboulnaga; Tim Berners-Lee"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Generative AI meets copyright",
+            "journal": "Science",
+            "year": "2023",
+            "authors": "Pamela Samuelson"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Prompt-Specific Poisoning Attacks on Text-to-Image Generative Models",
+            "journal": "",
+            "year": "2023",
+            "authors": "Shawn Shan; Wenxin Ding; Josephine Passananti; Haitao Zheng; Ben Y Zhao"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Revisiting unreasonable effectiveness of data in deep learning era",
+            "journal": "",
+            "year": "2017",
+            "authors": "Chen Sun; Abhinav Shrivastava; Saurabh Singh; Abhinav Gupta"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Coprotector: Protect open-source code against unauthorized training usage with data poisoning",
+            "journal": "",
+            "year": "2022",
+            "authors": "Zhensu Sun; Xiaoning Du; Fu Song; Mingze Ni; Li Li"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Getty Images sues AI art generator Stable Diffusion in the US for copyright infringement",
+            "journal": "",
+            "year": "2023",
+            "authors": "James Vincent"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Data protection in the age of big data",
+            "journal": "Nature Electronics",
+            "year": "2019",
+            "authors": "Sandra Wachter"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Data collection and quality challenges in deep learning: A data-centric ai perspective",
+            "journal": "The VLDB Journal",
+            "year": "2023",
+            "authors": "Steven Euijong Whang; Yuji Roh; Hwanjun Song; Jae-Gil Lee"
+        },
+        {
+            "ref_id": "b25",
+            "title": "What do code models memorize? an empirical study on large language models of code",
+            "journal": "",
+            "year": "2023",
+            "authors": "Zhou Yang; Zhipeng Zhao; Chenyu Wang; Jieke Shi; Dongsun Kim; Donggyun Han; David Lo"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Right to be forgotten in the era of large language models: Implications, challenges, and solutions",
+            "journal": "",
+            "year": "2023",
+            "authors": "Dawen Zhang; Pamela Finckenberg-Broman; Thong Hoang; Shidong Pan; Zhenchang Xing; Mark Staples; Xiwei Xu"
+        },
+        {
+            "ref_id": "b27",
+            "title": "To be forgotten or to be fair: Unveiling fairness implications of machine unlearning methods",
+            "journal": "",
+            "year": "2023",
+            "authors": "Dawen Zhang; Shidong Pan; Thong Hoang; Zhenchang Xing; Mark Staples; Xiwei Xu; Lina Yao; Qinghua Lu; Liming Zhu"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Tag Your Fish in the Broken Net: A Responsible Web Framework for Protecting Online Privacy and Copyright",
+            "journal": "",
+            "year": "2023",
+            "authors": "Dawen Zhang; Boming Xia; Yue Liu; Xiwei Xu; Thong Hoang; Zhenchang Xing; Mark Staples; Qinghua Lu; Liming Zhu"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Figure 1 :1Figure 1: The key challenges throughout the data lifecycle.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "The key provisions of GDPR and US Copyright Law.",
+            "figure_data": "LawMajor RightsExemptionGDPR (Privacy)Right to be Informed Right of Access Right to RectificationLegitimate InterestRight to ErasureReproduce WorkPrepare Derivative WorksUS Copyright Law (Copyright)Distribute Copies Publicly PerformFair UsePublicly DisplayDigitally Transmit"
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1145/3644815.3644952"
+}

@@ -1,0 +1,339 @@
+{
+    "title": "Deep Learning Framework with Explainable AI for Accurate and Interpretable Brain Tumor Segmentation",
+    "authors": "Dushyantha Nd; Kavya R Naik; H G Chaithanya",
+    "pub_date": "",
+    "abstract": "Brain tumor detection by MRI scan is an imperative medical concern that necessitates state-of-the-art techniques for accurate and timely detection. This paper proposes an approach integrating Explainable AI, Federated Learning, and deep learning to improve accuracy, privacy, and trust. Federated learning allows collaborative learning for the model without accessing each other's data. Explanation using SHAP and LIME techniques results in interpretable predictions from an AI system, enabling greater clinician trust in these AI systems. In accuracy, the proposed system could achieve an accuracy of 96.8%, with sensitivity at 96.5%, specificity at 96.4%, and an F1-score at 96.6% more than the traditional CNN model. The future direction in this approach will be enhanced in interpretability, robustness, scalability, and in dataset diversity to further boost generalization. This research methodology is bridging AI research to clinical application that offers reliable diagnoses through practices of privacy preservation, moves healthcare through innovation, and evokes trust in AI-driven solutions.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Despite advances in technology, brain tumors remain the most common cause of morbidity and mortality worldwide, and early diagnosis is key to effective treatment. MRI-based non-invasive diagnosis has become the cornerstone, but manual interpretation is labor-intensive and error-prone, thus delaying treatment. Recent advancements in AI, especially deep learning models including CNNs, have revamped automated brain tumor detection. However, despite all these advancements, much remains to be addressed, such as data privacy concerns with AI, the black-box nature of the current AI models, and the demand for real-time clinical processing [1].\nThe paper addresses these challenges using a unified approach that integrates FL for privacy, XAI for transparency, and deep learning for precision diagnosis.\nThis work explores an integrated approach combining Federated Learning(FL) for data privacy [2], Explainable AI(XAI) for model transparency, and deep learning for precise tumour diagnosis. The goal of this project is to provide a clinically useful, interpretable, and privacy-preserving diagnostic system. The contributions of this paper are the following.\n\u2022 Federated Learning for privacy-preserving cooperative model training. \u2022 Explainable AI for transparent models using SHAP and LIME [3]. \u2022 Current methods will be analyzed, with its shortcomings and potential directions toward future research.\nDeep learning, specifically CNNs, has been widely applied in recent research for brain tumor diagnosis from MRI scans. Their \"black-box\" nature poses significant challenges even though they achieve high accuracy, especially in clinical scenarios where interpretability is a concern [4]. Federated Learning, which promises to offer privacy-friendly co-operative model training across institutions without sharing raw data, is emerging as a possible solution to these problems [5]. However, the problems of data heterogeneity and communication overhead still persist as validated by studies.\nAt the same time, XAI techniques like SHAP and LIME are improving model usability and trust while providing critical information on what influences predictions [6]. Recent studies have emphasized the importance of model interpretability, especially in clinical settings where transparency is the basis of clinical decision-making. In the proposed model, combining FL with XAI to create a model that balances privacy, interpretability, and diagnostic accuracy best for the improvement of validity and reliability in AI-driven systems of brain tumor detection. Addressing data heterogeneity and providing realtime complex explanations may help in creating adaptive and reliable AI models in real-world clinical settings [7].",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. SCOPE AND AIMS OF THE CURRENT REVIEW",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Scope",
+            "text": "This paper deals with the problem of brain tumour diagnosis using a hybrid Machine Learning system based on MRI data, using FL and XAI. It will assess the contribution of these approaches to privacy, interpretability, and prediction in diagnostic applications relative to current approaches, as well as the computational and implementation challenges of translation to the real-time clinical environment [8].",
+            "publication_ref": [
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Purpose",
+            "text": "\u2022 Performance Metric: In the XAI framework, interpretability and diagnostic accuracy are the assessment criteria, and the system efficiency is the assessment criteria for FL. \u2022 Advantages and Disadvantages: The two main adverse features of XAI and FL are the type of transparency, privacy, specifically computational cost, and the heterogeneity of the data. \u2022 Federated Learning Challenges: There is also the issue of the computational cost and the real-time responsiveness of the specificity of the explanations [9]. This, in turn, gives rise to the idea of reducing FL communication overhead and thus facilitates the increase in the efficiency with which the model itself aggregates, notably when processing a large data set [10] [8]. \u2022 Generalization Improvements: Some of the ways to overcome them include:\n-Enhance the diversity and stability of the data set to do well for other MRI scans. -Real-time Learning: Provide planning as an option for obtaining speed and accuracy of the predictive model within the framework of a stable clinical setting. -Powerful XAI Methods: Investigate other options for stronger feature-specific or approximate explanation generation that reduce the cost of time.\n\u2022 Significance of the Approach: This is the reason the integrated approach makes it possible to reprieve in trusting the AI systems, getting over the gap of theoretical AI and practical usage and arriving at much more accurate diagnostic solutions and at the same time cheaper to the clinicians [11] .",
+            "publication_ref": [
+                "b8",
+                "b9",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. PROPOSED METHOD",
+            "text": "In the proposed method, the federated learning (FL), explainable artificial intelligence (XAI), and deep learning are used to provide an integrated approach for brain tumour diagnosis. The three primary components of the system design are a CNN model for tumour classification, XAI for interpretability, and FL for private model training [12].\nFederated Learning: FL allows the training of collaborative models across institutions without having to share raw MRI data, thus preserving privacy. The Federated Averaging Algorithm aggregates local model updates on a central server while maintaining confidentiality of individual data [13].\nFederated Averaging Algorithm:\nThe Federated Averaging (FedAvg) algorithm from (1) updates the global model parameters by aggregating the locally computed updates from participating devices. The update rule is expressed as follows:\nw t+1 = 1 n n i=1 w i t (1\n)\nwhere w t+1 represents the updated global model parameters at time t+1, n is the total number of participating devices, and \nw i t denotes\nw i = 1 H\u2022W j,k \u2202yc \u2202A i,j,k Compute weighted sum H = C i=1 w i A i Normalize H to [0, 1] return H\nThe Grad-CAM algorithm stated in Algorithm 2 helps visualize which regions in an input image x have the most influence on the model's prediction for a particular class c. The process works in the following steps:\n\u2022 Forward Pass: The model first makes a prediction y = M (x) based on the input image and extracts the feature maps A from the last convolutional layer. \u2022 Backward Pass: Then, the algorithm calculates the gradients \u2202yc \u2202A , which tell us how much each feature map contributes to the prediction for the target class c.\n\u2022 Weighting: For each feature map, a weight w i is computed, which is the average of the gradients across all spatial locations in the feature map. \u2022 Heatmap Generation: The weighted feature maps are combined to form a heatmap H, which highlights the areas in the image most relevant to the class prediction. Finally, the heatmap is normalized to the range [0, 1] to make it easier to interpret and visualize.\nModel Evaluation: Well-known criteria such as accuracy, sensitivity, specificity, and F1 score are used to evaluate the proposed model. Figure 1 depicts the architecture of the proposed Explainable AI and Federated Learning-based brain tumour detection system. Federated Learning preserves patient privacy by allowing medical institutions to collectively work on model training without having to share their private MRI data [16] [17].\nIn this architectural design:\n\u2022 Information Gathering: Information is collected and stored locally at each participating site from MRI scans. FL allows organizations to train models locally on the organization's data, and no data is exchanged during the training procedure [18].  the logic behind a specific prediction, such as the presence of a tumor, these methods increase the dependability and accessibility of the system for doctors [10]. With perfect accuracy and interpretability of the results used to determine its performance, the clarity in decision-making and a precise diagnosis of the brain tumor are guaranteed.\nLocal training and aggregation through generation of explainable predictions in a collaborative setting with privacy, this architecture diagram helps the reader understand the workflow of processing MRI scan data [19].\nFigure 2 shows a flowchart describing the sequential steps of the brain tumour detection pipeline. This flowchart starts from the data collection phase, where MRI scans are collected from different institutions. During the local model training stage, which uses FL to train machine learning models inside each institution, the privacy of individual datasets is maintained. This is further improved using model aggregation on a central server to generate the global model. After the training of the model, XAI methods are applied to the model in order to provide explanations for its predictions. The output is forwarded for clinical assessment. The data processing and process flow of the system are easily comprehensible from this flowchart.",
+            "publication_ref": [
+                "b11",
+                "b12",
+                "b15",
+                "b16",
+                "b17",
+                "b9",
+                "b18"
+            ],
+            "figure_ref": [
+                "fig_0",
+                "fig_1"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. RESULT AND DISCUSSION",
+            "text": "Evaluated Result of the proposed system using a dataset of MRI scans from figshare Brain Tumor dataset. The system achieved the following performance metrics:\n\u2022 Accuracy: 96.8% \u2022 Sensitivity: 96.5% These results indicate that while ensuring privacy through FL, the proposed system outperforms the traditional CNN models in terms of accuracy and reliability [12] [21]. With SHAP and LIME providing explainable explanations for every decision, the integration of XAI ensures that physicians can trust the predictions of the system [22]. Despite these successes, the cost of transmission overhead makes it challenging to improve the real-time processing of federated models. Future work will focus on lowering computational cost and improving the FL framework for faster aggregation. To improve model generalization across different tumour types and MRI techniques, including bigger and more diverse datasets can help [13].\nFigure 3 Illustrates a plasma chart of main system performance indicators such as Federated Learning Performance, Real-time Processing Capability and XAI Interpretability. All such indicators are analyzed for seeing how the system performs in these varied situations. The trade off between the processing time with the interpretability as well as accuracy is represented in the chart as below:\n\u2022 XAI Interpretability: Judges the degree to which doctors should understand what the model is proposing. \u2022 Federated Learning Performance: Reflects the ability of a model to train in a group setting but keep itself private.",
+            "publication_ref": [
+                "b11",
+                "b20",
+                "b21",
+                "b12"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Fig. 3. Plasma Chart of XAI Interptretability",
+            "text": "\u2022 Real-time Processing: This indicates how quickly the system can make predictions based on MRI data. The plasma chart graphically represents all these indicators of overall efficiency and the trade-offs between them to make it easier to understand the system's efficacy. The Figure 4 outlines the performances of several models developed in AI for detection in cases of brain tu-  .I mors. These models deliver good performance but should be well explained regarding their interpretability. The process of decision-making with explainable AI can unveil more robust and trustable diagnosis results. Therefore, there should be more emphasis in research studies on developing methods in explainable AI, which would contribute towards higher transparency and usability of the models in the clinic [15].\nTable I compares the performance of several machine learning models and evaluates the predictability of algorithms' predictions as well as their accuracy in identifying brain tumors. To show how FL influences model performance without losing the privacy, models trained using FL are compared with traditional centralised models. The table also displays a number of explainability ratings of several XAI strategies among them SHAP and LIME, showing how well these approaches produce predictions that can be understood [23]. Table II presents a detailed comparison of Federated Learning (FL) models and traditional centralized models in terms of their training efficiency, accuracy, and data privacy features. This also shows how FL enables organisations to create cooperative models without disclosing private information. It compares the accuracy of both types of models, their training time, and their ability to maintain privacy during the training process and the benefits of using FL in medical settings, particularly in scenarios where patient data privacy is of utmost importance.",
+            "publication_ref": [
+                "b14",
+                "b22"
+            ],
+            "figure_ref": [
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSION",
+            "text": "To overcome the major hurdles of MRI scan diagnosis of brain tumors, this research proposal with integrated approach based on Explainable AI (XAI) and Federated Learning (FL) to protect data privacy by having institutions work together to build models without exchanging private information. Besides, XAI techniques such as SHAP and LIME provide explainable explanations of what the AI system has learned while making its decisions, hence promoting transparency. The results demonstrate how this strategy works well to enhance the interpretability and accuracy of the diagnosis, which makes the clinicians have confidence in the system. However, the current approach has a number of shortcomings. The first reason is that longer training timeframes and greater processing demands are caused by federated learning typically being a computationally demanding operation, especially when aggregating models, when working with large datasets or complicated models. The second is that, even if Federated Learning is improving privacy and collaboration, data heterogeneity between the institutions like different MRI scan quality or imaging techniques may have an impact on how well it performs. The interpretability of XAI makes it computationally expensive to produce an explanation of each prediction, which may affect real-time processing in the healthcare industry.\nThe limitations will be addressed by further improving future work so that the system will further be extended. The federated learning process will be optimized with regards to communication overhead in terms of reducing the time consumed for model aggregation in training. It will also be directed in efforts for improving model robustness by increasing the size and variety of more diverse datasets from more institutions for generalizing performance across varied MRI scan protocols. On top of that, real-time clinical integration will emphasize optimizing a system to fast, accurate predictions with detailed explanations able to fit a clinical workflow seamlessly. Finally, in order to further reduce the computational cost of XAI, advanced methods for faster generation of explanations will be further explored. This may happen by either focusing on specific features or through approximation techniques. In summary, though the existing system gives a good solid foundation to the diagnosis system for brain tumors, this advancement will allow its applicability in real clinical conditions, and thus AI-based diagnosis will be more dependable, efficient, and accessible to clinicians.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Advanced explainable federated learning for mri-based brain tumor diagnosis",
+            "journal": "Journal of Medical AI",
+            "year": "2023",
+            "authors": "A Kumar"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Brain tumour diagnosis with lightweight federated learning using identically distributed images",
+            "journal": "",
+            "year": "2023",
+            "authors": "Naresh Kumar Trivedi; Sunil Shukla; Ambuj Kumar Agarwal; Raj Gaurang Tiwari; Vinay Gautam"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Explainable ai for brain tumor diagnosis: Using shap and lime",
+            "journal": "Computational Biology and Medicine",
+            "year": "2023",
+            "authors": "L Zhang"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Explainable artificial intelligence (xai) for mri brain tumor diagnosis: A survey",
+            "journal": "",
+            "year": "2023",
+            "authors": "Hana Charaabi; Hiba Mzoughi; Ridha Hamdi; Mohamed Njah"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Mri brain tumor classification based on federated deep learning",
+            "journal": "",
+            "year": "2023",
+            "authors": "Khanh Le; Dinh Viet; Le Khiem; Trung Ha; Vinh Truong Nguyen Quoc;  Hoang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "A novel federated learning and xai framework for brain tumor detection",
+            "journal": "AI and Data Science in Medicine",
+            "year": "2024",
+            "authors": "Z Wang"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Explainable-ai based model for brain tumor detection",
+            "journal": "International Journal of Advanced Research in Computer and Communication Engineering",
+            "year": "",
+            "authors": ""
+        },
+        {
+            "ref_id": "b7",
+            "title": "Mri brain tumor classification based on federated deep learning",
+            "journal": "International Journal of Medical Informatics",
+            "year": "2022",
+            "authors": "S Gupta"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Brain tumor classification with federated learning models",
+            "journal": "Journal of AI and Medical Imaging",
+            "year": "2023",
+            "authors": "S Gupta"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Federated learning in brain tumor diagnosis: A collaborative approach",
+            "journal": "Journal of Healthcare AI",
+            "year": "2022",
+            "authors": "O Dib"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Deep learning and transfer learning for brain tumor detection classification",
+            "journal": "IEEE Access",
+            "year": "2023",
+            "authors": "X Zhang"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Enhancing brain tumor detection in mri images through explainable ai",
+            "journal": "Journal of Machine Learning in Medicine",
+            "year": "2023",
+            "authors": "J Gao"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Explainable ensemble deep learning-based model for brain tumor classification",
+            "journal": "Journal of AI in Medicine",
+            "year": "2023",
+            "authors": "J Li"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Communication-efficient learning of deep networks from decentralized data",
+            "journal": "",
+            "year": "2017",
+            "authors": "H ; Brendan Mcmahan; Eider Moore; Daniel Ramage; Seth Hampson; Blaise Aguera Y Arcas"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Vision transformers and ensemble models for brain tumor detection",
+            "journal": "Pattern Recognition Letters",
+            "year": "2023",
+            "authors": "H Shah"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Federated learning for brain tumor detection: A privacy-preserving approach",
+            "journal": "Artificial Intelligence in Healthcare",
+            "year": "2022",
+            "authors": "Y Liu"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Federated learning in brain tumor detection: An overview and future directions",
+            "journal": "IEEE Transactions on Medical Imaging",
+            "year": "2022",
+            "authors": "F Liu"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Optimizing brain tumor detection with explainable ai and federated learning",
+            "journal": "Journal of AI in Healthcare",
+            "year": "2023",
+            "authors": "P Patel"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Advanced ai-driven approach for enhanced brain tumor detection from mri images",
+            "journal": "Medical Image Analysis",
+            "year": "2023",
+            "authors": "A Sharma"
+        },
+        {
+            "ref_id": "b19",
+            "title": "An explainable brain tumor detection framework for mri analysis",
+            "journal": "Medical Image Processing",
+            "year": "2024",
+            "authors": "P Ramaswamy"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Federated learning for brain tumor diagnosis: Privacy-preserving and secure",
+            "journal": "Journal of Secure AI Applications",
+            "year": "2023",
+            "authors": "X Wang"
+        },
+        {
+            "ref_id": "b21",
+            "title": "A deep learning model using federated learning for brain tumor classification",
+            "journal": "AI in Medicine",
+            "year": "2022",
+            "authors": "X Chen"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Empowering brain tumor diagnosis through explainable deep learning",
+            "journal": "Journal of Medical Imaging",
+            "year": "2024",
+            "authors": "O Dib"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. Beyond the Black Box: Federated XAI for Trustworthy Medical Imaging",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig. 2. Flowchart: Privacy-Preserving AI Pipeline for Accurate Brain Tumor Detection",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 4 .4Fig. 4. AI Models for Brain Tumor Detection: A Comparative Analysis From Table.I",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "the local model parameters from the i-th device at time t. This approach, introduced by McMahan et al. (2017), is a cornerstone of federated learning[14].The Federated Learning framework, which is described in algorithm 1, iteratively updates a global model M by working with several clients. The model is given to n clients at each round r, and each of them trains it locally on its partitioned dataset D i . The server then aggregates the local modifications \u2206M i to create the new global model. Until the global model M converges, this method is repeated for R rounds.Explainable AI: Post-training, SHAP and LIME are applied to decode the decision-making process of the CNN model. LIME provides localised explanations for specific MRI images, whereas SHAP values emphasize the importance of individual features, such as specific cancer locations, to the prediction[15].",
+            "figure_data": "Algorithm 2 Grad-CAMInput: Model M , input image x, target class cOutput: Grad-CAM heatmap HForward pass:Compute y = M (x)Extract feature maps A \u2208 R C\u00d7H\u00d7W from the last convolu-tional layerBackward pass:Compute gradients \u2202yc \u2202AWeight feature maps:For each feature map A i :Compute weightend forServer aggregates updates: M \u2190 1 nn i=1 M iend forreturn M"
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "w t+1 = 1 n n i=1 w i t (1",
+            "formula_coordinates": [
+                2.0,
+                402.1,
+                226.55,
+                157.06,
+                30.32
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": ")",
+            "formula_coordinates": [
+                2.0,
+                559.16,
+                237.28,
+                3.87,
+                8.64
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "w i t denotes",
+            "formula_coordinates": [
+                2.0,
+                311.98,
+                301.65,
+                44.23,
+                12.19
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "w i = 1 H\u2022W j,k \u2202yc \u2202A i,j,k Compute weighted sum H = C i=1 w i A i Normalize H to [0, 1] return H",
+            "formula_coordinates": [
+                3.0,
+                58.93,
+                180.17,
+                168.82,
+                50.44
+            ]
+        }
+    ],
+    "doi": "10.1109/ICISCN64258.2025.10934555"
+}

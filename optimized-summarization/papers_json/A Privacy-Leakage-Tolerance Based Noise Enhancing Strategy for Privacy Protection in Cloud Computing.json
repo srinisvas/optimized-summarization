@@ -1,0 +1,600 @@
+{
+    "title": "A Privacy-Leakage-Tolerance based Noise Enhancing Strategy for Privacy Protection in Cloud Computing",
+    "authors": "Gaofeng Zhang; Yun Yang; Jinjun Chen",
+    "pub_date": "",
+    "abstract": "Cloud computing promises a service-oriented environment where customers can utilise IT services in a pay-asyou-go fashion while saving huge capital investments on their own IT infrastructures. Due to the openness, malicious service providers may exist in these environments. Some of these service providers could record service data in cloud service processes about a customer and then collectively deduce the customer's private information without authorisation. Noise obfuscation is an effective approach in this regard by utilising noise data. For example, it can generate and inject noise service requests into real customer service requests so that service providers are not able to distinguish which ones are real ones. However, existing typical noise obfuscations do not consider the customer-defined privacy-leakage-tolerance in noise obfuscation processes. Specifically, cloud customers could define a boundary of privacy leakage possibility to require noise obfuscation on privacy protection in cloud computing. In other words, under this boundary-privacy-leakage-tolerance, noise obfuscation could be enhanced by the efficiency improvement on privacy protection, such as reducing noise service requests injected into real ones. So, the customer can obtain a lower cost on noise data in the pay-asyou-go fashion for cloud environments, with a reasonable effectiveness of privacy protection. Therefore, to address this privacy concern, a novel noise enhancing strategy can be presented. We firstly analyse the privacy-leakage-tolerance for cloud customers in terms of noise generation. Then, the creation of a noise generation set can be presented based on the privacyleakage-tolerance, and the set can guide and enhance existing noise generation strategies by this boundary. Lastly, we present our novel privacy-leakage-tolerance based noise enhancing strategy for privacy protection in cloud computing. The simulation evaluation demonstrates that our strategy can significantly improve the efficiency of privacy protection on existing noise obfuscations in cloud environments.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "Generally speaking, cloud computing is a new and promising platform for delivering information infrastructures and resources as IT services in terms of virtualisation [1]. Cloud customers can access, utilise or deploy these services to execute their business jobs in a pay-as-you-go fashion while saving huge capital investments on their own IT environments [2]. However, these customers often have concerns about whether their privacy can be protected when facilitating their IT services in cloud environments since they do not have much control inside cloud [3]. In the worst cases in terms of cloud privacy protection, customers may eventually lose the confidence in and desire to deploy and utilise cloud computing in practice [4]. Therefore, privacy protection is critical as one of the most concerned issues in cloud computing.\nIn cloud environments, there are many ethical organisations which operate under various regulations and policies by protecting their customers' privacy. Meanwhile, a large number of unethical and unknown service providers may exist in these open and complicated cloud eco-environments. Some of these service providers may collect service data from customers, then analyse and deduce customers' privacy without their permissions.\nBesides, for service providers, it is a common phenomenon to collect and analyse their customers' information, like service requests, and so on. They always use this information to analyse customers' behaviours, habits and other information which customers may view it as privacy. This is a powerful way to promote IT services in terms of business market. Most ethical organisations have adequate self-control to use the information inside them under policies and regulations, but someone else may abuse it in immoral ways, especially in open and virtualised cloud environments. Because open and virtualised features make customers hard to distinguish which service providers are unethical, it is impossible to avoid using them in cloud environments. For example, in complex cloud eco-systems, various service providers could cooperate together to pursue powerful and cost-effective services. For cloud customers, this could cause more unknown service providers in cloud service processes than ever before, which they cannot control. Hence, in cloud computing, it is inevitable that customers' information could be collected by unethical service providers to deduce customer privacy.\nTherefore, certain technical actions need to be taken to protect customers' privacy automatically at client side without participations from service providers [5]. Based on data obfuscation [6], noise obfuscation is an effective approach in this regard. For instance, it can generate and inject noise service requests into real customer service requests automatically. When final requests' occurrence probabilities are about the same, service providers cannot distinguish which ones are real ones based on occurrence probabilities. The key advantage is that this approach does not involve service providers. Hence, it providers a promising approach to protect customer privacy in the scenario of this paper.\nTo fulfil different requirements on noise obfuscation, currently, different noise generation strategies have been presented [7][8][9]. For example, a Historical Probability based Noise Generation Strategy (HPNGS) has been proposed to improve the efficiency of privacy protection on noise obfuscation based on historical probabilities [8], compared to random noise generation strategy [7]. Besides, a Time-series Pattern based Noise Generation Strategy (TPNGS) can deal with fluctuations of occurrence probabilities by forecasting future probabilities based on past time-series patterns [9]. But in general, existing noise obfuscations do not consider and investigate the impact from a customer-defined privacyleakage-tolerance in terms of noise generation process.\nActually, it is a natural concern that a customer considers and evaluates privacy leakage risk with some boundaries before he/she utilises services in cloud environments, no matter automatically or not. And these customer-defined boundaries or tolerances on the possibility of privacy leakage could be important issues to evaluate and manage noise obfuscation processes. In other words, these specific privacyleakage-tolerances could give cloud customers specific choices on specific noise obfuscation processes. For instance, a service provider in cloud has a low 'privacy risk' for a customer, which means that the cloud customer or the client may 'give' the service provider a high privacy-leakagetolerance. Noise obfuscation could use this tolerance to guide the specific noise obfuscation process by controlling the number of noise requests utilised. Hence, the customer or noise obfuscation could reduce the volume of the noise data injected into real ones in noise obfuscation under this boundary or tolerance. And he/she can obtain a lower cost on noise data with a reasonable effectiveness of privacy protection based on this tolerance. In a word, for 'high' privacy-leakage-tolerance required service providers, less (or ever no) noise data needs to be utilised by noise obfuscation; and for 'low' privacy-leakage-tolerance service providers, more noise data can be utilised by noise obfuscation.\nBut existing noise generation strategies do not consider this so far. They focus on the worst case scenario to design noise generation processes and protect customers' privacy on their best. Hence, they have to utilise a large number of noise data to obtain a reasonable level of privacy protection without a specific privacy-leakage-tolerance, which means a larger cost on noise data in cloud environments.\nTo address this, considering existing noise obfuscations [8,9], a noise data set is a key issue to generate noise data and connect a customer-defined privacy-leakage-tolerance and a specific noise generation process. It includes all possible noise data items which could be utilised in noise obfuscation, based on the customer-set privacy-leakage-tolerance. At server side, 'unethical' service providers could not distinguish which requests are real ones based on this set. Hence, the size of this noise generation set can describe the intensity of noise utilisation to some extents. To make noise obfuscation to be more practical, we will discuss the privacy-leakage-tolerance to manage noise generation processes. It means cost-saving as customers' wishes. This is the main contribution in this paper.\nGenerally speaking, we propose a novel Privacy-leakage-Tolerance based Noise Enhancing Strategy (PTNES) for privacy protection in cloud computing. Based on existing noise generation strategies, we firstly analyse the real privacy leakage risk in terms of cloud customers. It is the basis to improve the efficiency of privacy protection on noise obfuscation in the pay-as-you-go cloud environments. Then, the creation of noise generation set can be presented based on the privacy-leakage-tolerance and the real privacy leakage risk. We present a privacy-leakage-tolerance based noise generation set creation model to describe these creation processes. Besides, the set can manage existing noise generation strategies and express the advantage of this enhancing strategy based on executions of noise generation strategies. Finally, we present our novel noise enhancing strategy for privacy protection in cloud computing to improve the efficiency of privacy protection based on noise obfuscation.\nLet us take a weather forecast service as a motivating example to describe this strategy. One customer, who often travels to one city in Australia, like 'Sydney', checks the weather report regularly from a weather forecast service in cloud environments before departure. The regular appearance of service requests about the weather report for 'Sydney' can reveal the privacy that the customer usually goes to 'Sydney'. But if a system aids the customer by injecting other requests like 'Melbourne', 'Perth' or 'Darwin' into the 'Sydney' queue, the service provider cannot distinguish which ones are real and which ones are 'noise' as it just sees a similar style of service request. These requests should be responded and would not reveal the location privacy of the customer. In such cases, the privacy can be protected by noise obfuscation in general. Considering the privacy concern in this paper, if the customer has a high privacy-leakage-tolerance about the service provider, the customer may only need a small request set, like one set with two options: 'Sydney' and 'Melbourne', to conceal privacy from the service provider. In other words, the high tolerance can give the service provider some 'trust' from the customer in terms of noise obfuscation. Therefore, 'Perth', 'Darwin' and so on are 'useless' for enhancing the effectiveness of privacy protection but incur some extra unnecessary cost. Hence, reducing unnecessary cost based on the privacy-leakage-tolerance is the main motivation of this paper.\nThe remainder of the paper is organised as follows. In Section 2, we overview the related work. In Section 3, we present our novel Privacy-leakage-Tolerance based Noise Enhancing Strategy (PTNES) for privacy protection in cloud computing. In Section 4, we perform a simulation to demonstrate that our novel PTNES can improve the efficiency of privacy protection on noise obfuscation significantly. Finally in Section 5, we conclude our contributions and point out future work.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b7",
+                "b6",
+                "b8",
+                "b7",
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORK",
+            "text": "In this section, we overview some privacy protection approaches: such as Privacy-Preserving Data Mining (PPDM), Privacy-Preserving Data Publish (PPDP), Privacy Information Retrieval (PIR), anonymous network and noise obfuscation. Besides, some existing trust or privacy risk evaluation in cloud can support our solution.\nMany researchers are starting to produce and/or have produced remarkable research on privacy protection related to cloud environments. Yan et al. [10] use hierarchical identitybased cryptography to realise mutual authentication in interclouds. A privacy preserving access control mechanism with authentication [11] has been designed to protect data in open public clouds. These papers express that there are many privacy protection situations in cloud computing that should be considered and protected by many specific privacy protection strategies. In the rest of this section, we overview some typical and widely used approaches.\nPPDM reveals a view of privacy leakage in the minutiae [12]. To protect privacy, a randomisation operator can be utilised to protect output privacy in stream mining [13].\nSimilarly, PPDP has a widely utilised field in service web by considering privacy-preserving data publishing on set-valued data [14].\nDifferent from PPDM and PPDP, PIR utilises another approach to protect privacy [15], which mainly prevents database operators from knowing customers' sensitive records. Based on information theory, e-commerce has started to consider practical PIR to enhance business processes [16]. Besides, the work on differential privacy [17] is a promising approach to protect customer privacy by pursuing anonymity.\nProxies and anonymity networks to protect customer privacy have been widely discussed. The major goal is to keep anonymity or 'invisibility' in a complex or 'dangerous' network condition. Onion routing [18,19] provides a solution to make it difficult for attackers to trace the customer via network traffic analysis. In social networks [20] and encrypted communication [21], anonymous network can protect privacy by identity anonymity.\nAs analysed in Section 1, 'unethical' service providers may exist in cloud environments. They could record customers' service requests and collectively deduce customers' private information. Therefore, customers' privacy needs to be protected without involving service providers. This is the basic scenario we addressed in this paper. PPDM is not an ideal choice to address the scenario because it is out of customers' control. PIR and PPDP are mainly working at server side, hence have the similar problem. Anonymity or proxy networks need service provider's cooperation to enable such access.\nNoise obfuscation is another widely adopted method by covering the characters of information and protecting private information. Ardagna et al. [22] focus on the location privacy protection in a mobile environment, and present a solution based on different obfuscation operators. Ye et al. [7] describe noise injection in searching privacy protection by formulating noise injection problem as a mutual information minimisation problem. And the further discussion about a common model has been presented in terms of obfuscation-based private web search [23]. Zhang et al. [8] present a historical probability based noise generation strategy to improve the efficiency of noise obfuscation and obtain a promising cost-saving in cloud environments. In some uncertain situations, forecasting service processes to guide noise generation are necessary to ensure the effectiveness of noise obfuscation on privacy protection [9]. But just like introduced before, existing noise obfuscations do not consider the customer-defined privacy-leakage-tolerance to manage noise generation processes, and it is a weakness in terms of the efficiency of privacy protection on noise obfuscation. This is what we plan to address in this paper.\nAbout trust or privacy risk evaluation in cloud, Neisse et al. [24] investigate trust in cloud environments and promote data security. Besides, interoperability in cloud could be enhanced by trust based on heterogeneous domains and trust recommendation [25]. Accountability [26] is also an important aspect considered by trust and privacy risk in cloud. In brief, trust or privacy risk evaluation in cloud can make cloud services and customers perform better in these opaque environments on different aspects. In this paper, they are valuable references for the privacy leakage risk evaluation.",
+            "publication_ref": [
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b6",
+                "b22",
+                "b7",
+                "b8",
+                "b23",
+                "b24",
+                "b25"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. NOVEL PRIVACY-LEAKAGE-TOLERANCE BASED NOISE ENHANCING STRATEGY",
+            "text": "As introduced before, we can investigate the noise generation set as a common important issue in existing noise generation strategies, and design the creation process of the set by pursuing a lower cost on noise service requests. So, on the basis of this noise generation set, different kinds of noise generation strategies could be utilised to generate noise service requests and protect customers' privacy more efficiently. That is the background of our novel Privacy-leakage-Tolerance based Noise Enhancing Strategy (PTNES) for privacy protection in cloud computing.\nIn this section, firstly, we plan to introduce the Privacyleakage-Tolerance based Noise Injection Model (PTNIM) to support PTNES. Then, the creation of the noise generation set is introduced, and the Privacy-leakage-Tolerance based Noise generation set Creation Model (PTNCM) can summarise it. Lastly, to enhance other existing noise generation strategies, our novel PTNES is presented.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. PTNIM: Privacy-leakage-Tolerance based Noise Injection Model",
+            "text": "In this part, based on Section 1, we introduce the Privacyleakage-Tolerance based Noise Injection Model (PTNIM) to support our novel PTNES. As introduced before, our PTNES is a kind of enhancing strategy which builds on the basis of other noise generation strategies. Besides, the noise injection model is necessary to execute these noise generation strategies. From [7][8][9]27], different noise injection models are built for different noise generation strategies, respectively. So, in this paper, we present PTNIM in Figure 1 based on the former work.\nDenotations in Figure 1are listed as follows: Q R : queue of customer's real service requests which are to be protected.\nQ N : queue of noise service requests which are to be injected into Q R .\nQ S : queue of final service requests composing of Q R and Q N .\nQ: a set of all service requests, and\n} q ,......, q ,......, q , q { Q n i 2 1\n. Every service request in Q R , Q N and Q S is from this set. So, in the view of service providers, service requests in the queue of final service requests Q S could be from real requests Q R or noise requests Q N .\n\u03b5: \nprobability for injecting Q N into Q R ,",
+            "publication_ref": [
+                "b6",
+                "b7",
+                "b8",
+                "b26"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Noise injection Noise generation",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Figure 1 Privacy-leakage-tolerance based noise injection model",
+            "text": "The overall working process of the model is to inject Q N into Q R based on \u03b5 so that we can get Q S . We need to utilise past Q R and Q S to generate Q N by 'noise generation strategy' and then apply them into noise injection processes. As a novel part, 'privacy-leakage-tolerance' guides 'noise generation strategy' by the creation of noise generation set, and we would detail these processes in the following sections as the main contribution in this paper. In processes of noise injection, noise injection intensity \u03b5 is an important parameter from 'noise generation strategy'.\nWith PTNIM, we can present the privacy-leakage-tolerance based noise generation set creation model (PTNCM) to support PTNES.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. PTNCM:",
+            "text": "Privacy-leakage-Tolerance based Noise Generation Set Creation Model In this part, we present the key part of our PTNES-Privacy-leakage-Tolerance based Noise generation set Creation Model (PTNCM). In this model, the noise generation set can be created by the privacy-leakage-tolerance. As discussed before, this set can be utilised by noise generation strategies to generate noise requests to conceal real requests. This model can be presented in two aspects. Firstly, the privacy leakage risk evaluation under noise obfuscation can be analysed. Then, the Privacy-leakage-Tolerance based Noise generation set Creation Algorithm (PTNCA) can be proposed to describe the creation procedure based on the previous part.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "1) Privacy Leakage Risk Evaluation",
+            "text": "In this subsection, we investigate the evaluation problem of privacy leakage risk under noise obfuscation. As introduced before, results of the evaluation can guide the noise generation set by creating the noise generation set.\nUnder existing noise obfuscation work [7][8][9], to evaluate the privacy leakage risk, we discuss the original set of all service requests, including real ones and noise ones:\n} q ,......, q ,......, q , q { Q n i 2 1 (1)\nBased on this set, we can present a map\ni i d q : f o to\nexpress data items in service requests. In this paper, these data items are potential private information for cloud customers, just like location information in the previous motivating example. In this paper, this map is a bijective map. Because we control data item sets in this noise enhancing strategy rather than service request sets, other complex maps would not influence the creation process of noise set, and we can extend the work in this paper to these conditions without major modifications. Hence, we can get:\n) q ( f d ], n , 1 [ i i i (2)\nAnd the initial noise generation set is:\n} d ,......, d ,......, d , d { D n i 2 1 (3)\nAs introduced before, the goal of this paper is to remove some 'useless' noise data for noise obfuscation. Hence, the final noise generation set is a part of the initial noise generation set:\n} d ,......, d ,......, d , d { D m i 2 1 N (4)\nwhere 0 m n t t . In this final noise generation set, there maybe one or more items as real private data that should be protected as customer privacy. In other words, these data items should be concealed by other noise data items in the noise generation set with similar occurrence probabilities. Hence, we have:\ny x m (5)\nThe number of these private data items is x, and the number of other noise data items is y. So, we can evaluate the privacy leakage risk under this noise obfuscation with x and y. The set of these private data items is D x , and the set of other noise data items is D y . So, we have the join of these two sets:\ny x N D D D (6)\nIn D N , 'unethical' service providers could find out the real private data items with a probability, and we can set this probability as the real privacy leakage risk. In this probability, 'unethical' service providers cannot get extra information from other sources to improve the probability to guess the real private ones. So, we can list all possible cases of real private data items' leakage and combine them to obtain the Real Privacy Leakage Risk under noise obfuscation (PLR R ) which is equation (7). And we use n m C to denote the number of n- combinations in a set with m distinct items.\n) C * C 1 * x i ( C 1 * C 1 * x x ...... C 1 * C 1 * x 2 C 1 * C 1 * x 1 ) y , x ( plr PLR x 1 i i y x i x x x x y x 2 x 2 y x 1 x 1 y x R \u00a6 (7)\nIn equation (7), the first item in the polynomial formula means the probability of that one real private data item can be revealed by service providers; the second one means the probability of that two real private data items can be revealed; and so on. In each item, the exhaustive method can be utilised to list all possible cases under one specific number of real private data item. In other words, we consider that 'unethical' service providers may guess parts of real private ones based on noise obfuscation. Hence, we can utilise equation (7) to evaluate the real privacy leakage risk.\n2) PTNCA: Privacy-Leakage-Tolerance based Noise Generation Set Creation Algorithm From equation ( 7), we get the real privacy leakage risk or the probability of privacy leakage. So, in this part, we introduce the creation process for the noise generation set by the privacy-leakage-tolerance.\nAs introduced before, for cloud customers, the requirement for privacy leakage risk is necessary to guide service processes by cloud customers. And this requirement expresses a probability of privacy leakage which is tolerant for them. This is the Customer-defined Privacy-Leakage-Tolerance: PLT C . And in this paper, this tolerance is in the range of [0, 1]. Besides, for cloud customers, the Real Privacy Leakage Risk (PLR R ) must be equal to or lower than this tolerance:\nR C PLR PLT t (8)\nFrom equations ( 7) and ( 8), we can get:\nC x i i y x i x PLT C C x i d \u00a6 ) * 1 * ( 1 (9)\nIt is clear that the domain of y is ] , 0 [ f , and it is clear that the more items we have in the noise generation set, the lower privacy risk we can obtain. So:\n) 1 y , x ( plr ) y , x ( plr !(10)\nHence, equation ( 7) is monotonically decreasing with y increasing. And to satisfy the privacy requirement introduced before, we can obtain y:\n) ( 1 C\nPLT plr y t (11) In equation (11), we use the inverse function to get y. According to equation (7), this inverse function is monotonic too. So, we can use stepwise refinement to implement it. Besides, x is fixed under a privacy protection condition, and we omit it in this formula. So, the minimum of y is:\n) (  , and its sorted set D'=D x +D' y . Based on equation ( 6), D' y is from D-D x with sorting by cost evaluation. In other words, it is the sorted version of D y . So, D y can be created with the lowest y min data item(s) in D' y . That is PTNCA described in Algorithm 1. In Algorithm 1, 'cost evaluation' can evaluate every possible data item in D y from the perspective of noise cost. In equation ( 13), the independence among data items in the noise generation set is an important issue to evaluate the cost on every data item in the noise generation set.\n\u00a6 N i D d i N ) d ,",
+            "publication_ref": [
+                "b6",
+                "b7",
+                "b8",
+                "b6",
+                "b6",
+                "b6",
+                "b10",
+                "b10",
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Cost evaluation",
+            "text": "'Set creation' create D y based on sorted D' y and y min . The first y min data items of D' y make up D y and the noise generation set \n) D ( f Q N 1 N (14)\nBriefly, based on the privacy-leakage-tolerance and PTNCA, PTNCM can be built to support our novel PTNES for privacy protection in cloud computing by managing D N and Q N .",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. PTNES:",
+            "text": "Privacy-leakage-Tolerance based Noise Enhancing Strategy Based on the previous parts, we now present the major contribution of this paper-Privacy-leakage-Tolerance based Noise Enhancing Strategy (PTNES) for privacy protection in cloud computing.\nTitle: Privacy-leakage-tolerance based noise enhancing strategy Input: the queue of real service requests is the customer-defined privacy-leakage-tolerance is the size of real private data items in the noise generation set is Output: the queue of final service requests is\nStep 1: Collect the original noise generation set Collect the service request queue and service request set in past time: and ; Get the original noise generation set: ;\nStep 2: Evaluate the privacy leakage risk Compute the privacy leakage risk on the basis of the sizes of real private data items and other noise data items and by equation ( 7):",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Step 3: Create the noise generation set based on the privacy-leakage-tolerance",
+            "text": "Get the size of other noise data items in the noise generation set by equation ( 12): ; Generate the noise generation set by Algorithm 1: ;\nStep 4: Execute one noise generation strategy based on the noise generation set For the noise generation strategy, generate a noise by the noise request set ; Inject into to get for the service process; Update the service request queue. In general, the key part of PTNES is to build and update noise generation set D N . We present PTNCM and PTNCA to summarise the major part of this. With D N , noise obfuscation considers the customer-defined privacy-leakage-tolerance in noise obfuscation processes by this noise enhancing strategy, just like introduced in Section 1. In the next section, we will illustrate that PTNES can improve the efficiency of noise obfuscation on privacy protection with similar effectiveness by simulation.\nGoto Step 2. R Q S Q N N R Q S Q x C PLT R Q Q ) (Q f D ) ( 1 N N D f Q ) C C 1 x i ( ) y , x ( plr PLR x 1 i i y x i x R \u00a6 u u ) (",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. EVALUATION",
+            "text": "In this section, we evaluate PTNES by simulation, in terms of effectiveness and efficiency of privacy protection. Compared to existing noise obfuscation work, PTNES is a kind of 'enhancing' strategy, different from other specific noise generation strategies. In other words, it executes other typical noise generation strategies by creating the noise generation set. So, in the simulation process, the evaluation of this strategy focuses on its impact on other typical noise generation strategies.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Simulation Background and Environment",
+            "text": "SwinCloud is a cloud computing simulation environment [28]. It is built on the computing facilities at Swinburne University of Technology. The functions of VMWare can offer unified computing and storage resources. We built several computing nodes to simulate these members-cloud customers and cloud service providers in cloud, and exchanged data as requests with each other. Each noise obfuscation process builds between these nodes and protects customers' privacy.",
+            "publication_ref": [
+                "b27"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Simulation Process",
+            "text": "In this part, PTNES can be evaluated step by step. In the SwinCloud environment, we use some nodes as customers to send service requests with specific noise obfuscations. It also evaluates the cost of noise data to get the efficiency of privacy protection on noise obfuscation. Other nodes are utilised as service providers to receive service requests and evaluate the effectiveness of noise obfuscation on privacy protection.\nAnd existing typical noise generation strategies: the random strategy (RNGS) [7], the historical probability based strategy (HPNGS) [8] and the time-series pattern based strategy (TPNGS) [9] can be enhanced by PTNES. We will describe these positive improvements on these strategies by PTNES.\nIn this paper, we use Noise Cost to denote the cost of noise service requests and express the efficiency of privacy protection on noise obfuscation in this paper. It is the percentage of noise service requests in final service request queues. In other words, it is noise injection intensity \u03b5. It is clear that if \u03b5 is bigger, customers have to spend higher cost on noise service requests.\nFrom Section 3, the setting of PLT C as privacy-leakagetolerance is very important to the simulation process of PTNES. In the simulation process, we discuss it in the range of [0.05, 0.5] which means representative privacy leakage probabilities which customers can tolerate. If it is too high, it is meaningless for privacy protection, and if it is too low, unnecessary huge cost has to be paid by customers. Besides, x is a key issue of the privacy risk evaluation and we set it in the range of [1,5] for that n is 40. If it is too high, n has to be increased to keep noise obfuscation being functional. As introduced before, for RNGS, HPNGS and TPNGS, the cost of noise generation can be compared in two situations: with and without PTNES enhancing.",
+            "publication_ref": [
+                "b6",
+                "b7",
+                "b8",
+                "b0",
+                "b4"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Simulation Results and Analysis",
+            "text": "In Figure 2, there are three coordinates: Noise cost, x and privacy-leakage-tolerance. When RNGS operates, our PTNES can reduce Noise Cost from about 0.95 to 0.6, compared to without PTNES. In Figure 3, when HPNGS operates, our PTNES can reduce Noise Cost from about 0.28 to 0.02, compared to without PTNES. In Figure 4, when TPNGS operates, our PTNES can reduce Noise Cost from about 0.029 to 0.002, compared to without PTNES. Hence, in typical noise generation strategies, PTNES can improve the efficiency of privacy protection on noise obfuscation by significantly reducing Noise Cost.\nBesides, in these figures, we can find out that when one noise generation strategy operates without PTNGS, Noise Cost keeps in a high level with the increasing of x and privacyleakage-tolerance. But with PTNES enhancing in Figure 2, Figure 3 and Figure 4, when privacy-leakage-tolerance increases, Noise Cost decreases. It is obvious that if customers have a low privacy-leakage-tolerance setting for a cloud service, a high cost on noise obfuscation has to be paid by customers. And, about another axis x in our figures: low x means low Noise cost. In other words, if customers plan to protect more data items as privacy, the cost should be more.\nIn summary, the simulation evaluation has demonstrated that our novel Privacy-leakage-Tolerance based Noise Enhancing Strategy (PTNES) can reduce noise cost under existing noise generation strategies significantly for improving the efficiency of privacy protection on noise obfuscation based on noise generation processes.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_3",
+                "fig_3"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "V. CONCLUSIONS AND FUTURE WORK",
+            "text": "In open cloud environments, customers' privacy protection is a challenge as malicious service providers may record customer service data and then collectively deduce customers' privacy. Noise obfuscation is an effective approach in this regard. For example, it generates and injects noise service requests into real customer service requests to make sure that their occurrence probabilities are about the same. So service providers cannot distinguish which ones are real. However, existing typical noise generation strategies did not consider customers' specific privacy requirements on noise generation processes. A higher privacy-leakage-tolerance would require a lower cost on noise obfuscation processes in the pay-as-yougo style for cloud computing. Hence, to deal with this privacy concern, we have developed a novel Privacy-leakage-Tolerance based Noise Enhancing Strategy (PTNES) for privacy protection in cloud computing. In this strategy, we investigate the evaluation on real privacy leakage risk under existing noise obfuscations, and present the creation of noise generation set to manage noise generation processes. Based on this set's efficient creation, our strategy can guide and manage noise generation processes to decrease the cost of noise with a reasonable effectiveness of privacy protection. In a word, our novel strategy can 'enhance' noise obfuscation by considering this customer-defined boundary. The simulation evaluation has demonstrated that our strategy can decrease noise cost under other noise generation strategies significantly for improving the efficiency of privacy protection on noise obfuscation.\nBased on PTNES, we plan to further investigate how to protect customer privacy in the scenario where these unethical or malicious service providers may collaborate together to deduce customers' privacy.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Cloud Computing and Emerging IT Platforms: Vision, Hype, and Reality for Delivering Computing as The 5th Utility",
+            "journal": "",
+            "year": "2009",
+            "authors": "Rajkumar Buyya; Shin Chee; Srikumar Yeo; James Venugopal; Ivona Broberg;  Brandic"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Above the Clouds: A Berkeley View of Cloud Computing",
+            "journal": "",
+            "year": "2010",
+            "authors": "Michael Armbrust; Armando Fox; Rean Griffith; Anthony D Joseph; Randy H Katz; Andrew Konwinski; Gunho Lee; David A Patterson; Ariel Rabkin; Ion Stoica; Z Matei"
+        },
+        {
+            "ref_id": "b2",
+            "title": "A Privacy Manager for Cloud Computing",
+            "journal": "",
+            "year": "2009-12-01",
+            "authors": "Siani Pearson; Yun Shen; Miranda Mowbray"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Cloud Computing Privacy Concerns on Our Doorstep",
+            "journal": "Communications of the ACM",
+            "year": "2011",
+            "authors": "D Mark;  Ryan"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Guidelines on Security and Privacy in Public Cloud Computing",
+            "journal": "",
+            "year": "2011-12",
+            "authors": "Wayne Jansen; Grance Timothy"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Data Obfuscation: Anonymity and Aesensitization of Usable Data Sets",
+            "journal": "Security & Privacy",
+            "year": "2004",
+            "authors": "David E Bakken; Rupa Rarameswaran; Douglas M Blough; Andy A Franz; Ty J Palmer"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Noise Injection for Search Privacy Protection",
+            "journal": "",
+            "year": "2009",
+            "authors": "Shaozhi Ye; Felix Wu; Raju Pandey; Hao Chen"
+        },
+        {
+            "ref_id": "b7",
+            "title": "A Histrotical Probability based Noise Generation Strategy for Privacy Protection in Cloud Computing",
+            "journal": "Journal of Computer and System Sciences",
+            "year": "2012",
+            "authors": "Gaofeng Zhang; Yun Yang; Jinjun Chen"
+        },
+        {
+            "ref_id": "b8",
+            "title": "A Time-Series Pattern based Noise Generation Strategy for Privacy Protection in Cloud Computing",
+            "journal": "",
+            "year": "2012-05-13",
+            "authors": "Gaofeng Zhang; Yun Yang; Xiao Liu; Jinjun Chen"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Strengthen Cloud Computing Security with Federal Identity Management Using Hierarchical Identity-Based Cryptography",
+            "journal": "",
+            "year": "2009",
+            "authors": "Liang Yan; Chunming Rong; Gansen Zhao"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Privacy Preserving Access Control with Authentication for Securing Data in Clouds",
+            "journal": "",
+            "year": "2012",
+            "authors": "Sushmita Ruj; Milos Stojmenovic; Amiya Nayak"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Privacy-Preserving Data Mining",
+            "journal": "ACM SIGMOD Record",
+            "year": "2000",
+            "authors": "Rakesh Agrawal; Ramakrishnan Srikant"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Output Privacy in Data Mining",
+            "journal": "ACM Transactions on Database Systems",
+            "year": "2011",
+            "authors": "Ting Wang; Ling Liu"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Anonymizing Set-Valued Data by Nonreciprocal Recoding",
+            "journal": "",
+            "year": "2012",
+            "authors": "Mingqiang Xue; Panagiotis Karras; Chedy Ra\u00efssi; Jaideep Vaidya; Kian-Lee Tan"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Private Information Retrieval",
+            "journal": "Journal of ACM",
+            "year": "1998",
+            "authors": "Benny Chor; Eyal Kushilevitz; Oded Goldreich; Madhu Sudan"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Practical PIR for Electronic Commerce",
+            "journal": "",
+            "year": "2011",
+            "authors": "Ryan Henry; Femi Olumofin; Ian Goldberg"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Personal Privacy vs Population Privacy: Learning to Attack Anonymization",
+            "journal": "",
+            "year": "2011",
+            "authors": "Graham Cormode"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Onion Routing",
+            "journal": "Communications of ACM",
+            "year": "1999",
+            "authors": "David Goldschlag; Michael Reed; Paul Syverson"
+        },
+        {
+            "ref_id": "b18",
+            "title": "Tor: The Second-Generation Onion Router",
+            "journal": "",
+            "year": "2004",
+            "authors": "Dingledine Rogerm; Nick Mathewson; Paul Syverson"
+        },
+        {
+            "ref_id": "b19",
+            "title": "De-anonymizing Social Networks",
+            "journal": "",
+            "year": "2009",
+            "authors": "Arvind Narayanan; Vitaly Shmatikov"
+        },
+        {
+            "ref_id": "b20",
+            "title": "Predicted Packet Padding for Anonymous Web Browsing Against Traffic Analysis Attacks",
+            "journal": "IEEE Transactions on Information Forensics and Security",
+            "year": "2012",
+            "authors": "Shui Yu; Guofeng Zhao; Wanchun Dou; Simon James"
+        },
+        {
+            "ref_id": "b21",
+            "title": "An Obfuscation-Based Approach for Protecting Location Privacy",
+            "journal": "IEEE Transactions on Dependable and Secure Computing",
+            "year": "2011",
+            "authors": "Claudio A Ardagna; Marco Cremonini; Sabrina De Capitani Di Vimercati; Pierangela Samarati"
+        },
+        {
+            "ref_id": "b22",
+            "title": "OB-PWS: Obfuscation-Based Private Web Search",
+            "journal": "",
+            "year": "2012-05-20",
+            "authors": "Ero Balsa; Carmela Troncoso; Claudia Diaz"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Implementing Trust in Cloud Infrastructures",
+            "journal": "",
+            "year": "2011-05-23",
+            "authors": "Ricaedo Neisse; Dominil Holling; Alexander Pretschner"
+        },
+        {
+            "ref_id": "b24",
+            "title": "Trust Model to Enhance Security and Interoperability of Cloud Environment",
+            "journal": "",
+            "year": "2009",
+            "authors": "Wenjuan Li; Lingdi Ping"
+        },
+        {
+            "ref_id": "b25",
+            "title": "TrustCloud: A Framework for Accountability and Trust in Cloud Computing",
+            "journal": "",
+            "year": "2011-09",
+            "authors": "K L Ryan; Peter Ko; Miranda Jagadpramana; Siani Mowbray; Markus Pearson; Qianhui Kirchberg;  Liang; Sung Bu;  Lee"
+        },
+        {
+            "ref_id": "b26",
+            "title": "A Trustbased Noise Injection Strategy for Privacy Protection in Cloud Computing",
+            "journal": "Software: Practice and Experience",
+            "year": "2012",
+            "authors": "Gaofeng Zhang; Yun Yang; Dong Yuan; Jinjun Chen"
+        },
+        {
+            "ref_id": "b27",
+            "title": "The Design of Cloud Workflow Systems: Architecture, Functionality and Quality of Service SpringerBriefs",
+            "journal": "",
+            "year": "2011",
+            "authors": "Xiao Liu; Dong Yuan; Gaofeng Zhang; Wenhao Li; Dahai Cao; Qiang He; Jinjun Chen; Yun Yang"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "on y min , we consider how to obtain D N . As discussed before, D N could decide the intensity of noise obfuscation, and the cost of privacy protection on noise obfuscation can be managed by D N , too. To get a low cost on noise obfuscation with the same intensity of noise obfuscation, we have to consider how to create D N based on y min .For each data item d i from D, if it is chosen as one in D N , the specific cost of noise data on this data item by specific noise generation strategies. The total noise obfuscation cost for customers is:",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "a noise generation request set can be mapped from D N :",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Algorithm 22PTNES: Privacy-leakage-Tolerance based Noise Enhancing StrategyIn Algorithm 2, we present our novel Privacy-leakage-Tolerance based Noise Enhancing Strategy (PTNES). Based on PTNCA and PTNCM, PTNES investigates real privacy leakage risk and the privacy-leakage-tolerance under noise obfuscation.In this algorithm, Step 1 is the beginning step to collect all request queues and sets as past data to support the subsequent steps. Then, in Step 2, we get the real privacy leakage risk to generate the noise generation set D N . In Step 3, we obtain the key issue of the strategy: D N . In this step, the size of D N can be decided by the privacy-leakage-tolerance firstly. Then, based on the specific noise generation strategy, we can evaluate each cost on each possible other noise data item to obtain the lower cost with a fixed effectiveness of privacy protection on noise obfuscation. Briefly, we use ) function of this algorithm. In Step 4, noise service requests can be generated by a specific noise generation strategy under PTNES enhancing. After this, Steps 1, 2, 3 and 4 would be executed again as a run-time privacy protection mechanism until the whole noise obfuscation process terminates.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "234",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Figure 2 Figure 3 Figure 4234Figure 2 Comparison in RNGS",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "} q ,......, q ,......, q , q { Q n i 2 1",
+            "formula_coordinates": [
+                3.0,
+                316.12,
+                667.04,
+                122.96,
+                10.34
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "probability for injecting Q N into Q R ,",
+            "formula_coordinates": [
+                4.0,
+                80.07,
+                104.52,
+                141.03,
+                9.07
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "} q ,......, q ,......, q , q { Q n i 2 1 (1)",
+            "formula_coordinates": [
+                4.0,
+                120.19,
+                616.11,
+                176.82,
+                11.33
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "i i d q : f o to",
+            "formula_coordinates": [
+                4.0,
+                243.75,
+                641.22,
+                53.03,
+                11.22
+            ]
+        },
+        {
+            "formula_id": "formula_4",
+            "formula_text": ") q ( f d ], n , 1 [ i i i (2)",
+            "formula_coordinates": [
+                4.0,
+                397.09,
+                147.24,
+                157.39,
+                11.33
+            ]
+        },
+        {
+            "formula_id": "formula_5",
+            "formula_text": "} d ,......, d ,......, d , d { D n i 2 1 (3)",
+            "formula_coordinates": [
+                4.0,
+                378.86,
+                194.18,
+                175.62,
+                11.36
+            ]
+        },
+        {
+            "formula_id": "formula_6",
+            "formula_text": "} d ,......, d ,......, d , d { D m i 2 1 N (4)",
+            "formula_coordinates": [
+                4.0,
+                373.26,
+                272.27,
+                181.19,
+                11.36
+            ]
+        },
+        {
+            "formula_id": "formula_7",
+            "formula_text": "y x m (5)",
+            "formula_coordinates": [
+                4.0,
+                411.46,
+                370.01,
+                143.03,
+                9.69
+            ]
+        },
+        {
+            "formula_id": "formula_8",
+            "formula_text": "y x N D D D (6)",
+            "formula_coordinates": [
+                4.0,
+                400.4,
+                457.99,
+                154.05,
+                11.67
+            ]
+        },
+        {
+            "formula_id": "formula_9",
+            "formula_text": ") C * C 1 * x i ( C 1 * C 1 * x x ...... C 1 * C 1 * x 2 C 1 * C 1 * x 1 ) y , x ( plr PLR x 1 i i y x i x x x x y x 2 x 2 y x 1 x 1 y x R \u00a6 (7)",
+            "formula_coordinates": [
+                4.0,
+                315.55,
+                605.52,
+                241.18,
+                36.33
+            ]
+        },
+        {
+            "formula_id": "formula_10",
+            "formula_text": "R C PLR PLT t (8)",
+            "formula_coordinates": [
+                5.0,
+                147.51,
+                302.2,
+                149.22,
+                12.32
+            ]
+        },
+        {
+            "formula_id": "formula_11",
+            "formula_text": "C x i i y x i x PLT C C x i d \u00a6 ) * 1 * ( 1 (9)",
+            "formula_coordinates": [
+                5.0,
+                122.25,
+                349.84,
+                174.48,
+                27.2
+            ]
+        },
+        {
+            "formula_id": "formula_12",
+            "formula_text": ") 1 y , x ( plr ) y , x ( plr !(10)",
+            "formula_coordinates": [
+                5.0,
+                131.07,
+                435.74,
+                165.66,
+                11.21
+            ]
+        },
+        {
+            "formula_id": "formula_13",
+            "formula_text": ") ( 1 C",
+            "formula_coordinates": [
+                5.0,
+                178.79,
+                503.0,
+                38.2,
+                13.6
+            ]
+        },
+        {
+            "formula_id": "formula_14",
+            "formula_text": "\u00a6 N i D d i N ) d ,",
+            "formula_coordinates": [
+                5.0,
+                409.72,
+                142.18,
+                122.14,
+                23.42
+            ]
+        },
+        {
+            "formula_id": "formula_15",
+            "formula_text": ") D ( f Q N 1 N (14)",
+            "formula_coordinates": [
+                6.0,
+                147.54,
+                73.09,
+                149.07,
+                13.59
+            ]
+        },
+        {
+            "formula_id": "formula_16",
+            "formula_text": "Goto Step 2. R Q S Q N N R Q S Q x C PLT R Q Q ) (Q f D ) ( 1 N N D f Q ) C C 1 x i ( ) y , x ( plr PLR x 1 i i y x i x R \u00a6 u u ) (",
+            "formula_coordinates": [
+                6.0,
+                81.7,
+                233.92,
+                176.11,
+                227.76
+            ]
+        }
+    ],
+    "doi": "10.1109/TrustCom.2013.64"
+}

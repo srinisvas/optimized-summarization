@@ -1,0 +1,992 @@
+{
+    "title": "Unpacking Youth Privacy Management in AI Systems: A Privacy Calculus Model Analysis",
+    "authors": "Austin Shouli; Ankur Barthw; Molly Campbell; Ajay Kumar Shrestha; Ajay Kumar Shrestha",
+    "pub_date": "",
+    "abstract": "The increasing use of Artificial Intelligence (AI) in daily life has introduced substantial issues in protecting user privacy, particularly for young digital citizens. This study examines the complex dynamics of privacy management in AI systems utilizing the Privacy Calculus Model (PCM), with 482 participants: 176 young digital citizens (ages 16-19), 146 parents and educators, and 160 AI specialists. The research used a mixed methods approach to analyze key characteristics, including data ownership, user control, parental data sharing attitude, transparency, trust, perceived risks, benefits, and education. The results underscore the necessity of promoting digital literacy, establishing trust through transparent practices, and implementing collaborative approaches for privacy governance. The study emphasizes the significance of customized educational activities and regulatory frameworks that enable users to manage the trade-offs between the advantages and risks of data sharing by including varied views. This research enhances ethical AI development and advocates equal privacy safeguards for children and young adults.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Artificial Intelligence (AI) has blended into several aspects of contemporary life, providing transformational capacities in fields such as education, healthcare, and social media. Among its users, young digital citizens, also referred to as digital natives, have a distinctive role in the technological environment owing to their early and frequent engagement with AI-driven systems [1]. The concept of digital citizenship extends beyond basic internet access, encompassing responsible and ethical engagement within digital environments. This includes awareness of data privacy, online safety, and the ethical use of AI technologies. As AI becomes more embedded in everyday interactions, digital citizenship is evolving to emphasize not only the skills required to navigate digital\nThe associate editor coordinating the review of this manuscript and approving it for publication was Claudia Raibulet . spaces but also the associated rights and responsibilities of users, particularly youth [2], [3].\nAlthough these technologies utilize personal data to improve user experiences, their extensive data-gathering methods have generated considerable privacy issues, especially for younger users who may be unaware or unprepared to protect their personal information [4]. Unlike older generations, who typically adopted digital technologies later in life, young digital citizens often do not have a concrete understanding of data ownership, long-term digital footprints, or the risks associated with uninformed data sharing. This gap in awareness is further exacerbated by algorithmic personalization, which subtly shapes user behavior and information exposure, sometimes at the expense of privacy and autonomy [5].\nWhile AI has significant advantages such as customization and efficiency, it also presents concerns associated with data exploitation, loss of control, and ethical challenges [6].\nThe standardized dissemination of personal information on social media, along with a deficient comprehension of data aggregation methods, renders young users more susceptible to privacy breaches and exploitation. The growing pervasiveness of AI in social media platforms, educational tools, and digital assistants amplifies these risks, raising ethical questions about informed consent and data transparency [7]. These problems highlight the necessity for a comprehensive analysis of how young digital citizens manage the trade-offs between the risks and benefits linked to AI technology [4].\nOur research employs the Privacy Calculus Model (PCM) to examine these dynamics, providing a structured framework for understanding young digital users' decision-making regarding data sharing. PCM asserts that users evaluate the perceived advantages of data sharing, such as ease and personalization, against the corresponding dangers, including possible privacy infringement and data exploitation [4]. This model is augmented by five interconnected constructs in our case: Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA) [3]. These constructs provide a thorough examination of how individual attitudes, parental influences, and technology factors impact youth privacy management practices.\nOur study used a mixed-methods approach, conducting both quantitative analysis through structured surveys and qualitative exploration via open-ended responses, interviews, and focus groups. The participant pool comprises AI developers and researchers, parents, educators, and young digital citizens aged 16 to 19. The research employs Partial Least Squares Structural Equation Modelling (PLS-SEM) to identify key factors influencing young digital citizens' privacy decisions, emphasizing the significance of transparency, trust, and digital literacy in mitigating privacy risks [4].\nThe results emphasize the need to empower young users through targeted educational programs, build trust in AI systems with transparent data practices, and support informed decision-making. These insights contribute to the broader conversation on developing user-focused and ethically responsible AI technology while shaping regulations to address the unique privacy needs of young digital citizens.\nThe rest of the paper is organized as follows: Section II provides background and reviews relevant literature. Section III outlines the methodology. Section IV presents the findings. Section V discusses implications and future research directions. Section VI concludes the paper.",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b3",
+                "b3",
+                "b2",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. BACKGROUND AND RELATED WORKS A. PRIVACY CALCULUS MODEL FOR YOUTH PRIVACY IN AI",
+            "text": "The Privacy Calculus Model (PCM) offers a thorough framework for understanding how individuals assess perceived risks and rewards when deciding to share personal information. In contrast to conventional models, PCM emphasizes the cognitive and environmental elements that affect privacy decisions. For young digital citizens, these choices are influenced by developmental characteristics, digital literacy, and regular engagement with AI technology. Young individuals frequently emphasize immediate advantages, such as tailored content and ease, while undervaluing hazards such as data exploitation or breaches [8], [9].\nPCM fundamentally asserts that consumers evaluate possible adverse consequences, such as loss of control, illegal access, or exploitation, against beneficial results like tailored services, enhanced user experiences, and increased convenience [2]. However, young users often prioritize short-term benefits over long-term privacy risks due to limited awareness of AI's data collection and predictive analytics. This behavior is particularly evident in contexts such as social media, gaming, and personalized educational platforms [10]. According to PCM, privacy decisions entail a reasonable trade-off in which users evaluate the immediate benefits of AI applications against the long-term consequences for data protection. Studies indicate that many adolescents engage with AI systems without fully understanding how their data is processed, stored, or utilized for predictive analytics and behavioral tracking [2].\nThe context of data sharing is crucial within PCM; for example, young individuals are often more inclined to provide information in trusted settings, such as educational or social media platforms, rather than in more sensitive areas like healthcare or finance. Furthermore, PCM underscores that privacy decisions are not fixed but may develop over time as consumers acquire additional information or as the perceived risks and advantages fluctuate. Research suggests that as young individuals become exposed to privacy breaches, parental guidance, or digital literacy programs, they adjust their privacy behaviors accordingly [7]. This temporal unpredictability is particularly evident in young users, whose cognitive and emotional frameworks are still maturing. Trust is a crucial element since confidence in the data-collecting institution profoundly influences privacy choices. Transparent data methods and ethical information management foster trust, promoting increased willingness among the users to share data.\nDespite the extensive application of PCM to general privacy behaviors, its significance in teenage privacy management within AI contexts remains little examined. This research expands upon PCM by incorporating components such as Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA). This research enhances the theoretical application of PCM by tailoring it to the unique privacy issues encountered by adolescents in AI systems, offering practical guidance for the development of ethical, youth-focused AI technology [11].",
+            "publication_ref": [
+                "b7",
+                "b8",
+                "b1",
+                "b9",
+                "b1",
+                "b6",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. PRIVACY CHALLENGES FOR YOUNG DIGITAL CITIZENS",
+            "text": "Young digital citizens, known as digital natives [3], interact heavily with AI systems via social media, educational tools, and gaming applications. These interactions subject users to considerable privacy threats, including illegal data access, targeted advertising, and profiling [12], [13]. Despite heightened awareness of these concerns, numerous young users lack the knowledge and abilities to manage complex privacy settings or fully understand the consequences of their data-sharing decisions [14]. A significant difficulty exists in the disparity between the extensive digital participation of young users and their inadequate capacity to manage privacy proficiently. Prominent data breaches and unethical data practices have heightened concerns, while the opacity of AI systems and convoluted data regulations sometimes render young users feeling powerless [8]. Parental influence introduces an additional degree of complexity to this matter. While parents often aim to assist their children in managing privacy, excessive interference can unintentionally undermine adolescents' autonomy, resulting in conflicts between independence and control [13]. Furthermore, deficiencies in digital literacy instruction impede young users from acquiring proficient privacy management abilities. Research indicates that digital literacy profoundly influences privacy behaviors; nevertheless, existing educational programs frequently neglect the distinct issues presented by AI technology [14], [15]. To address these deficiencies, it is essential to prioritize transparency and trust in AI systems while providing young digital citizens with the necessary tools and information to understand and exercise their privacy rights.",
+            "publication_ref": [
+                "b2",
+                "b11",
+                "b12",
+                "b13",
+                "b7",
+                "b12",
+                "b13",
+                "b14"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. BRIDGING GAPS IN PRIVACY RESEARCH AND PRACTICE",
+            "text": "Despite extensive research on privacy concerns and behaviors, the majority concentrates on adult populations or broad user groups, resulting in a deficiency in understanding the experiences of young digital citizens in AI situations. Current research underscores the significance of transparency, dependability, and ethical issues in cultivating confidence in AI systems [16], [17]. The Privacy Calculus Model (PCM) has been extensively utilized to investigate privacy decision-making in domains such as e-commerce, social media, healthcare and other sectors [18], [19], yet it has not been employed to address the particular challenges encountered by youth in navigating privacy within AI-driven contexts. This study fills these gaps by utilizing PCM on empirical data gathered from young digital citizens, parents, educators, and AI professionals, marking the first investigation of youth privacy management in AI contexts using this framework. It underscores the interaction among perceived risks, advantages, and trust, elucidating how young users manage privacy within AI contexts. Moreover, it underscores the necessity of incorporating stakeholder perspectives into AI design and governance to develop ethical frameworks that safeguard young users while monitoring the evolution of privacy views as AI technologies become increasingly integrated into everyday life [20].",
+            "publication_ref": [
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. ADAPTING THE PRIVACY CALCULUS MODEL TO AI-DRIVEN YOUTH PRIVACY CONCERNS",
+            "text": "In fields like social media, healthcare, and e-commerce, where consumers logically weigh the advantages and disadvantages of disclosing personal information, the Privacy Calculus Model (PCM) has historically been used. AI-driven ecosystems, however, present a new set of privacy issues, especially for young digital citizens who might not have the knowledge or mental development to understand intricate data-processing systems. AI systems, in contrast to traditional digital platforms, process data independently, infer behavioral patterns, and learn from users continuously, making privacy trade-offs far less obvious. The static risk-benefit analysis typically associated with PCM is challenged by the dynamic nature of AI, which calls for its expansion to take into consideration dynamic, automated, and occasionally opaque data-collecting processes [7].\nThe ongoing and inferred nature of data processing is a significant difference between AI and traditional digital environments. Even while young users might not provide much explicit data, AI systems employ machine learning algorithms to derive a wealth of behavioral insights. This implies that personal profiles are continuously updated and improved, frequently without the subject's knowledge, even in the absence of express agreement. According to studies, even if they are tech-savvy, teenagers frequently find it difficult to understand the long-term effects of algorithmic decisionmaking, predictive analytics, and AI-driven [10]. AI-driven platforms function constantly, requiring young users to navigate an environment where data-sharing ramifications are not instantaneous nor easily understood, in contrast to classic PCM applications, where users make explicit trade-offs in limited instances.\nPCM applications are made more difficult by the critical role parental mediation plays in influencing young people's privacy behaviors in AI environments. By imposing rules, offering advice, or unintentionally disclosing their children's information through actions like ''sharenting''-the parental sharing of children's personal information on social media and other AI-enabled platforms-parents can affect how their kids use AI-powered platforms. According to research, parents who actively participate in their kids' digital lives can reduce privacy threats by raising awareness and promoting appropriate data-sharing practices. However, a lot of parents themselves don't fully get how AI handles data, which results in a lack of consistency in their privacy practices [10]. The evolving role of parental mediation in AI-driven privacy decision-making highlights the need for PCM to integrate external influences beyond individual user agency, as privacy decisions are often co-regulated rather than independently made.\nDecisions about privacy must be made with transparency and trust, but AI ecosystems are frequently ''black-box'' systems that make it difficult for users, especially children, to understand how their data is handled and used. AI-driven platforms depend on intricate, automated decision-making processes that lack transparency, in contrast to conventional data-sharing agreements where risks and benefits are clearly stated. According to studies, consumers gain more trust and make better privacy decisions when AI platforms adopt explainable AI (XAI) [21] and transparent data regulations. On the other hand, opaque AI models increase privacy worries and decrease information-sharing willingness, especially among young users who rely on perceived trustworthiness to guide their privacy choices [2]. Therefore, the importance of algorithmic openness and trust-building methods in influencing young people's privacy views must be emphasized when adapting PCM to AI-driven scenarios. Furthermore, because it affects how well young users comprehend and react to AI-driven data gathering, digital literacy is a critical component in AI-specific privacy decision-making. AI environments add complexity that necessitates specific digital literacy training, in contrast to typical PCM applications that presume a fundamental understanding of privacy tradeoffs. Young people frequently use AI-powered platforms without understanding how their data is processed, which leads them to underestimate the risks of data permanence and behavioral profiling. According to research, AI-specific literacy initiatives that emphasize data inference, algorithmic bias, and automated decision-making can provide young users with the information they need to make wise privacy decisions [5].\nThe use of PCM in AI-driven youth privacy management is made more difficult by ethical and legal issues. The present policies were mainly created for static digital environments with clearly defined user consent and explicit data collection. However, because AI-driven platforms rely on algorithmic decision-making, predictive modelling, and inferred data collection, they present privacy issues that are not adequately addressed by current legal frameworks. Research highlights the necessity of AI-specific privacy safeguards to control behavioral inference, improve algorithmic profiling's openness, and give minors a way to challenge or update AI-driven data representations [22]. Young users are still in danger from AI-driven privacy threats that go beyond conventional ideas of consent and control in the absence of strong legislative protections. The continuous discussion on managing youth privacy in automated digital environments is aided by the expansion of PCM to take into consideration the dynamic character of AI-driven ecosystems. AI environments necessitate an adaptive framework that takes into account ongoing data processing, parental mediation, algorithmic transparency, gaps in digital literacy, and changing legislative requirements, in contrast to traditional privacy models that presume logical and static trade-offs. To create ethical AI systems that emphasize openness, user control, and educated decision-making for young digital citizens, policymakers, educators, and AI developers must work together to ensure that young people can interact with AI technology without jeopardizing their privacy and digital autonomy, PCM's development in this context emphasizes the need for an interdisciplinary approach to AI privacy control.",
+            "publication_ref": [
+                "b6",
+                "b9",
+                "b9",
+                "b20",
+                "b1",
+                "b4",
+                "b21"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. METHODOLOGY A. RESEARCH GOALS AND QUESTIONS",
+            "text": "The principal objective of this study was to apply the Privacy Calculus Model (PCM) as a conceptual lens to investigate how youth, parents and/or educators, and AI professionals view privacy risks and benefits within AI-driven environments. Specifically, we examined the interplay among five key constructs: Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA). By exploring these constructs, we aim to uncover how youth and stakeholders navigate the trade-offs between privacy risks and the perceived benefits of AI technologies. Guided by this framework, we addressed the following Research Questions (RQs), each of which draws on the PCM constructs:\n1) RQ1: How do perceived risks associated with sharing personal data with AI technologies influence youths' and stakeholders' perceptions of data ownership and control in youth data-disclosure decisions?\n2) RQ2: What perceived benefits do youth and stakeholders attribute to AI technologies, and how do these benefits shape youths' willingness to share personal information and parents' willingness to share their children's data?\n3) RQ3: How do transparency and trust in AI systems affect youths' decisions to disclose personal data? 4) RQ4: How do youth and parents manage boundaries (through rules, behaviors, and strategies) when interacting with AI technologies? 5) RQ5: How do education and awareness about AI, and broader ethical considerations, as perceived by youth and stakeholders, impact youth's sense of control and autonomy over their personal information?\nFig. 1 provides a visual representation of how these research questions are mapped to the five constructs to collect insights from stakeholders. These variables, informed by the research questions, converge to inform actionable insights for Ethical AI Development. The definitions of these constructs are provided in Table 1, which details their scope and focus within the study.  ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": [
+                "tab_0"
+            ]
+        },
+        {
+            "heading": "B. RESEARCH MODEL AND HYPOTHESIS",
+            "text": "Drawing upon insights from the literature [4], [19], [23], [24], particularly those emphasizing cost-benefit evaluations in AI adoption, we formulated fourteen hypotheses aligned with the above research questions. Each hypothesis was examined across four distinct groups-young digital citizens, parents and educators, AI professionals, and combined demographics-to explore how PCM's risk-benefit framework operates in varying contexts. Factors such as parental input, perceived control, and digital literacy were integrated to capture the full scope of privacy-related decision-making across these populations.\nBelow, the hypotheses are first presented in numerical order for consistency and ease of reference in the manuscript:\n1) H1: DOC has a significant influence on PDS [25] 2) H2: PRB mediates the relationship between DOC and PDS [23] 3) H3: TT has a significant effect on PDS [26] 4) H4: PRB has a direct effect on PDS [27] 5) H5: DOC has a direct effect on PRB [28] 6) H6: EA has a direct effect on PRB [29] 7) H7: PRB mediates the relationship between TT and PDS [30] 8) H8: DOC has a direct effect on TT [31] 9) H9: TT has a direct effect on PRB [32] 10) H10: TT mediates the relationship between DOC and PDS [33] 11) H11: EA has a significant influence on PDS [34] 12) H12: EA has a total effect on TT [13], [35] 13) H13: EA has a direct effect on DOC [36], [37] 14) H14: PRB mediates the relationship between EA and PDS [33] To systematically examine these relationships, the hypotheses are grouped below according to the research questions they address:\n1) RQ1: H1, H2 2) RQ2: H4, H7 3) RQ3: H3, H8, H10 4) RQ4: H5, H9 5) RQ5: H6, H11, H12, H13, H14  Survey data was collected through convenience sampling, using a combination of recruitment methods, including flyers, personal networks, emails, and social networking platforms such as LinkedIn and Reddit. To reach our targeted youth demographic, we collaborated with several Vancouver Island school districts for their assistance in distributing our survey to their high school students. Youth participants were further recruited from Vancouver Island University (VIU) and personal networks. Educators were recruited from VIU, personal networks, and online platforms, while AI professionals were primarily recruited through personal networks and social networking sites.\nParticipation in the study was entirely voluntary, and participants did not receive any form of compensation. The participants had to read and accept a consent form before starting the questionnaire, indicating their understanding of the study's conditions. We conducted online surveys through Microsoft Forms to ensure accessibility and ease of participation.\nYouth participants (aged 16-19) responded to the youth survey questions based on their own experiences and perceptions. Educators, parents, and AI professionals participated in separate surveys tailored to their roles and were not expected to answer on behalf of youth, but rather to provide their own perspectives on youth privacy and AI.\nWhile this approach enabled efficient data collection, it introduces self-selection bias, as participation was voluntary, and individuals who chose to take part may possess distinct privacy orientations or heightened interest in the topic. This bias is particularly relevant in privacy research, where participants' motivations and sensitivities can shape their responses. Moreover, because youth and educator participants were primarily drawn from specific schools and universities in Canada, the sample may not reflect the full diversity of experiences across other regions. These limitations constrain the generalizability of our findings, but nonetheless offer valuable insights into the perspectives of these particular groups.\nIn addition to the survey questionnaires, we conducted interviews and focus groups with AI professionals, parents, and educators to gain deeper insights into their perspectives. One section of the questionnaire invited participants to provide their email addresses if they were interested in participating in interviews and/or focus groups. After contacting those who consented, we conducted 12 interviews and 2 focus groups: one with 4 AI professionals and another with 5 parents and/or educators. Before the sessions, all participants were provided with a consent form to review and accept. Interviews and focus groups were conducted and transcribed using Microsoft Teams, with participants instructed to keep their videos off to ensure anonymity. The questions for interviews and focus groups were tailored to each participant type to reflect their unique role and perspectives.\nThe survey instruments were adapted from constructs validated in prior studies [4], [18], [24], [36], [38], [39], [40], [41], [42], [43], [44], [45], [46], [47] The items (questions) within these constructs are outlined in Table 2. Full survey prompts, interview and focus group scripts, as well as all consent forms, are provided in the Supplementary Material to ensure transparency and reproducibility. Responses to the items were measured on a 5-point Likert scale, with most items used for quantitative analysis. Notably, to ensure consistency in outcomes, we reversed the scale for items in PRB for AI professionals and swapped items 1 and 2 in PDS for young digital citizens to align contextually with the items for the other demographics. For qualitative analysis, we used open-ended questions, two indicators from PRB, interview responses, and focus group discussions.\nWe use the following naming conventions for qualitative responses. We label survey participants as (S-YDC #X ) for young digital citizens, (S-PE #X ) for parents and educators, and (S-AIP #X ) for AI Professionals. We refer to interview participants as (I-[Role] #X ), specifying their role, such as I-Parent #1 or I-Educator #2. For focus group participants, we use a group identifier and role, such as (FG1-Educator #3).",
+            "publication_ref": [
+                "b3",
+                "b18",
+                "b22",
+                "b23",
+                "b24",
+                "b22",
+                "b25",
+                "b26",
+                "b27",
+                "b30",
+                "b31",
+                "b33",
+                "b12",
+                "b34",
+                "b35",
+                "b36",
+                "b32",
+                "b3",
+                "b17",
+                "b23",
+                "b35",
+                "b37",
+                "b38",
+                "b39",
+                "b40",
+                "b41",
+                "b42",
+                "b43",
+                "b44",
+                "b45",
+                "b46"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_2"
+            ]
+        },
+        {
+            "heading": "D. PARTICIPANT DEMOGRAPHICS",
+            "text": "Out of 482 participants, 461 completed the survey questionnaire: 176 young digital citizens (aged [16][17][18][19], 132 parents and/or educators, and 153 AI professionals. After data cleaning, we retained 127 valid responses from educators and/or parents, 146 from AI professionals, and 151 from young digital citizens for analysis. Of the 127 valid responses from educators and/or parents, 54 identified as parents, 46 identified as educators, and 28 identified as both. Among the 146 valid responses from AI professionals, 46 identified as AI developers, 98 as AI researchers, and 2 as both. We conducted 12 interviews, 9 interviewees identified as parents and/or educators, and 3 identified as AI professionals. We also conducted 2 focus groups, 4 participants identified as AI professionals, and 5 as parents and/or educators. Table 3 highlights the characteristics of the demographics of the participants.",
+            "publication_ref": [
+                "b15",
+                "b16",
+                "b17",
+                "b18"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_3"
+            ]
+        },
+        {
+            "heading": "IV. RESULTS",
+            "text": "This study builds upon our previous research [48], [49], by expanding the sample to include more youth participants, allowing for a more robust and comprehensive analysis of their unique perspectives on privacy in AI systems. By incorporating insights from youth, parents, educators, and AI professionals, we aim to explore the privacy concerns and awareness levels of all three groups in greater depth, emphasizing their unique challenges and opinions in relation to AI and its implications for youth privacy, use, and protection.\nUnlike our previous studies, which focused on consolidated datasets, this is the first study to analyze hypotheses across all three demographic groups: young digital citizens, parents and educators, and AI professionals. While this study compares the perspectives of these groups quantitatively and qualitatively, a formal analysis, such as multi-group analysis, was not conducted due to the scope of the paper. However, this approach provides a foundation for future research to explore group-specific differences in greater detail.\nFor data processing, Microsoft Excel was employed to manage the collected data through descriptive statistics. The analysis was conducted in all three demographic groups, as well as a consolidated dataset, to enable both group-specific and cross-group comparisons. We used a partial least squares structural equation modeling (PLS-SEM) approach via smartPLS software [50]. PLS-SEM is a frequently utilized method to estimate path coefficients in structural models and is widely acknowledged in many studies [51], [52]. As suggested by [53], SEM involves testing measurement models (including exploratory factor analysis, internal consistency, convergent validity, and Dillon-Goldstein's rho) as well as the structural model through regression analysis. The path-weighting structural model scheme in smartPLS was employed to yield the highest R 2 values for dependent latent variables.\nWe additionally utilized a nonparametric bootstrapping procedure in our statistical analysis. Bootstrapping is a resampling technique that generates an empirical sampling distribution by repeatedly drawing samples with replacement from the original dataset. For our analysis, we produced 5,000 subsamples and conducted a two-tailed test at a significance level of 0.1.\nIn addition to the quantitative analysis, we conducted a thematic analysis of open-ended questions, interviews, and focus group discussions to identify common themes expressed by participants. This qualitative approach complements the quantitative findings by providing deeper insight into the stakeholders' perspectives and experiences, particularly in areas where quantitative data may not fully capture the nuances of privacy concerns.",
+            "publication_ref": [
+                "b47",
+                "b48",
+                "b49",
+                "b50",
+                "b51",
+                "b52"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. DESCRIPTIVE STATISTICS",
+            "text": "The quantitative survey revealed distinct patterns across key constructs: Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA) as shown in Fig. 2. AI developers and researchers rated DOC highest (3.95), followed by educators and parents (3.75) and young digital citizens (3.42). PDS scores were low across all groups, with AI professionals scoring 2,36, educators/parents scoring 2.94, and youth scoring 2,52.\nPRB showed the most variation, with young digital citizens rating it highest at 3.98, educators and parents followed closely at 3.88, and AI developers and researchers significantly lower at 1.58. For TT, AI professionals scored 3.49, educators/parents scored 3.46, and youth scored 3.22. Similarly, for EA, AI developers and researchers scored highest  These results highlight differences in how the three groups perceive and prioritize privacy-related constructs, providing a foundation for further analysis and discussion.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_3"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. MEASUREMENT MODELS",
+            "text": "We evaluated the measurement model using exploratory factor analysis to assess the internal consistency, reliability, and validity of the constructs.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "1) EXPLORATORY FACTOR ANALYSIS",
+            "text": "For exploratory factor analysis, we first checked the factor loading of individual items shown in Table 4, to see whether each variable loaded highly on its own construct over the other respective constructs. Factor loadings exceeding 0.60 can be considered significant [54]. In our analysis, factor loadings varied across the four groups (AI professionals, educators/parents, young digital citizens, and combined demographics), suggesting that the constructs may operate differently for each group.\nItem doc1 in the Data Ownership and Control (DOC) construct exhibited a strong loading for AI professionals (0.791) but lower loadings for educators and parents (0.442), and a negative loading for young digital citizens (-0.305), resulting in a moderately strong loading of 0.584 for the combined demographics. Similarly, loadings for the Education and Awareness (EA) construct were mostly above the significance threshold, except for item ea1 for young digital citizens (0.543) and item ea2 for parents and educators (0.551). Items for the Parental Data Sharing (PDS) construct showed robust loadings across all four groups, notably, item pds2 for the combined demographics having a very high loading of 0.979. In the Perceived Risks and Benefits (PRB) construct, item prb1 had high loadings for AI professionals (0.947) and the combined demographics (0.911) but lower values for young digital citizens (0.489) and parents and educators (-0.142). Item prb2 had a low loading for AI professionals (0.422) but significant loadings for all other groups. For the Trust and Transparency (TT) construct, item tt1 showed low loadings for parents and educators (0.338) and young digital citizens (-0.510), while item tt2 had an exceptionally low loading of 0.082 for the combined demographics.\nDespite the variability in factor loadings across the groups, all items and constructs were included in the analysis to capture the diverse perspectives of the participants. These variations suggest constructs may be interpreted or responded to differently, but each group highlights the need for further investigation to better understand the differences. More vigorous methods are needed to confirm any causal relationships.",
+            "publication_ref": [
+                "b53"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_4"
+            ]
+        },
+        {
+            "heading": "2) CONSTRUCT RELIABILITY AND VALIDITY",
+            "text": "We assessed convergent validity for each construct by calculating Average Variance Extracted (AVE) and Composite Reliability (CR) across the four groups: young digital citizens, parents and educators, AI professionals, and combined (see Table 5). AVE should exceed 0.50, indicating the hypothesized construct captures 50% of the variance in the items, and CR should also be above 0.75 [55]. For Data Ownership and Control (DOC), AI professionals showed acceptable values (AVE 0.550; CR 0.785), while all other groups were below acceptable levels. Results for Education and Awareness (EA) were mostly above the acceptable range, except for parents and educators with an AVE of 0.442 and a CR of 0.69. Parental Data Sharing (PDS) scores for AVE and CR exceeded the recommended levels across all four groups. The AVE for Perceived Risks and Benefits (PRB) was acceptable for all groups; however, the corresponding CR for young digital citizens (0.707), parents and educators (0.418), and AI professionals (0.669) all fell below 0.75. AVE and CR scores for Trust and Transparency (TT) struggled across all four groups, except for AI professionals (AVE 0.545; CR 0.757), which suggests that it did not capture significant variance to converge into a single construct. These findings underscore variability in construct validity, highlighting areas for potential refinement.\nResults for the calculated rho_A values (Dillon-Goldstein's rho) are also in Table 5. The rho_A assesses the internal consistency and reliability of each measure; it evaluates the consistency of responses within the scale and is considered a more reliable measure than Cronbach's alpha [56]. Similar to the results for AVE and CR, the rho_A values vary across constructs and groups. For DOC, rho_A values are below the recommended 0.70 for all groups, indicating issues with sufficient internal consistency. EA demonstrates a strong internal consistency among young digital citizens (0.809), moderate internal consistency for AI professionals (0.625), and combined demographics (0.659), but very low consistency for educators and parents (0.376). PDS shows relatively high consistency across all four groups; however, the combined demographics group scored above the acceptable range (1.568), which indicates significant variation within the compounded response items. PRB had more mixed results, with only the combined group reaching acceptable levels (0.837). Finally, TT had values below the desired threshold for all groups except AI professionals (0.741). The low rho_A, in addition to the low CR and AVE values for TT across most groups, indicates a lack of consistency and insufficient variance captured by the construct. This suggests that TT may not be an effective measure for the intended concept and could require revisions to improve reliability and validity.",
+            "publication_ref": [
+                "b54",
+                "b55"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_5",
+                "tab_5"
+            ]
+        },
+        {
+            "heading": "C. STRUCTURAL MODELS",
+            "text": "To begin our Structural Equation Modeling (SEM) analysis, we built the model for the general population and applied it to four subgroups: young digital citizens (aged [16][17][18][19], parents and educators, AI professionals, and the combined populations. We described the model by looking at coefficients of determination (R 2 's), path coefficients (\u03b2's), and corresponding p-values. The R 2 values determine the variance of a given construct by its antecedents, the \u03b2 determines the strength of the relationship between constructs, and the p-values determine the statistical significance. By Chin's guidelines [43], [57], a \u03b2 should be at least 0.2 to be considered relevant. Additionally, a model is considered statistically somewhat significant ( * p) with a p-value < 0.1, quite significant ( * * p) with a p-value < 0.01, and highly significant ( * * * p) with a p-value < 0.001 [43], [57]. Tables 6-9 present the standardized coefficients (\u03b2), t-statistics, and p-values for the model for young digital citizens, parents and educators, AI professionals, and combined demographics. To align with the research questions (RQs), the findings are organized into sections that address each RQ and its associated hypotheses. This breakdown allows for a focused exploration of how perceived risks, perceived benefits, trust in AI systems, privacy management strategies, and ethical and contextual factors influence data-sharing behaviors across  the four subgroups. The results are presented in a structured manner, with each section highlighting the key findings relevant to the corresponding RQ.   in youth data-disclosure decisions. For young digital citizens, Fig. 3 shows that DOC had no significant effect on PDS (\u03b2 = 0.115; p > 0.1), leading to the rejection of H1. Similarly, PRB did not significantly mediate the relationship between DOC and PDS (\u03b2 = 0.003; p > 0.1), resulting in the rejection of H2. For parents and educators, DOC also had no significant effect on PDS (\u03b2 = -0.129; p > 0.1), and PRB did not mediate this relationship (\u03b2 = -0.124; p > 0.1), leading to the rejection of H1 and H2. For AI professionals, DOC had a significant negative effect on PDS (\u03b2 = -0.262; p < 0.01), supporting H1, but PRB did not mediate this relationship (\u03b2 = -0.011; p > 0.1), rejecting H2. For the combined demographics, DOC had a significant negative effect on PDS (\u03b2 = -0.101; p < 0.1), supporting H1, and PRB had a significant negative mediating effect between DOC and PDS (\u03b2 = -0.057; p < 0.01), supporting H2. These findings suggest that perceived risks influence data ownership and control differently across groups, with significant effects observed for AI professionals and the combined group. The summarization of the hypothesis validation can be seen in Table 10.\n2) PERCIEVED BENEFITS RQ2 explores how perceived benefits shape youths' willingness to share personal information and parents' willingness to share their children's data. For young digital citizens, PRB had no significant effect on PDS (\u03b2 = 0.091; p > 0.1), leading to the rejection of H4, and no significant mediating effect between TT and PDS (\u03b2 = 0.002; p > 0.1), rejecting H7. For parents and educators, Fig. 4 shows that PRB had a moderately significant positive effect on PDS (\u03b2 = 0.524; p < 0.1), supporting H4, but no significant mediating effect between TT and PDS (\u03b2 = 0.174; p < 0.1), rejecting H7. For AI professionals, PRB had a significant positive effect on PDS (\u03b2 = 0.276; p < 0.01), supporting H4, but no significant mediating effect between TT and PDS (\u03b2 = -0.048; p > 0.1), rejecting H7. For the combined demographics, PRB had a significant positive effect on PDS (\u03b2 = 0.384; p < 0.001), supporting H4, and was not found to have a significant indirect effect between TT and PDS (\u03b2 = -0.022; p > 0.1), rejecting H7. These results indicate that perceived benefits play a key role in shaping data-sharing behaviors, particularly for parents and AI professionals. For a comprehensive overview of the hypothesis validation, refer to Table 10.",
+            "publication_ref": [
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b42",
+                "b56",
+                "b42",
+                "b56"
+            ],
+            "figure_ref": [
+                "fig_6",
+                "fig_4"
+            ],
+            "table_ref": [
+                "tab_10",
+                "tab_10"
+            ]
+        },
+        {
+            "heading": "3) TRUST IN AI SYSTEMS",
+            "text": "RQ3 investigates how transparency and trust in AI systems affect youth's decisions to disclose personal data. For young digital citizens, TT had no significant effect on PDS (\u03b2 = 0.211; p > 0.1), leading to the rejection of H3, but DOC had a significant positive effect on TT (\u03b2 = 0.306; p < 0.1), supporting H8. Additionally, TT did not significantly mediate the relationship between DOC and PDS (\u03b2 = 0.065; p > 0.1), rejecting H10. For parents and educators, TT had a significant effect on PDS (\u03b2 = 0.054; p > 0.1), and DOC also had no significant effect on TT (\u03b2 = 0.315; p > 0.1), leading to the rejection of H3 and H8. Furthermore, TT did not significantly mediate the relationship between DOC and PDS (\u03b2 = 0.017; p > 0.1), leading to the rejection of H10. For AI professionals, as shown in Fig. 5, TT had a moderately negative effect on PDS (\u03b2 = -0.173; p < 0.1), supporting H3, and DOC had a significant positive effect on TT (\u03b2 = 0.426; p < 0.001), supporting H8. TT had a moderately significant mediating effect between DOC and PDS (\u03b2 = -0.074; p < 0.1), supporting H10. For the combined demographics, DOC had a significant positive effect on TT (\u03b2 = 0.421; p < 0.001), supporting H8, but TT had no significant effect on PDS (\u03b2 = -0.052; p > 0.1), rejecting H3. Additionally, TT did not significantly mediate the relationship between DOC and PDS (\u03b2 = 0.023; p > 0.1), leading to the rejection of H10.. These findings highlight the varying role of trust and transparency across groups. The results of the hypothesis validation are summarized in Table 10.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_9"
+            ],
+            "table_ref": [
+                "tab_10"
+            ]
+        },
+        {
+            "heading": "4) PRIVACY MANAGEMENT STRATEGIES",
+            "text": "RQ4 examines how youth and parents manage boundaries when interacting with AI technologies. For young digital citizens, DOC had no significant effect on PRB (\u03b2 = 0.036; p > 0.1), leading to the rejection of H5, and TT had no significant effect on PRB (\u03b2 = 0.024; p > 0.1), rejecting H9. For parents and educators, DOC also had no significant effect on PRB (\u03b2 = -0.236; p > 0.1), rejecting H5, but TT had a significant effect on PRB (\u03b2 = 0.331; p < 0.1), supporting H9. For AI professionals, DOC had no significant effect on PRB (\u03b2 = -0.041; p > 0.1), rejecting H5, but TT had a moderately negative effect on PDS (\u03b2 = -0.173; p < 0.1), supporting H9. For the combined demographics, Fig. 6 shows that DOC had a significant negative effect on PRB (\u03b2 = -0.148; p < 0.01), supporting H5, and TT had no significant effect on PRB (\u03b2 = 0.060; p > 0.1), rejecting H9. These results suggest that privacy management strategies vary across groups, with stronger effects observed for AI professionals and the combined group. Table 10 presents a summary of the hypothesis validation findings.",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_10"
+            ],
+            "table_ref": [
+                "tab_10"
+            ]
+        },
+        {
+            "heading": "5) ETHICAL AND CONTEXTUAL FACTORS",
+            "text": "RQ5 explores how education and awareness about AI impact youths' sense of control and autonomy. For young digital citizens, EA had a significant positive effect on PRB (\u03b2 = 0.446; p < 0.001), supporting H6, and a moderately positive effect on DOC (\u03b2 = 0.249; p < 0.1), supporting H13. However, EA had no significant effect on PDS (\u03b2 = 0.069; p > 0.1), rejecting H11, and no significant total effect on TT (\u03b2 = 0.076; p > 0.1), rejecting H12. Additionally, PRB did not significantly mediate the relationship between EA and PDS (\u03b2 = 0.040; p > 0.1), leading to the rejection of H14. For parents and educators, EA had a moderately positive effect on DOC (\u03b2 = 0.429; p < 0.1), supporting H13, but no significant effect on PRB (\u03b2 = 0.195; p > 0.1), rejecting H6, and no significant total effect on TT (\u03b2 = 0.135; p > 0.1), rejecting H12. Furthermore, PRB did not significantly mediate the relationship between EA and PDS (\u03b2 = 0.102; p > 0.1), leading to the rejection of H14. For AI professionals, EA had a significant positive effect on DOC (\u03b2 = 0.319; p < 0.01), supporting H13, and a significant total effect on TT (\u03b2 = 0.136; p < 0.01), supporting H12. However, EA has no significant effect on PRB (\u03b2 = -0.246; p > 0.1), rejecting H6, and no significant effect on PDS (\u03b2 = 0.114; p > 0.1), rejecting H11. Additionally, PRB did not significantly mediate the relationship between EA and PDS (\u03b2 = -0.068; p > 0.1), leading to the rejection of H14. For the combined demographics, EA had a significant positive effect on DOC (\u03b2 = 0.441; p < 0.001), supporting H13, and a significant total effect on TT (\u03b2 = 0.186; p < 0.001), supporting H12. PRB had a significant negative mediating effect between EA and PDS (\u03b2 = -0.128; p < 0.001), supporting H14. However, EA has no significant effect on PDS (\u03b2 = 0.142; p > 0.1), rejecting H11. These findings highlight the complex role of education and awareness in shaping privacy perceptions and behaviors. The hypothesis validation outcomes are consolidated and presented in Table 10.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_10"
+            ]
+        },
+        {
+            "heading": "D. QUALITATIVE FINDINGS",
+            "text": "In addition to the quantitative analysis, qualitative data were gathered to capture respondents' subjective perspectives on privacy concerns related to AI tools and data sharing. As part of an online survey, each demographic group (young digital citizens, parents and educators, and AI professionals) received three open-ended questions linked to the five primary research questions (RQ1-RQ5) [58]. The wording was slightly adjusted for each demographic group to reflect each group's relation to young digital citizens, as shown in Table 11. We further supplemented the survey data with oneon-one interviews conducted with parents, educators, and AI professionals, as well as two focus groups-one with parents and educators, and another with AI professionals (conducted virtually using Microsoft Teams). This multi-layered qualitative approach was designed to enrich and complement the quantitative findings, providing a deeper, more nuanced understanding of how different stakeholder groups perceive and navigate privacy issues in AI contexts. The insights gathered were then analyzed to systematically address the study's core research questions, as outlined in the next section.",
+            "publication_ref": [
+                "b57"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_11"
+            ]
+        },
+        {
+            "heading": "1) INFLUENCE OF PERCEIVED RISKS ON DATA OWNERSHIP AND CONTROL (RQ1)",
+            "text": "Across all groups, concerns about loss of control, data misuse, and surveillance emerged as primary risks influencing youths' and stakeholders' views on data ownership and control (DOC). Many youth respondents expressed discomfort over uncertainty regarding data ownership, emphasizing that once shared, personal data is no longer within their control. As one youth participant stated, ''I am mainly concerned about what data is being taken and how it is used, as I feel we often aren't informed clearly about what data is being taken and used'' (S-YDC #5). Another highlighted fears of data resale, saying, ''My data could be sold without my knowing who it's going to'' (S-YDC #107). These concerns align with the quantitative findings, where DOC showed a lower mean score among youth (3.42) compared to AI professionals (3.95) and parents/educators (3.75), suggesting weaker confidence in personal data control among younger users.\nSurveillance and profiling by AI systems were also widely cited as major risks. Many youth respondents worried about AI's ability to track and infer personal details, even beyond explicit data-sharing. One participant shared, ''I feel uncomfortable knowing AI can recognize my face in public places'' (S-YDC #93), while another feared, ''AI will guess everything about us. Sensitive topics I research could be recorded forever; voice assistants may listen in when I am just hanging out'' (S-YDC #84). Similarly, AI professionals echoed these risks, with one stating, ''Users may not realize how much of their data is being captured. AI could unintentionally memorize personal details from its users'' (S-AIP #116). These findings reinforce the structural model results, which showed a negative relationship between DOC and Perceived Risks and Benefits (PRB) (\u03b2 = -0.148, p < 0.01) in the combined demographic analysis, indicating that as privacy concerns increase, users feel less in control of their data.\nParents and educators placed greater emphasis on the lack of youth awareness in data-sharing decisions, arguing that uninformed sharing exacerbates privacy risks. One parent remarked, ''I am concerned about the misuse and manipulation of the data they share. I also think that most young people are unaware or apathetic about AI systems and their potential for misuse'' (S-PE #17). Another educator noted, ''Many children and adolescents will use AI without considering their own privacy (similar to how many use social media)'' (S-PE #40), suggesting that privacy education is critical for fostering a stronger sense of DOC. This aligns with the Education and Awareness (EA) construct, which showed a significant positive effect on DOC (\u03b2 = 0.441, p < 0.001) in the combined dataset, highlighting the role of education in mitigating perceived risks.\nAI professionals provided technical insights into privacy vulnerabilities, particularly regarding data leakage through AI models. One researcher explained, ''AI might accidentally recreate sensitive data from its training sets, exposing private information'' (S-AIP #85), raising concerns about long-term data retention and unintended exposure. Another stated, ''Once data goes into an AI system, it's tough to know where it ends up or who else can see it'' (S-AIP #45), reinforcing broader concerns about the opacity of AI-driven data processing. A summary of trends discussed in this section can be seen in Table 12.\nParticipants identified several perceived benefits of AI systems using personal data, with the most frequently mentioned advantage being its role in education. Many young digital citizens reported using AI tools for academic purposes, describing them as helpful while expressing caution about sharing personal data. One youth stated, ''I use them to help me with homework or chat for fun but try not to share personal VOLUME 13, 2025 stuff. It's super helpful'' (S-YDC #15), while another shared a similar perspective: ''I just use ChatGPT for homework and stuff, but I don't share personal things. I think it's super helpful, but I try not to rely on it too much'' (S-YDC #9).\nEducators reinforced this viewpoint, emphasizing AI's potential to reduce mundane tasks and enhance students' learning experiences. One educator noted, ''I think on one hand they can be treated as just another tool that can potentially be used to, you know, reduce mundane workload and let students work on more interesting and challenging parts of, you know, work in our discipline'' (I-Educator #1). Others highlighted AI's ability to personalize learning, accommodate different learning styles, and provide accessibility features for students with disabilities. Another educator explained, ''We were just talking about personalizing learning for students having different needs or different paces of learning. That's one positive side of AI tools or AI systems being complemented in the education system. There are some AI tools out there which anonymize the data to tailor learning experiences. So that kind of reduces the risk somewhat. So student privacy is maintained. And learning is also personalized for the students' need. So that's a positive of using AI in education'' (FG1-Educator #4).\nWhile youth, parents, and educators primarily viewed AI through an educational lens, AI professionals took a broader view, focusing on AI's ability to enhance personalization and efficiency across multiple sectors. One AI developer described the advantages of AI-driven personalization: ''Talking about benefits of sharing data with AI systems, I would say they are amazing. Quite amazing, as far as it comes to me, for an example. One of the biggest boons [sic], I would say that comes with sharing data with an AI system is that you get personalized services. So basically, AI can analyze your personal data to provide highly tailored services'' (FG2-Developer #4).\nOne developer emphasized AI's efficiency and error reduction capabilities in software development, stating, ''It would make the application development much faster than the traditional coding methods. It could automate repetitive tasks, generate code snippets, and even provide helpful suggestions, allowing myself and developers to concentrate on high-level design and functionality. So efficiency was one of the key reasons for us picking AI. [It] not only speeds up the development but also reduces the likelihood of human error, which can in turn lead to developing more reliable applications'' (FG2-Developer #6). A summary of the stakeholders' perspectives on the benefits of AI systems can be found in Table 13.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_12",
+                "tab_13"
+            ]
+        },
+        {
+            "heading": "3) IMPACT OF TRANSPARENCY AND TRUST ON DISCLOSURE DECISIONS (RQ3)",
+            "text": "Across all stakeholder groups, participants expressed significant privacy concerns regarding AI systems, primarily citing a lack of transparency and limited user control over data-sharing practices. However, the way these concerns manifested varied among young digital citizens, parents/educators, and AI professionals.\nYoung digital citizens frequently described their uncertainty about what data is collected and how it is used, with many stating that privacy policies were unclear or difficult to understand. One youth commented, ''I do not know enough about them to be concerned about what I should be concerned about'' (S-YDC #2), while another expressed frustration over the lack of transparency, stating, ''I am mainly concerned about what data is being taken and how it is used, as I feel we often aren't informed clearly about what data is being taken and used'' (S-YDC #5). Others highlighted the complexity of AI privacy settings, with one respondent noting, ''I shouldn't have to be a tech expert to keep my info private'' (S-YDC #62), and another adding, ''I feel like my privacy depends on settings I barely understand'' (S-YDC #48). Additionally, some youth raised concerns about international data sharing and regulatory differences, questioning, ''What if my data is shared with companies overseas, beyond my country's laws?'' (S-YDC #132).\nParents and educators echoed many of these concerns but also emphasized the long-term implications of data collection on youth development and safety. One educator criticized the lack of regulatory oversight, stating, ''I do not trust that information gathered by AI will be used presently or in the future in an informed manner for the benefit of the individual, but rather fear its exploitation on both an individual and mass level. Guardrails and safety mechanisms to protect people barely exist, people do not know enough about what is being gathered and how it is being used, and very few mechanisms exist to inform them'' (S-PE #10). Others worried about how AI-driven profiling could shape young users' experiences and influence their behavior, with one parent expressing concern over ''psychological profiling of student's attitudes and beliefs for manipulation and propaganda purposes. Fortune 500 companies sharing this data with government for authoritarian, non-democratic purposes'' (S-PE #20). Another parent specifically noted concerns regarding children's safety in digital spaces, stating, ''I'm mostly worried about how much personal information these AI systems collect about my child and what they do with it. I don't feel like I have control over the data, or know if we can remove it. I also worry about my children's safety online and if AI makes them more exposed to things like cyberbullying'' (S-PE #31).\nAI professionals focused on the technical risks of AI privacy practices, particularly emphasizing the difficulty of opting out of data collection and the long-term retention of personal information. One AI researcher pointed out the lack of accessible data controls, stating, ''Saying NO to data collection isn't always clear or easy, and opting out can mean missing out on useful features'' (S-AIP #57). Others expressed concerns over AI systems inadvertently retaining and exposing sensitive information, explaining, ''There is a risk that the model could inadvertently generate or expose private information it learned from its training data'' (S-AIP #77) and ''Neural networks might store patterns that include sensitive info from users. Once trained, that data can be hard to fully remove or control'' (S-AIP #122). Cybersecurity risks were also a major theme, with one respondent stating, ''If AI systems keep data longer than needed, it is more at risk of being hacked or misused'' (S-AIP #48).\nUltimately, participants across all groups stressed that a lack of transparency and clear user controls contributes to mistrust in AI-driven data collection. One AI professional summarized these concerns, stating, ''AI systems often rely on a huge amount of data including personal/sensitive data; think about smart assistants, recommendation engines, or health apps. The problem? This data can be misused, hacked, or even just over-collected. Machine learning models can also make decisions that feel invasive or less accurate because it's trained on data that may not always represent everyone fairly'' (S-AIP #103). A summary of participants' responses to privacy concerns in AI systems can be found in Table 14.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_14"
+            ]
+        },
+        {
+            "heading": "4) BOUNDARY MANAGEMENT STRATEGIES IN AI INTERACTIONS (RQ4)",
+            "text": "Participants across all demographic groups identified various strategies and measures to enhance privacy protections in AI systems, focusing on platform-level changes, regulatory protections, and user education. However, distinct differences emerged between young digital citizens, parents and educators, and AI professionals in how they believed privacy should be managed.\nYoung digital citizens primarily advocated platform-level improvements, expressing a need for clearer privacy settings, ongoing consent mechanisms, and greater transparency in data usage. One participant emphasized the importance of making privacy settings more accessible, stating, ''Make privacy options super clear and right in front when I install an app'' (S-YDC #67). Others similarly urged AI platforms to provide straightforward options to adjust privacy settings, with one stating, ''Give us clear options to adjust privacy settings and control what data we share'' (S-YDC #25), while another pointed out that existing platforms often obscure such options, stating, ''Don't hide privacy settings behind complicated menus'' (S-YDC #38).\nBeyond controls, several participants stressed the need for greater transparency in how AI systems utilize personal data, with one requesting, ''Clearer definitions and explanations of how data is being used and why/where'' (S-YDC #5), and another suggesting, ''Let us see a history of how our data has been used'' (S-YDC #97).\nIn addition to platform-based changes, many youth participants highlighted the importance of legal and regulatory measures to enforce privacy protections. Some called for strict penalties for companies that fail to comply with privacy standards, such as ''Mandatory guidelines they must abide by, with the company being punishable with major fines from a governing body'' (S-YDC #3). Others proposed global privacy frameworks to ensure consistent protections across different jurisdictions, with one stating, ''Develop global standards for data privacy protections'' (S-YDC #107). Additional suggestions included privacy certification for applications, such as, ''Create a certification for apps with great privacy standards'' (S-YDC #112), and mandatory transparency disclosures, such as, ''Make it mandatory for apps to show how they secure our information'' (S-YDC #147).\nAnother prominent theme among youth responses was the need for increased privacy education. Many suggested integrating digital privacy awareness into school curricula, with one stating, ''Teach privacy basics in school so we know our rights'' (S-YDC #51), while another stressed the importance of online safety education, stating, ''Teach people how to manage privacy online'' (S-YDC #90). Some youth also highlighted the role of parents in privacy education, suggesting parental guidance tools for younger users while preserving autonomy, such as ''Give parents tools to guide younger kids' online safety but with some ethical restrictions'' (S-YDC #64). Others suggested that youth should actively participate in shaping AI privacy policies, with one recommending, ''Have youth councils help design privacy rules they actually understand'' (S-YDC #138).\nParents and educators largely echoed youth concerns but focused more on age-appropriate privacy controls and the role of parental oversight. Many respondents supported more granular controls for both youth and parents, with one explaining, ''There should be clarity on the purpose of personalized data being shared. Young people should have access to control their actions accordingly'' (S-PE #13). Another participant emphasized the need for clear parental controls and complete opt-out options, stating, ''More controls as well as an explanation of how all data is used. The controls should include a complete opt-out option as well as selections or options for which data can be shared or used'' (S-PE#12). Some parents specifically emphasized parental control over AI-driven applications for children, with one parent explaining, ''I think AI-based tools for kids need to be a lot safer and clearer. It should be easy to know what the AI tool is doing with my kid's information and why it needs it. These tools shouldn't collect more data than they really need. Parents should be able to control or delete that data if we want'' (S-PE #31).\nIn contrast to youth respondents, parents and educators placed greater emphasis on regulatory interventions, particularly those aimed at age-based privacy restrictions. Some called for mandatory educational programs prior to AI usage, with one educator suggesting, ''First and foremost, AI should not be accessible to simply anyone. Before given access to AI, students need to be informed of the risks of sharing personal information online'' (S-PE #40). Others proposed specialized youth data protection laws, such as, ''Youth-centric privacy laws'' (S-PE #79), or banning the monetization of youth data, with one stating, ''Monetization of data about young people should not be allowed. If collected, data should only be used in aggregate and anonymized ways, without profiling any one user'' (S-PE #78).\nSimilar to youth respondents, parents and educators emphasized the importance of digital privacy education, though they also stressed educating adults, including teachers and parents, about AI privacy. One parent recommended introducing privacy education in schools from an early age, stating, ''I think that young people should be educated, probably around Grade eight or nine, about how their data is being collected and used'' (S-PE #17). Another suggested expanding privacy awareness beyond schools, stating, ''Awareness campaigns in schools and colleges'' (S-PE #19).\nInterestingly, several parents and educators also noted that adults themselves lack sufficient knowledge about AI privacy, with one explaining, ''It's important to educate everyone on protecting their privacy when using online AI tools. Educators, in particular, should never use their students' identities on these platforms. Schools and companies also have a responsibility to make sure student data is securely stored and only shared with proper consent'' (S-PE #94). Another parent supported the idea of adult-oriented AI privacy education, recommending, ''Proper literacy programs to educate parents about it'' (S-PE #114). One respondent referenced existing European privacy frameworks as a model for improvement, stating, ''We need something more along the EU GDPR + AI Act for protecting privacy and enforcing meaningful fines for infractions. AI should be part of a coherent, comprehensive curriculum around digital skills-much like Action 6 of the EU Digital Education Action Plan'' (S-PE #76).\nAI professionals largely echoed concerns shared by other stakeholders but emphasized technical solutions such as anonymization, encryption, and federated learning. One developer outlined several privacy-enhancing techniques, stating, ''To enhance privacy in AI systems, I would focus on anonymizing data and using differential privacy to protect individual information. Implementing federated learning can help keep data on local devices. Encryption is essential for securing data at rest and in transit'' (S-AIP #7). Similarly, others highlighted technical strategies to restrict personal data collection, with one explaining, ''Anonymization and pseudonymization are essential techniques for protecting personally identifiable information (PII) and sensitive data in AI systems'' (S-AIP #16), while another recommended, ''Use differential privacy, homomorphic encryption, or similar technologies to remove personally identifiable information to safeguard user identities'' (S-AIP #29). Although AI professionals supported greater transparency, few explicitly mentioned regulatory or legal interventions. Instead, they focused on platform-driven protections, such as ''Straightforward, accessible privacy policies to explain data practices'' (S-AIP #25) and user-accessible data logs, as one participant suggested, ''Give users an easy way to see exactly what data an AI has about them, so they know what's being used'' (S-AIP #52). A considerable number of AI professionals also emphasized education as a key privacy protection strategy, particularly in making AI more understandable for youth users. One researcher stated, ''Teach young people about digital privacy early, so they know how to make smarter choices online'' (S-AIP #127), while another suggested, ''Games or apps could even teach these skills while being fun'' (S-AIP #130). A summary of the proposed privacy measures is outlined in Table 15.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_15"
+            ]
+        },
+        {
+            "heading": "5) EFFECTS OF EDUCATION AND AWARENESS ON DATA CONTROL AND AUTONOMY (RQ5)",
+            "text": "Across all three demographic groups, participants discussed various approaches to balancing the benefits of AI-driven data usage with privacy protection. Youth respondents primarily focused on individual privacy management strategies, including using privacy-focused tools such as VPNs, ad-blockers, and encrypted messaging apps. One youth explained, ''I run ad-blockers or privacy extensions in my browser to limit hidden tracking'' (S-YDC #72), while another mentioned, ''I download privacy-focused apps like secure browsers or VPNs'' (S-YDC #125). Other participants preferred selective data sharing, sharing only necessary information to minimize risks. One respondent described, ''I only share data when it really adds value'' (S-YDC #40), while another explained, ''I only provide information when it's necessary and always check privacy settings on apps'' (S-YDC #29). Some youth highlighted the importance of transparency, emphasizing that platforms should offer more clarity regarding data collection. One participant stated, ''Let me see a before-and-after picture: what's different if I share less?'' (S-YDC #59), while another added, ''Tell me how using my data benefits me, not just the company'' (S-YDC #38).\nParents and educators emphasized education and awareness as key to enabling informed privacy decisions for young users. Many stressed the need for privacy education in schools to help students understand the risks of AI-driven data collection. One educator explained, ''I try to inform students so they can better be informed about their use of AI, and see the trade-off they are making when they use the (obvious) benefits. I try to tell myself too. And I teach them about ways to safeguard their identity information while using AI, though that is very challenging'' (S-PE #5). Other educators similarly noted, ''I warn students to be aware of where they put their private information; and I teach them to be aware of the source of the information they are getting'' (S-PE #7). Some parents actively educate their children about privacy risks, with one parent sharing, ''We need to make sure our children use tools that don't ask for too much personal information. I teach my kids not to share all of the personal and private content online'' (S-PE #115). Others emphasized direct parental control over AI interactions, with one explaining, ''Family discussions about social media algorithms, computer game design, YouTube and Snapchat video feeds. Social media is not allowed (messaging and email is allowed), Internet browsers are used in school or with some parental supervision and time limits outside of school'' (S-PE #18).\nAI professionals approached the issue from a technical and policy perspective, advocating for user-controlled privacy settings, strong encryption, and data anonymization. Many supported privacy-preserving AI development, with one researcher explaining, ''I prioritize using data that's been anonymized or synthetically generated to protect privacy'' (S-AIP #73). Others discussed multi-layered approaches that integrate regulatory compliance, data minimization, and transparency mechanisms to ensure user autonomy, stating, ''Balancing data usage and privacy is challenging. In my work, I prioritize using only the necessary data and implement privacy-preserving techniques like anonymization and encryption. We often collaborate with legal and compliance teams to ensure we are meeting regulations'' (S-AIP #7). Additionally, AI professionals supported clear and accessible privacy controls, with one developer recommending, ''Make sure users have options to decide what data they want to share, and under what conditions'' (S-AIP #46), while another emphasized the importance of informed consent, explaining, ''Use clear interfaces for privacy controls so users know exactly what's happening. When asking for consent, make sure it's straightforward, no long, unreadable policies'' (S-AIP #133). AI professionals also acknowledged the challenges of maintaining privacy in AI systems, with one noting, ''Despite best efforts, privacy lapses can happen due to shortcuts or lack of adherence to best practices. I think it's an ongoing effort to keep privacy at the forefront while still delivering effective solutions'' (S-AIP #7). A summary of participants' responses is provided in Table 16.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_16"
+            ]
+        },
+        {
+            "heading": "V. DISCUSSION",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. STRENGTHENING PRIVACY MANAGEMENT THROUGH EDUCATION AND AWARENESS",
+            "text": "The cornerstones of preparing young digital citizens with the information and abilities needed to protect their privacy in AI-driven settings are education and awareness (EA). EA's important role in encouraging proactive privacy behaviors is highlighted by its strong impact on promoting Data Ownership and Control (DOC) (\u03b2 = 0.249, p = 0.053). Disparities in digital literacy, especially among parents and educators (AVE = 0.442), however, highlight a lack of knowledge about AI's data practices, which may make it more difficult for them to help young people make wise decisions. This can be addressed by methodically incorporating privacy education into school curricula, emphasizing AI-specific threats such as behavioral tracking, algorithmic decisionmaking, and data profiling. Public awareness campaigns can also be used to teach parents, teachers, and students about good privacy management practices. To create gamified platforms and interactive, scenario-based learning resources that make privacy education interesting and approachable, governments and tech firms must work together. Users may better understand their rights, reduce privacy threats, and confidently traverse AI environments by bolstering EA activities. To guarantee fair access to AI literacy, future studies should assess the long-term efficacy of privacy education initiatives across various socioeconomic and cultural backgrounds.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. TRANSPARENCY AND TRUST AS ESSENTIAL PILLARS OF PRIVACY",
+            "text": "Although it is still difficult to successfully include transparency and trust (TT) into AI governance, these concepts are essential for promoting responsible interaction with AI systems. Despite TT's proven favourable impact on Data Ownership and Control (DOC) (\u03b2 = 0.306), the study's results highlight a crucial gap in AI transparency, as seen by its comparatively low AVE (0.395). Because users are still unsure of how their data is processed and used, the ambiguity around AI data-handling procedures makes them reluctant to share information. AI systems must provide easily understandable explanations of data usage guidelines and privacy settings to increase confidence. Consent-based data-sharing models, explainable AI (XAI) interfaces, and real-time privacy dashboards are a few examples of features that can help consumers make wise choices. Mandating transparency audits and compelling AI developers to give comprehensive yet understandable data policies are two further ways that ethical governance frameworks should strengthen accountability. Furthermore, AI systems need to be made to adapt to different degrees of digital literacy so that even non-technical people and younger users can easily traverse privacy settings. To ascertain how transparency-driven treatments affect privacy attitudes over time, future research should examine the long-term effects of trust-enhancing tactics on user involvement, especially among teens.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. ENHANCING DIGITAL LITERACY FOR PROACTIVE PRIVACY MANAGEMENT",
+            "text": "A key component of proactive privacy management is digital literacy, which helps people connect the dots between theory and practice while using AI-powered systems. Although the study shows a strong correlation between Data Ownership and Control (DOC) and Education and Awareness (EA), there are still notable differences in digital literacy among various stakeholder groups. The AVE ratings for EA were notably lower for parents and educators (0.442), suggesting gaps in their capacity to successfully mentor young people in privacy-related decision-making. Targeted interventions are needed to address this, including interactive workshops, organized digital literacy programs, and privacy training tailored to AI. Learning about privacy may be made more interesting and approachable by using techniques like interactive simulations, gamified privacy education resources, and community-driven awareness campaigns. Additionally, lowering disparities and promoting an inclusive AI ecosystem where all users can confidently handle privacy challenges depends on giving marginalized communities priority when it comes to digital literacy. For young digital citizens to be prepared to assess the risks of data sharing and protect their personal information, policymakers and educators should concentrate on incorporating AI-specific digital literacy into school curricula. Future studies should examine scalable strategies for integrating digital literacy initiatives into national curricula and evaluate how they affect privacy practices over the long run.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. REDEFINING THE ROLE OF ETHICAL DESIGN IN AI SYSTEMS",
+            "text": "Findings related to Transparency and Trust (TT) highlight the need for ethical AI design to handle the complex privacy issues raised by AI-driven systems. Although Data Ownership and Control (DOC) has a favourable effect on TT (\u03b2 = 0.306), the comparatively low AVE for TT (0.395) indicates that consumers have trouble comprehending AI's privacy measures. Accessibility, inclusivity, and simplicity should be given top priority in ethical AI design to guarantee that even younger and less tech-savvy users can maintain their privacy. To increase user trust, developers must incorporate real-time transparency tools, adaptive privacy restrictions, and simple permission procedures. Furthermore, integrating ethical design principles into AI governance frameworks requires cooperation between technologists, legislators, and end users. While maintaining accountability for AI-driven decisions, AI designers should concentrate on developing privacy-by-design systems that give consumers more transparent data management choices. Future studies should concentrate on creating cross-sector ethical AI frameworks that guarantee equity, reduce algorithmic biases, and methodically assess how ethical AI design affects user engagement and trust over the long run.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. BALANCING RISKS AND BENEFITS IN DATA SHARING",
+            "text": "Users must carefully consider the benefits and possible risks of sharing data when making privacy decisions in AI ecosystems, as evidenced by the interaction between Education and Awareness (EA) and Perceived Risks and Benefits (PRB) (\u03b2 = 0.446, p < 0.001). Users voice concerns about profiling, monitoring, and data breaches even as they recognize the advantages of AI, such as enhanced service accessibility and personalized learning experiences. AI systems must have tools that support risk-benefit analysis, such as adaptive consent procedures that offer contextualized explanations of the ramifications of sharing various sorts of data, to promote informed decision-making. To guarantee that people are not unintentionally exposed to high-risk data processing operations, AI governance should also place a strong emphasis on openness in the way user data is used. To enable policymakers and AI developers to create adaptable, usercentric privacy regulations that respect ethical norms and guarantee AI systems continue to spur innovation without sacrificing individual autonomy, longitudinal studies are required to monitor changes in user perceptions over time.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "F. COLLABORATIVE APPROACHES TO PRIVACY PROTECTIONS",
+            "text": "One of the study's main conclusions is how crucial collaboration is to efficient privacy management, especially between parents and young people. The study shows that too restrictive parental engagement can reduce young users'  (\u03b2 = -0.170, p = 0.006). A more balanced, bottom-up strategy that blends teenage empowerment with parental advice is required to get beyond strict, top-down privacy restrictions. To promote shared accountability, privacy education should be co-developed through collaborative talks between young users, educators, parents, and legislators rather than being imposed. Through the provision of resources, interactive learning tools, and industry-led programs that give adults and children the knowledge they need to protect their privacy, collaborative efforts, including public-private partnerships, can aid in closing the digital literacy gaps. Lawmakers must also put in place frameworks that promote moral AI behavior and shared accountability between sectors that handle sensitive user data. Future studies should examine how well these cooperative models work in a variety of cultural and demographic contexts and assess how well they encourage appropriate data-sharing practices over time. Such strategies reduce privacy threats and provide users greater control over their digital identities by encouraging shared accountability, guaranteeing a more moral and user-focused AI environment.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "G. STUDY LIMITATIONS AND DIRECTIONS FOR FUTURE RESEARCH",
+            "text": "This study offers valuable insights into privacy perceptions within AI-driven environments; it also presents several limitations that inform directions for future research.\nA key limitation relates to the sampling strategy. Data collection focused on three stakeholder groups-young digital citizens, parents and educators, and AI professionals. While these groups provide important perspectives, the exclusion of relevant stakeholders, such as non-technical users, policymakers, and industry regulators, may limit the broader applicability of the findings. Additionally, the use of convenience sampling introduces the possibility of selection bias, which reduces generalizability. Future research should consider employing probability-based sampling methods across more diverse demographic groups. Another limitation lies in the study's cross-sectional design, which captures privacy attitudes at a single point in time. This approach does not allow for the examination of how perceptions evolve in response to prolonged interactions with AI technologies. Longitudinal studies would provide deeper insight into how privacy concerns and behaviors change over time, especially considering advancing AI capabilities and regulatory developments. While this study engaged multiple stakeholder groups, it did not incorporate formal comparative analysis between them. Future research could explore group-based differences in privacy perceptions and behaviors to uncover more nuanced insights. Moreover, variation in construct reliability across groups suggests that cultural, demographic, or professional differences may influence how individuals interpret privacy-related concepts. Refining measurement instruments to account for these contextual variations will enhance the inclusivity and robustness future models. Addressing limitations will support the development of more comprehensive frameworks contribute to the evolution of privacy-preserving strategies for responsible AI deployment.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "H. IMPLICATIONS FOR POLICY AND ETHICAL AI DEVELOPMENT",
+            "text": "The findings of this study offer several implications for future policy and ethical AI development. Ensuring effective privacy management in AI ecosystems requires interdisciplinary collaboration across technical, ethical, and educational domains. Policies and research efforts should be aligned to reflect the dynamic nature of AI technologies and the complexity of privacy-related decision-making. Future research should explore the impact of educational interventions, particularly in underrepresented communities where digital literacy and privacy awareness may vary due to cultural and socioeconomic factors. Longitudinal investigations can further assess the sustained influence of such interventions over time. For policymakers, the results underscore the urgency of developing proactive governance frameworks that emphasize ethical AI development and user-centric design. Transparency mandates should require AI systems to disclose data usage practices, and adaptive consent mechanisms should be integrated into AI design to support real-time, user-controlled privacy settings.\nGiven the global nature of AI data flows, international collaboration is essential to harmonize privacy regulations and reduce jurisdictional inconsistencies. Cross-border policy alignment will enhance accountability, mitigate risks of data misuse, and promote trust in AI systems. By fostering collaboration between researchers, policymakers, educators, and AI developers, the findings of this study can inform the development of AI systems that balance innovation with strong privacy protections, ultimately contributing to the advancement of ethical and responsible AI governance.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. CONCLUSION",
+            "text": "This study offers an in-depth examination of how young digital citizens, parents/educators, and AI researchers/developers maneuver through the complex domain of privacy in AI systems, informed by the PCM. The analysis of critical dimensions, including EA, DOC, PRB, TT, and PDS, highlights the diverse dynamics affecting privacy behaviors. EA became a crucial element in enabling people to make informed choices, emphasizing the importance of integrating privacy education into curricula and public awareness campaigns. The significance of transparency and ethical design in building trust and user confidence highlights the pressing need for intuitive, user-centered system interfaces. interaction of perceived risks and benefits, together with the impact of cooperative strategies among stakeholders, reveals the complex trade-offs involved in privacy management. However, challenges such as varying levels of digital literacy, opaque data and excessive parental intervention remain significant barriers to effective privacy governance. Addressing these challenges requires focused interventions, such as adaptive consent mechanisms, education in risk-benefit analysis, explainable AI tools that clarify how data is used, and inclusive policymaking that reflects the diverse needs of different user groups. Future should build on these insights by investigating longitudinal trends in privacy perceptions, cross-cultural differences, and the scalability of collaborative frameworks. Such efforts will ensure AI systems remain equitable, ethical, and empowering for all users. This study contributes to the evolution of AI governance by emphasizing education, transparency, and collaboration as foundational pillars for creating a digital ecosystem that balances innovation with robust privacy protections.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "",
+            "text": "AUSTIN SHOULI was born in Kitchener, Waterloo, ON, Canada, in 1995. He received the Diploma degree in journalism from the Southern Alberta Institute of Technology, Calgary, AB, Canada, in 2019. He is currently pursuing the B.Sc. degree in computer science with Vancouver Island University, Nanaimo, BC, Canada.\nHe is also a Research Assistant with Vancouver Island University, working with a team funded by the Office of the Privacy Commissioner of Canada, under the supervision of Prof. Ajay Shrestha, studying questions of privacy as they pertain to young digital citizens and artificial intelligence. He plans to continue research in artificial intelligence by pursuing a graduate degree in computer science.\nMr. Shouli was a recipient of the Best Paper Award in the data mining category at 2024 IEEE IEMCON Conference. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Youth on techethics: Analysis of teens' ethical on AI in learning activities",
+            "journal": "Behav. Inf. Technol",
+            "year": "2024-05",
+            "authors": "E Durall Gazulla; N Hirvonen; S Sharma; H Hartikainen; V Jylh\u00e4; N Iivari; M Kinnula; A Baizhanova"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Balancing the commitment to the common good and the protection of personal privacy: Consumer adoption of sustainable, smart connected cars",
+            "journal": "Inf. Manage",
+            "year": "2024-01",
+            "authors": "D D Choi; P B Lowry"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Navigating AI to unpack youth privacy concerns: An in-depth exploration and systematic review",
+            "journal": "",
+            "year": "",
+            "authors": "A K Shrestha; A Barthwal; M Campbell; A Shouli; S Syed; S Joshi; J Vassileva"
+        },
+        {
+            "ref_id": "b3",
+            "title": "An extended privacy calculus model for e-commerce transactions",
+            "journal": "Inf. Syst. Res",
+            "year": "2006-03",
+            "authors": "T Dinev; P Hart"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Extending the UTAUT2 model with a privacy calculus model to enhance the adoption of a health information application in Malaysia",
+            "journal": "Informatics",
+            "year": "2022-03",
+            "authors": "I Bile Hassan; M A A Murad; I El-Shekeil; J Liu"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Perspectives of youths on the ethical use of artificial intelligence in health care research and clinical care",
+            "journal": "JAMA Netw. Open",
+            "year": "2023-05",
+            "authors": "K Thai; K H Tsiandoulas; E A Stephenson; D Menna-Dack; R Z Shaul; J A Anderson; A R Shinewald; A Ampofo; M D Mccradden"
+        },
+        {
+            "ref_id": "b6",
+            "title": "Social robot privacy concern (SRPC): Rethinking privacy concerns within the hospitality domain",
+            "journal": "Int. J. Hospitality Manage",
+            "year": "2024-09",
+            "authors": "S Jia; O H Chi; L Lu"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Online privacy concerns: A broad approach to understanding the concerns of different groups for different uses",
+            "journal": "Comput. Hum. Behav",
+            "year": "2015-12",
+            "authors": "A Bergstr\u00f6m"
+        },
+        {
+            "ref_id": "b8",
+            "title": "In the black mirror: Youth investigations into artificial intelligence",
+            "journal": "ACM Trans. Comput. Educ",
+            "year": "2022-09",
+            "authors": "C H Lee; N Gobir; A Gurn; E Soep"
+        },
+        {
+            "ref_id": "b9",
+            "title": "A privacy calculus model perspective that explains why parents sharent",
+            "journal": "Inf., Commun. Soc",
+            "year": "2024-08",
+            "authors": "Z Peng"
+        },
+        {
+            "ref_id": "b10",
+            "title": "'Tweens' conceptions of privacy online: Implications for educators",
+            "journal": "Learn., Media Technol",
+            "year": "2013-03",
+            "authors": "K Davis; C James"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Linked by age: A study on social media privacy concerns among younger and older adults",
+            "journal": "Ind. Manage. Data Syst",
+            "year": "2024-01",
+            "authors": "D Goyeneche; S Singaraju; L Arango"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Teens' responses to Facebook newsfeed advertising: The effects of cognitive appraisal and social influence on privacy concerns and coping strategies",
+            "journal": "Telematics Informat",
+            "year": "2019-05",
+            "authors": "S Youn; W Shin"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Youth and artificial intelligence: Where we stand",
+            "journal": "Berkman Klein Center Internet & Soc., Harvard Univ",
+            "year": "2019-05",
+            "authors": "A Hasse; S Cortesi; A Lombana-Bermudez; U Gasser"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Ethics of artificial intelligence in education: Student privacy and data protection",
+            "journal": "Sci. Insights Educ. Frontiers",
+            "year": "2023-06",
+            "authors": "L Huang"
+        },
+        {
+            "ref_id": "b15",
+            "title": "Generative AI in medical practice: Indepth exploration of privacy and security challenges",
+            "journal": "J. Med. Internet Res",
+            "year": "2024-03",
+            "authors": "Y Chen; P Esmaeilzadeh"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Creative beyond TikToks: Investigating Adolescents' social privacy management on TikTok",
+            "journal": "Proc. Privacy Enhancing Technol",
+            "year": "2023-04",
+            "authors": "N Ebert; T Geppert; J Strycharz; M Knieps; M H\u00f6nig; E Brucker-Kley"
+        },
+        {
+            "ref_id": "b17",
+            "title": "State of the information privacy literature: Where are we now and where should we go?",
+            "journal": "MIS Q",
+            "year": "2011",
+            "authors": "P A Pavlou"
+        },
+        {
+            "ref_id": "b18",
+            "title": "The role of pushpull technology in privacy calculus: The case of location-based services",
+            "journal": "J. Manage. Inf. Syst",
+            "year": "2009-12",
+            "authors": "H Xu; H.-H Teo; B C Y Tan; R Agarwal"
+        },
+        {
+            "ref_id": "b19",
+            "title": "Children's understanding of personal data and privacy online-A systematic evidence mapping",
+            "journal": "Inf., Commun. Soc",
+            "year": "2021-03",
+            "authors": "M Stoilova; R Nandagiri; S Livingstone"
+        },
+        {
+            "ref_id": "b20",
+            "title": "XAI-Explainable artificial intelligence",
+            "journal": "Sci. Robot",
+            "year": "2019-12",
+            "authors": "D Gunning; M Stefik; J Choi; T Miller; S Stumpf; G.-Z Yang"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Exploring panic buying behavior during the COVID-19 pandemic: A developing country perspective",
+            "journal": "Int. J. Emerg. Markets",
+            "year": "2023-06",
+            "authors": "G Singh; A S Aiyub; T Greig; S Naidu; A Sewak; S Sharma"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Out of control-privacy calculus and the effect of perceived control and moral considerations on the usage of IoT healthcare devices",
+            "journal": "Frontiers Psychol",
+            "year": "2020-11",
+            "authors": "E Princi; N C Kr\u00e4mer"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Blissfully ignorant: The effects of general privacy concerns, general institutional trust, and affect in the privacy calculus",
+            "journal": "Inf. Syst. J",
+            "year": "2015-11",
+            "authors": "F Kehr; T Kowatsch; D Wentzel; E Fleisch"
+        },
+        {
+            "ref_id": "b24",
+            "title": "The association between family socio-demographic factors, parental mediation and adolescents' digital literacy: A cross-sectional study",
+            "journal": "BMC Public Health",
+            "year": "2024-12",
+            "authors": "J Lou; M Wang; X Xie; F Wang; X Zhou; J Lu; H Zhu"
+        },
+        {
+            "ref_id": "b25",
+            "title": "From parental control to joint family oversight: Can parents and teens manage mobile online safety and privacy as equals?",
+            "journal": "Proc. ACM Human-Comput. Interact",
+            "year": "2022-04",
+            "authors": "M Akter; A J Godfrey; J Kropczynski; H R Lipford; P J Wisniewski"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Parental mediation of adolescent Internet use: Combining strategies to promote awareness, autonomy and self-regulation in preparing youth for life on the Web",
+            "journal": "Educ. Inf. Technol",
+            "year": "2020-03",
+            "authors": "N Steinfeld"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Early adolescents' perspectives on digital privacy,'' in Algorithmic Rights and Protections for Children",
+            "journal": "MIT Press",
+            "year": "2023-06",
+            "authors": "N D Santer; A Manago; A Starks; S M Reich"
+        },
+        {
+            "ref_id": "b28",
+            "title": "Navigating the digital world: Development of an evidence-based digital literacy program and assessment tool for Smart Learn",
+            "journal": "Environ",
+            "year": "2024-12",
+            "authors": "M C Buchan; J Bhawra; T R Katapally"
+        },
+        {
+            "ref_id": "b29",
+            "title": "Mindful sharenting: How millennial parents balance between sharing and protecting",
+            "journal": "Frontiers Psychol",
+            "year": "2023-07",
+            "authors": "M Walrave; S Robb\u00e9; L Staes; L Hallam"
+        },
+        {
+            "ref_id": "b30",
+            "title": "The effect of transparency and trust on intelligent system acceptance: Evidence from a user-based study",
+            "journal": "Electron. Markets",
+            "year": "2022-10",
+            "authors": "J Wanner; L.-V Herm; K Heinrich; C Janiesch"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Trust in open data applications through transparency",
+            "journal": "New Media Soc",
+            "year": "2020-08",
+            "authors": "C Wiencierz; M L\u00fcnich"
+        },
+        {
+            "ref_id": "b32",
+            "title": "Teen Privacy and Safety Online: Knowledge, Attitudes, and Practices Oakland",
+            "journal": "Youth Tech Health",
+            "year": "2016",
+            "authors": ""
+        },
+        {
+            "ref_id": "b33",
+            "title": "Parental influence and Teens' attitude toward online privacy protection",
+            "journal": "J. Consum. Affairs",
+            "year": "2008-09",
+            "authors": "S Youn"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Role of algorithm awareness in privacy decision-making process: A dual calculus lens",
+            "journal": "J. Theor. Appl. Electron. Commerce Res",
+            "year": "2024-04",
+            "authors": "S Tian; B Zhang; H He"
+        },
+        {
+            "ref_id": "b35",
+            "title": "Strategies for reducing online privacy risks: Why consumers read (or don't read) online privacy notices",
+            "journal": "J. Interact. Marketing",
+            "year": "2004-08",
+            "authors": "G R Milne; M J Culnan"
+        },
+        {
+            "ref_id": "b36",
+            "title": "Navigating privacy concerns: Social media users' perspectives on data sharing",
+            "journal": "AI Tech. Behav. Social Sci",
+            "year": "2023-01",
+            "authors": "M Jafari; Z Shaghaghi"
+        },
+        {
+            "ref_id": "b37",
+            "title": "Losing control to data-hungry apps: A mixed-methods approach to mobile app privacy",
+            "journal": "Social Sci. Comput. Rev",
+            "year": "2019-08",
+            "authors": "P B Brandtzaeg; A Pultier; G M Moen"
+        },
+        {
+            "ref_id": "b38",
+            "title": "Privacy in the digital age: A review of information privacy research in information systems",
+            "journal": "MIS Quart",
+            "year": "2011",
+            "authors": "Crossler B\u00e9langer"
+        },
+        {
+            "ref_id": "b39",
+            "title": "Examining the formation of individual's privacy concerns: Toward an integrative view",
+            "journal": "",
+            "year": "2008-01",
+            "authors": "H Xu; T Dinev; H Smith; P Hart"
+        },
+        {
+            "ref_id": "b40",
+            "title": "Internet users' information privacy concerns (IUIPC): The construct, the scale, and a causal model",
+            "journal": "Inf. Syst. Res",
+            "year": "2004-12",
+            "authors": "N K Malhotra; S S Kim; J Agarwal"
+        },
+        {
+            "ref_id": "b41",
+            "title": "Parental mediation of children's Internet use",
+            "journal": "J. Broadcast. Electron. Media",
+            "year": "2008-11",
+            "authors": "S Livingstone; E J Helsper"
+        },
+        {
+            "ref_id": "b42",
+            "title": "A model for mandatory use of software technologies: An integrative approach by applying multiple levels of abstraction of informing science",
+            "journal": "Inf. Sci., Int. J. Emerg. Transdiscipline",
+            "year": "2010-01",
+            "authors": "C E Koh; V R Prybutok; S D Ryan; Y A Wu"
+        },
+        {
+            "ref_id": "b43",
+            "title": "Internet privacy concerns confirm the case for intervention",
+            "journal": "Commun. ACM",
+            "year": "1999-02",
+            "authors": "R Clarke"
+        },
+        {
+            "ref_id": "b44",
+            "title": "Organizational transparency: A new perspective on managing trust in organization-stakeholder relationships",
+            "journal": "J. Manage",
+            "year": "2016-11",
+            "authors": "A K Schnackenberg; E C Tomlinson"
+        },
+        {
+            "ref_id": "b45",
+            "title": "Improving employees' compliance through information systems security training",
+            "journal": "MIS Quart",
+            "year": "2010-12",
+            "authors": "P Puhakainen; M Siponen"
+        },
+        {
+            "ref_id": "b46",
+            "title": "Development of measures of online privacy concern and protection for use on the Internet",
+            "journal": "J. Amer. Soc. for Inf. Sci. Technol",
+            "year": "2007-01",
+            "authors": "T Buchanan; C Paine; A N Joinson; U.-D Reips"
+        },
+        {
+            "ref_id": "b47",
+            "title": "Applying communication privacy management theory to youth privacy management in AI contexts",
+            "journal": "",
+            "year": "2025-02",
+            "authors": "M Campbell; S Joshi; A Barthwal; A Shouli; A K Shrestha"
+        },
+        {
+            "ref_id": "b48",
+            "title": "Investigation of the privacy concerns in AI systems for young digital citizens: A comparative stakeholder analysis",
+            "journal": "IEEE",
+            "year": "2025-01",
+            "authors": "M Campbell; A Barthwal; S Joshi; A Shouli; A K Shrestha"
+        },
+        {
+            "ref_id": "b49",
+            "title": "User acceptance of usable blockchainbased research data sharing system: An extended TAM-based study",
+            "journal": "",
+            "year": "2019-12",
+            "authors": "A K Shrestha; J Vassileva"
+        },
+        {
+            "ref_id": "b50",
+            "title": "A partial least squares latent variable modeling approach for measuring interaction effects: Results from a Monte Carlo simulation study and an electronic-mail emotion/adoption study",
+            "journal": "Inf. Syst. Res",
+            "year": "2003-06",
+            "authors": "W W Chin; B L Marcolin; P R Newsted"
+        },
+        {
+            "ref_id": "b51",
+            "title": "Augmenting the technology acceptance model with trust model for the initial adoption of a blockchain-based system",
+            "journal": "PeerJ Comput. Sci",
+            "year": "2021-05",
+            "authors": "A K Shrestha; J Vassileva; S Joshi; J Just"
+        },
+        {
+            "ref_id": "b52",
+            "title": "A Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM)",
+            "journal": "SAGE Publications",
+            "year": "2017",
+            "authors": "J F Hair; G T M Hult; C M Ringle; M Sarstedt"
+        },
+        {
+            "ref_id": "b53",
+            "title": "Structural equation modeling in marketing: Some practical reminders",
+            "journal": "J. Marketing Theory Pract",
+            "year": "2008-09",
+            "authors": "W W Chin; R A Peterson; S P Brown"
+        },
+        {
+            "ref_id": "b54",
+            "title": "Partial least squares structural equation modeling (PLS-SEM): An emerging tool in business research",
+            "journal": "Eur. Bus. Rev",
+            "year": "2014-03",
+            "authors": "J F Hair; M Sarstedt; L Hopkins; V G Kuppelwieser"
+        },
+        {
+            "ref_id": "b55",
+            "title": "Human resources management policies and practices scale (HRMPPS): Exploratory and confirmatory factor analysis",
+            "journal": "BAR -Brazilian Admin. Rev",
+            "year": "2012-09",
+            "authors": "G Demo; E R Neiva; I Nunes; K Rozzett"
+        },
+        {
+            "ref_id": "b56",
+            "title": "Disentangling behavioral intention and behavioral expectation",
+            "journal": "J. Experim. Social Psychol",
+            "year": "1985-05",
+            "authors": "P R Warshaw; F D Davis"
+        },
+        {
+            "ref_id": "b57",
+            "title": "Toward ethical AI: A qualitative analysis of stakeholder perspectives",
+            "journal": "",
+            "year": "2025-01",
+            "authors": "A K Shrestha; S Joshi"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "FIGURE 1 .1FIGURE 1. Stakeholder perspectives leading to ethical AI development.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": ". The pilot study aimed to evaluate the feasibility and duration of the research approach while refining the study design. Participants offered general feedback on the questionnaire, which guided modification and restructuring of the final survey. The revised research model was then tested by gathering survey data from three key demographic groups: Young Digital Citizens (aged[16][17][18][19], Parents and Teachers, and AI Researchers and Developers. These groups were purposefully selected to provide triangulation of perspectives, capturing the views of those who develop AI technologies, those who guide youth (parents and educators), and youth themselves.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": ". The instruments consist of 3 indicators for Data Ownership and Control (DOC), 2 indicators for Parental Data Sharing (PDS), 4 indicators for Perceived Risk and Benefits (PRB), 3 indicators for Trust and Transparency (TT), 3 indicators for Education and Awareness (EA), and 3 open-ended discussion questions.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "FIGURE 2 .2FIGURE 2. Means across constructs and demographics.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "at 4 .416, followed by educators and parents at 3.43, and youth at 3.22.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "36",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Fig 3 - 636presents the structural models for the four groups illustrating the causal relationships among Data Ownership and Control (DOC), Education and Awareness (EA), Parental Data Sharing (PDS), Perceived Risk and Benefit (PRB), and Trust and Transparency (TT). The model explores direct, indirect and total effects among these constructs.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "FIGURE 3 .3FIGURE 3. Model with direct effects for young digital citizens.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_7",
+            "figure_caption": "FIGURE 4 .4FIGURE 4. Model with direct effects for parents and educators.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "figure",
+            "figure_id": "fig_8",
+            "figure_caption": "1) PERCEIVED RISKSRQ1 examines how perceived risks influence youths' and stakeholders' perceptions of data ownership and control",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_9",
+            "figure_caption": "FIGURE 5 .5FIGURE 5. Model with direct effects for AI professionals.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6",
+            "figure_type": "figure",
+            "figure_id": "fig_10",
+            "figure_caption": "FIGURE 6 .6FIGURE 6. Model with direct effects for combined demographics.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "1",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "Constructs and definitions.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "The present study received ethics approval from the Vancouver Island University Research Ethics Board (VIU-REB). The approval reference number #103116 was given for behavioral application/amendment forms, consent forms, interview and focus group scripts, and questionnaires. An initial pilot study was conducted with 6 participants, including members of the empirical research specialists from the University of Saskatchewan and Vancouver Island University",
+            "figure_data": "C. RESEARCH DESIGN"
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "Constructs and items.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "Participants' demographics.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "table",
+            "figure_id": "tab_4",
+            "figure_caption": "Exploratory factor analysis.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "table",
+            "figure_id": "tab_5",
+            "figure_caption": "Construct reliability and validity.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6",
+            "figure_type": "table",
+            "figure_id": "tab_6",
+            "figure_caption": "Structural estimates (hypothesis testing) for young digital citizens.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "7",
+            "figure_type": "table",
+            "figure_id": "tab_7",
+            "figure_caption": "Structural estimates (hypothesis testing) for parents and educators.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "8",
+            "figure_type": "table",
+            "figure_id": "tab_8",
+            "figure_caption": "Structural estimates (hypothesis testing) for AI professionals.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "9",
+            "figure_type": "table",
+            "figure_id": "tab_9",
+            "figure_caption": "Structural estimates (hypothesis testing) for combined demographics.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "10",
+            "figure_type": "table",
+            "figure_id": "tab_10",
+            "figure_caption": "Validation of hypotheses.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "11",
+            "figure_type": "table",
+            "figure_id": "tab_11",
+            "figure_caption": "Qualitative by group.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "12",
+            "figure_type": "table",
+            "figure_id": "tab_12",
+            "figure_caption": "Identified risks of personal data use in AI systems by stakeholder group. autonomy in controlling their privacy by identifying the detrimental effects of excessive parental control on Data Ownership and Control (DOC) in Parental Data Sharing (PDS)",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "13",
+            "figure_type": "table",
+            "figure_id": "tab_13",
+            "figure_caption": "Benefits of AI systems by stakeholder group.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "14",
+            "figure_type": "table",
+            "figure_id": "tab_14",
+            "figure_caption": "Main privacy concerns in AI systems by stakeholder group.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "15",
+            "figure_type": "table",
+            "figure_id": "tab_15",
+            "figure_caption": "Privacy measures to enhance privacy in AI systems.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "16",
+            "figure_type": "table",
+            "figure_id": "tab_16",
+            "figure_caption": "Strategies for balancing benefits and privacy protection by stakeholder group.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ACCESS.2025.3585635"
+}

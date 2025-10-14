@@ -1,0 +1,266 @@
+{
+    "title": "Towards a Global Code of Ethics for Engineers",
+    "authors": "Saif Alzahir; Laura Kombo",
+    "pub_date": "",
+    "abstract": "Theoretically, Codes of Ethics are broad guidelines to professional conduct. These codes are designed to help professionals uphold the highest level of ethical conduct and maintain standards of practice and integrity pertaining to their professional duties. Generally, these guidelines include but not limited to protecting the public interest, demonstrating professional competence, preserving confidentiality, attending to conflict of interest and perpetuating social responsibility. Although different professional engineering societies, in different counties, have different codes of ethics, but they all have some common basic teachings of right and wrong and how to apply it in decisions making process. In this paper, we examine the compatibility of the IEEE code of ethics with thirty two 32 international codes of ethics of professional engineering societies in Africa, Asia, Australia, Europe and Latin America. Our research results show that only four countries have adopted the IEEE code of ethics as is, while the other 28 countries have some variations of it i.e., adopted some articles, ignored some articles and added some of their own. Examining the international articles show that sociopolitical and cultural differences are the main causes of such variations. Finally, our findings shows that a global professional code of ethics is conceivable and can be produced and accepted with minimal conscientious efforts.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "Codes of ethics are developed to guide the behavior of members in their respective societies and professional associations. Obviously, codes are just one method that professionals can use in making judgments [1]. Different professional engineering societies have different codes of ethics due to sociopolitical, historical, and cultural reasons, but they all have some shared teachings on how to apply right and wrong in decisions making process. So far, professional societies have not attempted to unify their codes of ethics in a global code of ethics for engineers that clearly identify the engineering professionals' commitments to public safety, health, and welfare. In this paper, we focus on examining the IEEE code of ethics articles and identify those articles that have been embraced by the majority of the international societies' codes and also identify those articles that international societies have and are not embraced by the IEEE.\nThe main purpose of this research is to arrive at common articles that can be used as a global code of ethics for electrical and electronic engineer.\nUnfortunately, many international engineering societies do not have websites or do not post their code of ethics on their website if they have them. In this paper we have chosen 32 engineering societies from Africa, Asia, Latin America and Europe. The African countries included in this research are Ghana, Kenya, Mauritius, Namibia, Nigeria, South Africa, Tanzania, Uganda, Zambia, and Zimbabwe. The Asian countries are Bahrain, Bangladesh, Bhutan, Cyprus, India, Malaysia, Nepal, Pakistan, Philippines, Sri Lanka, Japan and Hong Kong. The countries from Europe are Turkey, Ireland, Finland, France, UK, and Norway. In addition, we have included Canada, Australia, New Zealand, and Chile.",
+            "publication_ref": [
+                "b0"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. RELATED WORK",
+            "text": "The engineering profession is a well-respected profession globally. Although this profession has high regard but many countries do not have engineering societies to organize the profession to this date. Societies in different countries have their own professional codes of ethics whose designs were dictated and influenced by different factors. The prevalence of corporate codes of ethics has been increasing globally especially after the major business scandals that shocked the financial markets in the last ten years. In the engineering profession, most professionals are faced with different decisions that include some ethical dimensions. Often professional association codes have been designed to enhance professionalism of the individual members by indicating those behaviors that are prohibited as well as those that are expected of them [2]. It is obvious that many codes of ethics are influenced by society and culture. According to [3], Engineers make an enormous contribution to promote the wellbeing of individuals and the communities in which they live in. However, engineering may also give rise to adverse consequences. This gives out a very good reason why the code of ethics is thus very important and essential not only to the engineering profession but to other professions as well. Michelfelder, and Jones [4], reported that none of the AIChE, ASME, and IEEE associations specifically includes sustainability in its codes of ethics, although each includes reference to the environment while the AIChE's Code is relatively short. IEEE's Code is also relatively short while the ASME Code is among the longest of the professional Codes.\nThe research by Michelfelder and Jones [4] gives an insight of how different societies may be touching on the same aspect but in different ways and manner. The researchers conclude by saying that the ASCE's code focuses more on the ''doing'' of engineering while IEEE's focuses more on the ''being'' that enables the practice of engineering, although all codes include both aspects. Oz's [5] reviews four codes of US computing professional organizations finding flaws, moral dilemmas, and points for improvement. According to [6] and [7], there have been some suggestions brought forward to enable professionals to use only one global code of ethics. In another study on codes of conduct for computing professionals, Joyce et al. [8] comparing twenty seven international code of ethics and found that only eight articles that were common to more than 50% of these codes. Since the creation of global codes is determined by very many different factors that may not be visible and obvious to all like religion and culture. Some of the factors determining this are due to differences between nations and cultures [8,9]. Despite all this, Brey [10] and Wong [11] acknowledge that universal code of ethics would be ideal, but in practice this can only be implemented as an extension of the local moral systems and that we should avoid ethical imperialism [11]. Despite considerable efforts made by professionals to develop ethical codes, that are acceptable to the public and the professionals themselves, there is usually general dissatisfaction with any code and there are nearly constant pressures for their revision as well as considerable cynicism regarding the code of ethics that are being implemented and followed up by engineers all over and it has been emphasized. Robin Alexander-Smith and John Kultgen [13] argue that codes of ethics are mere window dressings designed more for public relation than for altering conduct. Despite this perception, many others oppose this thought and think differently to what the author feels is right. The thought may be translated to mean that the codes do not really benefit the professionals but just out to create a good image of a profession if not an organization. The authors further argue that the codes are self-serving and are more designed to protect the economic interests of the profession than they are for protecting the public from unethical conduct. According to [14], the author argues that it has been widely accepted that corporate codes of conduct are only one way to influence the ethical behavior in organizations and such behaviors being affected by the ethical codes of other groups of professions relevant to a specific work place. This could be true in a way as obviously there are so many other ways and means of influencing the ethical behaviors in organizations and even in professions. Donker, Boff and Zahir [15] introduce a code of ethics index for Canadian corporations. They have tested companies' performance versus that index and found that companies with higher ethical scores have performed much better than those with lower ethical index. In [16], the author argues that there is still a very big growing interest in the effectiveness of codes of ethics in guiding individual's behavior in the work place even though recent attention has been focused on improving the codes of ethics of individual corporations. In the business ethics just as in the engineering ethics, researchers have shown increased interest in the effectiveness of codes of ethics mirroring a shift among managers towards additional ethics training for employees [17]. According to [18,19] a number of studies have been published focusing on corporate codes of ethics. More studies continue to take place on codes of ethics of different professions and this increases the awareness of work ethics of different professions to different groups of people. Individuals are able to know what is expected of different professionals hence they can be held accountable of their actions. According to Charles E. Harris [20], virtue ethics is a more appropriate vehicle for expressing the aspect of the engineering professionalism. He continues to say that four of the many professional virtues that are important for engineers, correspond to the four aspects of engineering professionalism and that the importance of the humanities and social sciences in promoting these virtues suggests that these disciplines are crucial in the professional education of engineers. There are a number of possibilities that are in existence that could be used in improving the ethical behavior of employees in the engineering industry and profession. Some of these alternatives used in the business profession, that may also be used in the engineering profession are ethics training, ethics auditing and even ethics hotlines. While recognizing the values in each of these approaches, the focus of the present analysis stems from previous findings about the likelihood of the associations' members to adhere to the ethical codes. [1], [21]. A recent survey on 32 professional associations across several industries found that 88% of the respondents agreed that most association members adhere to the association's ethical codes and that 54% of the respondents felt that their association's ethical codes needed to be revised. Future research which should be aimed at focusing on clarifying the dimensions of the context in which ethical codes operate [1] and on understanding the process embedded in this context is highly desirable and all measure and effort should be taken to ensure that this takes place. This paper is written in such a way so that it questions the completeness of the excellent knowledge base for promoting ethical behaviors in organizations and within engineering professions that is readily available. This study identifies the importance not only of adopting a formal and global code of ethics but also for communicating it and reinforcing it with supporting values. In addition, it aims at clarifying the importance of understanding contextual issues associated with codes of ethics in different cultures and possibly different professions. Finally, the proposed global code of ethics for engineers differ from [5] in that it is not limited to specific code in specific country but has actually gone globally to consider all available engineering professional codes of ethics and identified common grounds for these codes that can be appended to the IEEE Code of Ethics to make it universally accepted.",
+            "publication_ref": [
+                "b1",
+                "b2",
+                "b3",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b10",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b0",
+                "b20",
+                "b0",
+                "b4"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. PROFESSIONAL CODES OF ETHICS",
+            "text": "In this section, we examine the level of compliance of international codes of ethics to that of the IEEE. Although engineering societies in foreign countries include various engineering branches such as civil, electrical, chemical, mechanical, and computer engineering, but we considered these codes to be applicable and comparable to the IEEE code. Also, we examine the international societies' codes and identify those articles that are common to more than four countries in our sample and explore the possibility of merging such articles in the IEEE CoE to arrive at a global code of ethics for engineers. The following is the IEEE code of ethics and in Table I we show the articles that are embraced by foreign countries.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. IEEE Code of Ethics",
+            "text": "The following is the official IEEE Code of Ethics:\n1. to accept responsibility in making decisions consistent with the safety, health and welfare of the public, and to disclose promptly factors that might endanger the public or the environment; 2. to avoid real or perceived conflicts of interest whenever possible, and to disclose them to affected parties when they do exist; 3. to be honest and realistic in stating claims or estimates based on available data; 4. to reject bribery in all its forms; 5. to improve the understanding of technology, its appropriate application, and potential consequences; 6. to maintain and improve our technical competence and to undertake technological tasks for others only if qualified by training or experience, or after full disclosure of pertinent limitations; 7. to seek, accept, and offer honest criticism of technical work, to acknowledge and correct errors, and to credit properly the contributions of others; 8. to treat fairly all persons regardless of such factors as race, religion, gender, disability, age, or national origin; 9. to avoid injuring others, their property, reputation, or employment by false or malicious action; 10. to assist colleagues and co-workers in their professional development and to support them in following this code of ethics.\nTable I shows that article eight of the IEEE Code of ethics: \"To treat fairly all persons regardless of such factors as race, religion, gender, disability, age, or national origin\" has appeared partially or totally in 12 codes i.e., 37.5% of the total 32 codes. These codes are three African codes, five Asian codes Australian, New Zealand, and one European code. In relation to article eight, we have found that The Institute of Engineering and Technology, IET, of the UK code of ethics contains all articles of the IEEE code except for this article. The findings about article eight are alarming as it deals with the public directly and needs to be attended to as soon as possible. Also, the IEEE code of ethics article seven: to acknowledge and correct errors, and to credit properly the contributions of others have only been adopted by fourteen countries out of the total thirty two countries that we sampled which is nearly 44%. The highest inclusion rate was for article six where 27 international codes have adopted it i.e. nearly 84% of the total sample. Table I also shows that article five of the IEEE code of ethics: \"To improve the understanding of technology; its appropriate application, and potential consequences\" has been included partially or totally in fourteen different codes out of the 32 codes, i.e., nearly in 44% of the total codes. These codes are two African, four Asian, two European, Australian, New Zealand, and Chile.\nIt is noteworthy to say that twenty four out of the thirty two codes i.e., 75% of the sample codes agreed with article four of the IEEE code: \"to reject bribery in all its forms\" especially in countries where bribery is a way of life according to many resources. On the other hand, the Table shows that only three countries, Canada, the Philippines, and Hong Kong have adopted the IEEE code in its totality. Even though Hong Kong has embraced all IEEE CoE articles but it has added to it some articles of its own. Our findings show that seven out of twelve Asian societies' codes differ with IEEE code in five or more articles, and six African societies' codes differ with IEEE codes in five or more articles. Basically, the first, fourth, sixth, ninth, and tenth articles of IEEE are the most widely adopted by other societies as opposed to the fifth, seventh and eighth articles.  The following articles are found in the international codes of ethics and not included in the IEEE code. In this paper, we include only those articles that are found in at least four international codes in our sample of 32 codes. These articles and the countries they embraced them are as follows:\n\uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Kenya \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Mauritius \uf0fc \uf0fc \uf0fc Namibia \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Nigeria \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc South Africa \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Tanzania \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Uganda \uf0fc \uf0fc \uf0fc \uf0fc Zambia \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Zimbabwe \uf0fc \uf0fc \uf0fc \uf0fc Bahrain \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Bangladesh \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Bhutan \uf0fc \uf0fc \uf0fc \uf0fc Cyprus \uf0fc \uf0fc India \uf0fc \uf0fc \uf0fc \uf0fc Malaysia \uf0fc \uf0fc \uf0fc \uf0fc Nepal \uf0fc \uf0fc \uf0fc \uf0fc Pakistan \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Philippines \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Sri Lanka \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Japan \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Hong Kong \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Turkey \uf0fc \uf0fc \uf0fc Ireland \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Finland \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc France \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Norway \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc UK \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc New Zealand \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Australia \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Canada \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Chile \uf0fc \uf0fc \uf0fc \uf0fc\n1. Kenya Namibia, Nigeria, South Africa, Uganda, Bangladesh, Hong Kong, Pakistan Mauritius: An Engineer who is engaged in engineering work in a country other than his will order his conduct according to the customs and rules of that country as far as they are applicable, adhering as closely as is practicable to the principals of this code 2. Ghana, Nigeria, South Africa, Tanzania, Zimbabwe, Bangladesh, Hong Kong: An Engineer shall endeavor to uphold and advance the integrity, honor, standing, reputation and dignity of the engineering profession and of the society from misrepresentation and misunderstanding. 3. Ghana, South Africa, Ireland, UK: Members shall not allow or advertise their work, merit or write articles for publications in any manner that is derogatory to the Institution or to the dignity of their profession. 4. Kenya, Nigeria, Uganda, Malaysia: An Engineer shall not be the medium of payments made on his or her employer's behalf unless so requested by his or her clients but shall only issue certificates to his or her clients for payments; nor shall he or she in connection with work on which he or she is employed place contracts or orders except with the authority of and behalf of his or her employer 5. South Africa, Tanzania, Uganda, Bangladesh, Hong Kong, India, Japan, Malaysia, Sri Lanka, Australia, New Zealand, Chile, Ireland, UK: Except as authorized or required by law a member shall not divulge any confidential information regarding the business affairs, technical processes or financial standing of their clients or employers without their consent. An engineer must respect the secrecy of all confidential information obtained in the practice of his profession. Obviously, the above articles reflect the difference in cultures, values and engineering practices in those countries. Article number one, for instance: An Engineer who is engaged in engineering work in a country other than his will order his conduct according to the customs and rules of that country as far as they are applicable, adhering as closely as is practicable to the principals of this code. This article talks about mobility and trans-border practices which is lacking in the IEEE code. Also, article seven: No engineer shall compete unfairly with another engineer by attempting to obtain employment or professional engagements by taking advantage of a privileged position on the basis of professional charges, or by criticizing another engineer or by other improper or unfair means is culture based article. In addition, article eight: A Professional Engineer in private Practice shall not, directly or indirectly attempt to supplant another Professional Engineer in private practice nor shall he intervene or attempt to intervene in or in connection with engineering work of any kind which to his knowledge has already been entrusted to another Professional Engineer in private practice nor shall he review or take over the work of that other Engineer acting for the same employer, until he has either obtained the consent of that Engineer or has been formally notified by the employer that the engagement of that Engineer with work has been properly terminated -is also culture oriented article. Similarly, article nine; The Consultant shall not attempt to impersonate or replace another consultant in contracts already granted, or assume his duties, unless so authorized by him, or that the customer has formally ended his relationship with the first is based on practices in such countries.\nTable II shows that article five has 14 countries endorse it and articles 1, 6, 7, and 8 are endorsed by nine countries. This shows that a considerable number of countries are putting more emphasis on these specific articles. It could therefore be of benefit if the proposed articles that are adopted by four or more countries be further examined and to test its suitability and possible inclusion in a global code of ethics. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_3"
+            ]
+        },
+        {
+            "heading": "I. CONCLUSIONS",
+            "text": "In this paper, we have explored the idea of establishing a global code of ethics for engineers. We have examined the acceptability of the IEEE code of ethics by foreign countries and identified those articles that are not popular. In addition, we identified the articles in foreign countries engineering societies' code of ethics that are not in the IEEE code and determined the number of countries that adopted each article. Although the codes of engineering societies look different but it is our conviction that a global code of ethics that all engineering societies can live with is possible if cultural differences are accommodated for.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "A Multidimensional Assessment of Ethical Codes: The Professional Business Association Perspective",
+            "journal": "Journal of Business Ethics",
+            "year": "1999",
+            "authors": "Lewis R Tucker"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Values and Justifications in the Ethical Decision-Making Process",
+            "journal": "Journal of Business Ethics",
+            "year": "2005",
+            "authors": "Richard Coughlan;  Codes"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Ethics and the Engineer: Professional Codes and the Rule of St",
+            "journal": "",
+            "year": "2012",
+            "authors": "W Richard Bowen"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Sustaining Engineering Codes of Ethics for the Twenty-First Century",
+            "journal": "Sci Eng Ethics",
+            "year": "2011",
+            "authors": "Diane Michelfelder; Sharon A Jones"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Ethical standards for computer professionals: A comparative analysis of four major codes",
+            "journal": "Journal of Business Ethics",
+            "year": "1993",
+            "authors": "E Oz"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Comparing three is codes of ethics -ACM, ACS and BCS",
+            "journal": "",
+            "year": "2003",
+            "authors": "S Wheeler"
+        },
+        {
+            "ref_id": "b6",
+            "title": "A uniform code of ethics: business and it professional ethics",
+            "journal": "Commun. ACM",
+            "year": "2006-11",
+            "authors": "D Payne; B J Landry"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Professional ethics in information systems: a personal perspective",
+            "journal": "Commun. AIS",
+            "year": "2000-04",
+            "authors": "R M Davison"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Codes of conduct for computing professionals: an international comparison",
+            "journal": "",
+            "year": "2003-07",
+            "authors": "D Joyce; B Blackshaw; C King; L Muller"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Is information ethics culture-relative?",
+            "journal": "International Journal of Technology and Human Interaction",
+            "year": "2007",
+            "authors": "P Brey"
+        },
+        {
+            "ref_id": "b10",
+            "title": "what should we share? : understanding the aim of intercultural information ethics",
+            "journal": "SIGCAS Computer Soc",
+            "year": "2009-12",
+            "authors": "P.-H Wong"
+        },
+        {
+            "ref_id": "b11",
+            "title": "Ethics and the Engineer: Professional Codes and the Rule of St. Benedict",
+            "journal": "",
+            "year": "2012",
+            "authors": "W Richard Bowen"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Commentary on 'The Ideological' Use of Professional codes",
+            "journal": "Business & Professional Ethics Journal",
+            "year": "1982",
+            "authors": "Robin Alexander; - Smith; John Kultgen"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Ethical codes of conduct and organizational context: A study of the relationship between codes of conduct, employee behavior and organizational values",
+            "journal": "Journal of Business Ethics",
+            "year": "2001",
+            "authors": "John Mark;  Somers"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Corporate values, codes of ethics, and firm performance: A look at the Canadian context, Springer",
+            "journal": "Journal of Business Ethics",
+            "year": "2008",
+            "authors": "Han Donker; Deborah Poff; Saif Zahir"
+        },
+        {
+            "ref_id": "b15",
+            "title": "The analysis of professional codes of ethics in the hospitality industry",
+            "journal": "",
+            "year": "2001",
+            "authors": "Richard Coughlan"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Professional ethics: business students' perception",
+            "journal": "Journal of Business Ethics",
+            "year": "1991",
+            "authors": "Davis J R Welton; R E "
+        },
+        {
+            "ref_id": "b17",
+            "title": "An analysis of corporate ethical code studies: where do we go from here",
+            "journal": "Journal of business ethics",
+            "year": "1994",
+            "authors": "B Stevens"
+        },
+        {
+            "ref_id": "b18",
+            "title": "The influence of collegiate and corporate code of conduct on ethics related behavior in the work place",
+            "journal": "Business ethics quarterly",
+            "year": "1996",
+            "authors": " Mccabe"
+        },
+        {
+            "ref_id": "b19",
+            "title": "The good Engineer: Giving Virtue its due in Engineering Ethics",
+            "journal": "",
+            "year": "2008-05",
+            "authors": "Charles E Harris"
+        },
+        {
+            "ref_id": "b20",
+            "title": "The role of professional codes in regulating ethical conduct",
+            "journal": "Journal of Business Ethics",
+            "year": "1999",
+            "authors": "N Higgs-Kleyn; D Kapelianis"
+        },
+        {
+            "ref_id": "b21",
+            "title": "The Technical Writer's Handbook",
+            "journal": "",
+            "year": "1989",
+            "authors": "M Young"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "Zambia, Pakistan, New Zealand, An Engineer shall not review the work of another Engineer for the same client, until he or she has either obtained the consent of such Engineer, or has been notified by the client in writing that the connection of such Engineer with the work has been terminated.",
+            "figure_data": "consent of that Engineer or has been formally notifiedby the employer that the engagement of that Engineerwith work has been properly terminated.8. Ghana, Namibia, South Africa, Uganda, Malaysia,Pakistan, Sri Lanka, Ireland, UK: If a memberconsiders that an engineer is guilty of criminal,unethical, illegal, unfair practice, professionalmisconduct, or is declared insolvent he shall presentthe information to the Council and the properauthority for action.9. Tanzania, Bhutan, Hong Kong, New Zealand, UK:Every engineer shall take all reasonable steps to adoptenvironment-friendly methods of construction,production and practice, including the safe andhygienic disposal of hazardous wastes and to avoidwaste of natural resources, damage to the environmentand wasteful damage or destruction of the products ofhuman skill and industry for both present and futuregenerations.10. Uganda,6. Tanzania, Uganda, Malaysia, Pakistan, Sri Lanka,Chile, Ireland, Norway, Finland: No engineer shallcompete unfairly with another engineer by attemptingto obtain employment or professional engagements bytaking advantage of a privileged position on the basisof professional charges., or by criticizing anotherengineer or by other improper or unfair means7. Tanzania, Uganda, Malaysia, Pakistan, Sri Lanka,Chile, Ireland, Norway, Finland: A ProfessionalEngineer in private Practice shall not, directly orindirectly attempt to supplant another ProfessionalEngineer in private practice nor shall he intervene orattempt to intervene in or in connection withengineering work of any kind which to his knowledgehas already been entrusted to another ProfessionalEngineer in Private practice nor shall he review ortake over the work of that other Engineer acting forthe same employer, until he has either obtained the"
+        },
+        {
+            "figure_label": "II",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "INTERNATIONAL COE ARTICLES THAT ARE NOT IN IEEE COE",
+            "figure_data": "International Codes of Ethics Articles12345678910Ghana\uf0fc \uf0fc\uf0fcKenya\uf0fc\uf0fcMauritius\uf0fcNamibia\uf0fc\uf0fcNigeria\uf0fc \uf0fc\uf0fcSouth Africa\uf0fc \uf0fc \uf0fc\uf0fc\uf0fcTanzania\uf0fc\uf0fc\uf0fc \uf0fc\uf0fcUganda\uf0fc\uf0fc \uf0fc\uf0fc \uf0fc \uf0fc\uf0fcZambia\uf0fcZimbabwe\uf0fcBahrainBangladesh\uf0fc \uf0fc\uf0fcBhutan\uf0fcCyprusIndia\uf0fcMalaysia\uf0fc \uf0fc\uf0fc \uf0fc \uf0fcNepalPakistan\uf0fc\uf0fc \uf0fc \uf0fc\uf0fcPhilippinesSri Lanka\uf0fc\uf0fc \uf0fc \uf0fcJapan\uf0fcHong Kong\uf0fc \uf0fc\uf0fc\uf0fcTurkeyIreland\uf0fc\uf0fc\uf0fc \uf0fc \uf0fcFinland\uf0fc \uf0fcFranceNorway\uf0fc \uf0fcUK\uf0fc\uf0fc\uf0fc \uf0fcNew Zealand\uf0fc\uf0fc \uf0fcAustralia\uf0fcCanadaChile\uf0fc\uf0fc \uf0fcTOTAL974414 99954"
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "\uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Kenya \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Mauritius \uf0fc \uf0fc \uf0fc Namibia \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Nigeria \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc South Africa \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Tanzania \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Uganda \uf0fc \uf0fc \uf0fc \uf0fc Zambia \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Zimbabwe \uf0fc \uf0fc \uf0fc \uf0fc Bahrain \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Bangladesh \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Bhutan \uf0fc \uf0fc \uf0fc \uf0fc Cyprus \uf0fc \uf0fc India \uf0fc \uf0fc \uf0fc \uf0fc Malaysia \uf0fc \uf0fc \uf0fc \uf0fc Nepal \uf0fc \uf0fc \uf0fc \uf0fc Pakistan \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Philippines \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Sri Lanka \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Japan \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Hong Kong \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Turkey \uf0fc \uf0fc \uf0fc Ireland \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Finland \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc France \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Norway \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc UK \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc New Zealand \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Australia \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Canada \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc \uf0fc Chile \uf0fc \uf0fc \uf0fc \uf0fc",
+            "formula_coordinates": [
+                3.0,
+                319.97,
+                384.93,
+                240.73,
+                308.94
+            ]
+        }
+    ],
+    "doi": "10.1007/BF00881385"
+}

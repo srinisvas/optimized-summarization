@@ -1,0 +1,486 @@
+{
+    "title": "Security and Privacy Challenges in Multi-Tenant Cloud Architectures: A Comprehensive Analysis",
+    "authors": "K Sudheer Kumar; Vijay Janga;  Kumar; K Santhosh Kumar; N Vijay Kumar",
+    "pub_date": "",
+    "abstract": "Cloud computing has emerged as a transformative model for delivering scalable and cost-effective computing services. Among the various deployment models, multi-tenant cloud architectures are widely adopted due to their ability to host multiple tenants on shared infrastructure. However, this shared nature introduces significant challenges related to data security, privacy, and isolation. This paper provides a comprehensive analysis of the security and privacy issues inherent in multitenant cloud environments, with a special focus on Google Cloud as a representative platform. We explore the architecture of multi-tenancy, threat models, common vulnerabilities, and realworld attack scenarios. Furthermore, we propose a conceptual framework to enhance tenant isolation, ensure secure communication, and preserve data privacy using robust access control and encryption mechanisms. The analysis highlights the need for continuous monitoring, policy enforcement, and collaborative governance to build trust in cloud-based multi-tenant ecosystems.",
+    "sections": [
+        {
+            "heading": "I. INTRODUCTION",
+            "text": "Cloud computing has revolutionized the way organizations access and manage computing resources by offering ondemand services over the internet [1], [2] . Among its various deployment models, the multi-tenant cloud architecture has gained prominence for its cost efficiency, scalability, and resource optimization. In a multi-tenant cloud, multiple users or organizations-referred to as tenants-share the same computing infrastructure, including servers, storage, and applications. This shared model enables service providers to maximize resource utilization and reduce operational costs.\nDespite its advantages, multi-tenancy introduces complex security and privacy challenges. The co-residency of multiple tenants on shared infrastructure increases the risk of unauthorized data access, data leakage, side-channel attacks, and insufficient isolation. These vulnerabilities are further exacerbated by the dynamic and elastic nature of cloud environments, where virtual machines (VMs) and containers are frequently instantiated, migrated, or terminated.\nThe protection of sensitive tenant data and the assurance of secure communication between cloud services have become top priorities for both cloud providers and consumers. A comprehensive understanding of the threat landscape and mitigation mechanisms is essential to ensure trust, compliance, and resilience in multi-tenant cloud deployments. This paper presents a detailed analysis of the security and privacy challenges faced in multi-tenant cloud environments, with a particular focus on platforms such as Google Cloud that support enterprise-scale deployments. The key contributions of this paper include:\n\u2022 A detailed overview of the multi-tenant cloud architecture and its underlying components. \u2022 A classification of security and privacy threats specific to multi-tenant environments. \u2022 A conceptual framework to enhance isolation, secure communication, and privacy preservation using access control, encryption, and policy enforcement. \u2022 An exploration of current mitigation strategies and recommendations for future cloud governance.\nThe rest of the paper is organized as follows: Section II describes the architecture of multi-tenant cloud systems. Section III highlights the major security challenges. Section IV discusses privacy concerns and data communication risks. Section V analyzes threat models and real-world incidents. Section VI presents mitigation strategies, while Section VII proposes a conceptual security framework. Section VIII discusses the evaluation and implications, and Section IX concludes the paper.\nCloud computing has revolutionized the way organizations access and manage computing resources [1].",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b0"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. MULTI-TENANT CLOUD ARCHITECTURE: AN OVERVIEW",
+            "text": "In cloud environments, multi-tenancy allows several organizations to share a single infrastructure, while logically isolating their data and services. Each tenant's data is isolated and remains invisible to other tenants. This architecture is foundational to most modern cloud service providers including Google Cloud, Amazon Web Services (AWS), and Microsoft Azure.\nA typical multi-tenant cloud system consists of the following layers: Multi-tenancy brings advantages such as resource sharing, simplified deployment, and reduced operational cost. However, improper isolation can result in co-residency attacks or privilege escalation vulnerabilities [3], [4]. Google Cloud Platform (GCP) supports multi-tenancy through projects, resource containers, and identity-aware proxies. Each tenant may use separate projects, IAM policies, and service accounts to logically separate workloads. This approach enhances modularity and provides flexible security configurations [5]. Multi-tenancy is crucial for cloud scalability, but it demands strict controls to prevent tenant interference, ensure data confidentiality, and reduce the attack surface [4].",
+            "publication_ref": [
+                "b2",
+                "b3",
+                "b4",
+                "b3"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. SECURITY CHALLENGES IN MULTI-TENANT CLOUDS",
+            "text": "Security is a critical concern in multi-tenant cloud environments where multiple tenants share computing resources, virtual machines, networks, and storage. The potential for cross-tenant attacks increases due to improper isolation, misconfigurations, and shared infrastructure.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Data Leakage and Insecure Storage",
+            "text": "Data leakage is one of the most serious threats in multitenant setups. Without proper segregation mechanisms, one tenant may accidentally or maliciously access another tenant's data [2]. Weak encryption practices or shared storage without adequate access controls can also lead to unauthorized disclosure.",
+            "publication_ref": [
+                "b1"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Tenant Isolation Failures",
+            "text": "Tenant isolation is essential to prevent unintended interactions between tenants. Hypervisor vulnerabilities, such as those related to shared memory or improper resource allocation, can allow attackers to escape virtualized environments and affect co-located tenants [6].",
+            "publication_ref": [
+                "b5"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Privilege Escalation and Misconfigured Access Control",
+            "text": "Cloud environments often rely on role-based access control (RBAC). If access privileges are misconfigured, attackers can exploit APIs or services to gain elevated privileges within the tenant environment or even across tenants [7].",
+            "publication_ref": [
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Side-Channel and Co-Residency Attacks",
+            "text": "Adversaries may take advantage of hardware-level resource sharing, such as CPU cache behavior or memory access latency, to infer data from neighboring VMs [8]. These sidechannel attacks require co-residency with the victim, which is often achievable in public cloud environments [6], [8].",
+            "publication_ref": [
+                "b7",
+                "b5",
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Insecure APIs and Interfaces",
+            "text": "Multi-tenant clouds expose various APIs for resource provisioning, configuration, and monitoring. Poorly secured APIs lacking rate limits, authentication, or input validation open the attack surface for injection and denial-of-service (DoS) attacks.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "F. Denial of Service (DoS)",
+            "text": "Tenants may become victims of resource starvation due to malicious tenants launching DoS attacks within the same infrastructure [9]. Lack of rate limiting or monitoring can result in entire physical resources being overwhelmed [9].",
+            "publication_ref": [
+                "b8",
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "G. Supply Chain and Third-Party Risks",
+            "text": "Multi-tenant platforms often integrate third-party services for authentication, monitoring, or billing. These components may introduce vulnerabilities into the ecosystem if not thoroughly vetted and regularly audited. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IV. PRIVACY CONCERNS AND DATA COMMUNICATION RISKS",
+            "text": "Privacy is a central concern in multi-tenant cloud architectures where sensitive data belonging to different tenants coexists on shared infrastructure. Tenants must trust the cloud provider to enforce proper access controls and safeguard data confidentiality throughout its lifecycle-at rest, in transit, and in use.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Data Ownership and Regulatory Compliance",
+            "text": "One of the most complex challenges in cloud environments is data ownership. Tenants may store data across global regions, creating ambiguity around jurisdiction and legal control. Compliance with regulations such as the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and the Health Insurance Portability and Accountability Act (HIPAA) requires robust data classification, residency enforcement, and user consent mechanisms [3] [10], [11].",
+            "publication_ref": [
+                "b2",
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Insecure Communication Channels",
+            "text": "Without encryption, communication between virtual machines, APIs, or cloud services is vulnerable to eavesdropping, tampering, and man-in-the-middle (MITM) attacks. Data packets transmitted across public networks can be intercepted unless Transport Layer Security (TLS) or Virtual Private Network (VPN) tunneling is used [10].",
+            "publication_ref": [
+                "b9"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Cross-Tenant Access Violations",
+            "text": "In scenarios where shared resources like databases, storage buckets, or message queues are improperly configured, tenants may unintentionally gain access to other tenants' data. Such breaches often result from default settings, misconfigured access control lists (ACLs), or over-permissive IAM roles [12].",
+            "publication_ref": [
+                "b11"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Data Remanence and Deletion Risks",
+            "text": "When cloud providers recycle storage blocks or fail to securely delete decommissioned resources, residual data from a previous tenant may persist. This poses serious risks, especially if storage snapshots or backups are retained without cryptographic deletion mechanisms. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Insider Threats",
+            "text": "Cloud administrators and internal personnel with privileged access may intentionally or inadvertently compromise tenant privacy. Strong audit logging, role-based access, and \"zero trust\" architectures are recommended to mitigate insider risks [11].\nGoogle Cloud provides features like VPC Service Controls, data loss prevention (DLP) APIs, and Customer-Managed Encryption Keys (CMEKs) to enforce tenant data boundaries and prevent accidental leakage.",
+            "publication_ref": [
+                "b10"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "V. THREAT MODELS AND REAL-WORLD INCIDENTS",
+            "text": "Understanding threat models is essential to assess the risks and design security measures in multi-tenant cloud environments. This section outlines common threat modeling techniques and analyzes real-world incidents that exemplify vulnerabilities in cloud multi-tenancy.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Threat Modeling Techniques 1) STRIDE Model:",
+            "text": "The STRIDE model, developed by Microsoft, is a widely adopted framework for classifying threats in software systems. It includes:\n\u2022 Spoofing: Impersonation of user identities or cloud services. \u2022 Tampering: Unauthorized modification of data or configurations.\n\u2022 Repudiation: Lack of auditability or denial of actions.\n\u2022 Information Disclosure: Exposure of sensitive tenant data. \u2022 Denial of Service (DoS): Resource starvation or service unavailability. \u2022 Elevation of Privilege: Unauthorized access escalation.\n2) DREAD Model: The DREAD model quantifies the risk associated with identified threats using five factors: Damage Potential, Reproducibility, Exploitability, Affected Users, and Discoverability. Though less used today, it remains relevant for comparative risk analysis [13].",
+            "publication_ref": [
+                "b12"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Real-World Multi-Tenancy Incidents 1) Azure Cosmos DB Vulnerability (2021):",
+            "text": "In 2021, researchers exposed a flaw in Azure's Jupyter integration, which unintentionally granted cross-tenant database access. Known as ChaosDB, the vulnerability was resolved quickly by Microsoft [14] [15]. Microsoft promptly disabled the feature and issued alerts.\n2) VENOM Vulnerability ( 2015): The Virtualized Environment Neglected Operations Manipulation (VENOM) flaw in the QEMU virtual floppy drive could allow a malicious VM to escape the hypervisor and execute arbitrary code on the host, affecting co-resident tenants [15].\n3) Side-Channel Cryptographic Attacks: In several academic experiments, researchers successfully extracted RSA keys using cache-based side-channel attacks in public cloud environments [6]. These experiments highlight the feasibility of low-level attacks across VM boundaries. These incidents reinforce the importance of threat modeling, continuous monitoring, and tenant isolation as foundational strategies for securing multi-tenant environments on platforms such as Google Cloud.",
+            "publication_ref": [
+                "b13",
+                "b14",
+                "b14",
+                "b5"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VI. MITIGATION STRATEGIES",
+            "text": "Securing a multi-tenant cloud architecture requires a combination of preventive, detective, and responsive measures. This section outlines key mitigation strategies that can address the unique security and privacy risks in multi-tenant environments.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Encryption Mechanisms",
+            "text": "Data encryption is essential at every stage-at rest, in transit, and in use. Techniques include:\n\u2022 AES-256 encryption for storage.\n\u2022 TLS/SSL protocols for secure communication.\n\u2022 Homomorphic encryption and confidential computing for processing encrypted data [16] [17]. Google Cloud supports Customer-Managed Encryption Keys (CMEK) and Confidential VMs to enable tenant-specific encryption.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Access Control and Identity Management",
+            "text": "Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC) ensure that users can only perform permitted actions. Techniques include:\n\u2022 Least privilege principle.\n\u2022 Multi-factor authentication (MFA).\n\u2022 Cloud Identity-Aware Proxy and Cloud IAM in GCP [5].",
+            "publication_ref": [
+                "b4"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Tenant Isolation through Virtualization",
+            "text": "Strong isolation mechanisms prevent data leakage and sidechannel attacks:\n\u2022 Use of hypervisors with secure VM introspection.\n\u2022 Hardware-level separation (e.g., Intel VT-x, AMD SEV).\n\u2022 Kubernetes namespaces and network policies for containerized workloads.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Secure Communication Practices",
+            "text": "Encrypt all internal and external communication using VPN tunnels or service mesh frameworks (e.g., Istio). Enable mutual TLS (mTLS) for service-to-service authentication.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "E. Monitoring and Anomaly Detection",
+            "text": "Security Information and Event Management (SIEM) systems, log analysis, and machine learning models can detect and respond to threats proactively. GCP's Chronicle and Cloud Logging can be integrated for monitoring suspicious activities.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "F. Zero Trust Architecture",
+            "text": "Zero Trust is a modern security framework that assumes no implicit trust and continuously verifies every user, device, and network interaction [17]. Implementing zero trust reduces lateral movement across tenants.",
+            "publication_ref": [
+                "b16"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "G. Policy Enforcement and Compliance Audits",
+            "text": "Define and enforce cloud security policies using tools like Google Cloud Organization Policy, Cloud Asset Inventory, and Access Transparency. Regular audits ensure regulatory compliance and security hygiene.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VII. PROPOSED FRAMEWORK",
+            "text": "To address the identified security and privacy challenges in multi-tenant cloud environments, we propose a conceptual framework that integrates tenant isolation, secure communication, access control, and continuous monitoring using Google Cloud components. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Framework Overview",
+            "text": "The framework is designed around five key pillars: 1) Identity and Access Management (IAM): Each tenant is assigned distinct roles, service accounts, and organizational policies using Google Cloud IAM. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Component-Level Architecture",
+            "text": "Each tenant is provisioned in an isolated GCP project under a central organization node. IAM roles are scoped to least privilege. Communication between services is restricted using Cloud Armor and mTLS. Logs are forwarded to a centralized SIEM for compliance and threat detection.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Advantages of the Framework",
+            "text": "\u2022 Ensures tenant isolation and prevents lateral movement.\n\u2022 Supports compliance with GDPR and HIPAA through auditability. \u2022 Enables fine-grained control over identity and access policies. \u2022 Promotes resilience through layered defense and monitoring. This framework demonstrates how Google Cloud's native capabilities can be orchestrated to establish a secure Fig. 6. Proposed framework for secure and privacy-preserving multi-tenant cloud architecture using Google Cloud. multi-tenant environment while maintaining scalability, performance, and governance.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "VIII. EVALUATION AND DISCUSSION",
+            "text": "This section evaluates the effectiveness of the proposed conceptual framework based on established security principles-confidentiality, integrity, availability (CIA)-as well as scalability, compliance, and usability for cloud tenants.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Security Evaluation",
+            "text": "The framework applies a layered security approach, implementing defense-in-depth through IAM, encryption, and secure communication gateways. Each layer mitigates specific threats:\n\u2022 Confidentiality: Encryption (CMEK, TLS) protects data at all stages. \u2022 Integrity: Role-based IAM and audit logs prevent unauthorized modifications. \u2022 Availability: Network isolation and DoS mitigation preserve service uptime.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Scalability and Flexibility",
+            "text": "Because each tenant operates within an isolated GCP project, resources can be scaled independently. Policies and configurations can be centrally enforced while allowing individual customization per tenant.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Compliance Readiness",
+            "text": "The framework aligns with compliance standards like GDPR, HIPAA, and ISO/IEC 27001. Audit logs, data residency controls, and access transparency features from Google Cloud support legal and regulatory adherence [3], [5].",
+            "publication_ref": [
+                "b2",
+                "b4"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Limitations and Future Work",
+            "text": "While the framework provides strong conceptual security, real-world deployment would require validation through penetration testing, continuous updates, resilience checks against emerging threats. Future work may extend this framework with AI-powered threat detection and policy automation using Google Cloud's Security Command Center and Chronicle. ",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "IX. CONCLUSION",
+            "text": "Multi-tenant cloud architectures deliver scalability, flexibility, and cost efficiency, but they also introduce complex challenges in maintaining data security, privacy, and tenant isolation. This conceptual framework leverages Google Cloud's native tools to enhance tenant security and operational governance.\nWe proposed a conceptual framework leveraging Google Cloud Platform components to enforce security principles like identity management, encryption, network isolation, and continuous monitoring. This framework aligns with modern compliance needs and supports scalable tenant management while reducing the attack surface.\nFuture work will include implementing the framework in a real-world sandbox environment, followed by performance benchmarking and dynamic threat adaptation using AIenhanced tools.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "The nist definition of cloud computing",
+            "journal": "NIST Special Publication",
+            "year": "2011",
+            "authors": "P Mell; T Grance"
+        },
+        {
+            "ref_id": "b1",
+            "title": "A view of cloud computing",
+            "journal": "Communications of the ACM",
+            "year": "2010",
+            "authors": "M Armbrust; A Fox; R Griffith; A D Joseph; R Katz; A Konwinski; G Lee; D Patterson; A Rabkin; I Stoica; M Zaharia"
+        },
+        {
+            "ref_id": "b2",
+            "title": "The rise of \"big data\" on cloud computing: Review and open research issues",
+            "journal": "",
+            "year": "2015",
+            "authors": "I A T Hashem; I Yaqoob; N B Anuar; S Mokhtar; A Gani; S U Khan"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Cryptdb: Protecting confidentiality with encrypted query processing",
+            "journal": "",
+            "year": "2011",
+            "authors": "R A Popa; C M S Redfield; N Zeldovich; H Balakrishnan"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Google cloud security overview",
+            "journal": "",
+            "year": "2023",
+            "authors": "G C Documentation"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Cross-vm side channels and their use to extract private keys",
+            "journal": "",
+            "year": "2012",
+            "authors": "Y Zhang; A Juels; M K Reiter; T Ristenpart"
+        },
+        {
+            "ref_id": "b6",
+            "title": "A survey on security issues in cloud computing architecture",
+            "journal": "IEEE Access",
+            "year": "2019",
+            "authors": "W Jabbar; S A Khan; M Alweshah; S A Khalid"
+        },
+        {
+            "ref_id": "b7",
+            "title": "Hey, you, get off of my cloud: Exploring information leakage in third-party compute clouds",
+            "journal": "",
+            "year": "2009",
+            "authors": "T Ristenpart; E Tromer; H Shacham; S Savage"
+        },
+        {
+            "ref_id": "b8",
+            "title": "A survey of intrusion detection techniques in cloud",
+            "journal": "Journal of Network and Computer Applications",
+            "year": "2013",
+            "authors": "C Modi; D Patel; B Borisaniya; H Patel; M Rajarajan"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Understanding cloud computing vulnerabilities",
+            "journal": "IEEE Security & Privacy",
+            "year": "2011",
+            "authors": "B Grobauer; T Walloschek; E Stocker"
+        },
+        {
+            "ref_id": "b10",
+            "title": "Cloud computing vulnerability incidents: A statistical overview",
+            "journal": "",
+            "year": "2011",
+            "authors": "R K Ko; B S Lee; S Rajan"
+        },
+        {
+            "ref_id": "b11",
+            "title": "A survey on cloud computing security: Issues, threats, and solutions",
+            "journal": "Computers & Electrical Engineering",
+            "year": "2021",
+            "authors": "L Sharma; S Sood; P Kalra"
+        },
+        {
+            "ref_id": "b12",
+            "title": "A survey of cyber attack modeling techniques",
+            "journal": "ACM Computing Surveys (CSUR)",
+            "year": "2012",
+            "authors": "H Okhravi; D Nicol"
+        },
+        {
+            "ref_id": "b13",
+            "title": "Chaosdb: How we hacked thousands of azure customers' databases",
+            "journal": "",
+            "year": "2021",
+            "authors": "W R Team"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Venom: Virtualized environment neglected operations manipulation",
+            "journal": "",
+            "year": "2015",
+            "authors": " Crowdstrike"
+        },
+        {
+            "ref_id": "b15",
+            "title": "A survey on homomorphic encryption schemes: Theory and implementation",
+            "journal": "ACM Computing Surveys (CSUR)",
+            "year": "2018",
+            "authors": "A Acar; H Aksu; S Uluagac; M Conti"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Zero trust architecture",
+            "journal": "",
+            "year": "2020",
+            "authors": "S Rose; O Borchert; S Mitchell; S Connelly"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Fig. 1 .1Fig. 1. A conceptual view of multi-tenant cloud architecture showing layered design and tenant isolation.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Fig. 2 .2Fig. 2. Common security challenges in a multi-tenant cloud environment.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Fig. 3 .3Fig. 3. Illustration of privacy risks and insecure data communication in multitenant cloud environments.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Fig. 4 .4Fig. 4. Illustration of threat modeling and real-world multi-tenant cloud attack vectors.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Fig. 5 .5Fig. 5. Multi-layered mitigation strategies for securing multi-tenant cloud environments.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "235",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "2 ) 3 ) 5 )235Network Isolation: Tenants are segmented into separate Virtual Private Cloud (VPC) networks with firewall rules and VPC Service Controls to limit communication boundaries. Encryption and Key Management: tenant data is encrypted using Customer-Managed Encryption Keys (CMEK). Data at rest and in transit is protected using AES-256 and TLS 1.3. 4) Secure Communication Gateway: API Gateway and Identity-Aware Proxy (IAP) are configured to validate user identities and enforce secure access to backend services. Monitoring and Audit Logging: Google Cloud Operations Suite (formerly Stackdriver), Cloud Audit Logs, and Security Command Center are used for real-time monitoring and incident response.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "Provides physical servers, storage, and networking resources. \u2022 Virtualization Layer: Employs hypervisors or container engines to create isolated environments (VMs or containers) for each tenant. \u2022 Platform Layer: Offers services such as identity management, monitoring, APIs, and databases. Hosts applications accessed by end users via web or APIs.",
+            "figure_data": ""
+        }
+    ],
+    "formulas": [],
+    "doi": "10.1109/ICCTDC64446.2025.11158758"
+}

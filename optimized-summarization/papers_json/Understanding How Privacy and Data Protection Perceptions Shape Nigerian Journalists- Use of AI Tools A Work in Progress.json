@@ -1,0 +1,556 @@
+{
+    "title": "Understanding How Privacy and Data Protection Perceptions Shape Nigerian Journalists' Use of AI Tools: A Work in Progress",
+    "authors": "Oluwamayowa Tijani; Jamie Mahoney; Santosh Vijaykumar; James Nicholson",
+    "pub_date": "",
+    "abstract": "Generative Artificial Intelligence tools are getting increasingly incorporated into journalism workflows globally. Despite growing concerns among journalists about the privacy risks of AI tools, there is limited scholarly research on how journalists understand AI-related privacy, security, and data protection, particularly in Africa. To address this gap, this study investigates journalists' mental models around privacy policies and data handling by Artificial Intelligence companies responsible for the tools they use. We conducted a qualitative study which interviewed 20 journalists working in Nigeria about their use of GenAI tools in fulfilling their duties, ranging from information verification to reporting. The data collected was analysed using reflexive thematic analysis to draw patterns in the journalists' assumptions about GenAI privacy and the security of their data when interacting with these AI tools. Nigeria was chosen as our case study due to its significance as Africa's largest democracy, and as a country whose AI policy acknowledges and seeks to promote data privacy and security. Our interviews found that journalists have a less-than-ideal mental model of privacy policies and data handling practices by AI companies, leading to potential risk in AI-assisted journalism. We also noted a willingness to share data with AI companies in exchange for some form of value, including better technology, and journalism-specific agentic AI. We conclude that the journalists are willing to do the right thing but lack the time, resources and guidance to do so.",
+    "sections": [
+        {
+            "heading": "Introduction",
+            "text": "Following the public unveiling of ChatGPT in November 2022, there has been a significant surge in the adoption of large language models and other generative artificial intelligence (GenAI) tools around the world [1]. From medicine [2] to architecture to sales and marketing, down to more technical fields like software development, knowledge workers are increasingly using AI [3] . The case is no different in journalism, where AI adoption has been recorded across some of the most reputable media organisations in the world, including Bloomberg, Associated Press (AP) and The Guardian [4]. As early as 2015, AP had reported using automated technology to write reports on certain corporate earnings stories by synthesizing information from press releases [5]. JournalismAI, a media Think Tank by the London School of Economics and Political Science, recently identified more than 180 case studies of how AI is being used in journalism across the world. Of these 186 use cases, only two of them are specifically from Africa, with more than 50% of the use cases in the United States and the United Kingdom [6], suggesting either a stronger adoption rate or bigger scholarly focus on these countries. This necessitates more AI-in-journalism research in these lesser studied regions of the world.\nIn this paper, we investigate Nigerian journalists' use of AI and understand their concerns for data privacy and security while engaging with AI. We chose to study journalists because existing research already shows that nontechnical AI users, including journalists, consider Large Language Models (LLMs) as a \"black box\" to which they lack understanding of its functionality, decision-making, and training sources [7] [8] [9]. As investigators of sensitive issues, journalists access sensitive documents and data sets which can be exploited by AI systems if privacy is not guaranteed. Through interviews with 20 experienced journalists, we find that journalists' expectations are quite different from what AI realities are, even within their workflow. This inspires our major research question: How do Nigerian journalists' perceptions of privacy and data protection influence their use of AI tools? .",
+            "publication_ref": [
+                "b0",
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Background",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Use of AI in journalism",
+            "text": "Journalism as a business has been facing a lot of headwinds in the last decade following the adoption of newer technologies, shifting its major source of incomeadverts -to big tech platforms like Facebook, Instagram, and YouTube [10] [11]. As a result, media houses are turning to AI -not only for its technical affordances -but also for its ability to replace certain job roles within the industry [12]. In 2025, Meta announced that it is shutting down its third-party fact-checking programme to replace partner journalists and fact-checkers with automated systems [13]. Beyond the economic advantage of employing AI in journalism, there are specific use cases where AI has proven to be more efficient than human journalists. In fact, [14] found an overreliance on AI tools by journalists with respect to deepfake detection. Bloomberg and Yahoo News already use AI for news summarisation due to its effectiveness in this use case [15] [16]. AI has also been found to be good in writing, editing, and transcribing speech to text -some of the very time-consuming historical duties of journalists [17]. The use cases for AI in journalism is diverse and continues to grow with the increasing sophistication of AI systems [18].",
+            "publication_ref": [
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b17"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "AI and data privacy in Nigeria",
+            "text": "In August 2023, Nigeria, through its National Information Technology Development Agency (NITDA), set out to co-create a national AI strategy to \"responsibly steer the AI revolution towards achieving national goals\" [19]. In the same year, the country improved its digital privacy systems by passing the Nigeria Data Protection Act (NDPA) to regulate the processing of personal data [20]. The GDPR-like piece of legislation further guaranteed citizen's right to forms of data protection, including data erasure. While [21] argues that for the law to be effective, it needs to be complemented with implementation regulation, [22] posits that a consent-based approach to data protection may not be ideal for the West African country. The second school of thought revealed that 54% of Nigerians -based on a survey -rarely or never read consent prompts, while another 37% read them only sometimes. This group argues for an adoption of a harm-accountability framework to protect users regardless of consent [22]. Due to the nascent nature of this legislation, privacy and data protection enforcement is still in its formative years in Nigeria. As the legislation environment firms up, artificial Intelligence companies continue to exploit the lack of implementation to use data from the country [23].",
+            "publication_ref": [
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b21",
+                "b22"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Historical Security Issues with LLM Data",
+            "text": "Recently, there has been increasing concern about how LLMs are trained, the source of data used, and how much personal data is involved [24] [25]. Ireland's Data Protection Commission (DPC), recently stopped X from training its Grok AI on personal user data in the EU [26]. Industry experts say big AI companies are using much of the searchable internet -with the help of crawlers and scrapers -to train its LLMs, harvesting personal data in the process [25] . Meta, the parent company for Instagram and Facebook, admitted that all public posts on both platforms since 2007 have been used to train its AI models, with the exception of data from persons in the European Union [27]. An investigation published by Wired, Proof News and The Verge found that Apple, Nvidia and Anthropic, leading AI companies used over 170,000 YouTube videos to train its AI models [28]. The opacity and alleged infringement of copyrights involved in training AI data have continued to be subject of many AI controversies, especially within the news industry, with the likes of New York Times suing OpenAI and Microsoft [29]. As some go on the offensive, others like AP, The Guardian are letting AI companies use their data following content-sharing agreements [30] [31].\nAs the competition among leading LLMs grows, AI companies find the need to speedily improve existing models to match their rivals. With the introduction of China's Deepseek, Meta and Google have asked the US government to allow them to train LLMs on copyrighted materials, stating that AI development has become a matter of national security [32]. This speed over safety method has made certain LLM models become vulnerable to data leaks. A recent study [33] found that GPT 4 by OpenAI could easily be misled to generate toxic and biased outputs and leak private information. There are also other examples that highlight LLM vulnerabilities, showing that even sophisticated models lack reasoning on what information to share or otherwise [34]. Existing evidence of data privacy leaks [35] has led to many calls to action on how to avoid exposing certain information to these models and improving the security architecture to always ensure safety.\nThe implications of these are diverse for fields like cybersecurity, journalism, law and military technology, where leakage of personal data can have dire consequences. Recent research has also shown that methods used by AI companies to ensure data privacy -text anonymisation and model alignment -are currently ineffective [36] [37]. With this as the case, privacy laws, including the right to be forgotten are at risk [38] and adoption of AI tools may stall. .",
+            "publication_ref": [
+                "b23",
+                "b24",
+                "b25",
+                "b24",
+                "b26",
+                "b27",
+                "b28",
+                "b29",
+                "b30",
+                "b31",
+                "b32",
+                "b33",
+                "b34",
+                "b35",
+                "b36",
+                "b37"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Methodology",
+            "text": "To understand the perspectives of Nigerian journalists on artificial intelligence privacy and security data handling in their work, we conducted online, semi-structured interviews with 20 journalists from various media organisations in the country, including radio, television, and newspapers. Online interviews were preferred in this case due to the nomadic nature of the journalists and the difficulty of meeting them all in a physical location without affecting their duties. Our participants were drawn from small independent newsrooms to global corporations shaping journalism around the world. The goal was to get these journalists, who have firsthand experience in using GenAI tools, to provide valuable insights into potential security risks they might face when using AI tools at work. We chose this qualitative approach to get in-depth insights into a broad range of security and privacy related issues. The qualitative approach helps us here because of the exploratory nature of this research and how we seek to deeply understand the experiences of these individuals, and how their perceptions of privacy and data management affect their use of these tools.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Participants",
+            "text": "Participants for the study were recruited through a combination of social media platforms, including Instagram, X (formerly Twitter), and WhatsApp, as well as through connections within the first author's professional network. This approach allowed us to reach a broad and diverse group of journalists from within and outside the authors' network. The recruitment criteria were clearly delineated and designed to select individuals possessing pertinent experience and expertise in the field. To qualify, participants were required to be journalists with a minimum of three years of experience with the Nigerian media industry with a good understanding of journalism in this space. Furthermore, candidates were mandated to have used Artificial Intelligence tools in their professional work within the six months preceding the interview. It was explicitly communicated that the focus of the research was on the intersection of Artificial Intelligence and journalism, particularly within the context of Africa. These criteria were established to ensure that participants could offer well-informed and contemporary insights into the converging realms of AI and journalism.\nThe eventual pool of journalists recruited cut across national newspapers, radio and TV stations, regional factchecking agencies, and global news agencies with a presence in Nigeria. The ratio of male to female participants is 60:40, which surpasses the representation of women in journalism within the country [39]. The participant recruitment strategy ensured that journalists were sought from local, national, regional, and international media organisations operating in Nigeria and West Africa. The first and fourth authors came up with the interview questions to address the AI-driven changes being experienced by the journalists, understanding their adoption rate and frequency, and the security and data privacy issues they might have encountered in their use of AI. During the interviews, which lasted an average of 61 minutes per participant, the first author took relevant opportunities to ask more follow-up questions depending on the responses generated by the pre-planned questions. This study was carried out with approval from Northumbria University Ethics Review Board.",
+            "publication_ref": [
+                "b38"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Analysis",
+            "text": "Upon conclusion of the interviews, the first author transcribed all 20 interviews as a first step to getting familiar with the data collected from the participants. Using reflexive thematic analysis, the first and fourth author analysed the data to understand the mental models, the potential privacy and security risks identified by the participants. Following the six key stages recommended by Braun and Clarke, especially with respect to interview data [40] [41], these authors individually engaged in a coding process, generating codes relevant to the research question. Using a spreadsheet, the first author grouped the codes into broader themes. The four authors then refined the patterns identified into themes that served as the basis of the findings and discussion shared in this paper. We make a comparison between journalists' expectations and the GenAI realities with respect to privacy, security and data protection.",
+            "publication_ref": [
+                "b39"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Findings",
+            "text": "Despite the nascent nature of Large Language Models (LLMs), their adoption has been rapid, commanding significant scholarly attention in the last four years [42]. This has also been the case among the journalists in our sample, who reported using artificial intelligence in the delivery of their duties. More than 50% of the journalists (N=11) reported using one GenAI tool on a daily basis, while an overwhelming majority (N=19) reported using AI on a daily or weekly basis. Only one of the journalists reported a monthly use of GenAI tools. Altogether, the journalists reported using 35 AI tools between themselves, with the most popular being ChatGPT, Meta AI, Gemini, InViD, Grammarly, Lumen5 and Otter AI. The most common use cases for GenAI in journalism in Nigeria are writing, editing, transcribing, brainstorming or ideation, research, deepfake detection, and video verification.\nBeyond general descriptive and frequency of use, the journalists shared their insight on how they understand AI works, highlighting an inaccurate mental model, lack of ethical consensus and data privacy and protection concerns.",
+            "publication_ref": [
+                "b41"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Poor Mental Models around Privacy Policies and Data",
+            "text": "Existing studies already show that non-technical users consider LLMs to be a \"black box\" with no clear understanding of how it works, what drives its decisions and outputs, and the source of its training data [7] [8]. While journalists are seen as a very informed part of society, they often fall into this non-technical group, which do not possess the ability and skills to properly assess how LLMs engage with the data they share, from processing to storage and probable use for training. As people who investigate sensitive national and local issues, journalists often have access to sensitive documents and data sets, which are open to exploitation. J16 captures the essence of this less-than-ideal mental model when she said she does not think journalists should turn to AI for summarisation without an understanding of the GenAI company's privacy policies.\n\"I do not think journalists should use AI for summarization of very critical documents that they receive, because what happens is that most of these tools do not publicly state their privacy policies and how they repurpose some of the content that you input. So, if you do not know most of those policies around data, please do not put critical documents for summarization. As much as I know that a lot of journalists are using it for summarization, I'm of the school of thought, please don't-for any little thing and any big thing, because it can also be traceable to anyone. But I'm of the school of thought that we can use AI as journalists for content moderation.\" -J16\nThe journalist shared the need to have GenAI possess an awareness of what data shared is for public use and which one is private and personal. Discussing this, J12 said the distinction should be made clear to ensure journalists' private data do not get used by AI.",
+            "publication_ref": [
+                "b6",
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "\"So, artificial intelligence relies a lot on data, right? It also means that there need to be very clear lines between what is private and what is not, what is personal information and what is for public consumption. But if care is not taken, those lines can easily get blurred.\"",
+            "text": "As previously mentioned, this is particularly important for journalists to understand as they deal with very sensitive data that could have life-or-death implications for them and their sources [9] [43]. The dilemma, however, is that they also deal with data in the public domain, or which is expected to eventually be in the public domain after they publish their reports. For them, understanding how safe their data is while working on a report and after the report is published is very important for how they engage with AI tools that are considered helpful in the fast delivery of their stories.",
+            "publication_ref": [
+                "b8",
+                "b42"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Journalists' Data Protection Concerns",
+            "text": "The journalists express helplessness when it comes to the protection of their data. This helplessness stems from the fact that AI companies such as OpenAI, Google and Meta already use their data and there is barely anything the newsrooms and individual journalists can practically do to stop it or benefit from it. Explaining this data protection challenge, J2 said the current laws in Nigeria offer some agency in terms of cybersecurity and data protection, but the AI companies have seized some loopholes to exploit journalism data. Emphasising on this point, J2 said if you ask any of the LLMs to tell you about a former Nigerian governor and his battles with the country's anti-financial crime agency, the LLM will draw on data from J2's newspaper and provide links when specifically requested. He said if you want a summary based on historical reports, the LLM will do that but with no benefit to the newspaper.\n\"\nThe stories are open source-they are available-but I just feel there are ways to ensure that, even if it's just one sentence, my reporter has a cent on this story, my editor has published the story, and my news team is pushing it on Twitter using my budget to market it, while we even handle damage control if anything goes wrong. And you're summarizing it using Llama, gaining credibility for yourself, having all the information at your fingertips, creating it for your own customers. So, if the [J2's Newspaper] shuts down, it doesn't affect WhatsApp/Meta?.\nJ4 suggested incorporating a feature into LLMs to recall sensitive data erroneously shared with AI, but said the current relationships between AI companies and journalists do not inspire enough confidence in journalists to believe that such a feature will work as advertised.\n\"If that were possible, I think it should be allowed. I know there's that debate about whether AI should have access to art, whether art should be compensated. And the truth is, many of these companies are not really honest. Even when they tell you they're not doing something, they've found a loophole in the agreements and the law to circumvent it. So, what people are doing now is putting bugs in their JPEGs, in their art uploads, such that when AI tries to use that material, it's going to somehow affect it or it won't be able to. So that's probably even more effective than believing that the AI behemoth in Singapore would do the right thing. That's like thinking that when you permanently delete your Facebook account, all your data is actually gone from their servers.\"\nHe warned that based on the status quo, which does not distinguish between public and private information, journalists should seek personal protection and ensure they \"are not feeding AI tools with confidential information that ought not to be given to these companies.\" This will act as a failsafe mechanism to address potential risks should this boundary become blurred.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Willingness to Share Data for Better Technology and Results",
+            "text": "Nigerian journalists believe that their data, especially published stories, are currently being used by LLMs without any credit or compensation. Considering the fact that there is no policy framework for how newsrooms engage with AI and AI companies, data protection is lax. This absence of proper data protection prevents journalists from data sharing and maximising the affordances of AI tools important for their work. In the same breath, their reluctance to fully embrace these tools is also not beneficial for the AI companies. While some journalists differ on this, a larger population of the journalists interviewed were willing to share data with AI companies for 1) Development of better models to serve journalism-focused needs 2) Exchange of value in terms of proprietary technology or/and financial benefit. \"That's knowledge-archives built over years-that you're providing for someone to create a data set, they're also benefiting from it. So there should be some exchange. And I think Africans can do that as well. But I do not think that we are top of mind at the moment for most of these AI companies.\" -J16\nThe practicalities of the process raised a lot of concern for some of the journalists who had more questions about what their data will be used for and what they stand to benefit in terms of technology exchange. Speaking to the possibilities of journalism focused agentic AI J15 said he will share his data with an AI company in exchange for such capabilities but worried about the execution of the data-for-technology possibilities.\n\"How will it operate? What is the limit? How do I come into it? Where is my place in it? So that's just the dilemma in my head. But really, yes. I think we're at a time when AI can really help what we do... I think it's just that we need to decide how we want it to feature in what we do. \"",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Willing but Unsupported: Challenges Accessing Privacy and Security Knowledge",
+            "text": "The journalists generally reported a willingness to do the right thing, learn what the right thing to do at every decision point is, but expressed an apparent lack of time, resources, and guidance to get this done. J2's response below explains why this identified deficiency raises additional data privacy and protection concerns, creating an ongoing security challenge for the use of AI in journalism within the Nigerian context.\n\"I really want to understand all the laws I have to comply with-the Cyber Security Act, and anything that has to do with data protection and data security., So I can make decisions from an informed position. I can say, these are the data I can let out, and when I'm letting out this bunch of data, this is how much I'm letting it out. These are the data I do not want to monetize, and these are the ones I'm ready to monetize. This is how I want people to access and use this data, and these are how I do not want them to use the data. I think data protection and cybersecurity have touched on aspects of how data can be protected. There's no comprehensive body of laws or provisions on AI yet-even the UK and the European Union are just catching up. Imagine Nigeria. But individually, I feel there are also provisions scattered across-not majorly on AI, but on data protection.\"",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Discussion",
+            "text": "The results show clearly that Nigerian journalists' perceptions of privacy and data protection influence how they use generative artificial intelligence tools. While their mental model might be based on less-than-ideal, their decisions are rooted in those perceptions. For instance, some of the journalists noted the need to be able to separate the data they feed to LLMs to \"public and private data\" -one to be used for training or exposed to other users, while the other should not be used or repurposed in any way. For LLMs, this partitioning of data is not the case. OpenAI, for example, makes it clear that it trains ChatGPT on conversations users have with the LLM, except they choose to opt-out [44]. The system is also designed in a way that you have to log out to opt-out; you cannot do both while still using the LLM. As a result of this perception, some journalists will not use this GenAI tool for summarisation, writing, editing or data analysis, which these models are known to be capable of [17].\nFor journalists who look beyond these issues to actually use AI tools frequently, they express some skepticism with respect to the AI companies, stating that they do not trust them to respect what they say in their privacy policies. While a country like Nigeria has GDPR-like legislation, enforcement and compliance remain a concern in the country [23]. This leads to what one of the journalists refer to as \"helplessness\" -their personal data get used to train models, while their published work is also being used to serve users without consent or compensation, yet they can do nothing to change this reality. In the west, conversations with LLMs are also used to train AI and many journalists, YouTubers and newspapers have also reported their public work being used without consent or compensation [28] [27] [45]. So, this is not particularly unique to Nigerian journalists, but the difference is that some western newspapers and news agencies, including AP, The Guardian, The Atlantic, Vox Media, TIME Magazine, The Financial Times, have signed licensing deals with OpenAI [46] [47]. As of March 2025, no AI company has signed a licensing deal with Nigerian newspapers or journalists, yet they use content from these news houses, further entrenching the feeling of helplessness.\nMultiple journalists speak of the agency to erase or recall information they have previously provided to LLMs. While the right to be forgotten is a key part of privacy laws globally, the protection of this right has become more difficult due to GenAI's ability to anonymise data and delete identifiers, but retain knowledge of the information shared for training purposes. As [48] noted, the technical cost of forgetting is often too high to encourage enforcement in the age of AI. [49] argues that lawmakers should consider the technical cost and impracticality of enforcing the right to forget in a machine learning environment without damage to the knowledge base. More recent research recommends some solutions to address this, including Privacy-preserving Machine Learning (PPML) [50], which encourages the use of synthetic data, which may not work for generalist LLMs like ChatGPT or Gemini. This means the right to erase or recall, as requested by these journalists may remain elusive in current ML systems.\nTo preserve their work and data in an environment of helplessness -absence of trust and agency -one of the journalists recommended considering technology that makes it impossible for crawlers and scrapers to take data without consent. A tool in the fashion of what Glaze is to artists. Glaze is an open-source tool that misleads AI dur-ing training and makes it near-impossible to mimic artists' style [51]. The problem with this is that these journalists currently do not have the technical capacity or resources to build such a tool, extending the \"helplessness\".\nHaving answered our research question on how journalists' perception of privacy and data protection influence their use of AI tools, we recommend that much of the challenges affecting how Nigerian journalists use AI can be addressed by collaborations between the journalists and AI companies. As the study shows, the journalists want agency, better understanding of how AI uses their data, and an assurance of privacy and data protection when needed.",
+            "publication_ref": [
+                "b43",
+                "b16",
+                "b22",
+                "b27",
+                "b44",
+                "b45",
+                "b46",
+                "b47",
+                "b48",
+                "b49",
+                "b50"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Limitations",
+            "text": "While we draw participants from local newsrooms, national TV stations and global news agencies to get a good overview of how journalists perceive privacy concerns with the use of AI, we admit that this study is limited in its scope due to the focus on just Nigerian journalists. The insights gleaned from this research may not directly apply to other countries within Africa and in other regions of the majority world, which the paper seeks to address.\nIn addition to this, the sample for this study are largely regular users of GenAI tools, hence, they are a technically savvy group of journalists who have concrete insight from individual experience of the tools they use. Further studies can be carried out to understand a broader group of journalists who use or do not use AI at all, giving a broader representation of journalists at large. This, we believe, will grant a more robust understanding of the data privacy issues in a dynamic landscape like journalism.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "Conclusion",
+            "text": "We conducted interviews with 20 Nigerian journalists to understand how privacy and data protection perceptions affect their use of AI. Our interviews found that while journalists are willing to use GenAI tools to improve the efficiency of their work, they are often deterred by privacy and data protection concerns arising from lessthan-ideal mental models on how AI works. Despite this, the journalists are willing to share data with AI companies in return for some technological or financial benefits and are eager to learn more about the legal and technical realities of such a value exchange. We conclude that AI companies need to improve transparency and education for journalists, while implementing a more user-centric data privacy system that encourages the use of their tools even in data-sensitive professions, such as journalism.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Antecedents and outcomes of artificial intelligence adoption and application in the workplace: the socio-technical system theory perspective",
+            "journal": "Information Technology & People",
+            "year": "2023",
+            "authors": "X Yu; S Xu; M Ashton"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Creation and adoption of large language models in medicine",
+            "journal": "Jama",
+            "year": "2023",
+            "authors": "N H Shah; D Entwistle; M A Pfeffer"
+        },
+        {
+            "ref_id": "b2",
+            "title": "How knowledge workers use and want to use llms in an enterprise context",
+            "journal": "Association for Computing Machinery",
+            "year": "2024",
+            "authors": "M Brachman; A El-Ashry; C Dugan; W Geyer"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Ai in journalism",
+            "journal": "",
+            "year": "2024",
+            "authors": " Ibm"
+        },
+        {
+            "ref_id": "b4",
+            "title": "A leap forward in quarterly earnings stories",
+            "journal": "The Associated Press",
+            "year": "2024-11",
+            "authors": ""
+        },
+        {
+            "ref_id": "b5",
+            "title": "Case studies",
+            "journal": "",
+            "year": "2024",
+            "authors": ""
+        },
+        {
+            "ref_id": "b6",
+            "title": "Beyond individual concerns: Multi-user privacy in large language models",
+            "journal": "ACM",
+            "year": "",
+            "authors": "X Zhan; W Seymour; J Such"
+        },
+        {
+            "ref_id": "b7",
+            "title": "it's a fair game\", or is it? examining how users navigate disclosure risks and benefits when using llm-based conversational agents",
+            "journal": "",
+            "year": "2023",
+            "authors": "Z Zhang; M Jia; H.-P Lee; B Yao; S Das; A Lerner; D Wang; T Li"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Insurgency in northeast nigeria: Are journalists safe to report?",
+            "journal": "Journalism",
+            "year": "2024",
+            "authors": "U A Pate; A Jibril"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Journalism, media and technology trends and predictions 2018",
+            "journal": "",
+            "year": "2018",
+            "authors": "N Newman"
+        },
+        {
+            "ref_id": "b10",
+            "title": "The news business in trouble",
+            "journal": "Emerald Publishing Limited",
+            "year": "2022",
+            "authors": "J Tong"
+        },
+        {
+            "ref_id": "b11",
+            "title": "'a part of our work disappeared': Ai automated publishing in social media journalism",
+            "journal": "Journalism and Media",
+            "year": "2025",
+            "authors": "P Petruccio; T Neilson; C St\u00f6cker"
+        },
+        {
+            "ref_id": "b12",
+            "title": "Amid war, vicious attacks, and political turmoil, global fact-checkers fear impact of end to meta's program",
+            "journal": "",
+            "year": "2024",
+            "authors": ""
+        },
+        {
+            "ref_id": "b13",
+            "title": "Dungeons & deepfakes: Using scenario-based role-play to study journalists' behavior towards using ai-based verification tools for video content",
+            "journal": "Association for Computing Machinery",
+            "year": "2024",
+            "authors": "S J Sohrawardi; Y K Wu; A Hickerson; M Wright"
+        },
+        {
+            "ref_id": "b14",
+            "title": "Bloomberg launches gen ai summarization for news content",
+            "journal": "",
+            "year": "2025-01",
+            "authors": "L P Bloomberg"
+        },
+        {
+            "ref_id": "b15",
+            "title": "After the yahoo news app revamp, yahoo preps ai summaries on homepage, too",
+            "journal": "",
+            "year": "2024-06",
+            "authors": "S Perez"
+        },
+        {
+            "ref_id": "b16",
+            "title": "Uses of generative ai in the newsroom: Mapping journalists' perceptions of perils and possibilities",
+            "journal": "",
+            "year": "2024-08",
+            "authors": "H Cools; N Diakopoulos"
+        },
+        {
+            "ref_id": "b17",
+            "title": "Journalists as individual users of artificial intelligence: Examining journalists' 'value-motivated use' of chatgpt and other ai tools within and without the newsroom",
+            "journal": "Journalism",
+            "year": "2024-11",
+            "authors": "S Wu"
+        },
+        {
+            "ref_id": "b18",
+            "title": "The Federal Ministry of Communications, Innovation and Digital Economy",
+            "journal": "",
+            "year": "2023-11",
+            "authors": ""
+        },
+        {
+            "ref_id": "b19",
+            "title": "Federal Republic of Nigeria",
+            "journal": "",
+            "year": "2023",
+            "authors": ""
+        },
+        {
+            "ref_id": "b20",
+            "title": "Key changes brought by the nigerian data protection act",
+            "journal": "",
+            "year": "2023",
+            "authors": "Hogan Lovells"
+        },
+        {
+            "ref_id": "b21",
+            "title": "Rethinking consent-based data protection and privacy in nigeria: Toward a harm-accountability framework",
+            "journal": "NDPC -International Journal of Data Privacy and Protection",
+            "year": "2025",
+            "authors": "D Odes"
+        },
+        {
+            "ref_id": "b22",
+            "title": "Regulating the privacy aspects of artificial intelligence systems in nigeria: A primer",
+            "journal": "African Journal on Privacy and Data Protection",
+            "year": "2024",
+            "authors": "E Salami; I Nwankwo"
+        },
+        {
+            "ref_id": "b23",
+            "title": "Ai firms must play fair when they use academic data in training",
+            "journal": "Nature",
+            "year": "2024",
+            "authors": ""
+        },
+        {
+            "ref_id": "b24",
+            "title": "Your personal information is probably being used to train generative ai models",
+            "journal": "",
+            "year": "2025-02-19",
+            "authors": "L Leffer"
+        },
+        {
+            "ref_id": "b25",
+            "title": "X agrees to not use some eu user data to train ai chatbot",
+            "journal": "",
+            "year": "2024-08",
+            "authors": " Reuters"
+        },
+        {
+            "ref_id": "b26",
+            "title": "Meta fed its ai on almost everything you've posted publicly since 2007",
+            "journal": "",
+            "year": "2024-09-12",
+            "authors": "J Weatherbed"
+        },
+        {
+            "ref_id": "b27",
+            "title": "Apple, nvidia, anthropic used thousands of swiped youtube videos to train ai",
+            "journal": "",
+            "year": "2024-07-16",
+            "authors": "A Gilbertson"
+        },
+        {
+            "ref_id": "b28",
+            "title": "the new york times\" takes openai to court. chatgpt's future could be on the line",
+            "journal": "",
+            "year": "2025-01-14",
+            "authors": "B Allyn"
+        },
+        {
+            "ref_id": "b29",
+            "title": "Guardian media group announces strategic partnership with openai",
+            "journal": "GNM press office",
+            "year": "2025-02-14",
+            "authors": ""
+        },
+        {
+            "ref_id": "b30",
+            "title": "Chatgpt-maker openai signs deal with ap to license news stories -ap news",
+            "journal": "",
+            "year": "2023-07-14",
+            "authors": "M O'brien"
+        },
+        {
+            "ref_id": "b31",
+            "title": "Openai and google ask the government to let them train ai on content they don't own",
+            "journal": "",
+            "year": "2025-03-14",
+            "authors": "E Roth"
+        },
+        {
+            "ref_id": "b32",
+            "title": "Decodingtrust: A comprehensive assessment of trustworthiness in gpt models",
+            "journal": "",
+            "year": "2023",
+            "authors": "B Wang"
+        },
+        {
+            "ref_id": "b33",
+            "title": "Can llms keep a secret? testing privacy implications of language models via contextual integrity theory",
+            "journal": "",
+            "year": "2023-10-27",
+            "authors": "N Mireshghallah"
+        },
+        {
+            "ref_id": "b34",
+            "title": "Llm-pbe: Assessing data privacy in large language models",
+            "journal": "",
+            "year": "2024",
+            "authors": "Q Li; J Hong; C Xie; J Tan; R Xin; J Hou; X Yin; Z Wang; D Hendrycks; Z Wang; B Li; B He; D Song"
+        },
+        {
+            "ref_id": "b35",
+            "title": "Beyond memorization: Violating privacy via inference with large language models",
+            "journal": "",
+            "year": "2023-10-11",
+            "authors": "R Staab; M Vero; M Balunovi\u0107; M Vechev"
+        },
+        {
+            "ref_id": "b36",
+            "title": "Current state of llm risks and ai guardrails",
+            "journal": "",
+            "year": "2024-06-16",
+            "authors": "S G Ayyamperumal; L Ge"
+        },
+        {
+            "ref_id": "b37",
+            "title": "What can we learn from data leakage and unlearning for law?",
+            "journal": "",
+            "year": "2023-07-19",
+            "authors": "J Borkar"
+        },
+        {
+            "ref_id": "b38",
+            "title": "Gender representation in the editorial and reportorial staff of newspapers in nigeria",
+            "journal": "",
+            "year": "2016",
+            "authors": "C Enwefah"
+        },
+        {
+            "ref_id": "b39",
+            "title": "How to use thematic analysis with interview data",
+            "journal": "SAGE Publications Ltd",
+            "year": "2015",
+            "authors": "V Braun; V Clarke; N Rance"
+        },
+        {
+            "ref_id": "b40",
+            "title": "One size fits all? what counts as quality practice in (reflexive) thematic analysis?",
+            "journal": "Qualitative Research in Psychology",
+            "year": "2021",
+            "authors": "V Braun; V Clarke"
+        },
+        {
+            "ref_id": "b41",
+            "title": "Understanding the llm-ification of chi: Unpacking the impact of llms at chi through a systematic literature review",
+            "journal": "",
+            "year": "2025",
+            "authors": "R Y Pang"
+        },
+        {
+            "ref_id": "b42",
+            "title": "Illegal assaults and treatment of journalists: A big challenge to the journalism profession in nigeria",
+            "journal": "Journal of Aggression, Conflict and Peace Research",
+            "year": "2020",
+            "authors": "A A Ola"
+        },
+        {
+            "ref_id": "b43",
+            "title": "How your data is used to improve model performance",
+            "journal": "",
+            "year": "2024",
+            "authors": "Help Openai;  Center"
+        },
+        {
+            "ref_id": "b44",
+            "title": "Uk newspapers launch campaign against ai copyright plans",
+            "journal": "",
+            "year": "2025-02",
+            "authors": "M Landi"
+        },
+        {
+            "ref_id": "b45",
+            "title": "Openai strikes content deal with tom's guide owner future",
+            "journal": "",
+            "year": "2024-12-05",
+            "authors": "E Roth"
+        },
+        {
+            "ref_id": "b46",
+            "title": "Time and openai announce strategic content partnership",
+            "journal": "",
+            "year": "2024-06-27",
+            "authors": "T Pr"
+        },
+        {
+            "ref_id": "b47",
+            "title": "When ai remembers too much: reinventing the right to be forgotten for the generative age",
+            "journal": "SSRN Electronic Journal",
+            "year": "2024-01",
+            "authors": "C C Chang"
+        },
+        {
+            "ref_id": "b48",
+            "title": "Humans forget, machines remember: artificial intelligence and the right to be forgotten",
+            "journal": "",
+            "year": "2018",
+            "authors": "T Li; E Fosch; P Villaronga;  Kieseberg"
+        },
+        {
+            "ref_id": "b49",
+            "title": "Right to be forgotten in the era of large language models: Implications, challenges, and solutions",
+            "journal": "",
+            "year": "2023-07-08",
+            "authors": "D Zhang; P Finckenberg-Broman; T Hoang"
+        },
+        {
+            "ref_id": "b50",
+            "title": "Glaze: Protecting artists from style mimicry by text-toimage models",
+            "journal": "",
+            "year": "2023-02-08",
+            "authors": "S Shan; J Cryan; E Wenger; H Zheng; R Hanocka; B Y Zhao"
+        }
+    ],
+    "figures": [],
+    "formulas": [],
+    "doi": "10.1109/EuroSPW67616.2025.00050"
+}

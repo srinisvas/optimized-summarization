@@ -1,0 +1,376 @@
+{
+    "title": "Research on Data Encryption and Privacy Protection Technologies in Cloud Computing Environments",
+    "authors": "Du Man; Ha Zi Tai",
+    "pub_date": "",
+    "abstract": "This study focuses on data encryption and privacy protection technologies in cloud computing environments. By systematically implementing and evaluating various encryption algorithms (such as AES, RSA, and homomorphic encryption) and privacy protection techniques (including data masking, differential privacy, secure multi-party computation, and zeroknowledge proofs), the feasibility and effectiveness of these technologies in cloud environments are explored. A simulated cloud environment was constructed for experiments, and the results indicate that AES performs excellently in large-scale data processing, while homomorphic encryption demonstrates unique advantages in specific scenarios. Privacy protection techniques can achieve a balance between protecting user privacy and maintaining data availability. System performance and security tests confirm that the proposed solutions effectively support the data security and privacy protection needs in large-scale cloud environments. This research provides a comprehensive technical implementation and evaluation reference for data security and privacy protection in cloud computing environments, while also highlighting some challenges and offering valuable insights for future research directions.",
+    "sections": [
+        {
+            "heading": "INTRODUCTION",
+            "text": "The rapid development of cloud computing technology has brought revolutionary changes to data storage and processing, but it has also triggered serious data security and privacy protection issues [1]. In recent years, frequent data breach incidents have threatened user privacy, highlighting the urgency of enhancing data protection in cloud environments. This study aims to explore data encryption and privacy protection technologies in cloud computing environments, focusing on the implementation and application of encryption algorithms such as AES, RSA, and homomorphic encryption, as well as privacy protection methods including data masking, differential privacy, and secure multi-party computation. By constructing a simulated cloud environment, a comprehensive evaluation of these technologies is conducted to investigate their effectiveness in ensuring data security and user privacy, as well as the challenges faced in practical applications. This research aims to provide theoretical guidance and practical references for data security and privacy protection in cloud computing environments [2].",
+            "publication_ref": [
+                "b0",
+                "b1"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "II. ANALYSIS OF DATA SECURITY AND PRIVACY THREATS IN CLOUD COMPUTING ENVIRONMENTS",
+            "text": "Data security and privacy threats in cloud computing environments are becoming increasingly severe. According to the latest cybersecurity reports, the number of global cloud data breach incidents increased by 37% in 2023, with 78% of cases involving sensitive personal information. Analysis shows that unauthorized access is the most common threat, accounting for 45%. Additionally, man-in-the-middle attacks and data tampering have also risen, with increases of 23% and 18%, respectively. To gain deeper insights into these threats, this study surveyed 1,000 companies using cloud services. The results revealed that 62% of companies had experienced attempts at data breaches, with 29% resulting in actual data loss or leakage. Regarding privacy, the risks posed by user behavior analysis and data mining are significant [3]. The survey found that 89% of cloud service providers collect user behavior data, with 57% using this data for commercial purposes. Furthermore, 31% of users indicated that they are unaware of how their data is being utilized.",
+            "publication_ref": [
+                "b2"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "III. IMPLEMENTATION OF CLOUD DATA ENCRYPTION TECHNOLOGIES",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Symmetric Encryption Algorithms",
+            "text": "This study delves into the application of the AES (Advanced Encryption Standard) algorithm in cloud computing environments, with a particular focus on the AES-256-CBC version. The core encryption process of AES can be succinctly represented as follows: C = E(K, P)where C represents the ciphertext, K is the key, and P is the plaintext. The decryption process is correspondingly represented as:P = D(K, C)The study employs a 256-bit key, combined with the CBC (Cipher Block Chaining) mode to enhance security [4]. In CBC mode, the encryption and decryption processes can be expressed as:\nC i = E(K, P i \u2295 C i-1 ) P i = D(K, P i \u2295 C i-1 )\nwhere \u2295 denotes the XOR operation. Experimental results show that for 1GB of cloud storage data, AES-256-CBC exhibits excellent performance, achieving an encryption speed of 150MB/s and a decryption speed of 140MB/s. To further improve the efficiency of the algorithm, parallel processing techniques were innovatively introduced. By dividing large files into multiple data blocks and encrypting them simultaneously, the processing speed was significantly enhanced by approximately 40%. Figure 1 illustrates the performance of AES-256-CBC encryption and decryption under different data volumes. ",
+            "publication_ref": [
+                "b3"
+            ],
+            "figure_ref": [
+                "fig_0"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Asymmetric Encryption Algorithms",
+            "text": "In terms of asymmetric encryption, the RSA (Rivest-Shamir-Adleman) algorithm has been implemented. The encryption process of RSA can be represented as follows:C = M e mod n where C is the ciphertext, M is the plaintext, e is the public key exponent, and n is the modulus. An experimental key length of 2048 bits was used to balance security and performance. The test results indicate that RSA performs well for small data (such as session keys), but its efficiency is lower when encrypting large amounts of data. For example, encrypting 1KB of data takes an average of 15 ms, while decryption requires 60 ms, as shown as Figure 2. To improve efficiency, a hybrid encryption strategy was employed: the session key is encrypted using RSA, and then the actual data is encrypted using AES with that session key [5]. This method significantly enhances overall encryption efficiency while ensuring security, especially when handling large-scale data. ",
+            "publication_ref": [
+                "b4"
+            ],
+            "figure_ref": [
+                "fig_1"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Homomorphic Encryption",
+            "text": "Homomorphic encryption technology shows great potential in cloud computing environments, allowing computations to be performed on encrypted data without the need for decryption. This study implements a partially homomorphic encryption scheme based on the Paillier cryptosystem. The encryption function of the Paillier system is represented as follows:\nE(m) = g m \u2022 r n modn 2\nwhere m is the plaintext, g and r are random numbers, and n is the public key. In the experiments, addition operations were performed on 1,000 integers using the homomorphic encryption method, which took an average of 0.5 seconds, while the traditional method (decrypting first, computing, and then encrypting) required 1.2 seconds. Although homomorphic encryption still faces efficiency challenges in complex operations, it demonstrates significant advantages in specific scenarios, such as statistical analysis [6]. Figure 3 provides a performance comparison between homomorphic encryption and traditional methods under different data volumes. ",
+            "publication_ref": [
+                "b5"
+            ],
+            "figure_ref": [
+                "fig_2"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Attribute-Based Encryption (ABE)",
+            "text": "This study delves into the application of Attribute-Based Encryption (ABE) in cloud data access control, focusing on the implementation of Ciphertext-Policy Attribute-Based Encryption (CP-ABE). The core encryption process of CP-ABE can be expressed as CT = Encrypt (PK, M, A), where CT is the ciphertext, PK is the public key, M is the plaintext, and A is the access structure. The experiments employed an access policy containing 10 attributes, with encryption and decryption times for a 1MB file recorded at 0.8 seconds and 0.6 seconds, respectively, as shown in Table I. To optimize efficiency, the research team innovatively introduced an attribute hierarchy, successfully reducing key management overhead by 30% through the combination of related attributes [7]. ABE has demonstrated exceptional capabilities for achieving fine-grained access control in practical applications, but it also introduces a significant computational burden. To address this challenge, the study proposes a hybrid strategy that combines ABE with traditional encryption methods, making it particularly suitable for large-scale data processing scenarios. This hybrid approach effectively optimizes overall system performance while ensuring a high level of security. The experimental results not only validate the practical value of ABE in cloud environments but also provide important references for cloud service providers in designing secure and efficient data access control mechanisms. ",
+            "publication_ref": [
+                "b6"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_0"
+            ]
+        },
+        {
+            "heading": "IV. IMPLEMENTATION OF PRIVACY PROTECTION TECHNOLOGIES IN CLOUD ENVIRONMENTS",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Data Masking Techniques",
+            "text": "This study implements various data masking techniques to protect sensitive information in cloud environments. For structured data, methods such as partial masking, replacement, and encryption are employed. For example, for phone numbers, partial masking is applied by replacing the middle four digits with asterisks; for ID numbers, the first six and last four digits are retained while the middle digits are replaced with asterisks. For unstructured data, such as text documents, a regex-based sensitive information identification and replacement algorithm is implemented. The test results show that, on a mixed dataset of 10GB, the data masking processing speed reaches 150MB/s, with an accuracy rate of 98.5%. To verify the effectiveness of the masking, information entropy analysis was conducted on the original and masked data [8].\nThe results indicate that the information entropy of the masked data decreased by about 40%, effectively reducing the risk of sensitive information leakage.",
+            "publication_ref": [
+                "b7"
+            ],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Differential Privacy",
+            "text": "This study implements an \u03b5-differential privacy mechanism to protect statistical query results in cloud environments. Specifically, the Laplace mechanism and the exponential mechanism are implemented. For numerical queries, such as averages and sums, the Laplace mechanism adds noise, with the noise size determined by the sensitivity and privacy budget \u03b5. The probability density function of the Laplace mechanism is given by:\nf(x|\u00b5, b) = 1 2b exp(- |x -\u00b5| b )\nwhere b= \u03b5/\u0394f, \u0394f is the sensitivity, and \u03b5 is the privacy budget. For non-numerical queries, such as the most frequent items, the exponential mechanism is used for output selection. The probability distribution of the exponential mechanism is:\nPr[M(x) = r] \u221d exp \ufffd \u03f5u(x, r) 2\u2206 u \ufffd\nwhere u(x,r) is the utility function and \u0394u is its sensitivity. In practical applications, testing was conducted on a user behavior dataset containing 1 million records. When \u03b5 is set to 0.1, the average relative error of the query results is 3.2%, while the privacy protection effect is significant,as shown as Figure 4. By adjusting the value of \u03b5, a balance is achieved between privacy protection and data usability. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_3"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Secure Multiparty Computation (SMC)",
+            "text": "This study implements a secure multiparty computation protocol based on secret sharing to support collaborative computation among multiple participants in a cloud environment. Shamir's secret sharing scheme is employed, which splits the data into multiple shares that are distributed among the participants. Basic secure addition and multiplication protocols are implemented, and on this basis, more complex operations such as secure comparison and sorting are constructed. In the experiments, a scenario was simulated where three banks jointly perform credit scoring. Each bank holds a portion of the user data and computes the overall credit score through the SMC protocol without revealing their respective raw data. The test results indicate that the joint credit scoring calculation for 1,000 users takes approximately 5 seconds, with a communication overhead of about 2MB per participant, as shown as Figure 5. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_4"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "D. Zero-Knowledge Proof",
+            "text": "In the field of cloud identity authentication, this study implements an identity verification protocol based on zeroknowledge proofs, using the Schnorr protocol as the foundation. The core of this protocol is to prove the relationship mody=gx modp holds true without revealing the private key x. The key steps of the protocol include the prover computing T and responding with s: T = g r mod p s = r + cx mod q where r is a random number, c is the challenge provided by the verifier, and x is the private key. The verifier checks the equation gs\u2261T\u22c5y c modp to validate the proof. This protocol has been extended for application in attribute-based access control systems. The experiments were conducted in a simulated cloud storage system containing 10,000 users and 100 types of access policies [9]. The average time for a single proof is 50ms, with a system throughput of 200 proofs per second. By implementing batch verification techniques, the throughput was increased to 500 proofs per second. Table II illustrates the impact of the number of users and access policies on proof time and throughput. ",
+            "publication_ref": [
+                "b8"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_1"
+            ]
+        },
+        {
+            "heading": "V. CLOUD DATA SECURITY AND PRIVACY PROTECTION EXPERIMENTS AND EVALUATION",
+            "text": "",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "A. Experimental Environment Setup",
+            "text": "This study set up a simulated cloud environment consisting of a cluster of three high-performance servers, each equipped with an Intel Xeon E5-2680 v4 processor and 128GB of RAM. OpenStack was used to build the private cloud platform, deploying 20 virtual machine instances to simulate various cloud services and users. A distributed MongoDB cluster was employed as the database, with a storage capacity of 10TB. The network environment utilized a 1Gbps Ethernet, connected through a Cisco Nexus switch. To simulate real load, Apache JMeter was used to generate concurrent requests, reaching up to 10,000 requests per second. Security components included firewalls, an intrusion detection system, and a VPN gateway. The monitoring system used Prometheus and Grafana to collect and visualize system performance metrics in real time.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        },
+        {
+            "heading": "B. Performance Evaluation of Encryption Algorithms",
+            "text": "In the established cloud environment, a comprehensive performance evaluation of the AES, RSA, and homomorphic encryption algorithms was conducted. The test datasets included 1GB of structured data and 5GB of unstructured data. The AES-256 encryption speed reached 350MB/s, while the decryption speed was 380MB/s. For RSA-2048, the average encryption time for small data packets (1KB) was 2ms, with a decryption time of 30ms. For partial homomorphic encryption using the Paillier algorithm, the average time for 1,000 addition operations was 0.5s, while 1,000 multiplication operations took an average of 5s. The tests also examined the impact of different data sizes on encryption performance. Figure 6 shows the performance curves of various encryption algorithms for different data sizes, with the horizontal axis representing data size and the vertical axis representing processing time. The results show that AES performs excellently in large-scale data processing, while homomorphic encryption, despite its higher overhead in complex computational scenarios, offers unique data processing capabilities. ",
+            "publication_ref": [],
+            "figure_ref": [
+                "fig_5"
+            ],
+            "table_ref": []
+        },
+        {
+            "heading": "C. Validation of Privacy Protection Technology Effectiveness",
+            "text": "To validate the effectiveness of privacy protection technologies, this study used a real dataset containing records of 1 million users, covering personal identity information, financial records, and location data. First, the data masking techniques were evaluated using information entropy and Kanonymity as measurement indicators. The results showed that the information entropy of the masked dataset decreased by 42%, while maintaining a K-anonymity of 95% (K=5). For differential privacy, tests were conducted with \u03b5 values ranging from 0.1 to 1.0. When \u03b5=0.5, the average relative error of the query results was 4.8%, while the level of privacy protection remained substantial. The evaluation of secure multi-party computation was based on a joint credit scoring scenario involving three parties, where the average time to compute scores for 1,000 users was 7.2 seconds, with an accuracy rate of 98.7% [10]. Table III shows the trade-off between data availability and privacy protection strength for different privacy protection technologies, providing an intuitive reference for technology selection in practical applications. ",
+            "publication_ref": [
+                "b9"
+            ],
+            "figure_ref": [],
+            "table_ref": [
+                "tab_3"
+            ]
+        },
+        {
+            "heading": "D. Overall System Performance and Security Testing",
+            "text": "The overall system performance testing was conducted in two scenarios: routine operations and extreme stress. In routine operations, the system stably supported 1,000 concurrent users, with an average response time of 200 ms and a CPU utilization of around 65%. In the extreme stress test, the system remained stable under 5,000 concurrent users, but the response time increased to 500 ms, and CPU utilization reached 90%. Security testing included penetration testing and malicious behavior detection. No high-risk vulnerabilities were found in the penetration tests conducted using the Metasploit framework, and all known medium-risk vulnerabilities had been addressed. The malicious behavior detection system successfully identified and blocked 97 out of 100 simulated attacks, with a false positive rate controlled to below 3%.   This study deeply explores data encryption and privacy protection technologies in a cloud computing environment. By implementing and evaluating various encryption algorithms (such as AES, RSA, and homomorphic encryption) and privacy protection techniques (including data masking, differential privacy, secure multi-party computation, and zero-knowledge proofs), the research demonstrates that these technologies have promising applications in cloud environments. The experimental results indicate that AES performs exceptionally well in large-scale data processing, while homomorphic encryption, despite its significant computational overhead, offers unique data processing capabilities in specific scenarios. Privacy protection techniques like differential privacy and secure multi-party computation maintain a high level of data usability while protecting user privacy. The overall performance and security testing results show that the proposed solutions can effectively support data security and privacy protection needs in large-scale cloud environments. However, the study also identifies several challenges, such as the efficiency issues of homomorphic encryption in complex computational scenarios and the need to balance privacy protection strength with data usability in practical applications. Overall, this research provides a comprehensive technical implementation and evaluation for data security and privacy protection in cloud computing environments, offering valuable references for future research and practice in related fields.",
+            "publication_ref": [],
+            "figure_ref": [],
+            "table_ref": []
+        }
+    ],
+    "references": [
+        {
+            "ref_id": "b0",
+            "title": "Isomorphic encryption and coupled ANN with Mealy machine: a cutting edge data security model for cloud computing environment",
+            "journal": "Knowledge and information systems",
+            "year": "2023",
+            "authors": "A Bhowmik; S Karforma"
+        },
+        {
+            "ref_id": "b1",
+            "title": "Research on Secure Encryption and Transmission of Disaster Backup of Massive Data Based on Cloud Computing[J]",
+            "journal": "International journal of reliability, quality and safety engineering",
+            "year": "2022",
+            "authors": "J Ha; X Chen"
+        },
+        {
+            "ref_id": "b2",
+            "title": "Network information security technology based on cloud computing environment[J]",
+            "journal": "Journal of Electronics and Information Science",
+            "year": "2023",
+            "authors": "L Ke"
+        },
+        {
+            "ref_id": "b3",
+            "title": "Security Threats and Data Protection Methods Used in Cloud Computing: A Review",
+            "journal": "Springer",
+            "year": "2024",
+            "authors": "S Soni; S Chauhan; S Kaur"
+        },
+        {
+            "ref_id": "b4",
+            "title": "Hierarchical Privacy Protection Model in Advanced Metering Infrastructure Based on Cloud and Fog Assistance[J]",
+            "journal": "Tech Science Press",
+            "year": "2024",
+            "authors": "L Kuang; W Shi; J Zhang"
+        },
+        {
+            "ref_id": "b5",
+            "title": "Data Security and Privacy Protection in the Comprehensive Agricultural Administrative Law Enforcement Database",
+            "journal": "J]. Applied Mathematics and Nonlinear Sciences",
+            "year": "",
+            "authors": "W Song"
+        },
+        {
+            "ref_id": "b6",
+            "title": "A hybrid approach to secure and compress data streams in cloud computing environment[J]",
+            "journal": "Journal of King Saud University -Computer and Information Sciences",
+            "year": "2024",
+            "authors": "A Abdo; T S Karamany; A Yakoub"
+        },
+        {
+            "ref_id": "b7",
+            "title": "CloudJS: novel cloud-based design framework for text-file encryption[J]",
+            "journal": "World journal of engineering",
+            "year": "2023",
+            "authors": "R Gupta; S Dharadhar; P Churi"
+        },
+        {
+            "ref_id": "b8",
+            "title": "Secure and Efficient Outsourced Computation in Cloud Computing Environments[J]",
+            "journal": "Journal of Software Engineering and Applications",
+            "year": "2024",
+            "authors": "V Dixit; D Kaur"
+        },
+        {
+            "ref_id": "b9",
+            "title": "Security and Privacy-Preservation of IoT Data in Cloud-Fog Computing Environment",
+            "journal": "",
+            "year": "2022",
+            "authors": "J Kumar; A Singh"
+        }
+    ],
+    "figures": [
+        {
+            "figure_label": "1",
+            "figure_type": "figure",
+            "figure_id": "fig_0",
+            "figure_caption": "Figure 1 .1Figure 1. Performance of AES-256-CBC encryption under different data volumes.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "2",
+            "figure_type": "figure",
+            "figure_id": "fig_1",
+            "figure_caption": "Figure 2 .2Figure 2. Performance comparison of RSA and hybrid encryption methods under different data volumes.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "3",
+            "figure_type": "figure",
+            "figure_id": "fig_2",
+            "figure_caption": "Figure 3 .3Figure 3. Performance comparison of homomorphic encryption and traditional methods under different data volumes.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "4",
+            "figure_type": "figure",
+            "figure_id": "fig_3",
+            "figure_caption": "Figure 4 .4Figure 4. The impact of different \u03b5 values on query accuracy and privacy protection level.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "5",
+            "figure_type": "figure",
+            "figure_id": "fig_4",
+            "figure_caption": "Figure 5 .5Figure 5. The impact of the number of participants on computation time and communication overhead.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "6",
+            "figure_type": "figure",
+            "figure_id": "fig_5",
+            "figure_caption": "Figure 6 .6Figure 6. Performance Curves of Various Encryption Algorithms Under Different Data Sizes",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "77",
+            "figure_type": "figure",
+            "figure_id": "fig_6",
+            "figure_caption": "Figure 7 .Figure 777Figure 7. System Response Time and Resource Utilization Under Different Loads Figure 7 shows the system's response time and resource utilization under different loads. TableIVsummarizes the security testing results, including vulnerability types, severity, and remediation status. The test results indicate that the system has achieved the expected goals in both performance and security, effectively supporting the needs for data security and privacy protection in large-scale cloud environments.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "I",
+            "figure_type": "table",
+            "figure_id": "tab_0",
+            "figure_caption": "PERFORMANCE METRICS",
+            "figure_data": "File Size (MB)Number of AttributesEncryption Time (seconds)Decryption Time (seconds)Key Management Overhead (%)1100.80.6272101.10.8325101.91.41810102.51.935"
+        },
+        {
+            "figure_label": "II",
+            "figure_type": "table",
+            "figure_id": "tab_1",
+            "figure_caption": "",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_2",
+            "figure_caption": "",
+            "figure_data": "100010303002000203528050005045250700070482401000010050200"
+        },
+        {
+            "figure_label": "III",
+            "figure_type": "table",
+            "figure_id": "tab_3",
+            "figure_caption": "TRADE-OFF BETWEEN DATA AVAILABILITY AND PRIVACY PROTECTION STRENGTH FOR DIFFERENT PRIVACY PROTECTION TECHNOLOGIES",
+            "figure_data": "Privacy Protection TechnologyMeasurement IndicatorTest ResultData MaskingInformation Entropy K-anonymityReduced by 42% 95% (K=5)\u03b5 value0.1Differential Privacy\u03b5 value = 0.5Average Relative Error 4.8%\u03b5 value = 1.0Average Relative Error 2.9%Secure Multi-Party ComputationAverage Time (seconds) Accuracy7.2 98.70%"
+        },
+        {
+            "figure_label": "",
+            "figure_type": "table",
+            "figure_id": "tab_4",
+            "figure_caption": "TableIVsummarizes the security testing results, including vulnerability types, severity, and remediation status. The test results indicate that the system has achieved the expected goals in both performance and security, effectively supporting the needs for data security and privacy protection in large-scale cloud environments.",
+            "figure_data": ""
+        },
+        {
+            "figure_label": "IV",
+            "figure_type": "table",
+            "figure_id": "tab_5",
+            "figure_caption": "",
+            "figure_data": ".SECURITY TESTING RESULTSVulnerability TypeSeverity Fix StatusHigh-risk VulnerabilityHighNot FoundMedium-risk VulnerabilityMediumFixedLow-risk VulnerabilityLow-Malicious Behavior Detection Success Rate-97/100VI. CONCLUSION"
+        }
+    ],
+    "formulas": [
+        {
+            "formula_id": "formula_0",
+            "formula_text": "C i = E(K, P i \u2295 C i-1 ) P i = D(K, P i \u2295 C i-1 )",
+            "formula_coordinates": [
+                1.0,
+                342.69,
+                636.84,
+                178.02,
+                10.8
+            ]
+        },
+        {
+            "formula_id": "formula_1",
+            "formula_text": "E(m) = g m \u2022 r n modn 2",
+            "formula_coordinates": [
+                2.0,
+                384.73,
+                103.68,
+                92.02,
+                11.49
+            ]
+        },
+        {
+            "formula_id": "formula_2",
+            "formula_text": "f(x|\u00b5, b) = 1 2b exp(- |x -\u00b5| b )",
+            "formula_coordinates": [
+                3.0,
+                120.64,
+                537.94,
+                117.27,
+                22.85
+            ]
+        },
+        {
+            "formula_id": "formula_3",
+            "formula_text": "Pr[M(x) = r] \u221d exp \ufffd \u03f5u(x, r) 2\u2206 u \ufffd",
+            "formula_coordinates": [
+                3.0,
+                118.2,
+                624.79,
+                121.99,
+                24.76
+            ]
+        }
+    ],
+    "doi": "10.1109/ITCEM65710.2024.00035"
+}
