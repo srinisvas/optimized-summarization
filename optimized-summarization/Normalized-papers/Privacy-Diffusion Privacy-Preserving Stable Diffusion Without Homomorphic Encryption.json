@@ -1,0 +1,53 @@
+{
+  "title": "Privacy-Diffusion: Privacy-Preserving Stable Diffusion Without Homomorphic Encryption",
+  "sections": [
+    {
+      "title": "Abstract",
+      "content": "Text-to-image generation is trending in the generative AI field. Stable Diffusion is the state-of-the-art among open-source projects. Many artists and service providers customize the diffusion model for special textures. However, there is no protection for the privacy of the user's input text prompt, output image, and the customized model on the server. Privacy is crucial for user trust and protecting intellectual property. Existing privacy-preserving diffusion models use fully homomorphic encryption (FHE), which is time-consuming and can degrade image quality. We propose Privacy-Diffusion, a framework that preserves privacy without FHE by leveraging the irreversible properties of neural network layers and the property that in the diffusion process, the predicted noise is a normalized Gaussian distribution. Our framework protects clients' input text prompts and generated images from the server and safeguards customized models from clients. Compared with existing research HEdiffusion which spent 200% extra time and visible quality loss, our protocol can reach the same security level with only 4% extra time and has no quality loss. To our knowledge, we are the first to achieve this goal without FHE while maintaining high-quality image output."
+    },
+    {
+      "title": "Introduction",
+      "content": "Text-to-image generation is a key area in generative artificial intelligence (GenAI). Stable Diffusion is the leading open-source project, invented the diffusion algorithm to create high-quality images from text prompts. Algorithms like DreamBooth and LoRA allows artists and service providers to customization the flavors of the output image. Protecting these customized models, as well as the client's input text prompt and output image, is crucial for privacy and intellectual property.\nRequired Properties: For a text-to-image generation service, the privacy-preserving diffusion algorithm must ensure:\n• Input Text Prompt Privacy: The server cannot access the client's text prompt in plaintext.\n• Output Image Privacy: The server cannot access the output image. • Model Privacy: The client cannot access the model."
+    },
+    {
+      "title": "Backgrounds",
+      "content": "To understand the challenges of building a privacypreserving diffusion model, we introduce Stable Diffu-sion and existing privacy-preserving machine learning (Privacy ML) techniques.\n• Stable Diffusion Image generation in Stable Diffusion is a step-by-step procedure. As shown in Fig. 1, starting from a random noise, the diffusion model predicts the noise at each step and refines the image iteratively to generate a high-quality output."
+    },
+    {
+      "title": "Difficulties and Challenges",
+      "content": "Maintaining privacy while ensuring efficiency and image quality is challenging. Existing Privacy ML techniques have limitations:\n• FHE is Computationally Heavy: The BGV scheme is 23202 times slower, and the CKKS scheme is 2055 times slower than plaintext multiplication. Such slowdowns are unacceptable for Stable Diffusion.\nFig."
+    },
+    {
+      "title": "Our Contributions",
+      "content": "We propose Privacy-Diffusion, a privacy-preserving diffusion framework with no computation overhead or image quality loss. By leveraging the irreversible property of neural network layers and the normalized Gaussian distribution of predicted noise, our protocol protects input text prompt, output image, and customized model privacy without FHE, downsizing, quantization, or differential privacy techniques. Our implementation is available at https://github.com/Animechain-ai/ Privacy-Diffusion. Our contributions are:\n• Security Without FHE: Utilizing neural network layers' irreversible property and the normalized Gaussian distribution of predicted noise, our protocol is secure without FHE or encryption schemes. • Privacy Without Computation Overhead: Our protocol has no extra computation overhead, relying on proper distribution of computations between client and server.\n• No Quality Loss: Our protocol does not use differential privacy or approximations, maintaining highquality image output. This paper demonstrates related Privacy ML protocols in Section II, introduces preliminaries in Section III, proposes our Privacy-Diffusion protocol in Section IV, discusses security in Section V, and demonstrates implementation and optimization in Section VI. We conclude in Section VII."
+    },
+    {
+      "title": "Related Works",
+      "content": "Various methods has been used to protect neural network privacy, such as homomorphic encryption (HE) . CryptoNets first applied HE to neural networks. Prior works on privacy-preserving diffusion models focus on protecting training data , from malicious parties, emphasizing differential privacy and protection against membership inference attacks . Protecting training data is crucial, but the privacy of the image generation process is also important. HE-Diffusion is the first framework focused on the image generation process. They reduce computation time by protecting the noise prediction part with the irreversibility property of neural network layers and only the denoising part requires FHE. They optimize performance using partial encryption, image division, and sparse encryption. We propose a method to protect diffusion model privacy and security without FHE or encryption schemes, maintaining high-quality image output with only 4% extra time compared to the 200% extra time of HE-Diffusion."
+    },
+    {
+      "title": "Preliminaries",
+      "content": "This section defines the Stable Diffusion model and its components: text encoder, UNet, denoise function, and Variational Autoencoder (VAE).\nDefinition 1 (Text Encoder): A text encoder ,"
+    },
+    {
+      "title": "Our Protocol: Privacy-Diffusion",
+      "content": "Privacy-Diffusion is a privacy-preserving diffusion framework that protects both the privacy of the client and the server. It can protect the client's text prompt and the generated image from being learned by the server. It can also protect the server's customized model from being learned by the client. Note that we are the first protocol that achieves these properties without using FHE and differential privacy techniques. The basic idea is to keep the computations directly relate to the text prompt and the image on the client side. Starting from"
+    },
+    {
+      "title": "Notations",
+      "content": "• S: The server.\n• C: The client.\n• Denoise: The algorithm used to reduce the noise.\n• κ: The security parameter.\n• T: The number of iterations to perform denoising.\n• prompt: The client's text input.\n• e: The text embedding.\n• X: The pixel space of the output image.\n• x t : The image in pixel space X at iteration t.\n• Z: The latent space of the output image.\n• z t : The image in latent space Z at iteration t.\n• ϵ t : The predicted noise in latent space Z at t."
+    },
+    {
+      "title": "Our Protocol",
+      "content": "We define a function Split that splits a model M into two parts: M 1 and M 2 based on a security parameter κ. ẑt ← M 1 (z t , e, t) • Intermediate variable ẑt : The output of neural network M 1 , which is difficult to reverse-engineer due to irreversible layers. Our protocol ensures input text prompt privacy, output image privacy, and model privacy as defined in Section I. It is simpler and faster than HE-diffusion as it does not require encryption of ϵ t ."
+    },
+    {
+      "title": "Implementation",
+      "content": "We benchmark on an AMD Ryzen 9 7950X3D CPU, 128GB RAM, and an NVIDIA RTX 4070 Ti GPU. Results are generated by stable diffusion model v1.4 with a DDIM scheduler at 512x512 resolution. Our implementation can be accessed through https://github.com/ Animechain-ai/Privacy-Diffusion. Fig. 3 shows images from the original Stable Diffusion and our Privacy-Diffusion. Table I shows execution times."
+    },
+    {
+      "title": "Conclusion",
+      "content": "Our Privacy-Diffusion protocol protects client and server privacy without FHE or differential privacy. This method can be extended to other generative machinelearning models with similar structures."
+    }
+  ]
+}

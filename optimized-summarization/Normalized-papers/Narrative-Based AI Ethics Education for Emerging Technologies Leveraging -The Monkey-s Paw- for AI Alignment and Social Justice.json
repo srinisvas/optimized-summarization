@@ -1,0 +1,21 @@
+{
+  "title": "Narrative-Based AI Ethics Education for Emerging Technologies: Leveraging 'The Monkey's Paw' for AI Alignment and Social Justice",
+  "sections": [
+    {
+      "title": "Abstract",
+      "content": "The rise of autonomous AI agents introduces complex ethical concerns, particularly regarding value alignment, unintended consequences, and system accountability. Despite these growing risks, AI ethics remains underemphasized in many technical education programs. This paper proposes an original narrative-based instructional model using W. W. Jacobs's The Monkey's Paw (1902) to address key concepts in AI ethics and responsible innovation. The story's brevity, metaphorical richness, and public availability make it a practical resource for stimulating discussion around AI alignment and social impact. A classroom strategy is outlined to demonstrate how narrative tools can complement technical learning and promote ethical reflection among future developers and users."
+    },
+    {
+      "title": "INTRODUCTION",
+      "content": "As AI agents are increasingly embedded in daily life, their potential to operate independently while optimizing complex objectives raises ethical questions about how closely their actions reflect human intentions. Misalignments between design goals and real-world outcomes can lead to harms such as reward manipulation, biased decisions, or unintended escalation effects , . While these challenges are recognized in AI safety research, structured opportunities to explore them in engineering classrooms remain rare . Technical instruction often prioritizes system functionality and performance, leaving limited space for ethical analysis or value-sensitive design. Consequently, students may graduate with little preparation to anticipate or mitigate the societal impact of the systems they create . To bridge this gap, narrative-based ethics education offers an accessible and engaging format for exploring the complex human dimensions of AI."
+    },
+    {
+      "title": "NARRATIVE PEDAGOGY USING THE MONKEY'S PAW",
+      "content": "One such narrative approach draws on The Monkey's Paw, a short story in which a family is granted three wishes, each fulfilled through literal but devastating outcomes . The story's central message-that fulfilling a goal without understanding its broader context can result in unforeseen harm-parallels the alignment problem in AI. The symbolic nature of the tale provides fertile ground for examining themes such as control, moral agency, and technological risk.\nThe story's concise format (readable in under 15 minutes) allows it to be used during a single class session. Its open-ended interpretation encourages students from varied backgrounds to consider how intention, design, and consequence interact in both fictional and real-world systems. Instructors can further relate these discussions to ethical frameworks such as IEEE's Ethically Aligned Design, which emphasizes transparency, human well-being, and responsibility in intelligent systems ."
+    },
+    {
+      "title": "EDUCATIONAL INTEGRATION AND CONCLUSION",
+      "content": "A typical lesson plan might allocate time for in-class reading, followed by guided ethical discussion and applied reflection. Students are encouraged to map each \"wish\" in the story to modern examples of AI misbehavior-such as systems that optimize narrow objectives while neglecting social context. The session can conclude with reflective writing on how to prevent such outcomes in future technologies. This method supports active learning while requiring minimal logistical overhead. Its emotional impact and narrative resonance help foster lasting ethical awareness, which is often more difficult to achieve through abstract principles alone.\nEthics education in AI must move beyond theoretical discussion to engage learners in reflective, multidisciplinary inquiry. Stories like The Monkey's Paw offer a unique, highimpact avenue for addressing key issues in AI alignment and responsible innovation. When paired with structured facilitation, such narratives can prepare students to think more critically about the values embedded in technology and the consequences of their design choices."
+    }
+  ]
+}

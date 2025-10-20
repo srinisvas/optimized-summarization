@@ -1,0 +1,113 @@
+{
+  "title": "Efficient Framework Approach to Extract Privacy Issues in Cloud Computing",
+  "sections": [
+    {
+      "title": "Abstract",
+      "content": "To overcome the challenges emerged in adoption of cloud computing technologies, many countries has conceived and designed data privacy and confidentiality protection regulations. The objective of this paper is to identify privacy issues and design a framework pertaining to privacy and confidentiality concerns in adopting cloud computing. It is imperative to note that privacy concern is increasingly important in the online world. The secure processing of personal data in the cloud is a huge challenge now a days. Such a framework and exploration can provide benefits to the all communities linked with cloud computing. It will help in better understanding of the privacy issues associated with cloud and will spark ideas and lead to further research on this subject whom may lead to the development of privacy regulations and/or the improvement of existing Regulations."
+    },
+    {
+      "title": "INTRODUCTION",
+      "content": "Cloud Computing is comparatively a new model in the IT world. It has-been defined by NIST, as the following: \"Cloud computing is a model for enabling convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction\". Cloud computing has four deployment models. Those are: 1) Public Cloud: In public cloud infrastructure is made available to general public and is owned and managed by CSP.\nPrivate Cloud: In Private cloud, infrastructure is used by a single organization.\nCommunity Cloud: In community cloud service the cloud infrastructure is used by several organizations belongs to specific community that has shared concerns. 4) Hybrid Cloud: In Hybrid cloud, cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public).\nCloud computing has essentially five main characteristics shown in the diagram: Privacy is a key issue in cloud computing. In general, privacy is about the accountability of a cloud provider to customer, as well as the transparency to cloud provider's practice around personal data/information. Cloud computing is a rising technology in the field of Information Technology. Therefore, it is of preeminent importance to deal with issues and challenges of privacy. Offending and violation of privacy not only affects users but also cloud service provider because it maculates their credibility with customers. The concept of privacy varies widely among countries and jurisdictions."
+    },
+    {
+      "title": "METHODOLOGY USED",
+      "content": "This main focus of the paper is to find or extract major privacy issues in cloud computing. The process includes:"
+    },
+    {
+      "title": "MAJOR PRIVACY CONCERNS",
+      "content": "In the present time the way of managing the data on cloud has been changed. The customers have lost their control over the data and depend on the cloud service provider. This change leads to a number of privacy concerns to be raised. Some of the privacy concerns had been discussed here and these are as follows:\nCompliance: It indicates the list of applicable laws, regulations, standards and contractual commitments that govern cloud computing data. The privacy laws for different jurisdiction may vary so it is required what is the relevant jurisdiction that governs data in the cloud computing."
+    },
+    {
+      "title": "ccess",
+      "content": "Access tells about the access rights of the user and the cloud service provider. That is how much access user has on data and the rights of CSP on the data."
+    },
+    {
+      "title": "torage",
+      "content": "Storage is linked to the physical location the data is stored. Whether the data is stored locally or on foreign land. Whether cloud service provider having sufficient data centers or not. Storing data on the different location may lead to the unauthorized access."
+    },
+    {
+      "title": "etention",
+      "content": "This term is associated with time for which user's data is retained on the cloud. This simply means that for how much time a user can have access to the cloud."
+    },
+    {
+      "title": "udit and monitoring",
+      "content": "It means how customers can monitor their cloud provider and get assurance that privacy requirements are met when their personal data is on the cloud. This is one of the major concern in the cloud computing."
+    },
+    {
+      "title": "estruction",
+      "content": "It is the process of deleting of personal data at the end of the retention period and to ensure that the personal data is destroyed and is not available to another cloud user."
+    },
+    {
+      "title": "rivacy breaches",
+      "content": "It means how to know about breach has occurred and ensures that the cloud provider will notify customer when a breach occurs, and who is responsible for managing the process of notifying breaches. Breach simply means violation and infraction of data by the eavesdroppers."
+    },
+    {
+      "title": "aw",
+      "content": "As technology is changing day by day the laws should also be updated so that it can provide full fledge security. The cloud provider should establish transparent policies to customer so that customers can easily understand them.\nAll of the above are major concerns which have to be taken into the consideration for the development of the framework in cloud computing."
+    },
+    {
+      "title": "RELATED WORK",
+      "content": "To further find out the privacy issues and concerned privacy principals number of privacy framework which are accepted in various countries of the world has been referred. Those frameworks are: a) \"U.S-EU Safe Harbor\" is a framework that developed in order to cover up the differences in approach of privacy that is taken by U.S and that has taken by the EU, when data is being transferred from the EU to U.S. \"U.S-Swiss Safe Harbor\" is a framework to bridge the differences in privacy approaches between the U.S and Switzerland. Many cloud providers comply with this framework, ex: Google, Amazon, HP etc. b) \"NSTIC2 Fair Information Practice Principles (FIPPs)\": It is a widely accepted framework and is followed by many U.S states , as well as many foreign nations and international Privacy Framework ."
+    },
+    {
+      "title": "tudying different concerns of privacy in cloud computing",
+      "content": "Going through some of the widely accepted international privacy preserving frameworks."
+    },
+    {
+      "title": "THE EXTRACTED PRIVACY PRINCIPLES",
+      "content": "By taking the reference from all the above policy frameworks following privacy principles have been extracted."
+    },
+    {
+      "title": "ollection limitation",
+      "content": "It means that the cloud provider should collect the personal data according to the customer's service needs."
+    },
+    {
+      "title": "onsent and Choice",
+      "content": "It means that the cloud provider should get separate consent from a user before collecting the data and before processing that data and customers should have the freedom to withdraw their consent easily and without any harm in terms of efforts and funds."
+    },
+    {
+      "title": "ollection Methods",
+      "content": "It means that the data collection should be lawful and fair."
+    },
+    {
+      "title": "ata Integrity",
+      "content": "It is the duty of cloud provider that data should always be accurate, complete, and current, for all copies."
+    },
+    {
+      "title": "ata minimization",
+      "content": "It means the one should be given access only to the data necessary to do his/her official duties."
+    },
+    {
+      "title": "se and retention limitation",
+      "content": "It means that the cloud provider should limit the use, retention of personal data to that is necessary to fulfill the specific purposes and data should be completely deleted when retention time is complete."
+    },
+    {
+      "title": "isclosure and transfer data",
+      "content": "It means that the cloud provider should disclose and transfer personal data to minimum extent possible. And when personal data are transferred internationally the cloud service provider should deal with the necessary processes."
+    },
+    {
+      "title": "otice and openness",
+      "content": "It means that the cloud provider should be open in terms of its practices and policies regarding to collect, use and processing of personal information; and let it available to the public."
+    },
+    {
+      "title": "ights and access",
+      "content": "According to this principal CSP should give user the right to access, process and use the data as per need."
+    },
+    {
+      "title": "ecurity safeguards and encryption",
+      "content": "It means that the cloud provider should be responsible to safeguard personal data with appropriate methods and mechanisms to ensure the integrity, confidentiality and availability of personal data."
+    },
+    {
+      "title": "ccountability and auditing",
+      "content": "It means that the cloud provider should be responsible for its Policies and actions to comply with applicable law, audit and risk assessments for the actual use of personal data with applicable privacy protection requirements.\n.12. Compliance: It means that the cloud provider should indicate all of Applicable laws, regulations and standards that it complies with them."
+    },
+    {
+      "title": "hysical Location",
+      "content": "It means the user should be aware of the actual location of the data and server of CSP. On the basis of above analysis we have found that following are the framework and their respective privacy concerns covered. The table shown above represents the analysis of different framework studied and relatively covered all the privacy principles."
+    },
+    {
+      "title": "CONCLUSION AND FUTURE WORK",
+      "content": "In this paper we have tried to cover up all the related privacy concerns related to the cloud computing and that will help cloud service provider to serve the customers in a better way by covering all of these issues. In future we are considering that we will be able to make new frameworks by combining the perspectives of all the above covered frameworks and will be able to serve as a better cloud service provider. The concept of transparency will be prior for those frameworks which have been made with user's perspective point of view and level of privacy will depends upon the level of transparency."
+    }
+  ]
+}

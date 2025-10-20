@@ -1,0 +1,117 @@
+{
+  "title": "THE PRIVACY-AWARE ACCESS CONTROL SYSTEM USING ATTRIBUTE-AND ROLE-BASED ACCESS CONTROL IN PRIVATE CLOUD",
+  "sections": [
+    {
+      "title": "Abstract",
+      "content": "Cloud is a relatively new concept and so it is unsurprising that the information assurance, data protection, network security and privacy concerns have yet to be fully addressed. The cloud allows users to avoid upfront hardware and software investments, gain flexibility, collaborate with others, and take advantage of the sophisticated services. However, security is a huge issue for cloud users especially access control, user profile management and accessing services offered by the private cloud environment. A privacy enhancement system on Academic-based private cloud system using Eucalyptus open source cloud infrastructure has been proposed in this paper. This system provides the cloud users to improve the privacy and security of the private personal data. Two approaches (Role-based Access Control and Attribute-based Access Control model) are combined as a new approach (ARBAC). This means that they are applied to improve the privacy which supports both mandatory and discretionary access control needs on the target private cloud system."
+    },
+    {
+      "title": "ntroduction",
+      "content": "Cloud computing has brought up major advancements to the IT industry. Today, clients are capable of running their software applications in remote computing clouds where data storage and processing resources could be acquired and released, almost, instantaneously. The virtualization layer on top of the commodity hardware in computing clouds is the driving force that allows cloud providers to \"elastically\" and promptly respond to client resource demands and requirements .\nIn spite of all the advantages delivered by cloud computing, the security and privacy concerns are significant challenges from the storage and processing of sensitive data on remote servers that can even not be managed by the cloud users themselves.\nThe rest of this paper is organized as follows: Section 2 describes the related work. Section 3 mentions Privacy-aware access control system. Section 4 describes technique preliminaries. In Section 5, the proposed system is described. Finally Section 6 concludes the paper."
+    },
+    {
+      "title": "elated work",
+      "content": "Researches on data privacy in cloud computing are still in its early stages. Good reports are presented in , discuss the risks imposed by the adoption of cloud computing on data privacy and legal compliance, and A. which emphasizes on the need to develop a sound digital identity infrastructure to support tackling privacy and security concerns in computing clouds. and and present a comprehensive set of guidelines on designing privacy-aware cloud services. summarizes the privacy patterns in 6 recommended practices: \"minimizing customer personal information sent to and stored in the computing cloud; protecting sensitive customer information in the cloud; Maximizing user control; Allowing user choice; Specifying and limiting the purpose of data usage; providing the customer with privacy feedback\". proposed attribute based access control model with its authorization architecture and policy formulation to impose attribute conditions for authorizing a user."
+    },
+    {
+      "title": "rivacy-Aware access control system",
+      "content": "Privacy in cloud computing is the ability of a user or a business to control what information they reveal about themselves over the cloud, and the ability to control who can access that information. Cloud Service Providers (SPs) can store information at multiple locations or outsource it, then it is very difficult to determine, how secure it is and who has access to it . The privacy policy rules on personal identifiable information (PII) can be defined to restrict access of applications to collected data and considered by the following requirements: such as operations, purposes, data users, user access roles, privacy policies, conditions and data."
+    },
+    {
+      "title": "efinitions and model assumption",
+      "content": "In this section, the following definitions and their responsibilities will be defined:"
+    },
+    {
+      "title": "ata Owners",
+      "content": "The cloud users can create their own VM services, and application services and data services. All of those services are stored into the private data region on the cloud storage according to their permissions in the organization."
+    },
+    {
+      "title": "ata Users",
+      "content": "The cloud users can access some pre-defined services, and data which are created by other Data Owners according to their appropriate permission in the cloud system."
+    },
+    {
+      "title": "loud Service Providers",
+      "content": "The cloud administrators can operate the cloud servers and components of the cloud system and the cloud services according to the predefined rules to the cloud users."
+    },
+    {
+      "title": "rivacy Manager",
+      "content": "It performs as a filter to the confidentiality of users' sensitive information from the other unauthorized users according to the predefined privacy policies and the user levels and data security levels."
+    },
+    {
+      "title": "ttribute and Role Based Access Control Model (ARBAC)",
+      "content": "This system applies an attribute and role based access control model (ARBAC) for cloud services. In ARBAC model, Service providers publish welldefined access control requirements in policy statements. Before invoking services, requestors must provide their attribute information and all parameters of method it will access to service providers. When service providers receive requests, they retrieve the attribute information from requests, and determine whether to permit or to deny these requests according to their access control policies."
+    },
+    {
+      "title": "cenarios of the system",
+      "content": "This paper mentions some scenarios defined to provide the privacy policies for the system. Scenario-1: User Provisioning • A new user decides to self register via a user interface; • The self-registration process requires the user to provide data, including personal data. In this step the user can also specify their privacy preferences; • The self-registration module triggers the provisioning of the user (creation of user accounts, setting of access control rights and storage of personal information) to the various involved the system; • During the user provisioning process, privacy policies are generated from user's privacy preferences and user's personal data."
+    },
+    {
+      "title": "cenario-2: Authentication and Authorization of users",
+      "content": "Initial user account creation involves two step operations:\nAny user with access to Cloud Controller user interface can fill a form to request an account. 2) When a request is received, it is up to the administrator to grant access to the user according to its own policy."
+    },
+    {
+      "title": "cenario-3: Proper Data Acquisition",
+      "content": "If the cloud users (The Researchers or Faculties) want to upload the own data (created VM instances or Developed Services) into the cloud, the privacy manager defines data collection policy. The information is collected by authorized appointed user only and the own data must be adequate, relevant and not excessive as well as the purpose must be mentioned."
+    },
+    {
+      "title": "cenario-4: Privacy-aware Management of Personal Data",
+      "content": "The system needs to control access personal identifiable information (PII) and each PII has an access control list. Groups and roles may be used instead of individual names. Personal and confidential data can be stored in a variety of data repositories, log files, audit systems, etc. Privacy manager specifically defines and pushes privacy policies to the privacy-aware system."
+    },
+    {
+      "title": "cenario-5: Notification about the purpose of usage",
+      "content": "The system needs to know for which purpose the user access to PII control privacy. In particular, the data users must receive special notification if any person whom it is proposed to add to their access control list already has access to personal identifiable information on a large number of people."
+    },
+    {
+      "title": "cenario-6: Permissible Data Processing",
+      "content": "The data processing should be granted by the data or resource owner on his personal identifiable information. The data owner may open the PII with herself and the data user has been referred, the data user and referring data owner on the access control list."
+    },
+    {
+      "title": "cenario-7: Permissible Data Transfer",
+      "content": "The data owner may be responsible to transfer her PII to her friends or members. The data owner may grant which user for which data."
+    },
+    {
+      "title": "cenario-8: Permissible Data Deletion",
+      "content": "No-one shall have the ability to delete PII information until the appropriate time period has expired."
+    },
+    {
+      "title": "cenario-9: Privacy-aware Relationships",
+      "content": "This scenario is considered by the following facts: If Faculty X trusts Faculty Y and Faculty Y trusts Student Z that does not mean Faculty X trusts Student Z. Faculty X needs to trust that Faculty Y will not pass on any information about Faculty X to Student Z. If X breaks his trust relation with Faculty Y then Faculty X would like to forget all the information Faculty Y had about Faculty X."
+    },
+    {
+      "title": "echnique preliminaries 4.1 Role Based Access Control (RBAC)",
+      "content": "Access control is a core requirement for any information system. Some typical access control models for services have been presented, such as Attributed-based Access Control (ABAC) Model for services , Role-based Access Control (RBAC) Model for services and so on. This system assumes that there is a set of roles that are authorized to perform certain actions and that users are authorized to play certain roles. More formally, this system assumes the existence of set of users U in which the other sub-set user groups are included such as a set of roles R and a set of permissions P (where permission is an object-action pair).\nFigure 1 The Core RBAC model"
+    },
+    {
+      "title": "ttribute Based Access Control (ABAC)",
+      "content": "The Attribute Based Access Control (ABAC) model consists of two aspects: the policy model which defines the ABAC policies and the architecture model which applies the policies to data access control ."
+    },
+    {
+      "title": "ttributes defined",
+      "content": "Unlike RBAC, the ABAC model can define permissions based on just about any securityrelevant characteristics, known as attributes. For access control purposes, this paper is concerned with three types of attributes: Subject Attributes. A subject is an entity (a user) that takes action on a resource. Each subject has associated attributes which define the identity and characteristics of the subject. Such attributes may include the subject's identifier, name, organization, job title, and so on. Resource Attributes. A resource is an entity that is acted upon by a subject. As with subjects, resources have attributes that can be leveraged to make access control decisions. Environment Attributes. These attributes describe the operational, technical, and even situational environment or context in which the information access occurs. For example, attributes such as current date and time, the current services, and the data's security level, are not associated with a Particular subject or a resource. Policy representation can be more fine-grained within ABAC because it can be based on any combination of subject, resource, and environment attributes."
+    },
+    {
+      "title": "BAC Policy Formulation",
+      "content": "Here this paper formally defines the (basic) ABAC policy model: U, R, and E are the set of users, resources, and environments are as follows: ATTR(u), ATTR(r), and ATTR(e) are attribute assignment relations for user u, resource r, and environmental regions e, respectively:\nATTR(u) ⊆ UG 1 × US 1 × …..UG K × US K ATTR(r) ⊆ R IaaS1 × R SaaS1 × R DaaS1 …× R IaaSM × R SaaSM × R DaaSM\nATTR(e) ⊆ e time1 ×e location1 ×…× e timeN ×e locationN This paper also uses the function notation for the value assignment of individual attributes. For example:\nRole(u) = \"Student\" ServiceOwner(r) = \"UCSY\" CurrentDate(e) = \"01-23-2011\"\nIn the most general form, a Policy Rule that decides on whether a user UG 1 can access a resource R IaaS1 , R SaaS1 and R DaaS1 in a particular environment e time1 ,e location1 , is a Boolean function of s, r, and e's attributes:\nRule: can_access (u, r, e) ←ƒ (ATTR(u), ATTR(r), ATTR(e))\nGiven all the attribute assignments of u, r, and e, if the function's evaluation is true, then the access to the resource is granted; otherwise the access is denied. A Policy rule base may consist of a number of policy rules, covering many subjects and resources within a security domain. The access control decision process in essence amounts to the evaluation of applicable policy rules in the policy store. For example, a rule that dictates \"Users with role 'Researcher' may access the 'Research' special cloud service\" can be written as: This example also shows that conventional RBAC rules can be accommodated by the ABAC model just as easily. For example, to enforce that a resource may only be accessed by its owners, this paper can have a rule as follows: R2: can_access (u, r, e) ← (UserID(u) = ResourceOwner(r))\nR1:can_access (US 1 , R IaaS1 ,"
+    },
+    {
+      "title": "ystem architecture",
+      "content": "Figure 2 The proposed system framework\nIn this system, the cloud client is allowed to store their data in the cloud according to the privacy standards or laws before upload data and to access the data in the cloud according to their user levels. The Privacy Manager is responsible to define the privacy policies, handle the privacy laws, to classify user levels, classify the data security levels, control data access in the private cloud to enhance the security of the cloud. This system uses an Attribute Based Access Control (ABAC) model with Role Based Access Control (RBAC) as a new approach (ARBAC), which is based on subject, object, and environment attributes and supports both mandatory and discretionary access control needs. In addition, it is assumed that the data owner can not only store data files but also run his own programs on Cloud Servers to manage his data files."
+    },
+    {
+      "title": "ccess control list",
+      "content": "To determine the read, write, and execute access, the access check is performed on the ACL entries in the following algorithm: 1) If the user requesting access is the object owner, and the requested permission is granted by the ACL entry, then access is granted.\nIf the user requesting access is a named user in the ACL, and the requested permission is granted by the ACL entry, then access is granted.\nIf the user requesting access is in the owning group of the file, or is a member of any named groups, and the requested access permission is granted by the ACL entry of the owning group or the ACL entry of any of these named groups, then access is granted. 4) If the user requesting access is a member of any of the named groups, and the requested access permission is granted by the ACL entry of any of these named groups, then access is granted. 5) If the requested access permission is granted by the \"other\" entry, then access is granted, otherwise access is denied."
+    },
+    {
+      "title": "lassification of data security levels",
+      "content": "The data security level is classified (described in Table 1) based on significance and sensitivity"
+    },
+    {
+      "title": "uthorization Policy",
+      "content": "The system defines an authorization policy as a triple, AP = (S, P, C). S: could be a user or a role. P: is defined as a pair <M,O>, where M is an operation mode defined in This paper's central design goal is to control access the various PII related to the privacy of sensitive data. This is achieved by placing user access levels, data security levels and data privacy mechanisms. Moreover, this system provides a privacy manager which allows users the different privacy operations applied on their data according to their user group or access levels and data security levels. It also performs as a filter to the confidentiality of their sensitive information from the other unauthorized users using the above Algorithm1."
+    },
+    {
+      "title": "onclusions and future work",
+      "content": "The aims of the proposed system are to protect personal information in the cloud; to specify privacy policies for the private cloud; to reduce the risk such as stealing and misuse of the private personal data; to enforce user's security policy to decide only which attributes should be disclosed so that users can reveal their attributes to service providers according to their need. This system uses role-based access control model and attributedbased access control to limit access. The users of the private cloud system can access their resources against interference. Therefore, this system can enhance the security of the cloud and protect access from the unauthorized users, provide confidentiality, integrity and availability. Future work includes two main research directions, namely, the support for topical trust and the usage of access rules also for certificate protection."
+    }
+  ]
+}
