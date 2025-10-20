@@ -64,8 +64,9 @@ def normalize_all_jsons(input_folder, output_folder):
             print(f"Processed & saved: {filename}")
 
 # ---------- 🔹 Paths ----------
-INPUT_DIR = '/content/drive/MyDrive/optimized-summarization/optimized-summarization/papers_json/'
-OUTPUT_DIR = '/content/drive/MyDrive/optimized-summarization/normalized_papers/'
+# Paths inside your Git repo
+INPUT_DIR = './papers_json/'          # original JSONs
+OUTPUT_DIR = './normalized_papers/'   # cleaned JSONs
 
 # ---------- Run ----------
 normalize_all_jsons(INPUT_DIR, OUTPUT_DIR)
