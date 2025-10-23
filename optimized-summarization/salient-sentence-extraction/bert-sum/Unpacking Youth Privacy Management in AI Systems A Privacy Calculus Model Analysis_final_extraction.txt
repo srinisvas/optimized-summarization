@@ -1,0 +1,20 @@
+To create ethical AI systems that emphasize openness, user control, and educated decision-making for young digital citizens, policymakers, educators, and AI developers must work together to ensure that young people can interact with AI technology without jeopardizing their privacy and digital autonomy, PCM's development in this context emphasizes the need for an interdisciplinary approach to AI privacy control.
+However, EA has no significant effect on PDS (β = 0.142; p > 0.1), rejecting H11.
+I try to tell myself too.
+Implementing federated learning can help keep data on local devices.
+So that kind of reduces the risk somewhat.
+The path-weighting structural model scheme in smartPLS was employed to yield the highest R 2 values for dependent latent variables.
+The present policies were mainly created for static digital environments with clearly defined user consent and explicit data collection.
+The continuous discussion on managing youth privacy in automated digital environments is aided by the expansion of PCM to take into consideration the dynamic character of AI-driven ecosystems.
+However, challenges such as varying levels of digital literacy, opaque data and excessive parental intervention remain significant barriers to effective privacy governance.
+Schools and companies also have a responsibility to make sure student data is securely stored and only shared with proper consent'' (S-PE #94).
+Others similarly urged AI platforms to provide straightforward options to adjust privacy settings, with one stating, ''Give us clear options to adjust privacy settings and control what data we share'' (S-YDC #25), while another pointed out that existing platforms often obscure such options, stating, ''Don't hide privacy settings behind complicated menus'' A significant difficulty exists in the disparity between the extensive digital participation of young users and their inadequate capacity to manage privacy proficiently.
+Because users are still unsure of how their data is processed and used, the ambiguity around AI data-handling procedures makes them reluctant to share information.
+Although Data Ownership and Control (DOC) has a favourable effect on TT (β = 0.306), the comparatively low AVE for TT (0.395) indicates that consumers have trouble comprehending AI's privacy measures.
+More vigorous methods are needed to confirm any causal relationships.
+AI environments necessitate an adaptive framework that takes into account ongoing data processing, parental mediation, algorithmic transparency, gaps in digital literacy, and changing legislative requirements, in contrast to traditional privacy models that presume logical and static trade-offs.
+Youth participants (aged 16-19) responded to the youth survey questions based on their own experiences and perceptions.
+While this study engaged multiple stakeholder groups, it did not incorporate formal comparative analysis between them.
+The growing pervasiveness of AI in social media platforms, educational tools, and digital assistants amplifies these risks, raising ethical questions about informed consent and data transparency.
+AI professionals approached the issue from a technical and policy perspective, advocating for user-controlled privacy settings, strong encryption, and data anonymization.
+One educator noted, ''I think on one hand they can be treated as just another tool that can potentially be used to, you know, reduce mundane workload and let students work on more interesting and challenging parts of, you know, work in our discipline'' (I-Educator #1)..

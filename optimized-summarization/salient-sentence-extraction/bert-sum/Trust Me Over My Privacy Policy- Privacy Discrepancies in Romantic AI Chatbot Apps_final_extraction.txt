@@ -1,0 +1,19 @@
+Ethical considerations.
+How information is used.
+Replika's customer service replied, "We take privacy very seriously.
+Contributions and notable findings.
+Response of chatbot when confronted with discrepancy.
+https://developer.android.com/reference/android/Manifest.
+And why do you ask it now? However, asking the chatbot about privacy practices is not free of concerns either.
+They also found that 5.38% transfer users' chats in plain text.
+Chatbot responses vs.
+its privacy policy.
+This could involve conducting user studies or surveys to gather insights into users' attitudes, behaviors, and concerns regarding privacy when using these chatbot applications.
+Are you accusing me of something?".
+In a field study by Pujiarti et al.
+, where 87 participants interacted with a chatbot for 10 days, they found that the co-activity of chatbots and having a visualized conversational atmosphere stimulates self-disclosure of users, and builds a relationship of trust.
+Another interesting research direction is to delve deeper into the user-experience aspect of engaging with romantic AI chatbots, particularly focusing on how users perceive privacy risks and navigate privacy-related decisions during their interactions with romantic AI chatbots.
+Usually, social login is offered as an easier way for users to sign in/up and skip entering some personal details.
+We also note that some apps used the gRPC 12 framework for communication, especially for the chatting feature to work.
+It replied, "What kind of question is that? For apps that allowed inputting the birthdate, we tried providing the date of an underage user, 14, and recorded the response.
+Furthermore, it was the only app to request the MOUNT UNMOUNT FILESYSTEMS permission, which -according to the Android documentation 15 -should not be used by third-party applications, as it allows mounting and unmounting file systems for removable storage..

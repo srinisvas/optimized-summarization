@@ -1,0 +1,20 @@
+For purposes of this paper and the sake of brevity, we focused our analysis on copyright, patent, and trade secret intellectual property rights as they relate to the copying of computer software code.
+978-1-4799-4992-2/14/$31.00 ©2014 IEEE The third survey question asked respondents what their experience was in keeping private any confidential information gained in their professional work.
+The responses were measured utilizing a semantic differential scale with a scoring system that ranged from one to seven.
+For instance, there are situations where software engineers willingly use software that is obtained or retained illegally or unethically.
+The results demonstrated that approximately 95% of respondents were somewhat likely, likely, or highly likely to make others aware of such work practices (see Figure 3).
+Research findings were limited due to the sample size.
+Software engineers have ethical duties to the profession.
+Two possible interpretations were identified for this polarization.
+The survey was distributed to the IEEE Region 4 active members via an email blast.
+Another example would include copying software without paying for a license.
+A trade secret refers to "information, including a formula, pattern, compilation, program, device, method, technique, or process" that derives economic value from being kept secret.
+Few instances in practice are, however, as black and white as these rules suggest.
+The survey was designed using Microsoft Excel 2007®.
+Future research could utilize the same software code of ethics; however, the instrument design could be modified with the use an alternative software package to promote ease of use and better flexibility.
+Specifically, the fourth survey question asked software engineers if they were accurate in stating the characteristics of software on which they work, avoiding not only false claims but also claims that might reasonably be speculative, vacuous, deceptive, misleading, or doubtful.
+We defined valid responses as questions that were actually answered while questions left blank were invalidated.
+Whereas copyright law prevents duplication of computer software or a portion thereof, patent law prevents others from creating computer software that performs a function in a certain way.
+The mean for the fourth survey question was 6.5 with a .8 standard deviation (see Figure 7), and the mean for the fifth survey question was 6.8 with a .4 standard deviation (see Figure 8).
+Copyright law, as discussed herein, refers to protections provided for "original works of authorship fixed in any tangible medium of expression.
+" A trade secret is lost once it becomes known..

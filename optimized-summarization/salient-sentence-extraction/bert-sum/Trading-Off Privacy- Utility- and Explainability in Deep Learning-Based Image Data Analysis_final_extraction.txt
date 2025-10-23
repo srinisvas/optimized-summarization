@@ -1,0 +1,23 @@
+18 T DP (D, λ, λ ) 20(a) 22(a).
+21 in a 2D representation.
+Andrea Saracino received the PhD degree.
+Their focus was on explainability, gauged through Shapley values.
+He coordinates and participates to EU and national research project.
+Then the maximum tradeoff score for each privacy-preserving mechanism is selected and the scores are compared between the two mechanisms with their parameters.
+However, in both cases, this anonymization could affect the accuracy of the facial expression recognition model causing some facial expressions to be not correctly recognized anymore.
+1 https://www.kaggle.com/msambare/fer2013.
+with Utility Loss represented as a percentage.
+As a future extension, we plan to apply different perturbation mechanisms like the Generative Adversarial Network (GAN), and investigating trade off options for the utilization of cryptographic methods.
+SGM is an additive Gaussian noise and Sampling mechanism used in Differential Privacy as defined in (2) for a real-valued function f mapping subsets of D to R d :
+M (D) f (D) + N (0, S f σ 2 ) (2)
+where D is the dataset and a subset of its elements are sampled randomly and independently from each other with sampling rate 0 < q ≤ 1 to be used by the algorithm f.
+Table II provides a general comparison of our proposed approach with existing methodologies addressing the combined trust aspects of privacy, utility, and explainability.
+However, this equation needs to be modified in case a privacy mechanism has been used, since the privacy mechanisms applied in our methodology either modifies the analysis model in the way it computes gradients when using Differential Privacy or alters the input dataset in case of Autoencoders.
+The output is a reconstructed image perturbated based on the latent space size.
+He is associate professor of applied cybersecurity and AI with Scuola Superiore Universitaria Sant'Anna.
+Using moments accountant, the accounting procedure allows proving that an algorithm is ( , δ)-differentially private for appropriately selected configurations of the parameters for any < c 1 q 2 T and for any δ > 0 if the noise multiplier σ was defined to be as in (3) proposed in :
+ To this aim, such stakeholders share their data with a centralized honest-but-curious server that will perform the analysis (as shown in Fig.
+Performing data analysis involves other concerns beyond privacy.
+XAI emerged to produce human-level explanations for complex AI models that are not transparent by design.
+The Privacy Gain plot is represented by a constant function, since the explainability mechanism is applied to investigate the models predictions after the analysis finishes.
+In , the authors assess the effectiveness of the DP-SGD algorithm in comparison to conventional optimization approaches coupled with regularization techniques..

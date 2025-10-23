@@ -1,0 +1,18 @@
+Based on the choices of the first three levels we setup the scenario of our interest and obtain a list of possible security and privacy issues in level-3 and a list of security attributes in level-4.
+ Moreover, Cloud adopters are also capable of obtaining nested services from different service providers.
+Some other approaches investigated the security requirement of the CC models but were directed towards a single stakeholder's perspective or a single service that could be offered through the cloud.
+The goal is to provide stakeholders with the security issues associated with their interaction with the cloud.
+Researchers in academia and industry are striving to propose a security silver bullet.
+This will help promote security and privacy among the stakeholders and refute their fears from utilizing this emerging technology.
+The strength of this approach resides in its affinity to the stakeholders and its capability to comprehend different scenarios.
+Furthermore, laws and regulations diverge in some industries and different locations make it even harder to focus towards providing a unified process to secure the CC model.
+For instance (Scenario A) in top part of Figure 1; a user who interacts with Google Docs to create or edit a text document would be traversed on the taxonomy as an end user consumer on a SaaS public cloud.
+ Stakeholder-oriented: Stakeholders are the most tangible aspect of the CC model and hence they represent a significant part of the taxonomy.
+This is shown in the lower half of the Figure 1.
+This increases divergence of stakeholders' authority and control over the multiple service and deployment models.
+Inspired from the NIST characteristics of cloud computing , to conform to the standards in the field.
+To address the above mentioned issues, in this paper we present a unique approach that is:  These approaches and similar ones have been extensively presented in literature but we are yet to observe their benefits in the real world in terms of security and privacy improvement.
+Another interesting utilization of this taxonomy is to enable stakeholders to learn the security concerns of other stakeholders by simply tracing their roles through this taxonomy.
+We are presenting a stakeholderoriented taxonomy that structurally enables the comprehension of all the various CC model components and their security aspects.
+Taxonomical: this methodological arrangement of features enforces a better understanding of the different use cases of a CC model and facilitates extensions and upgrades on the same in the future.
+For examples, this can help the providers can in understanding the security requirements of their consumers..
