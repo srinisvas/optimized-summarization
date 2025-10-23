@@ -1,0 +1,23 @@
+The main novelty of our scheme lies in the preprocessing of data through the identification of pattern-friendly QIDs via ML, classification of data into privacy-violating and nonprivacy-violating parts that allow distinct values of ϵ rather than fixed ones, anonymization of some parts only rather than entire dataset, preserving most parts of data in their original form for higher utility along with the strong privacy guarantees, and least computing overheads.
+Section V concludes this article.
+1 1) 3) 5) 2) 3) 6) 1.
+A formal aspect by taking the example of race QID in Q focusing on Example 1 is expressed below
+q i (race) =       v * 1 = white, f (white) = 27 816, v * 1 ∈ c 1 v * 2 = black, f (black) = 3124, v * 2 ∈ c 2 v * 3 = API, f (API) = 1039, v * 3 ∈ c 3 v * 4 = AIE, f (AIE) To identify such QIDs, we employ a machine learning technique named random forest (RF).
+EIs are removed to lessen identity leakage from D ′ , whereas NSAs have a minimum effect on utility/privacy.
+The validation results verified reliability.
+Descriptions of each component are as follows.
+These datasets contain a variety of private and public information.
+Default values of some parameters (sampling scheme and sample size) were used.
+Afterward, we remove records with incomplete information.
+Recently, there has been a growing debate to rectify the privacy protection technologies as they may destroy important information regarding minorities from data, leading to low/no benefits for them.
+We rigorously performed a de-anonymization to find the true SA from D ' , and compared the results with the existing SOTA methods.
+Hereafter, we use the concise form to refer to each dataset (i.e., A, B, and C).
+Theorem 1: The Laplace mechanism and k-member-based hybrid anonymity scheme satisfies ϵ-DP and k-anonymity.
+Problem 1: Given real-world dataset D encompassing various attributes (name, age, sex, race, income/disease, privacy parameter k, and privacy budget ϵ), how do we produce an anonymized data D ′ where 1)
+ Finally, it is worth noting that time consumption heavily depends on the characteristics of datasets.
+In this system, there exists an adversary whose goal is to jeopardize record owner privacy in the published data by linking auxiliary information.
+We reanalyzed these findings by checking each QID's real values' domain and distribution in D.
+We present the results and comparisons of using our scheme with different k values in Figs.
+Consequently, the performance of those mechanisms and the output (i.e., the anonymized data) remain problematic in real-life scenarios due to the extensive and unneeded anonymization applied.
+From Table VII, it can be observed that our scheme has yielded better results in all three datasets than prior SOTA algorithms.
+For fair analysis, we conducted repetitive experiments and took an average computing time after ten tests..

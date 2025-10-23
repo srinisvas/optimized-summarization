@@ -1,0 +1,28 @@
+The method proposed in this paper is verified by comparison experiments, and it is proved that the LDP could not only effectively protect user's location privacy in edge computing, but also has better data availability.
+12
+)
+ (13
+)
+ i i ( , ) ′ .(17)
+ Cloud server sends Voronoi diagram division of a map to clients.
+i i ′ =      n e n e -+ -+ i i i i = ≠ ′ ′.
+From a technological perspective, blockchain involves many scientific and technological issues, such as mathematics, cryptography, the Internet, and computer programming.
+The privacy-preserving degree of Algo-a convex polygonal outer shell.
+In the system architecture of , workers send their locations to a truthful Cellular Service Provider (CSP).
+4
+)
+Table I summarizes the notations used in our presentation.
+The experimental platform is MATLAB 2016a.
+This framework does not require the involvement of any third-party entity.
+i i ε ε = = ′ ≤ e ε(5)
+to indicate that privacy algorithm satisfies ε-LDP, where N represents total number of mobile users in Voronoi grids.
+Finally, edge data center makes analysis and statistics on the perturbed data to obtain an effective analysis result.
+In , the authors proposed a location privacy-preserving task allocation framework based on geo-obfuscation to protect users' locations during task assignments.
+In short, according to a certain output result of privacy algorithm M, it is almost impossible to infer which record its input data is.
+Our disturbance method needs to satisfy ε-LDP.
+In addition, none of these methods considered attacks based on background knowledge, which cannot quantify the level of privacy-preserving.
+2), then M satisfies ε-LDP.
+In this paper, h represents the probability that an attacker will succeed, so PL could be ex- lished central location lc '.
+In addition, b f = ∆ ε is a scale parameter.
+Recommendation system has become one of the main tools to search for users' interested papers.
+Through solving this problem, the effectiveness of crowdsourcing platform could be improved better..

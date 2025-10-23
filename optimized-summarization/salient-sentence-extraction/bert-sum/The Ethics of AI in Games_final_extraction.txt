@@ -1,0 +1,20 @@
+The output of the affect model can be used to adapt the game content and generate a new set of stimuli for the player.
+2012) mobile exergame.
+The paper is structured as follows.
+Games could have played a critical role in that development.
+In many instances this ethical failing can be traced back to lax regulations, where legal requirements for consent and compliance are technically fulfilled but do not facilitate transparency in a tangible way.
+Affective modelling methods, however, can also help build more responsible systems that detect a risk of a problematic behaviour.
+While user privacy might define a clear issue in other domains, games present a special case.
+While there are many games whose in-game processes are representations of peaceful real-life activities such as gardening in FarmVille or warehouse stocking in Sokoban , very many games represent some kind of real-life violence.
+The industry has been slow to react to the growing concern about trustworthiness; the landscape is changing, however.
+By setting an appropriate framework we aim to protect users and to guide developers towards safer and better experiences for their customers.
+While community guidelines are generally presented clearly, human moderation can become cumbersome with the breadth of data increasing with new players.
+In the European Union, the General Data Protection Regulation (GDPR) is meant to give a legal framework and transparency to data handling (also in an AI context).
+Black-box algorithms such as deep learning neural networks are very popular in data science due to their performance, and they are notoriously hard to explain and interpret-despite advances.
+As part of these initiatives, companies such as EA and Nintendo , Ubisoft and Riot Games often share data with academics and enable studies into fostering well-being, combating toxicity, and evaluating content moderation.
+Some players aim to actively harm others in-and outside of the game through emotional abuse.
+Particularly due to the interactivity of the medium, a certain amount of dynamic control is needed to maintain oversight over toxic and malicious actors in a game's ecosystem and prevent unintended or negative effects on the players' mental well-being.
+Given the very high computing demands of much current AI research and the advantages of having access to large datasets, it is worth pondering which modern game AI methods will benefit most.
+The first category is research focusing on leveraging AI techniques to explore questions of ethics faced by humans.
+The matter is further complicated because-even if we focus just on games-it can be hard to make a clear demarcation between a creative tool and curated entertainment.
+presented a robust method to flag the occurrence and severity of toxic and emotionally abusive behaviour in For Honor ..

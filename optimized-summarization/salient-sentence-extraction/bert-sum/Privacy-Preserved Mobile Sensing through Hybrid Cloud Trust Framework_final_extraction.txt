@@ -1,0 +1,20 @@
+A widget 1) declares what information is going to be extracted from users' data (e.g., "this widget will estimate your average commuting distance from home to work"); 2) is downloaded and installed to user's personal cloud once a user grants information access to the information consumer; 3) runs on the personal cloud and process the raw sensor data using the data analytics API; and 4) uploads the extracted analytics to public cloud.
+Each chunk contains a certain amount of sensing data with corresponding timestamp when collected.
+We surveyed 55 users through online questionnaires 2.
+In our approach, private clouds are virtual machines deployed on users' own physical machines.
+It defines different sensitivity levels and categorizes data widgets into different levels.
+However, such personal data, if not protected or used properly, has serious privacy consequences.
+But, the third party should share no interest with all data consumers (e.g., Apple and all iOS app developers).
+Revolutionary applications are made possible based on such personal, fine-grained, Big Data, for example, anomaly detection, passive authentication through behavior modeling, personalized intelligent computing, future activity prediction, trend forecasting, psychological status estimation, health behavior monitoring and intervention.
+Typical sensor information include GPS, location, WLAN, accelerometers, gyroscope, magnetometer, bluetooth, cell tower ID, call log, SMS log, browsing history, microphone, camera, contacts, running apps, apps' network communication pattern, screen on/off state, battery status and so on.
+It provides a web UI for users to manage their raw data; create/delete user specific sensing profile and authorize feature extraction app developed by the third parties through an authorization procedure(III-C).
+50 out of 55 users (91%) have smart phones and 48 of them (87%) are aware that smart phones "have sensors that can track your activities such as your location, your motion, your sound".
+The private data cloud thus can be viewed as an indexed file storage system.
+We believe this trust paradigm is suitable for addressing the privacy concerns in behavior modeling mobile sensing systems.
+2) Data consumers release widgets that behave differently from the SLD (a Data Malware).
+However, with the proposed hybrid cloud solution, 33 users (60%) are comfortable using the mobile sensing software.
+In our implementation, we use 1 hour as the chunk split period.
+SLD is certified by a trusted third party to guarantee it aligns with the widget's actual behavior.
+Through statistical modeling over the sensor time-series, we are able to infer behavior patterns of the user such as their outdoor and indoor mobility pattern , mobile phone usage patterns and even their stress level.
+User can authorize analytic widgets (e.g., health monitor or marketing survey) to only collect user-approved data.
+The consequences of potential privacy leaks hinder the wide adoption of mobile sensing technologies despite the benefit users would get..

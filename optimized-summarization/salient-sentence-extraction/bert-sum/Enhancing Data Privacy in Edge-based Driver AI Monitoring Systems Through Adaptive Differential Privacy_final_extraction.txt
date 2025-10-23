@@ -1,0 +1,22 @@
+Based on this evaluation, the Proposed Adaptive Differential Privacy (DP) mechanism has the greatest tradeoff of all approaches in that it has the lowest privacy leakage while maintaining a relatively high degree of utility and low latency.
+Each data type is categorized according to its sensitivity level (e.g.
+identity markers, location data, emotion indicators).
+𝑃𝑟[𝐴(𝐷 ′ ) ∈ 𝑆](3)
+ Any potential algorithmic result.
+A : Variably private algorithm.
+D, D′: Adjacent datasets that have exactly one element difference.
+Nonetheless, while dealing with sensitive data across many fragmented environments and lacking security measures, edge computing creates additional security vulnerabilities.
+integrated privacy bounds under fdifferential privacy, providing stronger privacy guarantees for mixture mechanisms.
+This represents a value compromise that is suitable for practical use in deployment scenarios where both accuracy and speed are important.
+Here, Privacy Leakage: Measured as percentage of sensitive attributes inferred by adversarial simulation models.
+CNNs have been proven to classify images due to their ability to assess the spatial hierarchies of the data.
+Lastly, benchmarking against emerging privacy techniques such as homomorphic encryption or secure multiparty computation could further validate and strengthen the applicability of the proposed method.
+Differential privacy can protect driver data from privacy concerns, keep compliance with data protection regulations, and foster the emergence of intelligent transportation systems.
+Figure 2 presents a comparison of latency between the four privacy mechanisms, which provides a useful indication on their computational efficiency.
+Edge computing has emerged as a viable way to address these issues by allowing for in-situ data processing that minimizes bandwidth requirements and reliance on centralized servers.
+The research highlights that even though there are diverse privacy-preserving methods, each has limits related to computing efficiency, scalability, and vulnerability to inference attacks.
+Overall, this system premise presents a very balanced approach between privacy/accuracy/timeliness that follows to within the range of privacy-aware, real-time behavioural analytics with far better prospects in an edge-based computing space.
+Current differential privacy methods offer tradeoffs between added noise and the utility of the analysis; thus; they need further refinement for real-time applications.
+Latency: Time taken by the DMS to process inputs and output a safety recommendation.
+The CNN is trained to identify and use visual facial features for detecting tiredness and distractions of the driver.
+established strong ML architectures for detecting fraud, mirroring privacy-conscious data modeling strategies ..

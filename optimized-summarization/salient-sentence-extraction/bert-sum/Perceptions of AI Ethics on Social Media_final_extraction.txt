@@ -1,0 +1,17 @@
+Abstract-Since the emergence of Artificial intelligence (AI), despite a common expectation that AI should be 'ethical' , there are many different interpretations, assumptions, and expectations about what constitutes "ethical AI" and which ethical problems and requirements are pointed out by the public.
+Social media data usage, therefore, has been growing in various research studies.
+Third, through employing computeraided textual analysis This method may be an example method for relevant future research.
+The findings offer important implications.
+More specifically, a corpus consisting of 998 unique Reddit post titles and their corresponding 16611 comments extracted from 15 AI-related subreddits were identified by using topic modelling supported by human judgment for frame identification as in Researchers may be encouraged to more focus on the areas where public misconceptions are more common; educational programs may be arranged to reduce speculative fears or concerns or take necessary measures for real ethical risks.
+Academia, industry and government communities may collaborate for research and policy arrangements in those areas.
+, this study reveals frames in social media conversations to showcase the latest perceptions from different viewpoints.
+First, as a practical implication, the findings can enrich current public voice-centric explorations of AI ethics.
+For obtaining public opinions, although questionnaires and interviews are commonly used, the questions in these methods are designed based on only the researchers' preferences, and this could be a limitation.
+Also, they could help designing suitable interfaces that allow proper human-AI task coordination and collaboration and deploying innovative solutions for existing or anticipated ethical problems.
+thereby users may feel more secure and share more honest thoughts on a topic, thus the Reddit data have been used to gather public opinions in prior research as in.
+Even though many private companies and research institutions have highlighted present and possible future problems, needs, and guidelines associated with AI ethics, relevant public visions regarding how "ethical AI" can be constituted have not been explored sufficiently.
+While some of these ethical issues were also highlighted in prominent AI ethics literature as in , the findings of this study indicated new insights such as humans' gender bias about the perceived gender of bots.
+Social media data, however, are produced by users freely , and many people share their ideas in social media discussions.
+measures should be taken to address problems pointed out by the public.
+Second, expected outcomes can demonstrate areas where misconceptions and unrealistic visions about AI ethics are widespread, which may trigger speculative fears or concerns.
+Through the lens of technological frames , to explore social media users' interpretations, assumptions, and expectations about how ethical AI is built, and which problems hinder building ethical AI, Reddit conversations were analyzed..

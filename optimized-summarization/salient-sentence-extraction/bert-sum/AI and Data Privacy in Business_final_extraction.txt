@@ -1,0 +1,20 @@
+Of course, the ultimate aim for organizations is to produce a process of decision-making in AI that is transparent and comprehensible by the user-making it clear what their data evokes.
+Obtain Consent: These processes include various functions like learning, reasoning and self-correction.
+Which enable better decisions and strategic planning.
+Regularly provide privacy training to your employees so they will respect data.
+This review paper discusses AI innovation and data privacy imperatives in modern business applications converging.
+Data Principle: Regular audits on AI algorithms to ensure solutions remain compliant with data privacy laws and ethical principles.
+This creates a challenge for would-be compliers, who are trying to live up to both data minimization and completeness standards.
+Fulfilling these privacy challenges can also foster trust with consumers and lead to more responsible AI usage in the longer term.
+Robotic Process Automation: RPA automates common data entry and processing tasks, eliminating manual errors to drive efficiency.
+Table 2 compares the different regulatory frameworks addressing data privacy in AI.
+Figure 1 highlights the Distribution of Data Privacy Regulations around the world.
+AI dives deep into customer data and offers customized experiences like targeted marketing campaigns and personalized product recommendations.
+To reduce privacy risks linked to AI, one must take a privacy-by-design approach.
+In addition, removing duplicates and data anomalies will be done efficiently by using AI in data cleaning.
+The ethical implications of AI-driven data practices are becoming increasingly important.
+An organization has an obligation to have appropriate technical and organizational measures that would guarantee the security of personal data processing and limit the occurrence of breaches.
+We thus seek here to distil the insights from existing literature and case studies, both successes and failures, regarding how best to balance AI's potential for innovation with our current data privacy mandate.
+The major impact of AI technologies on data quality and accuracy.
+Rules like the General Data Protection Regulation in Europe and the California Consumer Privacy Act in the US set up this model of privacy protection for our personal information.
+Meanwhile, AI-powered privacy solutions would simplify compliance by doing critical work, like data classification and consent policy enforcement, automatically, while collaborative data ecosystems could allow safe sharing of the datasets in a depersonalized manner for training AI without transgressing on personal rights..

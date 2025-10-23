@@ -1,0 +1,19 @@
+As the current research has pointed out the need for practical tools and methods for the development of AI systems , the findings of this study suggest a need for tangible practices also in other levels of the governance of AI systems.
+This filtered Morley data was enriched with 14 additional documents retrieved via supplementary data search.
+Still, we should not forget the private acquiring practices either.
+Artificial Intelligence as a technology and a phenomenon has become increasingly common in our everyday life.
+12 Method Particular set of actions (e.g., double diamond) for ensuring a common approach to a challenge.
+For example, in 2019, Jobin et al.
+This hierarchical categorization as a contribution can further help make the use of these critical terms more established in the field.
+Some models and structures for AI governance have been proposed , , , but none of these are empirically tested.
+According to Tadelis , similar legislations apply also in other continents.
+have presented a "layered model for AI governance," which similarly has three layers: i) technical layer, ii) ethical layer, and iii) social and legal layer.
+Indeed, these issues were realized in this study at the first steps of analyzing the Morley data.
+Only the sources that met the definition of a tool or method were included in the supplementary data.
+Suggestions and guidance for future research are given in chapter 6.
+For example, Waelen has suggested that AI ethics should be seen as a critical theory, broadening the scope to a more philosophical context and explaining the background of current principles.
+For clarity, we call these 32 documents "Final data." The number of technical implementation models in the Morley data was unexpectedly high.
+This research contributes to AI governance, AI ethics, and IS procurement by creating a preliminary understanding of how and to what extent these currently independent fields of research are linked to each other.
+However, the principles and guidelines are not sufficient in a way that these could be used as off-the-shelf instruments to develop ethical AI systems.
+The Final data indicates that even if the academic field is the leading producer of methods and tools in AI ethics, it has practically dismissed the procurement context with only one independent document linked to procurement practices.
+This new information highlights the issue of dismissing IS procurement in research on AI ethics even more..

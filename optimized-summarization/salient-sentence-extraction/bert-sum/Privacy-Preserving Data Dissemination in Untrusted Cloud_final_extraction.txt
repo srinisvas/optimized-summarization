@@ -1,0 +1,22 @@
+Based on evaluation of access control policies, of the client's browser cryptographic capabilities and of client's authentication method, Active Bundle responds to the requesting service with the authorized data.
+Researcher can given in table 1.
+Demo video for our prototype is available.
+It provides protection against eavesdropping attacks.
+Decryption key derivation procedure is similar to encryption key derivation.
+This approach relies on centralized TTP to manage keys, metadata, joining and leaving brokers.
+A mechanism which guarantees that unauthorized data accesses are denied is needed.
+If the Web Cryptography API is supported, a 'secure authentication' is enabled that uses a protocol beyond just usernames and passwords.
+Client's network (trusted vs.
+unknown network).
+Data and policies are made inseparable.
+only access anonymized records of patients, i.e.
+medical and billing information.
+Access control policies can be specified either using Javascript Object Notation (JSON) or Extensible Access Control Markup Language (XACML) policy language.
+WSO2 Balana is used for policy evaluation.
+Micro-policies are specified in terms of tags, used to label URLs, network connections, cookies, etc; and a transfer function, which monitors security-relevant operations based on these tags and defines which operations are permitted by the browser.
+The mechanism, implemented as a Google Chrome extension Michrome , can be used to ensure secure access to web data by means of http(s) protocol.
+Assumptions: Hardware on a site where AB is hosted / executed is trusted.
+Detailed configuration setup can be found in the prototype tutorial.
+Active Bundle with embedded tamper -resistance mechanism is evaluated.
+A mechanism of micro-policies enforced at a browser's side was proposed to provide confidentiality and integrity of web sessions.
+Such operations have limited ability to express access control policies..

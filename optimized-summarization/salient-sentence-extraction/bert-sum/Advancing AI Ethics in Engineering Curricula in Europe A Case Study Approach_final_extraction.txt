@@ -1,0 +1,21 @@
+In the Introduction, the scenario, highlighting key ethical concerns in AI, is described, followed by background information that provides necessary technical and situational information for students to understand the case, including the AI approach used in question and how it is used.
+These moral issues arise from balancing patient benefits with safety, informed consent, and regulatory adherence.
+However, each angle has pros and cons.
+Case study GenAI´s ecological impact.
+Objectives for engineering ethics education were formulated in literature.
+The traditional view of an engineer as a neutral technician is no longer durable.
+These systems integrate AI and sensor technologies to monitor movement and detect falls, enabling real-time alerts that facilitate immediate caregiver response and potentially prevent severe injuries or fatalities.
+With the help of this template and recommendation, we developed a series of case studies in which we tried to cover a larger variety of examples from different areas of real life.
+That part stems from our own case).
+Characters and roles are introduced to personalize the ethical dilemmas.
+This involves exploring scenarios where ethical principles clash, data is incomplete or biased, and the long-term consequences are uncertain.
+This approach has led to numerous sophisticated and impactful applications across various domains.
+However, what we want to avoid is "right" vs.
+"wrong" opinions.
+Engineers actively shape the world, and their decisions have far-reaching consequences.
+The key developments are connected with increased computational power that allows complex computations.
+To increase student sensitivity to ethical issues related to AI, instruction should emphasize empathy and perspective-taking.
+It mainly applies advanced AI methods for analyzing enormous data volumes (big data).
+Another issue in this regard is the historical context.
+The project also considers self-driving taxis' ethical and practical implications, using a hypothetical scenario in San Francisco.
+Measurement bias occurs when the way data is measured or collected introduces systematic errors..

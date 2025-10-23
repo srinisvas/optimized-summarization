@@ -1,0 +1,20 @@
+This study applied CPM theory to examine the privacy perspectives of young digital citizens, parents/educators, and AI developers/researchers using five key validated constructs: Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA).
+• H11: Misuse becomes inevitable" (#Participant 4).
+Privacy Boundaries: Symbolic boundaries that assist people regulate what they share by separating private information from public information.
+P-values assess the statistical significance of these relationships.
+EA scored 0.622, also reflecting moderate reliability.
+Participation was entirely voluntary and did not receive any form of compensation.
+We recruited participants through flyers, emails, personal networks, and on social networking sites, LinkedIn, and Reddit.
+For data processing, Microsoft Excel was employed to manage the collected data through descriptive statistics.
+Furthermore, PRB plays a critical role in shaping how youth decide whether to disclose personal information to AI systems.
+The revised research model was then assessed by gathering survey data.
+This emphasizes the necessity of looking into the variables affecting how youth handle their privacy to improve policy frameworks, educational initiatives, and AI design methodologies.
+One educator criticized the excessive demand for data, stating, "AI systems ask for too much data, more than they need to serve their purpose" (#Participant 5).
+Employing a mixed-methods approach, the research combined quantitative data from structured questionnaires with qualitative insights from open-ended responses.
+Transparent practices, such as simplified disclosures and privacy summaries tailored to youths, can enhance understanding and trust, ultimately reducing boundary turbulence.
+Our quantitative survey used a 5-point Likert scale to compare mean responses across five key constructs, as shown in Fig.
+Research highlights that higher levels of digital literacy are associated with more cautious and thoughtful online behavior among youth, reinforcing the importance of education in promoting responsible digital engagement.
+In contrast, PDS exhibits a significant negative impact on DOC (β = -0.170; p < 0.01), leading us to partially reject H6 as the effect, though significant, is negative.
+These technologies undoubtedly have benefits, but they also pose serious problems concerning data ownership, privacy, and ethical use of personal data.
+Additionally, the crosssectional design only offers a snapshot in time, constraining our ability to make causal inferences and capture the evolving nature of privacy attitudes and behaviors.
+We employed the path-weighing structural model scheme in smartPLS which provides the highest R 2 values for dependent latent variables..

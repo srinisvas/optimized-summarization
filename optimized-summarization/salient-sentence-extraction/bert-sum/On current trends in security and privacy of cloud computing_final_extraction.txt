@@ -1,0 +1,20 @@
+One of the major components of the Cloud Computing is "Security and Privacy".
+2: Compliance refers to an organizations' responsibility to operate.
+The relevant references concerning Homomorphic encryption have been provided in References.
+Similar concerns exist for data migrated within or between clouds.
+#4-Identity and Access Management: Solution systems should establish clear & mutually exclusive ownership rights over data.
+The cloud has four different deployment models according to users' needs.
+Cloud Auditor: Protecting data while in use is an emerging area of cryptography with little practical results to offer, leaving trust mechanisms as the main safeguard.
+To provide these requirements the necessary security functions are integrity, confidentiality and, availability.
+Conclusion is presented as section 5.
+This is related to correctness and completeness issue.
+Encrypt the searching data terms and upload them to search engine of cloud service provider-SP.
+Threats to network and computing infrastructures continue to increase each year and have a tendency of becoming more sophisticated than ever.
+XACML focuses on the mechanism for arriving at authorization decisions, which complements SAML's focus on the means for transferring authentication and authorization decisions between cooperating entities.
+Electronic Discovery; involves the identification, collection, processing, analysis, and production of Electronically Stored Information (ESI) in the discovery phase of litigation.
+The essential characteristics are rapid elasticity, on demand selfservice, broad network access and resource pooling.
+# The capability to adapt cloud consumer privileges and maintain control over access to resources is also needed.
+While aspects of these characteristics have been realized to a certain extent, cloud computing remains a work in progress.
+The platforms are built on as a stack on each other.
+Key generation and storage is usually performed outside the cloud using hardware security modules, which do not scale well to the cloud paradigm.
+Data sanitization also applies to backup copies made for recovery and restoration of service and residual data remaining upon termination of service ..

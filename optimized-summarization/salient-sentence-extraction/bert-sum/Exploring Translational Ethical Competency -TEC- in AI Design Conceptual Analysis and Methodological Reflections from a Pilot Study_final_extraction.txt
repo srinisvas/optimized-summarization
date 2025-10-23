@@ -1,0 +1,21 @@
+His mental model was following a kind of applied approach.
+Describe how you would go about developing this tool.
+They also find that nearly half of schools do not offer any computing-related ethics course.
+The fourth interview was conducted with a biomedical engineer who works as a faculty member at a research university.
+For example, a 2023 executive order signed by U.S.
+President Biden acknowledges that AI "holds extraordinary potential for both promise and peril" and "Harnessing AI for good and realizing its myriad benefits requires mitigating its substantial risks.
+They have previous or current experience translating AI ethics principles into AI systems design.
+When the same survey was fielded in early 2023 , results showed 91% of Americans had heard of "AI" and 35% had read or heard a lot about recent AI developments.
+TEC supports what Hagendorff calls a "situationsensitive ethical approach" to AI.
+for example, propose incorporating AI ethics in machine learning courses by having students identify and discuss ethical issues involved with technical course topics such as logistic regression or neural networks.
+You are given the class' online textbook in PDF format to use to fact-check student essays.
+Our approach is more deductive than inductive.
+These applied ethics disciplines with a much longer history than AI ethics have long grappled with concerns about autonomy , responsibility - , bias , and privacy ,.
+The remaining two-autonomy and explicability-were concepts he had given less thought to in his experience.
+We developed four case studies we can pilot test, based on the AI systems design projects that this project PI's machine learning capstone class worked on.
+You are the lead designer for a new educational technology startup company that aims to develop AI-enabled tools to assist students with their studying and assignments.
+As we have shown above, the evidence that AI has, over the course of the past ten years, become a present and impactful facet of daily life is abundant and undeniable.
+After the case studies were generated, we drafted a few follow-up questions we would ask during the elicitation process and final conceptualization questions.
+But as AI developments have spurred excitement and innovation, so too have the raised considerable concerns among experts as well as the general public.
+First, given that existing AI ethics guidelines and standards are largely nonbinding, there is a lack of empirical evidence regarding the extent to which practicing engineers integrate them into their daily work and whether these guidelines effectively influence engineering decisions.
+In response, AI ethics researchers have shifted focus to study how 'ethical AI' can be achieved through policy , governance , technical tools , , and learning from real-world examples , ..

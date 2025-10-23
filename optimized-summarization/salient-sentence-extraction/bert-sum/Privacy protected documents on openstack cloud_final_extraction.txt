@@ -1,0 +1,18 @@
+The action plan for future aims to explore the scope of improving the performance of private cloud by adding more nodes to cloud infrastructure and to design and setup a hybrid cloud model for sharing of sensitive data with public cloud for publishing in outside world.
+It Compute Node (Server2) Installation
+This node runs a hypervisor to create virtual machines.
+• • OpenStack is defined as a collection of independently developed software projects, glued together.
+Each service has an HTTP REST interface to communicate with OpenStack clients.
+presents a systematic clustering method based on k-anonymization technique to minimize the information loss while at the same time assuring data quality.
+The legislation regulates health care groups, organizations or businesses, on how to use and disclose privacy critical data.
+To address such issues, a privacy rule was established in the United States which constitutes a comprehensive federal protection for individual's medical records and is known as Health Insurance Portability and Accountability Act (HIPAA).
+Beyond API processes, some services like Cinder, Glance, and Horizon have additional processes on the controller node.
+Then conclusion and future work are presented.
+Nevertheless, these acts are become outdated and inapplicable to the new scenarios, where an entirely different relationship has been evolved between users and providers.
+Many anonymization applications already developed in non cloud applications.
+Private c l o u d solution is useful for organizations to implement their own privacy policies.
+The rest of the paper is organized as follows; Section 3 describes the proposed method.
+So here this paper discusses about private cloud implementation using OpenStack software, in which three node architecture is used for implementation.
+OpenStack is open source software designed to provision and manages large networks of virtual machines, creating a redundant and scalable private cloud computing environment.
+L.Sweeney propose k-anonymity protection model for protecting privacy.
+When trying to publish health data, custodians of such data encounter inevitable hurdles in connection with privacy..

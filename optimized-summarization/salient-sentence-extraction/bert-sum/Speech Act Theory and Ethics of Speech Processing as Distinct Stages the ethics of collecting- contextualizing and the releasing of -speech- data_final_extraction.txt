@@ -1,0 +1,16 @@
+Illocutionary force-content distinction clarified (a) the nature of ethical issues that arise in the case of speech processing, (b) the distinctness or uniqueness of the ethical issues relating to the speech data and (c) also showed the stagewise ethical issues arising in the case of speech processing.
+Who owns the agent's data? One of the main epistemic threats that deepfake technologies give rise to is that it creates a situation where people frequently could end up in forming false beliefs.
+Another example could be cited from the discussions regarding Artificial General Intelligence (AGI) which is much different from narrow AI.
+Consider the 6th and 7th features.
+One way to understand the intrinsic relation is to say that the physical properties of a speech/sound is unique and are not identical to any other speech/sound.
+the illocutionary act is "Please, I would like to talk to you." One important point to be noted here is that the different types of contextualization or processing of data are possible depending on the requirements at different times.
+Whether the illocutionary content of a speech act belongs to a speaker or not may be a contentious matter Searl and Vanderveken bring clarity into the notion of illocutionary force providing the following features of illocutionary force.
+Regarding the collection of speech data, the significant question would be the following.
+It is through trial and error; we learn which moral rule is to be adopted in a specific situation focusing on a particular act.
+How ethical is it to release a speech act whose illocutionary force is nothing but a creation? Taking the entire range of speech processing modules as a whole into account, we develop an ethical framework for speech processing.
+To address the input-confined ethical issue, the user needs to be made aware of the intent of the application of a particular deepfake technology in the given scenario.
+In addition, there are ethical issues concerning the very activity of speech processing itself, and speech processing holds an intermediary relation between inputconfined relation and output-confined relation.
+Can the speech processing systems be virtuous? None of those features of the illocutionary force have any actual speaker as a source.
+As the speech processing domain is a new phenomenon that a moral agent faces, the adoption of moral rules governing any activity relating to speech processing is indeterminate and unfamiliar to any moral agent.
+The illocutionary forcecontent distinction is to be linked with the data-information distinction.
+Does the ethical problem fall in the processing stage?.

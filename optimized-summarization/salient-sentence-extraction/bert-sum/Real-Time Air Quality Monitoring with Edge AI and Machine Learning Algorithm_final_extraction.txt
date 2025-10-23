@@ -1,0 +1,23 @@
+The role of AI in this system is to enhance real-time air quality monitoring by utilizing machine learning models, such as Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), for accurate pollutant detection, while Edge AI reduces latency and bandwidth consumption.
+These local model updates are then combined across all devices to improve the global model.
+Data processing, analysis, and prediction take place in the hidden layer.
+The results show significant advantages over standard cloud-based systems, emphasizing the efficiency and accuracy of the suggested technique.
+In a centralized system:
+T Central =T Transmit + T Process + T Return ()
+ IoT sensors outfitted with NVIDIA Jetson devices collect and evaluate air quality data locally.
+Despite useful insights from existing studies, there are still several gaps in air quality monitoring.
+This ensured that sensitive data stayed protected as shown in Table .6.
+The reduced latency can be mathematically represented as follows:
+ However, many systems continue to rely on centralized processing, limiting their real-time capabilities.
+The investigation found a substantial association, with an average correlation coefficient of 0.92 for all contaminants and locations.
+The graph depicts a steady increase in model accuracy, starting at 2.5% in the first month and reaching 15% by the sixth month.
+This new strategy not only increases data processing speed and accuracy, but also protects data privacy and lowers operational costs.
+Implemented across 50 urban sites with varied pollution levels, the technology reduced latency by up to 75% and bandwidth use by 60% when compared to typical cloud-based solutions.
+Detailed comparisons and validations against common reference monitors are supplied to back up these findings.
+The use of federated learning guaranteed that raw data remained on local devices, thereby improving data privacy-a vital factor typically ignored in conventional systems.
+This integration improves the efficiency and effectiveness of air quality monitoring, addressing important environmental and public health issues.
+Bandwidth utilization was tracked to determine the system's efficiency.
+Optimizing the federated learning framework to handle more frequent updates and larger datasets may also enhance system performance.
+Air quality monitoring is critical for protecting human health and the environment, particularly in metropolitan areas where pollution levels can change dramatically.
+Scalability in decentralized systems, particularly with regard to accuracy across numerous sites, has also received little attention.
+These enhancements highlight the system's ability to provide realtime, accurate air quality data while reducing operational expenses and maintaining data privacy..

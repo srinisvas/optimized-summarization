@@ -1,0 +1,18 @@
+As we noted, the ethics and values that must be followed during the design, development, and implementation of AI are the general principles that are reiterated in the chapters.
+Certification systems administered by independent agencies can promote transparency.
+5) 6) • • • • • • 3) Data Agency: To maintain people's ability to control their identity, AI creators must teach people how to access and share data securely.
+The Internet of Things has made smart cities, smart homes, pollution control, energy saving, smart transportation, and smart industries smarter and smarter.
+Still, other questions may be relevant to ongoing Internet of Things and Artificial Intelligence projects.
+The population's quality of life is often an objective in IoT initiatives.
+The launch of OpenAI ChatGPT has not been discussed with society before, causing senseless fear in society and directly affecting education and professional careers.
+The increasing use of AI will significantly change humanity.
+Furthermore, they must be designed to protect natural resources and our environment.
+Additionally, ensure that operators have the necessary skills before starting to operate a system.
+The IEEE EAD guide (conceptual framework) has three pillars that reflect anthropological, political, and technical aspects.
+Well-being seeks answers to how AI impacts human wellbeing by assessing, understanding, measuring, observing, protecting, and improving.
+Accountability: AI must be developed and implemented to provide an unambiguous basis for all choices.
+Finally, it is possible to identify the most pressing "issues" and "recommendations" related to AI design using the process outlined by IEEE EAD.
+Human Rights: Human rights will be respected and protected through the creation and operation of AI, which is recognized internationally.
+The policy demonstrates that well-functioning AI policies benefit the public interest on several significant issues.
+7) Awareness of Misuse: AI creators must protect themselves against any potential risks and prevent AI from being misused.
+Entities operating the Internet of Things (IoT) must establish documented regulations to regulate how the IoT should be managed..

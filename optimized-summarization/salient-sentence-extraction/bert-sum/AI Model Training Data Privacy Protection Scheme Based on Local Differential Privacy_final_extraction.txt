@@ -1,0 +1,23 @@
+The scheme is designed to protect the privacy of data in both data collection and training phases of AI models, especially in distributed environments where data is generated and processed across multiple devices.
+= 1 2𝑏 exp (- |𝑧| 𝑏 ).
+Step 1: generate Laplace noise.
+Additionally, missing values must be handled, either by imputing them or removing incomplete records.
+The steps are as follows:
+ The model is iteratively updated using this noisy gradient until convergence.
+This ensures that data remains protected during transmission and storage, effectively preventing privacy breaches.
+2017) explored LDP in the context of federated learning, providing privacy guarantees at the client level.
+Additionally, data undergoes preprocessing to ensure it aligns with the algorithm's requirements.
+Initially, the privacy budget is set to a conservative value 𝜀 0.
+However, these techniques are computationally expensive and do not scale well to large, distributed datasets.
+This decentralization significantly reduces the computational overhead and the bottleneck associated with central processing.
+By introducing an appropriate amount of randomness into the data, it becomes difficult for attackers to accurately infer the data contributions of specific individuals, thereby protecting individual privacy.
+This makes it particularly suitable for edge computing or IoT applications, where both privacy and computational resources are limited.
+Additionally, this approach can be extended to protect model training by applying noise to the gradients during the learning process, thereby preventing adversaries from inferring sensitive information through model updates.
+The most common method is to add random noise during data queries or publication processes.
+This creates a significant challenge for AI systems that require both high efficiency and robust privacy protections.
+With the widespread adoption of artificial intelligence (AI) in various industries, from healthcare to finance and smart grids, the importance of data privacy has become more pressing than ever.
+In the data preparation phase, the privacy budget and noise distribution parameters are chosen.
+Protecting the privacy of this data is crucial, not only for legal compliance but also to maintain trust between users and AI systems.
+Dynamic adjustment of 𝜀 can be defined as:
+𝜀 𝑡 = 𝜀 0 • (1 + 𝛼 • 𝑐𝑢𝑟𝑟𝑒𝑛𝑡 𝑚𝑜𝑑𝑒𝑙 𝑎𝑐𝑐𝑢𝑟𝑎𝑐𝑦 𝑡𝑎𝑟𝑔𝑒𝑡 𝑎𝑐𝑐𝑢𝑟𝑎𝑔𝑦 )
+Where 𝛼 is a tuning parameter and 𝑡 denotes the iteration step..

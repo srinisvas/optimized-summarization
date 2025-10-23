@@ -1,0 +1,22 @@
+From a privacy-perspective, both the design of a new cloud system as well as the evaluation of an existing system are complex tasks since privacy is an overarching concept that needs to be embedded in different levels of such a system, for instance regarding data sets, data flows and access control.
+= |G| i=1 = |R| i=1 = (1/|U |) * |U | i=1 |U | j=1,i =j |R i ∩ R j | |R i ∪ R j |(8)
+ Yet, they do not translate their strategies to lower-level metrics.
+This information can easily be retrieved via available REST APIs.
+We also refer to Colesky et al.
+Resources further down in the hierarchy then inherit policies from resources higher up in the hierarchy.
+We first map the role assignment tuple (userGroup, permissions, resource) (see Section II) to Azure-specific entities, that is (securityP rincipal, roleDef inition, resourceScope).
+For this paper, proposing a data flow tracking mechanism is out of scope.
+Various approaches for designing privacy-aware systems have been proposed, for example risk-driven privacy requirements engineering.
+They also propose concrete evaluation criteria for encryption, certificate quality and data separation.
+With this approach we aim at enabling cloud users and auditors to detect deep-rooted privacy problems in cloud systems.
+Arrows can be read as is composed of and are denoted with the composition's multiplicity.
+Yet, we see a second way to use these metrics in the monitoring of the metric values to detect significant changes over time (without defining thresholds).
+Further metrics used in role mining include δconsistency and minimal noise which evaluate the minimality of role assignments rather than a privacy quality.
+Saving these logs can present a privacy problem in itself, e.g.
+if the access to logs is not properly managed-resulting in mixed duties or a data lake.
+We would, however, argue that data lakes indicate a flawed system design where data sinks should be split up even if a data broadcast smell cannot yet be detected.
+Also, we envision cloud users who apply our metrics to define custom, expected thresholds.
+Cloud services are often used as backends for collecting and processing data in commercial service offerings.
+We follow a common approach to the detection of smells: First, a metric m(e) This approach is limited by the fact that a user may have multiple role assignments (assigned directly or indirectly via user groups) which provide the necessary permission for the operation.
+Such a measurement would allow a statement about the extent to which privacy strategies are being respected in a system at runtime.
+Instead we detect a smell either on the higher or on the lower end of a metric..

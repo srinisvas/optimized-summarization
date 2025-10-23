@@ -1,0 +1,22 @@
+This article addresses key challenges in ethical AI and aims to:
+Propose a unified system for monitoring AI outcomes in line with the EU AI Act and emerging global regulations.
+• If cross-references are weak, human oversight is required.
+Ontological blocks translate ethical concepts into structured, quantifiable forms.
+Goodall advocates for programming rules that minimize harm during unavoidable accidents.
+• FAIR principles enhance discoverability, usability, and scalability.
+These modular units enable transparent evaluations across diverse ethical contexts.
+This creates a personalized, behavior-informed investor classification framework.
+Lack of explainability can erode trust, particularly in lifecritical applications.
+The proposed structure is simple: a primary concept paired with a binary ethical qualifier (e.g., good or bad).
+Transparency: Promotes understandable, open AI processes AI Application Areas: Domains where ethical principles are applied.
+They include:
+Fairness: Prevents bias and ensures equitable treatment.
+The article is organized in five sections: Introduction (Section I), background (Section II), literature review (Section III), methodology and discussion (Section IV), then includes conclusion and recommendations (Section V).
+• Responsible Research and Innovation (RRI) offers a governance model that aligns AI with societal values -.
+• Ontological blocks, drawing from Semantic Web standards , , provide scalable representations of principles like non-maleficence and equity.
+• The EU champions "ethics-by-design," embedding ethics at the development stage.
+examines scenarios like the trolley problem, calling for transparent ethical decision-making in critical moments.
+As AI continues to integrate into society, the task of addressing these ethical dilemmas grows increasingly complex.
+Another pressing issue is trustworthiness.
+Integrating ethical AI into legally binding decisions requires acknowledging that legal standards vary significantly by context.
+Reliance on large language models (LLMs) or external tools to infer missing relationships, introducing potential biases..

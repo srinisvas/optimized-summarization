@@ -1,0 +1,14 @@
+Indeed, we suggest that boycotting by corporations may sometimes be morally required, and this obligation challenges the plausibility of certain minimalist conceptions of CSR.
+Although value-driven consumerism has generated significant recent discussion in applied ethics, that discussion has focused almost exclusively on the consumption choices of individuals.
+Index Terms-social media, hate speech, CSR, boycotts, ethics In June 2020, numerous companies that advertise on social media platforms withdrew their business, citing failures of the platforms (especially Facebook) to address the proliferation of hateful content.
+Many were inspired by the #StopHateForProfit campaign initiated by the Anti-Defamation League.
+These events invite reflection on an understudied topic: the ethics of boycotting by corporations.
+Naval Postgraduate School Monterey, CA, USA bjstraws@nps.edu
+Abstract-Debate over the ethical obligations of technology corporations has recently extended to the obligations of those who support them financially.
+But does this injustice generate an obligation for advertisers to cancel their contracts? However, we argue that boycotting by companies raises additional considerations and provides a helpful test case for various positions on corporate social responsibility (CSR).
+As this paper underscores, value-driven consumerism by business corporations complicates these issues and invites further research.
+Yet, boycotting by corporations may also threaten democratic forms of political contestation, by inhibiting deliberation and equal participation in the resolution of political controversies.
+We begin by arguing that, at least through June 2020, Facebook was involved in injustice significant enough to raise questions of complicity by its advertisers.
+We propose preliminary principles for the ethics of boycotting by corporations; indicate how these principles relate to different CSR paradigms; and show how these insights contribute to efforts to improve the accountability of technology corporations.
+This observation reveals the limits of corporate citizenship conceptions of CSR, which encourage corporations to be forceful activists for social change.
+Recent views on the ethics of boycotting by individuals hold that boycotts are a generally permissible form of political expression and likely morally required under certain conditions - ..

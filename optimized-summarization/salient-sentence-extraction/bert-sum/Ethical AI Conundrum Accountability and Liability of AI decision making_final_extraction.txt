@@ -1,0 +1,20 @@
+From AI-assisted healthcare at AIIMS Delhi to autonomous vehicle trials, e-commerce recommendations, data privacy concerns, and algorithmic banking decisions, the common thread is the imperative of transparency, fairness, and human oversight.
+Manufacturers should bear responsibility for defects in hardware or software that result in accidents.
+Customer Education: Launch awareness campaigns to educate customers about how AI-driven credit scoring works, emphasizing its benefits and limitations.
+Regulatory frameworks need to be adaptable to accommodate advancements in AI while maintaining a focus on safety and ethical considerations.
+The journey towards AI accountability and liability encompasses diverse domains, each necessitating tailored approaches.
+These problem statements highlight the multifaceted challenges in regulating, policy making, and governing AI technologies.
+This involves adhering to data protection laws, promptly informing affected parties, and taking corrective measures.
+Regularly monitor and update algorithms to ensure accurate and relevant suggestions.
+The proposed solution space for the five case-study examples are explained in this section.
+Mandate rigorous testing procedures that demonstrate the vehicle's ability to operate safely in various real-world scenarios.
+This promotes responsible usage and sets realistic expectations.
+The development of comprehensive guidelines, explainable AI models, user education, appeals mechanisms, and ethical safeguards emerges as pivotal solutions.
+Insurance Regulations: Collaborate with insurance companies to develop insurance policies tailored to autonomous vehicles.
+Establishing a regulatory framework that outlines the permissible and prohibited uses of AI to prevent harmful or malicious applications requires careful consideration.
+User Preferences and Feedback: Allow users to customize their preferences and provide feedback on recommendations.
+Developing liability frameworks that clarify the roles and responsibilities of different stakeholders is essential.
+Public trust initiatives can enhance confidence in AI-driven banking practices.
+This can help in identifying patterns and addressing recurrent issues.
+As AI technology advances, there are concerns about job displacement and changes in the nature of work.
+Improving data quality reduces the chances of incorrect or unfair decisions..

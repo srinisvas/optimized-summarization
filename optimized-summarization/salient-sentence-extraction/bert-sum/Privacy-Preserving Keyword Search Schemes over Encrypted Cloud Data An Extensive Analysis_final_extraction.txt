@@ -1,0 +1,20 @@
+However, once the data is encrypted, the server cannot make a plaintext keyword search and it affects the efficient retrieval of data using keyword search from the cloud.
+Through this analysis, we present some valuable directions for future work.
+Section III discusses about PPKS.
+Authorized licensed use limited to: Kennesaw State University.
+There are several reports that confirm data breaches related to cloud servers, due to malicious attack, theft or internal errors.
+Downloaded on October 13,2025 at 18:43:32 UTC from IEEE Xplore.
+Among these compared schemes only two schemes and used multiple data owner system model.
+Table 1 summarizes the comparative study of each scheme.
+Companies such as Google, IBM, Amazon and Microsoft also provide ways for consumers to consume big data on demand.
+As a result, attackers who steal the secret key and perform illegal searches would be easily detected.
+Then, map a keyword to a value as an address used to locate the corresponding index vector.
+Big Data has rapidly developed into a hot research topic in many areas that attracts attention from academia and industry around the world.
+Storing and processing big volumes of data requires scalability, fault tolerance and availability.
+Many organization demands efficient solution to store, process, analyze and search huge amount of information.
+Cloud computing has become an unavoidable component for data storage due to its unlimited data storage capabilities, easy access and decreased costs.
+Users only need a single interaction with the server to get the data files they are interested in.
+From our analysis, we observed that evaluation of verifiability was missing except the scheme VPSearch.
+proposed a new approach using MIR-tree, it provides privacy of outsourced data, Wan et al.
+The authors implement VPSearch using Matlab and evaluate its performance over three UCI data sets.
+Trapdoor unlinkability-We should randomize the trapdoors (encrypted keywords) for protecting the privacy of data..

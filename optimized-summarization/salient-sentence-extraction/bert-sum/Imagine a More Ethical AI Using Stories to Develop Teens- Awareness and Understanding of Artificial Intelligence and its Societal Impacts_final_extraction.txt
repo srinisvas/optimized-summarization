@@ -1,0 +1,18 @@
+The program uses short stories, computer-based AI activities and multimedia design projects to develop participants' awareness and understanding of AI ethics issues, such as fairness, bias, privacy and transparency.
+It was really impactful for me.
+Several organizations (e.g., MIT Media Lab, ISTE, AI4All, etc.) have recently developed K-12 curricular materials to address this need [e.g., 7,8].
+Sixteen middle school students and 17 high school students participated in the two summer camps; 39 students participated in the ELA classes.
+We delivered all programs online, due to the COVID-19 pandemic.
+Many youth interact with AI-powered devices on a daily basis, but despite this frequent interaction, often don't recognize when they're interacting with AI or understand how it works.
+Artificial intelligence (AI) tools and technologies are increasingly prevalent in our lives.
+As one student stated, "This technology is actually used, like right now, today.
+We recruited summer camp participants through an on-campus STEM education partner.
+These open education resources are available for educators to use and customize for their own contexts (https://www.colorado.edu/project/imagineai).
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the NSF.
+We designed an interdisciplinary, modular AI ethics curriculum aligned with computer science and English Language Arts (ELA) standards that could be informative and impactful in different learning settings.
+The stories, which sparked an emotional connection to the different issues, were complemented by non-fiction texts and videos to ground the experience in current events.
+Some stories moved students to action.
+Our work thus far suggests that stories can play a powerful role in students' learning, heightening the personal relevance and emotional impact of AI in society.
+Students discussed stories with embedded ethical dilemmas, engaged with AI media and simulations, and created digital products to express their stance on an AI ethics issue.
+Similarly, CS educators can productively integrate stories to provide a meaningful context for considering the ethics of AI.
+It's kind of a reality." In response to Your Own Song, one student took action: "I turned off my suggestions on YouTube because I didn't want it suggesting stuff that I was watching.".

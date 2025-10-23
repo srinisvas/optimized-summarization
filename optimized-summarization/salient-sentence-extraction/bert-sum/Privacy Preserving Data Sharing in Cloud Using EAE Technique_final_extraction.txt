@@ -1,0 +1,20 @@
+In order to improve data security in the cloud environment, the EAE approach is used in the basic hash function to provide the hash value for encrypted data.
+devised a new ABE technique that safeguards user privacy when providing keys.
+Encryption, digital signatures, pseudo-random generators, and other applications use elliptic curves.
+It provides scalable resources across the internet on a dynamic basis.
+Which includes data access, interruption, interception alteration, illegal authentication, and fabrication? Section 5 concludes with a conclusion and recommendations for future work.
+Only if the user key's set of attributes matches the properties of cipher text can a cipher text be decrypted.
+Focuses on how to create efficient ABE schemes without the usage of a certifying authority using elliptic curve cryptography (ECC) techniques.
+proposed a novel key generation and cryptosystem that combines the GCD and LCM between in principal key-value pair and first arithmetic quasi attributes.
+Because this new computing technology encourages users to leave their sensitive data to cloud providers, security and privacy issues over outsourced data are growing.
+Only at the moment of data uploading has ECC-MA-CPABE fixed the attribute selection.
+= 𝑦 3 + 𝑏𝑦 + 𝑐
+(1) Elliptic curve attribute cryptography chooses a number 'p' from the range of 'r' for key creation.
+PHR allows the authenticated user to view the patient's data.
+The ECA encryption is to achieve improved data confidentiality.
+For storing cloud data, it is a space-efficient probabilistic data structure.
+Using Elliptical Curve Cryptography, which is a powerful and secure methodology for integrating and developing secure cloud applications.
+Furthermore, the suggested approach combines time and location features, allowing users to request data within the period and geographical parameters set by the involved parties, resulting in a finer-grained accessibility control process.
+Section 4 contains the details of the experiment.
+The suggested encryption technique has the following key advantages over other techniques.
+The encryption and decryption are carried out using the Elliptic Curve Attribute Encryption/Decryption method and a simple hash function..

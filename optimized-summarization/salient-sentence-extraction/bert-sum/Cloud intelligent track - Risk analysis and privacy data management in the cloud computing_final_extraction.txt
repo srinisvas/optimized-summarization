@@ -1,0 +1,19 @@
+After the process of the Encryption in the privacy manager in the client side, the data is transmitted to the database of the cloud.
+This An integer or public exponent e, 1<e< phi where Gcd (e,phi) =1.
+• • Usernames, passwords, home addresses and credit card information --lax Web site security often allows hackers easy access of personal information.
+Millions of user accounts were compromised.
+Cloud computing is anywhere and everywhere.
+LastPass is a password management utility that locks all of your unique passwords behind one master password.
+Lets pick up any technical magazine or visit almost any IT website or blog and we will be sure to see talk about cloud computing.
+The most commonly know RSA algorithm is used.
+Where he gave a complete comparative study on few challenges towards Cloud computing.
+Map Reduces Technique uses different mappers in cloud to manage database.
+This research work carried out gives enhanced performance hence can be used for many applications like online banking, credit card transactions, where large and sensitive number of data sets need to be handled.
+This proposed intelligent cloud system can be implemented by setting a Eucalyptus cloud environment and by using Aneka tool to import java packages to resolve the issues.
+These operations are done in the management phase.
+Young Choon Lee, has addressed scheduling problem as a result he presented two sets of profitdriven service request scheduling algorithms which gives best results compared to other scheduling techniques implemented.
+If received data has more number of risks, then the data is rejected and request is sent again.
+To implement public-key encryption the best way to use digital certificates, which is basically a unique piece of code which says that communication is trusted, where certificate authority plays a major role in digital certificate verification.
+One way is to use authentication techniques with the help of user names, passwords or with secured credentials.
+A survey done in 2006 which says if a question posted to different professions as what is Cloud computing? For example in the below diagram, data A is segmented into six and they stored in the random location like (1, 1), (2, 9), (3,6), (4, 3), (4, 10), (6,8).
+Privacy manager deals with data storage and generating key for the data..

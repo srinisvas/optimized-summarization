@@ -1,0 +1,22 @@
+To address the identified security and privacy challenges in multi-tenant cloud environments, we propose a conceptual framework that integrates tenant isolation, secure communication, access control, and continuous monitoring using Google Cloud components.
+Tampering: Unauthorized modification of data or configurations.
+Techniques include:
+• AES-256 encryption for storage.
+Implementing zero trust reduces lateral movement across tenants.
+• It includes:
+• • • • • • • • • • 6.
+• • Known as ChaosDB, the vulnerability was resolved quickly by Microsoft.
+Section V analyzes threat models and real-world incidents.
+• Supports compliance with GDPR and HIPAA through auditability.
+This shared model enables service providers to maximize resource utilization and reduce operational costs.
+Because each tenant operates within an isolated GCP project, resources can be scaled independently.
+• Data encryption is essential at every stage-at rest, in transit, and in use.
+• Kubernetes namespaces and network policies for containerized workloads.
+When cloud providers recycle storage blocks or fail to securely delete decommissioned resources, residual data from a previous tenant may persist.
+Data packets transmitted across public networks can be intercepted unless Transport Layer Security (TLS) or Virtual Private Network (VPN) tunneling is used.
+These components may introduce vulnerabilities into the ecosystem if not thoroughly vetted and regularly audited.
+Tenants may become victims of resource starvation due to malicious tenants launching DoS attacks within the same infrastructure.
+An exploration of current mitigation strategies and recommendations for future cloud governance.
+Google Cloud provides features like VPC Service Controls, data loss prevention (DLP) APIs, and Customer-Managed Encryption Keys (CMEKs) to enforce tenant data boundaries and prevent accidental leakage.
+Encrypt all internal and external communication using VPN tunnels or service mesh frameworks (e.g., Istio).
+These vulnerabilities are further exacerbated by the dynamic and elastic nature of cloud environments, where virtual machines (VMs) and containers are frequently instantiated, migrated, or terminated..

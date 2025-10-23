@@ -1,0 +1,20 @@
+The benefit prospect of this research project is to provide an understanding of the need for secure artificial intelligence and data analysis systems for the decision-making process in the finance industry.
+Public data does not impose additional security requirements allowing unrestricted access.
+However, node failures can be overcome by replication of data across multiple sources.
+We have utilized the following databases: IEEE Xplore, ACM Digital Library, ScienceDirect, and Google Scholar.
+The utilization of large and diverse datasets has empowered financial institutions to address long-standing challenges in decisionmaking processes, creditworthiness assessments and fraud detection in banking sector.
+This study conducted a comprehensive review of the literature published between January 2015 and December 2023.
+A total of 157 articles were initially identified, of which 65 were selected, and of those 42 articles were selected for an in-depth review based on their relevance and impact.
+Referred to as knowledge mining from data, it is also known as knowledge extraction, data analysis, and data archaeology.
+This model is particularly effective in identifying complex patterns in financial data while providing clear explanations for its predictions.
+The best method to judge whether the XAI tool is reliable with the help of a survey.
+However, this integration should show difficulties in maintaining security to ensure integrity and data confidentiality.
+The evolutionary trajectory of Hadoop within the distributed computing paradigm has witnessed an evolution from a security perspective, mirroring between big data and public cloud systems necessitates strategic response to mitigate risks.
+The challenge of protecting the mappers and data within this framework revolves around ensuring that the tasks assigned to individual mappers are executed securely without compromise, providing significance to the consideration of untrusted or malicious mappers The increasing reliance on complex algorithms in financial decision making has raised concerns about transparency and accountability, as highlighted by Pasquale.
+These algorithms streamline the automation of underwriting and the assessment of client creditworthiness within the mortgage industry.
+Research benefits from the insights gained about explainable artificial intelligence (XAI) and mining techniques that allow businesses to optimise their operations with explainability and resource allocation.
+The most common and easiest encryption for data processing that mimics attribute-based data security encryption that allows the user to access only if they meet the authorization access condition.
+The research effort aims to fortify the foundations of data-driven operations.
+The role of efficient computing technology for algorithm selection and robust storage capabilities cannot be overstated in this context.
+This review paper explores the existing gaps in maintaining data security during processing with the help of XAI and data analytical technology within the financial industry that lead to data breaches during information storage and processing.
+The insights provided in this document are beneficial for all future research that is carried out in this field, as XAI also has the ability to predict future attacks..

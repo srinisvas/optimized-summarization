@@ -1,0 +1,22 @@
+To protect the privacy of personal data, the Laplace mechanism is used in conjunction with the fuzzy-based encryption to introduce noise into the dataset.
+This study has considered 5000 edges and 1,000 vertices.
+These days, information is gathered from several sources.
+The input variables' input layer.
+Since the public cloud cannot be trusted, data is encrypted before being stored.
+Given and , the total number of occurrences.
+In the conventional paradigm of cloud computing, edge devices often function as consumers.
+The work is organized as: section 2 gives detailed explanation on prevailing approaches.
+This suggests a loss of accuracy due to a compromise between privacy and accuracy.
+This becomes illegitimate if.
+When a system's uncertainty rises, the information entropy also rises.
+It retrieves files from the cloud, performs index lookups using hash trees, and forwards queries to the data provider.
+The weight of each edge is determined randomly.
+A fuzzy system's architecture typically consists of the following components:
+9 It means that there is better privacy protection, making it harder for an attacker to determine the exact position of the mobile user.
+The proposed system involves two main processes: one for the data owner and another for the data analyst.
+If participants in a group sensing task use their personal smartphones, the job requester's (server's) submitted sensor data may vary.
+This approach feeds fuzzy membership functions, which are then combined with fuzzy logic.
+As a result, in our approach, the information entropy , and the likelihood P of privacy in a location leaking can be characterized as
+To assess the uncertainties of fuzzy model as a variable, We made use of different fixed and user grids' area ratios.
+This is the request R that was sent to the data analyst.
+Greater noise tends to increase privacy but it also decreases the precision ..

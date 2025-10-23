@@ -1,0 +1,20 @@
+The bibliometric analysis of AI Ethics literature has pointed to a 3-phase AI Ethics development, namely incubation, making AI human-like machines, and making AI human-centric machines.
+We relied heavily on SCOPUS for data sources.
+This finding is important.
+In 1997, IBM's Deep Blue defeated the world chess champion Garry Kasparov.
+In the United States, the Defense Advanced Research Projects Agency (DARPA) also drastically reduced its AI funding.
+Meanwhile, keywords such as "explainability" and "trustworthy AI' popped up in 2020.
+AI was first coined in 1956 at the Dartmouth Workshop.
+In the following section, we will go through each phase and highlight the major developments.
+We sorted this information chronologically and further bifurcated the keywords based on product orientation and their associations with AI Ethics principles.
+It is highly probable that some non-English literature was missed.
+AI Ethicists may need to develop a framework to prevent Superintelligence from remotely happening.
+2012 marked a turning point for AI due to breakthroughs in deep learning and GPU technology.
+Public distrust of AI surged.
+Another challenge is the confluence of AI, robotics, and biotechnology.
+The relief in the 80s turned out to be short-lived.
+In the meantime, Deep Fakes exacerbated online misinformation and undermined basic human trust.
+In the 1990s and 2000s, new computer science disciplines flourished.
+Errors in VOSviewer could be carried into our final analysis.
+It is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable".
+AI broadened its scope to absorb many downstream research fields..

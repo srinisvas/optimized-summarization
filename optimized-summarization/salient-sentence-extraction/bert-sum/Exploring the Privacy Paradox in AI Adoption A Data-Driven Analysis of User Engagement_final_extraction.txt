@@ -1,0 +1,20 @@
+Displaying the distribution of users who trust or distrust AI privacy and their engagement with virtual assistants, highlighting the presence of a privacy paradox where some AI-distrusting users still rely on AI-powered assistants)
+The pivot table above illustrates the relationship between AI privacy trust and the usage of a virtual assistant like Alexa.
+A Chi-Square test was also conducted to assess statistical significance.
+• • • Age Group: Categorized into Gen Z, Millennials, Gen X, and Baby Boomers.
+Categories include Appliances, Electronics, Groceries, Personal Care, and Clothing, reflecting which product types users prefer when shopping online.
+China and India show a more balanced split, indicating that while privacy concerns exist, they do not strongly hinder AI adoption.
+The comparative analysis involved stacked bar charts, scatter plots, and box plots to visualize differences in AI adoption across countries, demographics, and behaviors.
+3) Does privacy distrust affect digital payment preferences? Despite these challenges, AI also offers tools to enhance privacy, such as automated encryption, real-time data leak monitoring, and compliance with privacy laws.
+The findings have important implications for regulation, privacy policies, and user education.
+Social media analytics show growing public distrust in AI, with demands for greater transparency and accountability.
+Country: Indicates where the respondent is from.
+Millennials are the leading users in all categories, making them the most engaged demographic in AI interactions.
+AI-powered chatbots are widely used even among those with privacy concerns, which suggests that other factors such as digital literacy, perceived necessity, or external influences (work, social trends, or accessibility) play a significant role in AI adoption.
+Research highlights a privacy paradox users continue using AIpowered services despite concerns over data handling and misuse.
+The diagrams illustrate generational and regional variations in AI adoption and privacy concerns.
+The remainder of the paper includes a literature review, dataset overview, methodology, results with interpretation, and concluding insights.
+[ Canada has the lowest distrust, suggesting strong confidence in regulations and data security.
+Gen Z follows as the second highest adopter of chatbots, reflecting their digital native status and comfort with AI technologies.
+The research process began with data preprocessing, where the dataset was cleaned by handling missing values and focusing on relevant features, such as AI_Privacy_No_Trust, AI_Tools_Used_Chatbots,AI_Tools_Used_Virtual_Assistant, Payment Methods, Age Groups, and Country of Origin.
+China presents mixed views, balancing high adoption with significant privacy concerns..

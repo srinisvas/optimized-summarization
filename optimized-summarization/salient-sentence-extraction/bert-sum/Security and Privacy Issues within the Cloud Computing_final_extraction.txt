@@ -1,0 +1,20 @@
+Audit: As the Cloud Service Provider (CSP) has the powerful control of the data, so it is probable for CSP to copy, move and edit the data in the procession.
+Moreover, users' privacy can be easily uncovered.
+If not addressed properly, security breaches may exist.
+z z z z Our paper takes discussions about this key issue and brings up some solutions.
+And we also proposed four effective methods to handle such issues.
+Problem between Google, Amazon and LoadStorm is one example.
+Cloud Computing is an evolving paradigm with lots of benefits.
+In order to achieve the integrated secure policy, such two policies will go through Cooperative Policy Evaluation (CPE) , which will evaluate and balance two policies.
+However, cloud allows users to obtain the computing power which exceeds their own physical domain.
+Section make the conclusion and point out future works.
+Users need to buy as they demand.
+If Cloud User chooses the disable state, then none of the sessions can use this role.
+The mechanism architecture is shown in Figure 1.
+However, there are several usage of data is against users' will, such as junk advertisement.
+Clouds have the computing capability which is equivalent to hundreds of thousands of computers.
+We will discuss the major privacy concerns in the following: z Such idea will cause the problem that customers' private information faces the risk of unauthorized access and retrieval.
+Role is a collection of permissions needed to operate certain functions in the cloud.
+Such case raises the concern about the theft and misuse of users' data.
+There have been several researches and works focusing on dealing with the security issues.
+z Lack of user control:.

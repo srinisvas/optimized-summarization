@@ -1,0 +1,21 @@
+In the proposed model, combining FL with XAI to create a model that balances privacy, interpretability, and diagnostic accuracy best for the improvement of validity and reliability in AI-driven systems of brain tumor detection.
+Backward Pass This may happen by either focusing on specific features or through approximation techniques.
+• Performance Metric: • • • A • Information is collected and stored locally at each participating site from MRI scans.
+However, the current approach has a number of shortcomings.
+The limitations will be addressed by further improving future work so that the system will further be extended.
+All such indicators are analyzed for seeing how the system performs in these varied situations.
+Federated Learning, which promises to offer privacy-friendly co-operative model training across institutions without sharing raw data, is emerging as a possible solution to these problems.
+• Heatmap Generation: The weighted feature maps are combined to form a heatmap H, which highlights the areas in the image most relevant to the class prediction.
+Despite these successes, the cost of transmission overhead makes it challenging to improve the real-time processing of federated models.
+To improve model generalization across different tumour types and MRI techniques, including bigger and more diverse datasets can help.
+• Explainable AI for transparent models using SHAP and LIME.
+Their "black-box" nature poses significant challenges even though they achieve high accuracy, especially in clinical scenarios where interpretability is a concern.
+This also shows how FL enables organisations to create cooperative models without disclosing private information.
+The data processing and process flow of the system are easily comprehensible from this flowchart.
+On top of that, real-time clinical integration will emphasize optimizing a system to fast, accurate predictions with detailed explanations able to fit a clinical workflow seamlessly.
+Despite advances in technology, brain tumors remain the most common cause of morbidity and mortality worldwide, and early diagnosis is key to effective treatment.
+FL allows organizations to train models locally on the organization's data, and no data is exchanged during the training procedure.
+Generalization Improvements: Some of the ways to overcome them include:
+-Enhance the diversity and stability of the data set to do well for other MRI scans.
+Addressing data heterogeneity and providing realtime complex explanations may help in creating adaptive and reliable AI models in real-world clinical settings.
+Federated Learning Performance: Reflects the ability of a model to train in a group setting but keep itself private..

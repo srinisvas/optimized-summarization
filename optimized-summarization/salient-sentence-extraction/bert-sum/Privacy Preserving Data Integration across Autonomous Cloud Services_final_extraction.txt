@@ -1,0 +1,21 @@
+Based on that observation, the goal of this paper is to enable the services involved in answering a query (such as the one formulated by Alice) to enforce locally their privacy policies (by applying their own access control models and data anonymization algorithms) while at the same time keeping it possible to link data subjects 1 (e.g., patients) across the different services.
+P0 P8 P15 P20 P23 P188 P201 P204 P209 P411 P512 P513 P514 sex m m null f f m null Service Selectivity Se(S i must provide for its outputted tuples.
+We consider a honest-but-curious environment.
+Order Preserving Encryption Scheme OPES.
+.x ≤ [P 0 , P 10 ], [P 5 , P 20 ] and [P 0 , P 1000 ].
+This example showcases an interesting challenge.
+Our model relies on two key ideas.
+2, then he will learn who of his patients have been tested positive for HIV (i.e, P 15 , P 201 and P 512 ).
+i≤ n has a set of inputs and outputs that could be privacy-sensitive or identifier attributes.
+i in H.
+Let us consider a healthcare information system which collaborates with multiple healthcare organizations including medical research institutes, hospitals, pharmacies, pharmaceutical labs, that may manage their data through autonomous clouds.
+Assume that S 1 and S 2 require a protection factor k = 3.
+These services access synthetic medical information of more than 30.000 patients.
+Edges e ij may be associated with constraints to filter relayed tuples.
+5 shows how the k-protection requirement is enforced on the edge e 23.
+After the invocation of S 2 , the extraneous tuples are filtered out.
+It cannot decrypt the encrypted identifier attribute values, as it does not have the encryption key.
+Obviously, Alice can answer her research questions by composing these services as follows (cf.
+i ≺ S j (i.e., S j is preceded by S She invokes S 1 with the desired city to get the identifiers of HIV patients.
+While this solution works well for a single organization or a federation of organizations, where trust relations have been well established, serious problems will arise when some data warehouses cannot be trusted by data sources.
+This step is repeated with the new R until there is no R with a selectivity greater than k..

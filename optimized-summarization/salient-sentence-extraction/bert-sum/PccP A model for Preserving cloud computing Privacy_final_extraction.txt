@@ -1,0 +1,20 @@
+The data which is being provided by the cloud as a result of the service is then sent back through the Privacy Preserved layer and the Address Mapping Layer to the Cloud user or consumer.
+i) The N-map-I maintains a Pool of Internet Protocol (IP) Addresses.
+An algorithm that may be used for performing the Match Logic has been proposed.
+These attributes are called Personalized Data Attributes (PDA).
+This encourages more users to access the cloud services thereby resulting in economies of scale.
+PrCt<key> : A key for privacy control to verify the privacy.
+Comparison is made to a list of already created USID's so that the generation of duplicate USID's is prevented.
+The proposed model solves both the problems.
+The tuples include the various TPC's along with the Boolean functions associated with the PDA's.
+For different services being availed by the user different USID's will be generated.
+A method based on information privacy is proposed to implement this Privacy Check.
+In the achievement of the above objectives Cloud Service Providers are constrained by the creation, maintenance and operation of too many servers at multiple locations, time to transition among them based on certain legal and trust issues.
+If a match is found then the ID is simply discarded and a list of discarded ID's is updated.
+id> : An identity with Privacy Leakage which should not be considered for further use.
+The functionalities of mapping the network addresses and user IDs ensures that the user is able to feel a greater amount of control over his identities.
+The USID whose privacy has to be checked is denoted as the argument id, ArG<id>.
+If the responsibility of providing these services to the user is one task, the other important task is to ensure that these services are being provided while also ensuring the important features of privacy and security.
+This key is chosen such that it is unknown to the cloud service provider and it is selected from the PrK< All communication from / to the Cloud at the Identity Utility Interface(Id-U-I) occurs using the OTIP address.
+Maximizing individual user control, creating anonymous services for individual users, creating facilities for the use of multiple identities and limiting identity information and authentication to high level transactions are the privacy issues which have to be guaranteed for an individual to feel that the privacy of information submitted to the cloud is ensured.
+Various types of services are currently being provided on the cloud which includes Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Component as a Service (CaaS) etc..

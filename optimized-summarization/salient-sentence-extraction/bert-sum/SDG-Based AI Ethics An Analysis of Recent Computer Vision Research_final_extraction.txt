@@ -1,0 +1,20 @@
+While it cannot be stated that this is a measure of Computer Vision (hence AI partially) ethical impact -we should analyse the bunch of papers more in depth and understand the extent to which their content can contribute to the achievement of SDG targets -we believe this analysis reveals at least the extent of coincidence between Computer Vision research scope and the scope of SDGs.
+They analysed 819 publications.
+Overall, our investigation covers a temporal window ranging from 2018 to 2022.
+for Society, Economy and Environment.
+Particularly, the increase was observed in SDG3, SDG11, SDG12, SDG13, SDG14, SDG15, SDG16 (Fig.
+An Ethics that takes meaningful account of both humans and nature as an inseparable and interconnecting parts.
+presented a benchmark dataset for AI projects addressing SDGs.
+The SDGs that have low impact are SDG16 (4.27%), SDG4 (2.10%), SDG8 (1.62%), SDG7 (1.43%) and SDG10 (0.67%).
+Key Computer Vision functions are detection, recognition, classification, prediction and more recently image and video generation either starting from visual or text data.
+The total number of papers considered for CVPR conferences is 4893, specifically 1466 in CVPR2020, 1661 in CVPR2021 and 1766 in CVPR2022.
+This has made the European conference nearly the same size as the older and prestigious US-based conference.
+They considered several main areas of AI, namely Knowledge Representation, Natural Language Processing, Computer Vision, Machine Learning, Automated Reasoning.
+In parallel, the idea of Artificial Intelligence for Social Good is gaining traction within information societies, considering the potential of AI to address social problems effectively.
+In the late 1970s, the so-called Ecological Ethics was defined, to which numerous important contributions were added, such as the Deep Ecology and the Responsibility Principles.
+These progresses require to consider this technology with respect to its ethical impact, particularly on human rights, sustainable development, and planet earth.
+Unfortunately, their research was of limited size: only 200 papers were analysed.
+In general terms, AI systems must be as transparent, explainable, safe, robustness and reliable as possible and must also have clear evidence of trustworthiness and regulatory accountability.
+In our research we analysed the ECCV2018, ECCV2020 and ECCV2022 editions.
+Impact of CV on the SDGs has improved due to the increased use of CV in real applications over the years.
+We did not observe any substantial difference between ECCV and CVPR..

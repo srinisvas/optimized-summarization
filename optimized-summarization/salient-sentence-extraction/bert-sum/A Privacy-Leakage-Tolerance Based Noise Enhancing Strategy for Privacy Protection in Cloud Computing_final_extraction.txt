@@ -1,0 +1,24 @@
+In this strategy, we investigate the evaluation on real privacy leakage risk under existing noise obfuscations, and present the creation of noise generation set to manage noise generation processes.
+d [ i i i (2)
+ C * C 1 * x i i y x i x x x x y x 2 x 2 y x 1 x 1 y x R ¦ (7)
+ i i y x * 1 * ( 1 (9)
+ ¦ N i D d i N ) d , (Q f D ) i i y x i x R ¦ u u ) ( Anonymity or proxy networks need service provider's cooperation to enable such access.
+This model can be presented in two aspects.
+For example, in complex cloud eco-systems, various service providers could cooperate together to pursue powerful and cost-effective services.
+When final requests' occurrence probabilities are about the same, service providers cannot distinguish which ones are real ones based on occurrence probabilities.
+The remainder of the paper is organised as follows.
+It is built on the computing facilities at Swinburne University of Technology.
+Noise obfuscation is another widely adopted method by covering the characters of information and protecting private information.
+Due to the openness, malicious service providers may exist in these environments.
+That is PTNCA described in Algorithm 1.
+SwinCloud is a cloud computing simulation environment.
+Therefore, customers' privacy needs to be protected without involving service providers.
+Hence, we can get:
+) q ( f d ], n , 1 In the worst cases in terms of cloud privacy protection, customers may eventually lose the confidence in and desire to deploy and utilise cloud computing in practice.
+PPDM reveals a view of privacy leakage in the minutiae.
+In this section, firstly, we plan to introduce the Privacyleakage-Tolerance based Noise Injection Model (PTNIM) to support PTNES.
+As introduced before, for cloud customers, the requirement for privacy leakage risk is necessary to guide service processes by cloud customers.
+And we use n m C to denote the number of n- combinations in a set with m distinct items.
+Based on equation ( 6), D' y is from D-D x with sorting by cost evaluation.
+However, these customers often have concerns about whether their privacy can be protected when facilitating their IT services in cloud environments since they do not have much control inside cloud.
+Some of these service providers could record service data in cloud service processes about a customer and then collectively deduce the customer's private information without authorisation..

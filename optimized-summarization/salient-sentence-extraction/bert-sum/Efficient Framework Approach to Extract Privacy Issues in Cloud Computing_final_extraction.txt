@@ -1,0 +1,20 @@
+It is the process of deleting of personal data at the end of the retention period and to ensure that the personal data is destroyed and is not available to another cloud user.
+Many cloud providers comply with this framework, ex: Google, Amazon, HP etc.
+b) Cloud computing has four deployment models.
+By taking the reference from all the above policy frameworks following privacy principles have been extracted.
+Private Cloud: In Private cloud, infrastructure is used by a single organization.
+The cloud provider should establish transparent policies to customer so that customers can easily understand them.
+The concept of privacy varies widely among countries and jurisdictions.
+This change leads to a number of privacy concerns to be raised.
+It has-been defined by NIST, as the following: "Cloud computing is a model for enabling convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction".
+Offending and violation of privacy not only affects users but also cloud service provider because it maculates their credibility with customers.
+Storing data on the different location may lead to the unauthorized access.
+Cloud computing is a rising technology in the field of Information Technology.
+Whether the data is stored locally or on foreign land.
+Some of the privacy concerns had been discussed here and these are as follows:
+ Compliance: It indicates the list of applicable laws, regulations, standards and contractual commitments that govern cloud computing data.
+Breach simply means violation and infraction of data by the eavesdroppers.
+Such a framework and exploration can provide benefits to the all communities linked with cloud computing.
+It means that the data collection should be lawful and fair.
+In the present time the way of managing the data on cloud has been changed.
+This main focus of the paper is to find or extract major privacy issues in cloud computing..

@@ -1,0 +1,20 @@
+Different techniques and approaches to preserve the privacy of individuals are currently available, but the majority of authors in the state-of-art, have adopted them for two main reasons: to preserve privacy in structured medical data; and to protect against adversarial attacks.
+It is focused on image classification models.
+Articles following a specific de-identification or anonymization approach; PHI must be correctly documented and conformance statements must be clearly defined.
+A comprehensive protocol-driven review was conducted in three large databases (ScienceDirect, ACM, PubMed).
+Section 4 interprets the results obtained from the selected relevant papers.
+According to Feng et al.
+It combines secure multi-party computation and differential privacy to enable private multiple model prediction.
+Medical AI-driven research is striving for better solutions while keeping patients' privacy intact.
+However, seen from another point of view, through the presence of data regulation laws (HIPAA, GDPR, CCPA, etc.) These issues are part of the author's future plans.
+Another preferred solution is distorting all or partial facial features using an image de-facer program.
+Meanwhile, Santos & Rocha mentioned the problems of content-based, network and DOS or DDOS attacks during data preparation stage.
+Protecting demographics and diagnosis codes is important considering the possibility that they give to researchers to conduct medical studies.
+From the final analysis were excluded duplicates and:
+ This is performed by splitting the model into client side and server side respectively.
+Despite the fact that they have reviewed encryption and anonymization methods applied to general healthcare data, their study states that techniques like hiding a needle in a haystack, attribute-based encryption access control, homomorphic encryption and storage path encryption are also present.
+DICOM de-identification solutions need to be evaluated and checked for quality before being deployed, as well.
+A set of direct identifiers that can be found in images and should be de-identified are specified by HIPAA privacy rules.
+A seven-recommendation approach was formulated by the authors to guide future open healthcare data sharing initiatives.
+In addition, it is often difficult to find the conformance statement itself because vendor's model and SW version information are removed by mistake during image submission.
+When dealing with the process of removing PHI from medical image data, we should be aware of the fact that various image modalities exist and different attributes might need different de-identification or anonymization strategies, such as randomizing, replacing, clearing or removing the attribute ..

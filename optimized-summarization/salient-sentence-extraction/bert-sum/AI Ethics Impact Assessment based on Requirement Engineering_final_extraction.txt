@@ -1,0 +1,20 @@
+From a survey of past AI ethical incident cases, we assumed that ethical risks are mapped to the interactions between the components of an AI system and the stakeholders directly or indirectly involved with the system.
+Approach 2: Impact assessment process.
+The response period was set at one week.
+Companies are also beginning to implement principles into practice.
+The Canadian government has issued guidance on Automated Decision-Making and provided a tool to assess the impact of algorithms on decision-making systems.
+Take loan screening AI as an example.
+Q2-1 asks to fill in this blank from the explanatory text of the corresponding guideline.
+This makes it easier to consider measures such as technical solutions or operational measures.
+The participant answered that interaction ID 108 which is from user company to training data in Figure 5 were associated with the same risk as interaction ID 111.
+Through this approach, a practical model can be constructed by comprehensively expressing quality characteristics in the upper levels and preventing excessive embodiment in the lower levels.
+Multiple types of interactions may correspond to one AI ethical characteristic.
+However, these results are not sufficient for validation because the number of participants was too small, and the results are biased toward researchers with knowledge of AI ethics.
+The remainder of this paper is structured as follows.
+AI ethical risks include not only negative impact on AI systems and their stakeholders but also positive impact.
+We then visualized in the diagram the fairness issue and its causes.
+An AI ethics model is also expressed in a four-level structure.
+Objectives: For each risk presented in the analysis results, examine the validity of the interactions associated with that risk and test the validity of our assumption.
+As a method to implementing ethically aligned AI in software engineering, ECCOLA offers 21 cards in 8 themes based on IEEE's (Institute of Electrical and Electronics Engineers) Using the AI Ethics Impact Assessment, AI developers, providers, and users without expertise in ethical guidelines can assess ethical risks at each stage of the AI lifecycle, from planning to development, operation, and retirement.
+The risk chain model for assessing ethical risks has also been proposed.
+The second and lower layers are structured from Assessment Lists of the Trustworthy AI (ALTAI) ..

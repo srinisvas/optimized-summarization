@@ -1,0 +1,21 @@
+This study aims to explore data encryption and privacy protection technologies in cloud computing environments, focusing on the implementation and application of encryption algorithms such as AES, RSA, and homomorphic encryption, as well as privacy protection methods including data masking, differential privacy, and secure multi-party computation.
+Analysis shows that unauthorized access is the most common threat, accounting for 45%.
+The network environment utilized a 1Gbps Ethernet, connected through a Cisco Nexus switch.
+P i = D(K, P i ⊕ C i-1 )
+where ⊕ denotes the XOR operation.
+By implementing batch verification techniques, the throughput was increased to 500 proofs per second.
+This hybrid approach effectively optimizes overall system performance while ensuring a high level of security.
+Specifically, the Laplace mechanism and the exponential mechanism are implemented.
+The malicious behavior detection system successfully identified and blocked 97 out of 100 simulated attacks, with a false positive rate controlled to below 3%.
+No high-risk vulnerabilities were found in the penetration tests conducted using the Metasploit framework, and all known medium-risk vulnerabilities had been addressed.
+The test datasets included 1GB of structured data and 5GB of unstructured data.
+Furthermore, 31% of users indicated that they are unaware of how their data is being utilized.
+This protocol has been extended for application in attribute-based access control systems.
+The test results indicate that the joint credit scoring calculation for 1,000 users takes approximately 5 seconds, with a communication overhead of about 2MB per participant, as shown as Figure 5.
+For example, for phone numbers, partial masking is applied by replacing the middle four digits with asterisks; for ID numbers, the first six and last four digits are retained while the middle digits are replaced with asterisks.
+OpenStack was used to build the private cloud platform, deploying 20 virtual machine instances to simulate various cloud services and users.
+Additionally, man-in-the-middle attacks and data tampering have also risen, with increases of 23% and 18%, respectively.
+Security components included firewalls, an intrusion detection system, and a VPN gateway.
+According to the latest cybersecurity reports, the number of global cloud data breach incidents increased by 37% in 2023, with 78% of cases involving sensitive personal information.
+The decryption process is correspondingly represented as:P = D(K, C)The study employs a 256-bit key, combined with the CBC (Cipher Block Chaining) mode to enhance security.
+In the experiments, a scenario was simulated where three banks jointly perform credit scoring..

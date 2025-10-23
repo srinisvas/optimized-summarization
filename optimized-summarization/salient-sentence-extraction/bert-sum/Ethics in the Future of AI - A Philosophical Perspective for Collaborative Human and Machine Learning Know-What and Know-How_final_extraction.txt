@@ -1,0 +1,17 @@
+The opportunity of Kantian ethics in moral AI design and evaluation is therefore twofold (Fig.
+2) in the process of AGI creation and integration in human society: a priori transcendental by ethical attitude incorporation of Kantian morale (human agency) in the AI design loop -either by own intrinsic/default rules (as claimed by Anthropic AI) or an explicit learning of ethics by experts with reference to a library of Kantian Ethics; and a posteriori loop by experimental evaluation of AI systems by "AI Act" officers (human and artificial entities) by the use of established evaluation metrics and case studies.
+Let's argue on "normal" statistical scenarios.
+What is the main issue though? Trained GenAI could be used both, for creating (and hiding?) plagiarism, as well as for detecting plagiarism.
+In this sense, the current paper introduces the Entropy generalized views into the DIKW pyramid.
+Progressive Large Action Models building on agentic AI are re-defining also actions and risks.
+Therefore, our scientific challenge and proposed approach refer to: how can one manage and get everybody and everything around a mindful dialogue table with robust foundations and trustful outcomes? Or parallel education systems? Entropy of a random variable X quantifies its uncertainty of potential states or unpredictability of possible outcomes.
+Human Wisdom includes Learning, Reasoning, Understanding.
+The paper ends with a summary of reported work and future research directions in Section 6.
+As in any industrial revolution, what Science has proposed, and Engineering implements, becomes an object of Management with its implications (Performance, Costs, Risks, Governance).
+For Kant, we have an asymmetrical relationship, human-AIG/ASI, which will be maintained in the form of an "assistance relationship"; for Hegel, the relationship is symmetrical.
+However, while acknowledging RetractionWatch numbers based on papers retracted, the decision to do so could be based on fluid data, that increased heavily over time including difference in text, image and data generation, perplexity, susceptibility, validity measurements.
+The approach in avoiding systematic review is potentially influenced by current and past under development retractions and misconduct cases that are growing uncontrollably.
+While TTs use human judge, CAPTCHA decision is machinecontrolled.
+Generative Artificial Intelligence (GenAI) developments, successes and challenges are opening, with continuous business pressure, both opportunities and risks for the human society, with practical manifestations in our lives (e.g.
+in social media, education, industry and economy, healthcare, job market and regulations among main domains).
+In this case, evolving towards new moral patterns for society and new norms build on approved machine ethics that may become our ethical adviser..

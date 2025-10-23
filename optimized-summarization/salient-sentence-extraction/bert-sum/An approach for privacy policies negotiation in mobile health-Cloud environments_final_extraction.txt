@@ -1,0 +1,21 @@
+Then, to show the utilization of the extended approach, we have considered a real-world example of conflicting policies which shows how our extended solution can be used to resolve the conflict with three different privacy languages: P2U, XACML and S4P.
+As a future work, we intend to develop each stage of the approach, in particular the bargaining stage which constitutes a crucial step towards resolving conflicting privacy/ preferences policies in mobile health-Cloud.
+CP says CP will save medical data for at least 1 year.
+In , the policy contract is established using OrBAC.
+It is worth noting that in urgent situations when patient's life may be in danger.
+More interestingly, since Cloud-based mhealth apps are more and more popular among patients and most healthcare providers are switching to Cloud computing, it becomes necessary to consider this paradigm in recent privacy-preserving solutions.
+Section 4 describes our approach illustrated by a case study presented in Section 5.
+These policies must be made available to customers, and be understandable.
+TTP detects a conflict among Po.1 and Po.3 and check if the patient can be involved in the negotiation process (otherwise TTP is responsible for negotiation).
+This step has two main objectives: First, it indicates the degree of negotiation required.
+Thus, formal languages to express their privacy preferences are needed.
+As mentioned before, the trusted third party can recognize and "understand" numerous privacy policies.
+The entity to whom the policy was addressed.
+A subgroup of the DATA-GROUP group.
+The time period (days) for which data can be retained.
+In fact, it extends our previous patient-centric solution entitled Privacy-Preserving Approach for Mobile Healthcare (PPAMH).
+These policies should also allow customer (patient in our case) to have a maximum control over the data and processing.
+Some research works have considered negotiation during the development of their solutions.
+Furthermore, the m-Health systems offer innovative abilities, such as, indoor senior residents monitoring, outdoor monitoring and emergency rescue, which may have been very difficult to conduct in the past.
+Therefore, since Alain is an active actor he received the Cloud demand to save his data longer for statistical purpose.
+We consider the three following participants: 1).

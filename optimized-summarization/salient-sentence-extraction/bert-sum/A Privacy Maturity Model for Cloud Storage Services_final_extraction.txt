@@ -1,0 +1,18 @@
+We present the goals to be achieved in this research, as well as the strategies to be pursued to the contents of sensitive data in order to establish a level of effective privacy.
+( ii) Many of them, firstly, are regional or originated from statutory laws.
+Definition of methods Quite often these specifications are developed by companies that conduct external audit with the aim of analyzing whether a particular environment is in accordance with the requirements.
+The conformities do not meet all of the fields.
+Finally, based on the question (iii), currently there is still no formal agreement establishing a privacy level agreement between the service provider and client.
+At this time, we will build an architecture for a prototype of the proposed solution, make a schedule for implementation, and follow it;
+• Organization of the resources and Implementation Cloud computing offers consumers reductions as regard the costs of investment in IT infrastructure through its elastic provides features that enable computing power on demand, besides enabling heterogeneous environments, which cooperate with each other in real time.
+A fair example are the cloud storage providers which benefit by easily providing a high level of scalability according to the need of their users, and also provide their resources in environments outside their areas in which outsource their services.
+Privacy is a concept that varies greatly, is intrinsic to a particular country or jurisdictions cultures.
+The lack of a good backup policy or Data Loss in part of the file or in its encryption key can result in permanent loss of data, affecting its availability.
+Regarding privacy, the proposal will make use of the concepts defined in the model BSIMM-CP , which is facing the normative Compliance Policies and governance exercised by a particular service , identifying absences or flaws in Specifications relating to Personally Identifiable Information (PII).
+An example is HIPAA, short for Health Insurance Portability and Accountability Act, which is a standard in order to protect the health related data, ensuring privacy and fraud prevention.
+When the provider in question does not have a proper policy to control physical access to its internal resources, someone malicious can access sensitive client files, violating privacy , and this becomes more critical when this type of behaviour is not punished.
+Just below are listed the sub activities of this macro activity:
+• Gathering Data and Formulation of the Problem • Construction of Hypotheses and research • A Systematic Literature Review on various topics relevant to this work will also be performed.
+Our proposal aims to deepen the results presented by Silva et al of which are adherents compliances related to Privacy.
+As in , 15 security domains more applicants to cloud services were outlined.
+Mather et al proposed a model based on phases for the management of the Data lifecycle in the cloud, as illustrated in Figure 1..

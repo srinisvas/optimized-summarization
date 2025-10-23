@@ -1,0 +1,20 @@
+This approach necessitates a comprehensive and coordinated effort throughout the entire data lifecycle in GenAI, ensuring that the usage of data and the downstream distribution of model and derivative data are legally compliant.
+Novel web architectures such as SOLID and Consent Tagging aim to streamline consent acquisition.
+Without in-depth investigation, identifying such uses is challenging, underscoring the need for enhanced transparency mechanisms.
+Even when licenses are obtained, certain licenses mandate attribution to the original creators.
+They often emerge following data removal in response to relevant requests.
+Reliable Guardrails for Privacy and Copyright Protection.
+While this facilitated information democratization, it concurrently lowered barriers against unauthorized data use and piracy.
+It utilizes personal online datastores that are web-accessible, granting users control over their data and the flexibility to switch between applications.
+GenAI companies often deploy rudimentary safeguards such as keyword filters or prompt prefixes to mitigate privacy breaches and copyright violations 10.
+Machine Forgetting and Side Effects Mitigation.
+The legality of using copyrighted material in training GenAI models hinges on the specifics of each use case.
+Khan and Hanna highlight two predominant legal and policy dimensions-privacy and copyright-that are pivotal in AI training contexts.
+Such practices can perpetuate and amplify existing privacy and copyright issues embedded within the data.
+This uncertainty necessitates a careful, ongoing evaluation process.
+In light of this, we highlight and call for further research into the following directions.
+This challenge is primarily associated with Data Collection and Model Training Stages.
+This obscurity often leaves individuals oblivious to whether their personal or copyrighted data has been harvested for GenAI model training, thereby complicating the enforcement of their legal rights of consent modification and withdrawal.
+Each of these challenges can span across multiple stages, underscoring the interconnected and continuous nature of these issues.
+Such vigilance is essential to ensure that privacy and copyright protections keep pace with the advancements and novel exploitation methods in GenAI.
+While statistical models can forecast certain outcomes, such as the effects of data removal, these predictions are not always entirely accurate or comprehensive..

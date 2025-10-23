@@ -1,0 +1,20 @@
+Detecting these forms of data breaches is necessary in order to prevent more information from being lost, but doing so automatically on the side of the CSP can by itself be an intrusion to the customer's privacy ,.
+Following that, it looks for available hypervisors that match the requirement.
+First steps towards protecting this privacy and providing Data Leak Detection as a Service (DLDaaS) have been made ,.
+Enforcing separate hosts per customer is therefore one thing, ensuring different storage locations something entirely different.
+Instead, more often than not, they promote misconfiguration and thus less protected systems as systems tend to get too complicated and users become unable to cope with too many choices ,.
+Section III will introduce a number of existing privacy threatening issues in Cloud Computing and potential mitigation approaches.
+Before deploying a virtual machine, the Agent checks for any privacy policies associated with the instance.
+Besides the easier configuration, this approach also provides easier scalability by allowing to scale-out instead of scale-up.
+The most commonly agreed on definition of Cloud Computing defines five core characteristics : On-demand selfservice, broad network access, resource pooling, rapid elasticity and measured service.
+Detecting such leaks was therefore mostly done at network perimeter devices.
+Even if the storage unit was compromised, the attacker would not be able to gain access to sensitive data within the backups.
+While the technical implementation of each of those technologies might differ, they all share the same goal: To abstract from physical infrastructure and potentially different hardware vendors and present a single point of access and configuration to the user.
+Various examples in this paper have shown, how this enables the cloud customer to protect himself against against various attacks, such as Intra Host Attacks or transborder data flow.
+Using an XML-based interface, it is possible to attach other, more sophisticated interfaces or let specialised "Privacy Officers" design a suitable set of rules for a particular VM.
+In light of the recent fall of the "Safe Harbor" agreement1 , this issue might become more prominent in the near future.
+Despite this seemingly amazing breakthrough, there are still some clouds on the horizon, preventing the paradigm from an even greater impact: While most technological issues are solved or nearly solved, two major areas still not only lack appropriate mitigations, but even a thorough understanding: Fear of privacy and security issues as well as a lack of control over own data remain the biggest obstacles towards a wider adoption of Cloud Computing.
+A PrivacyBreachDetectionAgent will simultaneously analyse the web server's log files to determine if the privacy has already been breached or it is a theoretical leak to date.
+While the customer still would be potential target for other attackers, it could be argued that they wouldn't have much interest in harming this customer as no direct competition between them exists.
+The user is capable of either loosening the suggested mitigation methods or putting even more protection mechanisms in place.
+Instead of using in-house hosted infrastructure, the cloud customer rents the required computation power or storage capacities provided be the Cloud Service Provider (CSP)..

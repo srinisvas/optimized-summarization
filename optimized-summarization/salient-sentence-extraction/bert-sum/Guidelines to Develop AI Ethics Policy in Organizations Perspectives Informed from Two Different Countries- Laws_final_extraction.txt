@@ -1,0 +1,19 @@
+Given these shortcomings in the existing guidelines and the appetite of UAE and NZ to provide guidance on how organizations can better understand the ethical concerns raised by AI, this study aims to analyze the moral concerns brought forth by AI along five moral dimensions grounded with two national strategies for the purpose of not only drawing attention to such issues but also for developing AI ethics policies for organizations.
+It is gaining unprecedented levels of applications across various day-to-day activities in all sectors.
+Additionally, this definition is broad enough to cover future developments.
+As seen above, the line between humans and machines is not yet clear.
+Can robots be held accountable for their unintended actions? For example, the practices of law are applying solutions that are AI driven to help judicial decision-making , search functions, and contract review.
+The EU has recently released a comprehensive AI regulation which requires all providers and users of AI systems that process data about EU citizen irrespective of their location to comply.
+The risk of harm caused by autonomous robotic systems has been well documented.
+Thus complicating the task of determining responsibility.
+AI applications developers can copyright any newly written codes if they want to protect their IP in them.
+Another well-known problem is data security, AI systems can pave way for intruders to find new loopholes to hack into the system for malicious purposes.
+This may entail the entry of information into the world of commerce, creating a market of its own, and growing numbers of people familiar with it, the good guys and the bad guys.
+2) Legal entity since it is an artificially constructed subject of the law.
+The problem that UAE facing is determining how to ensure that these valuable IP rights are usable, and how to ensure that their value is preserved in the face of continued massive infringement.
+Informational privacy has become increasingly complex with the rise of AI while data protection is still a requirement.
+To mitigate these risks one recommendation is that organizations adopt and adapt the lessons learnt from the aerospace and healthcare industries where the response processes to harms are often formalized.
+It has also suggested that penalties ranging from fines to dismissal for not adhering to codes of ethics should be introduced.
+While AI presents a wide range of benefits that make their use not exciting but overly rewarding, they have downsides that in some cases erode the rewards presented.
+For example, to encourage designing for safety early in the AIsystem lifecycle and working to build a safe and secure infrastructure for development, testing and deployment of these types of systems.
+5 of 2012, or the Cyber Crimes Law, makes it illegal to access and misuse electronic information without the owner's permission, so this legislation can be important when dealing with stolen propriety information ..

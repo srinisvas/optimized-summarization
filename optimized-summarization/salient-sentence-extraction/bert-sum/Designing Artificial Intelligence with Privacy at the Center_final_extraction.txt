@@ -1,0 +1,19 @@
+Finally, it is important to highlight that Privacy by Design in AI must also address resilience to specific attacks on AI systems, such as "data poisoning." This raises ethical questions about informed consent and transparency in the use of personal data.
+The first fundamental principle is proactivity, not reactivity; preventive, not corrective.
+This involves a clear understanding of how algorithms make decisions and the ability to explain those decisions transparently to those affected.
+Creating controlled testing environments for AI models, where different threat scenarios are simulated, allows developers to identify and correct potential vulnerabilities before the system is deployed in the real environment.
+The era of artificial intelligence (AI) has marked a pivotal point in technological and business development.
+Additionally, companies must embrace the responsibility of protecting customer data and be accountable for any breaches.
+For example, this may involve using data anonymization and encryption techniques to protect user information at all stages of the AI process.
+This preventative approach helps avoid security breaches and ensures that privacy is an intrinsic component of the technology rather than an afterthought.
+One of the main differences lies in the need to manage the algorithmic opacity inherent in many AI systems.
+Re-identification is another particular issue of AI that differs from other information systems.
+Implementing robust security measures and conducting regular security audits are essential to protect AI systems against such threats.
+Additionally, AI's ability to analyze and find patterns in data can lead to the inadvertent identification of individuals even in datasets that have been anonymized.
+In addition, the 2023 IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems outlines key strategies for implementing privacy by design in AI, emphasizing the importance of transparency and user control.
+AI systems should be designed in such a way that they automatically respect user privacy without requiring additional intervention.
+Companies should strive to be more transparent in their data collection and use 979-8-3503-6593-1/24/ practices, allowing users greater control and understanding of how their data is used.
+This means that personal data collection is minimized by default and any information collected is rigorously protected.
+Moreover, the massive data collection and processing in AI not only require advanced protection measures but also a focus on data minimization.
+These developments stress the importance of embedding privacy safeguards directly into the AI design process to mitigate such risks effectively.
+This report reinforces the idea that traditional data protection frameworks may be insufficient in the context of AI, thus necessitating more specialized approaches ..

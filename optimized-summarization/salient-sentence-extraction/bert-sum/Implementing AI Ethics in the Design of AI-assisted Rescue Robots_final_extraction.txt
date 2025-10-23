@@ -1,0 +1,18 @@
+DEVELOPMENT OF AI-ASSISTED RESCUE ROBOTS Based on the resulting relational list of shared values and principles and in an interdisciplinary dialogue with technical developers and end-users we propose an indicator system for the ethical design of AI-assisted rescue robots.
+" Value", in this context, refers broadly to states, which are morally desirable or are instrumentally valuable for such desirable states.
+Explainability, for example, is a principle that aims at the value of understanding.
+One indicator in that case might be "Are uncertainties made transparent throughout the operation?".
+Indicators, in turn, point to observable features of the technological system that allow to measure the degree to which the system meets the relevant criteria reliably.
+In our systematization, we take action-guiding, normative principles to aim at (or be in accordance with) First, there are various competing AI ethics guidelines and consequently there is a need for a systematic overview of the relevant values that should be considered.
+Principles are further specified by criteria.
+Principles provide orientation on how to act to reach such a state.
+This indicator system will vary with regard to specific forms of AI technology.
+A possible observable is: "Yes, information on uncertainties is visualized for the operator of the robot in a map." the values of "justice", "well-being" and "understanding".
+To base the ethical development of AI technology on shared values is important, since liberal democracies exhibit a reasonable pluralism concerning comprehensive moral doctrines.
+Understanding and explainability have a moral dimension when we think of people affected by AI, that do not have the chance to understand what happens.
+Our proposal complements the VCIO model with the category of principles.
+Understanding might be regarded as a final value, but is also of instrumental value to other final values, such as justice and its corresponding principles, like accountability.
+Their inclusion is necessary, since principles figure prominently in the considered ethics guidelines and allow for a more nuanced structure of the indicator system.
+In order to find a solution to the first challenge, we compare prominent AI ethics guidelines - and recent proposals for AI regulation ,.
+On this basis, we identify shared values and principles and systematize them.
+Suppose, for example, that an AIassisted robot is intended to support the reconnaissance of hazardous substances..

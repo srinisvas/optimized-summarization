@@ -1,0 +1,20 @@
+This research approach will be designed and implemented using the development of AI-generated privacy-preserving protocols for improving data security in cross-cloud environments.
+More advanced approaches, like ABE, can enable flexible, role-based access control, reducing various risks against unauthorized access.
+On the other hand, SMC enables joint processing without sharing raw information.
+• That would ensure efficient use of computing powers during high-demand conditions.
+At the same time, differential privacy investigates protection at an individual record level by adding noise at a statistical level.
+The following critical metrics employed are summarized in Table 1: • Attack Resistance: The percentage of simulated attacks detected and contained.
+Even supported by automated AIbased checks, achieving standardized privacy practices across these many jurisdictions can remain insurmountable.
+Besides this, scalability and performance problems also arise from conventional methods.
+Reliability grows with the quality of the training data.
+The module discussed here continuously monitors contextual parameters such as user roles, application usage, and geographic location and updates the security policies accordingly.
+Each runs under a different security protocol and data governance framework that complicates uniform mechanisms of privacy implementation.
+While it is very promising in theory, because of the high computational costs, it is far from realistic for big deployments over the cloud.
+Finally, differential privacy techniques need optimization in balancing privacy and data utility to make data analytics effective and protect sensitive information.
+Such architecture will comprise different modules interdependent on one another in runtime data exchange protection.
+However, they create a lot of obstacles in cross-cloud scenarios owing to computational overheads and fundamental management complexities.
+This testbed setting comprises three major cloud providers with different security policies and multiple data management frameworks.
+Artificial intelligence has been the transformative force for a new definition of methodology concerning privacypreserving in cloud data sharing.
+For example, the latency of the proposed protocol is minimal, around 50ms compared to SMC and ABE, with 120ms and 150ms, respectively.
+Models must be refreshed to nullify false positives and omit open vulnerabilities in cloud environments characterized by dynamically changing re-emerging threats and data types.
+Second, enhancing model aggregation techniques within federated learning reduces the communication overhead between participating cloud environments, which is a desirable outcome, especially in large-scale deployments..

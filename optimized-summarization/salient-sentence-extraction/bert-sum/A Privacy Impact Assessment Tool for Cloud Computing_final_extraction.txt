@@ -1,0 +1,21 @@
+However, this technique would mainly be useful in an extension of our approach that can provide enhanced proof that the user information used by the PIA tool is correct -in other words, to check the location of the information that is stored and transferred associated with cloud services that are the target of assessment by the PIA tool.
+To find a definitive definition for cloud computing is hard, as there are many variations described for it.
+Our approach offers several advantages over currently available solutions.
+To merit discussion and future debate we believe the hybrid model can be improved.
+They propose the incorporation of complementary regulatory, procedural and technical provisions that demonstrate accountability into a flexible operational framework to address privacy issues within a cloud computing scenario.
+A meta-level description of the privacy rules for this phase is: 'When <trigger conditions> It is thus, in part, a predictive exercise designed to prevent or minimise adverse privacy outcomes.
+More specifically, it can help decision makers within organisations to decide whether a new project (in a broad sense, encompassing scheme, notion or product, etc.), Sander and Pearson outline a DSS for cloud computing that aids selection of appropriate cloud service providers (CSPs).
+The structure of the paper is organised as follows.
+whereby the gateway has no access to customer data, as all encryption and decryption happens at the user site.
+A PIA is proactive, permitting organisations to design privacy into new systems during the design and development stages, reducing the risk that costly retrofitting of privacy safeguards will be required after implementation.
+This tool is currently being rolled out to employees within HP.
+SLAs are usually a part of a service contract between the provider and customer, where the level of service is formally defined.
+Basically, the tool uses rules to generate an output report and potentially also an audit trail.
+no such PIA application exists.
+Although, some obfuscation methods are highly susceptible to known plaintext attacks , this does at least protect the data from opportunistic data thieves with access to cloud databases, because it ensures that the data is never present in the database in the clear.
+Typically, a DSS has a KB that needs to be created and updated periodically by experts on an ongoing basis and a mechanism (for example a rules engine, decision tree, or dedicated queries to databases) by which output can be generated, based upon user input via questionnaires.
+This indicates the levels of risk associated with each category and colours are used to convey potential privacy risks and threats: black equates to being high risk, grey equates to a warning, and white to low risk associated with that category.
+In order to reach the cloud, data moves over public networks where it needs to be protected.
+Some jurisdictions place a formal legislative obligation on organisations to undertake PIAs (e.g.
+the Ontario Personal Health Information Protection Act 2004) , some PIAs are prescribed by binding 'policy' (the Canadian Treasury Board Secretariat Directive on Privacy Impact Assessment 2010) , or 'recommended' by those with no legal authority (e.g.
+the United Kingdom (UK) Information Commissioner's PIA Handbooks 2007/09) ..

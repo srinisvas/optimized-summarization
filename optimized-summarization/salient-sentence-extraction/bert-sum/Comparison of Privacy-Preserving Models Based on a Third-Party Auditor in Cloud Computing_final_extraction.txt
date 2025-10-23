@@ -1,0 +1,20 @@
+The TPA's role in cloud computing is to assure the auditing function on behalf of the client and to establish a secure connection for the sake of achieving the integrity of the data.
+Preserving) with existing known privacy preserving model.
+Our experiments were conducted using Greencloud platform.
+• • • • • • Malicious cloud users enter significant positive feedback.
+Privacy Negotiation Mechanism protects against Byzantine failures by dynamic auditing and server colluding attacks.
+As, these vulnerabilities greatly affect several security requirements such as privacy, authentication, authorization, accountability, privacy, confidentiality, integrity, non-repudiation, access control, and availability.
+Slandering: to defame a cloud service provider.
+The hybrid cloud offers enhanced security at a lower price but could end up with high management complexity.
+Thus, individuals store their confidential data through cloud computing.
+Many research approaches addressing security using a TPA and proposing solutions have been elaborated.
+Also, safety is guaranteed by the large verification overhead.
+Centralized trust model approach significantly establishes the trust for cloud users and made updating changes easy.
+And Section V concludes the entire paper.
+There are still no specified privacy and security protection laws explicitly created for cloud computing.
+Simulations experiment on the four most eminent PPM compared to our previously introduced LAPP.
+These types of users are difficult to identify.
+In other words, the user first acts normal, but as time progresses, the user starts to misbehave after earning trust.
+A designated public verifier can significantly improve reliability, which leads to a reduction of the computational burden.
+Hence, users must consider the risks involved with cloud adoption.
+Reentry threat It consists of the case when the user who previously produced bad behavior reenters with a new identity to attack again ..

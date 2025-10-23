@@ -1,0 +1,21 @@
+The ETHAI methodology developed and implemented within the COMFORTage project demonstrates a promising approach to bridging the persistent gap between abstract ethical principles and concrete technical implementation in AI systems for healthcare.
+Second, possible privacy vulnerabilities raise questions about protecting sensitive patient data.
+It finally presents some partial results and lessons learnt.
+The timing of ethics integration emerged as a crucial factor.
+Autonomy and Oversight.
+These range from mapping relevant characteristics of a system to identify potential gaps and issues to determining targets for further study, scrutiny, or monitoring.
+This proactive approach represents a shift from traditional reactive care models.
+The study employs multiple assessment approaches including oral health evaluations, neuroimaging techniques to assess brain activity, and cognitive assessments.
+The scope dimension regards the breadth of an AI system inquiry.
+This experience reveals that effective ethics sensitive AI development requires not merely translation but coconstruction of requirements through sustained interdisciplinary dialogue.
+Within industry settings, commercial pressures and rapid development cycles often hamper ethical implementation despite genuine intentions.
+A distinguishing feature of the project is its implementation of data-driven assistive technologies that process multiple data streams to provide appropriate support and monitoring capabilities, balancing independent living with safety considerations.
+For example, in contexts involving older adults with mental health conditions, clinicians, caregivers, and patients' families possess privileged perspectives on the care journey and its challenges.
+As a preliminary result of developers-ethicists collaboration, consider requirement R1.
+This inventory was designed as an iterative practice, updated throughout the project as changes occurred.
+This case study contributes valuable empirical evidence to the field of applied AI ethics and design, where practical implementation experiences remain underreported despite their importance for advancing responsible technology development.
+Conclusions are drawn in Section V.
+The process unfolds through four interconnected phases that form a continuous cycle.
+Technical partners noted they were accustomed to receiving requirements from users rather than co-designing them with ethics specialists.
+The semi-structured approach here adopted proved advantageous, if compared to a rigid methodology.
+While the methodology's theoretical foundation has been detailed elsewhere , the focus in this paper is more on its implementation aspects..

@@ -1,0 +1,20 @@
+While the former concern matters to questions of AI moral accountability in that it has to do with ensuring that prospective assessors are actually provided with the information about how the AI works so that blame can be assigned, the latter is more central because it has to do with the possibility of gaining any sort of epistemic access to information about which specific strategies the AI used in executing certain kinds of morally relevant behaviors.
+Arpaly identifies two main conditions on reasons responsiveness.
+Certainly within our own species, moral agency appears to manifest in degrees.
+This questionable machine behavior poses a dilemma for moral accountability.
+Whether this is possible is partially determined by the second consideration.
+I will develop the concept in this and subsequent sections.
+These companies are most likely pursuing profit while maintaining plausible deniability in the event anyone is harmed by their products.
+The bulk of this section will focus on describing what this might amount to, using Arpaly's account of moralworthiness as a model.
+Of course, there are always possible circumstances where we should be skeptical of what our interlocutor has to say, but its generally thought that we need not be constantly skeptical.
+This paper takes something of a pluralistic capacities based-approach to moral agency.
+Specifically, I propose that there is a notable parallel between the need for AI explainability and our ability to assign the kind of moral accountability required for closing the responsibility gap.
+First, the entity must be able to perceive the relevant moral reasons, and, second, the entity must be capable of being motivated by those reasons.
+As a result, Arpaly thinks ill willed agents are common and that malevolent motivations are not limited to fundamentally evil agents.
+There are two apparent answers to this question.
+However, I will ultimately argue that overcoming the blackbox problem and creating explainable AI, according to standard notions, is not enough for making sense of AI accountability.
+Among humans, we are able to approximate this knowledge through a dialogic exchange under the assumption that, in normal conditions, the interlocutor in not lying.
+This assumption seems unproblematic, since there are large databases, such as the AI Incident Database, that archive ways in which AI like Eliza have had such an impact.
+The ability to identify a problem with a tool may be useful in determining whether we should use the tool, but will not be useful for determining what went wrong with or how to change the behavior of a tool that is already in use.
+Such entities are, at least sometimes, the proper targets of praise, blame, or any number of other moral criticisms and accolades (e.g., when is an AI a plagiarist, a liar, or a cheat?).
+We can ignore questions of personhood with regard to the problematic vagaries of intelligent machine behavior and focus on the people who can implement necessary changes to that behavior..

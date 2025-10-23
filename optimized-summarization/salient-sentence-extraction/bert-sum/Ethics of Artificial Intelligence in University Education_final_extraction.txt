@@ -1,0 +1,20 @@
+Several research papers have explored various aspects of this topic, including the integration of AI tools in the educational sector, students' perceptions and ethical considerations, the impact of AIbased learning models, and the inclusion of ethics in AI education.
+A comprehensive literature search is conducted to identify relevant sources.
+Its use has been important, but there are some problems with its misuse, such as cheating and others.
+Selected articles are then further examined by reading the full text to assess their suitability for the review.
+Conversely, students from arts, humanities, and social sciences show slightly lower levels of concern.
+Lee (2021) and Garrett et al.
+( Connections and relationships between different studies are identified, and similarities and differences in perspectives are analyzed.
+-Promote the integration of artificial intelligence into teaching practices while ensuring that educators possess not only technical skills but also pedagogical and ethical knowledge.
+A significant concern identified in the literature revolves around the potential for AI-generated outputs to be misleading and of low quality.
+It is a tool capable of conducting conversations and responding to commands.
+This includes key concepts, research findings, methodologies, theoretical frameworks, and ethical frameworks or principles discussed in the literature.
+Various academic databases, such as PubMed, Google Scholar, IEEE Xplore, and ERIC, are utilized to retrieve scholarly articles and publications.
+2023) draw attention to concerns about how AI implementation may infringe upon these rights, underscoring the importance of careful consideration and ethical oversight in the deployment of AI technologies in education.
+Silva and Janes (2024) caution against the possible devaluation of teachers and the subsequent increase in automation within the educational sphere.
+The retrieved literature is screened based on the inclusion and exclusion criteria.
+The paper emphasizes the importance of investing in schools and educators, rather than just technology, to address the challenges in education.
+Their research highlighted the significance of establishing strategies, such as curriculum development, technology development labs, training programs, and university regulations, to support the responsible and effective implementation of AI in educational contexts.
+The findings suggest that an education program that offers experiences in using and utilizing AI can positively impact learners' perception of AI ethics.
+Among the artificial intelligence tools used in education is ChatGPT, which was released in late 2022.
+This discussion will delve into key ethical dimensions as identified in various scholarly works..

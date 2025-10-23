@@ -1,0 +1,23 @@
+DIPALDA enforces this by a) allowing each user to set individual privacy parameters that are specifically designed to prevent such attacks, b) making sure in step (4) that a user's location is only encoded for those hierarchy levels where their individual privacy parameters are in line with the shared privacy parameters of the data structure, and by c) making sure in step (5) that the aggregation result in each vertex of the data structure is only released, if the shared privacy parameters for this vertex are fulfilled.
+E ( x v ) f E f f E Fig.
+Section VII concludes.
+= v∈V || Ûv | -|U v || |U v |(4)
+ Restrictions apply.
+Subregions refer to districts and independent cities.
+Approaches relying on k-anonymity thus require further protective measures to fend off such attacks.
+In regions with a high population density (e.g., Berlin and Milan) or with low infection rates (e.g., Cologne and Lüneburg area) To this end, C calculates a conditional function
+f v A decentralized solution is presented in based on blockchain technology and HE.
+In the LBS scenario, a user sends a spatial query to an untrusted server, e.g., finding nearby points of interest.
+In the presence of honest-but-curious external adversaries there is a risk of Sybil attacks.
+The users jointly calculate the sum over the partial results using a secure aggregation scheme and obtain f v.
+The encryption key is thus secret shared among all users.
+The rest of the paper is organized as follows: Section II reviews related work.
+Such data can be used, for example, to analyze the geographical distribution of patients suffering from a certain disease, which can be helpful for healthcare planning or disease control.
+This limits the reidentification likelihood of the user to at most 1/k.
+For better visibility privacy settings are chosen that achieve a low F1-Score.
+The biggest utility drop appears in hierarchy level h = 5, but this depends strongly on the region.
+This enables further use cases that rely on spatial hierarchies with a different semantic meaning.
+To address these requirements, we introduce DIPALDA, a new anonymization technique for DIstributed, Privacy-Aware Location Data Aggregation on hierarchically structured personal location data.
+However, DIPALDA can be applied to any data-independent hierarchical index with a predefined structure that forms non-overlapping areas per hierarchy level.
+h u is derived for which l u ∈ r v.
+p v , if In the following, we explain these steps in detail..

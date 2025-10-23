@@ -1,0 +1,20 @@
+This association declares that its mission is to become the center for the AI development in Russia and to provide the technological leadership of the country and of the Alliance participants in the global technology market.
+These documents include declarations, recommendations, reports, ethical codes, etc.
+Addressing them requires certain normative regulation and ethical regulation in particular.
+First, we can identify common characteristics that are common to all AI.
+Artificial intelligence can be called a wide range of technologies, such as machine learning, deep learning, generative AI and discriminative AI, etc.
+This document was designed by a professional community for a professional community and is completely focused on AI designers and developers.
+Individual examples of ethical documents for each group are listed below.
+Next up is the 2017 IEEE (Institute of Electrical and Electronics Engineers) document < • <Proactive= etchical codes proposed by various researchers and groups of specialists and addressed to all stakeholders.
+In 2018 and 2019, two Boeing airplanes of the same model (Boeing 737 Max 8) crashed due to incorrect information perception by the aircraft software.
+Since the 1980s there has been issued a number of ethical documents in order to solve emerging problems and prevent potential ethical risks.
+Otherwise, the physician cannot be sure what is the best treatment to prescribe for his or her patient.
+This legal and ethical foundation allows to specify seven key requirements for trustworthy AI: human agency and oversight; technical robustness and safety; privacy and data governance; transparency; diversity, non-discrimination and fairness; social and environmental wellbeing; accountability.
+However, some concepts (good, for example) remains quite vague, hence the difficulties in defining, comparing and developing strategies of its increase.
+It is worth noting that there is some understatement and uncertainty.
+Companies act as ethical supervisors, called upon to undertake obligations to comply with the stated provisions as well as to monitor their implementation by employees and users.
+In reality, this means the consumer has to choose between using certain information product or refusing it, which affects their consumer preferences.
+The problem of information privacy derives from the ubiquity of digital technologies and AI.
+However, the definition of a good is either implied as commonly known and accepted, or it is absent altogether.
+These are the following: development and use of AI is human-centered; responsibility must be fully acknowledged when creating and using AI; only humans are responsible for all consequences; development of AI must be controlled.
+It sets out the ethical principles that should be taken into consideration when developing AI systems and introducing them into society, namely: human rights, well-being, accountability, transparency, awareness of misuse ..

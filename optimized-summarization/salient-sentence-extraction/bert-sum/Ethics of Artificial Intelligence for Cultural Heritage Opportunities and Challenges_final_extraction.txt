@@ -1,0 +1,20 @@
+This article attempted to shed light on the potential of AI for the promotion and preservation of cultural heritage considering the ethical implications that these applications may have, such as the loss of authenticity of the artwork, the attribution of responsibility for decisions based on the results of algorithms, the risk of discrimination against minorities, the implications related to universal access to cultural heritage and, finally, the issue of authorship and the role of the artist in our society.
+b) c) Training an automatic captioning model requires a dataset with corresponding images and descriptions.
+From a procedural standpoint, we proceeded as follows.
+She has published seven books and more that 150 papers.
+penetrating various previously unexplored areas, including creative and cultural sectors (hereinafter: cultural heritage).
+Indeed, AI technologies offer unprecedented capacities to analyze huge amounts of historical data, enabling researchers and art historians to uncover precious patterns, connections, and insights that might otherwise remain elusive.
+In this approach, engaging and interactive storytelling can overcome those communication barriers that often prevent art from raising the audience's interest.
+Although it is imperative to make content accessible to all, most museums and galleries' sight-centric design (which privileges sight over other senses) excludes people with visual impairments.
+Second, it is necessary to develop greater literacy regarding AI and digitization processes so that it does not remain the exclusive preserve of a highly educated and elitist audience.
+Art specialists often employ attribution techniques that rely on identifying the unique visual characteristics of paintings, honing their skills by analyzing numerous artworks.
+With tools such as DALL-E, Claude AI, Suno, Character.ai, Midjourney, or SORA, it is possible to create and conceptualize a work of art through a prompt, which is a text-based input describing the image to be created.
+Despite the tremendous opportunities AI offers the cultural sector, it can simultaneously pose several ethical challenges and risks.
+For this reason, these systems have begun to worry professional groups such as composers, designers, and writers who, until a few years ago, saw their jobs at low risk of technological substitution because creativity is a process that is traditionally human, to date not easily codifiable in concrete rules.
+In particular, the author highlights how digital archiving, 3D modeling, and VR have been used to document and virtually preserve precarious sites such as The Bukit Brown Cemetery in Singapore and the Pekeliling Flats and A&W Petaling Jaya in Malaysia before they were altered or demolished.
+The structural condition of cultural heritage can also be tracked using AIbased visual inspection systems, in which ML algorithms analyze visual data from sensors and cameras to identify and detect potential structural damage or deterioration quickly and accurately.
+This section will contribute to pave the way in this direction by highlighting the areas that need research and work to create a sectorspecific ethical and policy compass and regulation.
+However, the integration of AI in cultural heritage also brings forth intricate ethical questions.
+This lack of accountability risks damaging invaluable cultural assets and undermines public trust in AI applications within this sensitive field.
+One might question the importance of interpretation.
+On these topics she is involved in a number or research and technology transfer projects and serves as an ethics advisor for many international projects..

@@ -1,0 +1,20 @@
+This paper examines Values Debt in Generative AI and introduces the Helpful, Honest, Harmless (HHH) framework to align AI systems with human values.
+By analyzing ASRS safety narratives, GRAISE offers concise, actionable insights that directly support pilot training objectives.
+Semantic rules and constraints ensure consistent and precise data representation, while optimizing external knowledge enhances retrieval efficiency and relevance.
+GRAISE ensures respectful and professional interactions, preventing offensive or discriminatory content.
+However, they also introduce critical ethical challenges, including biases, misinformation, and privacy risks.
+Verification and Validation: Developing robust testing protocols for ethical compliance was essential in the verification and validation phase.
+Graph RAG leverages this knowledge graph by employing community detection algorithms to group related entities into "communities." Helpful: GRAISE assists pilots by delivering personalized feedback from real-world incident reports, enhancing communication and decision-making skills.
+By adopting these practices, organizations across various domains can contribute to building public trust in AI technologies.
+In the field of education, ensuring that the knowledge graph includes diverse curricular content can help AI tutors provide equitable learning experiences, promoting fairness in educational guidance.
+Balancing Technical Feasibility with Ethics: Implementing HHH principles may demand extra resources and could affect system performance.
+Potential misinformation tied to GPT-4's broader training data is monitored, and safeguards help detect misuse.
+It avoids harmful or misleading advice through reliance on validated data and adherence to safety protocols.
+This grounding can significantly reduce instances of hallucinations and misinformation prevalent in conventional LLMs.
+Through proactive governance and careful stewardship, the development of generative AI can enhance societal well-being while maintaining ethical integrity.
+The GRAISE case study exemplifies the practical application of these principles and methodologies.
+Weighing these factors early in the design phase ensures that ethical imperatives remain central, even under resource constraints.
+The following outlines how GRAISE aligns with each HHH principle:
+ Similarly, Google's internal conflicts over ethical AI practices, highlighted by the departure of AI researcher Timnit Gebru, reveal organizational tensions from misaligned values.
+Generative AI (GenAI) technologies like GPT-4 and DALL.E have transformed industries by automating tasks such as content creation, language translation, and data analysis.
+Reputational and Legal Implications: Values Debt can lead to reputational harm, legal challenges, and loss of consumer trust..

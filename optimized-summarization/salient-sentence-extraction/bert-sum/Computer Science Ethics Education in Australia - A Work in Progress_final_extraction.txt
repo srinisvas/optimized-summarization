@@ -1,0 +1,20 @@
+Our broader project aims to survey the current status of ethics in Australian engineering universities, with a view to creating recommendations for content, pedagogies and modes of teaching as well as effective assessment of ethics learning in these courses.
+Regulating practices is even more challenging.
+Information access (7) Computer crime (7) Translating such principles into policy and practice remains a challenge.
+Reference predicts that the contribution of digitalization to Australia's GDP will be between AUD140-250 billion by 2025.
+The numbers next to each concept denote the code we have given to each university.
+There is greater emphasis on professional ethics and both philosophical and macro-ethical aspects appear to be neglected.
+Concerns about the risks and enormous potential of AI are giving rise to a spate of industry, intergovernmental and government standards and guidelines.
+In this work-in-progress paper, we examine whether undergraduates are being adequately prepared to navigate these issues.
+These obligations sometimes placed engineers in situations of conflicting loyalties and interests.
+AI-infused technologies continue to proliferate with significant consequences for individuals and societies.
+Early on, the focus of ethics teaching was on professional issues -conflict of interest, 'public health and safety, quality, usefulness, efficiency, cost/risk/benefit analysis, environmental harm, trustfulness, trustworthiness, loyalty' -rather than moral issues.
+Preparing prospective graduates to understand the relationship between technology and society and to actively promote sustainability, fairness, inclusivity and social justice is crucial.
+Here we present preliminary findings from our analysis of Australian CS undergraduate degrees.
+Instead, these attributes are inscribed into ethical codes and accountability measures.
+In some cases, they manifest as a specific module or unit of study (subject), and in others they are distributed across different modules and units of study, with different subject teachers incorporating concepts related to ethics and professionalism into their own subject.
+The impact of the work of Cambridge Analytica, and the current debates around whether social media organizations are obliged to fact check posts on their platforms, are just two examples highlighting the deepening impact of CS and IT practice on the wider society.
+For example, loyalty to their employer might interfere with the obligation to the public.
+The content of different courses was plotted against this synthetic heuristic.
+Australia's innovation strategy for the next decade outlines the importance of AI, stating that 'a suite of new digital technologies, such as machine learning, optimization, artificial intelligence, sensing, robotics, visualization and distributed ledgers, are opening new opportunities for innovation'.
+The introduction of ethics education in engineering is surprisingly recent, with the US taking the lead and other nations in Europe and Australia following a few years later, in the early 2000s ..

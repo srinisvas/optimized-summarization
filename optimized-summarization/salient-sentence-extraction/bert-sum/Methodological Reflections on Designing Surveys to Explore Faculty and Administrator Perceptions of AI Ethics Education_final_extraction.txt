@@ -1,0 +1,20 @@
+To examine these, we have a section in the faculty survey to understand the context of their institution including the kind of support they experience and their awareness of AI ethics education policies.
+For example, when asking about course content, as many potential course topics as possible were specified as a "choose all that apply" item.
+RQ#2: Respondents may upload a syllabus.
+Our administrator survey was built upon Beever et al.
+'s institutional epidemiology framework.
+Martin and colleagues also suggest examining policy and cultural aspects of faculty perceptions.
+While our goal is to have each survey streamlined for completion in 20 minutes or under, we are still completing this review and revision.
+More specifically, Hess and Fore's engineering ethics intervention framework emphasizes that the effective design of ethics education interventions relies on a harmonious alignment of content (or curriculum), assessment, and delivery (or pedagogy or instructional strategy).
+The first is that the survey may be too liberal: questions which are too general are likely to merely replicate this diversity without meaningful patterns.
+Research organizations are spending billions of dollars to develop new and better technologies to achieve these aims.
+To avoid an arbitrary classification of institutional sizes, we drew from the National Center of Education Statistics for guidance.
+We also want to remain mindful of the larger picture of the project and maintain alignment with funding goals.
+This meant there were fewer versions of this survey, and it was written more quickly.
+One advantage of this approach would be in facilitating the ease of data analysis following survey distribution.
+While there are many important technological questions regarding AI development (such as its capacity, scale, and practical applications), educators also have begun to grapple with a second set of questions of what and how to teach students about AI and its ethical design and use.
+Ultimately, this led to a switch to ask about specific courses or course modules.
+We also ask how participants see change in the next 2-3 years to get an understanding of how much change is expected to happen.
+Furthermore, the extent and mechanisms of their effectiveness or ineffectiveness remain largely unexplored.
+Our faculty survey was initially inspired by two existing frameworks in engineering ethics education: AI evangelists promise a new utopia as tasks (first menial, and then complex) are automated, new solutions discovered, greater efficiency found, human shortcomings overcome.
+First, using the built-in functionality of Qualtrics, we were able to add a section at the beginning of each series of questions detailing which courses for which a person had already provided answers..

@@ -1,0 +1,20 @@
+The utilities may also provide an infrastructure for third party services to run their applications in the Cloud and access consumer and other data available in the Cloud.
+Some research on defining and executing service contracts has been done.
+Section IV provides examples of such applications.
+These may help meet regulatory requirements better than public clouds.
+Aggregating data from multiple owners gives rise to a range privacy concerns that is different from data authorized by a single source.
+Increasing information flows raises the chance that personally identifiable information will be passed which, if not handled carefully, can lead to violation of an individual's privacy.
+These networks have software logic that can optimize power usage based on user preferences and demand response signals received from the utility.
+The project itself is discussed in detail elsewhere.
+Specifically, extensive work on Web services for eCommerce has led to standards such as WS-Policy4 , WS-Agreement5 , WS-Security, WS-XACML 6 and SAML 7 that can be used to negotiate service level agreements and monitor their enforcement.
+These are summarized in Figure 1.
+Such dynamism in power consumption and production affects traditional electricity forecast and planning models.
+For industrial and commercial consumers additional data points include information about the machinery used, manufacturing schedule, "sale" events, PEV fleet operations, and occupancy sensors.
+Utilities in the United States are regulated by federal and state energy regulatory commissions.
+Access control policies should support granular access at levels ranging from individual raw streams to large historical data archives, in a scalable manner.
+In particular, they focus on security but fail to sufficiently tackle the data privacy issues that stem from extensive information integration.
+In addition, there should be the ability to prove that such policies were enforced through audit trails for data access, and logging of policy violations through provenance tracking to assist with dispute resolution.
+Often, the existing systems run on mainframes or server farms.
+Limited security and coarse grained access control is provided for IaaS storage and compute services.
+Consumers need to gain more confidence in sharing data to help engender a rich space of Smart Grid services that can improve the operational efficiency of the utility and allow customers better manage their energy usage.
+Too, there has been limited discussion of issues specific to a broad deployments of Smart Grid Applications to Clouds..
