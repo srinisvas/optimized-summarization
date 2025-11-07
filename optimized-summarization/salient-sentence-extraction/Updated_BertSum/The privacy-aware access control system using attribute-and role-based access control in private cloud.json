@@ -1,0 +1,26 @@
+{
+    "paper_id": "The privacy-aware access control system using attribute-and role-based access control in private cloud",
+    "salient_sentences": [
+        "The proposed system framework\nIn this system, the cloud client is allowed to store their data in the cloud according to the privacy standards or laws before upload data and to access the data in the cloud according to their user levels.",
+        "Figure 1 Policy representation can be more fine-grained within ABAC because it can be based on any combination of subject, resource, and environment attributes.",
+        "UG K \u00d7 US K ATTR(r) \u2286 R IaaS1 \u00d7 R SaaS1 \u00d7 R DaaS1 \u2026 For example:\nRole(u) Section 4 describes technique preliminaries.",
+        "4) 5) Initial user account creation involves two step operations:\n If X breaks his trust relation with Faculty Y then Faculty X would like to forget all the information Faculty Y had about Faculty X.",
+        "Scenario-1: User Provisioning \u2022 The Core RBAC model and and present a comprehensive set of guidelines on designing privacy-aware cloud services.",
+        "proposed attribute based access control model with its authorization architecture and policy formulation to impose attribute conditions for authorizing a user.",
+        "This paper also uses the function notation for the value assignment of individual attributes.",
+        "No-one shall have the ability to delete PII information until the appropriate time period has expired.",
+        "This system assumes that there is a set of roles that are authorized to perform certain actions and that users are authorized to play certain roles.",
+        "Today, clients are capable of running their software applications in remote computing clouds where data storage and processing resources could be acquired and released, almost, instantaneously.",
+        "Such attributes may include the subject's identifier, name, organization, job title, and so on.",
+        "If the requested access permission is granted by the \"other\" entry, then access is granted, otherwise access is denied.",
+        "\u00d7 R IaaSM \u00d7 R SaaSM \u00d7 R DaaSM\nATTR(e) \u2286 e time1 \u00d7e location1 \u00d7\u2026\u00d7 e timeN \u00d7e locationN The information is collected by authorized appointed user only and the own data must be adequate, relevant and not excessive as well as the purpose must be mentioned.",
+        "Personal and confidential data can be stored in a variety of data repositories, log files, audit systems, etc.",
+        "In ARBAC model, Service providers publish welldefined access control requirements in policy statements.",
+        "A subject is an entity (a user) that takes action on a resource.",
+        "Before invoking services, requestors must provide their attribute information and all parameters of method it will access to service providers.",
+        "These attributes describe the operational, technical, and even situational environment or context in which the information access occurs.",
+        "Cloud computing has brought up major advancements to the IT industry.",
+        "The data security level is classified (described in Table 1) based on significance and sensitivity Groups and roles may be used instead of individual names.",
+        "As with subjects, resources have attributes that can be leveraged to make access control decisions.."
+    ]
+}

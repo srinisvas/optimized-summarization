@@ -1,0 +1,26 @@
+{
+    "paper_id": "Privacy Preserving Data Integration across Autonomous Cloud Services",
+    "salient_sentences": [
+        "This way the composition execution engine has only access to anonymized data and can link the anonymized information of the same data subject across the different services using the encrypted identifier attributes (recall that the OPES allows for applying equality queries on encrypted data).",
+        "P0 P8 P15 P20 P23 P188 P201 P204 P209 P411 P512 P513 P514 sex m m null f f m null i in H.",
+        "Service Selectivity Se(S i \u227a S j (i.e., S j is preceded by S Fig.",
+        "We consider a honest-but-curious environment.",
+        ".x \u2264 Edges e ij may be associated with constraints to filter relayed tuples.",
+        "[ P 0 , P 10 ], [P 5 , P 20 ] and [P 0 , P 1000 ].",
+        "2, then he will learn who of his patients have been tested positive for HIV (i.e, P 15 , P 201 and P 512 ).",
+        "This example showcases an interesting challenge.",
+        "Our model relies on two key ideas.",
+        "Assume that S 1 and S 2 require a protection factor k = 3.",
+        "Order Preserving Encryption Scheme OPES.",
+        "Obviously, Alice can answer her research questions by composing these services as follows (cf.",
+        "Evaluation showed that the execution average time with privacy is at most three orders of magnitude of time without privacy (with K i set to 4).",
+        "Let us consider a healthcare information system which collaborates with multiple healthcare organizations including medical research institutes, hospitals, pharmacies, pharmaceutical labs, that may manage their data through autonomous clouds.",
+        "After the invocation of S 2 , the extraneous tuples are filtered out.",
+        "The above definition can be interpreted as follows: when a service S j is invoked, it must not be able to determine precisely its input value between k input values for which it has outputs; i.e., it must not be able to determine precisely the tuple t in which the invoker is interested between k tuples of its own data.",
+        "For each of the obtained HIV medications, she retrieves its ABC content by invoking S 5.",
+        "These services access synthetic medical information of more than 30.000 patients.",
+        "5 shows how the k-protection requirement is enforced on the edge e 23.",
+        "Existing data integration solutions are usually implemented as centralized data warehouses collecting and storing data from various data sources.",
+        "Our proposed solution enforces privacy policies for services involved in answering a query by applying their own access control models and data anonymization algorithms.."
+    ]
+}

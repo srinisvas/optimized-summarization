@@ -1,0 +1,26 @@
+{
+    "paper_id": "Security and Privacy Issues within the Cloud Computing",
+    "salient_sentences": [
+        "So there is a case that the data procession is not transparent to the users, which means that users have lost the control of the data.",
+        "In this architecture, clients will be provided with two secure policies, Policy A and Policy B.",
+        "z z z z Apart from security issues are discussed in Section , privacy issues need to call equal attention.",
+        "It can be seen as an integration of traditional computing technologies and network technologies, such as grid computing, distributed computing, parallel computing, network storage technology, virtualization and load balancing.",
+        "The basic components in the Cloudbased RBAC are: Cloud User, Access Permission, Role and Session.",
+        "If not addressed properly, security breaches may exist.",
+        "Users can manage their own attributes freely according to their will.",
+        "Our paper takes discussions about this key issue and brings up some solutions.",
+        "However, private cloud can only support small scale of users.",
+        "We will discuss the major privacy concerns in the following: z It allows one single instance of software to serve various clients.",
+        "Section make the conclusion and point out future works.",
+        "This leads to several security problems.",
+        "In the Usercentric identity management, each user is assigned several attributes of the identity.",
+        "Users need to buy as they demand.",
+        "The data security protection mechanism will become complicated, which is likely to provide chances for malicious utilization.",
+        "As data usually exists in the Cloud for a long time, the risk of illegal access is higher.",
+        "Cloud is expected to offer the capabilities including: trusted encryption scheme to ensure safe data-storage environment; stringent access control; safe and stable backup of user data.",
+        "Then after the comparison between these two CPLs, the CSP can decide whether such user is authorized or not.",
+        "During Startup phase, users will generate one verification data to the TPA for later auditing use.",
+        "In such means, CPE can dynamically adjust the criteria of judgment to optimize the evaluation.",
+        "After CPE procession, an integrated policy is reached.."
+    ]
+}

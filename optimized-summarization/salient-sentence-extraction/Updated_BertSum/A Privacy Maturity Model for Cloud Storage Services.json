@@ -1,0 +1,20 @@
+{
+    "paper_id": "A Privacy Maturity Model for Cloud Storage Services",
+    "salient_sentences": [
+        "Another threat also raised by the CSA is the Data Loss or Leakage , which reports that the data compromise increases in the cloud computing environment due to the number of interactions that are unique or more dangerous as a result of the architectural and operational characteristics the cloud.",
+        "( ii) This provides benefits for many models of services.",
+        "To this end, we will define hypotheses to be tested and objectives to be reached, based on metrics to be defined;\n\u2022 Definition of methods Finally, based on the question (iii), currently there is still no formal agreement establishing a privacy level agreement between the service provider and client.",
+        "An example is HIPAA, short for Health Insurance Portability and Accountability Act, which is a standard in order to protect the health related data, ensuring privacy and fraud prevention.",
+        "In this phase, we will conduct a detailed evaluation of the proposed technique through experiments.",
+        "Thus, to solve the problems in this context, 3 questions arise about these concerns: (i) How to identify a particular data is considerably sensitive? The conformities do not meet all of the fields.",
+        "Our proposal aims to deepen the results presented by Silva et al of which are adherents compliances related to Privacy.",
+        "When the provider in question does not have a proper policy to control physical access to its internal resources, someone malicious can access sensitive client files, violating privacy , and this becomes more critical when this type of behaviour is not punished.",
+        "As in , 15 security domains more applicants to cloud services were outlined.",
+        "Privacy is a concept that varies greatly, is intrinsic to a particular country or jurisdictions cultures.",
+        "Managing these processes for handling personal data must be performed from the time information is conceived until the end of its availability, ie, the entire life cycle of the item in question.",
+        "Just below are listed the sub activities of this macro activity:\n\u2022 Gathering Data and Formulation of the Problem \u2022 Construction of Hypotheses and research \u2022 Following the Generally Accepted Privacy Principles , GAPP, specification, the privacy rights of certain data are related to the collection, use, retention and disclosure of personal information.",
+        "A fair example are the cloud storage providers which benefit by easily providing a high level of scalability according to the need of their users, and also provide their resources in environments outside their areas in which outsource their services.",
+        "Regarding privacy, the proposal will make use of the concepts defined in the model BSIMM-CP , which is facing the normative Compliance Policies and governance exercised by a particular service , identifying absences or flaws in Specifications relating to Personally Identifiable Information (PII).",
+        "Many of them, firstly, are regional or originated from statutory laws.."
+    ]
+}

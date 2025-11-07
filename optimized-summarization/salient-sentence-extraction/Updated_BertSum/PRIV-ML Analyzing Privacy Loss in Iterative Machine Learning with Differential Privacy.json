@@ -1,0 +1,25 @@
+{
+    "paper_id": "PRIV-ML Analyzing Privacy Loss in Iterative Machine Learning with Differential Privacy",
+    "salient_sentences": [
+        "Our algorithm tracks the moments of the privacy loss random variable to bound the total privacy loss.",
+        "differentially private mechanisms have been extensively studied and adopted.",
+        "But for (\u03f5 = 2, \u03b4 = 10 -3 ), it sustained over 2900 iterations.",
+        "HR platforms process confidential employee information, while retailers amass customer data spanning purchase histories, preferences, and financial details.",
+        "composeLoss() flexibly handles sequential, parallel, and adaptive compositions, as well as hybrid workflows.",
+        "This systematic approach enables effective differential privacy management within predefined constraints, empowering trustworthy AI systems that protect sensitive data.",
+        "By tuning noise parameters, acceptable accuracy can be maintained.",
+        "The attacks establish empirically that DP-SGD's worst-case privacy bounds are approaching their limits on common datasets.",
+        "This allows us to precisely track how the variance, skew, tail bounds, etc.",
+        "evolve with each accumulation.",
+        "It also develops a monitoring-based differential privacy (MDP) defense that adaptively allocates a privacy budget and adds noise based on real-time model extraction status assessment.",
+        "Larger batch sizes result in better utility for a given budget by amortizing the privacy cost.",
+        "Integration with new mechanisms requires only divergence computation implementation.",
+        "If so, unsafe excessive leakage has occurred, indicating the process should be halted.",
+        "It characterizes privacy issues during data sharing and aggregation.",
+        "Stronger guarantees come at the expense of utility.",
+        "Our experiments involved simple histogram queries.",
+        "DPella is implemented in Haskell and evaluated on various queries from the literature to demonstrate its expressiveness and accuracy estimations.",
+        "The composition and moments accountant modules remain unchanged across mechanisms.",
+        "Additionally, Figure 3 illustrates how privacy loss accu-mulates faster for smaller epsilon and delta values, causing earlier budget depletion, and reinforces the core concept of iterative queries gradually consuming the privacy budget.."
+    ]
+}

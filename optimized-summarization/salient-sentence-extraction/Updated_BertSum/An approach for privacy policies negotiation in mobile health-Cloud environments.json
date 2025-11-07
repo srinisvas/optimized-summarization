@@ -1,0 +1,25 @@
+{
+    "paper_id": "An approach for privacy policies negotiation in mobile health-Cloud environments",
+    "salient_sentences": [
+        "Also, in order to express patients' privacy preferences, we get inspired by the privacy policy language, Purpose-to-Use (P2U) , where the main objective is to preserve privacy and allow users to control the disclosure of their sensitive data.",
+        "e) This group includes minors or children that can't take proper decisions and need a guardian or patient badly hurt.",
+        "-Po.1 and Po.2 policies are conflicting.",
+        "Section 6 summarizes the paper and presents future works.",
+        "These policies must be made available to customers, and be understandable.",
+        "We assume that TTP recognizes various privacy policies languages.",
+        "Since Alain is a \"Pragmatic\" patient, he can negotiate his privacy policy if a conflict occurs.",
+        "It is worth noting that in urgent situations when patient's life may be in danger.",
+        "The time period (days) for which data can be retained.",
+        "As mentioned before, the trusted third party can recognize and \"understand\" numerous privacy policies.",
+        "Another example that considers negotiation was proposed in , this solution aims to generate a service-level agreement that represents the result of resource negotiation and booking with supported Cloud providers.",
+        "Also, many negotiation protocols such as FIPA and WS-agreement were developed.",
+        "A subgroup of the DATA-GROUP group.",
+        "An example of such conflict is given in Section 5.",
+        "Remarkably, the use of smart phones and tablets knows a big growth in Cloud computing as well.",
+        "Thus, giving them more control over their personal data engenders trust, but this can be difficult in Cloud computing scenarios where many customers are involved.",
+        "On the other hand, the rising consumption of Cloud services by healthcare providers and the emergence of Cloudbased mobile applications multiply privacy threats.",
+        "Traditionally, the healthcare industry has been one of the slowest fields to adopt new and innovative technologies.",
+        "The entity to whom the policy was addressed.",
+        "The purpose of data usage constitutes an important parameter in the negotiation process.."
+    ]
+}

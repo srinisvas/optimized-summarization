@@ -1,0 +1,26 @@
+{
+    "paper_id": "An overview of privacy preserving schemes for industrial Internet of Things",
+    "salient_sentences": [
+        "Similarly, privacy issues existing in the edge-based industrial IoT architecture are also divided into three scenarios, including a typical edge-based industrial IoT system, an SDN enabled edge Industrial IoT system and an edge Industrial IoT system with blockchain.",
+        "This process is transparent to all terminals.",
+        "ing general architectures.",
+        "\u2022 \u2022 \u2022 A typical method is to anonymize sensitive data, e.g., K-anonymity, L-diversity, T-closeness, and artificial intelligence methods.",
+        "It is slightly higher than the ICE protocol.",
+        "In the second one, privacy leakage may be occurred when cross-domain collaboration in an SDN environment.",
+        "And the complexity of the secure local binary pattern descriptor extraction scheme for image data privacy has also reached O(n 2 ).",
+        "The first data, used for undisclosed commercial purposes, or even sold publicly online.",
+        "However, for an industrial IoT scenario, it emphasizes integration and interconnection of factories and machines so as to provide more efficient production.",
+        "Using edge of a single point failure.",
+        "For a simple task, we can directly compute on an independent node and return the corresponding result.",
+        "For an industrial IoT system, one can obtain much valuable information through data mining, such as device operating states, rates of return, and manufacturing status [12,.",
+        "Although a cloud server with powerful computing and storage capabilities can perform highly complex calculations, it requires high bandwidth requirements and exists a significant amount of time delay.",
+        "An SDN controller can achieve data flow management and service orchestration.",
+        "The 3GPP has defined three major scenarios and user authentication and reputation management scheme in mobile crowdsensing on blockchain.",
+        "This seriously damages interests of an enterprise.",
+        "In this way, each party in the cooperative multiparty system only knows its own data and the final result of all data computing.",
+        "The authors of provided a PRIME-Q scheme for a multi-domain SDN industrial IoT.",
+        "We will elaborate on these in the following subsections.",
+        "Second, it is difficult for network bandwidth to satisfy cloud-based transmission rates due to the exponential growth of data volume.",
+        "This work can hide the real location and also effectively resist location privacy attacks inside and outside of a network.."
+    ]
+}

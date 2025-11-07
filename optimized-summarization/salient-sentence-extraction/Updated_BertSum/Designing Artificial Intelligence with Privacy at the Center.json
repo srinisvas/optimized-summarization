@@ -1,0 +1,24 @@
+{
+    "paper_id": "Designing Artificial Intelligence with Privacy at the Center",
+    "salient_sentences": [
+        "Finally, it is important to highlight that Privacy by Design in AI must also address resilience to specific attacks on AI systems, such as \"data poisoning.\" This raises ethical questions about informed consent and transparency in the use of personal data.",
+        "The first fundamental principle is proactivity, not reactivity; preventive, not corrective.",
+        "These principles offer a framework for integrating privacy into the very heart of AI technology from its conceptualization to its deployment.",
+        "This involves a clear understanding of how algorithms make decisions and the ability to explain those decisions transparently to those affected.",
+        "Creating controlled testing environments for AI models, where different threat scenarios are simulated, allows developers to identify and correct potential vulnerabilities before the system is deployed in the real environment.",
+        "The era of artificial intelligence (AI) has marked a pivotal point in technological and business development.",
+        "This preventative approach helps avoid security breaches and ensures that privacy is an intrinsic component of the technology rather than an afterthought.",
+        "One of the main differences lies in the need to manage the algorithmic opacity inherent in many AI systems.",
+        "Re-identification is another particular issue of AI that differs from other information systems.",
+        "These strategies align with the GDPR's requirements for data protection and are seen as crucial for fostering trust in AI systems.",
+        "According to the OECD report (2023), AI risk management frameworks must include clear guidelines for interoperability and ethical data handling.",
+        "Implementing robust security measures and conducting regular security audits are essential to protect AI systems against such threats.",
+        "This concept is particularly relevant in AI, where decision-making processes are often complex and opaque.",
+        "AI systems should be designed in such a way that they automatically respect user privacy without requiring additional intervention.",
+        "Companies should strive to be more transparent in their data collection and use 979-8-3503-6593-1/24/ practices, allowing users greater control and understanding of how their data is used.",
+        "Moreover, the massive data collection and processing in AI not only require advanced protection measures but also a focus on data minimization.",
+        "This means that personal data collection is minimized by default and any information collected is rigorously protected.",
+        "Moreover, privacy must be integrated into the system design.",
+        "This challenge highlights the need to implement transparency and explainability mechanisms from the design phase.."
+    ]
+}

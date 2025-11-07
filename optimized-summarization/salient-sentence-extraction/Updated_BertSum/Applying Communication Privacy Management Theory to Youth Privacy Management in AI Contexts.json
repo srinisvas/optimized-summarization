@@ -1,0 +1,25 @@
+{
+    "paper_id": "Applying Communication Privacy Management Theory to Youth Privacy Management in AI Contexts",
+    "salient_sentences": [
+        "Table I provides the definitions of the five key constructs examined in our study: Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA).",
+        "For example, one young participant remarked, \"I do not know enough about them to be concerned about what I should be concerned about\" (#Participant 1).",
+        "\u2022 The approval with reference number #103116 was given for behavioral application/amendment forms, consent forms and questionnaires.",
+        "The analysis was conducted using a partial least squares structural equation modeling (PLS-SEM) approach via smartPLS software.",
+        "EA scored 0.622, also reflecting moderate reliability.",
+        "Participation was entirely voluntary and did not receive any form of compensation.",
+        "We recruited participants through flyers, emails, personal networks, and on social networking sites, LinkedIn, and Reddit.",
+        "In contrast, PDS exhibits a significant negative impact on DOC (\u03b2 = -0.170; p < 0.01), leading us to partially reject H6 as the effect, though significant, is negative.",
+        "Participants provided general feedback on the questionnaire which informed modifications and restructuring of the final survey questionnaires.",
+        "Conversely, a lack of transparency can erode trust, making users hesitant to engage or share data.",
+        "In contrast, PRB exhibited a low score of 0.197, suggesting poor reliability and questioning its appropriateness for inclusion in further analysis.",
+        "By promoting practical tools and using real-life examples, such programs can help individuals develop a more nuanced understanding about how to balance convenience and privacy risks when using AI systems.",
+        "We also conducted a thematic analysis of open-ended questions to identify common themes expressed by participants.",
+        "Future research could benefit from employing random sampling methods and longitudinal designs to validate these results across a more diverse range of populations.",
+        "For our analysis, 5,000 subsamples were generated, and a two-tailed test was conducted at a significance level of 0.1.",
+        "Striking a balance between parental authority and youths' autonomy requires careful boundary coordination to ensure that privacy rights are respected.",
+        "Exploratory Factor Analysis: For exploratory factor analysis, we first checked the factor loadings of individual items shown in Table IV, to see how each variable loaded on its own construct over the other respective constructs.",
+        "Together, these constructs provide a comprehensive view of the interactions between individual perceptions, parental roles, system transparency, and educational factors in shaping privacy management behaviors.",
+        "A strong sense of ownership is linked to privacyprotective behaviors, empowering young individuals to establish boundaries and exercise autonomy over their data.",
+        "We employed the path-weighing structural model scheme in smartPLS which provides the highest R 2 values for dependent latent variables.."
+    ]
+}

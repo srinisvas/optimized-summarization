@@ -1,0 +1,25 @@
+{
+    "paper_id": "Ethical AI Towards Defining a Collective Evaluation Framework",
+    "salient_sentences": [
+        "This article addresses key challenges in ethical AI and aims to:\nPropose a unified system for monitoring AI outcomes in line with the EU AI Act and emerging global regulations.",
+        "\u2022 If cross-references are weak, human oversight is required.",
+        "A response like \"Not well\" may indicate emotional sensitivity.",
+        "\u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 Example: A dataset element (e.g., a car) represents property, while ownership (e.g., \"Tom owns the car\") provides context.",
+        "Goodall advocates for programming rules that minimize harm during unavoidable accidents.",
+        "\u2022 FAIR principles enhance discoverability, usability, and scalability.",
+        "These must be both philosophically robust and operationally viable.",
+        "The proposed structure is simple: a primary concept paired with a binary ethical qualifier (e.g., good or bad).",
+        "AI relies heavily on vast datasets sourced from the internet, private organizations, and other repositories.",
+        "Transparency: Promotes understandable, open AI processes AI Application Areas: Domains where ethical principles are applied.",
+        "They include:\nFairness: Prevents bias and ensures equitable treatment.",
+        "This enables real-time, context-aware, and ethically grounded risk assessment.",
+        "The article is organized in five sections: Introduction (Section I), background (Section II), literature review (Section III), methodology and discussion (Section IV), then includes conclusion and recommendations (Section V).",
+        "\u2022 Responsible Research and Innovation (RRI) offers a governance model that aligns AI with societal values -.",
+        "Integrating ethical AI into legally binding decisions requires acknowledging that legal standards vary significantly by context.",
+        "Using NLP and probabilistic modeling, the system estimates a behavioral risk profile.",
+        "\u2022 Ontological blocks, drawing from Semantic Web standards , , provide scalable representations of principles like non-maleficence and equity.",
+        "Another pressing issue is trustworthiness.",
+        "An international consortium proposes benchmarking societal risks, promoting transparency and cooperative oversight.",
+        "For example:\n\u2022 Biased algorithms in hiring or lending processes can perpetuate societal inequalities.."
+    ]
+}

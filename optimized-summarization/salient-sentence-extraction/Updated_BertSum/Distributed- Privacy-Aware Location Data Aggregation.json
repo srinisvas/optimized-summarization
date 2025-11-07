@@ -1,0 +1,26 @@
+{
+    "paper_id": "Distributed- Privacy-Aware Location Data Aggregation",
+    "salient_sentences": [
+        "DIPALDA enforces this by a) allowing each user to set individual privacy parameters that are specifically designed to prevent such attacks, b) making sure in step (4) that a user's location is only encoded for those hierarchy levels where their individual privacy parameters are in line with the shared privacy parameters of the data structure, and by c) making sure in step (5) that the aggregation result in each vertex of the data structure is only released, if the shared privacy parameters for this vertex are fulfilled.",
+        "Section VII concludes.",
+        "p = [0.5, 1], [0.1, 0.5], 2 3 5.",
+        "To simplify our presentation, we first explain our anonymization approach using a trusted coordinator and trusted users.",
+        "Subregions refer to districts and independent cities.",
+        "h u is derived for which l u \u2208 r v.",
+        "While the Relative Error can rise quickly if p is not chosen carefully, it stays below 4% in non-rural areas (and below 18% in rural areas) for a comparatively strict re-identification likelihood of p \u2265 10%.",
+        "0.05, 0.1], [0.03, 0.05], [0, 0.01], h = ,\nWe calculate anonymized Quadtrees H using DIPALDA for each region and privacy parameter combination.",
+        "A distributed key generation scheme can be used to avoid that a single party has access to the users' encryption keys, e.g., Threshold FHE as described in.",
+        "This data structure H = (V, M, h max ) recursively divides space into M = 4 equal subareas until a maximum depth h max is reached.",
+        "To overcome the limitations of previous approaches, Differential Privacy (DP) was introduced.",
+        "Furthermore, census statistics are taken into account to ensure that the population distribution does not allow (advanced) location homogeneity attacks.",
+        "At time of data collection, users with a positive sensitive attribute contribute their location l u , which is a spatial point, e.g., described as a pair of latitude and longitude.",
+        "K-anonymity makes the user indistinguishable from k -1 other users.",
+        "The Relative Error serves as a lower bound for the utility loss.",
+        "As a baseline we use the ground truth, which are complete Quadtrees constructed without any privacy constraints.",
+        "This limits the reidentification likelihood of the user to at most 1/k.",
+        "While DP provides a mathematical formulation to limit privacy leaks, its main drawback is that the privacy budget is an abstract value which can be hard to understand without expert knowledge.",
+        "However, DIPALDA can be applied to any data-independent hierarchical index with a predefined structure that forms non-overlapping areas per hierarchy level.",
+        "In the following, we explain these steps in detail.",
+        "Table I summarizes the population numbers and COVID-19 statistics of the analyzed regions.."
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "paper_id": "Enhancing Data Privacy in Edge-based Driver AI Monitoring Systems Through Adaptive Differential Privacy",
+    "salient_sentences": [
+        "The proposed system utilizes a combination of Laplace or Gaussian noise mechanisms, allowing it to select one or the other depending on how sensitive the data is and what level of risk the situational context presents, representing a fundamental trade-off between privacy and performance for the system.",
+        "Any potential algorithmic result.",
+        "\ud835\udc43\ud835\udc5f[\ud835\udc34(\ud835\udc37 \u2032 ) \u2208 \ud835\udc46](3)\n A : Variably private algorithm.",
+        "integrated differential privacy with deep learning to solve trajectory time prediction while keeping data publishing secure.",
+        "A convolutional neural network (CNN) is created to categorise driver states by determining eye states (open / closed) and mouth states (yawning / not yawning).",
+        "D, D\u2032: Adjacent datasets that have exactly one element difference.",
+        "This represents a value compromise that is suitable for practical use in deployment scenarios where both accuracy and speed are important.",
+        "With the adaptive approaches included here, we ensure our systems can be made durable against inference attacks while providing sufficient fidelity to justify collecting this data for achieving behavioral analytics, which is essential for some policy enactments, e.g., driver monitoring.",
+        "DMS continuously samples and processes real-time sensor data from multiple sources, such as cameras, facial recognition software, and vehicle dynamics sensors.",
+        "Liu introduced a generalized Gaussian mechanism for general DP applications , and Zhu et al.",
+        "stressed the applications of DP beyond privacy, including its importance in various AI subfields.",
+        "Mathematical Formulation of Adaptive Differential Privacy.",
+        "Each processed data type is analyzed on edge devices that infer risky behaviors, while still preserving privacy.",
+        "The increase in the number of driver monitoring systems (DMS) has substantially improved road safety by detecting and tracking dangerous driving behaviours, driver fatigue, and driver inattention.",
+        "The No Privacy approach has the fastest latency at 20 ms but experiences 100% privacy leakage and has no privacy at all.",
+        "surveyed privacy mechanisms for mobile crowd sensing, in which location privacy is still a major issue.",
+        "CNNs have been proven to classify images due to their ability to assess the spatial hierarchies of the data.",
+        "\u03b5: It is a measure of privacy guarantee but not guarantee of privacy.",
+        "The model training employs a hybrid differential privacy strategy that integrates both Laplace and Gaussian noise techniques to augment privacy.",
+        "In addition, secure offloading approaches, which require privacy-preserving cryptography methods, can add computational load that needs to be removed or at least ameliorated.."
+    ]
+}

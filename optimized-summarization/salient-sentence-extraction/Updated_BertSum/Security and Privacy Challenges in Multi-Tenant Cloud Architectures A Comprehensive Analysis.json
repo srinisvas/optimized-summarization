@@ -1,0 +1,25 @@
+{
+    "paper_id": "Security and Privacy Challenges in Multi-Tenant Cloud Architectures A Comprehensive Analysis",
+    "salient_sentences": [
+        "To address the identified security and privacy challenges in multi-tenant cloud environments, we propose a conceptual framework that integrates tenant isolation, secure communication, access control, and continuous monitoring using Google Cloud components.",
+        "Tampering: Unauthorized modification of data or configurations.",
+        "Techniques include:\n\u2022 AES-256 encryption for storage.",
+        "Hardware-level separation (e.g., Intel VT-x, AMD SEV).",
+        "It includes:\n\u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 6.",
+        "\u2022 \u2022 Known as ChaosDB, the vulnerability was resolved quickly by Microsoft.",
+        "\u2022 Supports compliance with GDPR and HIPAA through auditability.",
+        "Section V analyzes threat models and real-world incidents.",
+        "Because each tenant operates within an isolated GCP project, resources can be scaled independently.",
+        "\u2022 Multi-factor authentication (MFA).",
+        "\u2022 Kubernetes namespaces and network policies for containerized workloads.",
+        "Data encryption is essential at every stage-at rest, in transit, and in use.",
+        "This poses serious risks, especially if storage snapshots or backups are retained without cryptographic deletion mechanisms.",
+        "Tenants may become victims of resource starvation due to malicious tenants launching DoS attacks within the same infrastructure.",
+        "Cloud computing has revolutionized the way organizations access and manage computing resources.",
+        "An exploration of current mitigation strategies and recommendations for future cloud governance.",
+        "These components may introduce vulnerabilities into the ecosystem if not thoroughly vetted and regularly audited.",
+        "Google Cloud provides features like VPC Service Controls, data loss prevention (DLP) APIs, and Customer-Managed Encryption Keys (CMEKs) to enforce tenant data boundaries and prevent accidental leakage.",
+        "Lack of rate limiting or monitoring can result in entire physical resources being overwhelmed.",
+        "A typical multi-tenant cloud system consists of the following layers: Multi-tenancy brings advantages such as resource sharing, simplified deployment, and reduced operational cost.."
+    ]
+}

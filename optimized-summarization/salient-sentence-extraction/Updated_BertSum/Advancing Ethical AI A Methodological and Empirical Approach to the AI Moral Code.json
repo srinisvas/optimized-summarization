@@ -1,0 +1,25 @@
+{
+    "paper_id": "Advancing Ethical AI A Methodological and Empirical Approach to the AI Moral Code",
+    "salient_sentences": [
+        "The AI Moral Code operationalizes a structured approach to global AI governance by addressing regional, philosophical, and institutional variation through an ethical architecture grounded in the NRBC architecture.",
+        "This is not a conceptual gesture-it is a requirement for deployment.",
+        "A corpus of 291 global AI ethics documents (2006)(2007)(2008)(2009)(2010)(2011)(2012)(2013)(2014)(2015)(2016)(2017)(2018)(2019)(2020)(2021)(2022)(2023)(2024)(2025) was assembled from government strategies, industry guidelines, academic publications, and NGO frameworks.",
+        "Landmark publications by Jobin et al.",
+        ", mapped this convergence across sectors and regions, offering a shared vocabulary for ethical AI design.",
+        "China's model incorporates AI into long-range strategic planning, aligning system deployment with national development priorities and coordinated social outcomes as articulated in its national ethical norms.",
+        "This ensures these values can be interpreted and applied within distinct institutional systems.",
+        "By embedding these statistically persistent ethical themes into a layered framework-organized by function and domain-the model enables structural consistency while preserving normative diversity.",
+        "Justice, transparency, responsibility, nonmaleficence, and inclusivity emerged as the five most persistent cross-sectoral values through cross-validation against sectoral corpora and semantic alignment.",
+        "Prompts were crafted to reflect real-world asymmetries, stakeholder conflict, incomplete information, and the types of moral entanglements AI systems are likely to encounter.",
+        "In doing so, it affirms its own intellectual authorship-not through branding, but through scholastic construction, methodological discipline, and structural innovation.",
+        "Global coordination becomes feasible without requiring ethical convergence.",
+        "Sectoral policies, such as the 2024 memorandum from the White House Office of Management and Budget (OMB), emphasize responsible AI procurement within federal agencies, alongside protections for privacy and civil liberties ,.",
+        "The AI Moral Code does not present universal values as immutable dictates.",
+        "The timing of ethical intervention also varies by region.",
+        "Ethical benchmarks are regionalized, with the NRBC architecture serving as a middle layer that translates principles into actionable policy recommendations aligned with existing oversight mechanisms.",
+        "As AI continues to reshape critical infrastructure, labor systems, education, and geopolitics, the next phase of this work is practical: to extend the AI Moral Code into formal policy instruments, industry compliance mechanisms, and operational AI risk mitigation strategies.",
+        "This simulation explored how trust, transparency, and inclusivity manifest in adaptive learning platforms, emphasizing learner autonomy, data visibility, and interpretability of AI recommendations.",
+        "GPT-4 Turbo was employed as a natural language processing tool to verify alignment across texts, synthesize thematic trends, and assist in pattern recognition during value classification.",
+        "These four domains were selected to represent ethical pressure points across personal, institutional, and global scales of impact.."
+    ]
+}

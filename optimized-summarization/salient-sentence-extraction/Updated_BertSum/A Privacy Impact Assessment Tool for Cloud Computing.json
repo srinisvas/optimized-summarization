@@ -1,0 +1,24 @@
+{
+    "paper_id": "A Privacy Impact Assessment Tool for Cloud Computing",
+    "salient_sentences": [
+        "However, this technique would mainly be useful in an extension of our approach that can provide enhanced proof that the user information used by the PIA tool is correct -in other words, to check the location of the information that is stored and transferred associated with cloud services that are the target of assessment by the PIA tool.",
+        "Develop the code using Java (i.e.",
+        "Java Server Pages (JSP), JavaBeans etc.) Typically, PIAs are a series of steps, posing and answering questions and considering options.",
+        "They offer facilities for the secure generation of cryptographic keys and limitation of their use, in addition to a hardware pseudo-random number generator.",
+        "A meta-level description of the privacy rules for this phase is: 'When <trigger conditions> However, the snapshot only forwards changes between the original files and the most recent version and pushes out only what is necessary, thus reducing potential storage costs.",
+        "We achieve this by using a rule-based system in a controlled way.",
+        "The structure of the paper is organised as follows.",
+        "As such, the international PIA landscape can be very complex for organisations to navigate.",
+        "The following section provides more details of how the tool works.",
+        "More specifically, it can help decision makers within organisations to decide whether a new project (in a broad sense, encompassing scheme, notion or product, etc.), Because the cloud is a shared environment, providers need to ensure that customers are identified properly and that no customer has the ability to see or change another customer's data.",
+        "This is either on a continuous basis or in form of a 'cloudburst', and is known as the hybrid cloud.",
+        "Templatebased QA extends the pattern matching approach of natural language interfaces to databases, where the intelligence of the system is embodied in a collection of manually created question templates.",
+        "By surfacing privacy issues at an early stage, and providing system designers with relevant knowledge, and the impetus to tackle those issues at the architectural level, PIAs can facilitate the raising of a system's privacy baseline without undue impact on its functionality.",
+        "no such PIA application exists.",
+        "We believe that this generic approach will prove of increasing benefit as cloud service adoption increases.",
+        "This allows the tool to store sensitive data on its own data centre, while making use of public and private cloud services for infrastructure and general computing.",
+        "The PIA tool addresses the complexity of privacy compliance requirements for organisations (both public and private sector), by highlighting privacy risks and compliance issues for individuals within the organisation who are not experts in privacy and security, so they can identify solutions in a given situation.",
+        "This indicates the levels of risk associated with each category and colours are used to convey potential privacy risks and threats: black equates to being high risk, grey equates to a warning, and white to low risk associated with that category.",
+        "Within this context, we will discuss briefly two DSSs that are at the cutting edge of research.."
+    ]
+}

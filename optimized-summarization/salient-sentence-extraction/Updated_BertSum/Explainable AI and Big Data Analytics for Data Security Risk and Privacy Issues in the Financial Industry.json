@@ -1,0 +1,25 @@
+{
+    "paper_id": "Explainable AI and Big Data Analytics for Data Security Risk and Privacy Issues in the Financial Industry",
+    "salient_sentences": [
+        "The benefit prospect of this research project is to provide an understanding of the need for secure artificial intelligence and data analysis systems for the decision-making process in the finance industry.",
+        "Public data does not impose additional security requirements allowing unrestricted access.",
+        "Various methods have been proposed to explain black box models, ranging from model-agnostic approaches to model-specific techniques.",
+        "Search terms included combinations of \"explainable AI\", \"big data analytics,\" \"financial security,\" \"data privacy,\" and \"risk assessment.",
+        "We have utilized the following databases: IEEE Xplore, ACM Digital Library, ScienceDirect, and Google Scholar.",
+        "This study conducted a comprehensive review of the literature published between January 2015 and December 2023.",
+        "Notable domains include customer segmentation, profitability analysis, credit assessment, payment default prediction, marketing strategies, detection of fraudulent transactions, investment ranking, optimisation of stock portfolios, cash management and operational forecasting.",
+        "The best proof example of this statement is states by Shah, Lindsay, Diaz, and Schechter.",
+        "Referred to as knowledge mining from data, it is also known as knowledge extraction, data analysis, and data archaeology.",
+        "Exploitation and destruction of data while simultaneously ensuring the imperative of information security is resounding.",
+        "The progression from this will be marked by an exponential surge in data volumes that transcended to a higher storage volume.",
+        "It uses a layered architecture where each neuron's decision-making process can be traced and explained.",
+        "The Model A is Explainable Neural Network that combines the power of deep learning with interpretability.",
+        "The best method to judge whether the XAI tool is reliable with the help of a survey.",
+        "The challenge of protecting the mappers and data within this framework revolves around ensuring that the tasks assigned to individual mappers are executed securely without compromise, providing significance to the consideration of untrusted or malicious mappers The increasing reliance on complex algorithms in financial decision making has raised concerns about transparency and accountability, as highlighted by Pasquale.",
+        "In particular, this approach offers a user-friendly advantage by eliminating the need for program coding, thus facilitating the processing of large datasets through enhanced security layers.",
+        "This classification depends on the availability of existing and appropriate models for the data source.",
+        "This review paper explores the existing gaps in maintaining data security during processing with the help of XAI and data analytical technology within the financial industry that lead to data breaches during information storage and processing.",
+        "This problem extends to structured, unstructured, and semistructured data crucial for informed decision making without compromising accuracy.",
+        "The insights provided in this document are beneficial for all future research that is carried out in this field, as XAI also has the ability to predict future attacks.."
+    ]
+}

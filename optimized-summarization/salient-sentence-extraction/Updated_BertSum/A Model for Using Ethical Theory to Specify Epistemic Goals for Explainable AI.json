@@ -1,0 +1,25 @@
+{
+    "paper_id": "A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI",
+    "salient_sentences": [
+        "While the former concern matters to questions of AI moral accountability in that it has to do with ensuring that prospective assessors are actually provided with the information about how the AI works so that blame can be assigned, the latter is more central because it has to do with the possibility of gaining any sort of epistemic access to information about which specific strategies the AI used in executing certain kinds of morally relevant behaviors.",
+        "If Eliza had been a person, she would be blame-worthy.",
+        "Whether this is possible is partially determined by the second consideration.",
+        "Afterall, many animals experience pleasure and pain, demonstrate some degree of rationality, and engage in goal directed behaviors This paper makes progress in bridging these cross-disciplinary gaps.",
+        "I will develop the concept in this and subsequent sections.",
+        "Only children with some basic executive control over bodily movements are candidates for moral agency, for example.",
+        "For now, it suffices to point out that a human's motivationsin-acting are an aspect of the mind's inner workings.",
+        "While clean and simple, at least in theory, this resolution passes the buck at a time when humanity is facing a serious ethical problem -at least in the long-term.",
+        "The situation is flipped with AI such as LLMs.",
+        "Harmful actions, motivated by implicit or explicit desires to exclude people on the basis of their identities, are motivated by malevolence because excluding people on these grounds is precisely the feature of the action that makes it wrong.",
+        "For example, Chai chatbot Eliza evidently convinced a man to commit suicide, while Bing chatbot Sydney attempted to convince a New York Times reporter to leave his wife.",
+        "There are two apparent answers to this question.",
+        "This is likely because AI are able to process considerably more information than humans and at a faster rate.",
+        "One might wonder whether it is the sort of thing that emerges all at once or whether it manifests in degrees.",
+        "Arpaly defines motivation in terms of desire, but the question of what precisely motivates action is, as with all things, contentious in philosophy, and I am not sure that we should limit the content of motivational states to any strict notion of desire.",
+        "Note also that I am not assuming that any AI will actually acquire moral status.",
+        "This brings me to a discussion of Arpaly's account of blameworthiness, which adds complexities to any discussion about these sub-capacities.",
+        "Among humans, we are able to approximate this knowledge through a dialogic exchange under the assumption that, in normal conditions, the interlocutor in not lying.",
+        "AI explainability is important to assessing whether an entity satisfies these conditions, and these, by no means exhaustive conditions, specify epistemic goals for AI explainability and impose practical constraints on adequate XAI.",
+        "This assumption seems unproblematic, since there are large databases, such as the AI Incident Database, that archive ways in which AI like Eliza have had such an impact .."
+    ]
+}

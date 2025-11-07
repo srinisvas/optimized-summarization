@@ -1,0 +1,25 @@
+{
+    "paper_id": "On current trends in security and privacy of cloud computing",
+    "salient_sentences": [
+        "The cloud provider's electronic discovery capabilities and processes must not compromise the privacy or security of the data and applications of the organization in satisfying the discovery obligations of other cloud consumers, and vice versa.",
+        "Multi-tenancy should be separately defined for each service model as:\nInfrastructure as a Service (IaaS); delivers computer infrastructure by a platform virtualization environment.",
+        "# 2: Compliance refers to an organizations' responsibility to operate.",
+        "Solution systems should establish clear & mutually exclusive ownership rights over data.",
+        "The relevant references concerning Homomorphic encryption have been provided in References.",
+        "The essential characteristics are rapid elasticity, on demand selfservice, broad network access and resource pooling.",
+        "This generic workflow can be used to describe both OpenID SSO protocol as well the \"SP initiated SSO\" of SAML 2.0.",
+        "Cloud Auditor: To provide these requirements the necessary security functions are integrity, confidentiality and, availability.",
+        "Protecting data while in use is an emerging area of cryptography with little practical results to offer, leaving trust mechanisms as the main safeguard.",
+        "This is related to correctness and completeness issue.",
+        "Threats to network and computing infrastructures continue to increase each year and have a tendency of becoming more sophisticated than ever.",
+        "Conclusion is presented as section 5.",
+        "To solve it; audit mechanisms and tools should ensure organizational practices.",
+        "With the wide availability of cloud computing services, lack of organizational controls over employees engaging such services arbitrarily can be a source of problems.",
+        "Cloud computing may have different meaning for different participants of the cloud.",
+        "Information privacy is the assured, proper, and consistent collection, processing, communication, use and disposition of disposition of personal information (PI) and personally-identifiable information (PII) throughout its life cycle.",
+        "If SP perform calculations directly on encrypted data, yet get the same results that consumer get from the unencrypted data, so both parties win enormously from a security and privacy point of view.",
+        "Continuous monitoring of information security requires maintaining ongoing awareness of security controls, vulnerabilities, and threats to support risk management decisions.",
+        "Data sanitization also applies to backup copies made for recovery and restoration of service and residual data remaining upon termination of service.",
+        "# While aspects of these characteristics have been realized to a certain extent, cloud computing remains a work in progress.."
+    ]
+}

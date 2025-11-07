@@ -1,0 +1,27 @@
+{
+    "paper_id": "Privacy Smells Detecting Privacy Problems in Cloud Architectures",
+    "salient_sentences": [
+        "Data broadcasts: This smell identifies groups of users and groups of resources that have accessed a data item in the past.",
+        "acc(g i , ds)(2)\n nacc(d i )(1)\n |R| i=1 scopeDepth(r i )(9)\n 1.",
+        "\u2022 \u2022 Section VI describes related work and Section VII concludes the paper.",
+        "It is implemented in a public cloud and its access control is managed using a RBAC system, which is the standard access control model in cloud computing.",
+        "We therefore propose a relative metric to take this into account.",
+        "Fourth, build a tuple (ef f Act 1 \u2229ef f Act 2 , overlapScope) that now includes the overlap of the two role assignments.",
+        "We also refer to Colesky et al.",
+        "They also propose concrete evaluation criteria for encryption, certificate quality and data separation.",
+        "It is, however, designed as a means to manage resources in bulk, e.g.",
+        "to automate tasks regarding a resource group.",
+        "Arrows can be read as is composed of and are denoted with the composition's multiplicity.",
+        "Such overlapping permissions, however, do not necessarily mean that users have overly broad permissions.",
+        "We argue that smells as proposed in this paper are significant for a cloud user's or an auditor's ability to find and correct privacy problems that are related to non-compliance with common design strategies.",
+        "Yet, we see a second way to use these metrics in the monitoring of the metric values to detect significant changes over time (without defining thresholds).",
+        "The scope of a role assignment is specified as a path, e.g.",
+        "a resource group is specified as /subscriptions/{subscriptionId}/resourceGroups/myresourcegroup1.",
+        "Section II briefly explains existing privacy design strategies which we use as the basis for our approach.",
+        "A cloud system that has been designed using this strategy would therefore process and store data from different sources in different backend resource groups.",
+        "Note that cloud providers offer dedicated services called data lake where cloud users can store structured and unstructured data to be analyzed later 12.",
+        "To identify this overlap we propose to measure the proportion of (permissions, scope)-tuples that are shared among all user groups in the RBAC system.",
+        "From a privacy perspective, the total number a data item has been disseminated does not allow to make an assumption about potential privacy loss since it may still only have been accessed by one authorized agent.",
+        "We follow a common approach to the detection of smells: First, a metric m(e) We show in Section V how they can technically be measured in Azure and discuss differences to other cloud providers.."
+    ]
+}

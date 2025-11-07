@@ -1,0 +1,21 @@
+{
+    "paper_id": "Deep Learning Framework with Explainable AI for Accurate and Interpretable Brain Tumor Segmentation",
+    "salient_sentences": [
+        "In the proposed model, combining FL with XAI to create a model that balances privacy, interpretability, and diagnostic accuracy best for the improvement of validity and reliability in AI-driven systems of brain tumor detection.",
+        "Backward Pass \u2022 Real-time Processing: This indicates how quickly the system can make predictions based on MRI data.",
+        "\u2022 Performance Metric: \u2022 \u2022 \u2022 A \u2022 Federated Averaging Algorithm:\nThe Federated Averaging (FedAvg) algorithm from (1) updates the global model parameters by aggregating the locally computed updates from participating devices.",
+        "The output is forwarded for clinical assessment.",
+        "Current methods will be analyzed, with its shortcomings and potential directions toward future research.",
+        "Federated Learning, which promises to offer privacy-friendly co-operative model training across institutions without sharing raw data, is emerging as a possible solution to these problems.",
+        "In this architectural design:\n\u2022 Information Gathering: \u2022 Heatmap Generation: The weighted feature maps are combined to form a heatmap H, which highlights the areas in the image most relevant to the class prediction.",
+        "MRI-based non-invasive diagnosis has become the cornerstone, but manual interpretation is labor-intensive and error-prone, thus delaying treatment.",
+        "\u2022 Explainable AI for transparent models using SHAP and LIME.",
+        "To improve model generalization across different tumour types and MRI techniques, including bigger and more diverse datasets can help.",
+        "This is further improved using model aggregation on a central server to generate the global model.",
+        "Their \"black-box\" nature poses significant challenges even though they achieve high accuracy, especially in clinical scenarios where interpretability is a concern.",
+        "Federated Learning Challenges: There is also the issue of the computational cost and the real-time responsiveness of the specificity of the explanations.",
+        "FL allows organizations to train models locally on the organization's data, and no data is exchanged during the training procedure.",
+        "All such indicators are analyzed for seeing how the system performs in these varied situations.",
+        "Despite advances in technology, brain tumors remain the most common cause of morbidity and mortality worldwide, and early diagnosis is key to effective treatment.."
+    ]
+}

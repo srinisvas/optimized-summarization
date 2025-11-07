@@ -1,0 +1,25 @@
+{
+    "paper_id": "Comparison of Privacy-Preserving Models Based on a Third-Party Auditor in Cloud Computing",
+    "salient_sentences": [
+        "The public cloud can be used for data that is not extremely sensitive and where the integrity of the data is subject to frequent changes.",
+        "b) Intoxication Attack Malicious users behave alternatively in ethical or bad fashions.",
+        "Our experiments were conducted using Greencloud platform.",
+        "\u2022 \u2022 \u2022 \u2022 \u2022 \u2022 Section III presents TPA's comparison of security factors.",
+        "Uses a Forgetting factor technique to resolve this problem.",
+        "It consists of three types:\nSelf-Promoting: consists of promoting a Cloud service provider.",
+        "In other words, the user first acts normal, but as time progresses, the user starts to misbehave after earning trust.",
+        "As detailed in our previous publication introducing LAPP , below is a recapitulation of the main simulation parameters given in table 1.",
+        "Hence, users must consider the risks involved with cloud adoption.",
+        "Cloud computing is a utility-driven, based on \"pay as you use,\" technology for remotely sharing the information technology resources rather than having local servers or personal devices handle applications.",
+        "Then the group who offered contradictory results might be labeled as dishonest.",
+        "The hybrid cloud offers enhanced security at a lower price but could end up with high management complexity.",
+        "The novel third-party auditor scheme ensures data confidentiality using encryption techniques leading to secure authentication.",
+        "Also, safety is guaranteed by the large verification overhead.",
+        "To date, there is no practical solution to mitigate such an attack.",
+        "However, TPA has control of the private keys (which is deemed unsafe).",
+        "Cloud computing is vastly used in different domains (e.g., social, economic, industries, financial institutions, government offices, educational institutions).",
+        "In some cases, due to dynamic operations, which tend to make the auditing protocol insecure.",
+        "In the PoOR scheme, the traffic cost is optimized.",
+        "Simulations experiment on the four most eminent PPM compared to our previously introduced LAPP.."
+    ]
+}

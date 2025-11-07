@@ -1,0 +1,21 @@
+{
+    "paper_id": "Privacy protected documents on openstack cloud",
+    "salient_sentences": [
+        "Cloud computing system usually offers services (DaaS, SaaS, IP-MaaS, PaaS, and so on) on the other side of the Internet in terms of its users .The secret information of individual users and business are stored and managed by the service providers, which consequently results in privacy concerns.",
+        "Compute Node (Server2) Installation\nThis node runs a hypervisor to create virtual machines.",
+        "It L.Sweeney propose k-anonymity protection model for protecting privacy.",
+        "Each service has an HTTP REST interface to communicate with OpenStack clients.",
+        "\u2022 \u2022 OpenStack is defined as a collection of independently developed software projects, glued together.",
+        "Health research is central to the advancement of health care, which imperatively requires access to health data.",
+        "proposes a method to minimize the information loss due to anonymization,group similar data together and then anonymize each group individually.",
+        "Many anonymization applications already developed in non cloud applications.",
+        "The forthcoming sections of this paper discuss how to implement a privacy preserving solution using OpenStack to protect the private information, while publishing precious datasets to the outside world.",
+        "Then conclusion and future work are presented.",
+        "Cloud Controller (Server1) Installation\nThe API processes as well as the single-instance ones (MySQL, RabbitMQ, Keystone) run on the controller node.",
+        "OpenStack is open source software designed to provision and manages large networks of virtual machines, creating a redundant and scalable private cloud computing environment.",
+        "The rest of the paper is organized as follows; Section 3 describes the proposed method.",
+        "To address such issues, a privacy rule was established in the United States which constitutes a comprehensive federal protection for individual's medical records and is known as Health Insurance Portability and Accountability Act (HIPAA).",
+        "So here this paper discusses about private cloud implementation using OpenStack software, in which three node architecture is used for implementation.",
+        "The most important process that runs on the node is novacompute responsible for -gathering all the necessary resources needed for a VM -creating the hypervisor related configuration for the VM -commanding the hypervisor to start the VM Nevertheless, these acts are become outdated and inapplicable to the new scenarios, where an entirely different relationship has been evolved between users and providers .."
+    ]
+}

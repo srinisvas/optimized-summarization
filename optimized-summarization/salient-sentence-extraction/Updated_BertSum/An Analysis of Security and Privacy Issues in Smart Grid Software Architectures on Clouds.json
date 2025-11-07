@@ -1,0 +1,25 @@
+{
+    "paper_id": "An Analysis of Security and Privacy Issues in Smart Grid Software Architectures on Clouds",
+    "salient_sentences": [
+        "The utilities may also provide an infrastructure for third party services to run their applications in the Cloud and access consumer and other data available in the Cloud.",
+        "Phasor measurements from transformers measure power quality several times per minute.",
+        "Section IV provides examples of such applications.",
+        "categorizes attacks on Smart Grid into network availability, data integrity, and information privacy.",
+        "Increasing information flows raises the chance that personally identifiable information will be passed which, if not handled carefully, can lead to violation of an individual's privacy.",
+        "Information acquired and integrated by the power utility needs to be preserved over long time periods.",
+        "The life sciences domain has already encountered such issues with the HIPAA regulation 3.",
+        "These are summarized in Figure 1.",
+        "Specifically, extensive work on Web services for eCommerce has led to standards such as WS-Policy4 , WS-Agreement5 , WS-Security, WS-XACML 6 and SAML 7 that can be used to negotiate service level agreements and monitor their enforcement.",
+        "Such dynamism in power consumption and production affects traditional electricity forecast and planning models.",
+        "The policies themselves can be complex and varied, given the number of different information sources such as consumers, public agencies, online service providers and prior utility data.",
+        "While some privacy concerns arise due to lack of security, others are side effects of integrating disparate data sources that together may provide unprecedented insight into user activities.",
+        "Utilities in the United States are regulated by federal and state energy regulatory commissions.",
+        "At one end, HAN systems can report fine-grained usage of smart appliances, on the order of bytes/kilobytes to the utility through the smart meter.",
+        "Private Clouds use hardware exclusively for a single organization at a local site, with the Cloud fabric providing virtualization and storage services.",
+        "Indeed, some data warehouse vendors are already considering Cloud deployments for Smart utilities.",
+        "Among solutions, proposes a user centric approach for privacy management while promotes awareness of security during the application design phase.",
+        "Cloud service providers distribute datacenters globally to ensure reliability, provide locality of services, and leverage incentives provided by local governments and power suppliers.",
+        "implements Smart Grid security as a SaaS service, with all communication and data being passed through their access control and intrusion detection service.",
+        "Here, we discuss how these stakeholders interact with the Smart Grid software architecture deployed on Clouds, and identify security and privacy concerns arising from those interactions.."
+    ]
+}

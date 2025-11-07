@@ -1,0 +1,24 @@
+{
+    "paper_id": "A Privacy-Leakage-Tolerance Based Noise Enhancing Strategy for Privacy Protection in Cloud Computing",
+    "salient_sentences": [
+        "In this paper, we use Noise Cost to denote the cost of noise service requests and express the efficiency of privacy protection on noise obfuscation in this paper.",
+        "D ( f Q N 1 N (14)\n So:\n) 1 y , x ( plr ) y , x ( plr !( 10)\nHence, equation ( 7) is monotonically decreasing with y increasing.",
+        "That is PTNCA described in Algorithm 1.",
+        "Anonymity or proxy networks need service provider's cooperation to enable such access.",
+        "Finally in Section 5, we conclude our contributions and point out future work.",
+        "Let us take a weather forecast service as a motivating example to describe this strategy.",
+        "It is built on the computing facilities at Swinburne University of Technology.",
+        "Meanwhile, a large number of unethical and unknown service providers may exist in these open and complicated cloud eco-environments.",
+        "It means cost-saving as customers' wishes.",
+        "Therefore, privacy protection is critical as one of the most concerned issues in cloud computing.",
+        "We will describe these positive improvements on these strategies by PTNES.",
+        "To protect privacy, a randomisation operator can be utilised to protect output privacy in stream mining.",
+        "Actually, it is a natural concern that a customer considers and evaluates privacy leakage risk with some boundaries before he/she utilises services in cloud environments, no matter automatically or not.",
+        "We need to utilise past Q R and Q S to generate Q N by 'noise generation strategy' and then apply them into noise injection processes.",
+        "Similarly, PPDP has a widely utilised field in service web by considering privacy-preserving data publishing on set-valued data.",
+        "In other words, these specific privacyleakage-tolerances could give cloud customers specific choices on specific noise obfuscation processes.",
+        "The overall working process of the model is to inject Q N into Q R based on \u03b5 so that we can get Q S.",
+        "In the rest of this section, we overview some typical and widely used approaches.",
+        "In this section, firstly, we plan to introduce the Privacyleakage-Tolerance based Noise Injection Model (PTNIM) to support PTNES.."
+    ]
+}

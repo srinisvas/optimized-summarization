@@ -1,0 +1,25 @@
+{
+    "paper_id": "AI Ethics Impact Assessment based on Requirement Engineering",
+    "salient_sentences": [
+        "From a survey of past AI ethical incident cases, we assumed that ethical risks are mapped to the interactions between the components of an AI system and the stakeholders directly or indirectly involved with the system.",
+        "Approach 2: Impact assessment process.",
+        "The response period was set at one week.",
+        "Companies are also beginning to implement principles into practice.",
+        "This step can be mechanically carried out using the interaction extracted in Step 1 as an input.",
+        "The procedure consists of three steps.",
+        "This model provides a framework for AI service providers to consider risk assessment and control of their AI services.",
+        "We are grateful to mediaX at Stanford University for holding a valuable workshop to advance this research.",
+        "There is gender bias in the results obtained using the AI model.",
+        "The remainder of this paper is structured as follows.",
+        "The risk chain model for assessing ethical risks has also been proposed.",
+        "Multiple types of interactions may correspond to one AI ethical characteristic.",
+        "The statement describes an ethical situation, and the risk would be a situation that violates the statement.",
+        "CONCEPT FOR SYSTEMATIZING AND EVALUATING ETHICAL IMPACT In this section, we first explain the terminology used in this paper then explain the concept for systematizing and evaluating ethical impact.",
+        "Companies that are making an effort to follow their guidelines have published practical examples and assessment tools, such as open toolkit for fairness and transparency in implementing the guidelines and assessment tools.",
+        "Objectives: For each risk presented in the analysis results, examine the validity of the interactions associated with that risk and test the validity of our assumption.",
+        "Using the AI Ethics Impact Assessment, AI developers, providers, and users without expertise in ethical guidelines can assess ethical risks at each stage of the AI lifecycle, from planning to development, operation, and retirement.",
+        "The second and lower layers are structured from Assessment Lists of the Trustworthy AI (ALTAI).",
+        "It also lists the uses of AI in personal biometrics and classification and its application to critical infrastructure as \"high-risk AI\" and imposes a number of requirements for its use in these fields with significant fines for violations.",
+        "For example, for sensitive attributes, such as race and gender for which fairness is being considered, there is one approach that equalizes the probability of the potential outputs provided by AI (for example, for recruitment AI, the hiring and rejection of candidates), and another that equalizes the probability of AI output being used in correct data.."
+    ]
+}

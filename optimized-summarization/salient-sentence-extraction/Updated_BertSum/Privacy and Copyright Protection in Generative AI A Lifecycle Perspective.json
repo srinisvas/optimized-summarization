@@ -1,0 +1,25 @@
+{
+    "paper_id": "Privacy and Copyright Protection in Generative AI A Lifecycle Perspective",
+    "salient_sentences": [
+        "This approach necessitates a comprehensive and coordinated effort throughout the entire data lifecycle in GenAI, ensuring that the usage of data and the downstream distribution of model and derivative data are legally compliant.",
+        "Without in-depth investigation, identifying such uses is challenging, underscoring the need for enhanced transparency mechanisms.",
+        "Reliable Guardrails for Privacy and Copyright Protection.",
+        "The US Copyright Law, as codified in Title 17 of the US Code, protects six exclusive rights 5.",
+        "This issue is not just a technical hurdle but also a legal one, as failure to properly attribute can lead to copyright infringement, despite the presence of a license.",
+        "In Problem Formulation, defining the machine learning tasks can influence whether these tasks fall within the scopes of legitimate interest and fair use.",
+        "As the process progresses through model training and deployment, these challenges can become more intricate and difficult to manage.",
+        "Key among these are the Right to be Informed, the Right of Access, the Right to Rectification, and the Right to Erasure 4.",
+        "By mapping the challenges and advocating for solutions informed by a data lifecycle perspective, we aim to bridge the gap between technical innovation and legal responsibility.",
+        "GenAI companies often deploy rudimentary safeguards such as keyword filters or prompt prefixes to mitigate privacy breaches and copyright violations 10.",
+        "It utilizes personal online datastores that are web-accessible, granting users control over their data and the flexibility to switch between applications.",
+        "Machine Forgetting and Side Effects Mitigation.",
+        "GenAI models, also known as Foundation Models, differs from traditional smaller-scale narrow-scoped DL models in its capability to generate diverse content forms, including text, audio, and visuals.",
+        "The goal is to create a robust and adaptive system that can effectively respond to the ever-changing challenges posed by GenAI, thereby safeguarding privacy and copyright.",
+        "In light of this, we highlight and call for further research into the following directions.",
+        "This obscurity often leaves individuals oblivious to whether their personal or copyrighted data has been harvested for GenAI model training, thereby complicating the enforcement of their legal rights of consent modification and withdrawal.",
+        "This challenge is primarily associated with Data Collection and Model Training Stages.",
+        "Such vigilance is essential to ensure that privacy and copyright protections keep pace with the advancements and novel exploitation methods in GenAI.",
+        "While statistical models can forecast certain outcomes, such as the effects of data removal, these predictions are not always entirely accurate or comprehensive.",
+        "Each of these challenges can span across multiple stages, underscoring the interconnected and continuous nature of these issues.."
+    ]
+}

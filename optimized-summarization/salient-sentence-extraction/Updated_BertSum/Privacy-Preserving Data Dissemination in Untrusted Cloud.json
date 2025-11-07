@@ -1,0 +1,27 @@
+{
+    "paper_id": "Privacy-Preserving Data Dissemination in Untrusted Cloud",
+    "salient_sentences": [
+        "Based on evaluation of access control policies, of the client's browser cryptographic capabilities and of client's authentication method, Active Bundle responds to the requesting service with the authorized data.",
+        "Researcher can given in table 1.",
+        "It provides protection against eavesdropping attacks.",
+        "Decryption key derivation procedure is similar to encryption key derivation.",
+        "OS kernel is trusted, as well.",
+        "proposed a solution for secure data dissemination when the recipients are not known in advance.",
+        "Hospital Information System has all the EHRs and is hosted by a cloud provider.",
+        "Suggested methodology does not consider trust levels of services.",
+        "Demo video for our prototype is available.",
+        "only access anonymized records of patients, i.e.",
+        "medical and billing information.",
+        "Data and policies are made inseparable.",
+        "Access control policies can be specified either using Javascript Object Notation (JSON) or Extensible Access Control Markup Language (XACML) policy language.",
+        "Micro-policies are specified in terms of tags, used to label URLs, network connections, cookies, etc; and a transfer function, which monitors security-relevant operations based on these tags and defines which operations are permitted by the browser.",
+        "Here is the example of key -value pair stored in the Active Bundle: { \"ab.patientID\" : \"Enc(0123456)\" }.",
+        "The mechanism, implemented as a Google Chrome extension Michrome , can be used to ensure secure access to web data by means of http(s) protocol.",
+        "Client's network (trusted vs.",
+        "unknown network).",
+        "Active Bundle with embedded tamper -resistance mechanism is evaluated.",
+        "When the number of policies grows, the number of required checks before data can be retrieved, grows correspondingly.",
+        "Detailed configuration setup can be found in the prototype tutorial.",
+        "Such operations have limited ability to express access control policies.."
+    ]
+}

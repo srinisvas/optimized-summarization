@@ -1,0 +1,25 @@
+{
+    "paper_id": "AI Model Training Data Privacy Protection Scheme Based on Local Differential Privacy",
+    "salient_sentences": [
+        "Local differential privacy allows noise to be added directly to the data at the point of collection, ensuring that privacy is protected before the data is even transmitted.",
+        "= 1 2\ud835\udc4f exp (- |\ud835\udc67| \ud835\udc4f ).",
+        "Step 1: generate Laplace noise.",
+        "Traditional approaches to privacy protection, such as encryption and anonymization, have been widely used in various applications.",
+        "The following subsections would then elaborate on each of these steps.",
+        "The model is iteratively updated using this noisy gradient until convergence.",
+        "Step 1: evaluating model performance: after a set number of iterations, the model is evaluated on a separate validation set to measure accuracy and loss.",
+        "Existing work on privacy in data fusion has mainly focused on secure multi-party computation (SMC) and homomorphic encryption, which enable data processing without exposing raw data.",
+        "A smaller \ud835\udf00 means stronger protection but can reduce the utility of the data.",
+        "However, we found that for moderate values of \ud835\udf00, the model maintains a high level of accuracy while still providing strong privacy guarantees.",
+        "The overall architecture of the algorithm is depicted in Figure 1.",
+        "This involves standardization, where features are scaled to have a mean of zero and a standard deviation of one.",
+        "One of the most prominent works in this field is the differentially private stochastic gradient descent (DP-SGD), introduced by Abadi et al.",
+        "( 2016) , which applies noise to gradients during the training process to guarantee privacy.",
+        "This helps determine whether the current level of privacy and noise is appropriate.",
+        "AI models often rely on large datasets that may contain sensitive personal information such as medical records, financial transactions, or usage patterns in critical infrastructure like electricity grids.",
+        "Protecting the privacy of this data is crucial, not only for legal compliance but also to maintain trust between users and AI systems.",
+        "In the data preparation phase, the privacy budget and noise distribution parameters are chosen.",
+        "Our proposed scheme excels in both these areas by leveraging the local application of differential privacy.",
+        "Data anonymization, while useful in some contexts, often results in degraded model performance due to loss of valuable information.."
+    ]
+}

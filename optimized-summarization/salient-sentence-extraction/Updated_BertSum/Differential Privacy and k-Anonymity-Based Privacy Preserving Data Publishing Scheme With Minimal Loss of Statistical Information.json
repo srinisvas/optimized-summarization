@@ -1,0 +1,26 @@
+{
+    "paper_id": "Differential Privacy and k-Anonymity-Based Privacy Preserving Data Publishing Scheme With Minimal Loss of Statistical Information",
+    "salient_sentences": [
+        "From the results given in Fig.",
+        "Descriptions of each component are as follows.",
+        "Section V concludes this article.",
+        "8 \ndiv(R i ) \u2190 - |Y | i=1 10(b) = other, f (other) = 271, v * 5 \u2208 c 4 \uf8f9 \uf8fa \uf8fa \uf8fa \uf8fa \uf8fb.",
+        "1 1) 3) 5) 2) 3) 6) 1.",
+        "Data are no longer just raw materials, but products with tremendous opportunities for profit.",
+        "Afterward, we remove records with incomplete information.",
+        "Because the tuple that can likely be exploited by an adversary during an attack is unknown, we considered the worst case scenario in which any tuple can be exploited to infer an SA of an individual Acc = TP + TN TP + FP + TN + FN (3) where FN, TP, TN, FP, refer to a false negative, true positive, true negative, and false positive, respectively,\nDM = N i=1 p j=1 l l \u2032 Implementation was done using two software packages: MATLAB version and RTools, R version 4.0.0 with the help of built-in packages.",
+        "The validation results verified reliability.",
+        "For example, an adversary who knows the sex and age of a person might try to identify his/her zip code.",
+        "Hence, our scheme is also applicable in resource-constrained environments.",
+        "\u00d7 w q j (4)\nwhere l shows the actual level of generalization and l \u2032 shows the total # of levels in T.",
+        "The main problem to be addressed with our hybrid scheme is formally expressed in Problem 1.",
+        "Because D is curated from diverse sources and people, it can contain outliers (i.e., undesirable values in some columns; for instance, age value \u0338 = 600, but is highly likely 60).",
+        "Algorithm 1 details the process of numerical QID anonymization located at index 1 of P 1.",
+        "We reanalyzed these findings by checking each QID's real values' domain and distribution in D.",
+        "Most existing mechanisms anonymize entire sections of data and fail to maximally preserve the structure/values of real data.",
+        "In addition, data with the right balance of statistical information can contribute to RDS 1 and feed data-hungry applications, which are now growing and exciting areas of interest.",
+        "In some cases, there can be strict requirements of satisfying k-anonymity on both parts of data, and therefore, minor postprocessing is needed in our scheme.",
+        "Hence, it can be concluded that implementing k-anonymity has the greatest impact on the overall method.",
+        "Furthermore, ample attention can be paid to privacy-violating data (e.g., super minor values) to effectively protect privacy against adversaries.."
+    ]
+}

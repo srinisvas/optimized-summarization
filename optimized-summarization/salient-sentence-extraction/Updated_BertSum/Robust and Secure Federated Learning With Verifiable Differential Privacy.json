@@ -1,0 +1,26 @@
+{
+    "paper_id": "Robust and Secure Federated Learning With Verifiable Differential Privacy",
+    "salient_sentences": [
+        "In DPSFL, the global model update is computed as\nw = w + s\u2208S t v s ,\nwhere w is the aggregated model update from honest users and v s is the noise injected by secondary server s.",
+        "Under the Binomial Mechanism, the global model satisfies (\u03b5, \u03b4)-differential privacy with\n\u03b5 = 10 1 t \u2022 n b ln 2 \u03b4 ,\nwhere t is the threshold for secret reconstruction, and n b is the per-server noise parameter.",
+        "Practical Recommendations: Based on these findings, we propose: (1) This protocol involves two oracles.",
+        "Pedersen's VSS has an additive homomorphic property.",
+        "ii) Task-Specific Superiority: c -1 s,j , If v s,j = 1; c s,j , Otherwise.(3)\n Thus,\nn b = O( 1 |S|\n).",
+        "r r \u2022 [w u ] s ) + v s ; [r] s = u\u2208U H (q u \u2022 [r u ] s ) + r s.",
+        "r Generate private coins: The prover s samples private bits b s,j , j \u2208 Second, the architecture further introduces contradictory trust assumptions.",
+        "r FMNIST (Fashion-MNIST) r We re-designed a small VGG net with 14 layers and 5, 621K parameters for CIFAR-10.",
+        "'s 0.86% (97.57% \u2192 96.71%).",
+        "Second, cryptographic protocols (e.g., \u03a0 OR proofs, Shamir sharing) ensure adversarial collusion cannot bypass BR checks or reconstruct raw updates (local and global), securing both phases against adaptive threats (Theorem 2).",
+        "Fully Decentralized MPC Implementation: A theoretically viable alternative employs secure MPC among users to jointly implement BR and DP without centralized aggregators.",
+        "Fix n b > 30, 0 < \u03b4 \u2264 O(1/n b )\n, and let Z \u223c Binomial(n b , 1 2 ).",
+        "Similarly, we have:\nr = u\u2208U H q u \u2022 r u + s\u2208S t r s.",
+        "TABLE I lists the important notations, along with their definitions, to facilitate understanding of the formulas and concepts presented in the subsequent sections.",
+        "This trend amplifies for high-dimensional tasks: on CIFAR-10, DPSFL's 5.62% drop contrasts sharply with Zhou et al.",
+        "This aligns with the hypothesis that DP noise disrupts the stealthy gradient patterns required for persistent backdoor embedding, whereas EIFFeL's non differential privacy design remains vulnerable to such latent perturbations.",
+        "is proved to be correct.",
+        "Currently, numerous privacy-preserving mechanisms are employed to counter privacy leakage in FL, which can be broadly categorized into cryptographic primitives , , and DP techniques , ,.",
+        "DP, in particular, is gaining favor due to its ability to add noise to local updates, making it challenging for adversaries to extract sensitive information.",
+        "We analyze their fundamental limitations to demonstrate the necessity of introducing secondary servers.",
+        "A pivotal aspect of our analysis entails comparing x with x to quantify the magnitude of noise amplification, thereby elucidating how the introduced noise propagates through the reconstruction process.."
+    ]
+}

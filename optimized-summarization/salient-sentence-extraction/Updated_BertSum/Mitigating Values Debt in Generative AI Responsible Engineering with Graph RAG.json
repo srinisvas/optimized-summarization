@@ -1,0 +1,26 @@
+{
+    "paper_id": "Mitigating Values Debt in Generative AI Responsible Engineering with Graph RAG",
+    "salient_sentences": [
+        "To operationalize the Helpful, Honest, Harmless (HHH) framework and mitigate Values Debt, GRAISE integrates GPT-4 with a graph-structured aviation knowledge base, while adhering to HHH principles throughout system development.",
+        "This grounding can significantly reduce instances of hallucinations and misinformation prevalent in conventional LLMs.",
+        "Privacy preservation measures were integrated by anonymizing data and ensuring no personal or sensitive information was compromised.",
+        "Traditional software engineering practices prioritize code correctness and performance but often neglect these ethical complexities.",
+        "Unethical AI systems risk public backlash, lawsuits, and diminished market share.",
+        "[?].",
+        "Disinformation and Malicious Applications: Generative AI's ability to produce realistic yet false content facilitates disinformation campaigns, deepfakes, and fraud.",
+        "Continuous Evaluation and Adaptation: As ethical standards and domain regulations evolve, development processes must remain adaptable.",
+        "We built a Neo4j knowledge graph using NASA's ASRS incident reports and relevant communication theories, capturing key entities (e.g., CommunicationBreakdown, Aircraft, Incident, Anomaly) and their relationships.",
+        "For example, Amazon's AI recruitment tool favoured male candidates due to biased data, leading to its discontinuation.",
+        "Additionally, Graph RAG's intermediate and low-level community summaries surpass source text summarization on these metrics while reducing token costs.",
+        "These advancements have driven efficiency and innovation in fields like healthcare, education, and transportation Engaging with airline pilots during early prototyping ensured that GRAISE's objectives-enhancing pilot training while avoiding unnecessary complexity-matched real-world stakeholder needs.",
+        "This flexibility highlights the need for AI architectures that can swiftly respond to shifting ethical and regulatory requirements.",
+        "Although GRAISE is still a prototype, it is being tested in controlled environments where domain experts, pilots, and other stakeholders continuously evaluate its performance and ethical integrity.",
+        "Reputational and Legal Implications: Values Debt can lead to reputational harm, legal challenges, and loss of consumer trust.",
+        "It avoids harmful or misleading advice through reliance on validated data and adherence to safety protocols.",
+        "The adaptability of Graph RAG systems enables AI applications to provide context-sensitive and personalized responses.",
+        "However, they also introduce critical ethical challenges, including biases, misinformation, and privacy risks.",
+        "Aviation, as an example industry, is increasingly leveraging Generative AI to enhance predictive maintenance, workflow automation, record management, and customer service ,.",
+        "Such collaboration helps identify and mitigate ethical risks proactively, leading to technically robust and socially responsible systems.",
+        "By structuring data graphically, Graph RAG reduces hallucinations, provides clearer causal links, and enhances both the diversity and completeness of answers-especially in large-scale or highstakes contexts.."
+    ]
+}

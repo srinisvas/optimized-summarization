@@ -1,0 +1,25 @@
+{
+    "paper_id": "SDG-Based AI Ethics An Analysis of Recent Computer Vision Research",
+    "salient_sentences": [
+        "Considering all the papers in the scope of the SDGs presented at both CVPR and ECCV (3282 papers), interestingly their distribution over the SDGs is similar to the distribution of general AI papers observed by Palomares et al.",
+        "They analysed 819 publications.",
+        "Key Computer Vision functions are detection, recognition, classification, prediction and more recently image and video generation either starting from visual or text data.",
+        "Overall, our investigation covers a temporal window ranging from 2018 to 2022.",
+        "for Society, Economy and Environment.",
+        "Most ethical systems accord moral consideration first and foremost to humans (anthropocentrism), in few cases to nature (ecocentrism).",
+        "The SDGs that have low impact are SDG16 (4.27%), SDG4 (2.10%), SDG8 (1.62%), SDG7 (1.43%) and SDG10 (0.67%).",
+        "This has made the European conference nearly the same size as the older and prestigious US-based conference.",
+        "In general terms, AI systems must be as transparent, explainable, safe, robustness and reliable as possible and must also have clear evidence of trustworthiness and regulatory accountability.",
+        "ITU launched a global AI repository to identify AI-related projects that can accelerate progress towards the SDGs.",
+        "The impressive advancements of AI in the last few years require to consider this technology with respect to its impact on human rights, sustainable development, and planet earth.",
+        "The distinction between Ethics and Moral has been a long term subject of philosophical investigation in the western culture.",
+        "In the late 1970s, the so-called Ecological Ethics was defined, to which numerous important contributions were added, such as the Deep Ecology and the Responsibility Principles.",
+        "After our screening we obtained the following data that can be assumed as a clue of where and how much Computer Vision can contribute to the achievement of the SDG targets.",
+        "No impactful papers were found for SDG1, SDG5 and SDG17.",
+        "It is no coincidence that AI is considered by some to be a potential catastrophic risk.",
+        "Several ethical guidelines have been released in the few recent year that include normative principles and recommendations to mitigate possible technological risks and abuses.",
+        "Unfortunately, their research was of limited size: only 200 papers were analysed.",
+        "In our research we analysed the ECCV2018, ECCV2020 and ECCV2022 editions.",
+        "They also indicate the more mature directions for an ethical AI, as to the Computer Vision technology.."
+    ]
+}

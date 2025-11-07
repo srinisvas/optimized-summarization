@@ -1,0 +1,25 @@
+{
+    "paper_id": "Software Defined Privacy",
+    "salient_sentences": [
+        "Detecting these forms of data breaches is necessary in order to prevent more information from being lost, but doing so automatically on the side of the CSP can by itself be an intrusion to the customer's privacy ,.",
+        "Software Defined Architectures, such as Software Defined Networking, are usually split in three distinct layers, namely Application, Control and Infrastructure.",
+        "Following that, it looks for available hypervisors that match the requirement.",
+        "Instead, more often than not, they promote misconfiguration and thus less protected systems as systems tend to get too complicated and users become unable to cope with too many choices ,.",
+        "Section III will introduce a number of existing privacy threatening issues in Cloud Computing and potential mitigation approaches.",
+        "Besides the easier configuration, this approach also provides easier scalability by allowing to scale-out instead of scale-up.",
+        "Based on the user's selection, appropriate defaults will be selected and correspondingly configured tools deployed.",
+        "Detecting such leaks was therefore mostly done at network perimeter devices.",
+        "Even if the storage unit was compromised, the attacker would not be able to gain access to sensitive data within the backups.",
+        "To protect against attacks from other customers on the same machine, two protection mechanisms have been identified: a) exclusive usage of physical resources for a single customer or b) semi-exclusive usage following a Chinese Wall Policy Model.",
+        "With the increasing move into the cloud, defining these perimeters becomes increasingly difficult and routing all traffic from the cloud to local detection devices lacks both efficiency and dynamic.",
+        "Figure 2 shows a simplified dialogue during instance creation, where the user has chosen the highest default category (\"secret\"), which has automatically disabled backups and set the requirement of exclusive cloud hosts.",
+        "Using an XML-based interface, it is possible to attach other, more sophisticated interfaces or let specialised \"Privacy Officers\" design a suitable set of rules for a particular VM.",
+        "The arrival of the Cloud Computing paradigm has nothing less than revolutionised the way data is stored, accessed and used for computation by providing instant access to virtually unlimited resources.",
+        "While the customer still would be potential target for other attackers, it could be argued that they wouldn't have much interest in harming this customer as no direct competition between them exists.",
+        "In various studies, it has been shown that fine-grained configuration possibilities do not necessarily lead to better configured systems.",
+        "If the user then wishes to further define his needs in a more detailed way, this option will be given as well.",
+        "In light of the recent fall of the \"Safe Harbor\" agreement1 , this issue might become more prominent in the near future.",
+        "This improper configuration is detected by a PrivacyBreach-PredictionAgent by parsing the configuration files in question and comparing them to the original privacy policy.",
+        "The user is capable of either loosening the suggested mitigation methods or putting even more protection mechanisms in place.."
+    ]
+}

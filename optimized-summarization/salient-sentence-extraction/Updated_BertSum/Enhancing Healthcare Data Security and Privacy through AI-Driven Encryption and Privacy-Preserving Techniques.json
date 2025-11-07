@@ -1,0 +1,25 @@
+{
+    "paper_id": "Enhancing Healthcare Data Security and Privacy through AI-Driven Encryption and Privacy-Preserving Techniques",
+    "salient_sentences": [
+        "Use of AI in encryption assures that data is secured to the level required depending on the nature of the data, the location where the data will be accessed, and who wants to access the data.",
+        "These systems can always learn from previous mishaps and improve over time with enhanced detection mechanism on new hazards.",
+        "The scalability therefore makes AI driven encryption viable for large-scale health care systems.",
+        "Automation rate describes how many of desired compliance reports can be automatically produced by the system, which helps to decrease workload of healthcare organizations.",
+        "For instance, Barni et al.",
+        "( But still, it has some disadvantages for data utility and also for the overall problems of model aggregation.",
+        "Recent work has switched towards the design of AI-aided encryption and privacy-preserving methodologies to overcome these drawbacks.",
+        "The number of false violation rate is very low (1.2%) proving that the system always captures false actions without raising false alarm.",
+        "The traditional mathematical algorithms are static in preparation and denote more cycles and memory in utilization, making resource consumption inevitable.",
+        "Our evaluations will therefore feed into fine tuning and improving the proposed methodology to offer a sound, as well as scalable, approach to HCP data protection and security.",
+        "Some works using differential privacy in healthcare context have focused on protecting the identification of patients in a shared dataset.",
+        "The Methodology highlighted above of ensuring regulatory compliance with minimum interference ensures healthcare organizations have a perfect and comprehensive stop due to a proactive tool for meeting new paradigms of privacy laws.",
+        "As costly technologies such as cloud, AI, IoT continue to find their way in healthcare organizations, it becomes even more essential to ensure that those systems are built with security and privacy considerations in mind.",
+        "Nevertheless, HE schemes still suffer high computational cost, which is a big challenge and ongoing efforts are being made to improve on the efficiency of the above-mentioned techniques for use in practical healthcare scenario.",
+        "Due to the inherent distribution and tamper-proof characteristic of the blockchain structure, it can be a suitable application for preserving health care data, especially in recording patients' consent and Memo.",
+        "A lot of research has been dedicated to making AI security systems meet standard healthcare bodies, for instance, HIPAA in the United States, and GDPR in the European Union.",
+        "Because federated learning restricts data transfers, it is less privacy intrusive than other solutions, and it had the highest cooperation rate.",
+        "As pointed out, these types methods provide better flexibility and more effective computations by training on the patterns of the data and adjusting cryptographic key parameters on the fly.",
+        "For example, Differential Privacy adds noise into the data that make it impossible to retrieve specific records and Federated Learning lets models be trained from different devices or institutions without sharing the data.",
+        "However, homomorphic encryption offers a very high level of security to data and their actual big disadvantage is the fact that they need much more memory space and time for computations due to their complexity.."
+    ]
+}

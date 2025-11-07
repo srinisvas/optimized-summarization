@@ -1,0 +1,17 @@
+{
+    "paper_id": "Narrative-Based AI Ethics Education for Emerging Technologies Leveraging -The Monkey-s Paw- for AI Alignment and Social Justice",
+    "salient_sentences": [
+        "Instructors can further relate these discussions to ethical frameworks such as IEEE's Ethically Aligned Design, which emphasizes transparency, human well-being, and responsibility in intelligent systems.",
+        "The story's concise format (readable in under 15 minutes) allows it to be used during a single class session.",
+        "Consequently, students may graduate with little preparation to anticipate or mitigate the societal impact of the systems they create.",
+        "To bridge this gap, narrative-based ethics education offers an accessible and engaging format for exploring the complex human dimensions of AI.",
+        "One such narrative approach draws on The Monkey's Paw, a short story in which a family is granted three wishes, each fulfilled through literal but devastating outcomes.",
+        "While these challenges are recognized in AI safety research, structured opportunities to explore them in engineering classrooms remain rare.",
+        "Technical instruction often prioritizes system functionality and performance, leaving limited space for ethical analysis or value-sensitive design.",
+        "The story's central message-that fulfilling a goal without understanding its broader context can result in unforeseen harm-parallels the alignment problem in AI.",
+        "Its open-ended interpretation encourages students from varied backgrounds to consider how intention, design, and consequence interact in both fictional and real-world systems.",
+        "The symbolic nature of the tale provides fertile ground for examining themes such as control, moral agency, and technological risk.",
+        "As AI agents are increasingly embedded in daily life, their potential to operate independently while optimizing complex objectives raises ethical questions about how closely their actions reflect human intentions.",
+        "Misalignments between design goals and real-world outcomes can lead to harms such as reward manipulation, biased decisions, or unintended escalation effects , .."
+    ]
+}

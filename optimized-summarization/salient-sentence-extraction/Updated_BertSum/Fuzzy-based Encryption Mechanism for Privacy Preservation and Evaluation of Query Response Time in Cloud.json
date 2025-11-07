@@ -1,0 +1,26 @@
+{
+    "paper_id": "Fuzzy-based Encryption Mechanism for Privacy Preservation and Evaluation of Query Response Time in Cloud",
+    "salient_sentences": [
+        "The request for authentication is sent to the data provided by the edge server after reaches it.",
+        "Generally, there are two types of DP: local Differential Privacy (LDP) and centralized Differential Privacy (CDP).",
+        "This becomes illegitimate if.",
+        "9 9 9 Which has spatial elements, such as image and video data.",
+        "Let represent the quantity of occurrences that make up an event.",
+        "When a system's uncertainty rises, the information entropy also rises.",
+        "The input variables' input layer.",
+        "Cloud data extraction results in cipher text that needs to be decrypted with a decryption key.",
+        "The proposed methodology is explained in three sub-sections: Query Processing, Data Processing, and System Design.",
+        "Furthermore, the potential of location privacy breaches is increased once more with the emergence of Mobile Crowd-Sensing (MCS) networks.",
+        "In the conventional paradigm of cloud computing, edge devices often function as consumers.",
+        "The definitions and responsibilities of each entity within the system are elaborated as follows:\nData Owner: These days, information is gathered from several sources.",
+        "Meanwhile, because of DP's performance, attackers find it more difficult to forecast the sensitive properties included in the dataset.",
+        "Effective management is used to balance accuracy and data privacy.",
+        "This implies that in order to deduce the location relationship network, by obtaining multidimensional participant data, a hostile attacker might be able to influence the relationship between activities and determine the position correlation weight between the individuals.",
+        "MATLAB 2020 programming languages, Windows 10 operating system, an Intel (R) Core (TM) i5-5350U CPU running at 1.80 GHz, and 8.00 GB of RAM are used in this experiment.",
+        "This study has considered 5000 edges and 1,000 vertices.",
+        "The Internet of Things (IoT) is also a part of it.",
+        "Hashed queries are only accepted by authorized data analysts for searching.",
+        "DP is the result of combining two machine learning algorithms: Support Vector Machine (SVM) and deep learning.",
+        ".."
+    ]
+}

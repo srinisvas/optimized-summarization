@@ -1,0 +1,25 @@
+{
+    "paper_id": "Privacy-Preserving Keyword Search Schemes over Encrypted Cloud Data An Extensive Analysis",
+    "salient_sentences": [
+        "However, once the data is encrypted, the server cannot make a plaintext keyword search and it affects the efficient retrieval of data using keyword search from the cloud.",
+        "Through analysis, we present some valuable directions for future work.",
+        "Section III discusses about PPKS.",
+        "Authorized licensed use limited to: Kennesaw State University.",
+        "Downloaded on October 13,2025 at 18:43:32 UTC from IEEE Xplore.",
+        "There are several reports that confirm data breaches related to cloud servers, due to malicious attack, theft or internal errors.",
+        "Among these compared schemes only two schemes and used multiple data owner system model.",
+        "Companies such as Google, IBM, Amazon and Microsoft also provide ways for consumers to consume big data on demand.",
+        "Table 1 summarizes the comparative study of each scheme.",
+        "As a result, attackers who steal the secret key and perform illegal searches would be easily detected.",
+        "Then, map a keyword to a value as an address used to locate the corresponding index vector.",
+        "The cryptographic primitive that provides this feature is widely known as searchable encryption.",
+        "Because, these large sets of data often carry sensitive information like credit or debit card numbers, addresses, medical records and other details, raising data privacy concerns.",
+        "Also, performance evaluations are done on a realworld dataset, and the results show the efficiency of proposed scheme.",
+        "From our analysis, only one scheme has the verifiability technique.",
+        "Storing and processing big volumes of data requires scalability, fault tolerance and availability.",
+        "Authenticated data users can issue a query without knowing secret keys of these different data owners.",
+        "Cloud computing has become an unavoidable component for data storage due to its unlimited data storage capabilities, easy access and decreased costs.",
+        "Furthermore, in addition to the existing requirements, privacy preserving search schemes should meet the requirements such as dynamic and verifiability.",
+        "proposed a new approach using MIR-tree, it provides privacy of outsourced data, Wan et al.."
+    ]
+}

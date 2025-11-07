@@ -1,0 +1,26 @@
+{
+    "paper_id": "The Ethics of AI in Games",
+    "salient_sentences": [
+        "The output of the affect model can be used to adapt the game content and generate a new set of stimuli for the player.",
+        "2012) mobile exergame.",
+        "There are algorithmic solutions to address this problem, however.",
+        "Predictability goes a long way towards eliminating AI bias, which we detail in Section V.",
+        "While user privacy might define a clear issue in other domains, games present a special case.",
+        "The paper is structured as follows.",
+        "On the other hand, systems relying on historical biases can propagate patterns that seem true to a casual observer and are only revealed as biased under a more critical analysis ,.",
+        "The industry has been slow to react to the growing concern about trustworthiness; the landscape is changing, however.",
+        "However, a review of serious games-games developed for healthcare, educational, hiring, or other non-entertainment purposes-found that two years after the adoption of GDPR, it has had little to no effect on the research community.",
+        "Even though the obfuscation of datasets, algorithms, and their output definitely provides some level of protection, obfuscation is fundamentally clashing with the principle of transparency.",
+        "Games could have played a critical role in that development.",
+        "Of course some more obvious errors are easier to catch with simple pruning, but computational models can also encode biases-like gender biases or offensive stereotypes-which in turn result in harmful content , unintended by the designer.",
+        "In many instances this ethical failing can be traced back to lax regulations, where legal requirements for consent and compliance are technically fulfilled but do not facilitate transparency in a tangible way.",
+        "While a few years ago loot boxes-i.e., virtual items that can be redeemed for other random items that provide some value to the players -made waves , , , the new monetisation technique sweeping across the industry is the battle pass or season pass system.",
+        "They also found that as perceived competence rises, suspense and uncertainty become a major facilitator of intrinsic motivation in video games; for an overview of intrinsic motivation in games see.",
+        "This might be because it is comparatively easy to design engaging games around fighting compared to any other purpose; regardless, combat is pervasive in games since the era of Pac-Man and its ghost-eating capability.",
+        "It is often next to impossible to recognise a biased dataset unless the algorithm breaches the trust of the users in a serious and very apparent way.",
+        "Particularly due to the interactivity of the medium, a certain amount of dynamic control is needed to maintain oversight over toxic and malicious actors in a game's ecosystem and prevent unintended or negative effects on the players' mental well-being.",
+        "for instance, examined 13 different patents connected to video game monetisation and found that almost all of them relied on the exploitation of the players' data to optimise the delivery and timing of ads and purchase offers.",
+        "Not all methods require this from a technical perspective , but the removal of the datapoint has to be verified to preserve the predictability of the system.",
+        "Although the input features of these models are mainly behavioural in nature, the inferred actions are emotional.."
+    ]
+}

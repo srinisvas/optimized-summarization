@@ -1,0 +1,25 @@
+{
+    "paper_id": "A privacy-preserving mechanism based on local differential privacy in edge computing",
+    "salient_sentences": [
+        "The method proposed in this paper is verified by comparison experiments, and it is proved that the LDP could not only effectively protect user's location privacy in edge computing, but also has better data availability.",
+        "12\n)\n (13\n)\n i i ( , ) \u2032 .(17)\n Cloud server sends Voronoi diagram division of a map to clients.",
+        "i i \u2032 = \uf8f1 \uf8f4 \uf8f2 \uf8f4 \uf8f3 n e n e -+ -+ i i i i = \u2260 \u2032 \u2032.",
+        "Finally, we connect circumcircle centers of adjacent triangles to form a polygon network, which takes each triangle vertex as its generator.",
+        "From a technological perspective, blockchain involves many scientific and technological issues, such as mathematics, cryptography, the Internet, and computer programming.",
+        "However, location data usually contains a large amount of sensitive information.",
+        "The experimental platform is MATLAB 2016a.",
+        "They constantly improved due to the emergence of new types of attacks.",
+        "i i \u03b5 \u03b5 = = \u2032 \u2264 e \u03b5(5)\nto indicate that privacy algorithm satisfies \u03b5-LDP, where N represents total number of mobile users in Voronoi grids.",
+        "From Figure 6(a), it can be seen that the added noise is proportional to \u0394f and inversely proportional to \u03b5.",
+        "Specifically, the main contributions of this paper are summarized as follows.",
+        "And they are not suitable for lightweight edge devices with limited resources.",
+        "In , the authors proposed a location privacy-preserving task allocation framework based on geo-obfuscation to protect users' locations during task assignments.",
+        "In this model, TTP can obtain some information from public datasets to better understand private datasets without breaking privacy.",
+        "The process is shown in Figure4.",
+        "In real life, many service providers sell users' personal data, which leads to serious problems of privacy leakage.",
+        "In addition, none of these methods considered attacks based on background knowledge, which cannot quantify the level of privacy-preserving.",
+        "IN recent years, due to the contradictions between cloud computing model and inherent features of the Internet of Everything (IoE) , if we rely solely on this centralized computing processing method of cloud computing, it is no longer able to support applications running on IoT and massive data processing.",
+        "Edge nodes group users and feedback grouping information to clients.",
+        "Recommendation system has become one of the main tools to search for users' interested papers.."
+    ]
+}
