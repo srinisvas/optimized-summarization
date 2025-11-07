@@ -1,0 +1,24 @@
+{
+    "paper_id": "Towards a Stakeholder-Oriented Taxonomical Approach for Secure Cloud Computing",
+    "salient_sentences": [
+        "Based on the choices of the first three levels we setup the scenario of our interest and obtain a list of possible security and privacy issues in level-3 and a list of security attributes in level-4.",
+        "\uf0b7 Moreover, Cloud adopters are also capable of obtaining nested services from different service providers.",
+        "Another interesting utilization of this taxonomy is to enable stakeholders to learn the security concerns of other stakeholders by simply tracing their roles through this taxonomy.",
+        "Furthermore, laws and regulations diverge in some industries and different locations make it even harder to focus towards providing a unified process to secure the CC model.",
+        "Researchers in academia and industry are striving to propose a security silver bullet.",
+        "With the significant advancement in cloud computing, among other issues, security is considered as highest priority.",
+        "Some other approaches investigated the security requirement of the CC models but were directed towards a single stakeholder's perspective or a single service that could be offered through the cloud.",
+        "For instance (Scenario A) in top part of Figure 1; a user who interacts with Google Docs to create or edit a text document would be traversed on the taxonomy as an end user consumer on a SaaS public cloud.",
+        "To address the above mentioned issues, in this paper we present a unique approach that is: \uf0b7 For examples, this can help the providers can in understanding the security requirements of their consumers.",
+        "We are presenting a stakeholderoriented taxonomy that structurally enables the comprehension of all the various CC model components and their security aspects.",
+        "The security attributes associated with these issues such as backup, encryption, etc.",
+        "are also suggested by the proposed taxonomy.",
+        "It states the scenario of the stakeholder who is interacting with the CC model.",
+        "This increases divergence of stakeholders' authority and control over the multiple service and deployment models.",
+        "The stakeholder level of the taxonomy tends to be the most important classifying factor.",
+        "This is shown in the lower half of the Figure 1.",
+        "Inspired from the NIST characteristics of cloud computing , to conform to the standards in the field.",
+        "These approaches and similar ones have been extensively presented in literature but we are yet to observe their benefits in the real world in terms of security and privacy improvement.",
+        "This provides the opportunity to improve the security and privacy in their interaction.."
+    ]
+}

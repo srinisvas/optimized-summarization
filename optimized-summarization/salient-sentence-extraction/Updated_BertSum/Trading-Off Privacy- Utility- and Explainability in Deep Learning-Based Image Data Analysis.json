@@ -1,0 +1,25 @@
+{
+    "paper_id": "Trading-Off Privacy- Utility- and Explainability in Deep Learning-Based Image Data Analysis",
+    "salient_sentences": [
+        "18 T DP (D, \u03bb, \u03bb ) 20(a) 22(a).",
+        "17 ij f ij (9) EM D(D, D ) EG A (d, \u03b8) = n \u00d7 N (0, \u03c3 2 ) d max(n) -GD(\u03b8)( n \u00d7 N (0, \u03c3 2 ) d max(n) ) 13 11 (D i , \u03bb, \u03bb )(19)\nTAuto ( D, D , \u03bb) = m i=1 w i T (D i , D 1 S l (d) = w T l d + b l (4)\n 6.",
+        "Section VI presents the experiments conducted.",
+        "The FER dataset consists of gray-scale images of size 48 \u00d7 48 pixels, representing faces.",
+        "This phase is executed on the smart device which captures the image.",
+        "The most popular ones are k-anonymity , l-diversity with all its variants , t-closeness , , ( , \u03b4)-Differential Privacy and Autoencoders.",
+        "In our approach, we adopt the Earth Mover's distance (EMD, Wasserstein distance) as a divergence computation method because it defines the ground distance between any pair of values.",
+        "coders or Differential Privacy in this work.",
+        "1 https://www.kaggle.com/msambare/fer2013.",
+        "While we cannot elaborate on the applicability of our method to all image analysis models, we offer the necessary tools and methodologies, as demonstrated by our experiments on three distinct problems.",
+        "It is divided into a labeled training dataset of 50,000 images and a labeled test dataset of 10,000 images.",
+        "Therefore, an anonymization process is needed to ensure the removal of identifying attributes from the image before for sharing as an explanation.",
+        "In , the authors investigated the impact of privacypreserving methods, specifically masking techniques, employed in machine learning algorithms on tabular datasets.",
+        "This relationship is primarily attributed to the improved privacy gain and explainability gain achieved as the values of these parameters are incremented.",
+        "Therefore the trade-offs aggregation equation will have the following weights: w 1 = 0, w 2 = 0, w 3 = 1.",
+        "As privacy requirements and their enforcement through PPML normally affect the effectiveness (accuracy) of a decision system, considering explainability adds another dimension, which might be in contrast with both the accuracy of the decision and ensured privacy.",
+        "There are two main approaches for data privacy protection: the first one is related to hiding sensitive attributes to prevent person re-identification, and the second is about delivering models that perform responsible data analysis by learning general patterns instead of memorizing specific sensitive attributes and data instances.",
+        "EMD is simply the minimum cost or work in (9) needed to match two distributions normalized by the weight of one of these distributions (D, D ), as shown in (10):\nW ork(D, D , F ) XAI emerged to produce human-level explanations for complex AI models that are not transparent by design.",
+        "The rest of the paper is structured as follows.",
+        "Performing data analysis involves other concerns beyond privacy.."
+    ]
+}

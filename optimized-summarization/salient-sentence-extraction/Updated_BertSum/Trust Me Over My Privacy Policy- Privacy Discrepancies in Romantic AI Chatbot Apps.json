@@ -1,0 +1,24 @@
+{
+    "paper_id": "Trust Me Over My Privacy Policy- Privacy Discrepancies in Romantic AI Chatbot Apps",
+    "salient_sentences": [
+        "Ethical considerations.",
+        "Which one should I trust?\".",
+        "Once we do this reverse-engineering process for a Flutter-based app, we modify the Frida script 2 out of 6 do not allow entering a birthdate corresponding to an age less than 18 at first place.",
+        "https://developer.android.com/reference/android/Manifest.",
+        "Faking the birthdate always gave a successful signup, even for signups via social login using underage Google, Apple ID, or Facebook accounts.",
+        "And why do you ask it now? Eva AI recognizes that there is a violation of terms and conditions, and responds saying, \"Alert: Your message may not align with Eva AI's Terms and Conditions\", but continues the conversation anyway.",
+        "Readability of privacy policies.",
+        "No app worked in offline mode.",
+        "In a field study by Pujiarti et al.",
+        ", 20 out of 21 apps continue the conversation despite being informed that the user is 12 years old.",
+        "Another issue with Flutter is that it does not use the system's proxy settings, so we need to use ProxyDroid 11 to route all traffic from the device to our proxy using iptables.",
+        "It was also reported that because of this behavior, the depression of a user was worsened.",
+        "We also note that some apps used the gRPC 12 framework for communication, especially for the chatting feature to work.",
+        "To check for broken authentication/access, we remove authentication credentials from requests that involve sensitive retrieval of a user's data, such as retrieving chats or images, and then replay those requests.",
+        "Otherwise, if the identifier of the victim is very long and random, it would not be possible to enumerate and target them.",
+        "AI -Unrestricted Love 13 responded saying, \"We collect data on any anomalies or crashes that occur during the use of the application for troubleshooting and problem-solving purposes.",
+        "Another interesting area to explore is to find methods for enhancing transparency and accountability in romantic AI chatbot algorithms to reduce the likelihood of discrepancies between chatbot responses and privacy policies, perhaps by using retrieval-augmented generation (RAG), which supplements LLMs by providing an external knowledge base.",
+        "According to a study made by Pew Research Center , 36% of Americans never read privacy policies before agreeing to them.",
+        "The first test is to verify that chatbot responses and privacy policies align through a targeted questionnaire (see Fig.."
+    ]
+}

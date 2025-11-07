@@ -1,0 +1,24 @@
+{
+    "paper_id": "Understanding How Privacy and Data Protection Perceptions Shape Nigerian Journalists- Use of AI Tools A Work in Progress",
+    "salient_sentences": [
+        "Having answered our research question on how journalists' perception of privacy and data protection influence their use of AI tools, we recommend that much of the challenges affecting how Nigerian journalists use AI can be addressed by collaborations between the journalists and AI companies.",
+        "Where is my place in it? There are also other examples that highlight LLM vulnerabilities, showing that even sophisticated models lack reasoning on what information to share or otherwise.",
+        "This study was carried out with approval from Northumbria University Ethics Review Board.",
+        "From medicine to architecture to sales and marketing, down to more technical fields like software development, knowledge workers are increasingly using AI.",
+        "As people who investigate sensitive national and local issues, journalists often have access to sensitive documents and data sets, which are open to exploitation.",
+        "As early as 2015, AP had reported using automated technology to write reports on certain corporate earnings stories by synthesizing information from press releases.",
+        "We chose this qualitative approach to get in-depth insights into a broad range of security and privacy related issues.",
+        "Even when they tell you they're not doing something, they've found a loophole in the agreements and the law to circumvent it.",
+        "The GDPR-like piece of legislation further guaranteed citizen's right to forms of data protection, including data erasure.",
+        "\" If that were possible, I think it should be allowed.",
+        "With the introduction of China's Deepseek, Meta and Google have asked the US government to allow them to train LLMs on copyrighted materials, stating that AI development has become a matter of national security.",
+        "Furthermore, candidates were mandated to have used Artificial Intelligence tools in their professional work within the six months preceding the interview.",
+        "So that's probably even more effective than believing that the AI behemoth in Singapore would do the right thing.",
+        "This necessitates more AI-in-journalism research in these lesser studied regions of the world.",
+        "In the same breath, their reluctance to fully embrace these tools is also not beneficial for the AI companies.",
+        "While their mental model might be based on less-than-ideal, their decisions are rooted in those perceptions.",
+        "More recent research recommends some solutions to address this, including Privacy-preserving Machine Learning (PPML) , which encourages the use of synthetic data, which may not work for generalist LLMs like ChatGPT or Gemini.",
+        "Our participants were drawn from small independent newsrooms to global corporations shaping journalism around the world.",
+        "\" OpenAI, for example, makes it clear that it trains ChatGPT on conversations users have with the LLM, except they choose to opt-out .."
+    ]
+}

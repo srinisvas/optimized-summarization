@@ -1,0 +1,25 @@
+{
+    "paper_id": "Thou shalt not-A look at the ethics of copying software code",
+    "salient_sentences": [
+        "For purposes of this paper and the sake of brevity, we focused our analysis on copyright, patent, and trade secret intellectual property rights as they relate to the copying of computer software code.",
+        "978-1-4799-4992-2/14/$31.00 \u00a92014 IEEE The third survey question asked respondents what their experience was in keeping private any confidential information gained in their professional work.",
+        "The responses were measured utilizing a semantic differential scale with a scoring system that ranged from one to seven.",
+        "The results demonstrated that approximately 95% of respondents were somewhat likely, likely, or highly likely to make others aware of such work practices (see Figure 3).",
+        "Research findings were limited due to the sample size.",
+        "Importantly, copyright law protects the expression of an idea but does not extend to ideas themselves nor does it extend to \"program logic, algorithms, systems, methods, concepts, or layouts\".",
+        "Two possible interpretations were identified for this polarization.",
+        "Software engineers have ethical duties to the profession.",
+        "The survey was distributed to the IEEE Region 4 active members via an email blast.",
+        "Another example would include copying software without paying for a license.",
+        "Such language when juxtaposed against affirmative language (e.g., \"I do\") used in other questions may have confused respondents when answering this question.",
+        "The survey was designed using Microsoft Excel 2007\u00ae.",
+        "Future research could utilize the same software code of ethics; however, the instrument design could be modified with the use an alternative software package to promote ease of use and better flexibility.",
+        "Specifically, the fourth survey question asked software engineers if they were accurate in stating the characteristics of software on which they work, avoiding not only false claims but also claims that might reasonably be speculative, vacuous, deceptive, misleading, or doubtful.",
+        "This increase has been driven, in part, by new developments in programming technologies, programmer expertise, and industry recognition of the value associated with computer software code.",
+        "We defined valid responses as questions that were actually answered while questions left blank were invalidated.",
+        "These competing ideologies make it difficult for software engineers to know whether, and to what extent, it is permissible to copy computer software code.",
+        "Affirmative protections of such aspects of computer programs are instead accomplished through patent law.",
+        "The mean for the fourth survey question was 6.5 with a .8 standard deviation (see Figure 7), and the mean for the fifth survey question was 6.8 with a .4 standard deviation (see Figure 8).",
+        "To maintain a trade secret, a person must make reasonable efforts to maintain the secrecy of the information .."
+    ]
+}
