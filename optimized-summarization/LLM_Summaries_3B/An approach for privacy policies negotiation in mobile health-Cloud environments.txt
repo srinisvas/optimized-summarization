@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+Mobile health-Cloud environments have become integral to enhancing patient care, enabling seamless communication between patients and healthcare providers. However, the proliferation of privacy threats in these environments necessitates a robust framework for patients to control their data. This paper introduces a novel approach to resolve conflicts arising from differing privacy policies, emphasizing the patient's role as a critical actor in the negotiation process. The proposed framework is grounded in a Security Policy Negotiation Framework, addressing the heterogeneity of privacy policies and the multiplicity of actors involved.
+
+The approach begins by classifying patients into groups based on their privacy preferences, facilitating conflict resolution. For instance, patients with sensitive data, such as minors or those in critical health conditions, are grouped together to ensure their specific needs are met. This classification enables the negotiation process to focus on the most critical cases first. The framework is further validated through a real-world example of three conflicting privacy policies, each using distinct privacy languages: Purpose-to-Use (P2U), XACML, and S4P. This example demonstrates the practical application of the approach, showing how it can resolve conflicts and ensure compliance with regulatory standards like GDPR.
+
+The paper concludes by highlighting the necessity of adopting such a framework to maintain the balance between privacy and data utility in mobile health-Cloud environments. Future work will focus on refining the bargaining stage of the approach and exploring its integration into real-world applications. The proposed solution not only addresses the challenges of conflicting privacy policies but also underscores the importance of patient-centric approaches in ensuring trust and compliance in healthcare data management.

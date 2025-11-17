@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+The paper explores the intersection of AI governance and ethics with public procurement practices, highlighting a gap between theoretical models and practical implementation. It argues that while AI governance frameworks and ethical tools have been developed, their application in the procurement of information systems (IS) is limited. The research identifies a critical need for tangible methods and tools to ensure ethical AI development and implementation, particularly in the strategic procurement of information systems.
+
+The study employs a content analysis approach, categorizing documents based on their relevance to AI governance, ethics, and procurement practices. The findings reveal a scarcity of practical tools and methods specifically designed for IS procurement, with most documents either general research or technical implementation models. This gap is further emphasized by the analysis of the Final data, which includes only four documents directly linked to procurement practices, despite the procurement context being crucial for the success of IS development and implementation.
+
+The research posits that the procurement of information systems is increasingly strategic, often surpassing national value thresholds, yet there is a lack of national-level guidance or tools tailored for this specific domain. The paper suggests that while the academic field has contributed significantly to AI ethics and governance, the procurement context has been largely neglected. It proposes a hierarchical framework for understanding the governance structure of AI systems, positioning procurement practices at the operational level, where practical tools and methods are essential.
+
+The study concludes by emphasizing the need for a more integrated approach that bridges the gap between AI governance and procurement practices. It advocates for the development of new, practical tools and methods that can be applied across different levels of AI governance, ensuring that ethical considerations are integrated into the strategic procurement of information systems. This comprehensive approach is crucial for fostering the adoption of AI governance frameworks and ethical practices in the procurement of information systems, thereby enhancing the success and ethical integrity of AI-driven projects.

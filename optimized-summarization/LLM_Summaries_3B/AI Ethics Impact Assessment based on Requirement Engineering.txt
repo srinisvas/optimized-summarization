@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the ethical impact of artificial intelligence (AI) systems on individuals and society, proposing a methodology for comprehensive ethical risk assessment. Drawing on past AI ethical incidents, the authors assume that ethical risks are linked to interactions between AI system components and stakeholders. They develop an AI Ethics Impact Assessment (AEIA) methodology that involves constructing an AI ethics model embodying ethical guidelines and associating these with interactions using requirement engineering, followed by an impact assessment process. The methodology is validated through a questionnaire survey of participants, which suggests the validity of the assumption that ethical risks are associated with interactions between AI systems and stakeholders.
+
+The AEIA framework allows AI service providers, developers, and users to assess ethical risks at various stages of the AI lifecycle, from planning to retirement. It provides a structured approach for identifying and evaluating ethical risks, particularly in high-risk AI applications such as those involving personal biometrics, classification, and critical infrastructure. The methodology is grounded in the concept of risk chains, which model interactions between AI components and stakeholders to identify ethical risks. The authors also propose a novel approach to systematizing and evaluating ethical impact, emphasizing the importance of considering multiple types of interactions that can correspond to a single ethical characteristic.
+
+The work concludes that the AEIA methodology offers a robust framework for ethical risk assessment in AI systems, enabling practitioners to align AI development and deployment with ethical guidelines. The findings highlight the need for further validation and improvement of the methodology, particularly by involving a broader range of participants and refining the verification process. The research contributes to the ongoing discourse on AI ethics, offering a practical tool for assessing and mitigating ethical risks in AI systems.

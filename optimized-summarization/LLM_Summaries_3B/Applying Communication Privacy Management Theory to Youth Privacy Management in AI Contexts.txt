@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This study applies Communication Privacy Management (CPM) Theory to explore privacy concerns among young digital citizens, parents/educators, and AI professionals. Using a mixed-methods approach, the research collected data from 306 participants through surveys and open-ended responses. The five key constructs examined include Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA).
+
+The analysis revealed distinct perspectives among different demographics regarding data ownership, privacy risks, and benefits. Structural Equation Modeling (PLS-SEM) identified significant influences on youth privacy management, with Education and Awareness (EA) playing a crucial role in shaping privacy behaviors. Transparency and Trust (TT) also emerged as critical factors, highlighting the importance of clear communication and trust-building in AI systems.
+
+Qualitative insights from open-ended responses further underscored the need for enhanced privacy education and the role of parental involvement. The study's findings emphasize the necessity of user-centric privacy controls, tailored transparency mechanisms, and collaborative educational initiatives to empower stakeholders and mitigate privacy risks.
+
+Recommendations include integrating diverse stakeholders' perspectives in AI system development, promoting user-centric design practices, and enhancing privacy education to empower young digital citizens. Future research should expand demographic diversity, refine constructs for improved reliability, and explore longitudinal shifts in privacy behaviors to further inform privacy-centric AI system designs.

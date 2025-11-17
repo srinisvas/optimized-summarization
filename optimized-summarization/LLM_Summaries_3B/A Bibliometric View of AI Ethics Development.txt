@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+Artificial Intelligence (AI) Ethics is a burgeoning field that examines the ethical implications of AI development and deployment. This paper conducts a bibliometric analysis of AI Ethics literature over the past 20 years, focusing on keyword usage patterns to trace its development phases. The study identifies three distinct phases: an incubation phase, a phase where AI is made human-like, and a phase where AI is made human-centric. The authors propose that the next phase will likely involve making AI more machine-like, a concept termed "machine-like human."
+
+The analysis reveals that AI Ethics literature has evolved significantly, with keywords such as "algorithm bias," "AI bias," "gender bias," and "discrimination" becoming prominent in 2020, followed by "opacity," "responsibility gap," and "social justice" in 2021. This shift reflects growing concerns about AI's potential to perpetuate biases and the need for greater transparency and accountability. The study also notes the resurgence of AI Ethics in 2014, following a period of skepticism during the "AI Winter" from 1974 to 1980.
+
+The bibliometric approach used in this study is grounded in the selection of 2,517 articles from various sources, excluding those listed on SCOPUS. The research underscores the importance of AI Ethics in ensuring that AI systems are developed and used responsibly, particularly as AI surpasses human capabilities in various domains. The findings suggest that AI Ethics must address the ethical implications of AI's increasing autonomy and the potential risks of superintelligent systems. The paper concludes by emphasizing the need for proactive measures to prevent unethical AI development and ensure that AI aligns with human values and societal norms.

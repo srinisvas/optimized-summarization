@@ -1,0 +1,11 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a novel AI model training data privacy protection scheme based on local differential privacy (LDP), designed to safeguard sensitive data in distributed environments. The method dynamically adjusts noise to balance privacy and model accuracy, optimizing performance without compromising privacy. The scheme begins with data preprocessing, which includes standardization, handling missing values, and ensuring format consistency. Noise is added to both the data and model gradients during training to enhance privacy. The proposed approach has been validated in large-scale, real-time AI applications, demonstrating significant reductions in overhead compared to centralized differential privacy techniques. Key findings indicate that dynamic noise adjustment maintains high model accuracy while offering robust privacy guarantees, making the scheme ideal for distributed AI systems. Future work will focus on extending the method to more complex data fusion scenarios and exploring adaptive privacy mechanisms. The work confirms that adopting QRDP protocols is essential for future decentralized systems, ensuring regulatory compliance without sacrificing data utility.
