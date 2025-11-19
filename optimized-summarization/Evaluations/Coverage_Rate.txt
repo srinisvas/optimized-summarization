@@ -1,0 +1,73 @@
+--- Individual Coverage Rates ---
+
+Pair 1: Reference: AI Ethics in IoT Involving Society in the Discussion.txt, Result: AI Ethics in IoT Involving Society in the Discussion.txt
+  Coverage Rate: 0.3426
+
+Pair 2: Reference: A privacy-preserving mechanism based on local differential privacy in edge computing.txt, Result: A privacy-preserving mechanism based on local differential privacy in edge computing.txt
+  Coverage Rate: 0.3789
+
+Pair 3: Reference: A novel framework to prevent privacy breach in cloud data storage area service.txt, Result: A novel framework to prevent privacy breach in cloud data storage area service.txt
+  Coverage Rate: 0.3981
+
+Pair 4: Reference: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.txt, Result: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.txt
+  Coverage Rate: 0.4455
+
+Pair 5: Reference: AI Governance and Ethics in Public Procurement Bridging the Gap Between Theory and Practice.txt, Result: AI Governance and Ethics in Public Procurement Bridging the Gap Between Theory and Practice.txt
+  Coverage Rate: 0.5078
+
+Pair 6: Reference: Applying Communication Privacy Management Theory to Youth Privacy Management in AI Contexts.txt, Result: Applying Communication Privacy Management Theory to Youth Privacy Management in AI Contexts.txt
+  Coverage Rate: 0.3770
+
+Pair 7: Reference: AI Ethics in Healthcare - A Survey.txt, Result: AI Ethics in Healthcare - A Survey.txt
+  Coverage Rate: 0.5141
+
+Pair 8: Reference: Are science- technology- and engineering now the most important subjects for ethics- Our need to respond.txt, Result: Are science- technology- and engineering now the most important subjects for ethics- Our need to respond.txt
+  Coverage Rate: 0.4740
+
+Pair 9: Reference: AI Governance A General Perspective.txt, Result: AI Governance A General Perspective.txt
+  Coverage Rate: 0.4753
+
+Pair 10: Reference: AI-Generated Privacy-Preserving Protocols for Cross-Cloud Data Sharing and Collaboration.txt, Result: AI-Generated Privacy-Preserving Protocols for Cross-Cloud Data Sharing and Collaboration.txt
+  Coverage Rate: 0.4350
+
+Pair 11: Reference: A Privacy-Leakage-Tolerance Based Noise Enhancing Strategy for Privacy Protection in Cloud Computing.txt, Result: A Privacy-Leakage-Tolerance Based Noise Enhancing Strategy for Privacy Protection in Cloud Computing.txt
+  Coverage Rate: 0.4458
+
+Pair 12: Reference: An approach for privacy policies negotiation in mobile health-Cloud environments.txt, Result: An approach for privacy policies negotiation in mobile health-Cloud environments.txt
+  Coverage Rate: 0.4872
+
+Pair 13: Reference: A Bibliometric View of AI Ethics Development.txt, Result: A Bibliometric View of AI Ethics Development.txt
+  Coverage Rate: 0.4604
+
+Pair 14: Reference: AI Ethics and Data Privacy compliance.txt, Result: AI Ethics and Data Privacy compliance.txt
+  Coverage Rate: 0.3981
+
+Pair 15: Reference: Advanced Techniques for Protecting Privacy in Artificial Intelligence Powered Medical Systems.txt, Result: Advanced Techniques for Protecting Privacy in Artificial Intelligence Powered Medical Systems.txt
+  Coverage Rate: 0.5994
+
+Pair 16: Reference: AI and Data Privacy in Business.txt, Result: AI and Data Privacy in Business.txt
+  Coverage Rate: 0.4588
+
+Pair 17: Reference: AI Model Training Data Privacy Protection Scheme Based on Local Differential Privacy.txt, Result: AI Model Training Data Privacy Protection Scheme Based on Local Differential Privacy.txt
+  Coverage Rate: 0.3057
+
+Pair 18: Reference: Advancing AI Ethics in Engineering Curricula in Europe A Case Study Approach.txt, Result: Advancing AI Ethics in Engineering Curricula in Europe A Case Study Approach.txt
+  Coverage Rate: 0.5381
+
+Pair 19: Reference: A Privacy Maturity Model for Cloud Storage Services.txt, Result: A Privacy Maturity Model for Cloud Storage Services.txt
+  Coverage Rate: 0.3945
+
+Pair 20: Reference: An Analysis of Security and Privacy Issues in Smart Grid Software Architectures on Clouds.txt, Result: An Analysis of Security and Privacy Issues in Smart Grid Software Architectures on Clouds.txt
+  Coverage Rate: 0.5371
+
+Pair 21: Reference: AI Ethics Impact Assessment based on Requirement Engineering.txt, Result: AI Ethics Impact Assessment based on Requirement Engineering.txt
+  Coverage Rate: 0.4721
+
+Pair 22: Reference: An overview of privacy preserving schemes for industrial Internet of Things.txt, Result: An overview of privacy preserving schemes for industrial Internet of Things.txt
+  Coverage Rate: 0.4262
+
+Pair 23: Reference: Advancing Ethical AI A Methodological and Empirical Approach to the AI Moral Code.txt, Result: Advancing Ethical AI A Methodological and Empirical Approach to the AI Moral Code.txt
+  Coverage Rate: 0.4067
+
+--- Average Coverage Rate Across All Pairs ---
+Average Coverage Rate: 0.4469
