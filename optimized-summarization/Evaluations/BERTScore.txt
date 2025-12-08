@@ -1,0 +1,31 @@
+--- Individual BERT Scores ---
+
+Pair 1: Reference: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.txt, Result: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.txt
+  BERT Precision: 0.8662
+  BERT Recall: 0.8463
+  BERT F1: 0.8562
+
+Pair 2: Reference: A Privacy Impact Assessment Tool for Cloud Computing.txt, Result: A Privacy Impact Assessment Tool for Cloud Computing.txt
+  BERT Precision: 0.8604
+  BERT Recall: 0.8419
+  BERT F1: 0.8511
+
+Pair 3: Reference: AI Ethics in Healthcare - A Survey.txt, Result: AI Ethics in Healthcare - A Survey.txt
+  BERT Precision: 0.8615
+  BERT Recall: 0.8429
+  BERT F1: 0.8521
+
+Pair 4: Reference: A Bibliometric View of AI Ethics Development.txt, Result: A Bibliometric View of AI Ethics Development.txt
+  BERT Precision: 0.8681
+  BERT Recall: 0.8403
+  BERT F1: 0.8539
+
+Pair 5: Reference: A Privacy Maturity Model for Cloud Storage Services.txt, Result: A Privacy Maturity Model for Cloud Storage Services.txt
+  BERT Precision: 0.8706
+  BERT Recall: 0.8259
+  BERT F1: 0.8477
+
+--- Average BERT Scores Across All Pairs ---
+Average BERT Precision: 0.8654
+Average BERT Recall: 0.8395
+Average BERT F1: 0.8522

@@ -1,0 +1,25 @@
+--- Individual ROUGE Scores ---
+
+Pair 1: Reference: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.txt, Result: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.txt
+  ROUGE-1: P=0.4836, R=0.5581, F1=0.5182
+  ROUGE-L: P=0.2040, R=0.2355, F1=0.2186
+
+Pair 2: Reference: A Privacy Impact Assessment Tool for Cloud Computing.txt, Result: A Privacy Impact Assessment Tool for Cloud Computing.txt
+  ROUGE-1: P=0.5702, R=0.5151, F1=0.5412
+  ROUGE-L: P=0.2272, R=0.2052, F1=0.2156
+
+Pair 3: Reference: AI Ethics in Healthcare - A Survey.txt, Result: AI Ethics in Healthcare - A Survey.txt
+  ROUGE-1: P=0.6051, R=0.4561, F1=0.5201
+  ROUGE-L: P=0.2472, R=0.1863, F1=0.2125
+
+Pair 4: Reference: A Bibliometric View of AI Ethics Development.txt, Result: A Bibliometric View of AI Ethics Development.txt
+  ROUGE-1: P=0.6546, R=0.3773, F1=0.4787
+  ROUGE-L: P=0.2932, R=0.1690, F1=0.2144
+
+Pair 5: Reference: A Privacy Maturity Model for Cloud Storage Services.txt, Result: A Privacy Maturity Model for Cloud Storage Services.txt
+  ROUGE-1: P=0.5124, R=0.4560, F1=0.4825
+  ROUGE-L: P=0.2261, R=0.2013, F1=0.2130
+
+--- Average ROUGE Scores Across All Pairs ---
+Average ROUGE-1: P=0.5652, R=0.4725, F1=0.5082
+Average ROUGE-L: P=0.2395, R=0.1994, F1=0.2148
