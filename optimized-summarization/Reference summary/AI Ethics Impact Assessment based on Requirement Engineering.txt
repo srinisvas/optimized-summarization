@@ -1,0 +1,28 @@
+## Executive Summary
+
+This paper addresses the significant challenge faced by AI service providers, developers, and business users in translating complex, often philosophical or legal, AI ethics guidelines (such as the EU's Trustworthy AI requirements) into practical, system-specific requirements for risk mitigation.
+
+### Proposed Methodology
+
+The authors propose the **AI Ethics Impact Assessment** methodology, designed to help non-AI ethics experts procedurally identify, evaluate, and mitigate potential ethical risks associated with their AI systems.
+
+The methodology is founded on the assumption, derived from analyzing past ethical incidents, that **ethical risks can be systematically linked to the interactions between the components of an AI system (e.g., data, model) and its stakeholders.**
+
+The assessment consists of two core approaches:
+
+1.  **AI Ethics Model:** This model translates high-level ethical guidelines into hierarchical, actionable requirements called "AI ethical characteristics." These characteristics are then explicitly mapped to specific types of interactions within an AI system (e.g., the interaction from the "Training Data" component to the "AI Model" component).
+2.  **Impact Assessment Process:** A three-step, procedural risk-extraction process applied to individual AI systems:
+    *   **Step 1:** Creation of a system diagram visualizing all components, stakeholders, and their interactions.
+    *   **Step 2:** Mechanical extraction of relevant AI ethical characteristics linked to each interaction using the AI ethics model.
+    *   **Step 3:** Manual identification of the specific ethical risk (a situation contrary to the extracted ethical characteristic) for the use case.
+
+### Initial Validation and Findings
+
+An initial validation was conducted via a questionnaire survey with eight participants knowledgeable in AI ethics, covering nine different AI use cases (including loan screening, recruitment AI, and facial recognition).
+
+*   **Validity of Assumption:** The results strongly suggested the validity of the core assumption, with high agreement among participants that the identified ethical risks were correctly associated with the specific interactions in the system diagrams (combined validity score exceeded 0.7).
+*   **Ease of Risk Extraction:** The ease of identifying risks based on the provided ethical characteristics varied by use case. Participants found the task easier (score over 0.8) for well-documented fairness issues (e.g., recruitment AI, chatbot bias) but reported more difficulty for complex cases like manufacturing robots or teacher evaluation systems.
+
+### Conclusion
+
+The AI Ethics Impact Assessment provides a valuable, procedural framework for AI practitioners to assess ethical risks across the entire AI lifecycle and comply with regulatory requirements. While the initial validation supports the methodology’s core assumption, the authors acknowledge the small sample size and expert bias, noting that future work must involve a wider range of participants to fully demonstrate the methodology's reliability and effectiveness for non-experts.
