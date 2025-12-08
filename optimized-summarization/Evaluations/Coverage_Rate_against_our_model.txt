@@ -1,0 +1,22 @@
+--- Individual Coverage Rates ---
+
+Pair 1: Reference: A Bibliometric View of AI Ethics Development.json, Result: A Bibliometric View of AI Ethics Development.txt
+  Coverage Rate: 0.0698
+
+Pair 2: Reference: A Privacy Impact Assessment Tool for Cloud Computing.json, Result: A Privacy Impact Assessment Tool for Cloud Computing.txt
+  Coverage Rate: 0.0599
+
+Pair 3: Reference: A Privacy Maturity Model for Cloud Storage Services.json, Result: A Privacy Maturity Model for Cloud Storage Services.txt
+  Coverage Rate: 0.1293
+
+Pair 4: Reference: AI Ethics in IoT Involving Society in the Discussion.json, Result: AI Ethics in IoT Involving Society in the Discussion.txt
+  Coverage Rate: 0.0820
+
+Pair 5: Reference: AI Ethics in Healthcare - A Survey.json, Result: AI Ethics in Healthcare - A Survey.txt
+  Coverage Rate: 0.0694
+
+Pair 6: Reference: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.json, Result: A Model for Using Ethical Theory to Specify Epistemic Goals for Explainable AI.txt
+  Coverage Rate: 0.0439
+
+--- Average Coverage Rate Across All Pairs ---
+Average Coverage Rate: 0.0757
