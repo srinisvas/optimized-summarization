@@ -1,0 +1,26 @@
+This executive summary provides an overview of a bibliometric analysis tracing the evolution of Artificial Intelligence (AI) Ethics literature over the past two decades (2004–2023).
+
+***
+
+### Executive Summary: The Evolution of AI Ethics Development
+
+This study utilizes a bibliometric analysis of 2,457 articles from the SCOPUS database published between 2004 and 2023 to map the historical development and changing priorities of AI Ethics as a research field. The analysis reveals three distinct, chronologically ordered phases, based primarily on shifting keyword usage patterns and ethical principles.
+
+#### Key Findings and Development Phases
+
+The research identifies three major phases of AI Ethics development:
+
+**Phase I: Incubation (2004–2013)**
+During this initial period, AI Ethics did not exist as a defined field but was dispersed across related disciplines (e.g., information ethics, machine ethics, computer ethics). The overall usage of the dedicated keyword "AI Ethics" was minimal before 2014. Ethical concerns were largely product-oriented, focusing on foundational concepts like **privacy, safety, security, and reliability**—driven by the rapid advancement of AI technologies like autonomous vehicles and early successful systems (e.g., IBM Watson).
+
+**Phase II: Make AI Human-like Machines (2014–2019)**
+Following breakthroughs in deep learning (2012), AI technology surged (e.g., AlphaGo, GANs). The AI Ethics community adopted an optimistic outlook, focusing on making AI embodiments function like ethical humans. Key ethical principles centered on positive, human-like traits, including **trust, empathy, justice, care, fairness, transparency, and Explainable AI (XAI)**. The goal was to imbue intelligent machines with mini-human characteristics.
+
+**Phase III: Make AI Human-centric Machines (2020–Present)**
+This phase represents a significant shift driven by increasing public distrust and demonstrable harms (e.g., deep fakes, bias, existential risk warnings). The focus moved from making AI *like* a good human to grounding it as a controllable, responsible technology that serves humans. Precautionary keywords surged, including **algorithm bias, discrimination, responsibility gap, and opacity**. The current mandate is centered on **explainability, accountability, trustworthy AI, and responsible AI**, ensuring that development remains "human-centric."
+
+#### The Future of AI Ethics
+
+The authors conjecture that the next phase must proactively address the increasing potential for AI to match or surpass human intellectual capability (Superintelligence). This requires AI ethicists to get ahead of technological development to prevent malicious outcomes.
+
+The proposed future focus is on defining "machine-like humans"—highly intelligent and capable machines that are engineered **never to achieve the same status as full humans.** Furthermore, the field must develop frameworks to address the ethical ramifications of the confluence of AI, robotics, and biotechnology, particularly concerning the creation of machine-augmented humans and non-humans.
