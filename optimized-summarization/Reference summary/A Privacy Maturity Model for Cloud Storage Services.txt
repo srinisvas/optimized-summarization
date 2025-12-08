@@ -1,0 +1,24 @@
+This paper presents the conceptual framework and ongoing methodology for developing a **Privacy Maturity Model for Cloud Storage Services (PMMCS)**.
+
+### Problem Statement
+
+While cloud computing provides significant benefits like cost reduction and scalability, a primary barrier to adoption is the user concern regarding the privacy and security of sensitive stored data, especially when services are outsourced. Current industry practices fail to adequately address three core questions:
+1.  **Defining Sensitive Data:** There is no universal consensus or mechanism for users to control the assessment of what data is considered sensitive.
+2.  **Protection Strategies:** Threats like "Malicious Insiders" (due to poor internal processes) and "Data Loss or Leakage" highlight the need for verifiable encryption and robust operational controls.
+3.  **Establishing Privacy Levels:** Current Service Level Agreements (SLAs) emphasize resource availability but lack formal privacy provisions. Existing compliance standards (e.g., HIPAA) are often regional, complex, and costly, making them impractical for many small-to-medium providers.
+
+### Proposed Solution
+
+The objective of this research is to create the PMMCS, a model designed to assess the Maturity Level of privacy offered by Cloud Storage providers. The PMMCS will integrate concepts from:
+
+*   **CMMI-SVC:** Used to establish the overall maturity assessment structure.
+*   **BSIMM-CP:** Utilized for normative compliance policies and governance, focusing on identifying flaws relating to Personally Identifiable Information (PII).
+*   **Generally Accepted Privacy Principles (GAPP):** Addressing the management of personal data throughout its entire lifecycle (collection, use, retention, and disclosure).
+
+### Work Methodology
+
+The research will proceed through four defined phases to achieve its objectives:
+1.  **Planning and Systematic Review:** Performing a systematic literature review to precisely define the problem and the proposed solution specification.
+2.  **Development of the solution:** Building the architecture for a prototype of the PMMCS solution.
+3.  **Evaluation of the solution:** Conducting detailed experiments and defining metrics to test hypotheses and evaluate the proposed technique.
+4.  **Publication of results:** Documenting findings and the gradual evolution of the architectural model.

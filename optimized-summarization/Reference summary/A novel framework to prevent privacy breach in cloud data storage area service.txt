@@ -1,0 +1,13 @@
+This paper proposes a novel, layered security framework designed to mitigate user data privacy invasion and prevent digital data loss, specifically within cloud data storage environments.
+
+**Problem and Motivation:**
+The rapid growth of cloud computing technology has concurrently increased the risk of data privacy breaches. Traditional privacy-preserving methodologies are deemed insufficient to meet the security requirements of modern cloud users, often failing to protect confidential data from unauthorized access, hacking, and surveillance by unknown observers. The goal of this research is to propose a robust, cohesive approach to protect user confidentiality and maintain anonymity during cloud communication.
+
+**Proposed Solution (OGPPA Framework):**
+The core proposal is the **Onion and Garlic Privacy Preserving Cohesive Approach (OGPPA)**, a multi-layered framework that uses multiple encryption techniques to prevent the exposure of confidential information. This framework operates on top of the existing cloud architecture and includes two primary privacy layers:
+
+1.  **Onion Privacy Preserving Approach (OPPA):** This layer utilizes multiple mixed nodes to accept user requests. Messages are repeatedly encrypted using public key cryptography. As the data passes through the network (onion routing), each node "unpeels" one layer of encryption to reveal the next routing instruction, ensuring anonymous communication while verifying the current user identification against a maintained log. This technique guarantees that the decrypted data packet only reaches the original, intended users.
+2.  **Garlic Privacy Preserving Approach (GPPA):** A variant of onion privacy, the GPPA enhances security by bundling and encrypting multiple messages together. This practice significantly complicates the analysis of user requests and data patterns, making it more difficult for attackers to interrupt the communication or identify users.
+
+**Conclusion and Future Work:**
+The OGPPA framework is claimed to provide a strong defense using its layered encryption and decryption techniques to handle privacy breaches resulting from critical attacks. Future research will focus on boosting this framework further by implementing a "three-factor encryption" technique within the cloud layer to enhance privacy prevention in storage services.
