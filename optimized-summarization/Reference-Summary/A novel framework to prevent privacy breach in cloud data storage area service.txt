@@ -1,0 +1,9 @@
+The present paper focuses on user data privacy invasion and it is more important in cloud data storage.
+This paper introduces a layered framework for preserving secrecy of cloud user and preventing digital data loss, using onion privacy layer, garlic privacy layer.
+This paper focuses on cloud digital data loss and its privacy preserving by proposing a novel framework approach to mitigate the risk and protect the data from attackers.
+This paper focused on privacy issue and proposed a framework to mitigate the privacy preserving in the cloud digital storage area, with a novel onion and garlic privacy preserving cohesive approach to prevent the data loss.
+Large number of mixed nodes to serve as the simple layer of accepting user request and encrypting the details with public key and decrypting it and then sending them to next layer of onion privacy preserving approach-OGPPA.
+An onion privacy preserving approach is a multiple encryption layered structured approach with information about the users kept inside the cloud.
+Garlic privacy preserving approach is a variant onion privacy that encrypts multiple messages together to make it more difficult for attacks to perform users request analysis and preserve their data.
+Onion and garlic privacy preserving framework gives a strong back up with encryption and decryption techniques to handle the privacy breach happens during critical attacks by unknown users.
+Future research focuses on three factor encryption in cloud layer to boost up and mitigate the privacy prevention in cloud storage service.

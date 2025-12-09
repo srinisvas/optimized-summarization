@@ -1,0 +1,18 @@
+In this paper, we present a Privacy Impact Assessment (PIA) decision support tool that can be integrated within a cloud computing environment.
+A PIA is a systematic process for evaluating the possible future effects that a particular activity or proposal may have on an individual's privacy.
+A PIA is proactive, permitting organisations to design privacy into new systems during the design and development stages, reducing the risk that costly retrofitting of privacy safeguards will be required after implementation.
+However, at present there is no agreed international standard for a PIA process, and there are critical variations in the implementation of PIAs in the different jurisdictions where they are currently in use.
+Broadly speaking, cloud computing is Internet-based computing, whereby a large pool of easily usable and accessible virtualised resources (such as hardware, development platforms and/or services) can be dynamically reconfigured to adjust to a variable load (scale), allowing also for an optimum resource utilisation.
+Users lose a degree of control over their 'sensitive information' (this term having a specific meaning in Data Protection circles) as the responsibility for protecting that information is shared between the cloud client and the cloud host.
+The ultimate responsibility for privacy protection, however, always remains with the controller of the private information --in this case the cloud client.
+However, at present the tool is only at the conceptual/design stage.
+The PIA tool can be deployed in the cloud as a service accessible from a web browser, using a Software as a Service (SaaS) model, in which external organisations can ask to use that service (probably on a pay-per-use basis), in order to generate PIA reports based on their input, as required.
+The PIA tool is able to reason about privacy and security risks in the cloud that may be raised, as part of its analysis about the project.
+Output for the PIA tool is a report displaying information in several sections: introduction; project summary and contact details; the summary of findings (which indicates if the PIA tool has found the project to be either compliant or not); risk summary (which indicates the levels of risk associated with each privacy domain); details of other compliance/noncompliance issues, such as security, transparency, and transborder data flows.
+The PIA tool is a decision support system (DSS) based on a type of expert system.
+The PIA tool has a knowledge base (KB) that is created and updated by privacy experts on an ongoing basis.
+Our approach uses a JBoss rules (i.e. Drools) engine , that makes inferences by deciding which rules (i.e. those created by the domain experts) are satisfied by facts or objects, prioritises the satisfied rules, and executes the rule with the highest priority.
+It appears that the most appropriate solution for the PIA tool is that it makes use of both private and public cloud resources with external cloud services.
+The solution is to deploy the PIA tool in a private cloud to protect PII relating to multiple parties, and create a virtualization of our tool, or part of the tool in a public cloud, -that will experience the heavy traffic on a cloud-service infrastructure service as illustrated in Figure 5.
+We believe that our tool is a novel approach as at present (i.e. August 2010) no such PIA application exists.
+We are currently developing a PIA tool that can be used in a cloud environment to identify potential privacy risks and compliance.

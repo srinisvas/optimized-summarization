@@ -1,0 +1,13 @@
+Throughout history, technological evolution has generated less desired side effects with impact on society.
+To counterbalance, the EU has tried to limit the use of personal data for other purposes than those declared, by imposing on Member States the General Data Protection Regulation (known as the "GDPR"), which has become mandatory in all states.
+A legislative framework for artificial intelligence (AI) will probably be developed in the future, but at the moment there is no general consensus in the field of artificial intelligence.
+The applicability of AI in areas as diverse as health services, education, transportation, e-commerce or defense requires addressing new issues, ethics, safety and human control over this new technology and, of course, regulatory elements.
+In Europe, there is a strategic advantage over AI ethics that lies in its power to regulate, to set rules and standards.
+AI is not focused on people and their rights in the case of large information and communication systems (Google, Twitter, other social media channels, etc.);
+The purpose of GDPR is to create a standardized framework on data privacy so that individual human rights are protected.
+Structurally, there are major differences between AI and GDPR in terms of "data privacy".
+GDPR protects the person AI discloses personal information with / without consent.
+GDPR allows for individual protection actions AI does not facilitate individual protection actions.
+The users can't influence the balance between ethics and non-ethics, because the non-ethics aspects are hided in the software, especially in the AI components.
+AI developers have an ethical obligation to make the structure and pathways transparent if algorithms can infringe on human rights.
+The GDPR example could be the starting point for a unanimously accepted legislative framework.

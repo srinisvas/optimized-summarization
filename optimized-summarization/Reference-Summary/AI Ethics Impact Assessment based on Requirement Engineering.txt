@@ -1,0 +1,17 @@
+This paper proposes a methodology for evaluating the ethical impact of artificial intelligence (AI) systems on people and society based on AI ethics guidelines.
+Because these principles and guidelines are written in terms of philosophy and law, AI service providers, developers, and business users have the challenge of how they should practice the principles and guidelines to their AI systems.
+From a survey of past AI ethical incident cases, we assumed that ethical risks are mapped to the interactions between the components of an AI system and the stakeholders directly or indirectly involved with the system.
+On the basis of this assumption, we propose a methodology called AI Ethics Impact Assessment for comprehensively identifying ethical problems caused by AI by associating the requirements for responsible AI described in the ethics guidelines with the interactions that appear in AI systems.
+The methodology consists of two approaches based on the requirements engineering approach.
+Approach 1: Building an AI ethics model.
+Approach 2: Impact assessment process.
+Assumption: Ethical risks can be related to the interactions between the components of an AI system and the stakeholders that are directly or indirectly involved with the AI system.
+An AI ethics model comprehensively indicates the characteristics that an ethical AI system should have.
+Step 1 We first create an AI system diagram based on AI specifications and use case information.
+Step 2: Next, AI ethical characteristics corresponding to all interactions in the system diagram are extracted using the AI ethics model.
+Step 3: Finally, a situation contrary to each extracted AI ethical characteristic is extracted as a risk.
+We conducted an initial validation by means of a questionnaire survey to determine whether it is possible to extract the risk of AI ethics in accordance with the AI Ethics Impact Assessment.
+The combined scores of "Valid" and "Valid but other interactions" exceeded 0.7.
+The results of the questionnaire suggested the validity of our assumption that ethical risks can be associated to interactions between AI systems and stakeholders.
+We proposed the AI Ethics Impact Assessment, a methodology for comprehensively extracting potential ethical risks in AI systems in accordance with AI ethics guidelines.
+However, problems remain with the small number of participants, the bias toward those who have knowledge of AI ethics, and the setting of questions.

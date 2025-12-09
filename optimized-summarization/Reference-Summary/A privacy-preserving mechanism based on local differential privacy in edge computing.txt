@@ -1,0 +1,15 @@
+Therefore, edge computing emerges as the times require, which combined with the existing cloud computing centralized processing model, can effectively solve the problem of big data processing at cloud center and edge of network .
+However, user data in edge computing is usually stored and processed in some honest-but-curious authorized entities, which leads to the leakage of users' privacy information.
+Existing differential privacy , technologies could be classified as centralized differential privacy (CDP) , technology and local differential privacy (LDP) technology.
+CDP believes that the third-party data collectors are truthful, which is not necessarily true in reality, and clearly does not meet our requirements for location privacy-preserving of edge computing.
+LDP, which has emerged in recent years, is the best way to solve this problem.
+This paper proposes a location data collection method that s a t i s f i e s t h e l o c a l differential privacy to protect users' privacy.
+In this paper, a Voronoi diagram constructed by the Delaunay method is used to divide the road network space and determine the Voronoi grid region where the edge nodes are located.
+A random disturbance mechanism that satisfies the local differential privacy is utilized to disturb the original location data in each Voronoi grid.
+The system structure of the proposed privacy-preserving mechanism is shown in Figure2.
+Cloud server divides an entire map with a Voronoi diagram and stores Voronoi grids region and corresponding number v i .
+Edge nodes divide users in the same Voronoi grid into a group and send the group message to clients;
+This paper uses the level of privacy-preserving (PL) and loss of service quality (Qloss) to evaluate the performances of privacy-preserving methods.
+From the experimental results, we can see that the proposed LDP mechanism has the least Qloss, so the performance of the algorithm is better than the other two mechanisms.
+In addition, the Qloss of LDP is basically unchanged with the increase of privacy level.
+Through comparison experiments, it is verified that the proposed LDP not only meets users' privacy needs, but also has higher data availability.

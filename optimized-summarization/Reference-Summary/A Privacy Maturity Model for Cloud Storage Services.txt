@@ -1,0 +1,13 @@
+The purpose of this article is to present a Privacy Maturity Model of services offered by Cloud Computing Providers in the context of Cloud Storage.
+This study aims to present an overview of the current barriers in these scenarios and present a model based on technical analysis of maturity in these environments.
+Despite countless advantages, one of the main barriers in adopting this type of solution is the concern of its users with the privacy of theirs stored data, and this concern becomes even more complex when the service is outsourced .
+Thus, to solve the problems in this context, 3 questions arise about these concerns: (i) How to identify a particular data is considerably sensitive? (ii) What strategies should be exercised to protect access to the contents of sensitive data in these environments? (iii) How to establish a level of privacy that meets the needs of the users?
+Upon questioning (ii), an approach, which deserves mention, is the encryption.
+Finally, based on the question (iii), currently there is still no formal agreement establishing a privacy level agreement between the service provider and client.
+The objective of this research is to present a Privacy Maturity Model for Cloud Storage Services, PMMCS, for assessing the Maturity Level as the Privacy afforded by services of Cloud Storage providers.
+A macro view of the proposal is based on the CMMI-SVC model, which aims to assess the Maturity Level of a particular Service .
+Regarding privacy, the proposal will make use of the concepts defined in the model BSIMM-CP , which is facing the normative Compliance Policies and governance exercised by a particular service , identifying absences or flaws in Specifications relating to Personally Identifiable Information (PII).
+In order to achieve the objectives mentioned in the previous section, a four phases working methodology has been defined:
+At this stage, we will make a determined planning of the activities to be performed during the search.
+At this time, we will build an architecture for a prototype of the proposed solution, make a schedule for implementation, and follow it;
+In this phase, we will conduct a detailed evaluation of the proposed technique through experiments.
