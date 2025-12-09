@@ -1,0 +1,13 @@
+In this study, we perform a bibliometric analysis of AI Ethics literature for the last 20 years based on keyword search.
+Our study reveals a three-phase development in AI Ethics, namely an incubation phase, making AI human-like machines phase, and making AI human-centric machines phase.
+We selected SCOPUS (www.scopus.com) as the main data source and VOSviewer (www.vosviewer.com) as the data aggregator.
+In total, 2,517 articles were selected.
+Thus, we define the pre-2014 period as the incubation period.
+The results revealed a significant shift in AI Ethics research principles from 2020.
+Phase I: Incubation (2004-2013) AI Ethics trailed AI's rapid development.
+Phase II: Make AI Human-like Machines (2014-2019).
+AI Ethics keywords during this phase reflected many human-like features, for example, "accountability", "care", "compassion", "empathy", "fairness", "justice", "transparency", "trust", and Explainable AI (XAI).
+Phase III: Make AI Human-centric Machines (2020-present).
+During this phase, precautionary keywords showed up very frequently in the literature, such as "algorithm bias", "AI bias", "gender bias", and "discrimination" in 2020, and "opacity", "responsibility gap", and "social justice" in 2021.
+We conjecture that the next phase of AI ethics is likely to focus on making AI more machine-like as AI matches or surpasses humans intellectually, a term we coin as "machine-like human".
+AI ethicists may need to get ahead of the AI technology development and research on making AI machine-like humans, prohibit unethical development of machine-augmented non-humans, and prevent the development of malicious or malevolent Superintelligence.
