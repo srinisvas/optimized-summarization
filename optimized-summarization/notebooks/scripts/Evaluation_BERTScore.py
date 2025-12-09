@@ -27,7 +27,7 @@ def identify_summary_file_pairs_modified(ref_dir, res_dir, max_pairs=100):
     return file_pairs
 
 # Define the directories
-reference_directory = '/content/optimized-summarization/optimized-summarization/LLM summaries'
+reference_directory = '/content/optimized-summarization/optimized-summarization/Reference-Summary'
 result_directory = '/content/optimized-summarization/optimized-summarization/LLM_Summaries_3B'
 
 # Identify file pairs
@@ -85,22 +85,16 @@ else:
 
 evaluation_dir = '/content/optimized-summarization/optimized-summarization/Evaluation'
 os.makedirs(evaluation_dir, exist_ok=True)
-output_filepath = os.path.join(evaluation_dir, 'BERT_Score.txt')
+output_filepath = os.path.join(evaluation_dir, 'BERT_Score.csv') # Changed filename and extension
 
-with open(output_filepath, 'w') as f:
-    f.write("--- Individual BERT Scores ---\n")
-    for i, scores_dict in enumerate(all_bert_scores):
-        f.write(f"\nPair {i+1}: Reference: {scores_dict['reference_file']}, Result: {scores_dict['result_file']}\n")
-        f.write(f"  BERT Precision: {scores_dict['bert_precision']:.4f}\n")
-        f.write(f"  BERT Recall: {scores_dict['bert_recall']:.4f}\n")
-        f.write(f"  BERT F1: {scores_dict['bert_f1']:.4f}\n")
-
-    if all_bert_scores:
-        f.write("\n--- Average BERT Scores Across All Pairs ---\n")
-        f.write(f"Average BERT Precision: {avg_bert_precision:.4f}\n")
-        f.write(f"Average BERT Recall: {avg_bert_recall:.4f}\n")
-        f.write(f"Average BERT F1: {avg_bert_f1:.4f}\n")
-    else:
-        f.write("\nNo BERT scores were processed to calculate averages.\n")
-
-print(f"BERT scores successfully saved to {output_filepath}")
+if all_bert_scores:
+    df_output = pd.DataFrame({
+        'Pair_ID': range(1, len(all_bert_scores) + 1),
+        'bert_precision': [d['bert_precision'] for d in all_bert_scores],
+        'bert_recall': [d['bert_recall'] for d in all_bert_scores],
+        'bert_f1': [d['bert_f1'] for d in all_bert_scores],
+    })
+    df_output.to_csv(output_filepath, index=False)
+    print(f"BERT scores successfully saved to {output_filepath}")
+else:
+    print("\nNo BERT scores were processed to save.")
