@@ -24,7 +24,7 @@ def identify_summary_file_pairs_modified(ref_dir, res_dir, max_pairs=100):
     return file_pairs
 
 # Define the directories
-reference_directory = '/content/optimized-summarization/optimized-summarization/LLM summaries'
+reference_directory = '/content/optimized-summarization/optimized-summarization/Normalized-papers'
 result_directory = '/content/optimized-summarization/optimized-summarization/LLM_Summaries_3B'
 
 # Identify file pairs
@@ -85,18 +85,14 @@ else:
 
 evaluation_dir = '/content/optimized-summarization/optimized-summarization/Evaluation'
 os.makedirs(evaluation_dir, exist_ok=True)
-output_filepath = os.path.join(evaluation_dir, 'Coverage_Rate.txt')
+output_filepath = os.path.join(evaluation_dir, 'Coverage_Rate.csv') # Changed to .csv
 
-with open(output_filepath, 'w') as f:
-    f.write("--- Individual Coverage Rates ---\n")
-    for i, scores_dict in enumerate(all_coverage_rates):
-        f.write(f"\nPair {i+1}: Reference: {scores_dict['reference_file']}, Result: {scores_dict['result_file']}\n")
-        f.write(f"  Coverage Rate: {scores_dict['coverage_rate']:.4f}\n")
-
-    if all_coverage_rates:
-        f.write("\n--- Average Coverage Rate Across All Pairs ---\n")
-        f.write(f"Average Coverage Rate: {avg_coverage_rate:.4f}\n")
-    else:
-        f.write("\nNo coverage rates were processed to calculate averages.\n")
-
-print(f"Coverage rates successfully saved to {output_filepath}")
+if all_coverage_rates:
+    df_output = pd.DataFrame({
+        'Pair_ID': range(1, len(all_coverage_rates) + 1),
+        'Coverage_Rate': [d['coverage_rate'] for d in all_coverage_rates]
+    })
+    df_output.to_csv(output_filepath, index=False)
+    print(f"Coverage rates successfully saved to {output_filepath}")
+else:
+    print("\nNo coverage rates were processed to save.")
