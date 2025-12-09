@@ -32,12 +32,6 @@ def clean_and_segment_article(text):
     return structured
 
 def normalize_all_jsons(json_folder):
-    """
-    Reads all JSON files in json_folder, normalizes their main text using clean_and_segment_article,
-    and stores them as a dict of dicts.
-    Returns:
-        dict: {filename (str): normalized_dict}
-    """
     normalized_dicts = {}
     for filename in os.listdir(json_folder):
         if filename.lower().endswith('.json'):
