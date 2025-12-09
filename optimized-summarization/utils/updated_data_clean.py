@@ -63,10 +63,9 @@ def normalize_all_jsons(input_folder, output_folder):
                 json.dump(cleaned, f, ensure_ascii=False, indent=2)
             print(f"Processed & saved: {filename}")
 
-# ---------- 🔹 Paths ----------
 INPUT_DIR = '../papers_json/'        # relative to utils/
 OUTPUT_DIR = '../normalized_papers/' # cleaned output folder
 
-# ---------- Run ----------
 if __name__ == "__main__":
     normalize_all_jsons(INPUT_DIR, OUTPUT_DIR)
+
