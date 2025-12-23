@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper presents a novel approach to teaching virtue-based engineering ethics in undergraduate engineering courses by integrating traditional stories from diverse cultural backgrounds into the curriculum. The authors propose that virtue-based character education offers a more holistic framework for ethical training, focusing on the development of the whole person rather than just technical ethics. By using stories from traditional cultures, the teaching modules aim to make ethics more relatable and engaging for students, addressing the lack of interest and motivation often seen in current ethics training methods.
+
+The research involves developing teaching modules that include short virtue-of-the-week stories at the beginning of class, followed by class activities that connect these virtues to engineering ethics. These modules are designed to be integrated into students' coursework, emphasizing the importance of virtues in both professional and personal contexts. The pilot study was conducted in a two-quarter chemical engineering (CHE) capstone design course at a large public university in the Southwest US. The control group consisted of students in an environmental engineering (ENVE) capstone design course taught at the same university.
+
+The teaching modules were implemented using Google Jamboard for interactive class activities, where students were encouraged to draw connections between virtues and engineering ethics. Preliminary findings suggest that students are highly engaged and interested in the approach, with many students expressing appreciation for the emphasis on ethics and the relatability of virtue-based stories. The instructor observed that students made more connections between virtues and ethics during the second quarter of the course, indicating a deeper understanding of the material.
+
+The paper concludes that virtue-based character education offers a viable and effective approach for teaching engineering ethics, providing students with a more holistic and motivational framework for ethical decision-making. The teaching modules developed in this study have the potential to be a valuable resource for other engineering faculty interested in incorporating ethics into their courses. Future work will focus on expanding the sample size, developing more rigorous assessments, and exploring the long-term benefits of integrating virtue-based ethics into undergraduate engineering education.

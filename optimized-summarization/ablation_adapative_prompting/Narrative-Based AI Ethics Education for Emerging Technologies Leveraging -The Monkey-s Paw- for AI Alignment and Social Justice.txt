@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a narrative-based AI ethics education model using W. W. Jacobs's The Monkey's Paw (1902) to address key ethical concerns in AI development. The story's brevity, metaphorical richness, and public availability make it an effective tool for stimulating ethical reflection among future developers and users. The proposed instructional approach involves a single class session where students read the story and engage in guided ethical discussion and reflective writing. The narrative's central theme of unintended consequences aligns well with the AI alignment problem, encouraging students to consider the broader implications of their technological creations.
+
+The paper emphasizes the need for ethical analysis in technical education, which often focuses on system functionality and performance. By integrating narrative tools like The Monkey's Paw, the model aims to complement technical learning and promote value-sensitive design. The story's open-ended interpretation allows students from diverse backgrounds to explore how intention, design, and consequence interact in both fictional and real-world systems. This approach supports active learning and fosters lasting ethical awareness, which is often more challenging to achieve through abstract principles alone.
+
+The proposed educational strategy includes a lesson plan that allocates time for reading, discussion, and reflection. Students are encouraged to map the story's wishes to modern AI misbehavior, such as systems that optimize narrow objectives while neglecting social context. The paper concludes that narrative-based ethics education can provide a unique, high-impact avenue for addressing key issues in AI alignment and responsible innovation, offering a pathway for regulatory compliance (e.g., GDPR) without sacrificing the analytical value of aggregated data. Future work will focus on validating the framework's resistance against real-world quantum attack simulations and hardware-level integration.

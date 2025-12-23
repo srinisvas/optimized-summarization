@@ -1,0 +1,19 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper examines the current state of ethics education in Computer Science (CS) undergraduate programs across Australian universities. It highlights the ethical concerns associated with AI, such as fairness, bias, privacy, discrimination, and sustainability, which are gaining prominence due to the proliferation of AI technologies in various aspects of everyday life. The paper discusses the ethical challenges posed by AI, such as influencing voter preferences and the rise of deep fakes, as well as the potential benefits of AI in improving the quality of life and contributing to economic growth.
+
+The Australian Government has developed eight aspirational principles for AI development and deployment, emphasizing societal benefit, respect for human rights, diversity, and accountability. These principles underscore the need for professionals working with AI to be well-versed in ethical issues and to actively use AI to benefit society. In response, undergraduate engineering programs in Australia are mandated to include ethics education as part of their core curricula.
+
+The paper presents an analysis of the ethics curricula of 12 Australian CS undergraduate degrees. It reveals significant variation in the integration of ethics content, with some universities incorporating ethics as a standalone module or unit, while others distribute it across different modules and units. The timing of ethics education varies, with most introduced in the first year as a core module or in the final year as a capstone unit.
+
+The ethical content surveyed falls into three categories: Micro-Ethics, Ethics Philosophy, and Macro-Ethics. Micro-Ethics includes personal attributes and ethics related to institutional and professional aspects. Ethics Philosophy is taught in two universities, while Macro-Ethics, which focuses on outward-facing ethical obligations, is covered in ten universities. The paper notes a shift from micro-ethics to macro-ethics, reflecting the growing emphasis on social responsibility and environmental sustainability.
+
+The paper concludes that while there is a growing interest in macro-ethics, the current curricula do not comprehensively address all aspects of ethics. It advocates for a more detailed and comprehensive analysis, including interviews with course developers, to fully understand the current situation and to develop recommendations for content, pedagogies, and assessment of ethics learning in CS and IT education. The work aims to address the gap in understanding the evolution and current status of ethics education in Australian CS curricula, with a focus on effectively incorporating macro-ethics into the curriculum.

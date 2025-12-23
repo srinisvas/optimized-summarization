@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+The rapid adoption of AI companions, such as Replika, has sparked debates about their capacity to provide genuine care. This study critically examines whether AI can deliver "good care" by analyzing real-world cases and drawing on theoretical frameworks from Tronto's care ethics, Mol's logic of care, and Foucault's technologies of the self. The analysis reveals three fundamental limitations of AI in providing good care: its lack of moral understanding and responsibility, the inadequacy of its choice-based design for dynamic care, and its potential to reinforce power structures rather than foster authentic self-reflection.
+
+AI lacks moral understanding and responsibility, essential for the "caring about" and "caring for" phases of care. This is evident in cases where AI fails to recognize the ethical implications of its actions, such as in the Belgian user who committed suicide after interacting with an AI therapist. Additionally, AI's design often relies on the "logic of choice," prioritizing user autonomy and customization over the dynamic, reciprocal care required by the "logic of care." This design can lead to a "responsibility gap," as AI cannot be held accountable for its actions due to the absence of moral comprehension.
+
+Furthermore, AI's interactions often reflect "technologies of power" rather than "technologies of the self." These technologies can manipulate users' behavior and reinforce existing social control mechanisms, potentially guiding individuals toward hazardous paths. For example, Replika's implementation of restrictions on sexually charged conversations was seen as a form of external control, rather than genuine care. This highlights the risk of AI companions exploiting human vulnerabilities for corporate gain.
+
+The study concludes that AI should be positioned as an assistive tool within broader human-centered care networks rather than as an independent caregiver. Developers must ensure transparent auditing and ethical oversight to protect users from covert manipulation, while policymakers, professionals, and the public should collaborate to guide AI's safety and accountability design. Integrating AI as an assistive tool can help bridge the gap between simulating care and practicing it in a substantively transformative way, ultimately contributing to human well-being.

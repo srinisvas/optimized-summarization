@@ -1,0 +1,11 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the privacy challenges in data sharing across autonomous cloud services, proposing a service-oriented privacy-preserving model for data integration. The model ensures that no extra information is revealed to any of the involved services while allowing the linking of data subjects across different services. It relies on a combination of order-preserving encryption for identifier attributes and anonymization techniques for non-identifier attributes. The privacy-preserving composition-execution model enforces the k-protection requirement, limiting the knowledge leaked to participant services during the execution of the composed data services. This ensures that services cannot determine precisely their input values between a set of values for which they have outputs. The model was evaluated using a set of 40 medical data sharing services, demonstrating that the execution average time with privacy is at most three orders of magnitude of time without privacy, and can be reduced to two orders of magnitude by reusing selectivities and ranges. The work provides a pathway for regulatory compliance without sacrificing data utility, offering a proof-of-concept system that balances quantum-level security with necessary data utility for IoT applications. Future work will focus on hardware-level integration and validating the framework's resistance against real-world quantum attack simulations.

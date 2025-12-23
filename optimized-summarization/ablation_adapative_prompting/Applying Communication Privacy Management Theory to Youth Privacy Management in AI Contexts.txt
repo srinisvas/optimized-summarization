@@ -1,0 +1,23 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+Okay, let's tackle this. The user wants an executive summary for the paper "Applying Communication Privacy Management Theory to Youth Privacy Management in AI Contexts." I need to condense the key points from the full paper into a cohesive, professional summary without using headings or bullet points. 
+
+First, I'll recall the main constructs: Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA). The study used CPM Theory to analyze how these factors influence youth privacy management in AI contexts.
+
+The abstract mentions a mixed-methods approach with surveys and interviews. The results show that while adults have higher awareness and trust, youth have lower scores in these areas. The structural equation modeling (PLS-SEM) found significant relationships between EA and DOC, and TT and DOC. PDS had a negative effect on DOC, indicating parental control might undermine youth's autonomy. PRB was a key mediator between EA and DOC, showing that risk perception is crucial for data control.
+
+Qualitative data highlighted lack of awareness, data misuse fears, and feelings of powerlessness. The study emphasizes the need for user-centric privacy controls, transparency, and education. The limitations include cross-sectional design and moderate reliability in some constructs. Future work should address these with longitudinal studies and improved reliability.
+
+Now, structuring this into three paragraphs. The first should introduce the study's purpose and methodology. The second can summarize the key findings, especially the relationships between constructs. The third should outline the implications and future directions.
+
+Need to ensure all claims are supported by the paper. Avoid adding new information. Keep it concise, professional, and factually grounded. Check for any jargon and simplify where necessary. Make sure the flow is logical and each paragraph transitions smoothly to the next.
+</think>
+
+**Executive Summary**  
+This study applies Communication Privacy Management (CPM) Theory to explore how young digital citizens, parents/educators, and AI professionals manage privacy in AI-driven environments. A mixed-methods approach, combining surveys and qualitative analysis, was employed to examine five key constructs: Data Ownership and Control (DOC), Parental Data Sharing (PDS), Perceived Risks and Benefits (PRB), Transparency and Trust (TT), and Education and Awareness (EA). A total of 306 participants were surveyed, with structural equation modeling (PLS-SEM) used to analyze their interactions.  
+
+Key findings reveal significant disparities in privacy awareness and control among demographics

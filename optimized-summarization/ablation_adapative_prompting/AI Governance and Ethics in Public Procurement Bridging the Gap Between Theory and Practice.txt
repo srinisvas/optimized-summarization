@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+The paper "AI Governance and Ethics in Public Procurement Bridging the Gap Between Theory and Practice" explores the intersection of AI ethics, AI governance, and public procurement practices. It highlights the growing importance of AI in public sector information systems (IS) and the need for ethical AI governance. The study positions public procurement practices within the framework of AI governance, particularly focusing on the organizational level, as a strategic role in ensuring the ethical development and implementation of AI systems.
+
+The research identifies a gap in the current AI governance models, which do not adequately address the procurement practices. It emphasizes that while AI ethics principles and tools have been widely discussed, their practical application in the procurement context remains scarce. The paper suggests that the procurement process, with its binding requirements, can serve as a natural platform for implementing AI ethics tools and methods, ensuring the ethical sustainability of procured AI systems.
+
+The study analyzes existing AI ethics tools and methods, categorizing them into technical implementation models, frameworks, principles, and tools or methods. It finds that while researchers and non-profits are active in producing these tools and methods, the private and public sectors are less involved, particularly in developing procurement-related tools and methods. The paper concludes that the procurement process, when properly integrated with AI ethics, can play a crucial role in ensuring the ethical development and implementation of AI systems in the public sector.
+
+The findings of this study underscore the need for future research to empirically investigate the current state of AI systems procurement practices in the public sector and to integrate procurement practices into AI governance frameworks to develop practical solutions for industry needs. The paper provides a comprehensive analysis of the interplay between AI ethics, AI governance, and public procurement, offering insights into bridging the gap between theoretical frameworks and practical applications in the development and implementation of AI systems in the public sector.

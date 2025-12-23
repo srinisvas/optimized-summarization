@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a novel fuzzy-based encryption mechanism designed to enhance privacy preservation and evaluate query response times in cloud computing environments. The system integrates differential privacy (DP) with Laplace noise injection and lightweight encryption to safeguard data integrity while ensuring efficient data access for authorized users.
+
+The proposed mechanism involves a hierarchical system architecture with distinct roles for data owner, data provider, edge server, cloud, and data analyst. The data owner encrypts datasets using lightweight encryption and adds noise via the Laplace mechanism, ensuring privacy while maintaining data utility. The encrypted data is stored in the public cloud, which is accessed through edge servers that perform index lookups and authenticate data analysts.
+
+The system employs fuzzy logic and neural networks to handle tabular data, particularly focusing on datasets with spatial elements like images and videos. This approach enhances privacy protection by introducing ambiguity in data attributes, making it more challenging for attackers to deduce sensitive information. The proposed framework is evaluated using entropy metrics to assess privacy levels, demonstrating improved security compared to traditional k-anonymity methods.
+
+Key contributions include a proof-of-concept system that balances quantum-level security with data utility, demonstrating a 35% improvement in query response time over classic DP models. The work emphasizes the importance of adopting quantum-resistant differential privacy (QRDP) protocols for future decentralized systems, ensuring regulatory compliance without compromising data utility. Future research directions include hardware-level integration and validation of the framework's resistance to real-world quantum attacks.

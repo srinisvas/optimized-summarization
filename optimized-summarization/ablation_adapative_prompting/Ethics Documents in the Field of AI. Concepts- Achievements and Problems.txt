@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+The development of AI systems and their widespread use in various spheres of public and personal life have given rise to moral problems, prompting the emergence of the field of AI Ethics. This field involves not only scientific research into the ethical aspects of AI design and use but also practical implementation in various ethical documents such as declarations, recommendations, ethical codes, and ethical standards. The paper analyzes existing ethical documents to determine which stages of development they have completed, focusing on the identification of key ethical issues, coordination of positions, and development of regulatory frameworks.
+
+The ethical documents analyzed can be broadly categorized based on their status, sources, and moral agency. These include proactive ethical codes proposed by researchers and addressed to all stakeholders, intergovernmental organization recommendations, state authority recommendations, professional organization recommendations, company-specific ethical codes, and corporate community ethical codes. Examples of these documents include the Asilomar AI Principles, UNESCO's Ethics Guidelines for Trustworthy AI, the EU's White Paper on Artificial Intelligence, and the AI Ethics Code by the AI Alliance in Russia.
+
+Key ethical issues discussed in AI technologies include transparency, privacy, and trust. Transparency refers to the ability of AI systems to provide clear and understandable explanations for their decisions and actions, which is crucial for establishing trust, especially in high-stakes applications like healthcare. Privacy, particularly the privacy of personal data, is a critical ethical issue due to the ubiquity of digital technologies and AI. Trust is central to the discourse of digital ethics and AI, as it is essential for building and maintaining trust between humans and AI systems.
+
+The paper highlights that while existing ethical documents have achieved some progress in identifying key ethical issues and concepts in AI ethics, they often lack a practical component that could guide decision-making in ethically problematic situations. The ethical documents analyzed emphasize the importance of safety and well-being for humans, the universality of ethical principles across different AI systems, and the need to improve the application of technologies in everyday life while increasing trust among ordinary users. The main challenge remains the definition and interpretation of key concepts such as "good" and "harm," which are often vague, and the lack of a consolidated practical framework for ethical decision-making in AI ethics.

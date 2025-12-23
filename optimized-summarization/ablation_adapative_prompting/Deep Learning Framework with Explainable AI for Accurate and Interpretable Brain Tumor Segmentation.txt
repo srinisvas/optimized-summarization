@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper presents a novel approach to brain tumor detection using a hybrid system that integrates Federated Learning (FL) for privacy, Explainable AI (XAI) for transparency, and deep learning for precision. The proposed system leverages FL to train machine learning models collaboratively across institutions without sharing raw MRI data, thereby preserving patient privacy. XAI techniques, such as SHAP and LIME, are used to provide interpretable explanations for the AI system's predictions, enhancing trust and usability in clinical settings.
+
+The system achieves high accuracy and reliability, with performance metrics such as accuracy, sensitivity, and specificity exceeding those of traditional CNN models. The architecture of the proposed system includes a deep learning model for tumour classification, XAI for transparency, and FL for privacy-preserving training. The Federated Averaging (FedAvg) algorithm is used to update the global model parameters, while the Grad-CAM algorithm is employed to visualize the influence of different regions in the input image on the model's predictions.
+
+Despite the system's strengths, challenges remain, particularly in terms of computational cost and real-time processing. Federated Learning can be computationally demanding, especially when aggregating models, and XAI methods can be costly in terms of time and resources. Future work will focus on optimizing FL for faster aggregation and improving model robustness through larger and more diverse datasets. Additionally, real-time clinical integration will emphasize optimizing the system for fast, accurate predictions with detailed explanations that fit seamlessly into clinical workflows.
+
+The proposed system addresses key challenges in brain tumor diagnosis, including data privacy, model transparency, and clinical usability. By integrating FL and XAI, the system provides a clinically useful, interpretable, and privacy-preserving diagnostic system that can enhance trust in AI-driven solutions. The work demonstrates the potential of hybrid approaches in bridging AI research and clinical application, offering a pathway for regulatory compliance and improved diagnostic accuracy. Future research will focus on further improving the system's generalization, robustness, and real-time responsiveness to ensure its applicability in real-world clinical settings.

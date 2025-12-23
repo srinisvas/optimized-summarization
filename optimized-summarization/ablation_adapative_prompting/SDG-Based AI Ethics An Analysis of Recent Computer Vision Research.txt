@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper analyzes the extent to which Computer Vision research has focused on the Sustainable Development Goals (SDGs), aiming to understand its potential to contribute to ethical development of this technology. The analysis is based on a systematic review of 8672 papers from the past three editions of the two main Computer Vision conferences, CVPR and ECCV.
+
+The research reveals that Computer Vision has a significant impact on several SDGs, particularly in areas related to Society, Economy, and Environment. The most impacted SDGs are SDG11 (sustainable transport), SDG9 (sustainable industrialization), and SDG3 (health). Environment-related SDGs, such as SDG13, SDG14, and SDG15, also receive substantial attention. However, there is a notable absence of research on SDGs 1, 5, 10, and 17, suggesting a lack of awareness or focus on these areas.
+
+The analysis shows that the impact of Computer Vision on SDGs has increased over the years, with a notable increase in the number of papers addressing these goals, particularly in ECCV. The distribution of these papers across the SDGs is similar to the broader AI literature, with peaks in SDGs related to Society, Economy, and Environment. The research highlights the potential of Computer Vision to support sustainable development, particularly in areas such as sustainable transport, industrialization, and health.
+
+The paper concludes that while Computer Vision can contribute significantly to achieving SDG targets, there is a need for greater awareness and focus on certain SDGs, particularly those related to Society and Economy. The findings suggest that promoting a more ethical approach to AI, including Computer Vision, is crucial for ensuring that these technologies contribute positively to the well-being of both humans and the planet's ecosystem.

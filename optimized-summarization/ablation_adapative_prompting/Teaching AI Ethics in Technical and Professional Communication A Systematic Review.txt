@@ -1,0 +1,13 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper presents a systematic review of artificial intelligence (AI) literacy and AI ethics in technical and professional communication (TPC) curricula, highlighting the need for integrating ethical perspectives into existing courses. The authors employ a hermeneutic literature review method to analyze interdisciplinary sources, focusing on AI, ethics, literacy, and education. They identify three levels of curricular intervention: institutional, course, and instructional. Institutional efforts involve policy and programmatic decisions, such as institutional reform and curriculum redesign. Course-level efforts include syllabus design and the integration of ethical theories and frameworks. Instructional content focuses on hands-on pedagogical materials, such as role-playing and game-playing, to engage students in ethical reasoning. The authors propose a three-level framework to guide the incorporation of AI ethics into TPC curricula, emphasizing the importance of interdisciplinary approaches and the need for institutional support and funding to facilitate new course development.
+
+Key findings indicate that AI literacy and ethics education are still in their early stages, with limited resources and a narrow focus. The literature review reveals a scarcity of TPC-specific research on AI ethics, with most studies originating from adjacent fields. The authors advocate for integrating AI ethics into existing courses, leveraging frameworks and ethical theories to guide discussions and case studies. They also recommend the development of new courses that incorporate industry-specific experiences and multidisciplinary influences. The challenges of implementing these changes include institutional resistance, funding limitations, and the need for partnerships between universities and industry. Despite these challenges, the authors argue that incorporating AI ethics into curricula is crucial for preparing students to address the ethical implications of AI in professional communication. Future research should focus on expanding the scope of the review, including more recent literature and case studies, to provide a more comprehensive understanding of AI literacy and ethics in TPC.

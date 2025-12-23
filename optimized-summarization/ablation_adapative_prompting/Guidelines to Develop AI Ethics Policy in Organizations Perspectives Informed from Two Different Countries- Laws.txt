@@ -1,0 +1,19 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper examines the development of AI ethics policies in organizations within the United Arab Emirates (UAE) and New Zealand (NZ), highlighting the unique regulatory approaches taken by these countries. The research draws on the framework of five moral dimensions proposed by Laudon and Laudon, which are used to guide the development of AI ethics policies. The analysis focuses on data protection, property rights, accountability, system quality, and quality of life considerations.
+
+The United Arab Emirates has established a national strategy for AI development and has created a platform to integrate AI applications into various sectors. The UAE has also appointed a Minister of State for Artificial Intelligence and launched several initiatives to foster AI innovation. However, the UAE lacks specific legislation regarding privacy rights, though existing laws such as the Cyber Crimes Law address unauthorized access to electronic information. The UAE is also grappling with the ethical implications of AI in education, where social profiling has led to biased outcomes.
+
+New Zealand, on the other hand, has recently introduced the New Zealand Algorithm Charter, which aims to guide the use of algorithms in government agencies. The charter emphasizes transparency, explainability, and accountability in AI decision-making processes. New Zealand's legal framework, particularly the 2020 Privacy Act, provides guidelines for data protection, though it does not explicitly address AI. The country is also exploring the use of AI in autonomous vehicles and is developing policies to ensure their safety and ethical use.
+
+The paper recommends four guidelines for AI ethics policies in organizations: establishing an external ethics committee, compiling ethical product reports, encouraging ethical AI practitioners, and developing rigorous safety assessments. These guidelines are informed by the experiences of the UAE and NZ and are designed to address the ethical concerns associated with AI applications. Future work will involve investigating the impact of the EU's Artificial Intelligence Act on AI ethics policies globally.
+
+In conclusion, the UAE and NZ have taken significant steps towards developing AI ethics policies, but there is still a need for further research and implementation to ensure these policies are effective and comprehensive. The recommendations provided in this paper aim to guide organizations in developing robust AI ethics policies that address the complex ethical issues raised by AI technologies.

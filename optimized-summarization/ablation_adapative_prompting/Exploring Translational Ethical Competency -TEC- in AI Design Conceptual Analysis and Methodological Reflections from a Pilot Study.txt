@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper explores the concept of Translational Ethical Competency (TEC) in the context of AI design, aiming to address the gap between ethical principles and their practical application in AI system development. The authors conducted a pilot study involving semistructured text-based elicitation interviews with AI professionals to examine how ethical principles are incorporated into real-world AI development. Four case studies were designed as elicitation tools, covering domains such as educational fact-checking, autonomous vehicle design, stock price prediction, and blood diagnostics.
+
+The study identified key processes that AI engineers follow to translate ethical principles into engineering practices. These processes include reflecting on ethical principles, designing AI systems, and continuously evaluating and refining these systems. The authors found that AI engineers often start by considering the technical aspects of the design task, followed by an examination of which ethical principle(s) are most relevant to the case. This is then followed by designing a series of reflective questions under each principle to ensure that design decisions are aligned with the goals of each ethical principle.
+
+The research also highlights the importance of situational sensitivity in ethical decision-making, emphasizing that ethical decisions should be flexible and responsive to different situations rather than strictly following fixed rules. The findings from the pilot study suggest that incorporating ethical principles into AI design requires a comprehensive approach that involves both technical and ethical considerations. This approach not only helps in addressing ethical challenges in AI development but also contributes to the broader goal of ensuring responsible and sustainable deployment of AI technologies.
+
+The paper concludes by emphasizing the need for a competency-driven approach to ethical decision-making in AI development. This approach not only provides practical insights for AI ethics education and professional development but also helps in identifying best practices for translating ethical principles into actionable AI system design. Future work will focus on validating the findings from this pilot study and exploring the implementation of these best practices in real-world AI engineering contexts.

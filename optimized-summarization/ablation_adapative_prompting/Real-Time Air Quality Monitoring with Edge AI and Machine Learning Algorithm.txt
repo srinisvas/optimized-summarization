@@ -1,0 +1,11 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a novel decentralized air quality monitoring system that leverages Edge AI and advanced machine learning techniques to address the limitations of traditional centralized systems. The system employs NVIDIA Jetson devices integrated with IoT sensors to collect and process real-time air quality data locally. Machine learning models, including Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), are used to analyze pollutants such as PM2.5, CO2, and NOx, significantly reducing latency and bandwidth use compared to cloud-based solutions. The system achieved a 75% reduction in latency and a 60% reduction in bandwidth usage, while maintaining high accuracy in pollutant detection with an average correlation coefficient of 0.92. Federated learning is employed to update machine learning models based on local data, improving model accuracy by up to 15% over six months. The decentralized approach ensures data privacy by keeping raw data on local devices, while also enabling continuous model improvement through local updates and global model aggregation. This system demonstrates the potential of decentralized air quality monitoring to provide efficient, accurate, and privacy-preserving solutions critical for public health and environmental protection in urban areas. Future work should focus on expanding the deployment to a wider range of locations and optimizing the federated learning framework for larger datasets and more frequent updates.

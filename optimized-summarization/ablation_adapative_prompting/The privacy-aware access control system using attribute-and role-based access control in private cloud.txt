@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a privacy-aware access control system for academic-based private cloud environments, leveraging a combined Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC) model, termed ARBAC. The system aims to enhance security and privacy by ensuring that sensitive data is managed and accessed according to predefined privacy policies, user levels, and data security levels. 
+
+The ARBAC model introduces a novel approach that combines the strengths of both RBAC and ABAC, allowing for more granular control over access permissions. It defines access control policies based on subject, object, and environment attributes, enabling the system to enforce both mandatory and discretionary access control needs. The system architecture includes a privacy manager responsible for defining privacy policies, handling legal compliance, and controlling data access to protect confidentiality.
+
+Key features of the system include the ability for cloud users to self-register, upload data, and access services according to their privacy preferences. The privacy manager classifies data security levels and enforces access control based on these levels and user groups. The system also addresses privacy-related scenarios such as user provisioning, authentication, data acquisition, privacy management, and data transfer, ensuring that users are notified about the purpose of data usage and can request data deletion after a specified period.
+
+The proposed ARBAC framework demonstrates significant improvements in privacy protection, balancing security with the need for data utility. Future work includes expanding the system to support topical trust and certificate protection, as well as further refining the privacy policies and access control mechanisms. Overall, the system provides a robust framework for managing privacy and security in academic-based private cloud environments.

@@ -1,0 +1,23 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+The paper investigates the state of AI ethics education across various institutions in the United States, aiming to provide a comprehensive understanding of the current landscape and identify areas for future research. The project team developed two surveys: one for faculty members and another for administrators. The faculty survey focuses on curricular development, pedagogy, and assessment in AI ethics education, while the administrator survey examines institutional initiatives, stakeholder involvement, and the integration of AI ethics education within broader curricular plans.
+
+The faculty survey was designed with two main research questions in mind: (1) What are the curriculum priorities, assessment strategies, and pedagogical approaches commonly employed in AI ethics interventions? (2) What are the different ways that faculty approach AI ethics interventions? The survey was structured to gather detailed information on standalone courses, course components, and curricular integration, with flexibility to accommodate diverse institutional contexts and faculty experiences. Open-ended responses were incorporated to enhance the survey's adaptability and depth of information.
+
+The administrator survey was guided by the research question: How do different types of institutions understand their needs and capacity for AI ethics education? It explores current initiatives, perceived barriers and opportunities, and the integration of AI ethics education within institutional curricular development plans. The survey also examines the influence of institutional characteristics, such as size, type, and culture, on AI ethics education strategies.
+
+Accessibility in survey design was a critical consideration, ensuring that the surveys were user-friendly and accessible to a broad range of participants. The surveys were reviewed and revised to meet accessibility standards, with a focus on minimizing cognitive burden and maximizing response rates.
+
+The project's methodology was informed by existing frameworks in ethics education, such as Hess and Fore's engineering ethics interventions framework and Martin et al.'s multi-level framework for the ethics education system. These frameworks guided the survey design to capture a comprehensive view of AI ethics education across different levels, including individual, institutional, policy, and cultural perspectives.
+
+The surveys were developed as a pilot study to gather initial data and feedback from partner institutions. Future work will involve sharing the surveys with faculty and administrators at these partner institutions for validation and further refining the survey questions. Additionally, interviews with selected faculty and administrators who complete the surveys will provide qualitative insights to triangulate with the quantitative data.
+
+The project's findings are expected to contribute to a better understanding of the current state of AI ethics education and inform the development of more effective interventions. By mapping the curricular, pedagogical, and assessment strategies employed across institutions, the research aims to identify best

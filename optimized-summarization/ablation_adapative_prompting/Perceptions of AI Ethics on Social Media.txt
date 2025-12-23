@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary: Perceptions of AI Ethics on Social Media**
+
+The paper investigates the diverse interpretations and expectations surrounding ethical AI, focusing on public visions and the ethical problems and requirements highlighted by the public. While numerous private companies and research institutions have discussed AI ethics, the public's perspectives have not been explored comprehensively. Social media data, particularly from platforms like Twitter and Reddit, are increasingly being used to gather public opinions, offering a more direct and unfiltered view of public sentiment.
+
+The study employs a computational approach using topic modelling and human judgment to identify frames in social media conversations. A corpus of 998 unique Reddit post titles and 16,611 comments from 15 AI-related subreddits was analyzed. The findings reveal several key themes in public perceptions of AI ethics, including AI's gender bias, humans' gender bias about perceived bot gender, regulation and patent laws, AI spreading disinformation, AI making fake content, misuse of personal data, and AI's impact on crime. These themes are not only consistent with existing AI ethics literature but also introduce new insights, such as humans' gender bias towards bots.
+
+The research highlights practical implications for enriching public voice-centric explorations of AI ethics, designing interfaces for human-AI collaboration, and addressing ethical problems. It also suggests areas where public misconceptions and unrealistic visions about AI ethics are prevalent, potentially leading to speculative fears or concerns. The findings can guide academic, industry, and government collaborations to focus on these areas, develop educational programs to reduce misconceptions, and take necessary measures for real ethical risks. Additionally, the study demonstrates the utility of computational analysis in uncovering public perspectives on AI ethics, offering a valuable methodological approach for future research.

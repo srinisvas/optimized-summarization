@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This study investigates how Nigerian journalists perceive privacy and data protection in the context of using generative artificial intelligence (GenAI) tools in their work. The research was conducted through semi-structured interviews with 20 experienced Nigerian journalists, who were recruited from various media organizations across Nigeria, including radio, television, and newspapers. The interviews focused on the journalists' understanding of privacy policies and data handling practices by AI companies, as well as their concerns regarding data privacy and security when interacting with these AI tools.
+
+The findings reveal that Nigerian journalists have a less-than-ideal mental model of privacy policies and data handling practices by AI companies, which can lead to potential risks in AI-assisted journalism. Despite this, the journalists are willing to share data with AI companies in exchange for better technology and journalism-specific agentic AI. However, they express helplessness in protecting their data, as AI companies often use their data without consent or compensation, and there is a lack of clear boundaries between public and private information. The researchers note that while the right to be forgotten is a key part of privacy laws globally, its enforcement is challenging in the age of AI.
+
+The study concludes that AI companies need to improve transparency and education for journalists, while implementing a more user-centric data privacy system that encourages the use of their tools in data-sensitive professions such as journalism. The researchers recommend collaborations between journalists and AI companies to address these challenges and ensure a safer and more secure use of AI in journalism. The findings of this study contribute to the growing body of research on the intersection of AI and journalism, particularly in Africa, and highlight the need for further studies to understand a broader group of journalists and their experiences with AI tools.

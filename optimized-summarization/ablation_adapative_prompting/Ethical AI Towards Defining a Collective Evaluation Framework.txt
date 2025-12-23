@@ -1,0 +1,21 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the pressing ethical challenges in artificial intelligence (AI) by proposing a unified system for monitoring AI outcomes that aligns with the EU AI Act and emerging global regulations. The framework is built on ontological blocks of meaning, which are modular, interpretable units encoding ethical principles such as fairness, accountability, and ownership. These blocks are integrated with the FAIR (Findable, Accessible, Interoperable, Reusable) principles to support scalable, transparent, and legally aligned ethical evaluations.
+
+The proposed system uses ontological blocks to dynamically tailor ethical reasoning to specific legal domains, ensuring adaptability and compliance with varying ethical and legal standards. For instance, an AI system analyzing financial data might prioritize fiduciary responsibility, while one used in criminal justice might focus on due process. This approach allows AI systems to align with human values while providing a functional, auditable ethical framework.
+
+The use of ontological blocks is grounded in the ontological study of definitions, which helps translate abstract ethical concepts into machine-readable constructs. These blocks are designed to be flexible, allowing for the combination of simpler blocks to address complex ethical questions. The FAIR principles enhance the discoverability, usability, and scalability of these blocks, making them suitable for diverse applications.
+
+The paper evaluates the feasibility of using ontological blocks for ethical assessment and demonstrates their potential in real-world use cases, such as AI-powered investor profiling. The framework is designed to be independent of training data, enabling robust ethical evaluations, and is flexible enough to be applied across various AI systems and domains.
+
+Despite the challenges in creating and maintaining these blocks, the framework's strengths include independence from training data, flexibility across domains, and auditability. Future work should focus on automating block creation and improving data integration to enhance the practicality and scalability of the framework.
+
+In conclusion, the proposed framework offers a promising path toward building ethically aligned AI systems that prioritize transparency, accountability, and fairness. By integrating ontological blocks with FAIR principles, the framework supports the development of responsible AI systems that can navigate the complex ethical landscape of modern AI applications.

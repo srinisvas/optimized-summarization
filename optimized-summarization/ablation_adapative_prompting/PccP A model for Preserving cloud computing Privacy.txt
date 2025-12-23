@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces the "Preserving Cloud Computing Privacy" (PccP) model, a three-layered architecture designed to enhance privacy for cloud users. The model addresses privacy concerns related to both direct information sharing and the potential for identity derivation from secondary information like IP addresses. The Consumer Layer facilitates user requests, the Address Mapping Layer anonymizes IP addresses, and the Privacy Preserved Layer generates unique, service-dependent identities (USID) with privacy checks.
+
+The USID is a concatenation of the Owned Translated IP address (OTIP), a time stamp, and the coded type of service. This ensures location privacy and service dependency. The Privacy Check mechanism, based on information privacy, allows users to specify which identity attributes should be transparent, depending on the service type. This method enhances user control over their identity information and ensures that only relevant attributes are revealed.
+
+The proposed algorithm, Match Logic (MALOG), verifies the uniqueness of generated USID's and prevents privacy leaks. It maintains a pool of privacy preserved identities and leaks, updating these lists as necessary. The model ensures that cloud service providers cannot access original IP addresses but only the anonymized OTIP addresses, thus preventing direct access to sensitive user information.
+
+The PccP model significantly improves privacy by anonymizing user data and preventing identity derivation. It encourages more users to access cloud services, contributing to economies of scale. The work provides a framework for balancing privacy and utility in cloud computing, offering a pathway for regulatory compliance without sacrificing data utility. Future research will focus on hardware integration and real-world quantum attack simulations to further validate and enhance the model.

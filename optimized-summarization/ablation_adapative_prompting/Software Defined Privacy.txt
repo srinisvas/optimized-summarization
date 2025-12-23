@@ -1,0 +1,27 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+Cloud Computing has revolutionized the way we access computing resources, offering instant access to virtually unlimited resources. However, despite its transformative potential, the adoption of Cloud Computing has been hindered by significant privacy and security concerns. This paper introduces a novel concept called "Software Defined Privacy" (SDP), which aims to address these issues by providing a unified privacy protection mechanism.
+
+The paper begins by highlighting the core privacy threats in Cloud Computing, including Intra Host Attacks, Transborder Data Flow, Unencrypted Archived Data, and Data Leakage. These threats are exacerbated by the multi-tenancy nature of Cloud Computing, where multiple customers share the same physical infrastructure. The paper argues that existing privacy solutions are insufficient, as they often focus on a single aspect at a time and are too complex.
+
+SDP addresses these threats by introducing a three-layer architecture: Application, Control, and Infrastructure. The Control Layer utilizes agent-based approaches to orchestrate and enforce privacy policies. The Infrastructure Layer includes various components such as virtual machines, hypervisors, and storage systems. The Application Layer allows users to define their privacy needs through a user-friendly interface.
+
+The proposed architecture includes several key components:
+
+1. **PrivacyAwareDeploymentAgent**: This agent replaces the original scheduler in Cloud Computing systems, ensuring that virtual machines are deployed on appropriate hardware based on privacy policies. It enforces policies such as exclusive usage of physical resources or semi-exclusive usage following a Chinese Wall Policy.
+
+2. **ArchiveProtectionAgent**: This agent either enforces encryption of data or disallows the creation of backups and snapshots. It uses public keys to encrypt data before storing it on the provider's hardware.
+
+3. **DataCollectionAgents and DataAnalysisAgents**: These agents are used to collect and redirect outgoing data, and analyze it to detect data leaks. They can be deployed locally on the VM or by the CSP, depending on the user's preference.
+
+4. **PrivacyBreach-PredictionAgent and PrivacyBreachResolvingAgent**: These agents monitor configuration files and log files to detect misconfigurations and predict privacy breaches. They provide recommendations for fixing issues and deploying temporary countermeasures.
+
+The paper concludes that Software Defined Privacy offers a comprehensive solution for mitigating privacy threats in Cloud Computing. By providing a unified framework, SDP allows users to easily reflect their privacy requirements and ensures that their data is protected against various attacks. The proposed architecture is designed to be less intrusive and more compatible with existing technologies, making it an attractive solution for the growing adoption of Cloud Computing.

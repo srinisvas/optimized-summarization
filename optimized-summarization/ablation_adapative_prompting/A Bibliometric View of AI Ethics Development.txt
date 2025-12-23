@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper presents a bibliometric analysis of AI Ethics literature from 2004 to 2023, identifying three distinct phases in its development: an incubation phase, a phase focused on making AI human-like, and a phase focused on making AI human-centric. The analysis reveals a significant shift in AI Ethics research principles from 2020, with a focus on protecting downside risks and ensuring AI is explainable, accountable, trustworthy, and non-biased. The study highlights the importance of AI Ethics in guiding the development of AI technology to ensure it aligns with human values and societal norms.
+
+The first phase, from 2004 to 2013, saw AI Ethics emerge as a distinct field, with keywords such as privacy, autonomy, reliability, safety, and security dominating the discourse. The second phase, from 2014 to 2019, focused on making AI human-like, with keywords emphasizing trust, empathy, justice, care, and fairness. The third phase, from 2020 onwards, shifted towards making AI human-centric, with a greater emphasis on algorithm bias, opacity, and social justice, alongside keywords like explainability, trustworthy AI, and sustainable AI.
+
+The paper concludes that AI Ethics is crucial for ensuring the responsible and ethical deployment of AI technology. As AI continues to advance and potentially surpass human capabilities, AI ethicists must address emerging challenges, such as the ethical implications of AI surpassing human intelligence and the need for frameworks to prevent the development of malicious or malevolent Superintelligence. The study underscores the importance of proactive AI Ethics research to guide the development of AI towards human-centric goals, ensuring that AI serves humanity rather than the other way around.

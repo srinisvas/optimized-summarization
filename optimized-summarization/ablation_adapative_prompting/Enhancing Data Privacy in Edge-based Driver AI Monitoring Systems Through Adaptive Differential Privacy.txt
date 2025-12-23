@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the challenge of enhancing data privacy in edge-based driver AI monitoring systems while maintaining the accuracy and timeliness of driver behavior analysis. The research introduces an Adaptive Differential Privacy (ADP) mechanism that dynamically adjusts privacy protection based on the sensitivity of the data and the context of its use. The ADP framework combines Laplace and Gaussian noise mechanisms, allowing for context-aware privacy controls that optimize privacy leakage, utility (accuracy), and latency.
+
+The ADP mechanism is designed to handle the privacy concerns associated with edge-based driver monitoring systems, which process sensitive driver data locally to minimize bandwidth and centralization risks. By employing adaptive noise injection, the ADP framework ensures that privacy is preserved without significantly compromising the utility of the system. The proposed approach demonstrates a 28.7% reduction in privacy leakage, a 93.4% utility score, and a 29 ms latency, making it a balanced solution for real-time driver behavior analysis.
+
+The paper evaluates the ADP mechanism against traditional privacy-preserving methods like Laplace and Gaussian DP, as well as the no-privacy baseline. The results show that the ADP mechanism outperforms other approaches in terms of privacy leakage, utility, and latency, making it the most suitable for edge-based driver monitoring systems. Future work could explore integrating the ADP framework into federated learning systems and enhancing its adaptivity using machine learning models to further improve privacy guarantees and system performance.

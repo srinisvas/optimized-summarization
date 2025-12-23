@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper explores the intersection of military engineering ethics, focusing on construction projects in warzones. The author argues for the existence of a unique field of ethics, "military engineering ethics," that addresses the specific moral dilemmas encountered in such contexts. The paper begins by contrasting theoretical and applied ethics, highlighting the relevance of military ethics in guiding military engineers.
+
+The author defines military engineering, distinguishing between combat engineering and construction engineering, with a focus on construction engineering managed by the U.S. Army Corps of Engineers (USACE) in warzones. The USACE's mission in Afghanistan includes infrastructure projects supporting national security forces and general infrastructure. The paper discusses the challenges of enforcing safety standards and combating corruption in these environments, where security concerns and economic constraints can complicate moral decision-making.
+
+The author proposes that military engineering ethics should integrate principles from just war theory, particularly jus in bello and jus post bellum, to address the unique moral complexities of warzone construction. In cases where traditional engineering ethics principles may be inadequate, the author suggests a W.D. Ross-style approach to rank-ordering duties or a utilitarian approach to prioritize life-saving measures over strict adherence to safety standards. The paper concludes by advocating for a more nuanced understanding of military engineering ethics, emphasizing the need for tailored ethical frameworks to navigate the moral challenges of warzone construction projects.

@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the challenge of quantifying cumulative privacy loss in iterative machine learning (ML) workflows, a critical issue for ensuring robust privacy guarantees in data-driven applications. The core research problem revolves around evaluating the privacy expenditure of complex ML pipelines, which involve multiple queries, validations, and model tuning on sensitive datasets. Traditional differential privacy (DP) mechanisms, while effective for statistical data, fail to scale efficiently in high-velocity, decentralized ML environments, leading to a "utility cliff" where privacy gains rapidly erode data usefulness.
+
+The proposed methodology introduces a heuristic algorithm that dynamically maintains a privacy budget depleted per operation based on data sensitivity and noise calibration. By leveraging advanced composition theorems and tracking tight stochastic bounds on the cumulative privacy loss random variable, the algorithm enables rigorous evaluation of privacy risks and formal guarantees across diverse ML workflows. The approach is modular, allowing for flexible integration with various mechanisms and compositions, such as Gaussian, Laplace, and exponential noise, and can handle complex, heterogeneous workloads with mixed query types.
+
+Empirical simulations demonstrate the efficacy of the proposed framework. The algorithm successfully quantifies privacy loss over 950 successive histogram queries under (ϵ = 1, δ = 10⁻⁵ )-differential privacy, sustaining utility with an average error of only 4.5% compared to non-private histograms. This highlights the algorithm's ability to balance privacy and utility effectively. The results provide insights into optimizing privacy budgets and feasible iterations, enabling the development of trustworthy AI systems that protect sensitive data while maintaining analytical value.
+
+The paper's contributions are twofold: it provides a practical solution for measuring cumulative privacy loss in iterative ML pipelines and lays a rigorous foundation for privacy-preserving data analysis. The methodology's adaptability across diverse mechanisms and compositions makes it a versatile tool for ensuring privacy guarantees in various applications, from healthcare and finance to IoT and cloud services. By addressing a significant gap in existing frameworks, the work facilitates the ethical and secure adoption of data-driven solutions in privacy-sensitive contexts. Future work will focus on hardware-level integration and validating the framework's resistance against real-world quantum attack simulations, further enhancing its applicability and reliability.

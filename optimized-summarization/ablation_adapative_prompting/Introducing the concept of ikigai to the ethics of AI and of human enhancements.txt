@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces the concept of "ikigai" – a Japanese term meaning "reason or purpose to live" – and explores its implications for ethics in the fields of artificial intelligence (AI), human enhancement, and extended reality (XR). The authors argue that the advent of AI and XR will disrupt traditional time use patterns, potentially leading to significant changes in the pursuit of individual ikigai. They define "i-risk" as the risk of individuals or sentient digital minds being deprived of their individual ikigai, which is distinct from existential risks (x-risks) and suffering risks (s-risks).
+
+The paper outlines key challenges and desiderata for AI and XR in relation to ikigai. AI safety is emphasized, as value alignment between AI and humans is crucial. However, the authors caution that achieving value alignment does not necessarily guarantee the freedom to pursue individual ikigai. They propose an "ikigai-friendly AI" that not only aligns with human values but also helps individuals find and pursue their personal ikigai. This includes AI systems that can analyze big data to identify new ikigai activities and provide support for those who struggle to find their purpose.
+
+Human enhancement technologies, such as those in XR, are also discussed. While these technologies can provide new opportunities and resources for ikigai, they also pose risks of diminishing traditional ikigai activities and potentially increasing i-risk. The authors suggest that ethical guidelines for AI and XR should prioritize the facilitation of ikigai, ensuring that these technologies do not restrict or diminish the pursuit of individual ikigai.
+
+The paper concludes by emphasizing the need for further research into metrics for ikigai and time use, as well as the development of policies to mitigate i-risk. It calls for a comprehensive approach to AI and XR ethics that incorporates the concept of ikigai, ensuring that these technologies contribute positively to human well-being and happiness. Future work should focus on detailed specifications and solutions for the outlined desiderata, as well as contingency plans for potential mental health issues arising from disruptions in time use patterns.

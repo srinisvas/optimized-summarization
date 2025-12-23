@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the challenge of conflicting privacy policies in mobile health-Cloud environments, where diverse actors and heterogeneous privacy policies create potential privacy risks. The authors propose a patient-centric approach that integrates negotiation into the resolution of privacy conflicts. The proposed framework extends a previous patient-centric solution, PPAMH, by incorporating negotiation as a critical step in managing privacy preferences.
+
+The core of the approach involves classifying patients into privacy groups based on their preferences, which facilitates negotiation. Patients are categorized into four groups: Fundamentalist, Pragmatic, Unconcerned, and Should-Be-Protected. This classification helps determine the degree of negotiation required and the involvement of the patient in the process. The negotiation process is guided by a security policy negotiation framework, which includes stages such as conflict detection, group determination, negotiator determination, information sharing, demand, bargaining, and contract establishment.
+
+The negotiation process is detailed through a case study involving three participants: a patient (Alain) with a Pragmatic privacy group, a Healthcare Provider (HP), and a Cloud Provider (CP). The patient's privacy policies are formalized using the P2U language, while the HP and CP use XACML and S4P, respectively. The conflict arises from the HP allowing a researcher with the same ID as the patient to access the patient's data for statistical purposes, conflicting with the patient's policy that restricts access to medical purposes only. The TTP detects this conflict and, since the patient is an active participant, facilitates negotiation between the patient and the Cloud Provider.
+
+The proposed approach demonstrates the ability to resolve conflicts among heterogeneous privacy policies by leveraging negotiation and patient involvement. The bargaining stage is identified as a crucial step in this process, where the patient and the Cloud Provider negotiate the terms of data access and retention. The work concludes by highlighting the importance of integrating negotiation into privacy policy management in mobile health-Cloud environments, emphasizing the need for further development of the bargaining stage and validation of the framework in real-world scenarios.

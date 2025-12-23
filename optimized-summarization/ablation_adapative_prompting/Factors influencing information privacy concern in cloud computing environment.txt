@@ -1,0 +1,15 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This study investigates the factors influencing information privacy concern in cloud computing environments (CCE). Using a quantitative approach, the research collected data from 340 students via an online questionnaire. The dependent variable, information privacy concern, was measured through statements reflecting users' concerns about data misuse, unauthorized disclosure, and misuse by others. The independent variables included perceived privacy risk, perceived privacy control, and perceived effectiveness of privacy policy.
+
+The results revealed that perceived privacy risk significantly influenced information privacy concern, with higher perceived privacy risk leading to higher concern levels. In contrast, perceived privacy control and perceived effectiveness of privacy policy did not have a significant impact on information privacy concern. 
+
+The study's findings suggest that while perceived privacy risk is a critical factor in cloud computing environments, perceived privacy control and the effectiveness of privacy policies are less influential. These results highlight the importance of addressing privacy risks to mitigate information privacy concerns in CCE. The research concludes that cloud service providers should focus on enhancing privacy risk management to improve user trust and satisfaction. Future studies could explore the interplay between these factors and their implications for cloud computing adoption and user behavior.

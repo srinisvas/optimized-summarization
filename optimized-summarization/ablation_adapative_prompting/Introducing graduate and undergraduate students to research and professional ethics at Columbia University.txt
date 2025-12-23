@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+Columbia University has developed a seminar designed to introduce graduate and undergraduate students to the responsible conduct of research and ethics of professionalism, collectively termed ethics here. This seminar, which has been presented over a dozen times, aims to address the gap in formal ethics training within academic graduate and undergraduate programs in the physical sciences and engineering. The seminar, which lasts approximately two hours, covers a broad spectrum of key ethical issues, including data and research, authorship, content of papers and theses, and preparing and reviewing papers and proposals, as well as professional ethics involving employment, conflicts of interest, confidentiality, and resume accuracy.
+
+The seminar begins with a brief presentation of several recent egregious public examples of ethical lapses, such as plagiarism, publication retraction, cheating, data falsification, gaming college rankings, and so on. These examples provide an introduction to the seminar, motivation, and an illustration of the widespread and ever-changing landscape of ethical issues. Students are then introduced to core issues in the responsible conduct of research, including data and research, authorship, content of papers, and reviewing papers, as well as professional ethics involving employment, conflicts of interest, confidentiality, and resume accuracy. The seminar leader encourages students to think critically about ethical situations, emphasizing the importance of honesty in scientific research and the need to confront ethical issues in professional interactions.
+
+A central component of the seminar is an extended give-and-take discussion with students, inspired by the author's (currently) >200 one-sentence, mini case scenarios that cover diverse ethical situations, including those concerning plagiarism, data collection, authorship, and preparing and reviewing papers and proposals. These case scenarios are presented in a concise manner, with some being based on real events or fictionalized cases constructed for instruction. The discussion aims to stimulate students to start thinking about ethics and become more aware of ethical lapses in their professional interactions. The mini case scenarios are continually updated and expanded to reflect recent ethical issues and changes in the field.
+
+The seminar is tailored for different student audiences, including graduate students in applied physics, applied mathematics, and materials science and engineering, who participate in the seminar twice, once during each of their first two years. Applied physics undergraduates also participate in a shortened version of the seminar in either their junior or senior year. The approach can be easily adapted to shorter and longer seminar periods and for other disciplines. The author provides a recent seminar presentation and set of mini case scenarios on his website, intending to continue extending the series to make it more comprehensive and up

@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This study explores the implementation and evaluation of data encryption and privacy protection technologies in cloud computing environments. By systematically examining various encryption algorithms (AES, RSA, and homomorphic encryption) and privacy protection techniques (data masking, differential privacy, secure multi-party computation, and zero-knowledge proofs), the research aims to assess their effectiveness in ensuring data security and user privacy in large-scale cloud environments.
+
+The study employs a simulated cloud environment to conduct comprehensive evaluations. AES-256-CBC is found to excel in large-scale data processing, with encryption and decryption speeds of 150MB/s and 140MB/s, respectively. RSA-2048 is efficient for small data packets but less so for large datasets. Homomorphic encryption, while facing efficiency challenges in complex operations, demonstrates significant advantages in specific scenarios, such as statistical analysis. Attribute-based encryption (ABE) offers fine-grained access control but introduces significant computational burdens, which are mitigated through hybrid strategies.
+
+Data masking techniques effectively protect sensitive information, reducing information entropy by 40% and maintaining K-anonymity. Differential privacy mechanisms, such as the Laplace and exponential methods, provide robust privacy protection with a balance between privacy and data usability. Secure multi-party computation (SMC) enables collaborative computation without revealing raw data, with joint credit scoring taking approximately 5 seconds for 1,000 users.
+
+The study also addresses privacy protection technologies, including zero-knowledge proofs for identity verification and attribute-based access control. Performance evaluations of these technologies under various scenarios show their potential in balancing data security and privacy. Overall, the research provides a detailed reference for cloud service providers in designing secure and efficient data access control mechanisms, while also highlighting challenges such as computational efficiency and privacy-protection strength. The findings offer valuable insights for future research and practical applications in the field of data security and privacy protection in cloud computing environments.

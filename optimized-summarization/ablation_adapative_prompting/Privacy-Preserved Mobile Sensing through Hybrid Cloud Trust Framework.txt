@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper presents a hybrid cloud trust framework designed to address privacy concerns in mobile sensing applications. Mobile sensors embedded in smart phones and smart buildings collect detailed personal data, which can be used to infer behavior patterns and enable applications such as personalized intelligent computing, activity prediction, and health monitoring. However, the widespread use of such data raises significant privacy issues, as users often lack control over their personal data stored in the public cloud.
+
+The proposed framework utilizes a hybrid cloud approach, where raw sensor data is stored on users' personal clouds, which are virtual machines on their own physical machines. This ensures that users have full physical control over their data, reducing privacy anxiety and increasing user acceptance. Information consumers, such as health organizations and auto insurance companies, can develop data widgets that extract statistics from users' sensor data and upload the results to the public cloud.
+
+Key components of the framework include the trusted third-party certification process, which verifies the behavior of data widgets against the declared sensitivity levels (SLD). This certification ensures that data consumers adhere to the SLD and prevents the publication of data malware. The framework also incorporates data chunking, where raw data is split into hourly chunks, stored in a MySQL database, and managed through a web interface. This approach decentralizes data aggregation, ensuring that raw data remains on the user's private cloud without leakage.
+
+The framework's design aims to balance privacy and data utility, allowing users to control their data and choose which statistics are shared with third parties. The results of the study indicate that the hybrid cloud approach significantly increases user acceptance of mobile sensing technologies, with 60% of users comfortable using the system compared to 23% in traditional setups. The framework's use of a trusted third-party certification system and decentralized data aggregation provides a robust solution for addressing privacy concerns in mobile sensing applications.

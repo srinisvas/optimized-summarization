@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper explores the development of an interdisciplinary AI ethics program called Imagine AI, designed to enhance teens' awareness and understanding of artificial intelligence (AI) and its societal impacts. The program, which combines literacy, computer science, and multimedia design, uses short stories to engage students in ethical dilemmas related to AI, such as fairness, bias, privacy, and transparency. The curriculum is structured into five modules, each focusing on a different AI ethics issue, and is delivered in both formal and informal settings, including summer camps and English Language Arts classes.
+
+The program's effectiveness is evaluated through pre-/post-surveys, observations, and analysis of student artifacts. The short stories, particularly those that are realistic and grounded in current events, are found to be highly effective in connecting students with AI ethics issues and fostering a deeper understanding of these topics. Students report that the stories play a crucial role in helping them grasp the complexities of AI ethics and sometimes even lead to a shift in their perspectives or actions.
+
+The paper highlights the importance of integrating AI education into non-computer science classes, such as English Language Arts, to ensure that all students, regardless of their technical background, are equipped to make informed decisions about AI technologies. It also emphasizes the potential of CS educators to incorporate stories into their curricula to provide a meaningful context for exploring AI ethics. The Imagine AI curriculum is made available for educators to use and customize, offering a valuable resource for promoting AI literacy and ethical awareness among youth.
+
+Overall, the paper underscores the critical need for AI education that extends beyond computer science and incorporates elements of the humanities and arts, with the Imagine AI program serving as a model for such educational initiatives. By fostering a deeper understanding of AI and its societal implications, the program aims to contribute to the development of more equitable AI technologies and a more informed and engaged citizenry.

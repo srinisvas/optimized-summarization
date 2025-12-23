@@ -1,0 +1,17 @@
+Executive Summary
+
+**
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces an Enhanced Elliptic Curve Attribute Encryption (EAE) technique designed to enhance the security of data sharing in cloud environments. By leveraging elliptic curve cryptography and a simple hashing function, the EAE approach aims to provide robust confidentiality and access control for cloud data. The proposed method employs attribute-based encryption to ensure that only authorized users can access encrypted data, while the hashing function is used to strengthen data transfer security through collision resistance.
+
+The EAE technique involves encrypting user-requested data using elliptic curve attribute encryption, followed by generating a hash value for the encrypted data and storing it in the cloud server. This hash value is then transmitted to the authorized cloud users, ensuring that only those with the correct private key can decrypt the data. The approach is designed to be efficient in terms of computational resources, with a focus on minimizing key generation complexity and computational overhead.
+
+Experimental results demonstrate that the EAE technique outperforms existing methods like Multi-Authority Ciphertext Policy Attribute-Based Encryption (MA-CPABE) and Elliptic Curve Cryptography Secure Transmission (EC-SET) in terms of execution time and memory utilization. The proposed method's ability to balance security and performance makes it a promising solution for enhancing the confidentiality and accessibility of cloud data in a resource-constrained environment.
+
+The EAE technique's primary contributions include a novel approach to attribute-based encryption that reduces the number of security parameters required, thereby improving efficiency, and the integration of a simple hashing function to enhance data transfer security. The work provides a proof-of-concept system that successfully balances quantum-level security with the need for data utility in cloud applications, offering a pathway for regulatory compliance without sacrificing the analytical value of aggregated data. Future work will focus on further enhancing the framework's resistance to real-world quantum attacks and exploring hardware-level integration for practical deployment.
