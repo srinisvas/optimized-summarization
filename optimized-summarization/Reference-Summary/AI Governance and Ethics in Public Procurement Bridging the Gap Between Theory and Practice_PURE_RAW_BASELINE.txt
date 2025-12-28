@@ -1,0 +1,27 @@
+## Executive Summary
+
+This study investigates the critical but neglected intersection of **Artificial Intelligence (AI) ethics implementation, AI governance, and Information Systems (IS) procurement practices**, particularly within the public sector.
+
+### Context and Problem
+
+Despite the rapid development of guidelines, principles, and tools in AI ethics, research suggests that there is a **lack of practical control** over the ethical development and deployment of AI systems. The authors argue that IS procurement, especially in the public sector where it is highly regulated and legally binding, represents a powerful, currently underutilized platform for embedding ethical requirements early in the system lifecycle. However, procurement practices have been largely ignored in current AI ethics and governance research.
+
+### Methodology
+
+The research utilized a theoretical framework based on **Shneiderman’s three-level governance structure for human-centered AI** (Team, Organization, Industry), positioning procurement practices at the **Organizational level**. Using content analysis, the study analyzed 32 documents (a filtered dataset of tools and methods for implementing AI ethics) to determine their potential relevance and connection to IS procurement.
+
+### Key Findings
+
+1.  **Procurement Tools are Scarce:** The hypothesis that procurement is undermined in current research was confirmed. Of the 32 tangible tools and methods analyzed, only **four (12.5%)** had a direct link to IS procurement practices.
+2.  **Academic Oversight:** While the academic community is the primary producer of tangible AI ethics methods and tools, it has largely dismissed the procurement context, having produced only a single independent data source related to procurement.
+3.  **Hierarchical Alignment and Opportunity:** The study established a hierarchical connection between the abstraction level of ethical documents (principles being most abstract) and the organizational governance level they target. Crucially, a significant number of existing tools and methods are targeted at the **Organizational level**—the same level where procurement practices are positioned.
+
+### Conclusion and Recommendations
+
+The public sector’s procurement process, due to its regulatory nature and binding requirements, is a **potential key mechanism** for ensuring the ethical sustainability of procured AI systems.
+
+The study makes two primary contributions:
+1.  **Defines Terminology:** It provides a necessary, standardized, hierarchical categorization of AI ethics documents (principles, frameworks, methods, tools, technical models) to establish clearer terminology in the field.
+2.  **Highlights the Gap:** It positions IS procurement within the AI governance structure, underscoring the alarming lack of practical tools available to procurement professionals.
+
+The authors recommend that future research and development should focus on **adapting and expanding the utility of existing organizational-level AI ethics methods and tools** to specifically include the needs and processes of IS procurement, ensuring that ethical requirements are non-negotiable from the moment a system is acquired.

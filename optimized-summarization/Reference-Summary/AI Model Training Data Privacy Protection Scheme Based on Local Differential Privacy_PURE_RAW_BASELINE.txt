@@ -1,0 +1,21 @@
+This paper proposes a novel AI model training data privacy protection scheme leveraging **Local Differential Privacy (LDP)**, specifically designed to safeguard sensitive data in distributed and real-time AI environments, such as smart grids and federated learning systems.
+
+### Problem
+Traditional privacy methods (like centralized Differential Privacy, encryption, or anonymization) are inadequate for large-scale, distributed AI. They either impose high computational overhead (making them impractical for real-time applications), lead to degraded model accuracy, or fail to protect against privacy leakage through model updates (gradients) exchanged in decentralized training.
+
+### Proposed Solution and Methodology
+The core innovation is an LDP-based scheme that applies **dynamic noise adjustment** to protect data at two critical stages:
+
+1.  **Data Preparation and Collection:** Before data transmission, Laplace noise is added locally to each data point, ensuring privacy protection at the source. This process follows rigorous data preprocessing, including standardization and handling missing values.
+2.  **Model Training:** Noise is dynamically added to the model gradients during the Stochastic Gradient Descent (SGD) process, preventing adversaries from inferring sensitive information from model updates.
+
+Crucially, the scheme implements a **Dynamic Adjustment Phase**, where the privacy budget ($\epsilon$) and corresponding noise levels are iteratively adjusted based on the model’s real-time performance (accuracy). This adaptive mechanism is designed to continuously optimize the delicate balance between robust privacy protection and model utility.
+
+### Performance and Efficiency
+The performance evaluation confirms the effectiveness and efficiency of the proposed method:
+
+*   **Privacy-Accuracy Trade-off:** The dynamic noise mechanism successfully maintains high model accuracy even with strong privacy guarantees, outperforming static noise approaches.
+*   **Scalability and Efficiency:** By using LDP, the scheme decentralizes the privacy-preserving computations, eliminating the bottleneck associated with central processing. This approach scales linearly with the number of nodes, resulting in a significant reduction (up to 40%) in computational overhead compared to centralized differential privacy techniques.
+
+### Conclusion
+The proposed LDP scheme offers a practical, robust, and highly scalable solution for protecting sensitive data in distributed AI systems. Its dynamic adjustment capabilities ensure that high model accuracy is maintained while meeting rigorous privacy standards, making it ideal for real-time edge computing and data fusion applications.
