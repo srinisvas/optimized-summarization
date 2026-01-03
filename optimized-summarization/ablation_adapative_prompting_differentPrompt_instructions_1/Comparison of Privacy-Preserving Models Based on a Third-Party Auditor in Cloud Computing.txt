@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper compares privacy-preserving models (PPMs) in cloud computing based on a Third-Party Auditor (TPA). It discusses the vulnerabilities of cloud computing, including threats like collusion, intoxication, discrimination, reentry, and intoxication attacks. The TPA's role is to audit cloud data, ensuring privacy and security. The paper evaluates four state-of-the-art PPMs: SPS, PPA, PPPAS, and SEPPPA, as well as the proposed LAPP. The simulations conducted on the Greencloud platform show that LAPP requires less processing time than the compared methods. The paper concludes by recommending further research into developing lightweight, secure, and efficient privacy-preserving models based on a TPA to increase trust in cloud adoption.

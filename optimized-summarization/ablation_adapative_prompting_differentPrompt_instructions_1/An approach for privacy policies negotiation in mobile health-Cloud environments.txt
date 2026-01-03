@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper presents an approach to resolve conflicting privacy policies in mobile health-Cloud environments by incorporating patient-centric negotiation. The solution extends a previous privacy-preserving approach (PPAMH) by integrating negotiation as a fundamental concept to address privacy conflicts. The approach classifies patients into four groups based on their privacy preferences and considers the patient as a key negotiator when conflicts arise. It formalizes patient privacy policies using a privacy policy language (P2U) and combines it with a security policy negotiation framework (OrBAC). The negotiation process involves stages such as conflict detection, group determination, and negotiator selection, which are guided by the patient's privacy group. The solution is illustrated with a case study of three conflicting privacy policies formalized in different languages (P2U, XACML, S4P). Future work includes refining the bargaining stage and developing the entire approach.

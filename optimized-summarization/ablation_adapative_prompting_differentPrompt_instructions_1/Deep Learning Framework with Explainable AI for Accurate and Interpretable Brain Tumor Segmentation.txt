@@ -1,0 +1,15 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper proposes an integrated approach for brain tumor diagnosis using MRI scans, combining Federated Learning (FL) for privacy, Explainable AI (XAI) for transparency, and deep learning for precision. The proposed system uses a CNN model for tumour classification, with Federated Learning aggregating local model updates on a central server while maintaining privacy. XAI techniques like SHAP and LIME provide explainable explanations for predictions, enhancing trust in AI systems.
+
+Performance metrics achieved by the proposed system include 96.8% accuracy, 96.5% sensitivity, and 96.4% specificity, outperforming traditional CNN models. The system's architecture allows for privacy-preserving collaborative model training and real-time processing, with a focus on improving generalization and robustness through diverse and stable datasets.
+
+The proposed method addresses key challenges in brain tumor diagnosis, including data privacy, model interpretability, and accuracy. Future work will focus on optimizing FL for faster aggregation, improving model robustness, and enhancing XAI methods to reduce computational costs. The system's ability to balance privacy, interpretability, and diagnostic accuracy makes it a promising approach for integrating AI-driven solutions in clinical settings.

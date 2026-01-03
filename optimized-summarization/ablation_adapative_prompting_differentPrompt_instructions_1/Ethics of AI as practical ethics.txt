@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the challenges in balancing ethical values in AI, such as fairness, transparency, and accountability, which often conflict with each other. Traditional approaches in applied ethics are insufficient for resolving these conflicts, leading to an infinite regress of higher-level principles. The paper proposes that explicit criteria for implementing values should be made, clarifying ethical debates about AI advancements. It emphasizes the need to evaluate AI implementations for enabling human intervention rather than making further actions impossible.

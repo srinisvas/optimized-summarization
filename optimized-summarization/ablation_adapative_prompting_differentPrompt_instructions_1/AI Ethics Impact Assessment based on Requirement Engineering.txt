@@ -1,0 +1,19 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces the AI Ethics Impact Assessment (AI Ethics Impact Assessment) as a methodology for comprehensively identifying ethical risks in AI systems based on AI ethics guidelines. The methodology is based on the assumption that ethical risks are associated with interactions between AI systems and stakeholders. It involves constructing an AI ethics model that embodies ethical guidelines and associating it with interactions using requirement engineering, and an impact assessment process.
+
+The AI Ethics Impact Assessment consists of two approaches: an AI ethics model and an impact assessment process. The AI ethics model is structured in four levels, with the top two levels corresponding to the seven requirements from the EU AI HLEG's Trustworthy AI guidelines and the lower two levels derived from the Assessment List of Trustworthy AI. Each AI ethical characteristic is associated with the type of interaction in the AI system, and the risk associated with each interaction is extracted.
+
+The impact assessment process involves creating a system diagram of the AI system, extracting AI ethical characteristics corresponding to each interaction, and identifying the risk associated with each ethical characteristic. The process is carried out in three steps: creating a system diagram, extracting AI ethical characteristics, and identifying the risk.
+
+An initial validation of the methodology was conducted through a questionnaire survey of participants with experience in AI ethics. The results suggested the validity of the assumption that ethical risks can be associated with interactions between AI systems and stakeholders. However, the small number of participants, bias toward those with knowledge of AI ethics, and the setting of questions were identified as potential issues that need to be addressed in future work.
+
+The AI Ethics Impact Assessment can be used by AI developers, providers, and users without expertise in ethical guidelines to assess ethical risks at each stage of the AI lifecycle, from planning to development, operation, and retirement. It provides a structured approach for conducting impact assessments and can help ensure compliance with AI ethics guidelines.

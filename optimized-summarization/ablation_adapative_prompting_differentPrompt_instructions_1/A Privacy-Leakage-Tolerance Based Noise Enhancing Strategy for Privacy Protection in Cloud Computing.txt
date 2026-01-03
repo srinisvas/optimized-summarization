@@ -1,0 +1,17 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a novel privacy-leakage-tolerance based noise enhancing strategy (PTNES) for privacy protection in cloud computing. The strategy addresses the challenge of protecting customer privacy in cloud environments where malicious service providers may collect and analyze customer service data to deduce customer privacy without authorization. Existing noise obfuscation methods do not consider the customer-defined privacy leakage tolerance, leading to inefficient privacy protection and higher costs.
+
+The proposed PTERNES strategy focuses on creating a noise generation set based on the customer-defined privacy leakage tolerance. This set is used to guide and enhance existing noise generation strategies, such as random noise generation (RNGS), historical probability-based noise generation (HPNGS), and time-series pattern-based noise generation (TPNGS). The strategy evaluates the real privacy leakage risk under noise obfuscation and creates the noise generation set accordingly, ensuring a balance between privacy protection and cost efficiency.
+
+Simulation results demonstrate that PTERNES can significantly reduce noise cost under existing noise generation strategies, improving the efficiency of privacy protection on noise obfuscation. The strategy provides a pay-as-you-go approach for cloud customers, allowing them to manage noise obfuscation processes based on their specific privacy leakage tolerance requirements.
+
+The paper concludes by highlighting the effectiveness of PTERNES in reducing noise costs and improving privacy protection in cloud environments, and suggests future work on further enhancing privacy protection in scenarios where malicious service providers collaborate to deduce customer privacy.

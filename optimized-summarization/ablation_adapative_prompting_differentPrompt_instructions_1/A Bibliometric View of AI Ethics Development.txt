@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper conducts a bibliometric analysis of AI Ethics literature from 2004 to 2023, revealing a three-phase development: incubation, making AI human-like machines, and making AI human-centric machines. The "AI Ethics" keyword first appeared in 2008, reemerged in 2014, and has since experienced exponential growth, surpassing other related ethical fields. Phase I (2004-2013) focused on foundational principles, while Phase II (2014-2019) emphasized making AI human-like through ethical applications. Phase III (2020-present) shifted focus to making AI human-centric, addressing risks such as bias, opacity, and social justice. The future of AI Ethics may involve making AI "machine-like humans" and preventing superintelligence. The analysis highlights the importance of AI Ethics in ensuring the responsible and ethical development of AI technology.

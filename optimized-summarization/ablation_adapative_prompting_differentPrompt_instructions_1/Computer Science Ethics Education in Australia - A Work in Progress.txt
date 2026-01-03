@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper examines the current state of ethics education in Australian Computer Science (CS) undergraduate programs. It surveys 12 universities offering CS degrees and analyzes the content of ethics courses, focusing on the inclusion of micro-, ethical philosophy, and macro-ethical concepts. The findings reveal significant variation in the emphasis and integration of ethics across different universities. While professional ethics and institutional compliance are commonly addressed, macro-ethical concepts such as social responsibility, sustainability, and the promotion of societal good are less frequently included. The paper highlights the need for a comprehensive understanding of ethics curricula in Australian CS programs, including recommendations for content, pedagogies, and assessment strategies. The broader project aims to explore the current situation, identify gaps, and develop actionable recommendations for enhancing ethics education in Australian CS programs.

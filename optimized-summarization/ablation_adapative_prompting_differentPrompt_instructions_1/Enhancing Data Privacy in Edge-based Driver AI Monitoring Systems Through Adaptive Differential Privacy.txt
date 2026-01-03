@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper addresses the privacy concerns in edge-based driver monitoring systems (DMS) by proposing an adaptive differential privacy (ADP) mechanism. The ADP method dynamically selects between Laplace and Gaussian noise mechanisms based on the sensitivity of the data and the contextual risk. The proposed approach offers a balanced trade-off between privacy protection, utility (accuracy), and latency. Experiments show that the ADP mechanism provides the best performance with the lowest privacy leakage (28.7%), strong utility (93.4%), and relatively low latency (29 ms). The ADP method is designed to be more efficient than traditional differential privacy methods, making it suitable for real-time applications in edge computing environments. Future work includes exploring the integration of ADP with federated learning frameworks and enhancing the adaptivity of the mechanism using machine learning models.

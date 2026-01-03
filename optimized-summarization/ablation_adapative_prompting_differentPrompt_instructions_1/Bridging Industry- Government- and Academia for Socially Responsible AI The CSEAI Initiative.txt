@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+The Center for Standards and Ethics in Artificial Intelligence (CSEAI) is dedicated to advancing research, education, and outreach in socially responsible AI, with a focus on promoting safe, effective, and ethical AI standards. The CSEAI aims to facilitate the production of standardized, ethical AI products that are safe for users and promote diversity in the field. Through its workforce development plan, the center recruits, trains, and mentors undergraduate, graduate students, and postdocs from diverse backgrounds, ensuring a diverse and knowledgeable workforce. The CSEAI's research initiatives include bias mitigation, fairness evaluation, and product safety through AI-guided adversarial attacks. The center is partnered with Rutgers University and the University of Miami, and its initiatives align with the Ethics in the Global Innovation Helix conference theme by promoting ethical practices in AI. The CSEAI is funded by the NSF under grant CNS-2136961.

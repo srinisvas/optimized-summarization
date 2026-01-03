@@ -1,0 +1,17 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper presents an AI-driven approach to enhance healthcare data security and privacy through the integration of encryption and privacy-preserving techniques. The proposed methodology incorporates machine learning algorithms to dynamically adjust encryption parameters based on the sensitivity of the data and the access environment. Key privacy-preserving techniques such as differential privacy, federated learning, and homomorphic encryption are integrated to protect patient data while enabling collaborative analysis and research.
+
+The evaluation of the proposed AI encryption framework demonstrates significant improvements in security and efficiency compared to traditional methods. AI-driven encryption offers better security outcomes with lower computational overhead, higher breach detection rates, and improved scalability for large-scale healthcare systems. Additionally, the proposed system automates compliance with healthcare regulations like HIPAA and GDPR, reducing the workload for healthcare organizations and minimizing false alarms.
+
+The methodology also includes real-time intrusion detection systems (IDS) based on deep learning, which continuously monitor network activity and user behavior to detect potential security threats. The integration of blockchain technology further enhances data security and transparency by recording all data access and sharing processes, ensuring immutability and patient consent control.
+
+The paper concludes that the proposed AI-driven approach provides a robust, scalable, and adaptable solution to protect healthcare data in an increasingly digitalized environment. Future work focuses on enhancing the framework with quantum-safe encryption, modernizing federated learning models, and expanding its applicability to cross-border data sharing and international clinical research cooperation.

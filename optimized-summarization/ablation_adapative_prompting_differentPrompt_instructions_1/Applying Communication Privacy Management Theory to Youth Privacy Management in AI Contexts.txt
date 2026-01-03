@@ -1,0 +1,17 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This study applies Communication Privacy Management (CPM) Theory to explore privacy management behaviors among young digital citizens, parents/educators, and AI professionals. The research involved 306 participants, with 146 AI developers/researchers, 127 parents/educators, and 33 young digital citizens (aged 16-19). A mixed-methods approach was used, combining quantitative data from structured questionnaires and qualitative insights from open-ended responses.
+
+Key findings reveal distinct perspectives regarding data ownership, control, parental involvement, and privacy risks among different demographics. Data Ownership and Control (DOC) was prioritized by all groups, indicating a strong sense of user autonomy. Transparency and Trust (TT) was found to positively influence DOC, while Perceived Risks and Benefits (PRB) were linked to DOC and PRB. Parental Data Sharing (PDS) had a negative effect on DOC, suggesting over-control from parents can undermine youth's privacy management.
+
+Education and Awareness (EA) emerged as the strongest predictor of DOC, highlighting the importance of privacy education in empowering users. The study also identified the need for transparent AI systems and collaborative family-oriented educational programs to reduce boundary turbulence and foster healthy data-sharing practices.
+
+The results underscore the dynamic interplay between education, parental influence, risk perception, and transparency in shaping privacy behaviors. Future research should focus on expanding demographic diversity, refining constructs for improved reliability, and exploring longitudinal shifts in privacy behaviors to further inform privacy-centric AI system designs.

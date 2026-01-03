@@ -1,0 +1,15 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper explores the challenges of maintaining privacy in edge computing, where data is processed locally near the source. It proposes a privacy-preserving mechanism based on local differential privacy (LDP) to protect users' location data. The proposed method uses a Voronoi diagram constructed via the Delaunay method to divide road network space and determine the Voronoi grid region where edge nodes are located. Each Voronoi grid's location data is perturbed using a random disturbance mechanism that satisfies LDP properties.
+
+The paper compares the proposed LDP mechanism with traditional CDP and other privacy-preserving methods like k-anonymity and Gaussian white noise. Through experimental evaluations, it is shown that the LDP mechanism effectively protects user privacy while maintaining high data availability. The proposed method is verified to have better performance in terms of quality-of-service (QoS) compared to other mechanisms, especially under different privacy budgets and privacy levels.
+
+The authors conclude that the Voronoi diagram-based LDP mechanism is a robust solution for edge computing, offering a balance between privacy protection and data utility. Future work will focus on further improving the privacy-preserving model and exploring its integration with blockchain and edge computing to enhance privacy and efficiency.

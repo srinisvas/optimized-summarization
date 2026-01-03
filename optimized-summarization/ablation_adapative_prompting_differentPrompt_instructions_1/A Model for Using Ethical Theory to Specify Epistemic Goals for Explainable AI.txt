@@ -1,0 +1,19 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper explores the normative requirements for "explainable AI" (XAI) from the standpoint of moral accountability. It argues that AI accountability requires epistemic access to the inner workings of AI models, specifically to their motivations-in-acting, which are the motivations that settle the question of whether to act. The paper introduces Nomy Arpaly's account of moral-worthiness, which distinguishes between praiseworthiness and blame-worthiness. Praiseworthiness is attributed to actions motivated by relevant moral reasons, while blame-worthiness is attributed to actions motivated by ill will or a deficiency of good will.
+
+The paper identifies three epistemic goals for AI explainability:
+
+1. **Perceptual Capacity**: AI must have the capacity to perceive morally relevant facts.
+2. **Granularity of Motivations**: AI must be capable of using morally relevant reasons at a sufficient level of granularity to determine which behavior to execute.
+3. **Motivational System**: AI must have a motivational system to respond to morally relevant reasons.
+
+These goals impose practical constraints on XAI tools, ruling out those that use less complex AI models without an "autointerpretability" approach. The paper concludes that XAI is crucial for closing the responsibility gap, as it enables humans to assess whether AI can be held accountable for their actions.

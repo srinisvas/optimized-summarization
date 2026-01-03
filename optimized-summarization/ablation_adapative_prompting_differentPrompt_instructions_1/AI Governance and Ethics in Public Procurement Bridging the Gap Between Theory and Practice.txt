@@ -1,0 +1,21 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This study examines the relationship between AI governance, ethics, and public procurement practices. It analyzes the existing tools and methods for implementing AI ethics in the procurement process, which is critical for ensuring the ethical sustainability of AI systems developed and implemented through public procurement.
+
+The research framework used is Shneiderman's governance structure for human-centered AI, which includes three levels: team-level technical practices, organizational level strategies, and industry-level oversight. The study positions public procurement practices at the organizational level of this structure, recognizing its strategic importance in the development and implementation of information systems.
+
+The study conducted a secondary data analysis of publicly available tools, methods, and principles in AI ethics, focusing on methods and tools. It identified 32 documents classified as either tools or methods, with a significant majority (31) categorized as methods and 21 as tools. However, only four of these documents were directly related to IS procurement practices.
+
+The findings support the research hypothesis that procurement practices have been overlooked in current research on AI ethics. The study highlights the need for tangible methods and tools to ensure the ethical implementation of AI systems, particularly in the context of public procurement.
+
+Key contributions of the study include the establishment of a clear definition of critical terms related to document types in AI ethics research, the identification of a hierarchical connection between the governance structure and document types, and the recognition of the strategic importance of public procurement practices in the development and implementation of information systems.
+
+The study suggests that future research should focus on empirical analysis of AI systems procurement practices in the public sector and the development of practical solutions for the needs of industries, including the procurement context.

@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper argues that science, technology, and engineering (STE) are now the most important subjects for ethics to study due to the dramatic expansion of human power brought about by these fields. The authors emphasize that ethics must adapt to the new nature and scope of human action and power enabled by STE, which includes the ability to cause significant harm to the environment, human lives, and the planet. They propose a three-pronged approach to strengthen the relationship between STE and ethics: mandatory ethics courses for all STE students, professionalization of STE practitioners through licensing, and enhanced government oversight and regulation of STE. The authors also advocate for the role of professional organizations in promoting ethical behavior among STE professionals and the importance of societal informed consent in governance. They conclude that accepting the ethical responsibilities of STE professionals is crucial to protecting the health, safety, and welfare of humanity.

@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a fuzzy-based encryption mechanism designed to address privacy concerns and improve query response times in cloud computing. The system involves a trusted data provider, edge server, and public cloud, with the data owner uploading encrypted datasets to the cloud. The data provider adds noise using the Laplace mechanism and encrypts the data using a lightweight algorithm. The edge server authenticates data analysts and retrieves query results from the cloud, sending them in encrypted format. The system balances privacy and data utility by introducing noise while maintaining data accuracy. The proposed approach is evaluated using MATLAB 2020a and demonstrates improved throughput, response time, and encryption time compared to traditional methods. The use of fuzzy logic enhances privacy protection and accuracy, with the system's information entropy showing a significant increase with higher anonymous levels, making location information leaks more difficult to execute. The research highlights the system's efficiency, accuracy, and scalability in the field of cloud computing.

@@ -1,0 +1,11 @@
+Executive Summary
+
+**. Return only the summary text.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper outlines an Ethics program of study for biomedical engineering (BME) students, emphasizing the integration of ethics into the BME curriculum. It addresses the challenges of incorporating ethics into BME education and proposes a structured approach to teaching ethics fundamentals, research ethics, professional ethics, and social ethics. The program is designed to cover essential topics such as the foundations of ethics, ethical theories, and the ethical implications of biomedical engineering practices. The paper also discusses various case studies to illustrate ethical dilemmas and the consequences of ethical violations in the field of biomedical engineering. The goal is to equip BME students with the necessary skills and knowledge to navigate ethical issues effectively and contribute to the development of responsible and ethical engineering practices.
