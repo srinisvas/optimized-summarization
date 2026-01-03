@@ -1,0 +1,15 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper talks about how we should talk to people about using AI and smart devices in our homes and cities. It says that some people are worried about AI, like chatbots, and think it could hurt their jobs or education. The paper suggests using rules called "General Principles" to make sure AI and smart devices are safe and help people.
+
+The paper talks about three important ideas: respecting human rights, making sure people can control their own data, and making sure AI works well for everyone. It also mentions that we need to talk to everyone about these ideas to make sure everyone agrees and feels safe with AI and smart devices.
+
+The paper wants us to think about these ideas before we make new smart devices and AI systems. It says that if we do this, we can make sure AI and smart devices are helpful and safe for everyone.

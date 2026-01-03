@@ -1,0 +1,15 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This research paper explores how young digital citizens, parents, educators, and AI professionals manage privacy in AI-driven environments. It uses the Communication Privacy Management (CPM) Theory framework to analyze data ownership, parental control, perceived risks, transparency, trust, and education. The study surveyed 306 participants, including 146 AI professionals, 127 parents/educators, and 33 young digital citizens aged 16-19.
+
+Key findings show that young digital citizens have lower awareness and trust in AI systems compared to adults. Parents and educators have higher levels of data ownership and control, while AI professionals are more concerned about data misuse. Perceived risks and benefits are significant factors in data sharing decisions. Education and awareness play a crucial role in empowering individuals to manage their privacy effectively.
+
+The research highlights the importance of transparency, trust, and education in privacy management. It suggests that collaborative frameworks, user-centric privacy controls, and tailored educational programs can reduce privacy risks and enhance privacy behaviors in AI contexts. Future studies should expand on the demographic diversity, refine constructs for reliability, and explore longitudinal shifts in privacy behaviors to further inform privacy-centric AI system designs.

@@ -1,0 +1,19 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper talks about how AI Ethics has developed over the last 20 years. It uses a method called bibliometric analysis to look at the keywords used in articles about AI Ethics. The study found that AI Ethics has gone through three main phases:
+
+1. **Incubation Phase (2004-2013):** AI Ethics started to become a topic when AI technology was still new and exciting. The focus was on basic ethical principles like privacy, autonomy, and safety.
+
+2. **Making AI Human-like Machines (2014-2019):** AI started to show it could do things humans do, like playing chess or beating humans at games. AI Ethics focused on making AI more like humans, with principles like accountability, care, and fairness.
+
+3. **Making AI Human-centric Machines (2020-present):** AI is now doing many things humans do, but sometimes in ways that are not good. AI Ethics is now focusing on making AI more responsible, explainable, and trustworthy, so it serves humans better.
+
+The paper also talks about the challenges AI Ethics might face in the future, like making AI "machine-like humans" and preventing unethical developments. The study uses data from 2004 to 2023 and looks at articles from many different places, but most of the data is in English. The main points are that AI Ethics has grown a lot, and it's important to keep up with the ethical development of AI as it becomes more powerful.

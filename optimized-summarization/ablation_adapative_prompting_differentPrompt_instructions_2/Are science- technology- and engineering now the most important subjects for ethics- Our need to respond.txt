@@ -1,0 +1,30 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+Okay, let's tackle this. The user wants a summary of the paper in simple terms for a class. First, I need to understand the main points.
+
+The paper argues that science, technology, and engineering (STE) are now the most important subjects for ethics. The author mentions that STE have dramatically increased human power, leading to new ethical challenges. They compare past ethics, which dealt with smaller-scale issues, to the current situation where STE can affect global climate, cause extinctions, etc. 
+
+Key points from the paper:
+1. STE have expanded human capabilities, leading to new ethical responsibilities.
+2. Ethics needs to adapt to these new powers, focusing on global and long-term effects.
+3. STE professionals have a special role in ethical responsibility, as they create technologies that can harm or benefit humanity.
+4. The field of STE ethics is underdeveloped compared to other disciplines, so more attention is needed.
+5. STE should learn ethics, and ethics should learn from STE to manage their power effectively.
+
+The user wants a concise summary, so I need to condense these points without losing the main arguments. I should avoid jargon and keep it simple. Also, the summary should be structured in a few paragraphs, as per the example.
+
+Let me start with the main thesis: STE are now the most important subjects for ethics. Then explain why (due to their power and the need for ethical responsibility). Mention the lack of development in STE ethics and the need for more attention. Conclude with the importance of integrating ethics into STE practices.
+
+Check if I missed any key points. The author also talks about the role of STE in governance and regulation, but maybe that's too detailed. The user wants a simple summary, so focus on the core arguments. Also, the paper mentions the need for professionalization and government oversight, but again, maybe that's part of the broader context rather than the main points.
+
+Make sure to mention the qualitative changes in human power, the need for ethics to adapt, and the responsibility of STE professionals. Also, highlight the underdevelopment of STE ethics and the necessity for more attention and integration.
+
+Alright, putting it all together in simple terms.
+</think>
+
+**Executive Summary**  
+The paper argues that science, technology, and engineering (STE) are now the most important subjects for ethics because they have dramatically expanded human power, enabling actions with global and long-term consequences. STE have increased our ability to control the environment, communicate, and create technology, but these advancements also create new ethical challenges, such

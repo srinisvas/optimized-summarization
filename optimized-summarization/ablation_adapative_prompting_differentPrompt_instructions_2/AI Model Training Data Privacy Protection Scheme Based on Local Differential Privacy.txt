@@ -1,0 +1,11 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces a new method called AI model training data privacy protection scheme based on local differential privacy (LDP) to safeguard sensitive data in distributed environments. The method adds noise dynamically to both the data and model gradients during training, ensuring privacy while maintaining model performance. It starts by preprocessing data, adding noise, and then training the model with noisy gradients. The privacy budget is adjusted based on model performance, allowing for a balance between privacy and utility. The approach is scalable, efficient, and suitable for real-time applications like smart grids and IoT. Future work will focus on extending the method to more complex data fusion scenarios and exploring adaptive privacy mechanisms.

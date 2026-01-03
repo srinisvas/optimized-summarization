@@ -1,0 +1,17 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper introduces an AI Ethics Impact Assessment (AI Ethics Impact Assessment) methodology to help AI service providers, developers, and users evaluate the ethical risks of their AI systems. The method is based on the idea that ethical risks can be linked to interactions between AI system components and stakeholders. The AI Ethics Impact Assessment involves two approaches: building an AI ethics model that maps ethical guidelines to interactions, and an impact assessment process that uses the AI ethics model to identify ethical risks in individual AI systems.
+
+The AI ethics model is structured in four layers: the top two layers are based on the EU AI HLEG's Trustworthy AI guidelines, and the lower two layers are derived from the ALTAI assessment list. Each layer corresponds to specific AI ethical characteristics, which are associated with specific interactions in the AI system. The impact assessment process involves creating a system diagram of the AI system, extracting AI ethical characteristics for each interaction, and identifying potential risks that violate these characteristics.
+
+The paper presents an initial validation of the AI Ethics Impact Assessment using a questionnaire survey with eight participants, including three researchers with experience in AI fairness. The results suggest that the method is generally valid, but there are limitations, such as a small number of participants and a bias towards those with knowledge of AI ethics. The authors recommend further validation and improvement to ensure the reliability of the methodology.
+
+The AI Ethics Impact Assessment can be used to assess ethical risks at various stages of the AI lifecycle, from planning to retirement, and can help ensure compliance with AI ethics guidelines. Future work should focus on improving the verification method and involving a wider range of participants to ensure the robustness and effectiveness of the methodology.

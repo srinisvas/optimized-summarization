@@ -1,0 +1,20 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This research paper explores the connection between AI governance and ethics in public procurement, aiming to understand how these practices are positioned in current AI governance models and how existing tools and methods for implementing AI ethics are related to procurement practices. The study uses a secondary data analysis approach, focusing on publicly available tools, methods, and principles in AI ethics.
+
+Key findings include:
+- The academic field is the leading producer of methods and tools in AI ethics, but only one independent data source related to procurement practices is produced by academics.
+- Only a tiny number of existing tools and methods currently recognize procurement practices, highlighting a gap in current research.
+- The research suggests that the procurement process could be a potential key to ensuring the ethical development of AI systems, as the requirements set in the procurement process are binding when developing or implementing the procured system.
+
+The study uses Shneiderman's governance structure for human-centered AI as a theoretical framework, positioning IS procurement practices at the organizational level. This framework helps to analyze the document types (principles, frameworks, methods, tools, and technical implementation models) and their intended target groups, revealing a hierarchical connection between the governance structure and the document types.
+
+The paper concludes that future research should focus on empirical research to analyze the current state of AI systems procurement practices in the public sector and include the procurement point of view in AI ethics and governance research to develop practical solutions for the industries' needs.

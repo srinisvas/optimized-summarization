@@ -1,0 +1,11 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper talks about how artificial intelligence (AI) is seen as a complex idea. It uses a metaphor to explain AI, but some people think AI ethics is just about being careful around humans. The paper suggests a different way to look at AI ethics, called the anthropocentric approach. This approach helps us understand both the human side and the non-human side of AI, making sure we consider all parts when making rules for AI. The paper is saying that by looking at AI from both human and non-human perspectives, we can better create ethical guidelines for AI that work for everyone.

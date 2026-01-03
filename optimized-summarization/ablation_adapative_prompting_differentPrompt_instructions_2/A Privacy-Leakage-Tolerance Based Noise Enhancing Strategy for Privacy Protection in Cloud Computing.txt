@@ -1,0 +1,15 @@
+Executive Summary
+
+**.
+
+assistant
+<think>
+
+</think>
+**Executive Summary**
+
+This paper talks about how to keep people's information private when they use the cloud. The cloud is like a big computer where lots of people can store and access their stuff. But, sometimes bad people might try to steal information from the cloud. The paper suggests a new way to protect people's privacy called "Privacy-leakage-tolerance based Noise Enhancing Strategy" (PTNES). 
+
+PTNES uses a special way to add extra information (noise) to the information people share in the cloud. This makes it harder for bad people to find out who people are. The paper shows that using PTNES can help keep people's information private without making it too hard to use the cloud. They also tested this idea with a simulation and found it works well. 
+
+The main idea is that people can set a limit on how much their information might be revealed (privacy-leakage-tolerance). This helps control how much extra information (noise) is added to keep things private. The paper shows that this can make the cloud safer and more efficient for everyone.
